@@ -44,7 +44,10 @@ python3 scripts/collect.py --exp configs/experiments/smoke.json --out "$OUT/smok
 import sys, pandas as pd
 out = sys.argv[1]
 d = pd.read_csv(f"{out}/smoke_runs.csv")
-d["split"] = "train"  # smoke instances are train instances; analysis script reads train+val
+# smoke instances are train instances; label half of them 'val' so that the
+# M2 script (which picks the SBS on val) can run on this small sample
+insts = sorted(d.instance.unique())
+d["split"] = d.instance.map({h: ("val" if i % 2 else "train") for i, h in enumerate(insts)})
 d.to_csv(f"{out}/smoke_runs_for_analysis.csv", index=False)
 EOF
 "$PY" scripts/analyze_m2.py --runs "$OUT/smoke_runs_for_analysis.csv" --out "$OUT/smoke_m2" > "$OUT/smoke_m2.log"
