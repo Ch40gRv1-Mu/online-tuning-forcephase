@@ -1,0 +1,15 @@
+[project]
+name = "forcephase-analysis"
+version = "0.1.0"
+description = "Analysis environment for the online-tuning-forcephase study (runner itself is stdlib-only)"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy==1.13.1",
+  "pandas==2.2.2",
+  "matplotlib==3.9.2",
+  "scikit-learn==1.5.2",
+]
+
+[tool.uv]
+package = false

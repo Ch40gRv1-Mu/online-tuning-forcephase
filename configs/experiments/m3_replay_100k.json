@@ -1,0 +1,10 @@
+{
+ "name": "m3_replay_100k",
+ "description": "M3 deterministic prefix replay at K=100000: NATIVE prefix then NEGATIVE (track C; at 1e4 also track P) after the first restart with >= 100000 conflicts; only instances whose census D run reached checkpoint 100000",
+ "instances": {"hash_file": "benchmarks/derived/m3_cross_100000.txt"},
+ "configs": ["sw100k_C"],
+ "seeds": [0],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

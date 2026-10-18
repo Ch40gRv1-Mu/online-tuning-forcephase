@@ -1,0 +1,11 @@
+{
+ "name": "m1_overhead",
+ "description": "M1: overhead and determinism. Unpatched upstream (no telemetry), patched controller-off, patched telemetry-only (= census D for repeat 0); 3 repeats; instances where census D solved with CPU >= 1 s; LRAT proofs as in all runs",
+ "instances": {"hash_file": "benchmarks/derived/m1_over1s.txt"},
+ "configs": ["Dupstream", "Doff", "D"],
+ "seeds": [0],
+ "repeats": [0, 1, 2],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

@@ -1,0 +1,10 @@
+{
+ "name": "m2_diag",
+ "description": "M2 mechanism diagnostics on train+val: stock priority without rephasing, negative init without rephasing (rephase-matched control for F-), pure saved phases, track P decision-only negative; seed 0; T=300s; LRAT proofs; telemetry",
+ "instances": {"splits": ["train", "val"]},
+ "configs": ["D_noR", "Iminus_noR", "S_saved", "P_neg"],
+ "seeds": [0],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

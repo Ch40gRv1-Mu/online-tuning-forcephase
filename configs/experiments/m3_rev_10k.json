@@ -1,0 +1,10 @@
+{
+ "name": "m3_rev_10k",
+ "description": "M3 reverse replay at K=1e4: NEGATIVE prefix (identical to F-) then NATIVE (track C); instances whose census F- run reached checkpoint 1e4",
+ "instances": {"hash_file": "benchmarks/derived/m3rev_cross_10000.txt"},
+ "configs": ["sw10k_Crev"],
+ "seeds": [0],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

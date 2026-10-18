@@ -1,19 +1,150 @@
 {
-  "_comment": "Named solver configurations. args are CaDiCaL options; the runner adds --lrat=1 (proof policy) and --fpc=1 (telemetry) unless the config sets --fpc itself. All use the patched binary (build/fpc) unless variant says otherwise; M0/M1 showed fpc=0/1 reproduce upstream search exactly.",
-  "D":           {"args": ["--phase=1", "--forcephase=0"], "description": "stock default (NATIVE): saved/target phases with rephasing, positive initial phase"},
-  "Iminus":      {"args": ["--phase=0", "--forcephase=0"], "description": "initial-negative only (NATIVE_INIT_NEG)"},
-  "Fminus":      {"args": ["--phase=0", "--forcephase=1"], "description": "forced negative decisions (NEGATIVE); disables rephasing"},
-  "Fplus":       {"args": ["--phase=1", "--forcephase=1"], "description": "forced positive decisions (bare --forcephase); disables rephasing"},
-  "D_noR":       {"args": ["--phase=1", "--forcephase=0", "--rephase=0"], "description": "stock phase priority without rephasing"},
-  "Iminus_noR":  {"args": ["--phase=0", "--forcephase=0", "--rephase=0"], "description": "negative initial phase without rephasing (rephase-matched control for Fminus)"},
-  "S_saved":     {"args": ["--phase=0", "--target=0", "--rephase=0", "--stubbornIOfocused=0"], "description": "pure saved phases (negative fallback), no target, no rephasing"},
-  "P_neg":       {"args": ["--fpc=2", "--fpcinit=1", "--fpctrack=1"], "description": "track P: native configuration, free decisions forced negative"},
-  "Dupstream":   {"variant": "upstream", "telemetry": false, "args": ["--phase=1", "--forcephase=0"], "description": "unpatched upstream binary, stock default (M1 overhead reference)"},
-  "Doff":        {"telemetry": false, "args": ["--phase=1", "--forcephase=0"], "description": "patched binary, controller off (M1)"},
-  "sw1k_C":      {"args": ["--fpc=3", "--fpcat=1000"], "description": "replay branch: NATIVE prefix, switch to NEGATIVE (track C) at first restart after 1e3 conflicts"},
-  "sw10k_C":     {"args": ["--fpc=3", "--fpcat=10000"], "description": "as sw1k_C at 1e4 conflicts"},
-  "sw100k_C":    {"args": ["--fpc=3", "--fpcat=100000"], "description": "as sw1k_C at 1e5 conflicts"},
-  "sw1k_P":      {"args": ["--fpc=3", "--fpcat=1000", "--fpctrack=1"], "description": "replay branch, track P switch to negative decisions at 1e3"},
-  "sw10k_P":     {"args": ["--fpc=3", "--fpcat=10000", "--fpctrack=1"], "description": "track P at 1e4"},
-  "sw100k_P":    {"args": ["--fpc=3", "--fpcat=100000", "--fpctrack=1"], "description": "track P at 1e5"}
+ "_comment": "Named solver configurations. args are CaDiCaL options; the runner adds --lrat=1 (proof policy) and --fpc=1 (telemetry) unless the config sets --fpc itself. All use the patched binary (build/fpc) unless variant says otherwise; M0/M1 showed fpc=0/1 reproduce upstream search exactly.",
+ "D": {
+  "args": [
+   "--phase=1",
+   "--forcephase=0"
+  ],
+  "description": "stock default (NATIVE): saved/target phases with rephasing, positive initial phase"
+ },
+ "Iminus": {
+  "args": [
+   "--phase=0",
+   "--forcephase=0"
+  ],
+  "description": "initial-negative only (NATIVE_INIT_NEG)"
+ },
+ "Fminus": {
+  "args": [
+   "--phase=0",
+   "--forcephase=1"
+  ],
+  "description": "forced negative decisions (NEGATIVE); disables rephasing"
+ },
+ "Fplus": {
+  "args": [
+   "--phase=1",
+   "--forcephase=1"
+  ],
+  "description": "forced positive decisions (bare --forcephase); disables rephasing"
+ },
+ "D_noR": {
+  "args": [
+   "--phase=1",
+   "--forcephase=0",
+   "--rephase=0"
+  ],
+  "description": "stock phase priority without rephasing"
+ },
+ "Iminus_noR": {
+  "args": [
+   "--phase=0",
+   "--forcephase=0",
+   "--rephase=0"
+  ],
+  "description": "negative initial phase without rephasing (rephase-matched control for Fminus)"
+ },
+ "S_saved": {
+  "args": [
+   "--phase=0",
+   "--target=0",
+   "--rephase=0",
+   "--stubbornIOfocused=0"
+  ],
+  "description": "pure saved phases (negative fallback), no target, no rephasing"
+ },
+ "P_neg": {
+  "args": [
+   "--fpc=2",
+   "--fpcinit=1",
+   "--fpctrack=1"
+  ],
+  "description": "track P: native configuration, free decisions forced negative"
+ },
+ "Dupstream": {
+  "variant": "upstream",
+  "telemetry": false,
+  "args": [
+   "--phase=1",
+   "--forcephase=0"
+  ],
+  "description": "unpatched upstream binary, stock default (M1 overhead reference)"
+ },
+ "Doff": {
+  "telemetry": false,
+  "args": [
+   "--phase=1",
+   "--forcephase=0"
+  ],
+  "description": "patched binary, controller off (M1)"
+ },
+ "sw1k_C": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=1000"
+  ],
+  "description": "replay branch: NATIVE prefix, switch to NEGATIVE (track C) at first restart after 1e3 conflicts"
+ },
+ "sw10k_C": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=10000"
+  ],
+  "description": "as sw1k_C at 1e4 conflicts"
+ },
+ "sw100k_C": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=100000"
+  ],
+  "description": "as sw1k_C at 1e5 conflicts"
+ },
+ "sw1k_P": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=1000",
+   "--fpctrack=1"
+  ],
+  "description": "replay branch, track P switch to negative decisions at 1e3"
+ },
+ "sw10k_P": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=10000",
+   "--fpctrack=1"
+  ],
+  "description": "track P at 1e4"
+ },
+ "sw100k_P": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=100000",
+   "--fpctrack=1"
+  ],
+  "description": "track P at 1e5"
+ },
+ "sw1k_Crev": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=1000",
+   "--fpcinit=1"
+  ],
+  "description": "reverse replay branch: NEGATIVE prefix (identical to F-), switch to NATIVE (track C) at first restart after 1000 conflicts"
+ },
+ "sw10k_Crev": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=10000",
+   "--fpcinit=1"
+  ],
+  "description": "reverse replay branch: NEGATIVE prefix (identical to F-), switch to NATIVE (track C) at first restart after 10000 conflicts"
+ },
+ "sw100k_Crev": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=100000",
+   "--fpcinit=1"
+  ],
+  "description": "reverse replay branch: NEGATIVE prefix (identical to F-), switch to NATIVE (track C) at first restart after 100000 conflicts"
+ }
 }
