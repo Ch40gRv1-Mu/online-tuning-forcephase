@@ -1,0 +1,20 @@
+{
+ "name": "m4_mode",
+ "description": "M4-lite fixed schedules (no observations), dev only: mode-only schedules on all dev instances",
+ "instances": {
+  "splits": [
+   "train",
+   "val"
+  ]
+ },
+ "configs": [
+  "mode_negfocused",
+  "mode_negstable"
+ ],
+ "seeds": [
+  0
+ ],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

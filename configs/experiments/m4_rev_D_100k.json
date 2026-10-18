@@ -1,0 +1,16 @@
+{
+ "name": "m4_rev_D_100k",
+ "description": "M4-lite fixed schedule: F- prefix then NATIVE at 100000 (dev only)",
+ "instances": {
+  "hash_file": "benchmarks/derived/m3rev_cross_100000.txt"
+ },
+ "configs": [
+  "sw100k_Crev"
+ ],
+ "seeds": [
+  0
+ ],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

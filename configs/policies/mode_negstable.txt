@@ -1,0 +1,6 @@
+# M4-lite mode-only schedule: score 1 (NEGATIVE) iff stable (r_stable = 1)
+fpc-policy 1
+type repeat
+enter 0.5
+exit 0.5
+model tree ( r_stable 0.5 L 0 1 )

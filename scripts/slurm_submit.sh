@@ -8,9 +8,10 @@
 # resubmitting skips runs with existing results.
 set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-EXP="$(for e in ${1//,/ }; do realpath "$e"; done | paste -sd,)"; N="$2"; JOBS="${3:-48}"; PART="${4:-cpu-low}"; TIME="${5:-24:00:00}"
+# (paths are joined with ':' because sbatch --export splits on commas)
+EXP="$(for e in ${1//,/ }; do realpath "$e"; done | paste -sd:)"; N="$2"; JOBS="${3:-48}"; PART="${4:-cpu-low}"; TIME="${5:-24:00:00}"
 FP_DATA="${FP_DATA:-/mnt/data/zhaofeng/projects/workspace/online-tuning-forcephase}"
-NAME="$(python3 -c "import json,sys; n=[json.load(open(p))['name'] for p in sys.argv[1].split(',')]; print(n[0] if len(n)==1 else n[0]+'-plus'+str(len(n)-1))" "$EXP")"
+NAME="$(python3 -c "import json,sys; n=[json.load(open(p))['name'] for p in sys.argv[1].split(',')]; print(n[0] if len(n)==1 else n[0]+'-plus'+str(len(n)-1))" "${EXP//:/,}")"
 mkdir -p "$FP_DATA/logs/slurm"
 sbatch --parsable --job-name="fp-$NAME" --partition="$PART" --nodes=1 --ntasks=1 --exclusive \
   --mem=0 --time="$TIME" --array="0-$((N-1))" \

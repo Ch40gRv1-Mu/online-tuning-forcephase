@@ -33,6 +33,9 @@ PAIRS = [  # (base config, alt config, K, track, direction)
     ("D", "sw100k_C", 100000, "C", "nat2neg"),
     ("D", "sw10k_P", 10000, "P", "nat2neg"),
     ("Fminus", "sw10k_Crev", 10000, "C", "neg2nat"),
+    ("Iminus", "sw1k_Cin", 1000, "C", "in2neg"),
+    ("Iminus", "sw10k_Cin", 10000, "C", "in2neg"),
+    ("Iminus", "sw100k_Cin", 100000, "C", "in2neg"),
 ]
 
 

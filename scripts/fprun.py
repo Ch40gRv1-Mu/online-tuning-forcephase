@@ -511,7 +511,7 @@ def cmd_plan(a):
 
 def cmd_run(a):
     runs, seen, names = [], set(), []
-    for e in a.exp.split(","):  # several experiments can share one sharded job
+    for e in a.exp.replace(":", ",").split(","):  # several experiments can share one sharded job
         exp = load_experiment(e)
         names.append(exp["name"])
         for r in plan(exp):

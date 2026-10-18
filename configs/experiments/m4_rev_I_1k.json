@@ -1,0 +1,16 @@
+{
+ "name": "m4_rev_I_1k",
+ "description": "M4-lite fixed schedules (no observations), dev only: F- prefix then NATIVE_INIT_NEG at 1e3",
+ "instances": {
+  "hash_file": "benchmarks/derived/m3rev_cross_1000.txt"
+ },
+ "configs": [
+  "sw1k_CrevIn"
+ ],
+ "seeds": [
+  0
+ ],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

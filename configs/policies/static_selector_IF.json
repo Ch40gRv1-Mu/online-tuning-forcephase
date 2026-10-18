@@ -1,0 +1,51 @@
+{
+ "name": "static selector Iminus/Fminus",
+ "a": "Iminus",
+ "b": "Fminus",
+ "rule": "choose b iff score > 0.5",
+ "params": {
+  "max_depth": 1,
+  "min_samples_leaf": 10
+ },
+ "grouped_cv_PAR2": 353.29394390452876,
+ "generated_by": "scripts/m3_train.py (refit on all dev)",
+ "kind": "tree",
+ "features": [
+  "s_log_vars",
+  "s_log_clauses",
+  "s_cv_ratio",
+  "s_mean_len",
+  "s_unit_frac",
+  "s_bin_frac",
+  "s_ter_frac",
+  "s_pos_frac",
+  "s_horn_frac",
+  "s_antihorn_frac"
+ ],
+ "nodes": [
+  {
+   "feature": "s_horn_frac",
+   "threshold": 0.483132004737854,
+   "missing_left": false,
+   "left": 1,
+   "right": 2,
+   "value": 0.19947244281991588
+  },
+  {
+   "feature": null,
+   "threshold": -2.0,
+   "missing_left": false,
+   "left": -1,
+   "right": -1,
+   "value": 0.48165763103032155
+  },
+  {
+   "feature": null,
+   "threshold": -2.0,
+   "missing_left": false,
+   "left": -1,
+   "right": -1,
+   "value": 0.14689990840621808
+  }
+ ]
+}

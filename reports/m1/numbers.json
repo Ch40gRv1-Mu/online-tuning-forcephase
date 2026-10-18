@@ -1,0 +1,48 @@
+{
+ "determinism_instances": 289,
+ "determinism_mismatches": 0,
+ "overhead": [
+  {
+   "comparison": "telemetry vs controller-off",
+   "instances": 288,
+   "median_slowdown_%": 0.07918941211014774,
+   "p95_slowdown_%": 4.1629146303097375,
+   "mean_slowdown_%": 0.3257474672530286,
+   "aggregate_%": 0.17630700040400793
+  },
+  {
+   "comparison": "patched-off vs upstream",
+   "instances": 288,
+   "median_slowdown_%": 0.1619742042437755,
+   "p95_slowdown_%": 3.2721139446573524,
+   "mean_slowdown_%": 0.07980147801318654,
+   "aggregate_%": 0.02706235767362397
+  },
+  {
+   "comparison": "telemetry vs upstream",
+   "instances": 288,
+   "median_slowdown_%": 0.4057274299424929,
+   "p95_slowdown_%": 4.2352532087297305,
+   "mean_slowdown_%": 0.3852639634196153,
+   "aggregate_%": 0.20341707090869576
+  },
+  {
+   "comparison": "same config, repeat 1 vs 0 (noise)",
+   "instances": 864,
+   "median_slowdown_%": 0.029314225931931226,
+   "p95_slowdown_%": 5.774509193857718,
+   "mean_slowdown_%": 0.0730495430453395,
+   "aggregate_%": NaN
+  },
+  {
+   "comparison": "same config, |repeat 1 vs 0| (noise)",
+   "instances": 864,
+   "median_slowdown_%": 1.1872721407937492,
+   "p95_slowdown_%": 8.812741746768573,
+   "mean_slowdown_%": 2.453647273146321,
+   "aggregate_%": NaN
+  }
+ ],
+ "hook_share_median": 0.00010286083487559414,
+ "hook_share_p95": 0.0007080915714338175
+}

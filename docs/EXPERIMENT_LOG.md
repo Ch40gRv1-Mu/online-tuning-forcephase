@@ -39,3 +39,20 @@
 - 按预注册规则，validation-SBS = **I−**（val 上 PAR2：I− 401.1 < D 415.4 < F+ 419.0 < F− 432.2）。两动作 SBS（D/F−）= D。最终主比较对象因此是 I−，并另报 D。
 - 在开发集上观察到 {D, F−} 的静态 oracle 只比 I− 低约 2.4% PAR2。因此在主轨道 C（NATIVE prefix → NEGATIVE）之外，**新增目标明确的次要变体** NATIVE_INIT_NEG（phase 固定 0，只切换 forcephase）：I− prefix 在 K∈{1e3,1e4,1e5} 后切换到 NEGATIVE（配置 `sw*_Cin`，实验 `m3in_replay_*`）。这是目标文件允许的、必须单独命名的设计；它与 D 基础的结果分开报告，并与 stock default 对比。该决定只基于开发集数据。
 - M3 的其余预注册内容不变（K 候选、模型族、分组 CV）。
+
+## 2026-10-18 22:15 — M3 结果与 M4 门槛决定（只用开发集；未接触 test / t2026）
+
+M3（开发集 out-of-fold，家族分组 5 折嵌套 CV）：
+- 静态选择器（cnffeatures，D/F− 与 I−/F−）、time-only 一次选择、在线一次选择（C+R、C+R+P、C+R+Q、C+R+T、all；K = 1e3/1e4/1e5；D prefix 与 I− prefix）**都没有超过“永不切换”**（D 或 I−）。含在线内容特征的模型比不切换差 1–3.5%，shuffled-label 对照与之相当。重放 prefix digest 一致（3 例在 1e5 未到达检查点：双方均 timeout，标签被删失）。
+- 结论：在本数据与模型容量下，**没有可迁移的在线信息**用于“何时切到 F−”。
+- 同状态 RQ3：在三个 K 都有未删失偏好的 269 例中 21% 偏好随 K 改变；按切换时机的 oracle（D prefix 最佳单次切换时间）比 D 低 7.5%，高于静态 oracle 的 5.0%。反向固定调度 F−→D@1e4（无观测）在 dev 上 PAR2 349.2，低于 D 361.5 和 I− 351.9。
+
+M4 门槛决定：
+- **不实现基于特征的重复切换控制器**（M3 否定了在线特征的可迁移性；同样特征的重复控制器没有依据）。
+- 由于 RQ3 显示动作时序有价值，做一个**小而预先固定**的“无观测固定调度”集合（M4-lite，只在 dev 上，seed 0，T=300 s）：
+  F−→D @1e3、@1e5（@1e4 已有）；F−→I− @1e3、@1e4、@1e5（`fpca0=2`，返回 NATIVE_INIT_NEG）；
+  F−→D @1e4 + `fpcrlim=1`（返回时推迟过期 rephase 的机制消融）；
+  mode-only：focused 时 NEGATIVE / stable 时 NATIVE，及其反向（repeat 策略只用 `r_stable`，窗口 1e3 冲突）。
+  共 8 个配置，不再扩展。
+
+M5 唯一主要候选的选择规则（在看到 M4-lite 结果之前固定）：在所有可部署、在 dev 上评估过的策略（M3 的 OOF 选择器；M4-lite 固定调度与 F−→D@1e4）中，取 **dev（train+val）平均 PAR2 最低者**；若它是固定调度，就以该调度为主要候选。M3 最佳在线选择器（与 time-only 选择器）作为次要报告。M5 基线：D、I−（validation-SBS）、F−、F+、静态选择器（D/F−）、主要候选同 K 的对应 D→F− 调度，及 M5 冻结文件列出的其他项；cutoff 300 s；seed 0/1/2（perm scramble）；family-disjoint test 与 t2026 分别报告。

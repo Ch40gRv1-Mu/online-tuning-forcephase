@@ -170,5 +170,61 @@
    "--fpca0=2"
   ],
   "description": "replay branch from an I- prefix: NATIVE_INIT_NEG=(forcephase 0, phase 0) from variable creation (identical to Iminus), switch to NEGATIVE (track C) at first restart after 100000 conflicts"
+ },
+ "sw1k_CrevIn": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=1000",
+   "--fpcinit=1",
+   "--fpca0=2"
+  ],
+  "description": "fixed schedule: NEGATIVE (=F-) from variable creation, switch to NATIVE_INIT_NEG (=I- pair) at first restart after 1000 conflicts"
+ },
+ "sw10k_CrevIn": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=10000",
+   "--fpcinit=1",
+   "--fpca0=2"
+  ],
+  "description": "fixed schedule: NEGATIVE (=F-) from variable creation, switch to NATIVE_INIT_NEG (=I- pair) at first restart after 10000 conflicts"
+ },
+ "sw100k_CrevIn": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=100000",
+   "--fpcinit=1",
+   "--fpca0=2"
+  ],
+  "description": "fixed schedule: NEGATIVE (=F-) from variable creation, switch to NATIVE_INIT_NEG (=I- pair) at first restart after 100000 conflicts"
+ },
+ "sw10k_Crev_rlim": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=10000",
+   "--fpcinit=1",
+   "--fpcrlim=1"
+  ],
+  "description": "as sw10k_Crev but postpone the overdue rephase when returning to NATIVE (mechanism ablation)"
+ },
+ "mode_negfocused": {
+  "args": [
+   "--fpc=4",
+   "--fpcwin=1000"
+  ],
+  "env": {
+   "FPC_POLICY": "configs/policies/mode_negfocused.txt"
+  },
+  "description": "mode-only schedule: NEGATIVE while focused, NATIVE while stable (checked at windows of 1e3 conflicts)"
+ },
+ "mode_negstable": {
+  "args": [
+   "--fpc=4",
+   "--fpcwin=1000"
+  ],
+  "env": {
+   "FPC_POLICY": "configs/policies/mode_negstable.txt"
+  },
+  "description": "mode-only schedule: NEGATIVE while stable, NATIVE while focused"
  }
 }
