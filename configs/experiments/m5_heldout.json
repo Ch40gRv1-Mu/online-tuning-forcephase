@@ -1,0 +1,29 @@
+{
+ "name": "m5_heldout",
+ "description": "M5 frozen held-out evaluation: family-disjoint test split and temporal t2026 pool; seeds 0 (original) and 1, 2 (cnfscramble perm); T = 300 s; LRAT proofs; telemetry",
+ "instances": {
+  "splits": [
+   "test",
+   "t2026"
+  ]
+ },
+ "configs": [
+  "D",
+  "Iminus",
+  "Fminus",
+  "Fplus",
+  "sw10k_Crev",
+  "sw1k_Crev",
+  "sw100k_Crev",
+  "sw10k_C",
+  "pol_m3_D_K1000_time"
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

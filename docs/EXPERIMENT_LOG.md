@@ -56,3 +56,10 @@ M4 门槛决定：
   共 8 个配置，不再扩展。
 
 M5 唯一主要候选的选择规则（在看到 M4-lite 结果之前固定）：在所有可部署、在 dev 上评估过的策略（M3 的 OOF 选择器；M4-lite 固定调度与 F−→D@1e4）中，取 **dev（train+val）平均 PAR2 最低者**；若它是固定调度，就以该调度为主要候选。M3 最佳在线选择器（与 time-only 选择器）作为次要报告。M5 基线：D、I−（validation-SBS）、F−、F+、静态选择器（D/F−）、主要候选同 K 的对应 D→F− 调度，及 M5 冻结文件列出的其他项；cutoff 300 s；seed 0/1/2（perm scramble）；family-disjoint test 与 t2026 分别报告。
+
+## 2026-10-18 23:35 — M5 冻结（此前没有任何 test / t2026 求解器运行）
+
+- M4-lite 完成（[reports/M4_report.md](../reports/M4_report.md)）。按 22:15 预注册规则，dev 平均 PAR2 最低的可部署非静态策略为 **F−→D @1e4**（`sw10k_Crev`，dev PAR2 349.2；相对 D +3.4% [+0.9, +6.6]，相对 I− +0.8% [−0.7, +2.2]）。它是唯一主要候选。
+- 冻结文件 `configs/m5_freeze.json`，held-out 实验 `configs/experiments/m5_heldout.json`：test（204 例，21 组）+ t2026（304 例）× seed 0/1/2 × {D, I−, F−, F+, F−→D @1e3/@1e4/@1e5, D→F− @1e4, M3 一次选择器（time-only）}，共 13,716 次运行，T = 300 s，LRAT 证明；静态选择器（`configs/policies/static_selector_DF.json`）与随机切换时机基线由分支运行派生；分析脚本 `scripts/m5_eval.py`（已在 dev 数据上干跑）。
+- 主假设（只对候选检验）：family-disjoint test 上相对 validation-SBS（I−）mean PAR2 降低 ≥ 5%，95% 家族组 cluster bootstrap CI 不含 0，且每 seed 平均 solved 不低于 I−。根据 dev，预计**不会**达到。次要比较见冻结文件。
+- 冻结提交打 git tag `m5-freeze`。之后若发现错误需要重跑，将在此记录原因与新的冻结点；不会根据 test 结果修改候选、阈值或指标。

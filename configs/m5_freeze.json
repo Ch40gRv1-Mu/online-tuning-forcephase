@@ -1,0 +1,60 @@
+{
+ "frozen_utc": "2026-10-18T23:31:04Z",
+ "frozen_commit": "git tag m5-freeze (the commit that adds this file)",
+ "T": 300,
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "bootstrap": 10000,
+ "primary": {
+  "name": "F−→D @1e4 (candidate)",
+  "config": "sw10k_Crev",
+  "hypothesis": "mean PAR2 on the family-disjoint test split is at least 5% lower than the validation-SBS (I−), with the 95% family-cluster bootstrap CI excluding 0, and mean solved count per seed not lower than I−"
+ },
+ "sbs_name": "I− (validation-SBS)",
+ "config_names": {
+  "D": "D (stock)",
+  "Iminus": "I− (validation-SBS)",
+  "Fminus": "F− (forced negative)",
+  "Fplus": "F+ (forced positive)",
+  "sw1k_Crev": "F−→D @1e3",
+  "sw100k_Crev": "F−→D @1e5",
+  "sw10k_C": "D→F− @1e4 (fixed schedule)",
+  "pol_m3_D_K1000_time": "M3 one-shot selector (time-only, @1e3)"
+ },
+ "report_order": [
+  "F−→D @1e4 (candidate)",
+  "I− (validation-SBS)",
+  "D (stock)",
+  "F− (forced negative)",
+  "F+ (forced positive)",
+  "static selector D/F−",
+  "F−→D @1e3",
+  "F−→D @1e5",
+  "D→F− @1e4 (fixed schedule)",
+  "M3 one-shot selector (time-only, @1e3)",
+  "random switching time"
+ ],
+ "static_selector": {
+  "name": "static selector D/F−",
+  "model_file": "configs/policies/static_selector_DF.json"
+ },
+ "random_switch_time": {
+  "name": "random switching time",
+  "branches": [
+   "sw1k_Crev",
+   "sw10k_Crev",
+   "sw100k_Crev"
+  ],
+  "salt": 20261018,
+  "note": "per (instance, seed) uniform choice among the switching times of the candidate's schedule family; same switch budget (one switch)"
+ },
+ "secondary": [
+  "candidate vs D (stock) on test",
+  "all comparisons on t2026 (seen / devtest / new families separately)",
+  "static baselines, static selector, M3 online selector, D→F− @1e4, F−→D @1e3/@1e5, random switching time"
+ ],
+ "notes": "Candidate chosen by the rule fixed in docs/EXPERIMENT_LOG.md (2026-10-18 22:15) from dev results only (reports/M4_report.md). Seeds 1, 2 = cnfscramble perm. Static selector cost = cnffeatures CPU + chosen run. Random switching time = uniform choice among F−→D @1e3/@1e4/@1e5 per (instance, seed)."
+}

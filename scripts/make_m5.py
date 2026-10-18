@@ -43,10 +43,12 @@ def main():
         json.dump(exp, f, indent=1)
     names = {"D": "D (stock)", "Iminus": "I− (validation-SBS)", "Fminus": "F− (forced negative)",
              "Fplus": "F+ (forced positive)"}
-    labels = json.load(open(os.path.join(ROOT, "configs", "solver_configs.json")))
+    nice = {"sw1k_Crev": "F−→D @1e3", "sw10k_Crev": "F−→D @1e4", "sw100k_Crev": "F−→D @1e5",
+            "sw1k_C": "D→F− @1e3", "sw10k_C": "D→F− @1e4 (fixed schedule)", "sw100k_C": "D→F− @1e5",
+            "sw10k_CrevIn": "F−→I− @1e4", "pol_m3_D_K1000_time": "M3 one-shot selector (time-only, @1e3)"}
     for c in configs:
         if c not in names and c != a.candidate:
-            names[c] = c + " — " + labels[c]["description"][:60]
+            names[c] = nice.get(c, c)
     freeze = {
         "frozen_utc": None, "frozen_commit": None,
         "T": 300, "seeds": [0, 1, 2], "bootstrap": 10000,
