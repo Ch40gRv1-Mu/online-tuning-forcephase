@@ -89,6 +89,14 @@ def main():
         out.append(f"\nRandom one-shot (p = {rd['p']:.3f}, salt {rd['salt']}) switched on {int(sel.sum())} of "
                    f"{len(sel)} (instance, seed) pairs.\n")
 
+    if "random_switch_time" in fz:
+        rs = fz["random_switch_time"]
+        br = rs["branches"]
+        pick = np.array([int(hashlib.sha256(f"{i}:{s}:{rs['salt']}".encode()).hexdigest()[:15], 16) % len(br)
+                         for i, s in cost.index])
+        cost[rs["name"]] = np.choose(pick, [cost[b].values for b in br])
+        solved[rs["name"]] = np.choose(pick, [solved[b].values.astype(bool) for b in br])
+        out.append(f"\nRandom switching time: branch counts {np.bincount(pick, minlength=len(br)).tolist()} over {br}.\n")
     meta = df[["instance", "family_group", "split", "temporal_tag", "gbd_result"]].drop_duplicates("instance") \
         .set_index("instance")
     order = [fz["primary"]["name"]] + [c for c in fz["report_order"] if c != fz["primary"]["name"]]

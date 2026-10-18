@@ -226,5 +226,14 @@
    "FPC_POLICY": "configs/policies/mode_negstable.txt"
   },
   "description": "mode-only schedule: NEGATIVE while stable, NATIVE while focused"
+ },
+ "pol_m3_D_K1000_time": {
+  "args": [
+   "--fpc=4"
+  ],
+  "env": {
+   "FPC_POLICY": "configs/policies/m3_oneshot_D_K1000_time.txt"
+  },
+  "description": "M3 one-shot selector (time-only logit, refit on dev) at K=1e3 from a D prefix; decides NATIVE vs NEGATIVE once"
  }
 }
