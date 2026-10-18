@@ -1,0 +1,19 @@
+{
+ "name": "smoke",
+ "description": "M0 smoke: runner, proofs, verification; no performance claims",
+ "instances": {
+  "hash_file": "benchmarks/smoke20.txt"
+ },
+ "configs": [
+  "D",
+  "Iminus",
+  "Fminus",
+  "Fplus"
+ ],
+ "seeds": [
+  0
+ ],
+ "timeout": 10,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

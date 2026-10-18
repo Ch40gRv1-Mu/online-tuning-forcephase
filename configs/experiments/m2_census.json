@@ -1,0 +1,10 @@
+{
+ "name": "m2_census",
+ "description": "M2 static census on train+val: stock default, initial-negative, forced-negative, forced-positive; seed 0; T=300s CPU; binary LRAT proofs for all; telemetry (fpcwin=1e4)",
+ "instances": {"splits": ["train", "val"]},
+ "configs": ["D", "Iminus", "Fminus", "Fplus"],
+ "seeds": [0],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}
