@@ -34,7 +34,8 @@ data = os.environ["FP_DATA"]
 missing = [h for h in need if not os.path.exists(os.path.join(data, "benchmarks", "cnf", h + ".cnf.xz"))]
 if missing:
     print(f"downloading {len(missing)} smoke instances")
-    subprocess.run([sys.executable, "scripts/fetch_benchmarks.py", "--splits", "train", "--jobs", "4"], check=True)
+    subprocess.run([sys.executable, "scripts/fetch_benchmarks.py", "--splits", "train", "--jobs", "4",
+                    "--hash-file", "benchmarks/smoke20.txt"], check=True)
 EOF
 python3 scripts/fprun.py run --exp configs/experiments/smoke.json --jobs "$JOBS"
 python3 scripts/fprun.py status --exp configs/experiments/smoke.json

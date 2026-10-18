@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Download and checksum the CNF instances listed in benchmarks/manifest.csv.
 
-Usage: scripts/fetch_benchmarks.py [--splits train,val,test,t2026] [--jobs 6]
+Usage: scripts/fetch_benchmarks.py [--splits train,val,test,t2026] [--jobs 6] [--hash-file list.txt]
 
 Files go to $FP_DATA/benchmarks/cnf/<hash>.cnf.xz (FP_DATA defaults to
 /mnt/data/zhaofeng/projects/workspace/online-tuning-forcephase).  For every
@@ -88,11 +88,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--splits", default="train,val,test,t2026")
     ap.add_argument("--jobs", type=int, default=6)
+    ap.add_argument("--hash-file", help="only fetch the hashes listed in this file")
     a = ap.parse_args()
     os.makedirs(CNF_DIR, exist_ok=True)
     splits = set(a.splits.split(","))
     rows = [r for r in csv.DictReader(open(os.path.join(ROOT, "benchmarks", "manifest.csv")))
             if r["split"] in splits]
+    if a.hash_file:
+        keep = {l.split()[0] for l in open(a.hash_file) if l.strip() and not l.startswith("#")}
+        rows = [r for r in rows if r["hash"] in keep]
     known = {}
     if os.path.exists(CHECKSUMS):
         known = {r["hash"]: r for r in csv.DictReader(open(CHECKSUMS))}
