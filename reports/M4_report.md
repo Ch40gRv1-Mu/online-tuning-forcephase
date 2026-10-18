@@ -40,6 +40,13 @@ train / val 分开看（PAR2）：F−→D@1e4 在 train 333.5（I− 335.4，D 
 4. **只按模式调度**（focused/stable）不优于 D：在 focused 时强制负会多解 SAT（210 vs 197）但少解 UNSAT（158 vs 166），在 stable 时强制负则 SAT 明显变差（183）。这与 M2 的机制一致：stable 模式中的 target/rephase 对 SAT 最重要。
 5. 反方向（先原生再强制负）大幅变差，说明“何时用负分支”的答案在这个数据上是：**只在最开始短暂地用**，之后交还原生策略；长时间强制负总体有害。
 
+**代表性轨迹**（规则见 `scripts/plot_trajectories.py`，[trajectories](trajectories/trajectories.md)）：
+- C：F−→D@1e4 相对 D 收益最大——set-covering（SAT）：D、I−、F− 都超时，F−→D@1e4 在约 2×10⁵ 冲突、6.9 s 解出。F− 阶段的窗口平均 glue 很高（>100，D/I− 约 20–50），best 赋值比例更低；切回原生后 glue 立即回落。
+- D：F−→D@1e4 相对 I− 损失最大——hamiltonian（val，SAT）：I− 4.7 s，F− 296.5 s，F−→D@1e4 与 D 超时。
+这两个相反的例子都出现在可满足实例上，提示负 prefix 的作用很大程度上是改变早期搜索路径（多样化），其效果在单个 SAT 实例上高度依赖路径（[假说]）。
+
+![C](trajectories/trajectory_C.png)
+
 ## 4. M5 主要候选（预注册规则）
 
 规则：在所有在 dev 上评估过的可部署非静态策略（M3 out-of-fold 选择器、M4 固定调度）中取 dev 平均 PAR2 最低者。结果：**F−→D @1e4**（配置 `sw10k_Crev`：变量创建前设为 NEGATIVE=(1,0)，在第一个冲突数 ≥ 10,000 的自然 restart 处切换到 NATIVE=(0,1)，之后不再切换；不使用任何观测）。
