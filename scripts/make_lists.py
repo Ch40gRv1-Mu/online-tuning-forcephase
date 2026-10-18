@@ -9,6 +9,8 @@ Writes benchmarks/derived/:
                          (first restart with >= K conflicts) before finishing;
                          only these have a decision point at K
   m3rev_cross_<K>.txt    same for the F- run (reverse replay F- prefix -> D)
+  m3in_cross_<K>.txt     same for the I- run (I- prefix -> F-, NATIVE_INIT_NEG variant)
+  m2_enc_solved.txt      train+val instances solved by D or F- (sign-flip experiment)
 These rules only use dev-split census data and are fixed before any M3 run.
 """
 
@@ -52,15 +54,20 @@ def main():
     census = os.path.join(fprun.ROOT, "configs", "experiments", "m2_census.json")
     D, nD = records(census, "D")
     F, nF = records(census, "Fminus")
+    I, nI = records(census, "Iminus")
     if len(D) != nD or len(F) != nF:
         raise SystemExit(f"census incomplete: D {len(D)}/{nD}, F- {len(F)}/{nF}")
     write("m1_over1s.txt", [h for h, r in D.items() if r["status"] == "solved" and r["cpu"] >= 1.0],
           "train+val instances where census D (seed 0) solved with CPU >= 1 s (M1 overhead set)")
+    write("m2_enc_solved.txt", [h for h in D if D[h]["status"] == "solved" or F[h]["status"] == "solved"],
+          "train+val instances solved by census D or F- (encoding-sensitivity experiment)")
     for K in KS:
         write(f"m3_cross_{K}.txt", [h for h, r in D.items() if crossed(r, K)],
               f"train+val instances whose census D run reached checkpoint {K} (decision point exists)")
         write(f"m3rev_cross_{K}.txt", [h for h, r in F.items() if crossed(r, K)],
               f"train+val instances whose census F- run reached checkpoint {K}")
+        write(f"m3in_cross_{K}.txt", [h for h, r in I.items() if crossed(r, K)],
+              f"train+val instances whose census I- run reached checkpoint {K}")
 
 
 if __name__ == "__main__":

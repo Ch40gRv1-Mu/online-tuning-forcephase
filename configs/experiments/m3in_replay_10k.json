@@ -1,0 +1,16 @@
+{
+ "name": "m3in_replay_10k",
+ "description": "M3 NATIVE_INIT_NEG variant: I- prefix (forcephase 0, phase 0), switch to NEGATIVE at first restart after 10000 conflicts; instances whose census I- run reached checkpoint 10000. Added after M2 showed I- is the validation-SBS (dev data only).",
+ "instances": {
+  "hash_file": "benchmarks/derived/m3in_cross_10000.txt"
+ },
+ "configs": [
+  "sw10k_Cin"
+ ],
+ "seeds": [
+  0
+ ],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

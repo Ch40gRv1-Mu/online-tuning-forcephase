@@ -32,3 +32,10 @@
 **M3（预先限定）**
 - prefix 长度候选：1e3、1e4、1e5 冲突（在之后第一个自然 restart 处决定）；标签来自同一 prefix 的确定性重放（`sw{K}_C`，NATIVE→NEGATIVE），NATIVE 分支即 D 运行本身；以检查点 digest 验证 prefix 相同。
 - 模型：深度 ≤ 3 的树或 L2 正则 logistic；在 train∪val 上按家族组交叉验证选择；比较 static（`cnffeatures`，成本计入）、time-only（r_ 组）、online（全部）三类特征。
+
+## 2026-10-18 20:25 — M2 census 完成后的开发集决定（未接触 test / t2026）
+
+- M2 census（train+val，D/I−/F−/F+，T=300 s）完成：3,268 次运行，1,337 次 solved（全部验证通过），1,931 次 timeout，无 crash/memout/wrong。
+- 按预注册规则，validation-SBS = **I−**（val 上 PAR2：I− 401.1 < D 415.4 < F+ 419.0 < F− 432.2）。两动作 SBS（D/F−）= D。最终主比较对象因此是 I−，并另报 D。
+- 在开发集上观察到 {D, F−} 的静态 oracle 只比 I− 低约 2.4% PAR2。因此在主轨道 C（NATIVE prefix → NEGATIVE）之外，**新增目标明确的次要变体** NATIVE_INIT_NEG（phase 固定 0，只切换 forcephase）：I− prefix 在 K∈{1e3,1e4,1e5} 后切换到 NEGATIVE（配置 `sw*_Cin`，实验 `m3in_replay_*`）。这是目标文件允许的、必须单独命名的设计；它与 D 基础的结果分开报告，并与 stock default 对比。该决定只基于开发集数据。
+- M3 的其余预注册内容不变（K 候选、模型族、分组 CV）。

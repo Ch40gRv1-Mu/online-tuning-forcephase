@@ -146,5 +146,29 @@
    "--fpcinit=1"
   ],
   "description": "reverse replay branch: NEGATIVE prefix (identical to F-), switch to NATIVE (track C) at first restart after 100000 conflicts"
+ },
+ "sw1k_Cin": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=1000",
+   "--fpca0=2"
+  ],
+  "description": "replay branch from an I- prefix: NATIVE_INIT_NEG=(forcephase 0, phase 0) from variable creation (identical to Iminus), switch to NEGATIVE (track C) at first restart after 1000 conflicts"
+ },
+ "sw10k_Cin": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=10000",
+   "--fpca0=2"
+  ],
+  "description": "replay branch from an I- prefix: NATIVE_INIT_NEG=(forcephase 0, phase 0) from variable creation (identical to Iminus), switch to NEGATIVE (track C) at first restart after 10000 conflicts"
+ },
+ "sw100k_Cin": {
+  "args": [
+   "--fpc=3",
+   "--fpcat=100000",
+   "--fpca0=2"
+  ],
+  "description": "replay branch from an I- prefix: NATIVE_INIT_NEG=(forcephase 0, phase 0) from variable creation (identical to Iminus), switch to NEGATIVE (track C) at first restart after 100000 conflicts"
  }
 }

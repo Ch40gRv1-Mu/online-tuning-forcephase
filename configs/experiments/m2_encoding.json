@@ -1,0 +1,11 @@
+{
+ "name": "m2_encoding",
+ "description": "M2/H1 encoding sensitivity on dev: global sign flip (every variable renamed to its negation) and random per-variable sign flip (seed 1) of instances solved by D or F- in the census; configs D and F-; T=300s; LRAT proofs",
+ "instances": {"hash_file": "benchmarks/derived/m2_enc_solved.txt"},
+ "configs": ["D", "Fminus"],
+ "variants": ["flipall", "flipr:1"],
+ "seeds": [0],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

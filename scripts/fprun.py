@@ -510,8 +510,15 @@ def cmd_plan(a):
 
 
 def cmd_run(a):
-    exp = load_experiment(a.exp)
-    runs = plan(exp)
+    runs, seen, names = [], set(), []
+    for e in a.exp.split(","):  # several experiments can share one sharded job
+        exp = load_experiment(e)
+        names.append(exp["name"])
+        for r in plan(exp):
+            if r["run_id"] not in seen:
+                seen.add(r["run_id"])
+                runs.append(r)
+    exp = {"name": "+".join(names) if len(names) < 4 else f"{names[0]}+{len(names) - 1}more"}
     i, n = map(int, a.shard.split("/"))
     mine = [r for r in runs if int(r["run_id"][:8], 16) % n == i and not os.path.exists(result_path(r["run_id"]))]
     random.Random(a.order_seed).shuffle(mine)
