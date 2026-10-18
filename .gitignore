@@ -1,0 +1,7 @@
+# build products and local data (large data lives under $FP_DATA, see DATA_LOCATION.md)
+/build/
+/data/
+*.o
+*.pyc
+__pycache__/
+.venv/

@@ -1,0 +1,306 @@
+diff --git a/src/analyze.cpp b/src/analyze.cpp
+index f325bf9..9ff6643 100644
+--- a/src/analyze.cpp
++++ b/src/analyze.cpp
+@@ -1282,6 +1282,7 @@ void Internal::analyze () {
+   UPDATE_AVERAGE (averages.current.glue.slow, glue);
+   stats.learned.literals += size;
+   stats.learned.clauses++;
++  fpcc.glue_sum += glue, fpcc.glue_low += (glue <= 2);
+   assert (glue < size);
+ 
+   // up to this point lrat_chain contains the proof for current clause in
+@@ -1319,6 +1320,7 @@ void Internal::analyze () {
+   stats.units += (size == 1);
+   stats.binaries += (size == 2);
+   UPDATE_AVERAGE (averages.current.size, size);
++  fpcc.minsize_sum += size;
+ 
+   // reverse lrat_chain. We could probably work with reversed iterators
+   // (views) to be more efficient but we would have to distinguish in proof
+@@ -1341,6 +1343,7 @@ void Internal::analyze () {
+ 
+   int new_level = determine_actual_backtrack_level (jump);
+   UPDATE_AVERAGE (averages.current.level, new_level);
++  fpcc.analyzed++, fpcc.backjump_sum += level - new_level;
+   backtrack (new_level);
+ 
+   // It should hold that (!level <=> size == 1)
+diff --git a/src/decide.cpp b/src/decide.cpp
+index fc8f8e0..42e8b3c 100644
+--- a/src/decide.cpp
++++ b/src/decide.cpp
+@@ -123,22 +123,26 @@ int Internal::next_decision_variable () {
+ // of a phase is forced through the 'phase' option.
+ 
+ int Internal::decide_phase (int idx, bool target) {
+-  const int initial_phase = opts.phase ? 1 : -1;
++  const int initial_phase = eff_phase () ? 1 : -1;
+   int phase = 0;
++  fpc_src = FPC::SRC_FORCE_SAVED;
+   if (force_saved_phase) {
+     phase = phases.saved[idx];
+     LOG ("trying force_saved_phase, i.e., %d", phase);
+   }
+   assert (force_saved_phase || !phase);
+   if (!phase) {
++    fpc_src = FPC::SRC_API;
+     phase = phases.forced[idx]; // swapped with opts.forcephase case!
+     LOG ("trying forced phase, i.e., %d", phase);
+   }
+-  if (!phase && opts.forcephase) {
++  if (!phase && eff_forcephase ()) {
++    fpc_src = FPC::SRC_FORCEPHASE;
+     phase = initial_phase;
+     LOG ("trying initial phase, i.e., %d", phase);
+   }
+   if (!phase && target) {
++    fpc_src = FPC::SRC_TARGET;
+     phase = phases.target[idx];
+   }
+   if (!phase) {
+@@ -146,17 +150,22 @@ int Internal::decide_phase (int idx, bool target) {
+     if (opts.stubbornIOfocused && opts.rephase == 2)
+       switch ((stats.rephased.total >> 1) & 7) {
+       case 1:
++        fpc_src = FPC::SRC_STUBBORN;
+         phase = initial_phase;
+         break;
+       case 5: // kissat has 3 but 5 looks better
++        fpc_src = FPC::SRC_STUBBORN;
+         phase = -initial_phase;
+         break;
+       default:
++        fpc_src = FPC::SRC_SAVED;
+         phase = phases.saved[idx];
+         break;
+       }
+-    else
++    else {
++      fpc_src = FPC::SRC_SAVED;
+       phase = phases.saved[idx];
++    }
+   }
+ 
+   // The following should not be necessary and in some version we had even
+@@ -168,12 +177,31 @@ int Internal::decide_phase (int idx, bool target) {
+   // now use this 'defensive' code here, even though such defensive code is
+   // considered bad programming practice.
+   //
+-  if (!phase)
++  if (!phase) {
++    fpc_src = FPC::SRC_FALLBACK;
+     phase = initial_phase;
++  }
+ 
+   return phase * idx;
+ }
+ 
++// Research controller: the phase the stock configuration ('forcephase=0',
++// 'phase=1', no 'stubbornIOfocused') would pick in the current state.  Pure
++// query, only used for telemetry when 'opts.fpc' is non-zero.
++
++int Internal::native_phase_suggestion (int idx, bool target) {
++  int phase = force_saved_phase ? phases.saved[idx] : 0;
++  if (!phase)
++    phase = phases.forced[idx];
++  if (!phase && target)
++    phase = phases.target[idx];
++  if (!phase)
++    phase = phases.saved[idx];
++  if (!phase)
++    phase = 1;
++  return phase;
++}
++
+ // The likely phase of an variable used in 'collect' for optimizing
+ // co-location of clauses likely accessed together during search.
+ 
+@@ -335,6 +363,19 @@ int Internal::decide () {
+         int idx = next_decision_variable ();
+         const bool target = (opts.target > 1 || (stable && opts.target));
+         decision = decide_phase (idx, target);
++        // Research controller counters and track P sign override, which
++        // has the same priority as 'forcephase' (below saved-forcing and
++        // API phases).
++        if (fpc_sign && fpc_src > FPC::SRC_API) {
++          fpcc.dec_p_override++;
++          fpcc.dec_p_flip += ((decision < 0) != (fpc_sign < 0));
++          decision = fpc_sign * idx;
++        }
++        fpcc.dec_free++;
++        fpcc.dec_neg += (decision < 0);
++        fpcc.dec_src[fpc_src]++;
++        if (fpc)
++          fpcc.dec_native_pos += (native_phase_suggestion (idx, target) > 0);
+       }
+       search_assume_decision (decision);
+     }
+diff --git a/src/internal.cpp b/src/internal.cpp
+index 485c33a..51af42e 100644
+--- a/src/internal.cpp
++++ b/src/internal.cpp
+@@ -55,6 +55,7 @@ Internal::Internal ()
+ }
+ 
+ Internal::~Internal () {
++  delete fpc;
+   // If a memory exception ocurred a profile might still be active.
+ #ifndef QUIET
+ #define PROFILE(NAME, LEVEL) \
+@@ -121,6 +122,8 @@ void Internal::enlarge_vals (size_t new_vsize) {
+ /*------------------------------------------------------------------------*/
+ 
+ void Internal::enlarge (int new_max_var) {
++  if (opts.fpc && !fpc) // before 'phases.saved' is initialized below
++    fpc = new FPC::Controller (this);
+   // New variables can be created that can invoke enlarge anytime (via
+   // calls during ipasir-up call-backs), thus assuming (!level) is not
+   // correct
+@@ -144,7 +147,7 @@ void Internal::enlarge (int new_max_var) {
+   vsize = new_vsize;
+   if (external)
+     enlarge_zero (relevanttab, new_vsize);
+-  const signed char val = opts.phase ? 1 : -1;
++  const signed char val = eff_phase () ? 1 : -1;
+   enlarge_init (phases.saved, new_vsize, val);
+   enlarge_zero (phases.forced, new_vsize);
+   enlarge_zero (phases.target, new_vsize);
+@@ -189,6 +192,19 @@ void Internal::add_original_lit (int lit) {
+   if (lit) {
+     original.push_back (lit);
+   } else {
++    {
++      int64_t pos = 0; // static features for the research controller
++      for (const auto &other : original) {
++        pos += (other > 0);
++        if (abs (other) > fpcc.orig_max_var)
++          fpcc.orig_max_var = abs (other);
++      }
++      const int64_t size = original.size ();
++      fpcc.orig_clauses++, fpcc.orig_lits += size, fpcc.orig_pos += pos;
++      fpcc.orig_unit += (size == 1), fpcc.orig_bin += (size == 2);
++      fpcc.orig_ter += (size == 3), fpcc.orig_horn += (pos <= 1);
++      fpcc.orig_antihorn += (size - pos <= 1);
++    }
+     const int64_t id =
+         original_id < reserved_ids ? ++original_id : ++clause_id;
+     if (proof) {
+@@ -319,9 +335,11 @@ int Internal::cdcl_loop_with_inprocessing () {
+       break;                               // decision or conflict limit
+     else if (terminated_asynchronously ()) // externally terminated
+       break;
+-    else if (restarting ())
++    else if (restarting ()) {
+       restart (); // restart by backtracking
+-    else if (rephasing ())
++      if (fpc)
++        fpc->at_restart (); // research controller safe point
++    } else if (rephasing ())
+       rephase (); // reset variable phases
+     else if (reducing ())
+       reduce (); // collect useless clauses
+@@ -1013,6 +1031,8 @@ int Internal::solve (bool preprocess_only) {
+     }
+   }
+   finalize (res);
++  if (fpc && !preprocess_only)
++    fpc->finish (res);
+   reset_solving ();
+   report_solving (res);
+   STOP (solve);
+diff --git a/src/internal.hpp b/src/internal.hpp
+index 1a396a2..9f925d4 100644
+--- a/src/internal.hpp
++++ b/src/internal.hpp
+@@ -67,6 +67,7 @@ extern "C" {
+ #include "file.hpp"
+ #include "flags.hpp"
+ #include "format.hpp"
++#include "fpcontrol.hpp"
+ #include "frattracer.hpp"
+ #include "heap.hpp"
+ #include "idruptracer.hpp"
+@@ -185,6 +186,19 @@ struct Internal {
+   bool protected_reasons;      // referenced reasons are protected
+   bool force_saved_phase;      // force saved phase in decision
+   bool searching_lucky_phases; // during 'lucky_phases'
++
++  // Research phase controller ('fpcontrol.cpp', not upstream).  While
++  // 'fpc_pair' is false the effective values are the option values.
++  FPC::Controller *fpc = nullptr; // only allocated if 'opts.fpc'
++  FPC::Counters fpcc;             // cheap counters (never affect search)
++  bool fpc_pair = false;          // effective (forcephase,phase) override
++  int fpc_force = 0, fpc_phase = 1; // effective pair if 'fpc_pair'
++  int fpc_sign = 0;               // track P decision sign (0 = none)
++  int fpc_src = 0;                // source of last 'decide_phase'
++  int eff_phase () const { return fpc_pair ? fpc_phase : opts.phase; }
++  int eff_forcephase () const {
++    return fpc_pair ? fpc_force : opts.forcephase;
++  }
+   bool stable;                 // true during stabilization phase
+   bool reported;               // reported in this solving call
+   bool external_prop;         // true if an external propagator is connected
+@@ -1504,6 +1518,7 @@ struct Internal {
+   int next_decision_variable_with_best_score ();
+   int next_decision_variable ();
+   int decide_phase (int idx, bool target);
++  int native_phase_suggestion (int idx, bool target);
+   int likely_phase (int idx);
+   bool better_decision (int lit, int other);
+   int decide (); // 0=decision, 20=failed
+diff --git a/src/options.hpp b/src/options.hpp
+index 9aae072..1ba5861 100644
+--- a/src/options.hpp
++++ b/src/options.hpp
+@@ -134,6 +134,19 @@ OPTION( flush,             0,  0,  1,0,1,1, "flush redundant clauses") \
+ OPTION( flushfactor,       3,  1,1e3,0,0,1, "interval increase") \
+ OPTION( flushint,        1e5,  1,2e9,0,0,1, "initial limit") \
+ OPTION( forcephase,        0,  0,  1,0,0,1, "always use initial phase") \
++OPTION( fpc,               0,  0,  5,0,0,0, "research phase controller (0=off,1=telemetry,2=fixed,3=schedule,4=policy,5=random)") \
++OPTION( fpca0,             0,  0,  3,0,0,0, "fpc base action (0=native,1=negative,2=native-init-negative,3=positive)") \
++OPTION( fpca1,             1,  0,  3,0,0,0, "fpc alternative action") \
++OPTION( fpcat,           1e4,  0,2e9,0,0,0, "fpc schedule first switch at conflicts") \
++OPTION( fpcinit,           0,  0,  1,0,0,0, "fpc initial action slot (0=fpca0,1=fpca1)") \
++OPTION( fpcmaxsw,        1e3,  0,2e9,0,0,0, "fpc maximum number of switches") \
++OPTION( fpcmindwell,       1,  0,2e9,0,0,0, "fpc minimum windows between switches") \
++OPTION( fpcperiod,         0,  0,2e9,0,0,0, "fpc schedule alternation period (0=single switch)") \
++OPTION( fpcprob,         100,  0,1e3,0,0,0, "fpc random switch probability per window (per mille)") \
++OPTION( fpcrlim,           0,  0,  1,0,0,0, "fpc postpone overdue rephase when leaving forcing") \
++OPTION( fpcseed,           0,  0,2e9,0,0,0, "fpc controller seed") \
++OPTION( fpctrack,          0,  0,  1,0,0,0, "fpc track (0=C option pair,1=P decision sign)") \
++OPTION( fpcwin,          1e4,  1,2e9,0,0,0, "fpc telemetry window in conflicts") \
+ OPTION( frat,              0,  0,  2,0,0,1, "1=frat(lrat), 2=frat(drat)") \
+ OPTION( idrup,             0,  0,  1,0,0,1, "incremental proof format") \
+ OPTION( ilb,               0,  0,  2,0,0,1, "ILB (incremental lazy backtrack) (0: no, 1: assumptions only, 2: everything)") \
+diff --git a/src/rephase.cpp b/src/rephase.cpp
+index f684312..6c23ec9 100644
+--- a/src/rephase.cpp
++++ b/src/rephase.cpp
+@@ -21,7 +21,7 @@ namespace CaDiCaL {
+ bool Internal::rephasing () {
+   if (!opts.rephase)
+     return false;
+-  if (opts.forcephase)
++  if (eff_forcephase ())
+     return false;
+   if (opts.rephase == 2) {
+     if (stable)
+@@ -38,7 +38,7 @@ bool Internal::rephasing () {
+ 
+ char Internal::rephase_original () {
+   stats.rephased.original++;
+-  signed char val = opts.phase ? 1 : -1; // original = initial
++  signed char val = eff_phase () ? 1 : -1; // original = initial
+   PHASE ("rephase", stats.rephased.total, "switching to original phase %d",
+          val);
+   for (auto idx : vars)
+@@ -50,7 +50,7 @@ char Internal::rephase_original () {
+ 
+ char Internal::rephase_inverted () {
+   stats.rephased.inverted++;
+-  signed char val = opts.phase ? -1 : 1; // original = -initial
++  signed char val = eff_phase () ? -1 : 1; // original = -initial
+   PHASE ("rephase", stats.rephased.total,
+          "switching to inverted original phase %d", val);
+   for (auto idx : vars)

@@ -1,0 +1,9 @@
+[submodule "third_party/cadical"]
+	path = third_party/cadical
+	url = https://github.com/arminbiere/cadical.git
+[submodule "third_party/lrat-trim"]
+	path = third_party/lrat-trim
+	url = https://github.com/arminbiere/lrat-trim.git
+[submodule "third_party/drat-trim"]
+	path = third_party/drat-trim
+	url = https://github.com/marijnheule/drat-trim.git
