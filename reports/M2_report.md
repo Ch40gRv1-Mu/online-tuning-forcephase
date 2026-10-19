@@ -98,3 +98,16 @@ D 与 F− 互有胜负：F− 更快 151 例（≥2× 更快 57 例），更慢
 - 预设门槛（SBS–VBS < 2% 时先做机制分析）未触发；但 oracle 相对 validation-SBS（I−）只有约 2.4%，相对 I− 达到 5% 的实用目标在静态意义下不可能，M3/M4 主要回答“能否预测、在线信息是否有用”。
 - 新增次要变体（开发集决定，见 EXPERIMENT_LOG 20:25）：I− prefix → NEGATIVE（NATIVE_INIT_NEG，phase 固定 0 只切 forcephase），与 D prefix 结果分开报告。
 - 局限：单一 cutoff 300 s；seed 0；family 组是保守别名 + isohash 合并，部分 GBD 家族本身较粗（如 `hardware`、`cryptography`）。
+
+## 7. Audit v2 更正与补充（2026-10-19，事后审计）
+
+- **机制措辞收窄**（[audit_v2/ablation_pairs.md](audit_v2/ablation_pairs.md)，只比较仅差一个因素的配置对，带家族 cluster 区间）：
+  - D → D/no-R（只关 rephase，及其触发的 walk/warmup）：PAR2 −10.0% [−21.7, −2.0]，SAT −61、UNSAT +11 —— 证据充分；
+  - I−/no-R → F−（rephase 均关、初始均负，只改为强制负决策）：−3.8% [−7.7, +0.2]，SAT −10、UNSAT −14 —— 第 4 节“同样关闭 rephase 时强制方向比使用 saved 相位更差”**只有点估计支持，CI 跨 0**；更准确的说法是“未见强制方向优于 saved/target，点估计更差”。另外 F− 与 I−/no-R 的差别是“强制负”对比“target + saved（负初始）”，不仅是 saved；
+  - I−/no-R → S（只关 target）：−2.1% [−7.3, +1.2]，SAT −18、UNSAT +8，不显著；
+  - D → P−（只强制自由决策为负）：−11.6% [−21.7, −5.3]，SAT −52、UNSAT −9 —— 证据充分；P− → F−：+0.7% [−0.5, +1.9]，不显著；
+  - D → I−（只改初始/original 方向）：+2.7% [+0.3, +5.6]；D/no-R → I−/no-R：+2.9% [−0.4, +7.3]，不显著。
+  - 第 4 节第 1 点“关闭 rephase 是 SAT 损失的主因”应读作：沿 D → D/no-R → I−/no-R → F− 这一条路径分解时，SAT 解出数的变化为 −61、+17、−10；分解依赖路径顺序，交互作用未检验。
+- **完整家族表**：[audit_v2/family_effects.md](audit_v2/family_effects.md) 给出全部 89 个家族组在 D、I−、F−、F+、D/no-R、I−/no-R、S、P−、F−→D@1e4、F−→I−@1e4 下的 solved 与 PAR2（相对 D 的 |log2 比| > 0.1：F− 更好 16 组 / 更差 31 组；I− 22 / 9；P− 13 / 35；F−→D 24 / 11）。
+- 编码翻转实验只覆盖“原编码下 D 或 F− 解出”的 388 个实例（第 5 节）；其家族层面的结论只适用于这些实例所在家族中被翻转的子集，不能推广为所有 F− 获胜家族的原因。
+

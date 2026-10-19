@@ -8,7 +8,7 @@
 - “保持”分支 = census 中的 D 运行（遥测开启，从头 NATIVE）；
 - “切换”分支 = `sw{K}_C`：同样从头 NATIVE，在第一个冲突数 ≥ K 的自然 restart 处切到 NEGATIVE（轨道 C）并保持到结束；
 - 两个分支都是从进程启动开始、总预算 T = 300 s 的完整运行（prefix 计入时间）；
-- 用检查点 digest 验证两分支在决策点的状态相同：**4,233 个重放中 4,230 个 digest 一致**〔**更正（audit v2，2026-10-19）**：原分母错误。由严格门禁脚本从数据生成的计数（[audit_v2/../../results/audit_v2/m3/gate_summary.md](../results/audit_v2/m3/gate_summary.md)）：全部 8 组共 5,887 次重放，其中 5,884 个有效配对、3 个 `censored_unmatched`；训练用的 6 组（轨道 C，D 与 I− prefix）共 4,391 次重放，4,388 个有效配对、3 个 `censored_unmatched`〕；其余 3 个在 1e5 处因计时波动未在 300 s 内到达检查点（双方都 timeout，标签删失，成本相同）。
+- 用检查点 digest 验证两分支在决策点的状态相同：**4,233 个重放中 4,230 个 digest 一致**〔**更正（audit v2，2026-10-19）**：原分母错误。由严格门禁脚本从数据生成的计数（[results/audit_v2/m3/gate_summary.md](../results/audit_v2/m3/gate_summary.md)）：全部 8 组共 5,887 次重放，其中 5,884 个有效配对、3 个 `censored_unmatched`；训练用的 6 组（轨道 C，D 与 I− prefix）共 4,391 次重放，4,388 个有效配对、3 个 `censored_unmatched`〕；其余 3 个在 1e5 处因计时波动未在 300 s 内到达检查点（双方都 timeout，标签删失，成本相同）。
 - 同样构造了 I− prefix → NEGATIVE（`sw{K}_Cin`，NATIVE_INIT_NEG 变体）、F− prefix → NATIVE @1e4（`sw10k_Crev`，反向）以及轨道 P @1e4（`sw10k_P`）。
 - 实例在 K 之前已解出则没有决策点（D prefix：1e3 时 48 例、1e5 时 119 例），该实例的部署成本就是基础运行成本。
 
