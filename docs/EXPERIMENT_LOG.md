@@ -63,3 +63,9 @@ M5 唯一主要候选的选择规则（在看到 M4-lite 结果之前固定）�
 - 冻结文件 `configs/m5_freeze.json`，held-out 实验 `configs/experiments/m5_heldout.json`：test（204 例，21 组）+ t2026（304 例）× seed 0/1/2 × {D, I−, F−, F+, F−→D @1e3/@1e4/@1e5, D→F− @1e4, M3 一次选择器（time-only）}，共 13,716 次运行，T = 300 s，LRAT 证明；静态选择器（`configs/policies/static_selector_DF.json`）与随机切换时机基线由分支运行派生；分析脚本 `scripts/m5_eval.py`（已在 dev 数据上干跑）。
 - 主假设（只对候选检验）：family-disjoint test 上相对 validation-SBS（I−）mean PAR2 降低 ≥ 5%，95% 家族组 cluster bootstrap CI 不含 0，且每 seed 平均 solved 不低于 I−。根据 dev，预计**不会**达到。次要比较见冻结文件。
 - 冻结提交打 git tag `m5-freeze`。之后若发现错误需要重跑，将在此记录原因与新的冻结点；不会根据 test 结果修改候选、阈值或指标。
+
+## 2026-10-19 02:00 — M5 完成
+
+- held-out 运行 13,716 次全部完成（Slurm 727087，10 个节点），3,942 solved 全部验证，0 wrong/crash/memout/unverified。
+- 评估严格按冻结文件与 tag `m5-freeze` 的脚本执行（`git diff m5-freeze` 对冻结文件、实验定义、策略与评估脚本为空）。之后只修改了 `scripts/m5_eval.py` 中两幅图的配色与坐标标签（数值输出不变），并新增描述性事后分层脚本 `scripts/m5_posthoc.py`。
+- 主假设未成立：候选 F−→D @1e4 相对 I− 为 −1.0% [−3.4, +1.7]（test），平均 solved 95.0 vs 97.3。没有根据 test 结果修改候选、阈值、指标或数据。

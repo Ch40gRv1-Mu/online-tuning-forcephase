@@ -15,14 +15,15 @@ Solver CPU = user+sys CPU of solver processes incl. LRAT proof output; checker C
 | m3in_replay_100k | 677 | solved 190, timeout 487 | 46.0 | 0.13 |
 | m3in_replay_10k | 742 | solved 236, timeout 506 | 47.9 | 0.14 |
 | m3in_replay_1k | 754 | solved 249, timeout 505 | 48.1 | 0.14 |
-| m4_mode | 46 | solved 46 | 0.8 | 0.02 |
-| m4_rev_D_100k | 24 | solved 24 | 0.5 | 0.01 |
-| m4_rev_D_1k | 21 | solved 21 | 0.4 | 0.01 |
-| m4_rev_I_100k | 19 | solved 19 | 0.2 | 0.00 |
-| m4_rev_I_10k | 59 | solved 59 | 0.9 | 0.02 |
-| m4_rev_I_1k | 25 | solved 25 | 0.3 | 0.01 |
+| m4_mode | 1634 | solved 722, timeout 912 | 89.6 | 0.28 |
+| m4_rev_D_100k | 700 | solved 275, timeout 425 | 42.0 | 0.15 |
+| m4_rev_D_1k | 763 | solved 327, timeout 436 | 43.2 | 0.15 |
+| m4_rev_I_100k | 700 | solved 275, timeout 425 | 42.3 | 0.15 |
+| m4_rev_I_10k | 1490 | solved 619, timeout 871 | 86.5 | 0.29 |
+| m4_rev_I_1k | 763 | solved 316, timeout 447 | 44.0 | 0.15 |
+| m5_heldout | 13716 | solved 3942, timeout 9774 | 917.7 | 2.58 |
 | smoke | 80 | solved 29, timeout 51 | 0.2 | 0.00 |
-| **total** | 16585 | | 854.7 | 4.04 |
+| **total** | 36157 | | 2117.0 | 7.73 |
 
 | attempt log (job name) | starts | done | runner errors | interrupted |
 |---|---|---|---|---|
@@ -31,11 +32,19 @@ Solver CPU = user+sys CPU of solver processes incl. LRAT proof output; checker C
 | m3_replay_10k+6more | 8252 | 8252 | 0 | 0 |
 | m3_replay_1k | 769 | 769 | 0 | 0 |
 | m3in_replay_1k | 754 | 754 | 0 | 0 |
-| m4_rev_D_1k+5more | 577 | 194 | 0 | 383 |
+| m4_rev_D_1k+5more | 6050 | 6050 | 0 | 0 |
+| m5_heldout | 13716 | 13716 | 0 | 0 |
 | smoke | 80 | 80 | 0 | 0 |
 
-Slurm allocations of these jobs: 25.4 node-hours (4871 allocated logical-CPU-hours; exclusive nodes, 48 solver processes per 192-CPU node).
+Slurm allocations of these jobs: 56.9 node-hours (10931 allocated logical-CPU-hours; exclusive nodes, 48 solver processes per 192-CPU node).
 
 
 Other compute not in the ledger: builds, M0 suite (< 1 CPU-h), static feature extraction (seconds per instance, recorded per instance in results/static_features_*.csv), model training (minutes on one core).
 
+
+Disclosure: the very first smoke submission (Slurm job 726755, before the runner's log compression was switched from the
+missing `zstd` binary to Python gzip) ended with 80 runner errors and no completed solver run; its attempt log was deleted
+when the smoke test was re-run, so it is not counted above (its cost was under one node-minute). No other attempt logs
+were removed. The pooled jobs `m3_replay_1k` and `m3in_replay_1k` (726807, 726815) were submitted with a comma-separated
+experiment list that `sbatch --export` truncated to the first experiment; they ran only that experiment and the rest was
+resubmitted (726819) — no runs were duplicated because run ids are content-addressed.

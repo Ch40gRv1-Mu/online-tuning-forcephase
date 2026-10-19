@@ -8,7 +8,14 @@ Research question: **When should a CDCL SAT solver use its native phase policy, 
 
 ## 结论速览
 
-<!-- results summary (filled after M5) -->
+状态：M0–M5 全部完成（2026-10-19）；结论是**有边界的负结果**。数据：SAT Competition 2023–2026 主赛道（≤100 MB），CaDiCaL 3.0.1，T = 300 s，所有 solved 结果经模型检查或 LRAT 证明检查。
+
+- **强制负分支整体有害**：dev 上比 stock default 少解 58 个（PAR2 −10.8%），held-out test 上 −29%；损失主要在可满足实例。
+- **机制**：主要来自 forcephase 同时关闭 rephasing（对 SAT 有害、对 UNSAT 略有利）；在同样关闭 rephase 时，强制方向仍比使用 saved 相位差。
+- **编码相关**：F− 获胜的家族（如 brent-equations）在变量符号全局翻转后变为大幅劣势，随机翻转后优势消失。
+- **不可预测**：静态、time-only 与在线一次选择器（同状态确定性重放标签，家族分组嵌套 CV）都没有超过“从不切换”。
+- **冻结评估**：预注册候选“先强制负 1e4 冲突再原生”在 family-disjoint test 上相对 validation-SBS（仅初始负）为 −1.0% [−3.4, +1.7]，**未达到 ≥5% 的预设目标**；在 2026 年实例上比 stock default 好 1.3% [+0.2, +2.5]，但不优于仅初始负。
+- **工程**：controller 关闭 / telemetry-only 与上游搜索逐项相同；遥测中位开销 0.08%；全部 36,157 次运行、2,117 CPU 小时有账本。
 
 ## 文档
 
@@ -72,3 +79,15 @@ $FP_PY scripts/analyze_m2.py --runs results/m2_census/runs.csv --diag results/m2
 - 默认 `phase=1`：裸 `--forcephase` 强制**正**方向；负分支是 `--forcephase=1 --phase=0`。
 - stock 默认包含 target phase 与 rephasing，不是“纯 phase saving”；`--forcephase` 同时关闭 rephasing。
 - 强制负只作用于自由决策，单位传播仍产生正文字。
+
+## 依赖与许可证
+
+| 依赖 | 固定版本 | 许可证 | 用途 |
+|---|---|---|---|
+| [CaDiCaL](https://github.com/arminbiere/cadical) | `c60730422e758ef1cebe7aeddf2dda31c996bf04`（3.0.1） | MIT（`third_party/cadical/LICENSE`） | 求解器；`patches/` 与 `solver/` 是对它的修改，构建产物保留上游许可证文本 |
+| [lrat-trim](https://github.com/arminbiere/lrat-trim) | `b30f400f4ee5c32b77ee566a7c006081b521534f` | MIT 型（`third_party/lrat-trim/LICENSE`） | LRAT 证明检查 |
+| [drat-trim](https://github.com/marijnheule/drat-trim) | `2e3b2dc0ecf938addbd779d42877b6ed69d9a985` | MIT 型（`third_party/drat-trim/LICENSE`） | 备用 DRAT 检查（主流程未使用） |
+| Python 分析环境 | `pyproject.toml` + `uv.lock`（numpy 1.26.4、scipy 1.13.1、pandas 2.2.2、matplotlib 3.9.2、scikit-learn 1.5.2） | 各自开源许可证 | 汇总、统计、作图、M3 模型 |
+| benchmark | GBD / SAT Competition 2023–2026（见 `benchmarks/SOURCES.md`） | 按竞赛与 GBD 发布条款 | 不提交 CNF，只提交 manifest 与校验和 |
+
+运行器 `scripts/fprun.py`、校验与变换工具 `tools/*.c` 只依赖 C/C++ 编译器与 Python 标准库。

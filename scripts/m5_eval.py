@@ -155,15 +155,16 @@ def main():
             ax.scatter(fam.delta, yy, s=np.clip(fam.n * 4, 10, 140), color=fs.COLORS["D"], edgecolors="white",
                        linewidths=0.6, zorder=3)
             ax.set_yticks(yy)
-            ax.set_yticklabels([f"{g} (n={r.n})" for g, r in fam.iterrows()], fontsize=7)
-            ax.set_xlabel(f"mean PAR2 difference, candidate − {sbs} (s; < 0: candidate better)")
+            ax.set_yticklabels([f"{g} (n={int(r.n)})" for g, r in fam.iterrows()], fontsize=7)
+            ax.set_xlabel(f"PAR2 difference vs {sbs.split(' ')[0]} (s; < 0: candidate better)")
             ax.set_title("Held-out test families", fontsize=10)
             fs.style_axes(ax)
             fig.tight_layout()
             fig.savefig(os.path.join(a.out, "figures", "test_family_delta.png"))
             plt.close(fig)
             fig, ax = plt.subplots(figsize=(6.4, 4.2), dpi=150)
-            pal = [fs.COLORS["D"], fs.COLORS["Fminus"], fs.COLORS["Iminus"], fs.COLORS["Fplus"]]
+            # colour follows the entity, consistent with the other figures
+            pal = [fs.COLORS["Fplus"], fs.COLORS["Iminus"], fs.COLORS["D"], fs.COLORS["Fminus"]]
             for k, name in enumerate([cand, sbs, "D (stock)", "F− (forced negative)"]):
                 if name not in c:
                     continue
