@@ -15,6 +15,7 @@ Large runtime data is kept outside git under
 | `runs/attempts/*.jsonl` | every attempt (start/done/runner-error) for the compute ledger | `scripts/fprun.py` |
 | `logs/slurm/` | Slurm job stdout/stderr | `scripts/slurm_submit.sh` |
 | `logs/` | other job logs (downloads) | scripts |
+| `repro_check/` | clean-clone reproduction test (clone, its own `FP_DATA`, outputs, log) | `scripts/repro_small.sh` |
 
 Node-local scratch (not persistent): `FP_LOCAL=/tmp/fp_local_$USER` inside the gs-srun container (tmpfs) holds
 decompressed/scrambled CNFs and LRAT proofs; proofs are deleted after checking (size recorded).

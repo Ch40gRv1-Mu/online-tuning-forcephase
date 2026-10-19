@@ -52,3 +52,8 @@ train / val 分开看（PAR2）：F−→D@1e4 在 train 333.5（I− 335.4，D 
 规则：在所有在 dev 上评估过的可部署非静态策略（M3 out-of-fold 选择器、M4 固定调度）中取 dev 平均 PAR2 最低者。结果：**F−→D @1e4**（配置 `sw10k_Crev`：变量创建前设为 NEGATIVE=(1,0)，在第一个冲突数 ≥ 10,000 的自然 restart 处切换到 NATIVE=(0,1)，之后不再切换；不使用任何观测）。
 
 预期（基于 dev，**不是**结论）：相对 stock D 可能有约 3% 的改进；相对 validation-SBS I− 的预设 ≥5% 目标在 dev 上远未达到（+0.8%），预计 held-out 上也达不到。按协议，主假设只对这个冻结候选检验，其余列为次要比较。
+
+## 5. 本阶段命令与 compute
+
+`scripts/slurm_submit.sh configs/experiments/m4_rev_D_1k.json,...,m4_mode.json 8`（6 个实验，6,050 次运行，Slurm 726937）；`scripts/collect.py ... --out results/m4/runs.csv`；`scripts/analyze_m4.py`。求解器 CPU 约 348 h（见 [COMPUTE_LEDGER.md](COMPUTE_LEDGER.md) 中 `m4_*` 行），检查 1.2 h。
+
