@@ -1,0 +1,12 @@
+Genesis image version '1_26' found.
+{
+ "instances": 20,
+ "equivalence_checks": 100,
+ "equivalence_failures": [],
+ "record_checks": 40,
+ "record_failures": [],
+ "runs_with_compaction": 10,
+ "same_hook_pairs": 110,
+ "max_sample_epochs": 6
+}
+rc 0 wall 507 cpu_s 1495

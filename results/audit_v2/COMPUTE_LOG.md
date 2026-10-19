@@ -12,3 +12,8 @@
 | M3 comparison, feature signal, policy consistency | host | ~120 | |
 | M1 overhead retest (864 runs) | 1 exclusive node, 16 workers | see ledger | solver CPU summed from result records in reports/audit_v2/COMPUTE_AUDIT_V2.md |
 | retest analysis | host | ~30 | |
+| v2 controller integration test (first attempt, killed at 1 h Slurm limit, no conflict limit) | container, 20 procs | ~72000 (upper bound, 20 procs x 1 h) | no result; disclosed |
+| v2 controller integration test (conflict limit 1e5) | container, 20 procs | 1495 | 20 instances |
+| M0 suite on fpc2/fpc2-check | container, 32 procs | ~1500 | 7,838 checks |
+| M5 independent recheck | host | ~22 | |
+| family effects table | host | ~10 | |

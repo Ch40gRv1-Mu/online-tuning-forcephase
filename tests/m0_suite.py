@@ -34,7 +34,9 @@ import tempfile
 import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-B = lambda v: os.path.join(ROOT, "build", v, "cadical")
+# M0_FPC=fpc2 runs the suite against the audit-v2 controller (fpc2 / fpc2-check)
+_FPC = os.environ.get("M0_FPC", "fpc")
+B = lambda v: os.path.join(ROOT, "build", {"fpc": _FPC, "fpc-check": _FPC + "-check"}.get(v, v), "cadical")
 LRAT = os.path.join(ROOT, "build", "tools", "lrat-trim")
 CHECKMODEL = os.path.join(ROOT, "build", "tools", "checkmodel")
 

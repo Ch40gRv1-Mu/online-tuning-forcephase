@@ -1,0 +1,2760 @@
+{
+ "instances": 20,
+ "equivalence_checks": 100,
+ "equivalence_failures": [],
+ "record_checks": 40,
+ "record_failures": [],
+ "runs_with_compaction": 10,
+ "same_hook_pairs": 110,
+ "max_sample_epochs": 6,
+ "details": [
+  {
+   "instance": "008e7716c690",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100003,
+       "decisions": 789279,
+       "propagations": 25178912,
+       "rephased": 13,
+       "restarts": 5194
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100003,
+       "decisions": 789279,
+       "propagations": 25178912,
+       "rephased": 13,
+       "restarts": 5194
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100003,
+       "decisions": 789279,
+       "propagations": 25178912,
+       "rephased": 13,
+       "restarts": 5194
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100003,
+       "decisions": 789279,
+       "propagations": 25178912,
+       "rephased": 13,
+       "restarts": 5194
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100007,
+       "decisions": 453804,
+       "propagations": 25170672,
+       "restarts": 3575
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100007,
+       "decisions": 453804,
+       "propagations": 25170672,
+       "restarts": 3575
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 684261,
+       "propagations": 23855044,
+       "rephased": 12,
+       "restarts": 3908
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 684261,
+       "propagations": 23855044,
+       "rephased": 12,
+       "restarts": 3908
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 217809,
+       "propagations": 25151110,
+       "restarts": 2372
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 217809,
+       "propagations": 25151110,
+       "restarts": 2372
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 4,
+     "epochs": 3,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 6,
+     "epochs": 3,
+     "problems": []
+    }
+   ],
+   "compacts": 2
+  },
+  {
+   "instance": "01bd0865ab69",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 45782,
+       "decisions": 244317,
+       "propagations": 122751275,
+       "rephased": 9,
+       "restarts": 3619
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 45782,
+       "decisions": 244317,
+       "propagations": 122751275,
+       "rephased": 9,
+       "restarts": 3619
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 45782,
+       "decisions": 244317,
+       "propagations": 122751275,
+       "rephased": 9,
+       "restarts": 3619
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 45782,
+       "decisions": 244317,
+       "propagations": 122751275,
+       "rephased": 9,
+       "restarts": 3619
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 46191,
+       "decisions": 131417,
+       "propagations": 161704018,
+       "restarts": 4566
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 46191,
+       "decisions": 131417,
+       "propagations": 161704018,
+       "restarts": 4566
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 52776,
+       "decisions": 262028,
+       "propagations": 173720927,
+       "rephased": 8,
+       "restarts": 3716
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 52776,
+       "decisions": 262028,
+       "propagations": 173720927,
+       "rephased": 8,
+       "restarts": 3716
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 59238,
+       "decisions": 162959,
+       "propagations": 163691739,
+       "rephased": 1,
+       "restarts": 6393
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 59238,
+       "decisions": 162959,
+       "propagations": 163691739,
+       "rephased": 1,
+       "restarts": 6393
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 6,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 6,
+     "problems": []
+    }
+   ],
+   "compacts": 5
+  },
+  {
+   "instance": "0205e2dffaef",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 181582,
+       "propagations": 135024650,
+       "rephased": 13,
+       "restarts": 2143
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 181582,
+       "propagations": 135024650,
+       "rephased": 13,
+       "restarts": 2143
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 181582,
+       "propagations": 135024650,
+       "rephased": 13,
+       "restarts": 2143
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 181582,
+       "propagations": 135024650,
+       "rephased": 13,
+       "restarts": 2143
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 191014,
+       "propagations": 139422070,
+       "restarts": 3490
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 191014,
+       "propagations": 139422070,
+       "restarts": 3490
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 185984,
+       "propagations": 138113831,
+       "rephased": 12,
+       "restarts": 3808
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 185984,
+       "propagations": 138113831,
+       "rephased": 12,
+       "restarts": 3808
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 181582,
+       "propagations": 135024650,
+       "rephased": 13,
+       "restarts": 2143
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 181582,
+       "propagations": 135024650,
+       "rephased": 13,
+       "restarts": 2143
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 4,
+     "epochs": 5,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 5,
+     "problems": []
+    }
+   ],
+   "compacts": 4
+  },
+  {
+   "instance": "028d0cc7af63",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 174292,
+       "propagations": 43268100,
+       "rephased": 13,
+       "restarts": 5299
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 174292,
+       "propagations": 43268100,
+       "rephased": 13,
+       "restarts": 5299
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 174292,
+       "propagations": 43268100,
+       "rephased": 13,
+       "restarts": 5299
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 174292,
+       "propagations": 43268100,
+       "rephased": 13,
+       "restarts": 5299
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 165873,
+       "propagations": 43088428,
+       "restarts": 6483
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 165873,
+       "propagations": 43088428,
+       "restarts": 6483
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 90961,
+       "decisions": 160478,
+       "propagations": 40122027,
+       "rephased": 12,
+       "restarts": 5096
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 90961,
+       "decisions": 160478,
+       "propagations": 40122027,
+       "rephased": 12,
+       "restarts": 5096
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 174908,
+       "propagations": 41240591,
+       "rephased": 1,
+       "restarts": 8178
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 174908,
+       "propagations": 41240591,
+       "rephased": 1,
+       "restarts": 8178
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 4,
+     "epochs": 4,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 3,
+     "problems": []
+    }
+   ],
+   "compacts": 3
+  },
+  {
+   "instance": "0336f81b60ba",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 266346,
+       "propagations": 1725495,
+       "rephased": 13,
+       "restarts": 3477
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 266346,
+       "propagations": 1725495,
+       "rephased": 13,
+       "restarts": 3477
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 266346,
+       "propagations": 1725495,
+       "rephased": 13,
+       "restarts": 3477
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 266346,
+       "propagations": 1725495,
+       "rephased": 13,
+       "restarts": 3477
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 456618,
+       "propagations": 2023620,
+       "restarts": 5669
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 456618,
+       "propagations": 2023620,
+       "restarts": 5669
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 297290,
+       "propagations": 1873625,
+       "rephased": 12,
+       "restarts": 4018
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 297290,
+       "propagations": 1873625,
+       "rephased": 12,
+       "restarts": 4018
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 266346,
+       "propagations": 1725495,
+       "rephased": 13,
+       "restarts": 3477
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 266346,
+       "propagations": 1725495,
+       "rephased": 13,
+       "restarts": 3477
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 2,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 2,
+     "problems": []
+    }
+   ],
+   "compacts": 1
+  },
+  {
+   "instance": "07e6413459f9",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 240195,
+       "propagations": 101014783,
+       "rephased": 13,
+       "restarts": 6424
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 240195,
+       "propagations": 101014783,
+       "rephased": 13,
+       "restarts": 6424
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 240195,
+       "propagations": 101014783,
+       "rephased": 13,
+       "restarts": 6424
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 240195,
+       "propagations": 101014783,
+       "rephased": 13,
+       "restarts": 6424
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 186168,
+       "propagations": 96793514,
+       "restarts": 6127
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 186168,
+       "propagations": 96793514,
+       "restarts": 6127
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 239854,
+       "propagations": 101420708,
+       "rephased": 12,
+       "restarts": 6626
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 239854,
+       "propagations": 101420708,
+       "rephased": 12,
+       "restarts": 6626
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 240195,
+       "propagations": 101014783,
+       "rephased": 13,
+       "restarts": 6424
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 240195,
+       "propagations": 101014783,
+       "rephased": 13,
+       "restarts": 6424
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 2,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 2,
+     "problems": []
+    }
+   ],
+   "compacts": 1
+  },
+  {
+   "instance": "0c9da400944b",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 21020,
+       "decisions": 187994,
+       "propagations": 236678,
+       "rephased": 6,
+       "restarts": 104
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 21020,
+       "decisions": 187994,
+       "propagations": 236678,
+       "rephased": 6,
+       "restarts": 104
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 21020,
+       "decisions": 187994,
+       "propagations": 236678,
+       "rephased": 6,
+       "restarts": 104
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 21020,
+       "decisions": 187994,
+       "propagations": 236678,
+       "rephased": 6,
+       "restarts": 104
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100005,
+       "decisions": 659675,
+       "propagations": 1032731,
+       "restarts": 214
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100005,
+       "decisions": 659675,
+       "propagations": 1032731,
+       "restarts": 214
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 30221,
+       "decisions": 270765,
+       "propagations": 345016,
+       "rephased": 6,
+       "restarts": 228
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 30221,
+       "decisions": 270765,
+       "propagations": 345016,
+       "rephased": 6,
+       "restarts": 228
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 21020,
+       "decisions": 187994,
+       "propagations": 236678,
+       "rephased": 6,
+       "restarts": 104
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 21020,
+       "decisions": 187994,
+       "propagations": 236678,
+       "rephased": 6,
+       "restarts": 104
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 5,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 4,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "0ccb0f855352",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 137280,
+       "propagations": 6828122,
+       "rephased": 13,
+       "restarts": 1820
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 137280,
+       "propagations": 6828122,
+       "rephased": 13,
+       "restarts": 1820
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 137280,
+       "propagations": 6828122,
+       "rephased": 13,
+       "restarts": 1820
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 137280,
+       "propagations": 6828122,
+       "rephased": 13,
+       "restarts": 1820
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 202672,
+       "propagations": 7319248,
+       "restarts": 1451
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 202672,
+       "propagations": 7319248,
+       "restarts": 1451
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100007,
+       "decisions": 132810,
+       "propagations": 6744152,
+       "rephased": 12,
+       "restarts": 141
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100007,
+       "decisions": 132810,
+       "propagations": 6744152,
+       "rephased": 12,
+       "restarts": 141
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 137280,
+       "propagations": 6828122,
+       "rephased": 13,
+       "restarts": 1820
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 137280,
+       "propagations": 6828122,
+       "rephased": 13,
+       "restarts": 1820
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 4,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "0d81711a3d73",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 368682,
+       "propagations": 4079862,
+       "rephased": 13,
+       "restarts": 5354
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 368682,
+       "propagations": 4079862,
+       "rephased": 13,
+       "restarts": 5354
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 368682,
+       "propagations": 4079862,
+       "rephased": 13,
+       "restarts": 5354
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 368682,
+       "propagations": 4079862,
+       "rephased": 13,
+       "restarts": 5354
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100003,
+       "decisions": 378874,
+       "propagations": 3709016,
+       "restarts": 5672
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100003,
+       "decisions": 378874,
+       "propagations": 3709016,
+       "restarts": 5672
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 386594,
+       "propagations": 4082308,
+       "rephased": 12,
+       "restarts": 6003
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 386594,
+       "propagations": 4082308,
+       "rephased": 12,
+       "restarts": 6003
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 368682,
+       "propagations": 4079862,
+       "rephased": 13,
+       "restarts": 5354
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 368682,
+       "propagations": 4079862,
+       "rephased": 13,
+       "restarts": 5354
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 3,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 3,
+     "problems": []
+    }
+   ],
+   "compacts": 2
+  },
+  {
+   "instance": "0e1d562093d5",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 200621,
+       "propagations": 18582146,
+       "rephased": 13,
+       "restarts": 1453
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 200621,
+       "propagations": 18582146,
+       "rephased": 13,
+       "restarts": 1453
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 200621,
+       "propagations": 18582146,
+       "rephased": 13,
+       "restarts": 1453
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 200621,
+       "propagations": 18582146,
+       "rephased": 13,
+       "restarts": 1453
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 127779,
+       "propagations": 11025898,
+       "restarts": 1065
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 127779,
+       "propagations": 11025898,
+       "restarts": 1065
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 167732,
+       "propagations": 13752265,
+       "rephased": 12,
+       "restarts": 1073
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100004,
+       "decisions": 167732,
+       "propagations": 13752265,
+       "rephased": 12,
+       "restarts": 1073
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 200621,
+       "propagations": 18582146,
+       "rephased": 13,
+       "restarts": 1453
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 200621,
+       "propagations": 18582146,
+       "rephased": 13,
+       "restarts": 1453
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 5,
+     "epochs": 3,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 5,
+     "epochs": 3,
+     "problems": []
+    }
+   ],
+   "compacts": 2
+  },
+  {
+   "instance": "1009c791cee5",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 68576,
+       "decisions": 416798,
+       "propagations": 75567760,
+       "rephased": 11,
+       "restarts": 7158
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 68576,
+       "decisions": 416798,
+       "propagations": 75567760,
+       "rephased": 11,
+       "restarts": 7158
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 68576,
+       "decisions": 416798,
+       "propagations": 75567760,
+       "rephased": 11,
+       "restarts": 7158
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 68576,
+       "decisions": 416798,
+       "propagations": 75567760,
+       "rephased": 11,
+       "restarts": 7158
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 50834,
+       "decisions": 315133,
+       "propagations": 58848862,
+       "restarts": 4365
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 50834,
+       "decisions": 315133,
+       "propagations": 58848862,
+       "restarts": 4365
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 483180,
+       "propagations": 98442791,
+       "rephased": 12,
+       "restarts": 8143
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 483180,
+       "propagations": 98442791,
+       "rephased": 12,
+       "restarts": 8143
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 493549,
+       "propagations": 93354978,
+       "rephased": 1,
+       "restarts": 5696
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100000,
+       "decisions": 493549,
+       "propagations": 93354978,
+       "rephased": 1,
+       "restarts": 5696
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 6,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 6,
+     "problems": []
+    }
+   ],
+   "compacts": 5
+  },
+  {
+   "instance": "101968045040",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 469748,
+       "propagations": 64080860,
+       "rephased": 13,
+       "restarts": 6635
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 469748,
+       "propagations": 64080860,
+       "rephased": 13,
+       "restarts": 6635
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 469748,
+       "propagations": 64080860,
+       "rephased": 13,
+       "restarts": 6635
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 469748,
+       "propagations": 64080860,
+       "rephased": 13,
+       "restarts": 6635
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 617793,
+       "propagations": 32942669,
+       "restarts": 8209
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 617793,
+       "propagations": 32942669,
+       "restarts": 8209
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 398203,
+       "propagations": 56800273,
+       "rephased": 12,
+       "restarts": 4880
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100001,
+       "decisions": 398203,
+       "propagations": 56800273,
+       "rephased": 12,
+       "restarts": 4880
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 469748,
+       "propagations": 64080860,
+       "rephased": 13,
+       "restarts": 6635
+      }
+     ],
+     "v2": [
+      0,
+      {
+       "conflicts": 100002,
+       "decisions": 469748,
+       "propagations": 64080860,
+       "rephased": 13,
+       "restarts": 6635
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 3,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 3,
+     "problems": []
+    }
+   ],
+   "compacts": 2
+  },
+  {
+   "instance": "r3_0",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 4449,
+       "decisions": 5858,
+       "propagations": 156995,
+       "rephased": 2,
+       "restarts": 102
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 4449,
+       "decisions": 5858,
+       "propagations": 156995,
+       "rephased": 2,
+       "restarts": 102
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 4449,
+       "decisions": 5858,
+       "propagations": 156995,
+       "rephased": 2,
+       "restarts": 102
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 4449,
+       "decisions": 5858,
+       "propagations": 156995,
+       "rephased": 2,
+       "restarts": 102
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 1332,
+       "decisions": 1541,
+       "propagations": 47987,
+       "restarts": 3
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 1332,
+       "decisions": 1541,
+       "propagations": 47987,
+       "restarts": 3
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 1332,
+       "decisions": 1541,
+       "propagations": 47987,
+       "restarts": 3
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 1332,
+       "decisions": 1541,
+       "propagations": 47987,
+       "restarts": 3
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 3532,
+       "decisions": 4224,
+       "propagations": 123900,
+       "rephased": 1,
+       "restarts": 40
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 3532,
+       "decisions": 4224,
+       "propagations": 123900,
+       "rephased": 1,
+       "restarts": 40
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 1,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 1,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "r3_1",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 28016,
+       "decisions": 36347,
+       "propagations": 1078835,
+       "rephased": 7,
+       "restarts": 515
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 28016,
+       "decisions": 36347,
+       "propagations": 1078835,
+       "rephased": 7,
+       "restarts": 515
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 28016,
+       "decisions": 36347,
+       "propagations": 1078835,
+       "rephased": 7,
+       "restarts": 515
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 28016,
+       "decisions": 36347,
+       "propagations": 1078835,
+       "rephased": 7,
+       "restarts": 515
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 37485,
+       "decisions": 43321,
+       "propagations": 1434029,
+       "restarts": 474
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 37485,
+       "decisions": 43321,
+       "propagations": 1434029,
+       "restarts": 474
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 30429,
+       "decisions": 44964,
+       "propagations": 1189323,
+       "rephased": 6,
+       "restarts": 1191
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 30429,
+       "decisions": 44964,
+       "propagations": 1189323,
+       "rephased": 6,
+       "restarts": 1191
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 28016,
+       "decisions": 36347,
+       "propagations": 1078835,
+       "rephased": 7,
+       "restarts": 515
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 28016,
+       "decisions": 36347,
+       "propagations": 1078835,
+       "rephased": 7,
+       "restarts": 515
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 4,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "r3_2",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 2993,
+       "decisions": 3590,
+       "propagations": 109872,
+       "rephased": 1,
+       "restarts": 33
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 2993,
+       "decisions": 3590,
+       "propagations": 109872,
+       "rephased": 1,
+       "restarts": 33
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 2993,
+       "decisions": 3590,
+       "propagations": 109872,
+       "rephased": 1,
+       "restarts": 33
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 2993,
+       "decisions": 3590,
+       "propagations": 109872,
+       "rephased": 1,
+       "restarts": 33
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 1522,
+       "decisions": 1728,
+       "propagations": 55880,
+       "restarts": 4
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 1522,
+       "decisions": 1728,
+       "propagations": 55880,
+       "restarts": 4
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 1522,
+       "decisions": 1728,
+       "propagations": 55880,
+       "restarts": 4
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 1522,
+       "decisions": 1728,
+       "propagations": 55880,
+       "restarts": 4
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 2993,
+       "decisions": 3590,
+       "propagations": 109872,
+       "rephased": 1,
+       "restarts": 33
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 2993,
+       "decisions": 3590,
+       "propagations": 109872,
+       "rephased": 1,
+       "restarts": 33
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 1,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 1,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "r3_3",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 8994,
+       "decisions": 10054,
+       "propagations": 303119,
+       "rephased": 3,
+       "restarts": 42
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 8994,
+       "decisions": 10054,
+       "propagations": 303119,
+       "rephased": 3,
+       "restarts": 42
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 8994,
+       "decisions": 10054,
+       "propagations": 303119,
+       "rephased": 3,
+       "restarts": 42
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 8994,
+       "decisions": 10054,
+       "propagations": 303119,
+       "rephased": 3,
+       "restarts": 42
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 7291,
+       "decisions": 8168,
+       "propagations": 243910,
+       "restarts": 55
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 7291,
+       "decisions": 8168,
+       "propagations": 243910,
+       "restarts": 55
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 7291,
+       "decisions": 8168,
+       "propagations": 243910,
+       "restarts": 55
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 7291,
+       "decisions": 8168,
+       "propagations": 243910,
+       "restarts": 55
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 10119,
+       "decisions": 11210,
+       "propagations": 337161,
+       "rephased": 1,
+       "restarts": 43
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 10119,
+       "decisions": 11210,
+       "propagations": 337161,
+       "rephased": 1,
+       "restarts": 43
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "r3_4",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 38581,
+       "decisions": 51474,
+       "propagations": 1391507,
+       "rephased": 8,
+       "restarts": 1065
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 38581,
+       "decisions": 51474,
+       "propagations": 1391507,
+       "rephased": 8,
+       "restarts": 1065
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 38581,
+       "decisions": 51474,
+       "propagations": 1391507,
+       "rephased": 8,
+       "restarts": 1065
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 38581,
+       "decisions": 51474,
+       "propagations": 1391507,
+       "rephased": 8,
+       "restarts": 1065
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 37172,
+       "decisions": 41758,
+       "propagations": 1332706,
+       "restarts": 260
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 37172,
+       "decisions": 41758,
+       "propagations": 1332706,
+       "restarts": 260
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 37918,
+       "decisions": 49250,
+       "propagations": 1382399,
+       "rephased": 7,
+       "restarts": 888
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 37918,
+       "decisions": 49250,
+       "propagations": 1382399,
+       "rephased": 7,
+       "restarts": 888
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 38581,
+       "decisions": 51474,
+       "propagations": 1391507,
+       "rephased": 8,
+       "restarts": 1065
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 38581,
+       "decisions": 51474,
+       "propagations": 1391507,
+       "rephased": 8,
+       "restarts": 1065
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "r3_5",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 10546,
+       "decisions": 13285,
+       "propagations": 390750,
+       "rephased": 4,
+       "restarts": 139
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 10546,
+       "decisions": 13285,
+       "propagations": 390750,
+       "rephased": 4,
+       "restarts": 139
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 10546,
+       "decisions": 13285,
+       "propagations": 390750,
+       "rephased": 4,
+       "restarts": 139
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 10546,
+       "decisions": 13285,
+       "propagations": 390750,
+       "rephased": 4,
+       "restarts": 139
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 3597,
+       "decisions": 3967,
+       "propagations": 134578,
+       "restarts": 7
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 3597,
+       "decisions": 3967,
+       "propagations": 134578,
+       "restarts": 7
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 3597,
+       "decisions": 3967,
+       "propagations": 134578,
+       "restarts": 7
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 3597,
+       "decisions": 3967,
+       "propagations": 134578,
+       "restarts": 7
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      10,
+      {
+       "conflicts": 10546,
+       "decisions": 13285,
+       "propagations": 390750,
+       "rephased": 4,
+       "restarts": 139
+      }
+     ],
+     "v2": [
+      10,
+      {
+       "conflicts": 10546,
+       "decisions": 13285,
+       "propagations": 390750,
+       "rephased": 4,
+       "restarts": 139
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 3,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 1,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "php7",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 6768,
+       "decisions": 8124,
+       "propagations": 90016,
+       "rephased": 3,
+       "restarts": 279
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 6768,
+       "decisions": 8124,
+       "propagations": 90016,
+       "rephased": 3,
+       "restarts": 279
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 6768,
+       "decisions": 8124,
+       "propagations": 90016,
+       "rephased": 3,
+       "restarts": 279
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 6768,
+       "decisions": 8124,
+       "propagations": 90016,
+       "rephased": 3,
+       "restarts": 279
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 4749,
+       "decisions": 7261,
+       "propagations": 55104,
+       "restarts": 342
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 4749,
+       "decisions": 7261,
+       "propagations": 55104,
+       "restarts": 342
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 4749,
+       "decisions": 7261,
+       "propagations": 55104,
+       "restarts": 342
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 4749,
+       "decisions": 7261,
+       "propagations": 55104,
+       "restarts": 342
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 7081,
+       "decisions": 11453,
+       "propagations": 96906,
+       "rephased": 1,
+       "restarts": 620
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 7081,
+       "decisions": 11453,
+       "propagations": 96906,
+       "rephased": 1,
+       "restarts": 620
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 1,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 1,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  },
+  {
+   "instance": "php8",
+   "E": [
+    {
+     "case": "off",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 51727,
+       "decisions": 59776,
+       "propagations": 656132,
+       "rephased": 9,
+       "restarts": 1667
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 51727,
+       "decisions": 59776,
+       "propagations": 656132,
+       "rephased": 9,
+       "restarts": 1667
+      }
+     ]
+    },
+    {
+     "case": "telemetry",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 51727,
+       "decisions": 59776,
+       "propagations": 656132,
+       "rephased": 9,
+       "restarts": 1667
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 51727,
+       "decisions": 59776,
+       "propagations": 656132,
+       "rephased": 9,
+       "restarts": 1667
+      }
+     ]
+    },
+    {
+     "case": "fixed_neg",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 49946,
+       "decisions": 73905,
+       "propagations": 638606,
+       "restarts": 3483
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 49946,
+       "decisions": 73905,
+       "propagations": 638606,
+       "restarts": 3483
+      }
+     ]
+    },
+    {
+     "case": "sw10k_Crev",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 45938,
+       "decisions": 57263,
+       "propagations": 545013,
+       "rephased": 8,
+       "restarts": 1457
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 45938,
+       "decisions": 57263,
+       "propagations": 545013,
+       "rephased": 8,
+       "restarts": 1457
+      }
+     ]
+    },
+    {
+     "case": "oneshot",
+     "ok": true,
+     "v1": [
+      20,
+      {
+       "conflicts": 43073,
+       "decisions": 65121,
+       "propagations": 586272,
+       "rephased": 1,
+       "restarts": 2990
+      }
+     ],
+     "v2": [
+      20,
+      {
+       "conflicts": 43073,
+       "decisions": 65121,
+       "propagations": 586272,
+       "rephased": 1,
+       "restarts": 2990
+      }
+     ]
+    }
+   ],
+   "R": [
+    {
+     "case": "telemetry_w1000",
+     "same_hook_pairs": 2,
+     "epochs": 1,
+     "problems": []
+    },
+    {
+     "case": "repeat_w1000",
+     "same_hook_pairs": 4,
+     "epochs": 1,
+     "problems": []
+    }
+   ],
+   "compacts": 0
+  }
+ ]
+}

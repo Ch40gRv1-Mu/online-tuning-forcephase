@@ -1,0 +1,1326 @@
+{
+ "started": "2026-10-19T19:30:26",
+ "checks": {
+  "A_reference_validation": {
+   "formulas": 259,
+   "dpll_vs_enumeration_mismatches": [],
+   "sat": 195,
+   "unsat": 64
+  },
+  "A_small_vs_reference": {
+   "runs": 7252,
+   "failures": [],
+   "num_failures": 0,
+   "verified_models": 5460,
+   "verified_proofs": 1792
+  },
+  "B_switching_stress": {
+   "runs": 352,
+   "failures": [],
+   "num_failures": 0,
+   "answer_disagreements": {}
+  },
+  "B_switch_counts": {
+   "schedC_every": [
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "switches": 28,
+     "occ_conflicts": [
+      908,
+      55
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.5865546218487395
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "switches": 116,
+     "occ_conflicts": [
+      9489,
+      7363
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.7283002996687872
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "switches": 2,
+     "occ_conflicts": [
+      786,
+      633
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.7180816591056384
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "switches": 18,
+     "occ_conflicts": [
+      565,
+      310
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.697841726618705
+    }
+   ],
+   "schedP_every": [
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "switches": 28,
+     "occ_conflicts": [
+      908,
+      55
+     ],
+     "dec_p_override": 140,
+     "dec_neg_frac": 0.5865546218487395
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "switches": 102,
+     "occ_conflicts": [
+      10105,
+      8591
+     ],
+     "dec_p_override": 9689,
+     "dec_neg_frac": 0.7476848553925061
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "switches": 1,
+     "occ_conflicts": [
+      202,
+      2042
+     ],
+     "dec_p_override": 2181,
+     "dec_neg_frac": 0.9492723492723493
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "switches": 18,
+     "occ_conflicts": [
+      565,
+      310
+     ],
+     "dec_p_override": 411,
+     "dec_neg_frac": 0.697841726618705
+    }
+   ],
+   "randC": [
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "switches": 15,
+     "occ_conflicts": [
+      711,
+      969
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.8041343669250646
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "switches": 91,
+     "occ_conflicts": [
+      8411,
+      9457
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.7699076324744774
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "switches": 5,
+     "occ_conflicts": [
+      226,
+      1000
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.8823948681397007
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "switches": 9,
+     "occ_conflicts": [
+      371,
+      304
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.7153284671532847
+    }
+   ],
+   "policy_repeat": [
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "switches": 28,
+     "occ_conflicts": [
+      1713,
+      1249
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.7210031347962382
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "switches": 57,
+     "occ_conflicts": [
+      10859,
+      7737
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.7059133601686793
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "switches": 2,
+     "occ_conflicts": [
+      786,
+      633
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.7180816591056384
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "switches": 6,
+     "occ_conflicts": [
+      818,
+      19
+     ],
+     "dec_p_override": 0,
+     "dec_neg_frac": 0.5020876826722338
+    }
+   ]
+  },
+  "C_equivalence": {
+   "comparisons": 154,
+   "num_failures": 0,
+   "failures": []
+  },
+  "D_replay": {
+   "cases": 32,
+   "num_failures": 0,
+   "failures": [],
+   "nontiming_features_equal": 32
+  },
+  "F_truth_table": {
+   "cases": 48,
+   "num_failures": 0,
+   "rows": [
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "config": "D",
+     "neg_frac": 0.485,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 1169,
+      "saved": 5264,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 2,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "config": "Iminus",
+     "neg_frac": 0.5215,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 861,
+      "saved": 3684,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 2,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "config": "Fminus",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 2391,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "config": "Fplus",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 4580,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "config": "bare_forcephase",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 4580,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "config": "S_saved",
+     "neg_frac": 0.5083,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 2593,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "config": "fixP_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 1335,
+      "saved": 3903,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 2,
+     "p_override": 5238,
+     "p_flip": 3068,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_0_n150.cnf",
+     "config": "fixC_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 2391,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "config": "D",
+     "neg_frac": 0.5176,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 6941,
+      "saved": 9782,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 4,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "config": "Iminus",
+     "neg_frac": 0.5065,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 7377,
+      "saved": 13297,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 5,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "config": "Fminus",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 20600,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "config": "Fplus",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 16674,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "config": "bare_forcephase",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 16674,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "config": "S_saved",
+     "neg_frac": 0.4984,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 17774,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "config": "fixP_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 7987,
+      "saved": 10101,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 5,
+     "p_override": 18088,
+     "p_flip": 10364,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_1_n200.cnf",
+     "config": "fixC_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 20600,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "config": "D",
+     "neg_frac": 0.4597,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 496,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "config": "Iminus",
+     "neg_frac": 0.5439,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 774,
+      "saved": 1241,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 1,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "config": "Fminus",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 855,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "config": "Fplus",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 935,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "config": "bare_forcephase",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 935,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "config": "S_saved",
+     "neg_frac": 0.5081,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 1427,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "config": "fixP_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 855,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 855,
+     "p_flip": 527,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_2_n120.cnf",
+     "config": "fixC_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 855,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "config": "D",
+     "neg_frac": 0.4914,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 224,
+      "saved": 1235,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 1,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "config": "Iminus",
+     "neg_frac": 0.4747,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 99,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "config": "Fminus",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 108,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "config": "Fplus",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 482,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "config": "bare_forcephase",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 482,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "config": "S_saved",
+     "neg_frac": 0.4747,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 99,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "config": "fixP_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 108,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 108,
+     "p_flip": 73,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_3_n120.cnf",
+     "config": "fixC_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 108,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_4_n200.cnf",
+     "config": "D",
+     "neg_frac": 0.4712,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 626,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_4_n200.cnf",
+     "config": "Iminus",
+     "neg_frac": 0.5062,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 6717,
+      "saved": 15682,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 4,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_4_n200.cnf",
+     "config": "Fminus",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 18068,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_4_n200.cnf",
+     "config": "Fplus",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 478,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_4_n200.cnf",
+     "config": "bare_forcephase",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 478,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_4_n200.cnf",
+     "config": "S_saved",
+     "neg_frac": 0.5023,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 21622,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_4_n200.cnf",
+     "config": "fixP_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 3179,
+      "saved": 4592,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 3,
+     "p_override": 7771,
+     "p_flip": 4274,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_4_n200.cnf",
+     "config": "fixC_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 18068,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_5_n180.cnf",
+     "config": "D",
+     "neg_frac": 0.5141,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 891,
+      "saved": 2680,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 1,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_5_n180.cnf",
+     "config": "Iminus",
+     "neg_frac": 0.5452,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 310,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_5_n180.cnf",
+     "config": "Fminus",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 409,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_5_n180.cnf",
+     "config": "Fplus",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 1009,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_5_n180.cnf",
+     "config": "bare_forcephase",
+     "neg_frac": 0.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 1009,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_5_n180.cnf",
+     "config": "S_saved",
+     "neg_frac": 0.5452,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 310,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_5_n180.cnf",
+     "config": "fixP_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 0,
+      "target": 0,
+      "saved": 409,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 409,
+     "p_flip": 215,
+     "ok": true
+    },
+    {
+     "cnf": "med_r3_5_n180.cnf",
+     "config": "fixC_neg",
+     "neg_frac": 1.0,
+     "src": {
+      "force_saved": 0,
+      "api": 0,
+      "forcephase": 409,
+      "target": 0,
+      "saved": 0,
+      "stubborn": 0,
+      "fallback": 0
+     },
+     "rephased": 0,
+     "p_override": 0,
+     "p_flip": 0,
+     "ok": true
+    }
+   ]
+  },
+  "G_rephase_on_return": [
+   {
+    "cnf": "med_r3_0_n150.cnf",
+    "rlim": 0,
+    "switches": 1,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_0_n150.cnf",
+    "rlim": 1,
+    "switches": 1,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_1_n200.cnf",
+    "rlim": 0,
+    "switches": 3,
+    "returns": 1,
+    "overdue_at_return": 1,
+    "postponed": 0,
+    "rephases_in_window_after_return": [
+     1
+    ]
+   },
+   {
+    "cnf": "med_r3_1_n200.cnf",
+    "rlim": 1,
+    "switches": 3,
+    "returns": 1,
+    "overdue_at_return": 0,
+    "postponed": 1,
+    "rephases_in_window_after_return": [
+     0
+    ]
+   },
+   {
+    "cnf": "med_r3_2_n120.cnf",
+    "rlim": 0,
+    "switches": 0,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_2_n120.cnf",
+    "rlim": 1,
+    "switches": 0,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_3_n120.cnf",
+    "rlim": 0,
+    "switches": 0,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_3_n120.cnf",
+    "rlim": 1,
+    "switches": 0,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_4_n200.cnf",
+    "rlim": 0,
+    "switches": 0,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_4_n200.cnf",
+    "rlim": 1,
+    "switches": 0,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_5_n180.cnf",
+    "rlim": 0,
+    "switches": 1,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_5_n180.cnf",
+    "rlim": 1,
+    "switches": 1,
+    "returns": 0,
+    "overdue_at_return": 0,
+    "postponed": 0,
+    "rephases_in_window_after_return": []
+   },
+   {
+    "cnf": "med_r3_6_n180.cnf",
+    "rlim": 0,
+    "switches": 3,
+    "returns": 1,
+    "overdue_at_return": 1,
+    "postponed": 0,
+    "rephases_in_window_after_return": [
+     1
+    ]
+   },
+   {
+    "cnf": "med_r3_6_n180.cnf",
+    "rlim": 1,
+    "switches": 3,
+    "returns": 1,
+    "overdue_at_return": 0,
+    "postponed": 1,
+    "rephases_in_window_after_return": [
+     0
+    ]
+   },
+   {
+    "cnf": "med_r3_7_n180.cnf",
+    "rlim": 0,
+    "switches": 3,
+    "returns": 1,
+    "overdue_at_return": 1,
+    "postponed": 0,
+    "rephases_in_window_after_return": [
+     1
+    ]
+   },
+   {
+    "cnf": "med_r3_7_n180.cnf",
+    "rlim": 1,
+    "switches": 3,
+    "returns": 1,
+    "overdue_at_return": 0,
+    "postponed": 1,
+    "rephases_in_window_after_return": [
+     0
+    ]
+   }
+  ],
+  "API_phase_priority": {
+   "rc": 0,
+   "output": [
+    "ok default (res=10 positives=80 expected all positive)",
+    "ok bare_forcephase (res=10 positives=80 expected all positive)",
+    "ok forcephase_phase0 (res=10 positives=40 expected exactly N positive)",
+    "ok fixed_C_negative (res=10 positives=40 expected exactly N positive)",
+    "ok fixed_C_positive (res=10 positives=80 expected all positive)",
+    "ok fixed_P_negative (res=10 positives=40 expected exactly N positive)",
+    "ok api_neg_over_bare_forcephase (res=10 positives=40 expected exactly N positive)",
+    "ok api_pos_over_forcephase_phase0 (res=10 positives=80 expected all positive)",
+    "ok api_pos_over_P_negative (res=10 positives=80 expected all positive)",
+    "ok api_pos_over_C_negative (res=10 positives=80 expected all positive)"
+   ]
+  }
+ },
+ "elapsed_s": 43.8,
+ "builds": {
+  "upstream": [
+   "variant=upstream",
+   "cadical_sha=c60730422e758ef1cebe7aeddf2dda31c996bf04",
+   "cadical_version=3.0.1",
+   "configure=-static",
+   "patched=0",
+   "repo_commit=7b34ed14a7ab000826ab35a61e289b5ad0d1bc5c",
+   "repo_dirty=0",
+   "cxx=g++ (Ubuntu 13.4.0-6ubuntu1~22~ppa2) 13.4.0",
+   "cxxflags=CXXFLAGS=-Wall -Wextra -O3 -DNDEBUG -static",
+   "host=cpu-206-205",
+   "os=Ubuntu 22.04.5 LTS",
+   "binary_sha256=250220f9c8b6806f4144a0bded6093f888ba5617a530dbb37b6dfde4787c5e6d",
+   "built_at=2026-10-18T19:20:16Z"
+  ],
+  "fpc": [
+   "variant=fpc",
+   "cadical_sha=c60730422e758ef1cebe7aeddf2dda31c996bf04",
+   "cadical_version=3.0.1",
+   "configure=-static",
+   "patched=1",
+   "patch_sha256=5e66834f40451a7b3a18ae85545ea824e9d88f75173877ccc9d8d401c5c418ee",
+   "solver_sources_sha256=c23f03bf6846cfde2a29d150e047a3e515cad2c3289e343bb96a0cbac1c7e202",
+   "repo_commit=7b34ed14a7ab000826ab35a61e289b5ad0d1bc5c",
+   "repo_dirty=0",
+   "cxx=g++ (Ubuntu 13.4.0-6ubuntu1~22~ppa2) 13.4.0",
+   "cxxflags=CXXFLAGS=-Wall -Wextra -O3 -DNDEBUG -static",
+   "host=cpu-206-205",
+   "os=Ubuntu 22.04.5 LTS",
+   "binary_sha256=6cf084699e872250ffa4d9a186d8ad7fe3829d06fc2d898294f2ac5e989ba884",
+   "built_at=2026-10-18T19:20:33Z"
+  ],
+  "upstream-check": [
+   "variant=upstream-check",
+   "cadical_sha=c60730422e758ef1cebe7aeddf2dda31c996bf04",
+   "cadical_version=3.0.1",
+   "configure=-static -c",
+   "patched=0",
+   "repo_commit=7b34ed14a7ab000826ab35a61e289b5ad0d1bc5c",
+   "repo_dirty=0",
+   "cxx=g++ (Ubuntu 13.4.0-6ubuntu1~22~ppa2) 13.4.0",
+   "cxxflags=CXXFLAGS=-Wall -Wextra -O3 -static",
+   "host=cpu-206-205",
+   "os=Ubuntu 22.04.5 LTS",
+   "binary_sha256=57e2295de8023d0a5784ebb2e35a6b5db0b9c2b6b9ccdeb5bad66d91563a19b7",
+   "built_at=2026-10-18T19:20:50Z"
+  ],
+  "fpc-check": [
+   "variant=fpc-check",
+   "cadical_sha=c60730422e758ef1cebe7aeddf2dda31c996bf04",
+   "cadical_version=3.0.1",
+   "configure=-static -c",
+   "patched=1",
+   "patch_sha256=5e66834f40451a7b3a18ae85545ea824e9d88f75173877ccc9d8d401c5c418ee",
+   "solver_sources_sha256=c23f03bf6846cfde2a29d150e047a3e515cad2c3289e343bb96a0cbac1c7e202",
+   "repo_commit=7b34ed14a7ab000826ab35a61e289b5ad0d1bc5c",
+   "repo_dirty=0",
+   "cxx=g++ (Ubuntu 13.4.0-6ubuntu1~22~ppa2) 13.4.0",
+   "cxxflags=CXXFLAGS=-Wall -Wextra -O3 -static",
+   "host=cpu-206-205",
+   "os=Ubuntu 22.04.5 LTS",
+   "binary_sha256=0f6e892be8e7334ef08122c92dbaf5408131c47c8d5953cb324a1193972a4f78",
+   "built_at=2026-10-18T19:21:07Z"
+  ],
+  "tools": [
+   "lrat_trim_sha=b30f400f4ee5c32b77ee566a7c006081b521534f",
+   "drat_trim_sha=2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+   "cc=gcc (Ubuntu 13.4.0-6ubuntu1~22~ppa2) 13.4.0",
+   "lrat-trim_sha256=4094f88dedb5343b9b48c782a345e712224ef21baac1ef68387809615c5f9b07",
+   "drat-trim_sha256=8deb59cc140c7f86c864d72a5e9ead4ef901e4bcb5280aa723f9ae42006dd4d9",
+   "checkmodel_sha256=a554c6230be20a4586b263405a56186b1bb911e7960fd3cba53d1459a8c0714f",
+   "cnffeatures_sha256=593592838aef3f9f379d0c30024f85cb9fe13c06aba7f6f74f2c4204c79fc655",
+   "cnfscramble_sha256=c8a67d58820238900068e8c97754a6cc53aa309c0a2b5251a6b99505d66316f2"
+  ]
+ },
+ "total_failures": 0
+}
