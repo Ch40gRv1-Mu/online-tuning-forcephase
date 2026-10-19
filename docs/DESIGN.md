@@ -63,9 +63,21 @@
 - `s_`（C 组，静态）：log 变量数、log 子句数、子句/变量比、平均长度、单元/二元/三元比例、正文字比例、Horn、反 Horn 比例。
 - `r_`（R 组，进度/原生机制）：log 冲突、CPU 时间、当前 stable、距下次 rephase、当前有效动作、切换数。
 - `c_`/`w_`（累计/窗口比率）：决策/冲突、传播/决策、ticks/冲突、冲突/秒、glue 均值、低 glue 比例、1st-UIP 长度、最小化后长度、回跳距离、chrono 比例、每千冲突 restart、trail 复用率、负决策比例、原生建议为正比例、target/saved 来源比例、每千冲突学到单元/二元、stable 冲突比例、rephase 次数。
-- `x_`（当前状态）：glue fast/slow 及比值、trail EMA 与活动变量比、jump/level/size EMA、best/target 赋值比例、活动变量比例、不可约子句/变量、冗余/不可约、256 个固定抽样变量的 saved 负比例与翻转比例、target 设定比例与负比例。
+- `x_`（当前状态）：glue fast/slow 及比值、trail EMA 与活动变量比、jump/level/size EMA、best/target 赋值比例、活动变量比例、不可约子句/变量、冗余/不可约、256 个固定抽样变量的 saved 负比例与翻转比例（**v1 的翻转比例失效**，见 §5a）、target 设定比例与负比例。
 
 digest 为 FNV-1a，覆盖冲突/决策/传播/restart/rephase 计数、子句计数、stable、层、`lim.rephase`、trail 全部文字和全部变量的 saved/target 相位。digest 相同是重放一致性的检查，不是全部内存相同的证明。
+
+## 5a. 控制器版本：v1（第一轮）与 v2（audit v2 修复）
+
+| | v1（`solver/v1/`，构建变体 `fpc`，schema 1） | v2（`solver/`，构建变体 `fpc2`，schema 2） |
+|---|---|---|
+| 使用范围 | 第一轮全部 36,077 次运行（M1–M5）与 audit v2 开销复测 | audit v2 之后的代码；尚无用于科学结论的实验数据 |
+| `x_saved_flip_frac` | **失效**：checkpoint 与 window 共用一份样本相位历史，因此 flip 常常是“与上一条不同类记录”的比较；compaction 重新编号内部变量后，样本索引指向别的变量也被当作翻转 | 两个记录流各自维护历史；只比较前后两次都活跃、都有 saved 值的样本；无可比历史时为 `null`；检测 `stats.compacts` 变化后重建固定大小样本并清空两个流的历史（每条记录带 `compacts` 与 `sample_epoch`） |
+| 同一 restart 两类记录 | 先写 checkpoint 并可能执行 oneshot 动作，再计算 window 特征（window 中 `r_action`、`dwell` 是动作之后的值） | 先从同一份动作前状态计算并写出两类记录（`action` 均为动作前），再按模式至多执行一次动作 |
+| RNG | 样本抽取与 random 模式共用一个 splitmix64 | 样本 RNG 与动作 RNG 分离（都不使用求解器 RNG） |
+| 策略解析 | 成员函数 | 自由函数 `parse_policy`（测试可直接调用同一份代码） |
+
+两版的补丁（`patches/cadical-fpc.patch`）相同，所以控制器关闭时完全一致；audit v2 的集成测试（`tests/audit_v2/test_controller_v2.py`）在 20 个实例上核对了 off、telemetry、fixed NEGATIVE、冻结调度 F−→D@1e4 与 oneshot 策略下 v1、v2（及上游）的搜索统计、最终 digest 和切换点逐项相同；M0 套件在 `fpc2`/`fpc2-check` 上 0 失败。random 模式在 v2 中因 RNG 分离而与 v1 轨迹不同（第一轮正式实验未使用 random 模式）。v1 的 flip 特征在 audit v2 的 M3 复核中被统一排除（[CORRECTION_PROTOCOL.md](CORRECTION_PROTOCOL.md) §5）；不得混用 v1 与 v2 遥测。
 
 ## 6. 策略文件（`FPC_POLICY`）
 

@@ -8,7 +8,7 @@
 - “保持”分支 = census 中的 D 运行（遥测开启，从头 NATIVE）；
 - “切换”分支 = `sw{K}_C`：同样从头 NATIVE，在第一个冲突数 ≥ K 的自然 restart 处切到 NEGATIVE（轨道 C）并保持到结束；
 - 两个分支都是从进程启动开始、总预算 T = 300 s 的完整运行（prefix 计入时间）；
-- 用检查点 digest 验证两分支在决策点的状态相同：**4,233 个重放中 4,230 个 digest 一致**；其余 3 个在 1e5 处因计时波动未在 300 s 内到达检查点（双方都 timeout，标签删失，成本相同）。
+- 用检查点 digest 验证两分支在决策点的状态相同：**4,233 个重放中 4,230 个 digest 一致**〔**更正（audit v2，2026-10-19）**：原分母错误。由严格门禁脚本从数据生成的计数（[audit_v2/../../results/audit_v2/m3/gate_summary.md](../results/audit_v2/m3/gate_summary.md)）：全部 8 组共 5,887 次重放，其中 5,884 个有效配对、3 个 `censored_unmatched`；训练用的 6 组（轨道 C，D 与 I− prefix）共 4,391 次重放，4,388 个有效配对、3 个 `censored_unmatched`〕；其余 3 个在 1e5 处因计时波动未在 300 s 内到达检查点（双方都 timeout，标签删失，成本相同）。
 - 同样构造了 I− prefix → NEGATIVE（`sw{K}_Cin`，NATIVE_INIT_NEG 变体）、F− prefix → NATIVE @1e4（`sw10k_Crev`，反向）以及轨道 P @1e4（`sw10k_P`）。
 - 实例在 K 之前已解出则没有决策点（D prefix：1e3 时 48 例、1e5 时 119 例），该实例的部署成本就是基础运行成本。
 
@@ -79,3 +79,12 @@ out-of-fold 平均 PAR2（dev 817 例；括号为相对 D 与相对 I− 的降�
 - M3 → M4 的证据门槛（“在线观测有可迁移价值，或同状态实验显示动作偏好随搜索变化”）：前者**未满足**；后者**部分满足**（21% 实例偏好改变、反向固定调度有收益）。
 - 决定（记录于 EXPERIMENT_LOG 2026-10-18 22:15，先于 M4 运行）：不实现基于特征的重复切换控制器；只评估一小组预先固定的**无观测固定调度**（F−→D、F−→I− 在三个 K；rephase 推迟消融；按模式调度），并按预注册规则从所有 dev 评估过的可部署策略中选出 M5 唯一主要候选。
 - 本阶段 compute：重放 5,887 次运行（见 [COMPUTE_LEDGER.md](COMPUTE_LEDGER.md)）；模型训练约 1 分钟 CPU。
+
+## 6. Audit v2 修订（2026-10-19，事后审计；test/t2026 已见，未用于任何选择）
+
+依据 [CORRECTION_PROTOCOL.md](../docs/CORRECTION_PROTOCOL.md)：
+1. **数据门禁**：第一轮 `m3_build.py` 把缺失遥测当作“无决策点”，`m3_train.py` 会用 base 成本回填缺失的 replay。严格门禁（`scripts/audit_v2/m3_build_strict.py`）对 6,536 行逐行分类：0 个数据错误；3 行 `censored_unmatched`（1e5 处预算边界双超时）；4 行使用了 SIGKILL 后截断的遥测（协议附录 A，均为双超时或无决策点的超时）。严格数据集与第一轮数据集在所有成本、决策点和 477,128 个特征值上完全相同。逐组分母见 [gate_summary.md](../results/audit_v2/m3/gate_summary.md)。
+2. **flip 特征失效**：v1 控制器的 `x_saved_flip_frac` 计算错误（见 DESIGN §5a）。按协议唯一的纠正：在 P 组、all 组、相应 shuffled 对照与单变量信号中统一排除它，其余全部不变（同一数据、外层 folds `reports/m3/folds.csv`、内层种子、模型网格、权重、bootstrap）。
+3. **复现与修订结果**（[audit_v2/m3/comparison.md](audit_v2/m3/comparison.md)）：第一轮代码在第一轮数据上精确复现全部 68 个选择器（差值 0）；修订后不使用该特征的 50 个选择器与第一轮完全相同；受影响的 18 个选择器数值小幅变化（如 @1e4 [C+R+P] 367.90 → 363.11，相对 D −0.43% [−2.13, +0.83]），**没有一个修订后的在线选择器优于“不切换”**，可部署策略中 dev PAR2 最低的仍是静态 I−（351.91）。单变量信号表去掉该特征后与第一轮逐行相同（第一轮前 12 名本来就不含它）。本节第 2 节的结论因此不变。
+4. **导出策略**：修订流程导出的 time-only 一次选择器与静态选择器与第一轮文件的模型参数完全相同（它们不含该特征）；冻结 M5 使用的策略不受影响。Python（scikit-learn）与 C++（控制器自身解析/求值）在 dev 决策点上的分数最大差 ≤ 3.3×10⁻⁷、动作 0 分歧（含逐特征缺失的 4,533 行）；含 `r_time` 的 D prefix 策略在 ±5%/±10% 计时扰动下改变 0.1–0.5% 的决策（[policy_consistency.md](audit_v2/m3/policy_consistency.md)）。
+

@@ -10,7 +10,7 @@
 | 证明检查 | `arminbiere/lrat-trim@b30f400f4ee5c32b77ee566a7c006081b521534f`（LRAT）；`marijnheule/drat-trim@2e3b2dc0ecf938addbd779d42877b6ed69d9a985`（备用，未用于主流程） |
 | 编译环境 | gs-srun 容器 `genesis-v1_26.sqsh`（Ubuntu 22.04.5），g++ 13.4.0，`./configure -static` → `-Wall -Wextra -O3 -DNDEBUG -static` |
 | 硬件 | AMD EPYC 9454（2×48 核，SMT2），1.5 TB 内存；Slurm `cpu-low` 独占节点，每节点 48 个求解进程绑定到间隔物理核 |
-| 二进制 SHA-256 | upstream `57e2295d…`；fpc `6cf08469…`；upstream-check / fpc-check 见 `build/*/BUILDINFO` 与 `results/m0/m0_report.json` |
+| 二进制 SHA-256 | upstream `57e2295d…`；fpc `6cf08469…`；upstream-check / fpc-check 见 `build/*/BUILDINFO` 与 `results/m0/m0_report.json`〔**更正（audit v2，2026-10-19）**：`57e2295d…` 是 upstream-check；upstream 为 `250220f9c8b6…`，见 `results/audit_v2/evidence_snapshot.json`〕 |
 | 补丁 | `patches/cadical-fpc.patch`（SHA-256 `5e66834f…`）+ `solver/fpcontrol.{hpp,cpp}`；设计见 [docs/DESIGN.md](../docs/DESIGN.md) |
 
 复现：`git submodule update --init && scripts/build_solver.sh && scripts/build_tools.sh`（在容器内），然后 `python3 tests/m0_suite.py --out results/m0`。
@@ -80,3 +80,13 @@ C 组的具体对照：upstream D vs fpc 控制器关闭；upstream D vs fpc tel
 - 结果状态：29 solved / 51 timeout，与原 smoke 一致；全部 solved 均验证通过。
 - 与主实验记录（同一容器工具链构建的二进制、census T=300 s 运行）逐项比较：29 个 solved 运行的冲突、决策、传播计数**全部相同**（12 个在预处理阶段解出、没有冲突计数的实例两边都为空）。
 - 复现条件（[实验]）：二进制哈希在两次构建之间不同（CaDiCaL 把构建时间与主机写入二进制），但搜索行为相同；早期用宿主机 g++ 11.4 构建的二进制在同 20 个 smoke 实例上的 29 个 solved 运行，与容器 g++ 13.4 构建的二进制在冲突、决策、传播计数上也**全部相同**。在这个小样本上没有观察到编译器导致的轨迹差异；正式实验仍统一使用容器内 g++ 13.4 构建的二进制，因为未在大样本上验证跨工具链的一致性。
+
+## 6. Audit v2 更正与复测（2026-10-19）
+
+- **哈希更正**：见第 1 节表中的更正（D6）。
+- **开销复测**（[reports/audit_v2/m1/retest.md](audit_v2/m1/retest.md)，设计在运行前固定于 [CORRECTION_PROTOCOL.md](../docs/CORRECTION_PROTOCOL.md) §6）：48 个按第一轮上游 CPU 四分位分层抽取的 dev 实例 × {上游、v1 控制器关闭、v1 telemetry} × 6 次重复，1 个独占节点、16 个进程（每 CCD 一个物理核）、每实例 18 次在同一核上按平衡随机顺序运行，LRAT 证明输出，T = 300 s；864 次全部解出、全部在计划核上按计划顺序执行，每实例 18 次的搜索统计完全相同。
+  - telemetry vs 控制器关闭：中位 **+0.05%** [−0.02, +0.11]，p95 **+0.35%** [+0.28, +0.52]，最大 +0.54%；
+  - 控制器关闭 vs 上游：中位 +0.30%，p95 +0.79%；telemetry vs 上游：中位 +0.37%，p95 +0.78%；
+  - 同配置重复噪声（奇/偶次重复中位数比）：p95 0.24–0.43%。
+  - 结论：在这个 48 例低噪声样本上 p95 ≤ 3% 的目标**达到**；第一轮 292 例在 48 进程并发下测得的 p95 4.16% 主要由计时噪声造成（当时同配置重复 p95 为 5.77%）。该结论只适用于本 48 例样本，不改写第一轮 292 例的数值。约 0.3% 的“补丁关闭 vs 上游”差异来自补丁中始终开启的计数器（`decide`/`analyze` 中的几次加法），它们不在 `hook_time` 中。
+
