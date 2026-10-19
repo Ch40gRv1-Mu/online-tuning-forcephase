@@ -3,11 +3,16 @@
 #
 #   scripts/build_solver.sh [variant ...]
 #
-# Variants (default: upstream fpc upstream-check fpc-check):
+# Variants (default: all six):
 #   upstream        unmodified pinned source, ./configure -static (-O3 -DNDEBUG)
-#   fpc             pinned source + patches/cadical-fpc.patch + solver/*.{hpp,cpp}
+#   fpc             pinned source + patches/cadical-fpc.patch + solver/v1/*.{hpp,cpp}
+#                   (round-1 controller, telemetry schema 1; used by every round-1 run)
+#   fpc2            as 'fpc' but with solver/*.{hpp,cpp} (audit v2 controller, schema 2)
 #   upstream-check  as 'upstream' but with assertions (./configure -c)
-#   fpc-check       as 'fpc' but with assertions
+#   fpc-check, fpc2-check   as 'fpc' / 'fpc2' with assertions
+# NOTE: run ids embed the binary hash and CaDiCaL embeds the build time, so
+# rebuilding a variant in a checkout that already has results for it makes
+# those results unreachable by 'fprun.py plan'; rebuild only in fresh clones.
 #
 # Outputs build/<variant>/cadical and build/<variant>/BUILDINFO (compiler,
 # flags, source SHA, patch SHA-256, binary SHA-256).  Intended to run inside
@@ -21,7 +26,7 @@ PATCH="$ROOT/patches/cadical-fpc.patch"
 JOBS="${JOBS:-8}"
 
 variants=("$@")
-[ ${#variants[@]} -eq 0 ] && variants=(upstream fpc upstream-check fpc-check)
+[ ${#variants[@]} -eq 0 ] && variants=(upstream fpc fpc2 upstream-check fpc-check fpc2-check)
 
 head="$(git -C "$SUB" rev-parse HEAD)"
 if [ "$head" != "$PIN" ]; then
@@ -33,9 +38,11 @@ fi
 for v in "${variants[@]}"; do
   case "$v" in
     upstream)        patched=0; cfg=(-static) ;;
-    fpc)             patched=1; cfg=(-static) ;;
+    fpc)             patched=1; srcdir=solver/v1; cfg=(-static) ;;
+    fpc2)            patched=1; srcdir=solver; cfg=(-static) ;;
     upstream-check)  patched=0; cfg=(-static -c) ;;
-    fpc-check)       patched=1; cfg=(-static -c) ;;
+    fpc-check)       patched=1; srcdir=solver/v1; cfg=(-static -c) ;;
+    fpc2-check)      patched=1; srcdir=solver; cfg=(-static -c) ;;
     *) echo "unknown variant $v" >&2; exit 1 ;;
   esac
   out="$ROOT/build/$v"
@@ -45,7 +52,7 @@ for v in "${variants[@]}"; do
   git -C "$SUB" archive "$PIN" | tar -x -C "$out/src"
   if [ "$patched" = 1 ]; then
     (cd "$out/src" && patch -p1 --quiet --forward < "$PATCH")
-    cp "$ROOT"/solver/*.hpp "$ROOT"/solver/*.cpp "$out/src/src/"
+    cp "$ROOT/$srcdir"/*.hpp "$ROOT/$srcdir"/*.cpp "$out/src/src/"
   fi
   (cd "$out/src" && ./configure "${cfg[@]}" > "$out/configure.log" 2>&1 \
      && make -j"$JOBS" > "$out/make.log" 2>&1) || {
@@ -59,7 +66,8 @@ for v in "${variants[@]}"; do
     echo "patched=$patched"
     if [ "$patched" = 1 ]; then
       echo "patch_sha256=$(sha256sum "$PATCH" | cut -d' ' -f1)"
-      echo "solver_sources_sha256=$(cat "$ROOT"/solver/*.hpp "$ROOT"/solver/*.cpp | sha256sum | cut -d' ' -f1)"
+      echo "solver_sources=$srcdir"
+      echo "solver_sources_sha256=$(cat "$ROOT/$srcdir"/*.hpp "$ROOT/$srcdir"/*.cpp | sha256sum | cut -d' ' -f1)"
     fi
     echo "repo_commit=$(git -C "$ROOT" rev-parse HEAD)"
     echo "repo_dirty=$(git -C "$ROOT" status --porcelain --untracked-files=no -- solver patches scripts/build_solver.sh | wc -l)"

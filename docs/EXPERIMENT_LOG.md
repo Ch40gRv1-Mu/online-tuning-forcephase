@@ -77,3 +77,9 @@ M5 唯一主要候选的选择规则（在看到 M4-lite 结果之前固定）�
 - 新 goal 要求执行 agent 在任何修订分析之前提交 `docs/CORRECTION_PROTOCOL.md`。本轮唯一预定的旧数据纠正是统一排除失效 flip 特征，保留数据、原 fold、K、模型网格和评分方式；它是看过 test 之后的更正，不冒称事前预注册。
 - 保留 `m5-freeze`、原测试结果与原始记录。test/t2026 均标为已见，不能继续用于选择规则。主候选为不使用该特征的固定调度，其冻结主负结果保留。
 - 默认新增总预算上限 100 CPU 核时，优先复用既有轨迹；可靠负结果可以完成研究，不以找到正结果为结束条件。具体范围、交付与停止条件以 Goal v2 为准。
+
+## 2026-10-19 02:45 — Audit v2 开始：提交纠正协议（任何新分析之前）
+
+- 按 Goal v2 提交 [CORRECTION_PROTOCOL.md](CORRECTION_PROTOCOL.md)：事后审计（test/t2026 已见），唯一的旧数据纠正为统一排除 `x_saved_flip_frac`；固定数据、folds、模型网格、K、门禁分类、开销复测设计（`benchmarks/derived/audit_v2/m1_retest48.txt`）、100 CPU 核时预算与停止条件。
+- 证据快照 `results/audit_v2/evidence_snapshot.json`；第一轮控制器源码保存为 `solver/v1/`（SHA 与 `build/fpc` 的 BUILDINFO 一致：c23f03bf…）；构建脚本区分 v1（`fpc`）与修复版 v2（`fpc2`）。
+- 快照时新发现 D6：M0_M1 报告中 upstream 二进制哈希写错（应为 250220f9…）。
