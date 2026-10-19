@@ -46,6 +46,16 @@ M3 同状态配对（`scripts/audit_v2/m3_build_strict.py`）按以下互斥类�
 
 回归验证（`tests/audit_v2/test_gate.py`）用人工构造的记录覆盖：缺文件、截断 JSONL、重复键、缺 alt、digest 不同、方向错误、应切未切、预处理解出、阈值前解出、预算边界双超时；断言错误路径阻止正式分析。
 
+### 4.1 附录 A（2026-10-19 03:05 UTC，首次运行严格门禁之后、任何修订 M3 分析之前）
+
+首次运行 `m3_build_strict.py`（只读第一轮记录）报告 4 行 `telemetry_incomplete`，全部来自同一实例 `4106867bc76b8794330a205cf8a303ad`。全账本中共有 6 次运行 exit code −9（都是该实例、都含 F− 阶段：census F−、sw1k_C、sw10k_Cin、sw100k_Cin、sw1k_Crev、sw1k_CrevIn；M5 中没有）：runner 在 CPU 达到 T 时发送 SIGTERM，求解器 10 s 内未退出（推测处于不检查终止标志的长阶段），runner 改发 SIGKILL，因此遥测没有 final 记录；遥测每条记录写后立即 flush，被杀之前的记录完整。
+
+新增**有界类别** `killed_after_cutoff`：仅当运行记录同时满足 status = timeout、terminated_by = cpu、exit code = −9、CPU ≥ T，且遥测可解析、有 header、只缺 final 记录时成立。此时：
+- 该运行的终端成本按运行记录（timeout，PAR2 = 2T）；
+- 遥测用于判断是否到达检查点与核对 prefix digest / 切换记录（切换记录必须恰好 1 条且位于检查点；不再要求 final 中的切换计数）；
+- 其余规则不变；任何其它缺 final、损坏或缺失的遥测仍是数据错误。
+这不是对旧日志的回填：这些运行的结果（timeout）由运行记录直接给出。受影响的 M3 行全部是双方 timeout 或无决策点的 timeout，对训练权重与 PAR2 无影响；仍在门禁报告中单独列出。补跑无法改变结果（同一 runner 会再次在同一处 SIGKILL），因此不补跑；runner 的 10 s 宽限期作为局限披露。
+
 ## 5. P1 控制器修复规范（v2）与 M3 科学纠正
 
 **控制器 v2**（`solver/fpcontrol.*`，变体 `fpc2`，schema 2）：

@@ -1,0 +1,9 @@
+alt,K,prefix,track,instances,solved_before_K,budget_before_K,valid_pair,censored_unmatched,data_errors,switches_applied,valid_both_timeout,positive_weight_labels
+sw1k_C,1000,D,C,817,47,1,769,0,0,769,427,342
+sw10k_C,10000,D,C,817,65,1,751,0,0,751,428,323
+sw100k_C,100000,D,C,817,109,10,696,2,0,696,417,279
+sw10k_P,10000,D,P,817,65,1,751,0,0,751,432,319
+sw10k_Crev,10000,F−,C,817,70,2,745,0,0,745,416,329
+sw1k_Cin,1000,I−,C,817,62,1,754,0,0,754,413,341
+sw10k_Cin,10000,I−,C,817,74,1,742,0,0,742,417,325
+sw100k_Cin,100000,I−,C,817,131,9,676,1,0,676,406,270
