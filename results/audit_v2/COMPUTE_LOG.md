@@ -10,3 +10,5 @@
 | M3 reproduce round 1 (m3_train.py) | host, analysis venv | ~490 | 3m07 user + 5m13 sys (BLAS threads) |
 | M3 revised (m3_train_v2.py) | host, analysis venv | ~470 | 2m58 user + 4m55 sys |
 | M3 comparison, feature signal, policy consistency | host | ~120 | |
+| M1 overhead retest (864 runs) | 1 exclusive node, 16 workers | see ledger | solver CPU summed from result records in reports/audit_v2/COMPUTE_AUDIT_V2.md |
+| retest analysis | host | ~30 | |
