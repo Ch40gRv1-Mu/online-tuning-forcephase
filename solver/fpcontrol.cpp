@@ -14,7 +14,7 @@
 namespace CaDiCaL {
 namespace FPC {
 
-static const int SCHEMA_VERSION = 1;
+static const int SCHEMA_VERSION = 2; // v2: audit fixes (docs/CORRECTION_PROTOCOL.md)
 static const int SAMPLE_SIZE = 256;
 
 // Checkpoints (cumulative conflicts) at which a 'checkpoint' record with a
@@ -166,7 +166,11 @@ void Controller::load_policy () {
   if (!path)
     fatal ("fpc=4 requires environment variable", "FPC_POLICY");
   policy_path = path;
-  std::ifstream file (path);
+  parse_policy (policy_path, policy);
+}
+
+void parse_policy (const std::string &policy_path, Policy &policy) {
+  std::ifstream file (policy_path);
   if (!file)
     fatal ("can not read policy file", policy_path);
   std::stringstream text;
@@ -212,7 +216,7 @@ void Controller::load_policy () {
           std::string name;
           Model::Term t;
           text >> name >> t.mean >> t.scale >> t.impute >> t.weight;
-          t.feature = feature_index (name.c_str ());
+          t.feature = Controller::feature_index (name.c_str ());
           if (t.feature < 0)
             fatal ("unknown feature in policy", name);
           if (!(t.scale > 0))
@@ -241,7 +245,8 @@ void Controller::load_policy () {
 
 Controller::Controller (Internal *i)
     : internal (i), cur (0), window_index (0), switches (0), dwell (0),
-      checkpoint_index (0), decided (false), log (0), hook_time (0),
+      checkpoint_index (0), decided (false), seen_compacts (0),
+      sample_epoch (0), log (0), hook_time (0),
       hook_calls (0), occ_since_conflicts (0), occ_since_decisions (0),
       occ_since_time (0), applied_at_conflicts (-1) {
   const Options &o = internal->opts;
@@ -255,11 +260,13 @@ Controller::Controller (Internal *i)
   mindwell = o.fpcmindwell;
   next_switch = (mode == SCHEDULE) ? (int64_t) o.fpcat
                                    : std::numeric_limits<int64_t>::max ();
-  rng = 0x9e3779b97f4a7c15ull ^ (uint64_t) o.fpcseed;
+  action_rng = 0x9e3779b97f4a7c15ull ^ (uint64_t) o.fpcseed;
+  sample_rng = 0xd1b54a32d192ed03ull ^ ((uint64_t) o.fpcseed << 1);
   occ_conflicts[0] = occ_conflicts[1] = 0;
   occ_decisions[0] = occ_decisions[1] = 0;
   occ_time[0] = occ_time[1] = 0;
-  features.assign (NUM_FEATURES, NaN);
+  features_cp.assign (NUM_FEATURES, NaN);
+  features_win.assign (NUM_FEATURES, NaN);
   if (track == 1 && (a[0] == NATIVE_INIT_NEG || a[1] == NATIVE_INIT_NEG))
     fatal ("track P has no NATIVE_INIT_NEG action", "fpctrack=1");
   if (mode == POLICY)
@@ -287,15 +294,59 @@ Controller::~Controller () {
     fclose (log);
 }
 
-uint64_t Controller::next_random () { // splitmix64, independent of solver
-  uint64_t z = (rng += 0x9e3779b97f4a7c15ull);
+uint64_t Controller::next_random (uint64_t &state) { // splitmix64
+  uint64_t z = (state += 0x9e3779b97f4a7c15ull);
   z = (z ^ (z >> 30)) * 0xbf58476d1ce4e5b9ull;
   z = (z ^ (z >> 27)) * 0x94d049bb133111ebull;
   return z ^ (z >> 31);
 }
 
-double Controller::random_double () {
-  return (next_random () >> 11) * (1.0 / 9007199254740992.0);
+double Controller::random_double () { // random mode only
+  return (next_random (action_rng) >> 11) * (1.0 / 9007199254740992.0);
+}
+
+// Fixed-size variable sample for the phase features.  Rebuilt when empty and
+// after every compaction (which renumbers internal variables), which also
+// invalidates the phase history of both record streams.
+
+void Controller::refresh_sample () {
+  Internal *I = internal;
+  const int64_t compacts = I->stats.compacts;
+  if (!sample.empty () && compacts == seen_compacts)
+    return;
+  seen_compacts = compacts;
+  sample.clear ();
+  const int n = I->max_var;
+  if (n > 0) {
+    if (n <= SAMPLE_SIZE)
+      for (int idx = 1; idx <= n; idx++)
+        sample.push_back (idx);
+    else
+      for (int j = 0; j < SAMPLE_SIZE; j++)
+        sample.push_back (1 + (int) (next_random (sample_rng) % (uint64_t) n));
+  }
+  hist_cp.assign (sample.size (), 0);
+  hist_win.assign (sample.size (), 0);
+  sample_epoch++;
+}
+
+void flip_update (const std::vector<int> &sample, const signed char *saved,
+                  const std::vector<char> &active,
+                  std::vector<signed char> &hist, int64_t &compared,
+                  int64_t &flipped) {
+  compared = flipped = 0;
+  for (size_t j = 0; j < sample.size (); j++) {
+    if (!active[j]) {
+      hist[j] = 0; // not comparable next time either
+      continue;
+    }
+    const signed char s = saved[sample[j]];
+    if (hist[j] && s) {
+      compared++;
+      flipped += (hist[j] != s);
+    }
+    hist[j] = s;
+  }
 }
 
 void Controller::header () {
@@ -303,7 +354,7 @@ void Controller::header () {
     return;
   const Options &o = internal->opts;
   fprintf (log,
-           "{\"type\":\"header\",\"schema\":%d,\"cadical\":\"%s\","
+           "{\"type\":\"header\",\"schema\":%d,\"controller\":\"v2\",\"cadical\":\"%s\","
            "\"mode\":%d,\"track\":\"%s\",\"a0\":\"%s\",\"a1\":\"%s\","
            "\"init\":%d,\"win\":%d,\"at\":%d,\"period\":%d,\"maxsw\":%d,"
            "\"mindwell\":%d,\"prob\":%d,\"rlim\":%d,\"seed\":%d,"
@@ -345,8 +396,9 @@ void Controller::take (Snapshot &s) const {
   s.c = internal->fpcc;
 }
 
-void Controller::compute_features (const Snapshot &now,
-                                   const Snapshot &ref) {
+void Controller::compute_features (const Snapshot &now, const Snapshot &ref,
+                                   std::vector<signed char> &hist,
+                                   std::vector<double> &features) {
   double *f = features.data ();
   for (int i = 0; i < NUM_FEATURES; i++)
     f[i] = NaN;
@@ -443,41 +495,31 @@ void Controller::compute_features (const Snapshot &now,
   f[F_x_red_per_irr] =
       ratio (I->stats.current.redundant, I->stats.current.irredundant);
 
-  // saved / target phases of a fixed random sample of variables
-  if (sample.empty () && I->max_var > 0) {
-    const int n = I->max_var;
-    if (n <= SAMPLE_SIZE)
-      for (int idx = 1; idx <= n; idx++)
-        sample.push_back (idx);
-    else
-      for (int j = 0; j < SAMPLE_SIZE; j++)
-        sample.push_back (1 + (int) (next_random () % (uint64_t) n));
-    sample_saved.assign (sample.size (), 0);
-  }
-  int64_t act = 0, neg = 0, flip = 0, prev = 0, tset = 0, tneg = 0;
+  // saved / target phases of the fixed random sample (see refresh_sample);
+  // the flip rate compares with the previous record of the same stream
+  int64_t act = 0, neg = 0, tset = 0, tneg = 0, compared = 0, flipped = 0;
+  std::vector<char> alive (sample.size (), 0);
   for (size_t j = 0; j < sample.size (); j++) {
     const int idx = sample[j];
     if (idx > I->max_var || !I->flags (idx).active ())
       continue;
+    alive[j] = 1;
     const signed char s = I->phases.saved[idx];
     const signed char t = I->phases.target[idx];
     act++;
     neg += (s < 0);
     tset += (t != 0);
     tneg += (t < 0);
-    if (sample_saved[j]) {
-      prev++;
-      flip += (sample_saved[j] != s);
-    }
-    sample_saved[j] = s;
   }
+  flip_update (sample, I->phases.saved.data (), alive, hist, compared,
+               flipped);
   f[F_x_saved_neg_frac] = ratio (neg, act);
-  f[F_x_saved_flip_frac] = ratio (flip, prev);
+  f[F_x_saved_flip_frac] = ratio (flipped, compared);
   f[F_x_target_set_frac] = ratio (tset, act);
   f[F_x_target_neg_frac] = ratio (tneg, tset);
 }
 
-void Controller::write_features () {
+void Controller::write_features (const std::vector<double> &features) {
   fputs (",\"f\":{", log);
   for (int i = 0; i < NUM_FEATURES; i++) {
     const double x = features[i];
@@ -606,83 +648,92 @@ void Controller::at_restart () {
   hook_calls++;
   Snapshot now;
   take (now);
+  refresh_sample (); // after a compaction: new sample, both histories reset
+  const char *pre_action = mode == TELEMETRY ? "CLI" : action_name (a[cur]);
 
+  // 1. observations: both record types from the same pre-action state
   if (cp) {
     const int first = checkpoint_index;
     while (checkpoint_index < NUM_CHECKPOINTS &&
            conflicts >= CHECKPOINTS[checkpoint_index])
       checkpoint_index++;
-    compute_features (now, last_checkpoint);
+    compute_features (now, last_checkpoint, hist_cp, features_cp);
     if (log) {
       fprintf (log,
                "{\"type\":\"checkpoint\",\"crossed\":[%" PRId64 ",%" PRId64
                "],\"conflicts\":%" PRId64 ",\"decisions\":%" PRId64
-               ",\"time\":%.6f,\"digest\":\"%016" PRIx64 "\"",
+               ",\"time\":%.6f,\"action\":\"%s\",\"compacts\":%" PRId64
+               ",\"sample_epoch\":%" PRId64 ",\"digest\":\"%016" PRIx64 "\"",
                CHECKPOINTS[first], CHECKPOINTS[checkpoint_index - 1],
-               conflicts, now.decisions, now.time, digest ());
-      write_features ();
+               conflicts, now.decisions, now.time, pre_action,
+               I->stats.compacts, sample_epoch, digest ());
+      write_features (features_cp);
       fputs ("}\n", log);
-    }
-    if (mode == POLICY && !policy.repeat && !decided &&
-        conflicts >= policy.prefix) {
-      decided = true;
-      const double score = policy.model.eval (features.data ());
-      const int slot = score > policy.threshold ? 1 : 0;
-      if (log)
-        fprintf (log,
-                 "{\"type\":\"decision\",\"score\":%.6g,\"slot\":%d,"
-                 "\"action\":\"%s\",\"prefix\":%" PRId64
-                 ",\"conflicts\":%" PRId64 "}\n",
-                 score, slot, action_name (a[slot]), policy.prefix,
-                 conflicts);
-      if (slot != cur)
-        apply (slot, "oneshot", policy.prefix);
     }
     last_checkpoint = now;
   }
-
+  double window_score = NaN;
+  int window_want = cur;
   if (wc) {
-    compute_features (now, last_window);
-    double score = NaN;
-    int want = cur;
+    compute_features (now, last_window, hist_win, features_win);
     if (mode == POLICY && policy.repeat) {
-      score = policy.model.eval (features.data ());
-      if (cur == 0 && score > policy.enter)
-        want = 1;
-      else if (cur == 1 && score < policy.exit)
-        want = 0;
+      window_score = policy.model.eval (features_win.data ());
+      if (cur == 0 && window_score > policy.enter)
+        window_want = 1;
+      else if (cur == 1 && window_score < policy.exit)
+        window_want = 0;
     } else if (mode == RANDOM) {
       if (random_double () * 1000.0 < I->opts.fpcprob)
-        want = 1 - cur;
+        window_want = 1 - cur;
     }
     if (log) {
       fprintf (log,
                "{\"type\":\"window\",\"index\":%" PRId64
                ",\"conflicts\":%" PRId64 ",\"decisions\":%" PRId64
-               ",\"time\":%.6f,\"action\":\"%s\",\"dwell\":%" PRId64,
-               window_index, conflicts, now.decisions, now.time,
-               mode == TELEMETRY ? "CLI" : action_name (a[cur]), dwell);
-      if (!std::isnan (score))
-        fprintf (log, ",\"score\":%.6g", score);
-      write_features ();
+               ",\"time\":%.6f,\"action\":\"%s\",\"dwell\":%" PRId64
+               ",\"compacts\":%" PRId64 ",\"sample_epoch\":%" PRId64,
+               window_index, conflicts, now.decisions, now.time, pre_action,
+               dwell, I->stats.compacts, sample_epoch);
+      if (!std::isnan (window_score))
+        fprintf (log, ",\"score\":%.6g", window_score);
+      write_features (features_win);
       fputs ("}\n", log);
     }
     last_window = now;
     next_window = conflicts + win;
     window_index++;
     dwell++;
-    if (want != cur && dwell >= mindwell && switches < maxsw)
-      apply (want, mode == RANDOM ? "random" : "repeat", conflicts);
   }
 
+  // 2. at most one action, chosen by the active mode
+  int want = cur;
+  const char *reason = 0;
+  int64_t requested = conflicts;
+  if (cp && mode == POLICY && !policy.repeat && !decided &&
+      conflicts >= policy.prefix) {
+    decided = true;
+    const double score = policy.model.eval (features_cp.data ());
+    const int slot = score > policy.threshold ? 1 : 0;
+    if (log)
+      fprintf (log,
+               "{\"type\":\"decision\",\"score\":%.6g,\"slot\":%d,"
+               "\"action\":\"%s\",\"prefix\":%" PRId64
+               ",\"conflicts\":%" PRId64 "}\n",
+               score, slot, action_name (a[slot]), policy.prefix, conflicts);
+    if (slot != cur)
+      want = slot, reason = "oneshot", requested = policy.prefix;
+  } else if (wc && window_want != cur && dwell >= mindwell &&
+             switches < maxsw)
+    want = window_want, reason = mode == RANDOM ? "random" : "repeat";
   if (sw && mode == SCHEDULE) {
-    const int64_t requested = next_switch;
-    next_switch = I->opts.fpcperiod
-                      ? conflicts + I->opts.fpcperiod
-                      : std::numeric_limits<int64_t>::max ();
-    apply (1 - cur, "schedule", requested);
+    requested = next_switch;
+    next_switch = I->opts.fpcperiod ? conflicts + I->opts.fpcperiod
+                                    : std::numeric_limits<int64_t>::max ();
+    want = 1 - cur, reason = "schedule";
   } else if (sw)
     next_switch = std::numeric_limits<int64_t>::max ();
+  if (reason && want != cur)
+    apply (want, reason, requested);
 
   if (log)
     fflush (log);
@@ -725,7 +776,10 @@ void Controller::finish (int res) {
            c.dec_p_override, c.dec_p_flip);
   for (int i = 0; i < NUM_SOURCES; i++)
     fprintf (log, "%s%" PRId64, i ? "," : "", c.dec_src[i]);
-  fprintf (log, "],\"digest\":\"%016" PRIx64 "\"}\n", digest ());
+  fprintf (log,
+           "],\"compacts\":%" PRId64 ",\"sample_epoch\":%" PRId64
+           ",\"digest\":\"%016" PRIx64 "\"}\n",
+           internal->stats.compacts, sample_epoch, digest ());
   fflush (log);
 }
 

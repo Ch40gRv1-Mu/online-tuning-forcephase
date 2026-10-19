@@ -92,6 +92,14 @@ struct Model {
   double eval (const double *features) const;
 };
 
+// Flip statistics of one record stream over the fixed variable sample:
+// 'hist' holds the saved phase seen at the previous record of the same
+// stream (0 = no comparable value).  Only samples that are active now and
+// had a valid previous value count towards 'compared'.  Exposed for tests.
+void flip_update (const std::vector<int> &sample, const signed char *saved,
+                  const std::vector<char> &active, std::vector<signed char> &hist,
+                  int64_t &compared, int64_t &flipped);
+
 struct Policy {
   bool loaded = false;
   bool repeat = false;     // 'oneshot' otherwise
@@ -101,6 +109,10 @@ struct Policy {
   double exit = 0.5;       // repeat: switch a1 -> a0 iff score < exit
   Model model;
 };
+
+// Parse a policy file (format in docs/DESIGN.md); calls exit(1) on errors.
+// Exposed so that tests can evaluate exported models with this exact code.
+void parse_policy (const std::string &path, Policy &policy);
 
 class Controller {
 public:
@@ -126,14 +138,15 @@ private:
   int64_t next_switch, switches, dwell, maxsw, mindwell;
   int checkpoint_index;
   bool decided; // oneshot decision taken
-  uint64_t rng;
+  uint64_t action_rng, sample_rng; // independent of each other and of the solver
+  int64_t seen_compacts, sample_epoch;
   FILE *log;
   std::string log_path, policy_path;
   Policy policy;
   Snapshot zero, last_window, last_checkpoint;
-  std::vector<int> sample;          // sampled variable indices
-  std::vector<signed char> sample_saved; // previous saved phases of sample
-  std::vector<double> features;
+  std::vector<int> sample;                 // sampled variable indices
+  std::vector<signed char> hist_cp, hist_win; // per-stream previous phases
+  std::vector<double> features_cp, features_win;
   double hook_time;                 // time spent in heavy hook work
   int64_t hook_calls;
   // occupancy per action slot
@@ -142,11 +155,14 @@ private:
   double occ_time[2], occ_since_time;
   int64_t applied_at_conflicts;
 
-  uint64_t next_random ();
+  static uint64_t next_random (uint64_t &state);
   double random_double ();
   void take (Snapshot &) const;
-  void compute_features (const Snapshot &now, const Snapshot &ref);
-  void write_features ();
+  void refresh_sample ();
+  void compute_features (const Snapshot &now, const Snapshot &ref,
+                         std::vector<signed char> &hist,
+                         std::vector<double> &features);
+  void write_features (const std::vector<double> &features);
   void apply (int slot, const char *reason, int64_t requested);
   uint64_t digest () const;
   void header ();
