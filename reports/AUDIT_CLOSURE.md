@@ -1,6 +1,6 @@
 # Audit v2 closure（逐项关闭记录）
 
-执行目标：[docs/AGENT_GOAL.md](../docs/AGENT_GOAL.md)（v2）。协议：[docs/CORRECTION_PROTOCOL.md](../docs/CORRECTION_PROTOCOL.md)（提交 `9e2ac23`，先于任何新分析；附录 A 于首次运行门禁后、任何修订 M3 分析前加入，提交 `48f7850`）。本轮是**看过第一轮 test/t2026 之后的事后审计**；没有用 test/t2026 做任何选择，第一轮冻结结果（tag `m5-freeze`）未改动。算力：约 23.8 CPU 核时（上限计入），见 [audit_v2/COMPUTE_AUDIT_V2.md](audit_v2/COMPUTE_AUDIT_V2.md)。
+执行目标：[docs/AGENT_GOAL_AUDIT_V2.md](../docs/AGENT_GOAL_AUDIT_V2.md)（v2）。协议：[docs/CORRECTION_PROTOCOL.md](../docs/CORRECTION_PROTOCOL.md)（提交 `9e2ac23`，先于任何新分析；附录 A 于首次运行门禁后、任何修订 M3 分析前加入，提交 `48f7850`）。本轮是**看过第一轮 test/t2026 之后的事后审计**；没有用 test/t2026 做任何选择，第一轮冻结结果（tag `m5-freeze`）未改动。算力：约 23.8 CPU 核时（上限计入），见 [audit_v2/COMPUTE_AUDIT_V2.md](audit_v2/COMPUTE_AUDIT_V2.md)。
 
 | 编号 | 发现 | 修复 / 处理（提交） | 验证命令 | 证据 | 状态 |
 |---|---|---|---|---|---|

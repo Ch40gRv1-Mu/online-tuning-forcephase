@@ -1,6 +1,6 @@
 # 最终研究报告（v2，经审计修正）：CaDiCaL 何时该用原生相位策略、何时该强制负分支？
 
-状态：第一轮 M0–M5 于 2026-10-19 完成；同日按 [Agent Goal v2](../docs/AGENT_GOAL.md) 完成事后审计与收尾（[纠正协议](../docs/CORRECTION_PROTOCOL.md)、[逐项关闭记录](AUDIT_CLOSURE.md)）。第一轮原文存档：[FINAL_REPORT_round1.md](FINAL_REPORT_round1.md)。分支 `research/forcephase-study`；冻结点 tag `m5-freeze`（未改动）。阶段报告：[M0_M1](M0_M1_report.md)、[M2](M2_report.md)、[M3](M3_report.md)、[M4](M4_report.md)、[M5](M5_report.md)；审计产物：[reports/audit_v2/](audit_v2/)、[results/audit_v2/](../results/audit_v2/)。
+状态：第一轮 M0–M5 于 2026-10-19 完成；同日按 [Agent Goal v2](../docs/AGENT_GOAL_AUDIT_V2.md) 完成事后审计与收尾（[纠正协议](../docs/CORRECTION_PROTOCOL.md)、[逐项关闭记录](AUDIT_CLOSURE.md)）。第一轮原文存档：[FINAL_REPORT_round1.md](FINAL_REPORT_round1.md)。分支 `research/forcephase-study`；冻结点 tag `m5-freeze`（未改动）。阶段报告：[M0_M1](M0_M1_report.md)、[M2](M2_report.md)、[M3](M3_report.md)、[M4](M4_report.md)、[M5](M5_report.md)；审计产物：[reports/audit_v2/](audit_v2/)、[results/audit_v2/](../results/audit_v2/)。
 
 ## English abstract
 

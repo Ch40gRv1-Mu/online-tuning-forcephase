@@ -6,14 +6,16 @@ Research question: **When should a CDCL SAT solver use its native phase policy, 
 
 **最终报告：[reports/FINAL_REPORT.md](reports/FINAL_REPORT.md)**（含英文 abstract）。
 
-## 结论速览
+**当前活动目标：[Agent Goal v3](docs/AGENT_GOAL.md)**（2026-10-19 设定，尚未执行）：先复核已有有限策略 oracle 的收益空间，再补采修复后的在线观测，按证据决定是否研究最多两次切换；候选通过开发与部署门槛后，才做一次新的独立确认。此阶段不把上一轮候选失败解释为所有在线切换无效。
 
-状态：第一轮 M0–M5 于 2026-10-19 完成；同日按 [Agent Goal v2](docs/AGENT_GOAL.md) 完成**审计修正与科研收尾**（[纠正协议](docs/CORRECTION_PROTOCOL.md)、[逐项关闭记录](reports/AUDIT_CLOSURE.md)）。结论是**有边界的负结果**。数据：SAT Competition 2023–2026 主赛道（≤100 MB），CaDiCaL 3.0.1，T = 300 s，所有 solved 结果经模型检查或 LRAT 证明检查。原始任务：[AGENT_GOAL_INITIAL.md](docs/AGENT_GOAL_INITIAL.md)；第一轮最终报告存档：[FINAL_REPORT_round1.md](reports/FINAL_REPORT_round1.md)。
+## 第一轮结论速览
+
+状态：第一轮 M0–M5 于 2026-10-19 完成；同日按 [Agent Goal v2](docs/AGENT_GOAL_AUDIT_V2.md) 完成**审计修正与科研收尾**（[纠正协议](docs/CORRECTION_PROTOCOL.md)、[逐项关闭记录](reports/AUDIT_CLOSURE.md)）。结论是**有边界的负结果**。数据：SAT Competition 2023–2026 主赛道（≤100 MB），CaDiCaL 3.0.1，T = 300 s，所有 solved 结果经模型检查或 LRAT 证明检查。原始任务：[AGENT_GOAL_INITIAL.md](docs/AGENT_GOAL_INITIAL.md)；第一轮最终报告存档：[FINAL_REPORT_round1.md](reports/FINAL_REPORT_round1.md)。
 
 - **强制负分支整体有害**：dev 上比 stock default 少解 58 个（PAR2 −10.8%），冻结的 family-disjoint test 上 −29%；损失主要在可满足实例。
 - **机制（单因素配对）**：关闭 rephase（forcephase 隐含）有清楚的损害（dev −10.0% [−21.7, −2.0]，主要在 SAT）；在 rephase 已关闭时，强制负代替 target/saved 的点估计更差但区间跨 0。
 - **编码相关**：经符号翻转检验的 F− 获胜家族（如 brent-equations）在全局翻转后变为大幅劣势，随机翻转后优势消失。
-- **不可预测**：同状态确定性重放标签（5,887 次重放、5,884 个有效配对）上，静态、time-only 与在线一次选择器在家族外都没有超过“不切换”；审计发现一个极性特征（saved 翻转率）计算有误，修复控制器并排除该特征后在同一数据与 folds 上重算，结论不变。
+- **本轮未找到可迁移的预测策略**：同状态确定性重放标签（5,887 次重放、5,884 个有效配对）上，静态、time-only 与在线一次选择器在家族外都没有超过“不切换”；审计发现一个极性特征（saved 翻转率）计算有误，修复控制器并排除该特征后在同一数据与 folds 上重算，结论不变。
 - **冻结评估**：预注册候选“先强制负 1e4 冲突再原生”在 family-disjoint test 上相对 validation-SBS（仅初始负）为 −1.0% [−3.4, +1.7]，**未达到 ≥5% 的预设目标**；在 2026 年实例上比 stock default 好 1.3% [+0.2, +2.5]，但不优于仅初始负。
 - **工程**：控制器关闭 / telemetry-only 与上游搜索逐项相同；低噪声复测中 telemetry 开销中位 +0.05%、p95 +0.35%；第一轮 36,157 次运行（2,117 CPU 小时）与本轮审计（约 23.8 CPU 小时）均有账本，全账本完整性审计 0 问题。
 - **未做 / 未知**：基于内容观测的重复切换控制器（门槛未满足，未继续）、正确 flip 特征的全集重采、长 cutoff 与其它求解器。
@@ -22,7 +24,8 @@ Research question: **When should a CDCL SAT solver use its native phase policy, 
 
 | 文档 | 内容 |
 | --- | --- |
-| [研究计划](docs/RESEARCH_PLAN.md)、[实验协议](docs/EXPERIMENT_PROTOCOL.md)、[Agent Goal](docs/AGENT_GOAL.md) | 预先给定的问题、协议与交付标准 |
+| [当前 Agent Goal v3](docs/AGENT_GOAL.md) | 下一阶段：有限策略收益空间、v2 观测、条件式多次切换与独立确认 |
+| [研究计划](docs/RESEARCH_PLAN.md)、[实验协议](docs/EXPERIMENT_PROTOCOL.md)、[审计目标 v2](docs/AGENT_GOAL_AUDIT_V2.md) | 原问题、第一轮协议与审计交付标准 |
 | [相关工作](docs/RELATED_WORK.md)、[源码审计](docs/SOURCE_AUDIT.md) | 文献与固定源码事实 |
 | [实现设计](docs/DESIGN.md) | 补丁、控制器语义、切换状态处理、遥测 schema、策略文件格式 |
 | [实验日志](docs/EXPERIMENT_LOG.md) | 预注册决定与每次协议具体化（含时间与“已接触哪些结果”） |
