@@ -8,7 +8,9 @@ Research question: **When should a CDCL SAT solver use its native phase policy, 
 
 ## 结论速览
 
-状态：M0–M5 全部完成（2026-10-19）；结论是**有边界的负结果**。数据：SAT Competition 2023–2026 主赛道（≤100 MB），CaDiCaL 3.0.1，T = 300 s，所有 solved 结果经模型检查或 LRAT 证明检查。
+**当前执行目标：[Agent Goal v2：审计修正与科研收尾](docs/AGENT_GOAL.md)。** 原始任务存档见 [AGENT_GOAL_INITIAL.md](docs/AGENT_GOAL_INITIAL.md)。第一轮测试已看过；后续先修复数据门禁和观测缺陷、复核 M3，再按证据完成研究，不能重新使用旧 test/t2026 选择新策略。
+
+状态：第一轮 M0–M5 实验已完成（2026-10-19）；**审计修正与科研收尾待按 Goal v2 执行**。第一轮结论是**有边界的负结果**。数据：SAT Competition 2023–2026 主赛道（≤100 MB），CaDiCaL 3.0.1，T = 300 s，所有 solved 结果经模型检查或 LRAT 证明检查。
 
 - **强制负分支整体有害**：dev 上比 stock default 少解 58 个（PAR2 −10.8%），held-out test 上 −29%；损失主要在可满足实例。
 - **机制**：主要来自 forcephase 同时关闭 rephasing（对 SAT 有害、对 UNSAT 略有利）；在同样关闭 rephase 时，强制方向仍比使用 saved 相位差。

@@ -69,3 +69,11 @@ M5 唯一主要候选的选择规则（在看到 M4-lite 结果之前固定）�
 - held-out 运行 13,716 次全部完成（Slurm 727087，10 个节点），3,942 solved 全部验证，0 wrong/crash/memout/unverified。
 - 评估严格按冻结文件与 tag `m5-freeze` 的脚本执行（`git diff m5-freeze` 对冻结文件、实验定义、策略与评估脚本为空）。之后只修改了 `scripts/m5_eval.py` 中两幅图的配色与坐标标签（数值输出不变），并新增描述性事后分层脚本 `scripts/m5_posthoc.py`。
 - 主假设未成立：候选 F−→D @1e4 相对 I− 为 −1.0% [−3.4, +1.7]（test），平均 solved 95.0 vs 97.3。没有根据 test 结果修改候选、阈值、指标或数据。
+
+## 2026-10-19 — 第一轮测试已见后的审计修正目标（尚未执行）
+
+- 用户要求写入新的 goal 以完成研究。活动目标更新为 `docs/AGENT_GOAL.md`（v2），原始版本保留为 `docs/AGENT_GOAL_INITIAL.md`。
+- 本次只设定后续工作，不声称已经修复或重新实验。已知待关闭项：M3 遥测/配对/prefix/switch 门禁、`x_saved_flip_frac` 的流历史与 compaction 身份错误、报告分母、M1 尾部开销未证明达标。
+- 新 goal 要求执行 agent 在任何修订分析之前提交 `docs/CORRECTION_PROTOCOL.md`。本轮唯一预定的旧数据纠正是统一排除失效 flip 特征，保留数据、原 fold、K、模型网格和评分方式；它是看过 test 之后的更正，不冒称事前预注册。
+- 保留 `m5-freeze`、原测试结果与原始记录。test/t2026 均标为已见，不能继续用于选择规则。主候选为不使用该特征的固定调度，其冻结主负结果保留。
+- 默认新增总预算上限 100 CPU 核时，优先复用既有轨迹；可靠负结果可以完成研究，不以找到正结果为结束条件。具体范围、交付与停止条件以 Goal v2 为准。
