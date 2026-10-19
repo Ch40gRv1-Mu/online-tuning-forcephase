@@ -48,3 +48,6 @@ when the smoke test was re-run, so it is not counted above (its cost was under o
 were removed. The pooled jobs `m3_replay_1k` and `m3in_replay_1k` (726807, 726815) were submitted with a comma-separated
 experiment list that `sbatch --export` truncated to the first experiment; they ran only that experiment and the rest was
 resubmitted (726819) — no runs were duplicated because run ids are content-addressed.
+
+
+Audit v2 (2026-10-19): this round-1 ledger is kept unchanged; the audit adds about 23.8 CPU hours (overhead retest, tests, re-analysis, reproduction), itemised in [audit_v2/COMPUTE_AUDIT_V2.md](audit_v2/COMPUTE_AUDIT_V2.md). Re-running scripts/compute_ledger.py today would also count the audit-v2 retest records under the experiment name audit_v2_m1.

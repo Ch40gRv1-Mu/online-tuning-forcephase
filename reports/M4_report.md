@@ -57,3 +57,7 @@ train / val 分开看（PAR2）：F−→D@1e4 在 train 333.5（I− 335.4，D 
 
 `scripts/slurm_submit.sh configs/experiments/m4_rev_D_1k.json,...,m4_mode.json 8`（6 个实验，6,050 次运行，Slurm 726937）；`scripts/collect.py ... --out results/m4/runs.csv`；`scripts/analyze_m4.py`。求解器 CPU 约 348 h（见 [COMPUTE_LEDGER.md](COMPUTE_LEDGER.md) 中 `m4_*` 行），检查 1.2 h。
 
+## 6. Audit v2 说明（2026-10-19）
+
+M4 的 6,050 次运行在全账本完整性审计中无问题（实际切换与配置一致；2 次 sw1k_Crev/sw1k_CrevIn 运行在 cutoff 后被 SIGKILL，按协议附录 A 处理，均为超时）。本阶段不使用任何特征，不受 `x_saved_flip_frac` 失效影响。完整家族表与单因素配对见 [audit_v2/family_effects.md](audit_v2/family_effects.md)、[audit_v2/ablation_pairs.md](audit_v2/ablation_pairs.md)。
+

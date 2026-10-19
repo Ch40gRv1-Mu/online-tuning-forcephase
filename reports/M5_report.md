@@ -80,3 +80,8 @@ $FP_PY scripts/m5_posthoc.py --runs results/m5_heldout/runs.csv --out reports/m5
 1. 预设的实用正结果目标**未达成**：冻结候选相对 validation-SBS 没有改进（−1.0% [−3.4, +1.7]），solved 略少。
 2. 稳健的 held-out 结论是负面与限定性的：强制负分支在 family-disjoint test 上比 stock default 差 29%（主要在 SAT 上）；“开始时短暂强制负再交还原生策略”与 stock default、仅初始负都无法区分（family-disjoint test），在 2026 年实例上比 stock default 好约 1–2%，但不比仅初始负更好。
 3. dev 上观察到的 F−→D 调度相对 D 的 +3.4% 在 test 上消失，说明 dev 上的选择（在 9 个调度中取最优）有乐观偏差，也说明这类小效应对家族组成敏感。
+
+## 7. Audit v2 复核（2026-10-19）
+
+`scripts/audit_v2/m5_recheck.py` 不复用 `m5_eval.py`，直接从 13,716 个原始 JSON 运行记录独立重算：覆盖完整（0 缺失、0 重复），所有 solved 均验证通过；每个 seed 的 solved 数完全一致，PAR2 与相对差的点估计差 ≤ 1.4e−6，独立 bootstrap 区间与本报告相差 ≤ 0.26 个百分点；冻结提交（23:31:04Z）早于第一条 M5 运行（23:31:45Z）。全账本完整性审计对 M5 的 13,716 次运行未发现问题。候选是无观测固定调度、M3 选择器只用 time-only 特征，均不依赖审计中发现失效的 `x_saved_flip_frac`，因此本报告结果保持不变（[audit_v2/m5_recheck.md](audit_v2/m5_recheck.md)）。
+

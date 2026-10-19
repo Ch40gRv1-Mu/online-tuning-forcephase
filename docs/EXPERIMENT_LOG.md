@@ -83,3 +83,14 @@ M5 唯一主要候选的选择规则（在看到 M4-lite 结果之前固定）�
 - 按 Goal v2 提交 [CORRECTION_PROTOCOL.md](CORRECTION_PROTOCOL.md)：事后审计（test/t2026 已见），唯一的旧数据纠正为统一排除 `x_saved_flip_frac`；固定数据、folds、模型网格、K、门禁分类、开销复测设计（`benchmarks/derived/audit_v2/m1_retest48.txt`）、100 CPU 核时预算与停止条件。
 - 证据快照 `results/audit_v2/evidence_snapshot.json`；第一轮控制器源码保存为 `solver/v1/`（SHA 与 `build/fpc` 的 BUILDINFO 一致：c23f03bf…）；构建脚本区分 v1（`fpc`）与修复版 v2（`fpc2`）。
 - 快照时新发现 D6：M0_M1 报告中 upstream 二进制哈希写错（应为 250220f9…）。
+
+## 2026-10-19 03:05 — 附录 A（首次运行严格门禁之后、任何修订 M3 分析之前）
+
+- 严格门禁首次运行发现 4 行 `telemetry_incomplete`：同一实例的 6 次运行在 CPU 达到 T 后未在 10 s 内响应 SIGTERM，被 SIGKILL，遥测缺 final 记录。协议附录 A 增加有界类别 `killed_after_cutoff`（见 CORRECTION_PROTOCOL §4.1），不补跑。
+
+## 2026-10-19 19:45 — Audit v2 完成（详见 reports/AUDIT_CLOSURE.md）
+
+- P0：严格门禁与 17 个回归用例；全账本完整性审计 36,077 次运行 0 问题；M3 严格数据集与第一轮逐值相同（0 数据错误、3 个 censored_unmatched、4 行附录 A）。
+- P1：控制器 v2（`fpc2`，schema 2）与行为/等价测试（100 + 40 项，M0 套件 0 失败）；第一轮 M3 精确复现；按协议排除 `x_saved_flip_frac` 后重算，结论不变；导出策略参数与第一轮相同，Python/C++ 一致。
+- P2：低噪声开销复测（48 例 × 3 × 6，864 次全部解出）telemetry vs 关闭中位 +0.05%、p95 +0.35%；M5 从原始记录独立重算一致；从干净 clone 执行小型全流程与修订 M3 入口，结果一致（仅诊断量 wAUC ≤ 0.0023 的浮点差）。
+- 新增事后与纠正后开发分析：单因素配对（收窄“强制方向比 saved 更差”的措辞为区间跨 0）、完整家族表。test/t2026 未用于任何选择；第一轮冻结主负结果保留。本轮算力约 23.8 CPU 核时（预算 100）。
