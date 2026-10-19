@@ -6,3 +6,7 @@
 | strict M3 build (3 runs incl. re-runs after appendix A) | host, analysis venv | ~330 | ~110 s CPU each (54 s user + 21 s sys measured for the first) |
 | gate regression tests | host | ~5 | |
 | integrity audit | gs-srun container, 48 procs | 311 | 36,077 runs + 1,325 CNF hashes |
+| v2 builds (fpc2, fpc2-check) + unit/API tests | gs-srun container, 32 CPUs | ~600 | compile time |
+| M3 reproduce round 1 (m3_train.py) | host, analysis venv | ~490 | 3m07 user + 5m13 sys (BLAS threads) |
+| M3 revised (m3_train_v2.py) | host, analysis venv | ~470 | 2m58 user + 4m55 sys |
+| M3 comparison, feature signal, policy consistency | host | ~120 | |
