@@ -1,0 +1,12 @@
+{
+ "name": "audit_v2_m1",
+ "campaign": "audit_v2_m1_retest",
+ "description": "Audit v2 P2: low-noise overhead retest (docs/CORRECTION_PROTOCOL.md §6). Same configurations as round-1 M1 (upstream binary without telemetry, v1 patched binary controller-off, v1 telemetry-only), 6 repeats each, 48 stratified dev instances, LRAT proofs, T=300 s; executed by scripts/audit_v2/overhead_retest.py (one exclusive node, 16 workers one per CCD, each instance's 18 runs sequentially on one core in balanced random order)",
+ "instances": {"hash_file": "benchmarks/derived/audit_v2/m1_retest48.txt"},
+ "configs": ["Dupstream", "Doff", "D"],
+ "seeds": [0],
+ "repeats": [0, 1, 2, 3, 4, 5],
+ "timeout": 300,
+ "memory_mb": 16000,
+ "proof": "lrat"
+}

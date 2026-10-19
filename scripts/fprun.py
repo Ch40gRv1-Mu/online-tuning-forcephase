@@ -190,6 +190,8 @@ def plan(exp, man=None, configs=None):
                            "telemetry": bool(c["telemetry"] and exp["telemetry"])}
                     if rep:  # repeated measurement of an otherwise identical run
                         key["repeat"] = rep
+                    if exp.get("campaign"):  # separate measurement campaign (audit v2); absent in round 1
+                        key["campaign"] = exp["campaign"]
                     rid = hashlib.sha1(json.dumps(key, sort_keys=True).encode()).hexdigest()
                     runs.append({"run_id": rid, "key": key, "config": cname, "variant_build": c["variant"],
                                  "binary": bins[c["variant"]]["path"], "exp": exp["name"]})
