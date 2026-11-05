@@ -1,0 +1,922 @@
+{
+  "candidates": [
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_chrono_share"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_chrono_share",
+      "feature_name": "td_chrono_share",
+      "formal_definition": "前缀中实际采用chronological backtracking的冲突份额。",
+      "formula": "c_chrono_frac",
+      "id": "TD01",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "观测回退方式而非平均回跳跨度或冲突/决策/传播速度。",
+      "novelty_mechanism_key": "backtracking_mode_mix",
+      "required_log_fields": [
+        "checkpoint.f.c_chrono_frac"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp",
+        "https://www.cs.toronto.edu/~meel/Papers/sat20-sm.pdf"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_restart_reuse_share"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_restart_reuse_share",
+      "feature_name": "td_restart_reuse_share",
+      "formal_definition": "自然重启中保留至少一个决策层的次数份额；不是重启频率。",
+      "formula": "c_reuse_frac",
+      "id": "TD02",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "度量重启是否保存已有搜索前缀，独立于每秒冲突数。",
+      "novelty_mechanism_key": "restart_prefix_preservation",
+      "required_log_fields": [
+        "checkpoint.f.c_reuse_frac"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/restart.cpp",
+        "https://www.cs.toronto.edu/~fbacchus/csc2512/Readings/Pipatsrisawat-Darwiche2007_Chapter_ALightweightComponentCachingSc.pdf"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_phase_source_entropy"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_phase_source_entropy",
+      "feature_name": "td_phase_source_entropy",
+      "formal_definition": "target、saved、其余三个决策相位来源桶的归一化熵。",
+      "formula": "p=[c_target_src_frac,c_saved_src_frac,1-c_target_src_frac-c_saved_src_frac]; H=-sum(p_i*ln(p_i))/ln(3)",
+      "id": "TD03",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "来源选择的混合程度，不是输出正负比例；other只表示其余来源合并桶。",
+      "novelty_mechanism_key": "native_source_arbitration",
+      "required_log_fields": [
+        "checkpoint.f.c_target_src_frac",
+        "checkpoint.f.c_saved_src_frac"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/decide.cpp"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_target_support"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_target_support",
+      "feature_name": "td_target_support",
+      "formal_definition": "固定变量样本中已定义target phase的活跃变量比例。",
+      "formula": "x_target_set_frac",
+      "id": "TD04",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "相位记忆的定义域覆盖，不使用静态变量规模或最终答案。",
+      "novelty_mechanism_key": "target_phase_domain_coverage",
+      "required_log_fields": [
+        "checkpoint.f.x_target_set_frac"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/decide.cpp",
+        "https://github.com/arminbiere/cadical/blob/master/src/restart.cpp"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_best_target_gap"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_best_target_gap",
+      "feature_name": "td_best_target_gap",
+      "formal_definition": "best_assigned与target_assigned的带符号相对差；当前active归一化因子在比值中抵消。",
+      "formula": "(x_best_frac-x_target_frac)/(abs(x_best_frac)+abs(x_target_frac))",
+      "id": "TD05",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "两个内部进度记忆的分离程度；不是target覆盖TD04或历史max的绝对大小。",
+      "novelty_mechanism_key": "target_memory_progress_lag",
+      "required_log_fields": [
+        "checkpoint.f.x_best_frac",
+        "checkpoint.f.x_target_frac"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/decide.cpp",
+        "https://github.com/arminbiere/cadical/blob/master/src/restart.cpp"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_trail_momentum"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_trail_momentum",
+      "feature_name": "td_trail_momentum",
+      "formal_definition": "当前mode内trail长度快EMA相对慢EMA的偏离。",
+      "formula": "x_trail_ratio-1",
+      "id": "TD06",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "assignment frontier的双时间尺度趋势；不是已试Glue快慢比，也不伪造首条c/w时间差。",
+      "novelty_mechanism_key": "assignment_frontier_momentum",
+      "required_log_fields": [
+        "checkpoint.f.x_trail_ratio"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/averages.hpp",
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_learned_database_load"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_learned_database_load",
+      "feature_name": "td_learned_database_load",
+      "formal_definition": "当前冗余子句数量相对于仍存不可冗余子句数量。",
+      "formula": "x_red_per_irr",
+      "id": "TD07",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "搜索过程中学习数据库相对积累；不是原输入clause/variable密度。",
+      "novelty_mechanism_key": "learned_database_accumulation",
+      "required_log_fields": [
+        "checkpoint.f.x_red_per_irr"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_saved_target_polarity_gap"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_saved_target_polarity_gap",
+      "feature_name": "td_saved_target_polarity_gap",
+      "formal_definition": "target已定义样本的负相位比例减去全部活跃样本saved负相位比例。",
+      "formula": "x_target_neg_frac-x_saved_neg_frac",
+      "id": "TD08",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "两个内部相位记忆的边际极性差；分母域不同，明确不称逐变量agreement或因果响应。",
+      "novelty_mechanism_key": "phase_memory_distribution_tension",
+      "required_log_fields": [
+        "checkpoint.f.x_target_neg_frac",
+        "checkpoint.f.x_saved_neg_frac"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/decide.cpp",
+        "https://www.cs.toronto.edu/~meel/Papers/sat20-sm.pdf"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_learned_size_regime"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_learned_size_regime",
+      "feature_name": "td_learned_size_regime",
+      "formal_definition": "当前mode学习子句长度EMA相对于整个前缀learnt literal/learnt clause均值的对数偏离。",
+      "formula": "ln(x_size_avg/c_size_mean)",
+      "id": "TD09",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "新对象是学习宽度的局部/累计分离；不使用旧六量的c/w均值变体。mode切换会重置或交换EMA，需保留该解释边界。",
+      "novelty_mechanism_key": "learned_width_regime_shift",
+      "required_log_fields": [
+        "checkpoint.f.x_size_avg",
+        "checkpoint.f.c_size_mean"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/averages.hpp",
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp",
+        "https://fmv.jku.at/papers/FleuryBiere-SAT2021.pdf"
+      ]
+    },
+    {
+      "availability": "EXISTING_QUALIFIED_TRACE",
+      "columns": [
+        "td_actual_potential_backtrack_gap"
+      ],
+      "cost": {
+        "existing_probe_cost": "reuse receipt; do not charge as new physical CPU",
+        "new_extraction": "O(1) arithmetic per qualified parent, record measured local extraction CPU",
+        "new_solver_cpu_s": 0
+      },
+      "extraction_key": "td_actual_potential_backtrack_gap",
+      "feature_name": "td_actual_potential_backtrack_gap",
+      "formal_definition": "实际backtrack level EMA与潜在nonchronological backjump level EMA的归一化差。",
+      "formula": "(x_level_avg-x_jump_avg)/(abs(x_level_avg)+abs(x_jump_avg))",
+      "id": "TD10",
+      "implementation": "first qualified checkpoint only; no post-first-checkpoint values",
+      "needs_new_instrumentation": false,
+      "novelty": "区分实际与潜在回退几何；不能仅凭x_level_avg的旧均值构造。",
+      "novelty_mechanism_key": "chronological_retained_depth",
+      "required_log_fields": [
+        "checkpoint.f.x_level_avg",
+        "checkpoint.f.x_jump_avg"
+      ],
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/averages.hpp",
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp",
+        "https://www.cs.toronto.edu/~meel/Papers/sat20-sm.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_learned_pure_sign_balance"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(total learned literals); no extra solver runs"
+      },
+      "extraction_key": "td_learned_pure_sign_balance",
+      "feature_name": "td_learned_pure_sign_balance",
+      "formal_definition": "新学习子句中全正与全负子句的差，占非空学习子句数。",
+      "formula": "(learned_all_positive-learned_all_negative)/learned_nonempty",
+      "id": "TD11",
+      "implementation": "学习子句落地时一次扫描符号；3个64位计数器。",
+      "needs_new_instrumentation": true,
+      "novelty": "动态学出的符号一致子句，不能由原始正文字比例或平均学习长度恢复。",
+      "novelty_mechanism_key": "learned_clause_sign_coherence",
+      "required_log_fields": [
+        "learned_all_positive",
+        "learned_all_negative",
+        "learned_nonempty"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp",
+        "https://www.cs.toronto.edu/~meel/Papers/sat20-sm.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_reason_sign_transmission"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(sampled reason DAG visits), cap 10000 visits"
+      },
+      "extraction_key": "td_reason_sign_transmission",
+      "feature_name": "td_reason_sign_transmission",
+      "formal_definition": "带唯一决策祖先的抽样隐含赋值中，隐含文字符号与该决策祖先符号一致的比例减去不一致比例。",
+      "formula": "(same_sign_ancestor-opposite_sign_ancestor)/unique_ancestor_implications",
+      "id": "TD12",
+      "implementation": "固定seed抽样最多256个reason查询；多祖先/预算不足记missing，不强选祖先。",
+      "needs_new_instrumentation": true,
+      "novelty": "观测单条D轨迹中的实际理由链方向，不是H06外加条件分支，也不声称干预因果。",
+      "novelty_mechanism_key": "implication_sign_transmission",
+      "required_log_fields": [
+        "same_sign_ancestor",
+        "opposite_sign_ancestor",
+        "unique_ancestor_implications"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/propagate.cpp",
+        "https://www.cs.toronto.edu/~fbacchus/csc2512/Readings/Pipatsrisawat-Darwiche2007_Chapter_ALightweightComponentCachingSc.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_sign_lifetime_gap"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(sampled assignments), fixed256 slots"
+      },
+      "extraction_key": "td_sign_lifetime_gap",
+      "feature_name": "td_sign_lifetime_gap",
+      "formal_definition": "本前缀内赋值并撤销且观测完整的正负赋值，其以冲突数计的平均存活期差。",
+      "formula": "mean(lifetime|negative)-mean(lifetime|positive)",
+      "id": "TD13",
+      "implementation": "固定变量样本256，赋值/撤销更新birth和两组sum/count；右删失赋值不补0。",
+      "needs_new_instrumentation": true,
+      "novelty": "同一原生轨迹内正负赋值稳定性，不是F+/F-多臂相对运行时间。",
+      "novelty_mechanism_key": "phase_assignment_persistence",
+      "required_log_fields": [
+        "assignment_birth_conflict_sample",
+        "unassignment_conflict_sample",
+        "assigned_sign_sample"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/propagate.cpp",
+        "https://www.cs.toronto.edu/~meel/Papers/sat20-sm.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_resolution_compression"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(1) per visited reason; no second traversal"
+      },
+      "extraction_key": "td_resolution_compression",
+      "feature_name": "td_resolution_compression",
+      "formal_definition": "主冲突分析中消耗的不同reason子句数量相对于最终1UIP子句文字数的平均比。",
+      "formula": "mean(distinct_resolved_reason_clauses/max(1,learned_size))",
+      "id": "TD14",
+      "implementation": "已有reason遍历上计数；每冲突2计数器累计sum/n。",
+      "needs_new_instrumentation": true,
+      "novelty": "解释证明工作如何压缩成一个学习子句，不是学习长度或Glue均值。",
+      "novelty_mechanism_key": "resolution_proof_compression",
+      "required_log_fields": [
+        "resolved_reason_count",
+        "learned_size"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp",
+        "https://fmv.jku.at/papers/FleuryBiere-SAT2021.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_reason_depth"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "bounded DAG walk; do not change propagation"
+      },
+      "extraction_key": "td_reason_depth",
+      "feature_name": "td_reason_depth",
+      "formal_definition": "固定抽样冲突文字至最近决策/根文字的最长理由祖先深度中位数。",
+      "formula": "median(max_reason_path_depth(sampled_conflict_literals))",
+      "id": "TD15",
+      "implementation": "固定256字面样本与10000祖先访问上限；不完整深度为missing。",
+      "needs_new_instrumentation": true,
+      "novelty": "因果理由链深度，区别于decision level数。",
+      "novelty_mechanism_key": "implication_ancestry_depth",
+      "required_log_fields": [
+        "sampled_reason_parent_links",
+        "reason_terminal_type"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/propagate.cpp",
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_reason_reconvergence"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "bounded10000 edges; shared instrumentation"
+      },
+      "extraction_key": "td_reason_reconvergence",
+      "feature_name": "td_reason_reconvergence",
+      "formal_definition": "抽样祖先遍历中再次碰到已访问祖先的边数占总祖先边数。",
+      "formula": "revisited_ancestor_edges/visited_ancestor_edges",
+      "id": "TD16",
+      "implementation": "复用TD15抽样遍历的小型visited集合；不跨查询混合访问标记。",
+      "needs_new_instrumentation": true,
+      "novelty": "理由DAG多路径重汇合，区别于原始CNF环密度和单路径深度。",
+      "novelty_mechanism_key": "implication_dag_reconvergence",
+      "required_log_fields": [
+        "revisited_ancestor_edges",
+        "visited_ancestor_edges"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp",
+        "https://fmv.jku.at/papers/FleuryBiere-SAT2021.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_uip_trail_localization"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(1) per analyzed conflict"
+      },
+      "extraction_key": "td_uip_trail_localization",
+      "feature_name": "td_uip_trail_localization",
+      "formal_definition": "当前决策层中，1UIP在trail上距层尾的相对位置的均值。",
+      "formula": "mean((trail_end-uip_trail_index)/current_level_trail_length)",
+      "id": "TD17",
+      "implementation": "记录已找到UIP的trail位置；每冲突常数更新。",
+      "needs_new_instrumentation": true,
+      "novelty": "UIP相对赋值顺序的位置，不由Glue、回退层或学习长度决定。",
+      "novelty_mechanism_key": "uip_conflict_locality",
+      "required_log_fields": [
+        "uip_trail_index",
+        "current_level_trail_begin",
+        "trail_end"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_cut_level_entropy"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(learned literals); transient level map"
+      },
+      "extraction_key": "td_cut_level_entropy",
+      "feature_name": "td_cut_level_entropy",
+      "formal_definition": "每个最终学习子句按其文字decision level占比计算归一化熵，再取前缀均值。",
+      "formula": "mean(-sum_l p_l*ln(p_l)/ln(number_of_nonempty_levels)); singleton=0",
+      "id": "TD18",
+      "implementation": "复用Glue的level遍历积累频数；只保留sum/n。",
+      "needs_new_instrumentation": true,
+      "novelty": "同一Glue值下level占用可集中或均匀，旧Glue平均数不能恢复。",
+      "novelty_mechanism_key": "conflict_cut_level_occupancy",
+      "required_log_fields": [
+        "learned_literal_levels_histogram"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://www.ijcai.org/Proceedings/09/Papers/074.pdf",
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_clause_phase_violation"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(learned literals), preserve before-update ordering"
+      },
+      "extraction_key": "td_clause_phase_violation",
+      "feature_name": "td_clause_phase_violation",
+      "formal_definition": "新学习子句在学习前saved phase向量下无满足文字的比例，只在所有变量saved相位已定义时计。",
+      "formula": "fully_falsified_under_saved/fully_evaluable_learned_clauses",
+      "id": "TD19",
+      "implementation": "学习子句落地前扫描文字并查saved数组；2计数器。",
+      "needs_new_instrumentation": true,
+      "novelty": "学习新约束与当前记忆赋值的联合兼容性；不是边际符号差或重新求F两分支。",
+      "novelty_mechanism_key": "learned_phase_vector_compatibility",
+      "required_log_fields": [
+        "learned_literals",
+        "pre_learning_saved_phase_by_variable"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/decide.cpp",
+        "https://www.cs.toronto.edu/~fbacchus/csc2512/Readings/Pipatsrisawat-Darwiche2007_Chapter_ALightweightComponentCachingSc.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_conflict_variable_turnover"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(analyzed literals), fixed512 hash entries"
+      },
+      "extraction_key": "td_conflict_variable_turnover",
+      "feature_name": "td_conflict_variable_turnover",
+      "formal_definition": "两个相邻固定128分析冲突窗口中，被分析变量集合的Jaccard距离。",
+      "formula": "1-estimated_Jaccard_bottom_k(V_prev,V_recent); fixed k256 and seed, estimate not exact full-set Jaccard",
+      "id": "TD20",
+      "implementation": "两个固定容量bottom-k哈希集合(k256)，仅输出集合重合摘要；不把ID当模型特征。",
+      "needs_new_instrumentation": true,
+      "novelty": "搜索涉及的变量集合换区，区别于静态模块数或速率。",
+      "novelty_mechanism_key": "search_region_turnover",
+      "required_log_fields": [
+        "analysis_variable_ids_by_window"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_bump_concentration"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(1) sampled bump updates;256 counters"
+      },
+      "extraction_key": "td_bump_concentration",
+      "feature_name": "td_bump_concentration",
+      "formal_definition": "前缀变量冲突分析bump计数分布的Herfindahl指数。",
+      "formula": "sum_v bump_count[v]^2/(sum_v bump_count[v])^2",
+      "id": "TD21",
+      "implementation": "固定seed256变量样本；注明是样本条件HHI，非总体精确HHI。",
+      "needs_new_instrumentation": true,
+      "novelty": "冲突注意力集中度，保持ID匿名，不是VSIDS分值绝对尺度。",
+      "novelty_mechanism_key": "search_attention_concentration",
+      "required_log_fields": [
+        "sampled_variable_bump_counts"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_activity_rank_enrichment"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(active variables log active variables) once; sample cap256"
+      },
+      "extraction_key": "td_activity_rank_enrichment",
+      "feature_name": "td_activity_rank_enrichment",
+      "formal_definition": "最近抽样256学习子句变量，在动作前checkpoint当前activity前10%中的占比相对基准0.1的偏离。",
+      "formula": "learned_variables_in_top_activity_decile/learned_variable_occurrences-0.1",
+      "id": "TD22",
+      "implementation": "首次合格checkpoint动作前固定排序一次建立当前rank；评价此前固定抽样最后256学习子句变量。不称为历史pre-bump rank。",
+      "needs_new_instrumentation": true,
+      "novelty": "冲突切割相对既有活动秩的定位，区别于TD21的前缀bump集中度。",
+      "novelty_mechanism_key": "conflict_activity_rank_localization",
+      "required_log_fields": [
+        "checkpoint_activity_rank",
+        "recent_sampled_learned_variable_ids"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_learned_recurrence"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(8*learned literals), memory2048 hashes"
+      },
+      "extraction_key": "td_learned_recurrence",
+      "feature_name": "td_learned_recurrence",
+      "formal_definition": "最近128学习子句分别与前一128窗口的最近文字集合相似度均值；符号保留。",
+      "formula": "mean_C max_D estimated_Jaccard(signed_literals(C),signed_literals(D))",
+      "id": "TD23",
+      "implementation": "每子句8个minhash，固定两个128窗口；估计及seed明确记录。",
+      "needs_new_instrumentation": true,
+      "novelty": "动态重复学习近似同一约束；不是输入重复子句数。",
+      "novelty_mechanism_key": "learned_constraint_recurrence",
+      "required_log_fields": [
+        "signed_learned_clause_minhash"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp",
+        "https://www.cs.toronto.edu/~fbacchus/csc2512/Readings/Pipatsrisawat-Darwiche2007_Chapter_ALightweightComponentCachingSc.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_learned_first_reuse_age"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(1) sampled reason uses;256 slots"
+      },
+      "extraction_key": "td_learned_first_reuse_age",
+      "feature_name": "td_learned_first_reuse_age",
+      "formal_definition": "曾首次作为传播reason使用的学习子句，其创建到首次使用的冲突数中位数。",
+      "formula": "median(first_reason_use_conflict-birth_conflict)",
+      "id": "TD24",
+      "implementation": "仅追踪固定bottom-k256学习子句；未复用者右删失，另记eligible/reused计数。",
+      "needs_new_instrumentation": true,
+      "novelty": "学习引理实际使用延迟，不能由数量、长度或Glue恢复。",
+      "novelty_mechanism_key": "learned_lemma_time_to_utility",
+      "required_log_fields": [
+        "learned_clause_birth_conflict",
+        "first_reason_use_conflict"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/propagate.cpp",
+        "https://www.ijcai.org/Proceedings/09/Papers/074.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_blocker_success_share"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "two increments per watch visit; require measured observer overhead"
+      },
+      "extraction_key": "td_blocker_success_share",
+      "feature_name": "td_blocker_success_share",
+      "formal_definition": "主搜索传播检查中，因blocking literal已满足而跳过reason子句读取的比例。",
+      "formula": "satisfied_blocker_skips/watch_entries_examined",
+      "id": "TD25",
+      "implementation": "propagate watch loop仅两个计数器；严禁改变watch顺序。",
+      "needs_new_instrumentation": true,
+      "novelty": "内存访问绕开机会，区别于H04传播/决策速度与ticks总量。",
+      "novelty_mechanism_key": "watcher_short_circuit_success",
+      "required_log_fields": [
+        "satisfied_blocker_skips",
+        "watch_entries_examined"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/propagate.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_restart_signed_retention"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(256) per natural restart"
+      },
+      "extraction_key": "td_restart_signed_retention",
+      "feature_name": "td_restart_signed_retention",
+      "formal_definition": "重启前被赋值的固定样本中，重启后仍赋同一符号的负赋值保留率减去正赋值保留率。",
+      "formula": "P(retained_same_sign|pre_negative)-P(retained_same_sign|pre_positive)",
+      "id": "TD26",
+      "implementation": "自然重启前后对同256活跃样本配对；两类各有支持才可用。",
+      "needs_new_instrumentation": true,
+      "novelty": "重启复用TD02的有符号状态选择性，明确不是另一次配置比较。",
+      "novelty_mechanism_key": "restart_signed_state_retention",
+      "required_log_fields": [
+        "sampled_pre_restart_assignment",
+        "sampled_post_restart_assignment"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/restart.cpp",
+        "https://www.cs.toronto.edu/~fbacchus/csc2512/Readings/Pipatsrisawat-Darwiche2007_Chapter_ALightweightComponentCachingSc.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_chrono_redecision_flip"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(1) sampled backtrack/decision updates"
+      },
+      "extraction_key": "td_chrono_redecision_flip",
+      "feature_name": "td_chrono_redecision_flip",
+      "formal_definition": "chronological回退后，同一变量下次自由决策与撤销赋值符号不同的比例。",
+      "formula": "flipped_redecisions_after_chrono/matched_redecisions_after_chrono",
+      "id": "TD27",
+      "implementation": "仅保存256样本的上次chrono撤销符号和有效标记；匹配即消耗。",
+      "needs_new_instrumentation": true,
+      "novelty": "真实配对转移概率，区别于已有边际saved负比例及H05多配置响应。",
+      "novelty_mechanism_key": "chronological_phase_transition",
+      "required_log_fields": [
+        "chrono_unassigned_sampled_sign",
+        "next_free_decision_sign_by_same_variable"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://www.cs.toronto.edu/~meel/Papers/sat20-sm.pdf",
+        "https://github.com/arminbiere/cadical/blob/master/src/decide.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_conflict_burstiness"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(1) per conflict; constant memory"
+      },
+      "extraction_key": "td_conflict_burstiness",
+      "feature_name": "td_conflict_burstiness",
+      "formal_definition": "相邻主分析冲突间自由决策数间隔的变异系数；不是间隔均值。",
+      "formula": "sqrt(mean(gap^2)-mean(gap)^2)/mean(gap)",
+      "id": "TD28",
+      "implementation": "每分析冲突Welford更新间隔分布；至少32间隔。",
+      "needs_new_instrumentation": true,
+      "novelty": "同平均decisions/conflict仍可有不同burstiness，不能由H04均值速率恢复。",
+      "novelty_mechanism_key": "search_conflict_renewal_dispersion",
+      "required_log_fields": [
+        "decision_gap_n",
+        "decision_gap_sum",
+        "decision_gap_sum_squares"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_glue_size_dependence"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(1) per learned clause;81 counters"
+      },
+      "extraction_key": "td_glue_size_dependence",
+      "feature_name": "td_glue_size_dependence",
+      "formal_definition": "学习子句按固定长度桶分层后，Glue与长度的有序联合相关；使用Spearman桶秩协方差。",
+      "formula": "corr(rank_bin(learned_size),rank_bin(glue))",
+      "id": "TD29",
+      "implementation": "固定长度桶[1,2,3,4,8,16,32,64,inf]与Glue桶[1,2,3,4,6,8,16,32,inf]计数；共81格。",
+      "needs_new_instrumentation": true,
+      "novelty": "保留均值及低Glue份额以外的联合分布，不能由旧六聚合量重建；常数边缘分布为missing。",
+      "novelty_mechanism_key": "learned_level_width_dependence",
+      "required_log_fields": [
+        "joint_size_glue_histogram"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://www.ijcai.org/Proceedings/09/Papers/074.pdf",
+        "https://fmv.jku.at/papers/FleuryBiere-SAT2021.pdf"
+      ]
+    },
+    {
+      "availability": "NEEDS_NEW_OBSERVER",
+      "columns": [
+        "td_lemma_dependency_depth"
+      ],
+      "cost": {
+        "bounded_prefix": "one native D prefix; propose max2 CPU seconds including parsing, first natural restart crossing1000 conflicts; no forced phase arm",
+        "cost_status": "engineering estimate, not a measurement; reserve/measure compile+probe+controller+failed work",
+        "overhead_estimate": "O(1) per traversed reason;2 bytes per live tracked clause"
+      },
+      "extraction_key": "td_lemma_dependency_depth",
+      "feature_name": "td_lemma_dependency_depth",
+      "formal_definition": "学习子句的证明依赖深度，定义原始reason子句为0，新子句为1+其已用reason子句最大深度。",
+      "formula": "mean(log1p(1+max(reason_clause_dependency_depth)))",
+      "id": "TD30",
+      "implementation": "每子句一项饱和uint16深度，分析时沿已有reason引用取max；饱和显式missing。",
+      "needs_new_instrumentation": true,
+      "novelty": "以学习引理为节点的证明知识层积，区别于单次赋值reason DAG深度TD15。",
+      "novelty_mechanism_key": "learned_proof_ancestry",
+      "required_log_fields": [
+        "reason_clause_dependency_depth",
+        "new_learned_clause_dependency_depth"
+      ],
+      "source_relation": "Literature/source inspiration only; no paper is claimed to validate this phase-selection feature.",
+      "sources": [
+        "https://github.com/arminbiere/cadical/blob/master/src/analyze.cpp",
+        "https://fmv.jku.at/papers/FleuryBiere-SAT2021.pdf"
+      ]
+    }
+  ],
+  "count": 30,
+  "first10_columns": [
+    "td_chrono_share",
+    "td_restart_reuse_share",
+    "td_phase_source_entropy",
+    "td_target_support",
+    "td_best_target_gap",
+    "td_trail_momentum",
+    "td_learned_database_load",
+    "td_saved_target_polarity_gap",
+    "td_learned_size_regime",
+    "td_actual_potential_backtrack_gap"
+  ],
+  "first10_existing_order": [
+    "TD01",
+    "TD02",
+    "TD03",
+    "TD04",
+    "TD05",
+    "TD06",
+    "TD07",
+    "TD08",
+    "TD09",
+    "TD10"
+  ],
+  "fixed_population": {
+    "existing_manifest_tasks": 192,
+    "feedback": 60,
+    "final_test": "FORBIDDEN",
+    "fit": 180,
+    "gate": "FORBIDDEN_CONSUMED"
+  },
+  "identity_scope": {
+    "external_source_note": "upstream master is mechanism documentation, not automatically the qualified executable; bind any new instrumentation to local pinned source and new binary SHA",
+    "observer": "ta-probe-v1",
+    "observer_source_sha256": "d92d0ef0638397fb6eddaad64a5b2d8619e8cf5d805d9f56dd469005bef16015",
+    "reference_manifest": "configs/ta_feature_discovery/dynamic_all192_manifest_v1.json",
+    "reference_receipt_index": "work/ta_feature_discovery/dynamic_all192_v1/receipt_index.json",
+    "source_definitions": "work/phase_prediction_20261104/project/solver/fpcontrol.cpp"
+  },
+  "missing_contract": "Nonfinite/missing operands, zero denominators or insufficient qualifying events -> null. All240parents retained; unavailable candidate input falls back to fit-selected fixed control. Existing extraction conservatively reuses original COMPLETE receipts only; no rescue of old MISSING and no partial-feedback publication.",
+  "not_new_iteration_features": [
+    "c_glue_mean",
+    "c_glue_low_frac",
+    "x_glue_ratio",
+    "c_minsize_mean",
+    "x_level_avg",
+    "c_backjump_mean",
+    "H04 mean conflict/decision/propagation/CPU rates",
+    "H05 paired forced-phase responses",
+    "H06 conditioned propagation",
+    "raw static formula families",
+    "hashes, IDs, file names, SAT answer, timeout flags, wall times as inputs"
+  ],
+  "owner": "parallel_learning; root owns experiment/budget/dedup",
+  "pre_action_contract": "First natural-restart checkpoint crossing1000 conflicts, NATIVE, r_switches=0, min20 learned clauses, process_cpu_s<=2. Use no terminal answer/counters or later checkpoint. c_/w_ are identical at first checkpoint; saved_flip has no previous checkpoint.",
+  "schema": "ta100.dynamic_candidates.v1",
+  "status": "PROPOSED_NOT_SCORED",
+  "table_contract": "Extractor publishes exactly192 manifest IDs including missing values; root scorer preserves full240 population, unmatched48 default null."
+}

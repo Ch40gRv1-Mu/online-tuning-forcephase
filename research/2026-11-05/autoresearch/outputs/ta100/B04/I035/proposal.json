@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_canalizing_depth"
+    ],
+    "hypothesis": "For each sampled nonconstant local satisfaction predicate on3..4 variables, recursively find a literal restriction making the predicate constant, continue on the other branch, and maximize chain length. f=mean(max_depth/arity).",
+    "id": "I035",
+    "mechanism_key": "local_function_canalizing_hierarchy",
+    "registry_id": "S35"
+  },
+  "original_preexecution_config": "configs/ta100/B04.json",
+  "original_config_sha256": "63f35476a7e708b9534df47b2e57d104a89783b1705dc812aac7e6edc35a47e7",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

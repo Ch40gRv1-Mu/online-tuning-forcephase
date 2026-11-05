@@ -1,0 +1,28 @@
+{
+  "xlsx_rows": 800,
+  "xlsx_distinct_instances": 400,
+  "modes": [
+    "false",
+    "true"
+  ],
+  "headers": [
+    "ile",
+    "polarity_mode",
+    "result",
+    "exit_code",
+    "wall_time_s",
+    "cpu_time_s",
+    "restarts",
+    "conflicts",
+    "decisions",
+    "propagations"
+  ],
+  "same_instance_set_as_preserved_professor_pairs": true,
+  "current40_instances_present": 40,
+  "current40_total": 40,
+  "permitted_development_instances_compared": 240,
+  "permitted_development_phase_rows_compared": 480,
+  "result_or_time_mismatches": 0,
+  "gate_or_final_test_performance_compared_or_reported": false,
+  "comparison_scope": "Identifier correspondence only for all rows; outcome/time equality restricted to development_fit/feedback. No terminal counts used as features. Excel booleans normalized to original false/true labels."
+}

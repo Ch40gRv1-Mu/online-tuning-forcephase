@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_clause_target_phase_violation"
+    ],
+    "hypothesis": "每个新学习子句仅当其所有变量TARGET phase已定义时可评价；计算可完整评价学习子句被既有TARGET向量全部否定的比例。无可评价事件为null，未知target事件不当作0。",
+    "id": "I089",
+    "mechanism_key": "learned_target_memory_constraint_compatibility",
+    "registry_id": "TD19v2"
+  },
+  "original_preexecution_config": "configs/ta100/B09.json",
+  "original_config_sha256": "93361ef727629ed8046c1d35d4d6981e1dd16e9512e634dba03b13acbc235f6f",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

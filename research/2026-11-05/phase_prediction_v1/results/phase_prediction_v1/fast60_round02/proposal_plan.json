@@ -1,0 +1,41 @@
+{
+  "acceptance": "No automatic final-test promotion; strongest static/simple control, once-only gate and actual deployment must still pass",
+  "actor": "Current Codex, using round1 numeric development memory; no external LLM call or weight update",
+  "created_before": "new-server full formal feedback is unavailable; P1 is still running",
+  "evaluation": "full formal static matrix only; two seeds averaged within parent; baseline including Iminus selected only on fit; feedback reward uses total T including extraction; intervals exploratory",
+  "proposals": [
+    {
+      "depth": 2,
+      "features": [
+        "s_mean_length",
+        "s_length_std",
+        "s_binary_fraction",
+        "s_ternary_fraction",
+        "s_long_fraction",
+        "s_cv_ratio",
+        "s_mean_polarity_imbalance",
+        "s_positive_fraction"
+      ],
+      "kind": "clause_length_and_polarity",
+      "min_leaf": 12,
+      "rationale": "Round1 length/binary stumps had uncertain gains and costly mistakes. Fit a shallow rule with richer directly computed clause and polarity summaries; do not infer an application label."
+    },
+    {
+      "depth": 2,
+      "features": [
+        "g_cycle_excess_per_incidence",
+        "g_leaf_variable_fraction",
+        "g_degree_two_fraction",
+        "g_degree_cv",
+        "g_degree_entropy_normalized",
+        "g_gate_motif_fraction",
+        "g_largest_component_fraction"
+      ],
+      "kind": "graph_only",
+      "min_leaf": 12,
+      "rationale": "Test the stated tree/gate structure perspective with numeric invariant graph measurements; compare its real extraction cost with the clause-only proposal."
+    }
+  ],
+  "round": 2,
+  "threshold_grid": "fit-only 1/8..7/8 unique-value quantiles; at least 12 parents per leaf; 1 percent fit cost reduction required to split"
+}

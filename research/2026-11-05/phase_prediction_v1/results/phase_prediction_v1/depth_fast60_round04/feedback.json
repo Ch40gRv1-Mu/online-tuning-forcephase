@@ -1,0 +1,592 @@
+[
+  {
+    "acceptance": "exploratory_positive_pending_gate_and_deployment",
+    "analysis_identity": {
+      "checker_options": [
+        "--no-trim"
+      ],
+      "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+      "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+      "extractor_memory_bytes": 1610612736,
+      "extractor_sha256": "7bb7756f28d9ed550b583dd303f80549069129bd80ea9d37190ce6ebebda9896",
+      "feature_contract": "depth43_v1",
+      "feature_join_and_whitelist_source_sha256": "840e1ce33abd85b992073369cf23d6301510a0644f8be00d46ab187e9c30fdde",
+      "feature_stage_identity": {
+        "base_structure_source_sha256": "9f59eb26ca048cf8361f172ff2e757847958dc6eaae08bb1c25aba6d5b493b59",
+        "binary_sha256": "7bb7756f28d9ed550b583dd303f80549069129bd80ea9d37190ce6ebebda9896",
+        "cohort_sha256": "f259dc2a26cca843360015833ae78291898bf7b1e7450389bd07bf7ea611ecf4",
+        "runner_sha256": "e2ada86d5c5c32b4a7e4b65d965956dd03aafad4faf07c57937d169a86539006",
+        "source_sha256": "24ba94ea4e3c4956edbb8d608807b125a5a0059fa0cb1032026a1cd339348291"
+      },
+      "memory_bytes": 1610612736,
+      "mode": "static",
+      "numeric_feature_allowlist": [
+        "d_core_edge_fraction",
+        "d_core_vertex_fraction",
+        "d_gate_condensation_depth",
+        "d_gate_cyclic_variable_fraction",
+        "d_gate_depth_exact",
+        "d_gate_output_positive_fraction",
+        "d_gate_variable_coverage",
+        "d_incidence_geometry_exact",
+        "d_leaf_peeling_rounds",
+        "g_components",
+        "g_cycle_excess",
+        "g_cycle_excess_per_incidence",
+        "g_degree_cv",
+        "g_degree_entropy_normalized",
+        "g_degree_max",
+        "g_degree_mean",
+        "g_degree_p50",
+        "g_degree_p90",
+        "g_degree_two_fraction",
+        "g_gate_motif_fraction",
+        "g_gate_motifs_exact",
+        "g_largest_component_fraction",
+        "g_leaf_variable_fraction",
+        "s_antihorn_fraction",
+        "s_binary_fraction",
+        "s_clauses",
+        "s_cv_ratio",
+        "s_empty_fraction",
+        "s_header_variables",
+        "s_horn_fraction",
+        "s_jw_positive_fraction",
+        "s_length_std",
+        "s_log_clauses",
+        "s_log_variables",
+        "s_long_fraction",
+        "s_max_length",
+        "s_mean_length",
+        "s_mean_polarity_imbalance",
+        "s_positive_fraction",
+        "s_pure_variable_fraction",
+        "s_ternary_fraction",
+        "s_unit_fraction",
+        "s_variables"
+      ],
+      "original_analysis_cases_sha256": "42cec4ecd10687b47459f3a69739de2ff054d2545c9a8152c097326c710a841b",
+      "original_runtime_extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+      "proof_file_limit_bytes": 1073741824,
+      "runner_sha256": "32413e8769bfd70d1a14953373f4ee7000c469ce4d9300114245854109d6497a",
+      "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+      "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+      "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+      "verification": "timed_binary_LRAT_lrat_trim"
+    },
+    "baseline_par2": 90.20492834375,
+    "baseline_solved_seed_average_count": 4,
+    "descriptive_95pct_bootstrap": [
+      -0.0003289150444367728,
+      0.0006412355187397356
+    ],
+    "development_gate_cases_used": 0,
+    "episode_id": "formal_round4_0",
+    "evaluation_cases_sha256": "fabec9444b39f2741cb371f5fe16370ad1af50743e1e084b232c267bccd01975",
+    "evaluation_kind": "new_server_formal_static_cost_matrix",
+    "feedback_parents": 16,
+    "fit_parents": 24,
+    "frozen_static_baseline_from_fit": "Fplus",
+    "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+    "is_deployment_validation": false,
+    "learner_sha256": "925c45fcf90cc0c0dd0caa4d07b73c56fb3b0d3cdf85708dd62a5102e7e4c0b2",
+    "local_fit_and_evaluation_cpu_s": 0.279158,
+    "matched_simple_control": {
+      "depth": 3,
+      "feedback": {
+        "baseline_par2": 90.20492834375,
+        "baseline_solved_seed_average_count": 4,
+        "descriptive_95pct_bootstrap": [
+          -0.0010910615039836369,
+          -7.900743901112506e-06
+        ],
+        "feedback_parents": 16,
+        "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+        "policy_par2": 90.236455625,
+        "policy_solved_seed_average_count": 4,
+        "reward": -0.00034950730330240987,
+        "sum_par2_regret_to_free_three_action_oracle": 304.274874,
+        "worst_numeric_examples": [
+          {
+            "baseline_par2": 2.4897169999999997,
+            "features": {
+              "g_cycle_excess": 753032
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 2.8206569999999997
+          },
+          {
+            "baseline_par2": 0.7405539999999999,
+            "features": {
+              "g_cycle_excess": 557996
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 0.8787579999999999
+          },
+          {
+            "baseline_par2": 0.028207499999999996,
+            "features": {
+              "g_cycle_excess": 69017
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 0.0492785
+          }
+        ]
+      },
+      "fit_par2": 84.2585973125,
+      "input_features": [
+        "d_core_edge_fraction",
+        "d_core_vertex_fraction",
+        "d_gate_condensation_depth",
+        "d_gate_cyclic_variable_fraction",
+        "d_gate_depth_exact",
+        "d_gate_output_positive_fraction",
+        "d_gate_variable_coverage",
+        "d_incidence_geometry_exact",
+        "d_leaf_peeling_rounds",
+        "g_components",
+        "g_cycle_excess",
+        "g_cycle_excess_per_incidence",
+        "g_degree_cv",
+        "g_degree_entropy_normalized",
+        "g_degree_max",
+        "g_degree_mean",
+        "g_degree_p50",
+        "g_degree_p90",
+        "g_degree_two_fraction",
+        "g_gate_motif_fraction",
+        "g_gate_motifs_exact",
+        "g_largest_component_fraction",
+        "g_leaf_variable_fraction",
+        "s_antihorn_fraction",
+        "s_binary_fraction",
+        "s_clauses",
+        "s_cv_ratio",
+        "s_empty_fraction",
+        "s_header_variables",
+        "s_horn_fraction",
+        "s_jw_positive_fraction",
+        "s_length_std",
+        "s_log_clauses",
+        "s_log_variables",
+        "s_long_fraction",
+        "s_max_length",
+        "s_mean_length",
+        "s_mean_polarity_imbalance",
+        "s_positive_fraction",
+        "s_pure_variable_fraction",
+        "s_ternary_fraction",
+        "s_unit_fraction",
+        "s_variables"
+      ],
+      "min_leaf": 8,
+      "policy": {
+        "feature": "g_cycle_excess",
+        "left": {
+          "action": "D"
+        },
+        "missing": "left",
+        "right": {
+          "action": "Fplus"
+        },
+        "threshold": 27535
+      },
+      "policy_sha256": "7f7a015f89751cbd7992aa02df55ad59428d3d0cb5c76e86603c160dd2153583",
+      "training_scope": "Fit only; predeclared full numeric pool, same tree capacity, grid and total-budget loss."
+    },
+    "panel_contract": {
+      "cutoff_s": 60,
+      "independent_parents": 40,
+      "required_seeds": [
+        0,
+        1
+      ]
+    },
+    "plan_sha256": "63fe3b91788b0130422d459734c140041304137dc394aaace85d0dbe4aef4532",
+    "policy": {
+      "feature": "s_long_fraction",
+      "left": {
+        "action": "Fplus"
+      },
+      "missing": "left",
+      "right": {
+        "action": "D"
+      },
+      "threshold": 0.024555309337
+    },
+    "policy_par2": 90.1973601875,
+    "policy_solved_seed_average_count": 4,
+    "policy_vs_matched_simple_control": {
+      "baseline_par2": 90.236455625,
+      "baseline_solved_seed_average_count": 4,
+      "descriptive_95pct_bootstrap": [
+        0.0,
+        0.0017149910888294428
+      ],
+      "feedback_parents": 16,
+      "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+      "policy_par2": 90.1973601875,
+      "policy_solved_seed_average_count": 4,
+      "reward": 0.0004332554645373188,
+      "sum_par2_regret_to_free_three_action_oracle": 303.649347,
+      "worst_numeric_examples": [
+        {
+          "baseline_par2": 120,
+          "features": {
+            "g_cycle_excess": 997530,
+            "s_long_fraction": 0
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        },
+        {
+          "baseline_par2": 120,
+          "features": {
+            "g_cycle_excess": 62981,
+            "s_long_fraction": 0.00827845331241
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        },
+        {
+          "baseline_par2": 120,
+          "features": {
+            "g_cycle_excess": 1855555,
+            "s_long_fraction": 0.00976036540255
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        }
+      ]
+    },
+    "proposal_kind": "clause_signal_with_core_interaction",
+    "proposal_rationale": "Round2 length signal was stronger than isolated graph signal but failed strong controls; test whether fit-only core/peeling interactions reduce its errors. Extra depth retains minimum8 parent support and matched capacity; no feedback-fitted threshold.",
+    "protected_test_cases_used": 0,
+    "reward": 8.389958718402202e-05,
+    "round": 4,
+    "split_role": "development_feedback",
+    "sum_par2_regret_to_free_three_action_oracle": 303.649347,
+    "threshold_fitter_sha256": "78101b69436fe1082971cbf760c3b89e819d736e26c671175fb3f811ec332455",
+    "worst_numeric_examples": [
+      {
+        "baseline_par2": 0.7405539999999999,
+        "features": {
+          "s_long_fraction": 3.2854749154e-06
+        },
+        "selected_action": "Fplus",
+        "selected_par2": 0.8787579999999999
+      },
+      {
+        "baseline_par2": 0.028207499999999996,
+        "features": {
+          "s_long_fraction": 0.0123690835069
+        },
+        "selected_action": "Fplus",
+        "selected_par2": 0.0492785
+      },
+      {
+        "baseline_par2": 0.020374999999999997,
+        "features": {
+          "s_long_fraction": 0
+        },
+        "selected_action": "Fplus",
+        "selected_par2": 0.030524999999999997
+      }
+    ]
+  },
+  {
+    "acceptance": "exploratory_positive_pending_gate_and_deployment",
+    "analysis_identity": {
+      "checker_options": [
+        "--no-trim"
+      ],
+      "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+      "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+      "extractor_memory_bytes": 1610612736,
+      "extractor_sha256": "7bb7756f28d9ed550b583dd303f80549069129bd80ea9d37190ce6ebebda9896",
+      "feature_contract": "depth43_v1",
+      "feature_join_and_whitelist_source_sha256": "840e1ce33abd85b992073369cf23d6301510a0644f8be00d46ab187e9c30fdde",
+      "feature_stage_identity": {
+        "base_structure_source_sha256": "9f59eb26ca048cf8361f172ff2e757847958dc6eaae08bb1c25aba6d5b493b59",
+        "binary_sha256": "7bb7756f28d9ed550b583dd303f80549069129bd80ea9d37190ce6ebebda9896",
+        "cohort_sha256": "f259dc2a26cca843360015833ae78291898bf7b1e7450389bd07bf7ea611ecf4",
+        "runner_sha256": "e2ada86d5c5c32b4a7e4b65d965956dd03aafad4faf07c57937d169a86539006",
+        "source_sha256": "24ba94ea4e3c4956edbb8d608807b125a5a0059fa0cb1032026a1cd339348291"
+      },
+      "memory_bytes": 1610612736,
+      "mode": "static",
+      "numeric_feature_allowlist": [
+        "d_core_edge_fraction",
+        "d_core_vertex_fraction",
+        "d_gate_condensation_depth",
+        "d_gate_cyclic_variable_fraction",
+        "d_gate_depth_exact",
+        "d_gate_output_positive_fraction",
+        "d_gate_variable_coverage",
+        "d_incidence_geometry_exact",
+        "d_leaf_peeling_rounds",
+        "g_components",
+        "g_cycle_excess",
+        "g_cycle_excess_per_incidence",
+        "g_degree_cv",
+        "g_degree_entropy_normalized",
+        "g_degree_max",
+        "g_degree_mean",
+        "g_degree_p50",
+        "g_degree_p90",
+        "g_degree_two_fraction",
+        "g_gate_motif_fraction",
+        "g_gate_motifs_exact",
+        "g_largest_component_fraction",
+        "g_leaf_variable_fraction",
+        "s_antihorn_fraction",
+        "s_binary_fraction",
+        "s_clauses",
+        "s_cv_ratio",
+        "s_empty_fraction",
+        "s_header_variables",
+        "s_horn_fraction",
+        "s_jw_positive_fraction",
+        "s_length_std",
+        "s_log_clauses",
+        "s_log_variables",
+        "s_long_fraction",
+        "s_max_length",
+        "s_mean_length",
+        "s_mean_polarity_imbalance",
+        "s_positive_fraction",
+        "s_pure_variable_fraction",
+        "s_ternary_fraction",
+        "s_unit_fraction",
+        "s_variables"
+      ],
+      "original_analysis_cases_sha256": "42cec4ecd10687b47459f3a69739de2ff054d2545c9a8152c097326c710a841b",
+      "original_runtime_extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+      "proof_file_limit_bytes": 1073741824,
+      "runner_sha256": "32413e8769bfd70d1a14953373f4ee7000c469ce4d9300114245854109d6497a",
+      "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+      "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+      "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+      "verification": "timed_binary_LRAT_lrat_trim"
+    },
+    "baseline_par2": 90.20492834375,
+    "baseline_solved_seed_average_count": 4,
+    "descriptive_95pct_bootstrap": [
+      -0.0003289150444367728,
+      0.0006412355187397356
+    ],
+    "development_gate_cases_used": 0,
+    "episode_id": "formal_round4_1",
+    "evaluation_cases_sha256": "fabec9444b39f2741cb371f5fe16370ad1af50743e1e084b232c267bccd01975",
+    "evaluation_kind": "new_server_formal_static_cost_matrix",
+    "feedback_parents": 16,
+    "fit_parents": 24,
+    "frozen_static_baseline_from_fit": "Fplus",
+    "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+    "is_deployment_validation": false,
+    "learner_sha256": "925c45fcf90cc0c0dd0caa4d07b73c56fb3b0d3cdf85708dd62a5102e7e4c0b2",
+    "local_fit_and_evaluation_cpu_s": 0.122996,
+    "matched_simple_control": {
+      "depth": 3,
+      "feedback": {
+        "baseline_par2": 90.20492834375,
+        "baseline_solved_seed_average_count": 4,
+        "descriptive_95pct_bootstrap": [
+          -0.0010910615039836369,
+          -7.900743901112506e-06
+        ],
+        "feedback_parents": 16,
+        "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+        "policy_par2": 90.236455625,
+        "policy_solved_seed_average_count": 4,
+        "reward": -0.00034950730330240987,
+        "sum_par2_regret_to_free_three_action_oracle": 304.274874,
+        "worst_numeric_examples": [
+          {
+            "baseline_par2": 2.4897169999999997,
+            "features": {
+              "g_cycle_excess": 753032
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 2.8206569999999997
+          },
+          {
+            "baseline_par2": 0.7405539999999999,
+            "features": {
+              "g_cycle_excess": 557996
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 0.8787579999999999
+          },
+          {
+            "baseline_par2": 0.028207499999999996,
+            "features": {
+              "g_cycle_excess": 69017
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 0.0492785
+          }
+        ]
+      },
+      "fit_par2": 84.2585973125,
+      "input_features": [
+        "d_core_edge_fraction",
+        "d_core_vertex_fraction",
+        "d_gate_condensation_depth",
+        "d_gate_cyclic_variable_fraction",
+        "d_gate_depth_exact",
+        "d_gate_output_positive_fraction",
+        "d_gate_variable_coverage",
+        "d_incidence_geometry_exact",
+        "d_leaf_peeling_rounds",
+        "g_components",
+        "g_cycle_excess",
+        "g_cycle_excess_per_incidence",
+        "g_degree_cv",
+        "g_degree_entropy_normalized",
+        "g_degree_max",
+        "g_degree_mean",
+        "g_degree_p50",
+        "g_degree_p90",
+        "g_degree_two_fraction",
+        "g_gate_motif_fraction",
+        "g_gate_motifs_exact",
+        "g_largest_component_fraction",
+        "g_leaf_variable_fraction",
+        "s_antihorn_fraction",
+        "s_binary_fraction",
+        "s_clauses",
+        "s_cv_ratio",
+        "s_empty_fraction",
+        "s_header_variables",
+        "s_horn_fraction",
+        "s_jw_positive_fraction",
+        "s_length_std",
+        "s_log_clauses",
+        "s_log_variables",
+        "s_long_fraction",
+        "s_max_length",
+        "s_mean_length",
+        "s_mean_polarity_imbalance",
+        "s_positive_fraction",
+        "s_pure_variable_fraction",
+        "s_ternary_fraction",
+        "s_unit_fraction",
+        "s_variables"
+      ],
+      "min_leaf": 8,
+      "policy": {
+        "feature": "g_cycle_excess",
+        "left": {
+          "action": "D"
+        },
+        "missing": "left",
+        "right": {
+          "action": "Fplus"
+        },
+        "threshold": 27535
+      },
+      "policy_sha256": "7f7a015f89751cbd7992aa02df55ad59428d3d0cb5c76e86603c160dd2153583",
+      "training_scope": "Fit only; predeclared full numeric pool, same tree capacity, grid and total-budget loss."
+    },
+    "panel_contract": {
+      "cutoff_s": 60,
+      "independent_parents": 40,
+      "required_seeds": [
+        0,
+        1
+      ]
+    },
+    "plan_sha256": "63fe3b91788b0130422d459734c140041304137dc394aaace85d0dbe4aef4532",
+    "policy": {
+      "feature": "s_long_fraction",
+      "left": {
+        "action": "Fplus"
+      },
+      "missing": "left",
+      "right": {
+        "action": "D"
+      },
+      "threshold": 0.024555309337
+    },
+    "policy_par2": 90.1973601875,
+    "policy_solved_seed_average_count": 4,
+    "policy_vs_matched_simple_control": {
+      "baseline_par2": 90.236455625,
+      "baseline_solved_seed_average_count": 4,
+      "descriptive_95pct_bootstrap": [
+        0.0,
+        0.0017149910888294428
+      ],
+      "feedback_parents": 16,
+      "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+      "policy_par2": 90.1973601875,
+      "policy_solved_seed_average_count": 4,
+      "reward": 0.0004332554645373188,
+      "sum_par2_regret_to_free_three_action_oracle": 303.649347,
+      "worst_numeric_examples": [
+        {
+          "baseline_par2": 120,
+          "features": {
+            "g_cycle_excess": 997530,
+            "s_long_fraction": 0
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        },
+        {
+          "baseline_par2": 120,
+          "features": {
+            "g_cycle_excess": 62981,
+            "s_long_fraction": 0.00827845331241
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        },
+        {
+          "baseline_par2": 120,
+          "features": {
+            "g_cycle_excess": 1855555,
+            "s_long_fraction": 0.00976036540255
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        }
+      ]
+    },
+    "proposal_kind": "signed_gate_and_clause_orientation_interaction",
+    "proposal_rationale": "Gate-only rules produced no split in both original-label and modern feedback; test the bounded alternative that gate direction matters only together with clause orientation/length. A negative result stops adding gate variants in this feature block.",
+    "protected_test_cases_used": 0,
+    "reward": 8.389958718402202e-05,
+    "round": 4,
+    "split_role": "development_feedback",
+    "sum_par2_regret_to_free_three_action_oracle": 303.649347,
+    "threshold_fitter_sha256": "78101b69436fe1082971cbf760c3b89e819d736e26c671175fb3f811ec332455",
+    "worst_numeric_examples": [
+      {
+        "baseline_par2": 0.7405539999999999,
+        "features": {
+          "s_long_fraction": 3.2854749154e-06
+        },
+        "selected_action": "Fplus",
+        "selected_par2": 0.8787579999999999
+      },
+      {
+        "baseline_par2": 0.028207499999999996,
+        "features": {
+          "s_long_fraction": 0.0123690835069
+        },
+        "selected_action": "Fplus",
+        "selected_par2": 0.0492785
+      },
+      {
+        "baseline_par2": 0.020374999999999997,
+        "features": {
+          "s_long_fraction": 0
+        },
+        "selected_action": "Fplus",
+        "selected_par2": 0.030524999999999997
+      }
+    ]
+  }
+]

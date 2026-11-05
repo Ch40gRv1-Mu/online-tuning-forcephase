@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "components_cpu_s": {
+    "static_recovery_preparation_and_extraction": 58.856345784,
+    "initial_failed_static_preparation": 1.185257515,
+    "dynamic_prefixes_including_preparation_and_task_controllers": 194.258190057,
+    "dynamic_observer_build_including_controller": 2.681306403,
+    "dynamic_archive_and_identity": 0.29730515,
+    "gate_preparation_and_extraction": 27.337850376,
+    "gate_archive_and_identity": 0.129188316,
+    "formal_model_jobs_including_cross_validation_and_clustering": 2.521981,
+    "remote_public_cache_lookup": 0.475980854,
+    "local_public_cache_lookup": 0.000271,
+    "local_verified_input_preparation": 0.201013,
+    "unused_local_archive_compression": 0.135227
+  },
+  "total_measured_CPU_s": 288.079916455,
+  "not_measured": [
+    "Initial failed input-import CPU",
+    "Local resource-blocked invocation CPU",
+    "Other local engineering/tests/controllers",
+    "Certain archive/hash/transfer controllers/network CPU"
+  ],
+  "unmeasured_is_not_zero": true,
+  "TA_wall_time_targets_not_added_to_local_CPU": true,
+  "reused_feature_measurements_not_new_physical_spend": true,
+  "dynamic_stage_CPU_limit_s": 3600,
+  "overall_research_limit_CPU_hours": 100,
+  "gate_collection_wall_s": 492.21,
+  "new_full_phase_comparison_runs": 0,
+  "final_gate_email_message_id": "1a1aa27271867a33"
+}

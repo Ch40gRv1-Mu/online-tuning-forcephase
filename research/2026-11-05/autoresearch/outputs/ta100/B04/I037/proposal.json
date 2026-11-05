@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_sign_bundling"
+    ],
+    "hypothesis": "For non-tautological clauses with1<=k<=64, let P_k(j) be the observed clause-frequency distribution of j positive literals conditional on arity k; let p be positive literal fraction in this eligible population. f=sum_k P(k)*KL(P_k || Binomial(k,p)). Degenerate p=0/1 is defined by its exact limiting distribution.",
+    "id": "I037",
+    "mechanism_key": "within_clause_sign_binomial_deviance",
+    "registry_id": "S37"
+  },
+  "original_preexecution_config": "configs/ta100/B04.json",
+  "original_config_sha256": "63f35476a7e708b9534df47b2e57d104a89783b1705dc812aac7e6edc35a47e7",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

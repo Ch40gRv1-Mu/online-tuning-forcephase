@@ -1,0 +1,414 @@
+{
+  "scope": "Fit-only prespecified5fold characterization; original-label target, no held-out feedback or RICL reward.",
+  "protocol_sha256": "a2dec655975a8d04f74aaac050dc6ee577527205fbe9e48452533af6a884159a",
+  "source_sha256": "e0ba75ada536a7202a5821b630b4c5679b65c70bc134d7a41af348bab76040da",
+  "cohort_sha256": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0",
+  "feature_identity": {
+    "binary_sha256": "ab61b1f2f10fb18aa9bac9217364e57a54f441f93c65b1511682b00ee16cfd50",
+    "cohort_sha256": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0",
+    "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "runner_sha256": "6a00b3e4cd62d4be861463bfe3799732c12c6e80fa3812aa57e6950e4aa7225f",
+    "source_sha256": "0eb3a635681d25106b5bfe609f4bd9e8f27c34e4e52f0f3ea9efff057c73b996"
+  },
+  "all_fit_parents": 144,
+  "labelled_fit_parents": 53,
+  "exact_nonempty_graph_parents": 128,
+  "usable_labelled_graph_parents": 50,
+  "scores": {
+    "constant": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 35,
+      "accuracy": 0.660377358490566,
+      "weighted_error": 33.665067927730476,
+      "weighted_error_rate": 0.40068314807904215,
+      "prediction_counts_all_parents": {
+        "false": 0,
+        "true": 144
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": 0.0,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "weighted_error_rate_reduction": 0.0,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.1132075471698113,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.05999999999999994,
+          0.28260869565217395
+        ],
+        "weighted_error_rate_reduction": -0.09083433441964078,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.37613485803346497,
+          0.2312553179049622
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "implication_geometry": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 37,
+      "accuracy": 0.6981132075471698,
+      "weighted_error": 26.090101385476274,
+      "weighted_error_rate": 0.3105255566177839,
+      "prediction_counts_all_parents": {
+        "false": 42,
+        "true": 102
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": 0.037735849056603765,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.06666666666666665,
+          0.14583333333333337
+        ],
+        "weighted_error_rate_reduction": 0.09015759146125824,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.0862358166261259,
+          0.26780277599085406
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.15094339622641506,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          0.01923076923076927,
+          0.28578296703296663
+        ],
+        "weighted_error_rate_reduction": -0.0006767429583825479,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.2577852787226536,
+          0.2500112667022548
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "implication_direction": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 34,
+      "accuracy": 0.6415094339622641,
+      "weighted_error": 30.117332795922717,
+      "weighted_error_rate": 0.35845784545333675,
+      "prediction_counts_all_parents": {
+        "false": 26,
+        "true": 118
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": -0.018867924528301883,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.12245793054063733,
+          0.07410901467505221
+        ],
+        "weighted_error_rate_reduction": 0.042225302625705396,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.09543954280420856,
+          0.18690380749943217
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.09433962264150941,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.07550798258345426,
+          0.2592592592592592
+        ],
+        "weighted_error_rate_reduction": -0.04860903179393539,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.3295599824890917,
+          0.24141931691326174
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "old34_control": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 29,
+      "accuracy": 0.5471698113207547,
+      "weighted_error": 26.033241999767675,
+      "weighted_error_rate": 0.30984881365940137,
+      "prediction_counts_all_parents": {
+        "false": 64,
+        "true": 80
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": -0.1132075471698113,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.28260869565217395,
+          0.05999999999999994
+        ],
+        "weighted_error_rate_reduction": 0.09083433441964078,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.23125531790496245,
+          0.3761348580334648
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.0,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "weighted_error_rate_reduction": 0.0,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    }
+  },
+  "fold_models": [
+    {
+      "fold": 0,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "implication_geometry": {
+          "feature": "b_scc_cyclic_fraction",
+          "threshold": 0.0,
+          "missing": "right",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "implication_direction": {
+          "feature": "b_signed_depth_asymmetry",
+          "threshold": 0.5620804917425,
+          "missing": "right",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000232018561485,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "implication_geometry": {
+          "feature": "b_scc_cyclic_fraction",
+          "threshold": 0.0,
+          "missing": "right",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "implication_direction": {
+          "feature": "b_signed_depth_asymmetry",
+          "threshold": 0.5801409629715,
+          "missing": "right",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.0002573194859255,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "implication_geometry": {
+          "feature": "b_scc_cyclic_fraction",
+          "threshold": 0.0,
+          "missing": "right",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "implication_direction": {
+          "feature": "b_signed_depth_asymmetry",
+          "threshold": 0.5870315231172499,
+          "missing": "right",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000103799045049,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "implication_geometry": {
+          "feature": "b_scc_cyclic_fraction",
+          "threshold": 0.0,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "implication_direction": {
+          "feature": "b_signed_depth_asymmetry",
+          "threshold": 0.5,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000193628510172,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "training_parents": 116,
+      "validation_parents": 28,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "implication_geometry": {
+          "feature": "b_scc_cyclic_fraction",
+          "threshold": 0.0,
+          "missing": "right",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "implication_direction": {
+          "feature": "b_signed_depth_asymmetry",
+          "threshold": 0.5798703894170001,
+          "missing": "right",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 1.777830996775e-05,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    }
+  ],
+  "continuation_criteria_met": true,
+  "feature_cpu_s_sum": 30.440621,
+  "local_analysis_cpu_s": 1.2613800000000002,
+  "feedback_read": 0,
+  "gate_read": 0,
+  "final_test_read": 0,
+  "new_RICL_rewards": 0,
+  "new_solver_calls": 0,
+  "limitations": [
+    "Already-seen fit data; intervals condition on out-of-fold predictions and are exploratory.",
+    "Original phase/version unverified; no automatic mapping to modernF\u00b1.",
+    "No cost comparison combining oldTA wall and featureCPU; no deployment claim.",
+    "No hidden reuse of another agent gate; later policy needs available shared8-round slot."
+  ]
+}

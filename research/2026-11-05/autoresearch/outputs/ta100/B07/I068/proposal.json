@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_signed_mode_alignment"
+    ],
+    "hypothesis": "Use16 normalized sparse J power steps, starting x_i=sin(1.7*(i+1)). Let h_i=-sum_C sign_i2^-width_C. Return|dot(x,h)|/||h||, where x is unit norm.",
+    "id": "I068",
+    "mechanism_key": "signed_pairwise_mode_linear_bias_alignment",
+    "registry_id": "RA08"
+  },
+  "original_preexecution_config": "configs/ta100/B07.json",
+  "original_config_sha256": "ad609c29f98ea558286b03ba5c05a812bcb0c7784c0a97f753598e955bf35189",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

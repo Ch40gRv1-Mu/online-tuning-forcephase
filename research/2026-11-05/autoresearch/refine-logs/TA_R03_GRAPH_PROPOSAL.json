@@ -1,0 +1,43 @@
+{
+  "actor": "parallel_static",
+  "feedback_interpretation": [
+    "Replacing length variation with binary fraction or cycle redundancy did not materially improve full feedback cost over R1. Another interchangeable density proxy is not justified for this final static round.",
+    "R2 retains the two principal reported regressions. Their local imbalance differs sharply, so the new candidate tests a qualitatively different signed context; no feedback example supplies a fitted threshold or mandated action.",
+    "This pair has not been proposed in R1/R2 and differs from the root actor's positive fraction plus mean clause length pair. No cluster ID, family, input identifier, solver outcome or terminal statistic is a predictor.",
+    "Feedback reuse is exploratory. A near tie or failure is retained; this proposal does not justify more static rounds or a change to the frozen acceptance criterion."
+  ],
+  "feedback_source": "refine-logs/TA_R02_FEEDBACK.json",
+  "feedback_source_sha256": "13a8080f49c0836686b3d49b443901d8cfabdc7c473c0f6b42ce888e0099b326",
+  "mechanism": "The same aggregate positive fraction may arise from locally balanced variables or from a mixture of strongly one-sided variables. Mean per-variable polarity imbalance distinguishes those cases while positive-literal fraction remains the directional anchor. This tests whether routing benefits require a particular distribution of signed constraints, using two existing features and no new derived quantity.",
+  "proposal": {
+    "features": [
+      "s_positive_fraction",
+      "s_mean_polarity_imbalance"
+    ],
+    "hypothesis": "A global positive-literal fraction can conceal different distributions of polarity across variables. Test the existing mean per-variable polarity imbalance as a conditioning feature for the existing signed preference, rather than another unsigned density or clause-size proxy. Fit alone chooses thresholds and actions.",
+    "id": "sign_local_imbalance",
+    "max_depth": 2,
+    "min_leaf": 12,
+    "min_relative_improvement": 0.01,
+    "quantiles": [
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.625,
+      0.75,
+      0.875
+    ],
+    "seed": 20261105
+  },
+  "round": "TA-R03",
+  "schema": "ta-offline-single-proposal-v1",
+  "training_contract": {
+    "evaluation": "Root commits the consolidated R3 proposals before complete feedback evaluation; no gate/test access.",
+    "maximum_distinct_numeric_features": 2,
+    "missing_feature_fallback": "Fit-best fixed phase under the existing implementation.",
+    "population_and_costs": "Keep all parent rows and unchanged cost, timeout and availability accounting.",
+    "scope": "Final static proposal round; no new extraction, transforms, code, hyperparameter search or model scoring by this actor.",
+    "thresholds_and_actions": "Unchanged full-fit seven-quantile cost-tree search; no hand-set thresholds or directions from feedback."
+  }
+}

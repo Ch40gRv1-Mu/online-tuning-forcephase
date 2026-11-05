@@ -1,0 +1,21 @@
+{
+  "stage": "online16",
+  "mode": "online",
+  "actions": [
+    "D",
+    "Fplus",
+    "Fminus"
+  ],
+  "seeds": [
+    0
+  ],
+  "cutoff_s": 120,
+  "verification": "timed_LRAT_independent_check",
+  "workers": 4,
+  "solver_upper_cpu_hours": 1.6,
+  "max_total_cpu_hours": 2.5,
+  "cohort_sha256": "069a38636e923affffef403d727ae451a273c157cec8d37fcde534f461aa6b4c",
+  "sampling": "first 16 eligible frozen fit inputs; before reading this stage outcomes",
+  "prefix": "common D; first natural restart crossing K=1000 conflicts; one continuation action",
+  "protected_data": "development_gate and entire 2022 candidate namespace excluded"
+}

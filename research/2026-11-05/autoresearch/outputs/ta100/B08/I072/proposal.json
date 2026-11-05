@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_high_order_walsh_mass"
+    ],
+    "hypothesis": "Take first128 F* clauses of width<=8. Expand each U_C=2^-k product_l(1-sign(l)*z_v). Sum coefficients by variable subset with duplicate clauses retained. Return sum_{degree>=3} coefficient^2 / sum_{nonconstant} coefficient^2.",
+    "id": "I072",
+    "mechanism_key": "real_unsatisfied_count_energy_high_order_walsh",
+    "registry_id": "RA12"
+  },
+  "original_preexecution_config": "configs/ta100/B08.json",
+  "original_config_sha256": "2c2b205bbb714ce7c0732d8cd22147e5fa8e6693734c5285fa9d50dbcb148243",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

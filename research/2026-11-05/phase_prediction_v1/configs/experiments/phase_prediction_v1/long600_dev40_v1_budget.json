@@ -1,0 +1,22 @@
+{
+  "measured_to_date_cpu_h": 12.356484843343889,
+  "older_engineering_reserve_cpu_h": 2,
+  "new_matrix_runs": 256,
+  "new_solver_upper_cpu_h": 42.666666666666664,
+  "new_checker_upper_cpu_h": 8.533333333333333,
+  "new_feature_learning_engineering_reserve_cpu_h": 1,
+  "deployment_runs_cap": 8,
+  "deployment_solver_and_checker_upper_cpu_h": 1.6,
+  "gate_parents_cap": 16,
+  "gate_unique_configs_cap": 3,
+  "gate_solver_checker_upper_cpu_h": 9.6,
+  "conditional_confirmation_parents_cap": 10,
+  "conditional_confirmation_seeds": [
+    0,
+    1
+  ],
+  "conditional_confirmation_configs_cap": 5,
+  "conditional_confirmation_solver_checker_upper_cpu_h": 20.0,
+  "research_hard_cap_cpu_h": 100,
+  "planned_measured_plus_full_reserves_cpu_h": 97.75648484334388
+}

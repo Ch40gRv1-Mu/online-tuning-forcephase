@@ -1,0 +1,11 @@
+{
+  "feature": "g_cycle_excess_per_incidence",
+  "left": {
+    "action": "Fplus"
+  },
+  "missing": "left",
+  "right": {
+    "action": "D"
+  },
+  "threshold": 0.495248812203
+}

@@ -1,0 +1,20 @@
+{
+  "observed_existing_modern_rounds": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "other_owner_episode_round_ids_metadata_only": [
+    "TA_R01",
+    "TA_R02",
+    "TA_R03",
+    "TA_R04"
+  ],
+  "other_owner_episode_file_sha256": "c026eb675294eabb5b1e7aa0e2a257de9811556f3eed71dcf2f677cd74c8d612",
+  "shared_round_cap": 8,
+  "new_policy_rounds_available_without_new_allocation": 0,
+  "this_feature_association_adds_policy_or_reward": false,
+  "other_owner_gate_results_read": false,
+  "decision": "Continue bounded feature characterization, no new JSON-policy tuning/episode or reused gate. Do not reset quota by changing branch."
+}

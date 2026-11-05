@@ -1,0 +1,11 @@
+{
+  "scope": "Descriptive existing completed48fit formula features only; no solver outcomes, routing, thresholds or feedback scoring used.",
+  "parents": 48,
+  "strict_incidence_forest_count": 0,
+  "cycle_excess_per_incidence_min": 0.39565725921,
+  "cycle_excess_per_incidence_median": 0.508396082188,
+  "cycle_excess_per_incidence_max": 0.952037503808,
+  "leaf_variable_fraction_median": 0.0,
+  "formula_depth_present": false,
+  "graph_policy_scored": false
+}

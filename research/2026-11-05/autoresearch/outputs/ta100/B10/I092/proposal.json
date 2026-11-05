@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_activity_rank_enrichment"
+    ],
+    "hypothesis": "最近抽样256学习子句变量，在动作前checkpoint当前activity前10%中的占比相对基准0.1的偏离。",
+    "id": "I092",
+    "mechanism_key": "conflict_activity_rank_localization",
+    "registry_id": "TD22"
+  },
+  "original_preexecution_config": "configs/ta100/B10.json",
+  "original_config_sha256": "67f43debe577a48dd5d37d15fccbcb00c27ebc3d4da3745941328b899ad634e0",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

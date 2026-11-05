@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_learned_recurrence"
+    ],
+    "hypothesis": "最近128学习子句分别与前一128窗口的最近文字集合相似度均值；符号保留。",
+    "id": "I093",
+    "mechanism_key": "learned_constraint_recurrence",
+    "registry_id": "TD23"
+  },
+  "original_preexecution_config": "configs/ta100/B10.json",
+  "original_config_sha256": "67f43debe577a48dd5d37d15fccbcb00c27ebc3d4da3745941328b899ad634e0",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

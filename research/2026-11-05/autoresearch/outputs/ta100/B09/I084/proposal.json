@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_resolution_compression"
+    ],
+    "hypothesis": "主冲突分析中消耗的不同reason子句数量相对于最终1UIP子句文字数的平均比。",
+    "id": "I084",
+    "mechanism_key": "resolution_proof_compression",
+    "registry_id": "TD14"
+  },
+  "original_preexecution_config": "configs/ta100/B09.json",
+  "original_config_sha256": "93361ef727629ed8046c1d35d4d6981e1dd16e9512e634dba03b13acbc235f6f",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

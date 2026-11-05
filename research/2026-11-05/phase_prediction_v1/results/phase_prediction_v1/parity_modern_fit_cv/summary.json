@@ -1,0 +1,552 @@
+{
+  "scope": "Only24fit modernT60, two seeds averaged; fixed5fold diagnostic, no feedback or confirmation.",
+  "protocol_sha256": "ace04d0632c0169ddd80b661f9c41eb0cf4707e9e6fe499460f8b0b8730636d3",
+  "source_sha256": "f67bc107ceda54dad8e930666e4e3be06c30395ff02439a539501c03132e5ddd",
+  "parents": 24,
+  "all_four_censored": 16,
+  "scores": {
+    "constant3": {
+      "mean_par2": 90.20179277083334,
+      "comparisons": {
+        "constant3": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "strong_static4": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "old34_control": {
+          "relative_par2_reduction": 1.846150582718309e-05,
+          "descriptive_parent_bootstrap95": [
+            2.43222100093643e-06,
+            4.552779031775365e-05
+          ]
+        },
+        "full41_control": {
+          "relative_par2_reduction": 4.5964730368663886e-05,
+          "descriptive_parent_bootstrap95": [
+            9.111933085503843e-06,
+            0.00011061086424887784
+          ]
+        }
+      }
+    },
+    "strong_static4": {
+      "mean_par2": 90.20179277083334,
+      "comparisons": {
+        "constant3": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "strong_static4": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "old34_control": {
+          "relative_par2_reduction": 1.846150582718309e-05,
+          "descriptive_parent_bootstrap95": [
+            2.43222100093643e-06,
+            4.552779031775365e-05
+          ]
+        },
+        "full41_control": {
+          "relative_par2_reduction": 4.5964730368663886e-05,
+          "descriptive_parent_bootstrap95": [
+            9.111933085503843e-06,
+            0.00011061086424887784
+          ]
+        }
+      }
+    },
+    "parity_participation": {
+      "mean_par2": 90.20179277083334,
+      "comparisons": {
+        "constant3": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "strong_static4": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "old34_control": {
+          "relative_par2_reduction": 1.846150582718309e-05,
+          "descriptive_parent_bootstrap95": [
+            2.43222100093643e-06,
+            4.552779031775365e-05
+          ]
+        },
+        "full41_control": {
+          "relative_par2_reduction": 4.5964730368663886e-05,
+          "descriptive_parent_bootstrap95": [
+            9.111933085503843e-06,
+            0.00011061086424887784
+          ]
+        }
+      }
+    },
+    "parity_orientation": {
+      "mean_par2": 90.20179277083334,
+      "comparisons": {
+        "constant3": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "strong_static4": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "old34_control": {
+          "relative_par2_reduction": 1.846150582718309e-05,
+          "descriptive_parent_bootstrap95": [
+            2.43222100093643e-06,
+            4.552779031775365e-05
+          ]
+        },
+        "full41_control": {
+          "relative_par2_reduction": 4.5964730368663886e-05,
+          "descriptive_parent_bootstrap95": [
+            9.111933085503843e-06,
+            0.00011061086424887784
+          ]
+        }
+      }
+    },
+    "old34_control": {
+      "mean_par2": 90.2034580625,
+      "comparisons": {
+        "constant3": {
+          "relative_par2_reduction": -1.8461846660766668e-05,
+          "descriptive_parent_bootstrap95": [
+            -4.552986319243946e-05,
+            -2.4322269167598165e-06
+          ]
+        },
+        "strong_static4": {
+          "relative_par2_reduction": -1.8461846660766668e-05,
+          "descriptive_parent_bootstrap95": [
+            -4.552986319243946e-05,
+            -2.4322269167598165e-06
+          ]
+        },
+        "old34_control": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        },
+        "full41_control": {
+          "relative_par2_reduction": 2.7503732301759065e-05,
+          "descriptive_parent_bootstrap95": [
+            6.21084900254143e-06,
+            6.620617079778067e-05
+          ]
+        }
+      }
+    },
+    "full41_control": {
+      "mean_par2": 90.2059390625,
+      "comparisons": {
+        "constant3": {
+          "relative_par2_reduction": -4.5966843222222664e-05,
+          "descriptive_parent_bootstrap95": [
+            -0.00011062310036921152,
+            -9.112016113643762e-06
+          ]
+        },
+        "strong_static4": {
+          "relative_par2_reduction": -4.5966843222222664e-05,
+          "descriptive_parent_bootstrap95": [
+            -0.00011062310036921152,
+            -9.112016113643762e-06
+          ]
+        },
+        "old34_control": {
+          "relative_par2_reduction": -2.7504488777863045e-05,
+          "descriptive_parent_bootstrap95": [
+            -6.621055434538058e-05,
+            -6.210887577573487e-06
+          ]
+        },
+        "full41_control": {
+          "relative_par2_reduction": 0.0,
+          "descriptive_parent_bootstrap95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "training_parents": 19,
+      "validation_parents": 5,
+      "models": {
+        "parity_participation": {
+          "action": "Fminus"
+        },
+        "parity_orientation": {
+          "action": "Fminus"
+        },
+        "old34_control": {
+          "action": "Fminus"
+        },
+        "full41_control": {
+          "action": "Fminus"
+        }
+      },
+      "references": {
+        "constant3": "Fminus",
+        "strong_static4": "Fminus"
+      }
+    },
+    {
+      "fold": 1,
+      "training_parents": 19,
+      "validation_parents": 5,
+      "models": {
+        "parity_participation": {
+          "action": "Fplus"
+        },
+        "parity_orientation": {
+          "action": "Fplus"
+        },
+        "old34_control": {
+          "feature": "s_long_fraction",
+          "threshold": 0.00139284200327,
+          "missing": "left",
+          "left": {
+            "action": "Fplus"
+          },
+          "right": {
+            "action": "D"
+          }
+        },
+        "full41_control": {
+          "feature": "s_long_fraction",
+          "threshold": 0.00139284200327,
+          "missing": "left",
+          "left": {
+            "action": "Fplus"
+          },
+          "right": {
+            "action": "D"
+          }
+        }
+      },
+      "references": {
+        "constant3": "Fplus",
+        "strong_static4": "Fplus"
+      }
+    },
+    {
+      "fold": 2,
+      "training_parents": 19,
+      "validation_parents": 5,
+      "models": {
+        "parity_participation": {
+          "action": "Fplus"
+        },
+        "parity_orientation": {
+          "action": "Fplus"
+        },
+        "old34_control": {
+          "feature": "s_long_fraction",
+          "threshold": 0.00139284200327,
+          "missing": "left",
+          "left": {
+            "action": "Fplus"
+          },
+          "right": {
+            "action": "D"
+          }
+        },
+        "full41_control": {
+          "feature": "s_long_fraction",
+          "threshold": 0.00139284200327,
+          "missing": "left",
+          "left": {
+            "action": "Fplus"
+          },
+          "right": {
+            "action": "D"
+          }
+        }
+      },
+      "references": {
+        "constant3": "Fplus",
+        "strong_static4": "Fplus"
+      }
+    },
+    {
+      "fold": 3,
+      "training_parents": 19,
+      "validation_parents": 5,
+      "models": {
+        "parity_participation": {
+          "action": "Fplus"
+        },
+        "parity_orientation": {
+          "action": "Fplus"
+        },
+        "old34_control": {
+          "feature": "g_degree_max",
+          "threshold": 103,
+          "missing": "left",
+          "left": {
+            "action": "D"
+          },
+          "right": {
+            "action": "Fplus"
+          }
+        },
+        "full41_control": {
+          "feature": "g_degree_max",
+          "threshold": 103,
+          "missing": "left",
+          "left": {
+            "action": "D"
+          },
+          "right": {
+            "action": "Fplus"
+          }
+        }
+      },
+      "references": {
+        "constant3": "Fplus",
+        "strong_static4": "Fplus"
+      }
+    },
+    {
+      "fold": 4,
+      "training_parents": 20,
+      "validation_parents": 4,
+      "models": {
+        "parity_participation": {
+          "action": "Fplus"
+        },
+        "parity_orientation": {
+          "action": "Fplus"
+        },
+        "old34_control": {
+          "feature": "g_cycle_excess",
+          "threshold": 31837,
+          "missing": "left",
+          "left": {
+            "action": "D"
+          },
+          "right": {
+            "action": "Fplus"
+          }
+        },
+        "full41_control": {
+          "feature": "g_cycle_excess",
+          "threshold": 31837,
+          "missing": "left",
+          "left": {
+            "action": "D"
+          },
+          "right": {
+            "action": "Fplus"
+          }
+        }
+      },
+      "references": {
+        "constant3": "Fplus",
+        "strong_static4": "Fplus"
+      }
+    }
+  ],
+  "out_of_fold_parent_costs": {
+    "constant3": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      0.023619499999999998,
+      120,
+      120,
+      0.008836,
+      120,
+      120,
+      120,
+      0.0270375,
+      120,
+      4.756085000000001,
+      0.0090965,
+      0.018351999999999997,
+      120,
+      120,
+      120
+    ],
+    "strong_static4": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      0.023619499999999998,
+      120,
+      120,
+      0.008836,
+      120,
+      120,
+      120,
+      0.0270375,
+      120,
+      4.756085000000001,
+      0.0090965,
+      0.018351999999999997,
+      120,
+      120,
+      120
+    ],
+    "parity_participation": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      0.023619499999999998,
+      120,
+      120,
+      0.008836,
+      120,
+      120,
+      120,
+      0.0270375,
+      120,
+      4.756085000000001,
+      0.0090965,
+      0.018351999999999997,
+      120,
+      120,
+      120
+    ],
+    "parity_orientation": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      0.023619499999999998,
+      120,
+      120,
+      0.008836,
+      120,
+      120,
+      120,
+      0.0270375,
+      120,
+      4.756085000000001,
+      0.0090965,
+      0.018351999999999997,
+      120,
+      120,
+      120
+    ],
+    "old34_control": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      0.035047499999999995,
+      120,
+      120,
+      0.014673499999999999,
+      120,
+      120,
+      120,
+      0.026672500000000002,
+      120,
+      4.770186000000001,
+      0.018061999999999998,
+      0.018351999999999997,
+      120,
+      120,
+      120
+    ],
+    "full41_control": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      0.0524535,
+      120,
+      120,
+      0.019763499999999996,
+      120,
+      120,
+      120,
+      0.0379795,
+      120,
+      4.789431,
+      0.024558,
+      0.018351999999999997,
+      120,
+      120,
+      120
+    ]
+  },
+  "new_solver_calls": 0,
+  "new_RICL_rewards": 0,
+  "feedback_used": 0,
+  "gate_used": 0,
+  "final_test_used": 0,
+  "limitations": "Already-seen fit panel and little headroom; intervals condition on CV predictions. No strong predictive or deployment claim."
+}

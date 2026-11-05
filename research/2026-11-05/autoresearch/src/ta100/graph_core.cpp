@@ -1,0 +1,2 @@
+#include "graph_features.hpp"
+int main(int argc,char**argv){try{std::string module="graph10",path;if(argc==2)path=argv[1];else if(argc==4&&std::string(argv[1])=="--module")module=argv[2],path=argv[3];else throw std::runtime_error("usage: graph_core [--module graph10] INPUT.cnf");if(module!="graph10")throw std::runtime_error("unknown/unimplemented graph module");auto f=ta100::read_cnf(path);auto b=ta100_graph::compute(f,std::max(0.01,4.3-f.parse_cpu_s));ta100::emit(f,b,module);return 0;}catch(const std::exception&e){std::cerr<<e.what()<<'\n';return 2;}}

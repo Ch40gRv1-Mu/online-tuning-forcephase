@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_gate_sharing"
+    ],
+    "hypothesis": "Detect complete signed AND templates z<->(a and b), retain uniquely defined output variables. Let f_u=#retained gates using variable u as an input. f=sum_u max(0,f_u-1)/max(1,sum_u f_u).",
+    "id": "I029",
+    "mechanism_key": "recognized_gate_dataflow_sharing",
+    "registry_id": "S09"
+  },
+  "original_preexecution_config": "configs/ta100/B03.json",
+  "original_config_sha256": "f1cdb2c13dee711eb5e9b558dcf47e1ce75bc007a1d538873f81a9462393b3a6",
+  "registry_sha256": "8bcc3d40f940f6c9ff59374c3f46e20b4b936d5fb66bc3d4877710a9adfe67bf",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

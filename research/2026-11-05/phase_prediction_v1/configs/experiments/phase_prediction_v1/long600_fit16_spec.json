@@ -1,0 +1,31 @@
+{
+  "stage": "long600_fit16",
+  "mode": "static",
+  "actions": [
+    "D",
+    "Fplus",
+    "Fminus",
+    "Iminus"
+  ],
+  "seeds": [
+    0
+  ],
+  "cutoff_s": 600,
+  "verification": "timed_binary_LRAT_lrat_trim",
+  "workers": 2,
+  "proof_file_limit_bytes": 4294967296,
+  "solver_upper_cpu_hours": 10.666666666666666,
+  "max_total_cpu_hours": 14,
+  "cohort_sha256": "069a38636e923affffef403d727ae451a273c157cec8d37fcde534f461aa6b4c",
+  "sampling": "same first 16 eligible frozen development_fit parents as online16; no replacements by observed outcomes",
+  "launch_condition": "online16_v2 complete and strict prefix/model/proof analysis passes; binary checker gate passes",
+  "purpose": "One cutoff escalation motivated by 35/48 triple-censored P1 parents. This checks a 600s budget, not a reproduction of undocumented MiniSAT.",
+  "primary_cutoff_s": 600,
+  "diagnostic_subcutoffs_s": [
+    120,
+    300
+  ],
+  "data_boundary": "No development_gate or final test candidate enters this screen",
+  "future_reuse": "Identical physical measurements are reused via SHA-bound receipts, never silently rerun when a cohort grows",
+  "resource_rationale": "Binary proof with 4GiB file cap and two workers reserves at most 8GiB concurrent proof storage plus 12GiB free; no larger input or timeout-based exclusions."
+}

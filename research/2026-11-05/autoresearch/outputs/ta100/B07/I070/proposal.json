@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_bp_cavity_polarity"
+    ],
+    "hypothesis": "Uniform prior;12 synchronous OR-factor sweeps damped.5. Factor-to-variable log odds are sign(l)*[-log(1-product(other literal false probabilities))]; cavity excludes that factor. Clamp probability to[1e-9,1-1e-9] and log odds to[-20,20]. Return mean(2*p_i-1).",
+    "id": "I070",
+    "mechanism_key": "fixed_damped_or_factor_cavity_polarization",
+    "registry_id": "RA10"
+  },
+  "original_preexecution_config": "configs/ta100/B07.json",
+  "original_config_sha256": "ad609c29f98ea558286b03ba5c05a812bcb0c7784c0a97f753598e955bf35189",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

@@ -1,0 +1,9 @@
+# Static gate continuation v2
+
+Original frozen gate collector PID63052 is authoritative terminal and absent. Its completion is STOPPED_INCOMPLETE after 13 immutable terminal receipts: 12 COMPLETE and one FAILED, with 9.747090565 accounted CPU seconds. The failed input `fcc4c4522c54db2f1cee86fe0fff5f4a` exceeded the unchanged 120-second public-download preparation cap; it is retained as unavailable and is not retried. No gate TA labels were read, no scoring ledger was consumed and no candidate changed.
+
+`configs/ta_feature_discovery/static_gate_pending38_manifest_v2.json` contains only the 38 original tasks lacking any terminal receipt. It binds parent manifest SHA `9703169044c17021b0d419bc8246105a5767ab782861f58f05f4355b574bb3ed` and all 13 terminal task keys. Input, candidate, extractor/header identity and 2CPU/8wall/3GiB static profile are unchanged. Manifest SHA: `fe52c510cea7bba0be5639b5fc415e87dacb70a0b3f022a56ac2ce17074b88a1`.
+
+After root commits this protocol and continuation manifest, one new owner may run those 38 unstarted tasks in a fresh phase, max4 workers reduced by actual memory/disk/CPU qualification. No other collector owner remains active. Verified public CNF cache entries may be supplied for tasks not yet started; they do not trigger task duplication or change mandatory raw SHA checks. Do not wait for speculative cache discovery before dispatch.
+
+The final delivery joins both phases to the original 51 eligible tasks, preserving every failed receipt and its cost. One evaluation still retains all 60 original gate parents with frozen fallback and consumes the original shared single gate opportunity exactly once. Further preparation errors remain recorded; they do not justify silently relaunching completed/failed tasks, changing limits or scoring a partial population.

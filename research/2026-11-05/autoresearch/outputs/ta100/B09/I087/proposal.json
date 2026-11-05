@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_uip_trail_localization"
+    ],
+    "hypothesis": "当前决策层中，1UIP在trail上距层尾的相对位置的均值。",
+    "id": "I087",
+    "mechanism_key": "uip_conflict_locality",
+    "registry_id": "TD17"
+  },
+  "original_preexecution_config": "configs/ta100/B09.json",
+  "original_config_sha256": "93361ef727629ed8046c1d35d4d6981e1dd16e9512e634dba03b13acbc235f6f",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

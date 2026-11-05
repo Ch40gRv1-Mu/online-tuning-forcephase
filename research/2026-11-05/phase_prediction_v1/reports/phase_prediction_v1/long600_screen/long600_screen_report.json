@@ -1,0 +1,111 @@
+{
+  "all_four_actions_censored_parents": 12,
+  "analysis_identity": {
+    "checker_options": [
+      "--no-trim"
+    ],
+    "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+    "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+    "memory_bytes": 3221225472,
+    "mode": "static",
+    "proof_file_limit_bytes": 8589934592,
+    "resource_recovery_sha256": "e025c5f2834effe2326f3e084370fe8c8d2ff5040cf4d9a06275cbc51067089c",
+    "runner_sha256": "e5ff9b6e16e2cdb33ff005af0a8175510d5c162d5a944a9481d9fab58096e541",
+    "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+    "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+    "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+    "verification": "timed_binary_LRAT_lrat_trim"
+  },
+  "at_least_one_action_verified_parents": 4,
+  "best_static_on_this_fit_screen": "Fplus",
+  "bootstrap_iterations": 2000,
+  "cases_sha256": "c0baaa119c45bfe5d2b2540716e075a419d7887718424c547dda5d7e6c876319",
+  "cutoff_s": 600,
+  "independent_parents": 16,
+  "interval_scope": "Descriptive fit-screen paired bootstrap, 2000 draws with seed20261104; best static was selected on these same fit rows. No gate/confirmation claim; timeout is cutoff censoring, not a true runtime.",
+  "local_report_cpu_s": 0.028539000000000002,
+  "mean_par2_s": {
+    "D": 916.0938760625,
+    "Fminus": 1005.33776925,
+    "Fplus": 915.0987253125,
+    "Iminus": 936.9547271875,
+    "three_action_oracle": 915.0983840625
+  },
+  "oracle_scope": "Minimum of D/Fplus/Fminus only, no feature cost, seed means within each parent. Iminus remains a static control.",
+  "oracle_vs_best_static": {
+    "descriptive_paired_parent_95pct": [
+      0.0,
+      1.4396247772774373e-06
+    ],
+    "first": "three_action_oracle",
+    "mean_delta_s": -0.00034125000001949957,
+    "relative_improvement": 3.729105839678226e-07,
+    "second": "Fplus"
+  },
+  "reporter_sha256": "aaa71b112fc9ac81c5570819c5e61ff8cc2acb6c126e51ee90a35675869b2f46",
+  "role": "development_fit",
+  "static_pairwise": [
+    {
+      "descriptive_paired_parent_95pct": [
+        -0.0037542007757438434,
+        1.3249920227664802e-07
+      ],
+      "first": "D",
+      "mean_delta_s": 0.9951507499999934,
+      "relative_improvement": -0.0010874791128794303,
+      "second": "Fplus"
+    },
+    {
+      "descriptive_paired_parent_95pct": [
+        -2.3777762869769958e-07,
+        0.2620754246772655
+      ],
+      "first": "D",
+      "mean_delta_s": -89.2438931874999,
+      "relative_improvement": 0.08877005909573799,
+      "second": "Fminus"
+    },
+    {
+      "descriptive_paired_parent_95pct": [
+        -0.04344264547245902,
+        0.11859044945430264
+      ],
+      "first": "D",
+      "mean_delta_s": -20.860851124999954,
+      "relative_improvement": 0.02226452412233293,
+      "second": "Iminus"
+    },
+    {
+      "descriptive_paired_parent_95pct": [
+        -2.831109338075066e-07,
+        0.26437035284139454
+      ],
+      "first": "Fplus",
+      "mean_delta_s": -90.2390439374999,
+      "relative_improvement": 0.08975992616374084,
+      "second": "Fminus"
+    },
+    {
+      "descriptive_paired_parent_95pct": [
+        -0.040570147926861866,
+        0.11934071649026146
+      ],
+      "first": "Fplus",
+      "mean_delta_s": -21.856001874999947,
+      "relative_improvement": 0.02332663600578233,
+      "second": "Iminus"
+    },
+    {
+      "descriptive_paired_parent_95pct": [
+        -0.22794637074133295,
+        -4.7944416881051666e-08
+      ],
+      "first": "Fminus",
+      "mean_delta_s": 68.38304206249995,
+      "relative_improvement": -0.07298436101365158,
+      "second": "Iminus"
+    }
+  ],
+  "summary_sha256": "f5983f2c62d3bf3be7697f0e3dc379db5944ea7b9619633a739e2f7fbcbda31c"
+}

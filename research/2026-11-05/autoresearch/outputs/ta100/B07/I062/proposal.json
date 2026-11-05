@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_ising_frustration"
+    ],
+    "hypothesis": "J_ij=sum_C 2^-width_C sign_i sign_j over distinct variable pairs. Start all spins+1;12 greedy coordinate sweeps minimize sum J_ij s_i s_j, flipping only on strict decrease. Return |J| mass with J_ij s_i s_j>0 divided by total |J|.",
+    "id": "I062",
+    "mechanism_key": "signed_pairwise_optimized_gauge_frustration",
+    "registry_id": "RA02"
+  },
+  "original_preexecution_config": "configs/ta100/B07.json",
+  "original_config_sha256": "ad609c29f98ea558286b03ba5c05a812bcb0c7784c0a97f753598e955bf35189",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

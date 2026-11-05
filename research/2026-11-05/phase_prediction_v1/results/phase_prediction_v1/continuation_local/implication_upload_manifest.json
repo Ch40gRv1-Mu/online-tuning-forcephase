@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "b90d78ba2ea147ac6d003eb7968c37e02f3a3ff69238835289a2cb08ceff09e8",
+  "members": {
+    "src/implication_v1/cnf_implication.cpp": "0eb3a635681d25106b5bfe609f4bd9e8f27c34e4e52f0f3ea9efff057c73b996",
+    "src/implication_v1/run_implication_features.py": "6a00b3e4cd62d4be861463bfe3799732c12c6e80fa3812aa57e6950e4aa7225f",
+    "src/implication_v1/run_pilot.py": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "metadata/implication_fit144_v1.csv": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0"
+  },
+  "no_solver_runs": true,
+  "roles": [
+    "development_fit"
+  ],
+  "owner": "current phase_prediction agent",
+  "new_feature_mechanism": "binary literal implication SCC and signed downstream depth"
+}

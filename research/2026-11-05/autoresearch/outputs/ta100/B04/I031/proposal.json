@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_controllability"
+    ],
+    "hypothesis": "On the acyclic evaluable gate portion, primary inputs have CC0=CC1=1. AND literal z: CC0(z)=1+min(CC0(a),CC0(b)); CC1(z)=1+CC1(a)+CC1(b), swapping 0/1 for negated literals. f=mean[(CC1(v)-CC0(v))/(CC1(v)+CC0(v))] over defined outputs.",
+    "id": "I031",
+    "mechanism_key": "circuit_combinational_controllability",
+    "registry_id": "S31"
+  },
+  "original_preexecution_config": "configs/ta100/B04.json",
+  "original_config_sha256": "63f35476a7e708b9534df47b2e57d104a89783b1705dc812aac7e6edc35a47e7",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

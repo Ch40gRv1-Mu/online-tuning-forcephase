@@ -1,0 +1,123 @@
+{
+  "target": "original labels only: log2(false_wall/true_wall), positive means original true faster",
+  "scope": "Exploratory48fit conditional-on-both-solved subset; no classifier or predictive confirmation.",
+  "protocol_sha256": "85a709a8e39d8970d29cec20bb2fe9864f7d24fa11608133be57825c4649e265",
+  "source_sha256": "710ffb7202efada090154088fe683269b2e1ee8c023da7efc4489df30dd9b080",
+  "cohort_sha256": "bdf84983046c3b58723a5fe81ca62ca0f3ce20fff7e5102f3e569f3f86789add",
+  "original_table_sha256": "a9766285cc5a6840c465e804608d9ecbe8a616d6d84ec1cb796804c58b73b8ae",
+  "feature_receipt_sha256": {
+    "395829127ec213c2e69a6a13dda3623b.features.json": "2f82f4f74e85a000aa8caaf824da1657103b9b8dd13827510b5ea59c17c6ba92",
+    "0aa22564d00e9716519918d84b25c4a7.features.json": "c5c0f28d59db980a7b4ad4f7e5b6308453efd5f227a920c3fac890792c45acb8",
+    "3197b65ef50328394a0c9e73281d7122.features.json": "d72b70426ba6eeb91146ed51e67d56db65f0d342ec46dc7bcca9a5ff6e807abc",
+    "fab2022deb130fe3ad1136a5c71b4109.features.json": "ce7f171ed02f91f88a6a0d04cbc015e5a25baabbcdee76a7738385b2f5b8a7a0",
+    "24bde22f729a988fb2394b644cb60d39.features.json": "e20c0afb0478ed3e06984ff6afeba09b5d176242ef2dc52ade9ba77be2aa1f04",
+    "fe851239cedd4197c5390cee55fee723.features.json": "0a08f7602b0c7d1a3de2e9832e2a563e4c59109b476bb3276a4b458bcd51c60a",
+    "c05d4d3ecd06a2e3942fea09159dd27b.features.json": "79ffd8c25dd8f1dc36386de280c4fa65d02419bf7859c492184470df27cea626",
+    "fea0f926e766ccba7c7dc261084ecbd0.features.json": "61efa60707aa6bd3260906210b7ddc42f88eeab7389c97ffd5451c0ae5ac081f",
+    "72cec28d6e34efe366150066b71edc33.features.json": "33bbb5eb90eaaa484042b9e3afe8c7872757da690e1ee10a2fe571c6a126045e",
+    "c0bd86bd7ca2c65e44311de374168150.features.json": "6e7f42173b963f5821c54b8af9f914cb24c8c0ef8cc4e2401be92a76f4307ff8",
+    "8e81131a0c4fbd01e90bb6e20d00c547.features.json": "9efeabf4ff201a40addfaa7a22a6629536a41c9021c9a368d1826e0280a0bb35",
+    "965bc4f6691b2e5f7388aaa9ba68f768.features.json": "0716f6fc9da0f24d643e4807f23fa71efce34a9ab0295e97643610263c5a88c9",
+    "4e3195a382f5af213444736fcc8b364f.features.json": "03b5864b8b55172bd1f192576e1dff1ff5066e37efcbd613e8c1c5ed1486183d",
+    "539a1f4e4f7a95ab0ac55df50445cceb.features.json": "713bb30b47f4c10c4bfbca50ed18e5c108e3bc0a59d0373c79667fdf468a8db8",
+    "3bfa92996634d2ddc6c0568bba9a0f99.features.json": "93ba670a60d02f885269ce4158f79a180a3ab577435bb5cb1e2995d38ee2f36a",
+    "753ca299a6ab46e28ece1aefa38f4947.features.json": "78535e08d64070c1dd6320f620f6c736dc36578523ec12f6e88edc9f480a0293",
+    "de8c42d50f1dbf43a731f1916dc6bf01.features.json": "d0e21c9112c958f6b71757acfa3ac0da15f35c931de56184960f10a8f2783c93",
+    "9f38c92ba81c754103444edc15c1f44b.features.json": "927787158333ed8e4e71891900828c2b6848a5611496588f5b38929ae8eabc86",
+    "70da0b784f49350e05c0ff8434acdc15.features.json": "d2b901d212ec0ecd82fc4d5a5946507e1bb6a561b6fdbee6e86d93a2023cbc67",
+    "e442248e155eb81a811edd1deca8a2cd.features.json": "896868d5dd8c334806c5025e215a242b8fecb4fd56bc0701f46dd4d11386fb0c",
+    "2412325e3c099453b99c87864477363c.features.json": "99dc958e1b753b70307887036dc14036e9d909ee80f5ae318b349df7e9344b8a",
+    "8707ef793f0443b5804c56c2ffca322e.features.json": "6ecd8f35311872b749b3baada26cec2f42bd544e8ff9ce93610a3997a01e033d",
+    "1c30806c5aa9cd54bf823c20fa078243.features.json": "7e9c4072cba28b57531c86ac9d2392297a949efa89cffb7814010464bb546b20",
+    "8a05f9b6bf49285e40d0a197967ea5d3.features.json": "bace096f0be21d91579bab61e7931a1d6d110d9ba6bef04c3212ed5a121b408e",
+    "081f111af59344b61346367a930e24f6.features.json": "467bf28d44a1694a0e1d570d578e4328a5d0ae968684e0aca5e0fe79c3ebccd7",
+    "04648cef5bed430ab6429991fa9e107d.features.json": "e959a64448c7b231fae47dcc66da817b5656a18079cff750b1444f3b8cd1e280",
+    "5d7bc1fb0f3269d88f732d3fb81abe59.features.json": "0d6586ede7d4aeee4edf7c74ab6a2019276e9182289be2a6666e97fc24341cda",
+    "362d153b4162127bc42796180110f483.features.json": "f89763e3548c011ee68d53fbf910158dde43a20ee67d7b406dd29bf6dd0521c8",
+    "fbdca334e6985cd2de8718b60695b5f6.features.json": "516b64d72b5d685b0b10b8b1f2fdfc16bcc26b9c4171bdfd3b20e0917e03f920",
+    "8b267f95678c90b2179944de7233b090.features.json": "aa3954d2987d47297d45c08f1fc8f6d9a914150602ab433dbceaf92bd5c13920",
+    "46355da785714f239393e7630020cae3.features.json": "f3a91a0b98eb68a33c59230e440d66b93c6dd861dae26ad80074e1f281ba0a24",
+    "0ccb0f855352783a972be45188bf3164.features.json": "e6dc93666d38b6fc6efcd31f856907d62f3551cd0b3af6807631e775b1029626",
+    "d839601ab519549e507de27b868fa48b.features.json": "9dd64b687f20d93b18faa640d19d91a97b6366529f0c0e9944f9362d03a7900f",
+    "8e1f70e59050693ef128bee0092a7f5f.features.json": "c82b3f5bc9f476a094b1a15fb0efd2fac02369f287a4e81fc5eebd0d1f267430",
+    "c6470503d1ff16cbafa18764b13d80ed.features.json": "189f84fc18b220b7d2620b55bff7c09ce360cb07e22a25987d49b1b870811361",
+    "0e36fa2e12f32cde67937803299fb57b.features.json": "d2b65e18cdef74d2fa1597fe5bb388d9a077a6ffb6bf41f9a32c6755c6a4a01d",
+    "d2af3fde615d7c4d4a4574fc8839970e.features.json": "976f7354088400532d16763c647d000677f02d5e99202691c91c417901b9c195",
+    "07cea7a64248a60d509368d09d3057c2.features.json": "c5d8d19494255f7702edcc917717bc325de5fbc5c82ae4cff32af02fb7180f64",
+    "69f6dd335626a9b71bfc6f2332f52b9d.features.json": "973503c564bc4fe643126b1f89501241a486121167e0dddbfcd1aceca5f6635c",
+    "f5c12b1eb9c49e994abb238576a9372b.features.json": "98085c0529065291e3c7ce0b9a05451f15fba87a1d7e9ac21a27f2387e5cbc8f",
+    "c0e828fb967fc4f0935cf06c6a6b1055.features.json": "985f79fe2b956ec6c351131d4142a41dd127278ca4c2a75ea330d7727a4cf24a",
+    "6f730dd121471749dc0b4baca2573bf7.features.json": "5461d9f3bc695c2aeb2f48fba1892b2e760d0ee653e4c9571ed40ec26871c3ed",
+    "d99fd10afec0eea1a41a429936bfef59.features.json": "4fa85e190c75799e5eacd4ad22aff7f5d759b265b88a3141f9515ac829acba44",
+    "f1973c0a4e960a914ff12aa7e4e9293c.features.json": "ba9f771ac9de3fa509bd4d0aef4cc1b9b75d5ed32e53088be919374e738211eb",
+    "526caead2f3c84c2918a2fc775dc3e97.features.json": "e5f9be919548bc30da50936429b7a0b2fffe8fd77ca76a5f59d5bcb3c2866e30",
+    "c8d21db50338d9d5743802bcae77a466.features.json": "dcd5f990921cce39215d3e999db32ac23445d13e5f3a806743c62deb4545a9c1",
+    "6fab31665147f538da92dc16c3a239ad.features.json": "c7cb2edc800326ebf0d0c81f27d1e9804780f135186c1103c0f64181c2144451",
+    "2de9b79919882078aea76f297fc923e5.features.json": "89fa6e7470cdb68da458fba7abf9392ce43652024f1fb99035094f240b8a15a8"
+  },
+  "coverage": {
+    "both_solved_positive_time": 21,
+    "one_solved": 4,
+    "neither_solved": 23,
+    "both_solved_invalid_time": 0
+  },
+  "strict_incidence_forests": 0,
+  "findings": [
+    {
+      "feature": "g_cycle_excess_per_incidence",
+      "all_fit_parents": 48,
+      "effective_both_solved_n": 21,
+      "missing_features_in_both_solved": 0,
+      "spearman_rho": -0.05131536483699972,
+      "descriptive_parent_bootstrap_95pct": [
+        -0.4740983606557377,
+        0.3839110529758012
+      ],
+      "valid_bootstrap_draws": 2000,
+      "constant_bootstrap_draws": 0,
+      "interval_stable_draw_count": true,
+      "undefined_reason": null
+    },
+    {
+      "feature": "g_leaf_variable_fraction",
+      "all_fit_parents": 48,
+      "effective_both_solved_n": 21,
+      "missing_features_in_both_solved": 0,
+      "spearman_rho": 0.15915514724012056,
+      "descriptive_parent_bootstrap_95pct": [
+        -0.3333224470244967,
+        0.5412158363682706
+      ],
+      "valid_bootstrap_draws": 1980,
+      "constant_bootstrap_draws": 20,
+      "interval_stable_draw_count": true,
+      "undefined_reason": null
+    },
+    {
+      "feature": "g_gate_motif_fraction",
+      "all_fit_parents": 48,
+      "effective_both_solved_n": 21,
+      "missing_features_in_both_solved": 0,
+      "spearman_rho": 0.10930158639718845,
+      "descriptive_parent_bootstrap_95pct": [
+        -0.3248660255108741,
+        0.49758397569528384
+      ],
+      "valid_bootstrap_draws": 2000,
+      "constant_bootstrap_draws": 0,
+      "interval_stable_draw_count": true,
+      "undefined_reason": null
+    }
+  ],
+  "formula_depth_tested": false,
+  "gate_cases_used": 0,
+  "protected_final_cases_used": 0,
+  "new_solver_runs": 0,
+  "new_D_F_policy_rewards": 0,
+  "caveats": [
+    "Already seen development data; three descriptive comparisons, no multiplicity correction.",
+    "Censored parents retained in coverage, not imputed as exact runtime.",
+    "Original solver/version/phase semantics remain unverified.",
+    "Association is not an action selector, net benefit, or CaDiCaL transfer."
+  ]
+}

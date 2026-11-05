@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_convex_fractional_pressure"
+    ],
+    "hypothesis": "Starting x=.5,64 projected subgradient steps minimize sum_C max(0,1-sum_l truth(l))+.05sum_i(x_i-.5)^2-h_i*x_i, h_i=(pos_i-neg_i)/degree_i. eta=.05/sqrt(t+1)/sqrt(maxdegree); clip[0,1]. Return mean(x-.5).",
+    "id": "I069",
+    "mechanism_key": "fixed_convex_hinge_fractional_polarity",
+    "registry_id": "RA09"
+  },
+  "original_preexecution_config": "configs/ta100/B07.json",
+  "original_config_sha256": "ad609c29f98ea558286b03ba5c05a812bcb0c7784c0a97f753598e955bf35189",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

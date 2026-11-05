@@ -1,0 +1,77 @@
+{
+  "binary_sha256": "b619194fdfd455e8d64f52d8234e0cb0652035acf2214853e1d0ebca6b4e52fd",
+  "checkpoint_inputs": 1,
+  "controller_sha256": "d6194cc12ff5a6c570a767053f1bc8460440e3f27bd25576b0164987470bc770",
+  "cpu_s": 2.132435,
+  "gate_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+  "scope": "Synthetic deterministic conflict-limited engineering checks; no performance claim.",
+  "status": "PASS",
+  "tests": [
+    {
+      "check": "no_op_and_fixed_D",
+      "input": "php6",
+      "passed": true
+    },
+    {
+      "check": "no_op_and_fixed_Fplus",
+      "input": "php6",
+      "passed": true
+    },
+    {
+      "check": "no_op_and_fixed_Fminus",
+      "input": "php6",
+      "passed": true
+    },
+    {
+      "check": "three_continuation_prefix",
+      "conflicts": null,
+      "input": "php6",
+      "passed": true,
+      "reached": false
+    },
+    {
+      "check": "no_op_and_fixed_D",
+      "input": "php8",
+      "passed": true
+    },
+    {
+      "check": "no_op_and_fixed_Fplus",
+      "input": "php8",
+      "passed": true
+    },
+    {
+      "check": "no_op_and_fixed_Fminus",
+      "input": "php8",
+      "passed": true
+    },
+    {
+      "check": "three_continuation_prefix",
+      "conflicts": 1814,
+      "input": "php8",
+      "passed": true,
+      "reached": true
+    },
+    {
+      "check": "no_op_and_fixed_D",
+      "input": "random3",
+      "passed": true
+    },
+    {
+      "check": "no_op_and_fixed_Fplus",
+      "input": "random3",
+      "passed": true
+    },
+    {
+      "check": "no_op_and_fixed_Fminus",
+      "input": "random3",
+      "passed": true
+    },
+    {
+      "check": "three_continuation_prefix",
+      "conflicts": null,
+      "input": "random3",
+      "passed": true,
+      "reached": false
+    }
+  ]
+}

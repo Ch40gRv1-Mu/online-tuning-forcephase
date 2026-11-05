@@ -1,0 +1,12 @@
+{
+  "status": "USER_SUPERSEDED_PARTIAL_NOT_COMPLETE_MATRIX",
+  "archive_sha256": "ff1261468f67a2941b76d511581592a332b864011b4ccf20e43951aceb1a4034",
+  "records": 160,
+  "valid_or_reused_completed": 159,
+  "intentional_cancel_error": 1,
+  "not_timeout_training": true,
+  "proof_and_CNF_payloads_excluded": true,
+  "cancel_record_id": "12d88fd773ff0955747304ef82bf4a89",
+  "source_phase": "long600_dev40_v1",
+  "new_physical_parent_cpu_s": 30155.99
+}

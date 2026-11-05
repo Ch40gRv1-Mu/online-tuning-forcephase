@@ -1,0 +1,27 @@
+{
+  "feature_metadata_columns_used": [
+    "hash",
+    "isohash",
+    "variables",
+    "clauses",
+    "bytes"
+  ],
+  "meta_sha256": "5b8bbc767bc5300cca6a12717fb2d7c8d52ccee24aced4447d71846352744ff3",
+  "base_sha256": "15a3d19fd23ba72dd7c77b1b86113873f160760fa1c9710e9e5ed6a23ba29d84",
+  "source_test_candidates": 5355,
+  "development_before_equivalence": 300,
+  "development_after_equivalence": 300,
+  "development_excluded": 0,
+  "fit": 180,
+  "feedback": 60,
+  "gate": 60,
+  "pilot": 48,
+  "unexposed_test_equivalence_groups": 5019,
+  "sealed_confirmation": 96,
+  "frozen_files_sha256": {
+    "development_frozen.csv": "07bc7d3e6c85a064dcfbb11a685f9d2363d02b441cbe0e19f11981b436a42ff9",
+    "pilot_frozen.csv": "bdf84983046c3b58723a5fe81ca62ca0f3ce20fff7e5102f3e569f3f86789add",
+    "confirmation_sealed.csv": "1c5cc047ed5162ec9970d24bf1fecf02c45c3b724b05514c4af00813bacfaa01"
+  },
+  "status": "No new test performance was read; GBD isohash is a practical deduplication aid, not a full isomorphism proof."
+}

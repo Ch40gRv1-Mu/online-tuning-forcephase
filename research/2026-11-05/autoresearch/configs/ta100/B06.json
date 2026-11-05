@@ -1,0 +1,104 @@
+{
+  "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "block_id": "B06",
+  "collection_manifest_sha256": "2792ca7a34cd655cb3ea6a8b1139ec6a51729d1b3f6396d8185d319cfed15d2a",
+  "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "extractor_source_sha256": "44f7de9321146d4f6ea5d195ac747300e74851fd82e21215ad205c2551a5223e",
+  "protocol_path": "refine-logs/ta100/PROTOCOL.md",
+  "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+  "registry_path": "configs/ta100/graph_registry_v3.json",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "rounds": [
+    {
+      "columns": [
+        "graph_modularity"
+      ],
+      "hypothesis": "Q=sum_g[e_g/E-(vol_g/(2E))^2] for the unsigned bounded incidence sample partition from four fixed label-propagation sweeps.",
+      "id": "I051",
+      "mechanism_key": "unsigned_constraint_community_modularity",
+      "registry_id": "S11"
+    },
+    {
+      "columns": [
+        "graph_box_scaling"
+      ],
+      "hypothesis": "Fit the slope d=-slope(log r,log N_cover(r)) for r=1,2,4 on a fixed bounded incidence neighborhood; N_cover is greedy radius-r ball cover.",
+      "id": "I052",
+      "mechanism_key": "incidence_box_cover_scaling",
+      "registry_id": "S12"
+    },
+    {
+      "columns": [
+        "graph_k33_witness"
+      ],
+      "hypothesis": "f=#tested variable triples with at least three common clause neighbors / #tested triples; each success is an explicit K3,3 subgraph witness.",
+      "id": "I053",
+      "mechanism_key": "incidence_nonplanar_minor_witness",
+      "registry_id": "S13"
+    },
+    {
+      "columns": [
+        "graph_elimination_width"
+      ],
+      "hypothesis": "On a fixed <=96-variable induced primal sample, repeatedly remove the vertex with minimum fill-edge count; f=max live-neighbor count / max(1,sample_variables-1).",
+      "id": "I054",
+      "mechanism_key": "primal_elimination_separator_width",
+      "registry_id": "S14"
+    },
+    {
+      "columns": [
+        "graph_percolation"
+      ],
+      "hypothesis": "For fixed deletion rates q=0,1/4,1/2,3/4,1 on a <=128-node incidence sample, measure largest surviving variable-component fraction (zero if no survivors); average three seeds at interior q; f is the trapezoidal area on[0,1].",
+      "id": "I055",
+      "mechanism_key": "unsigned_vertex_percolation_robustness",
+      "registry_id": "S15"
+    },
+    {
+      "columns": [
+        "graph_betweenness"
+      ],
+      "hypothesis": "On a <=128-node incidence sample, compute Brandes betweenness for 16 fixed source vertices; f=max normalized internal-vertex dependency.",
+      "id": "I056",
+      "mechanism_key": "geodesic_flow_bottleneck",
+      "registry_id": "S16"
+    },
+    {
+      "columns": [
+        "graph_harmonic_access"
+      ],
+      "hypothesis": "f=mean_{distinct connected sampled variable pairs}(1/d_incidence(u,v)); disconnected pairs contribute zero.",
+      "id": "I057",
+      "mechanism_key": "incidence_harmonic_access_distance",
+      "registry_id": "S17"
+    },
+    {
+      "columns": [
+        "graph_detour"
+      ],
+      "hypothesis": "For up to32 sampled incidence edges e=(u,v), remove e and find d_{G-e}(u,v); f=mean(1/d), taking zero when disconnected.",
+      "id": "I058",
+      "mechanism_key": "incidence_replacement_path_detour",
+      "registry_id": "S18"
+    },
+    {
+      "columns": [
+        "graph_nonbacktracking"
+      ],
+      "hypothesis": "Let x_0(u->v)=1 and x_{t+1}(u->v)=sum_{w in N(v),w!=u} x_t(v->w). f=sum x_3 / max(1,sum x_2).",
+      "id": "I059",
+      "mechanism_key": "incidence_nonbacktracking_branch_growth",
+      "registry_id": "S19"
+    },
+    {
+      "columns": [
+        "graph_gyo"
+      ],
+      "hypothesis": "Run GYO rules on sampled variable-support hyperedges: delete degree<=1 variables and contained support edges to a fixed point. f=remaining incidence mass / initial incidence mass.",
+      "id": "I060",
+      "mechanism_key": "hypergraph_join_tree_reducibility",
+      "registry_id": "S20"
+    }
+  ],
+  "schema": "ta100.block.v1"
+}

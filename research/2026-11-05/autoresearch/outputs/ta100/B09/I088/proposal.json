@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_cut_level_entropy"
+    ],
+    "hypothesis": "每个最终学习子句按其文字decision level占比计算归一化熵，再取前缀均值。",
+    "id": "I088",
+    "mechanism_key": "conflict_cut_level_occupancy",
+    "registry_id": "TD18"
+  },
+  "original_preexecution_config": "configs/ta100/B09.json",
+  "original_config_sha256": "93361ef727629ed8046c1d35d4d6981e1dd16e9512e634dba03b13acbc235f6f",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

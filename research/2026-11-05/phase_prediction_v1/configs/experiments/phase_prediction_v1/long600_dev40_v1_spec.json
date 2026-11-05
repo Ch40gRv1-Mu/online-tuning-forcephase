@@ -1,0 +1,26 @@
+{
+  "stage": "long600_dev40_v1",
+  "mode": "static",
+  "actions": [
+    "D",
+    "Fplus",
+    "Fminus",
+    "Iminus"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "cutoff_s": 600,
+  "verification": "timed_binary_LRAT_lrat_trim",
+  "workers": 2,
+  "proof_file_limit_bytes": 8589934592,
+  "solver_upper_cpu_hours": 53.333333333333336,
+  "max_total_cpu_hours": 62,
+  "cohort_sha256": "bc62884e0cbbb30cb25958103819065de954c3c84d6cfdac6e326bd85295d5f6",
+  "validated_reuse_plan_sha256": "a69f6b9711a9aa74e1a24229ec706e6060897faca9bc7879ed07a7f5ab429233",
+  "sampling": "First24 eligible frozen fit plus first16 eligible frozen feedback, fixed hash order, no replacement by outcomes; public checksum manifest fills initially missing hashes.64 earlier validated measurements reused by exact SHA.",
+  "primary_cutoff_s": 600,
+  "launch_condition": "Complete valid long600 screen analyzed; new broader development design frozen before any new outcomes. No gate/test use.",
+  "purpose": "Broader paired-seed structure-policy development after16-parent long-budget screen showed negligible selection headroom; not an assertion of a useful predictor."
+}

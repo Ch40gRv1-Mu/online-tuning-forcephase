@@ -1,0 +1,11 @@
+{
+  "feature": "s_long_fraction",
+  "left": {
+    "action": "Fplus"
+  },
+  "missing": "left",
+  "right": {
+    "action": "D"
+  },
+  "threshold": 0.024555309337
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_blocker_success_share"
+    ],
+    "hypothesis": "主搜索传播检查中，因blocking literal已满足而跳过reason子句读取的比例。",
+    "id": "I095",
+    "mechanism_key": "watcher_short_circuit_success",
+    "registry_id": "TD25"
+  },
+  "original_preexecution_config": "configs/ta100/B10.json",
+  "original_config_sha256": "67f43debe577a48dd5d37d15fccbcb00c27ebc3d4da3745941328b899ad634e0",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

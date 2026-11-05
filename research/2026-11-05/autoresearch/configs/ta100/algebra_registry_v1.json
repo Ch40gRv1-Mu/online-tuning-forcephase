@@ -1,0 +1,686 @@
+{
+  "authored_by": "root",
+  "candidate_origin": "Root independently supplied all18 mechanisms and precise bounded algorithms; parallel_static implements and supplies source attribution only. No outcomes were used to alter definitions.",
+  "candidates": [
+    {
+      "authored_by": "root",
+      "block_id": "RA01",
+      "columns": [
+        "algebra_renamable_horn_deficit"
+      ],
+      "complexity": "O(12*Fstar_literal_count)",
+      "definition": "Minimize sum_C choose(np_C,2) under variable sign flips. Starting with no flips, run12 coordinate passes in local first-appearance variable order; flip only on strict reduction. Divide final violated pairs by sum_C choose(width_C,2).",
+      "feature_key": "algebra_renamable_horn_deficit",
+      "id": "RA01",
+      "implementation": "Exact occurrence-count updates for each accepted flip; zero pair denominator is missing. This is a fixed heuristic on F*, not an exact full-formula Horn-renaming certificate.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Encoding orientation relative to a tractable constraint class.",
+      "module": "algebra10",
+      "name": "Approximate renamable-Horn deficit",
+      "novelty_key": "horn_variable_orientation_pair_deficit",
+      "novelty_mechanism_key": "horn_variable_orientation_pair_deficit",
+      "source_ids": [
+        "horn"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://people.mpi-inf.mpg.de/~mehlhorn/ftp/RenamingHorn.pdf"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA02",
+      "columns": [
+        "algebra_ising_frustration"
+      ],
+      "complexity": "O(sum k_C^2 +12*nonzero_pairs)",
+      "definition": "J_ij=sum_C 2^-width_C sign_i sign_j over distinct variable pairs. Start all spins+1;12 greedy coordinate sweeps minimize sum J_ij s_i s_j, flipping only on strict decrease. Return |J| mass with J_ij s_i s_j>0 divided by total |J|.",
+      "feature_key": "algebra_ising_frustration",
+      "id": "RA02",
+      "implementation": "Sparse exact pair accumulation and deterministic fixed sweeps; zero total coupling mass is missing.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Frustration remaining after a bounded gauge search.",
+      "module": "algebra10",
+      "name": "Optimized signed coupling frustration",
+      "novelty_key": "signed_pairwise_optimized_gauge_frustration",
+      "novelty_mechanism_key": "signed_pairwise_optimized_gauge_frustration",
+      "source_ids": [
+        "energy"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA03",
+      "columns": [
+        "algebra_raw_submodular_fraction"
+      ],
+      "complexity": "O(nonzero_pairs)",
+      "definition": "For the same raw J, return sum_{J_ij<0}|J_ij|/sum|J_ij|. No spin or gauge optimization.",
+      "feature_key": "algebra_raw_submodular_fraction",
+      "id": "RA03",
+      "implementation": "Shares J setup but preserves the original signed coordinate system.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "How much pairwise interaction already has the submodular coefficient sign in raw coordinates.",
+      "module": "algebra10",
+      "name": "Raw-coordinate submodular coupling fraction",
+      "novelty_key": "signed_pairwise_raw_gauge_submodular_mass",
+      "novelty_mechanism_key": "signed_pairwise_raw_gauge_submodular_mass",
+      "novelty_witness": "RA02 optimizes a spin configuration and counts positive residual terms; RA03 does no optimization and counts negative raw coefficients. Positive triangle yields RA02=1/3,RA03=0; all-negative triangle yields0,1.",
+      "source_ids": [
+        "energy"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA04",
+      "columns": [
+        "algebra_literal_complement_pairing"
+      ],
+      "complexity": "O(m*k*log m)",
+      "definition": "Fraction of F* clause rows whose sorted all-literal negation also appears in F*. Duplicate rows remain in the fraction; an empty clause is its own complement.",
+      "feature_key": "algebra_literal_complement_pairing",
+      "id": "RA04",
+      "implementation": "Exact canonical signed-vector set membership. Not a tautology or duplicate-clause rate.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Global complement symmetry of constraint language.",
+      "module": "algebra10",
+      "name": "Literal-complement clause pairing",
+      "novelty_key": "full_clause_literal_complement_symmetry",
+      "novelty_mechanism_key": "full_clause_literal_complement_symmetry",
+      "source_ids": [
+        "boolean"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://arxiv.org/abs/2105.10386"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA05",
+      "columns": [
+        "algebra_majority_autarky_support"
+      ],
+      "complexity": "O(128*Fstar_literal_count)",
+      "definition": "Set each variable to its F* majority sign, ties true. Start S=all active variables; synchronously remove every S variable in any clause touched by S but unsatisfied by all S-assigned literals. At most128 passes; verify every remaining touched clause is satisfied. Return |S|/n.",
+      "feature_key": "algebra_majority_autarky_support",
+      "id": "RA05",
+      "implementation": "Nonconvergence or failed actual autarky condition is missing, not a partial support score. No SAT oracle or UP.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Self-satisfying removable support under a fixed assignment.",
+      "module": "algebra10",
+      "name": "Verified bounded majority autarky",
+      "novelty_key": "majority_assignment_autarky_fixedpoint_support",
+      "novelty_mechanism_key": "majority_assignment_autarky_fixedpoint_support",
+      "source_ids": [
+        "autarky"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://arxiv.org/abs/1103.3693"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA06",
+      "columns": [
+        "algebra_hall_deficiency"
+      ],
+      "complexity": "O(m*Fstar_literal_count)",
+      "definition": "Compute exact maximum clause-variable bipartite matching on F*. Return(m-matching_size)/m; empty clauses are unmatched rows, without adopting a SAT answer.",
+      "feature_key": "algebra_hall_deficiency",
+      "id": "RA06",
+      "implementation": "Deterministic augmenting paths; m=0 missing.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Deficit of distinct variable resources for constraints.",
+      "module": "algebra10",
+      "name": "Exact Hall matching deficiency",
+      "novelty_key": "clause_variable_max_matching_deficiency",
+      "novelty_mechanism_key": "clause_variable_max_matching_deficiency",
+      "source_ids": [
+        "autarky"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://arxiv.org/abs/1103.3693"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA07",
+      "columns": [
+        "algebra_cover_packing_gap"
+      ],
+      "complexity": "O((L+n)*log n +m log m)",
+      "definition": "Greedily pack variable-disjoint clauses by(width,original clause ID). Greedily hit uncovered clauses by maximum uncovered occurrence, ties lowest original variable ID. Return(cover_size-packing_size)/m.",
+      "feature_key": "algebra_cover_packing_gap",
+      "id": "RA07",
+      "implementation": "Empty clause makes cover undefined. Verify nonnegative packing/cover gap.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Gap between disjoint constraint demands and a shared variable hitting cover.",
+      "module": "algebra10",
+      "name": "Greedy cover-packing gap",
+      "novelty_key": "clause_packing_variable_cover_duality_gap",
+      "novelty_mechanism_key": "clause_packing_variable_cover_duality_gap",
+      "source_ids": [
+        "autarky"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://arxiv.org/abs/1103.3693"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA08",
+      "columns": [
+        "algebra_signed_mode_alignment"
+      ],
+      "complexity": "O(16*nonzero_pairs)",
+      "definition": "Use16 normalized sparse J power steps, starting x_i=sin(1.7*(i+1)). Let h_i=-sum_C sign_i2^-width_C. Return|dot(x,h)|/||h||, where x is unit norm.",
+      "feature_key": "algebra_signed_mode_alignment",
+      "id": "RA08",
+      "implementation": "Zero iterated mode or zero bias norm is missing. Not an eigenvalue/rank or full spectral optimum claim.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Alignment of aggregate linear pressure with a strong signed interaction direction.",
+      "module": "algebra10",
+      "name": "Signed leading-mode/bias alignment",
+      "novelty_key": "signed_pairwise_mode_linear_bias_alignment",
+      "novelty_mechanism_key": "signed_pairwise_mode_linear_bias_alignment",
+      "source_ids": [
+        "energy"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA09",
+      "columns": [
+        "algebra_convex_fractional_pressure"
+      ],
+      "complexity": "O(64*L)",
+      "definition": "Starting x=.5,64 projected subgradient steps minimize sum_C max(0,1-sum_l truth(l))+.05sum_i(x_i-.5)^2-h_i*x_i, h_i=(pos_i-neg_i)/degree_i. eta=.05/sqrt(t+1)/sqrt(maxdegree); clip[0,1]. Return mean(x-.5).",
+      "feature_key": "algebra_convex_fractional_pressure",
+      "id": "RA09",
+      "implementation": "At hinge equality choose zero hinge subgradient. This is a specified finite algorithm, not an LP optimum or LP integrality gap.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Fractional directional pressure after relaxation of clause satisfaction.",
+      "module": "algebra10",
+      "name": "Fixed convex fractional pressure proxy",
+      "novelty_key": "fixed_convex_hinge_fractional_polarity",
+      "novelty_mechanism_key": "fixed_convex_hinge_fractional_polarity",
+      "source_ids": [
+        "satzilla2024",
+        "satzilla"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2024.27",
+        "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA10",
+      "columns": [
+        "algebra_bp_cavity_polarity"
+      ],
+      "complexity": "O(12*sum k_C^2)",
+      "definition": "Uniform prior;12 synchronous OR-factor sweeps damped.5. Factor-to-variable log odds are sign(l)*[-log(1-product(other literal false probabilities))]; cavity excludes that factor. Clamp probability to[1e-9,1-1e-9] and log odds to[-20,20]. Return mean(2*p_i-1).",
+      "feature_key": "algebra_bp_cavity_polarity",
+      "id": "RA10",
+      "implementation": "Synchronous old/new message arrays; unit-factor empty product is1 and resulting odds are clamped. No claim of convergence or true marginal probabilities.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Nonlinear clause-to-variable cavity pressure.",
+      "module": "algebra10",
+      "name": "Loopy BP cavity polarity",
+      "novelty_key": "fixed_damped_or_factor_cavity_polarization",
+      "novelty_mechanism_key": "fixed_damped_or_factor_cavity_polarization",
+      "source_ids": [
+        "bp",
+        "satzilla2024"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://www.merl.com/publications/docs/TR2001-22.pdf",
+        "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2024.27"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA11",
+      "columns": [
+        "algebra_signed_real_rank_deficit"
+      ],
+      "complexity": "O(64^2*1024)",
+      "definition": "First64 F* rows; columns are exactly their variables,<=1024. Entries are literal signs. Gaussian partial pivoting with absolute1e-9 pivot threshold. Return1-rank/min(rows,columns).",
+      "feature_key": "algebra_signed_real_rank_deficit",
+      "id": "RA11",
+      "implementation": "Empty dimensional denominator is missing; numerical rank definition and column cap are fixed.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Signed linear constraint-direction dependence.",
+      "module": "algebra8",
+      "name": "Signed real-row rank deficiency",
+      "novelty_key": "signed_clause_row_real_rank_deficiency",
+      "novelty_mechanism_key": "signed_clause_row_real_rank_deficiency",
+      "novelty_witness": "Graph S23 uses unsigned graph-cut GF2 rank. [[1,1],[1,-1]] vs [[1,1],[1,1]] has identical unsigned incidence but different signed real rank.",
+      "source_ids": [
+        "boolean"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://arxiv.org/abs/2105.10386"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA12",
+      "columns": [
+        "algebra_high_order_walsh_mass"
+      ],
+      "complexity": "O(128*2^8*8)",
+      "definition": "Take first128 F* clauses of width<=8. Expand each U_C=2^-k product_l(1-sign(l)*z_v). Sum coefficients by variable subset with duplicate clauses retained. Return sum_{degree>=3} coefficient^2 / sum_{nonconstant} coefficient^2.",
+      "feature_key": "algebra_high_order_walsh_mass",
+      "id": "RA12",
+      "implementation": "At most32768 enumerated subsets; zero nonconstant energy is missing.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Higher-order interaction energy beyond linear/quadratic terms.",
+      "module": "algebra8",
+      "name": "High-order real energy Walsh mass",
+      "novelty_key": "real_unsatisfied_count_energy_high_order_walsh",
+      "novelty_mechanism_key": "real_unsatisfied_count_energy_high_order_walsh",
+      "novelty_witness": "Graph S36 transforms a Boolean local conjunction predicate overGF2 and excludes affine cases. Duplicating one clause can change this real energy Walsh ratio while leaving that Boolean predicate unchanged; synthetic mixed-width witness verifies the difference.",
+      "source_ids": [
+        "boolean"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://arxiv.org/abs/2105.10386"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA13",
+      "columns": [
+        "algebra_canonical_lz78_ratio"
+      ],
+      "complexity": "O(tokens*log dictionary_degree)",
+      "definition": "Stream F* canonical signed literals in original clause traversal order, renaming variables by first appearance, with0 delimiters. LZ78 phrase factorization counts a final unmatched prefix as a reference phrase. Return phrase_count*log2(max(2,phrase_count))/(tokens*log2(2*n+1)).",
+      "feature_key": "algebra_canonical_lz78_ratio",
+      "id": "RA13",
+      "implementation": "No header, comments, paths or original numeric variable names are tokens. Order-sensitive explicitly; not a graph-isomorphism canonicalization.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Repeated description/grammar in encoding order.",
+      "module": "algebra8",
+      "name": "Canonical-name LZ78 structural description",
+      "novelty_key": "first_appearance_signed_cnf_lz78_description",
+      "novelty_mechanism_key": "first_appearance_signed_cnf_lz78_description",
+      "source_ids": [
+        "lz78"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://cs.nyu.edu/home/people/in_memoriam/roweis/csc310-2006/extras/ziv_lempel_1978_variable-rate.pdf"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA14",
+      "columns": [
+        "algebra_two_flip_cooperative_escape"
+      ],
+      "complexity": "O(q^2) after shared cube setup",
+      "definition": "On the fixed LOCALcube, fraction of q-choose2 bit pairs with E(reference)-E(joint_flip)>0 while each individual gain<=0.",
+      "feature_key": "algebra_two_flip_cooperative_escape",
+      "id": "RA14",
+      "implementation": "q<2 or incomplete energy cube is missing. Energies are exact for the bounded context.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Synergistic escape invisible to single-flip gains.",
+      "module": "algebra8",
+      "name": "Cooperative two-flip escape",
+      "novelty_key": "majority_local_cube_cooperative_two_flip_escape",
+      "novelty_mechanism_key": "majority_local_cube_cooperative_two_flip_escape",
+      "source_ids": [
+        "satzilla2024"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2024.27"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA15",
+      "columns": [
+        "algebra_plateau_connectedness"
+      ],
+      "complexity": "O(q*2^q) after shared cube setup",
+      "definition": "Exact BFS component of the majority reference using only hypercube edges whose endpoint energies both equal the reference energy. Return component_size/2^q.",
+      "feature_key": "algebra_plateau_connectedness",
+      "id": "RA15",
+      "implementation": "q=0 is prospectively declared missing as an uninformative zero-dimensional neighborhood, despite the formal denominator being1. Approved by root before actual extraction.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Topology of neutral moves, not merely first-flip gain.",
+      "module": "algebra8",
+      "name": "Majority plateau connectedness",
+      "novelty_key": "majority_local_cube_equal_energy_connectivity",
+      "novelty_mechanism_key": "majority_local_cube_equal_energy_connectivity",
+      "source_ids": [
+        "satzilla2024"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2024.27"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA16",
+      "columns": [
+        "algebra_sls_state_recurrence"
+      ],
+      "complexity": "O(128*q) after shared cube setup",
+      "definition": "Starting at the majority reference,128 steps: with probability1/16 choose a random bit; otherwise choose a minimum-energy neighbor, ties randomized. Always move even uphill. mt19937 seed0, decisions via integer modulo. Return1-unique_visited_states/129.",
+      "feature_key": "algebra_sls_state_recurrence",
+      "id": "RA16",
+      "implementation": "q=0 missing. This finite bounded walk emits no SAT result, even if a state has zero energy.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Revisitation/cycling in a finite stochastic local landscape.",
+      "module": "algebra8",
+      "name": "Fixed local-walk state recurrence",
+      "novelty_key": "fixed_noisy_walk_local_cube_state_recurrence",
+      "novelty_mechanism_key": "fixed_noisy_walk_local_cube_state_recurrence",
+      "source_ids": [
+        "satzilla2024",
+        "satzilla"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2024.27",
+        "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA17",
+      "columns": [
+        "algebra_persistent_unsat_core"
+      ],
+      "complexity": "O(129*m) after shared cube setup",
+      "definition": "Using exactly the same129-state trajectory as RA16, among clauses touching the LOCALcube and violated at least once, return the fraction violated in all129 states.",
+      "feature_key": "algebra_persistent_unsat_core",
+      "id": "RA17",
+      "implementation": "Always-satisfied-outside-core clauses are excluded; zero ever-violated denominator is missing. Duplicate constraints remain separate rows.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Constraint persistence across movement, a different object from state recurrence or plateau geometry.",
+      "module": "algebra8",
+      "name": "Persistent unsatisfied constraint core",
+      "novelty_key": "fixed_noisy_walk_persistent_constraint_identity",
+      "novelty_mechanism_key": "fixed_noisy_walk_persistent_constraint_identity",
+      "source_ids": [
+        "satzilla2024"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2024.27"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "root",
+      "block_id": "RA18",
+      "columns": [
+        "algebra_falsifying_subcube_covariance"
+      ],
+      "complexity": "O(m^2*16)",
+      "definition": "All unordered F* clause pairs: P(U_C)=2^-k. Joint probability is0 on any shared opposite literal, otherwise2^-|union variables|. Return sum_pairs(joint-P_C*P_D)/sum_pairs(joint+P_C*P_D).",
+      "feature_key": "algebra_falsifying_subcube_covariance",
+      "id": "RA18",
+      "implementation": "Exact signed-support merges; fewer than2 rows/zero denominator missing. No graph S37 duplication: S37 is within-clause sign bundling KL.",
+      "implementation_owner": "parallel_static",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "mechanism": "Relative overlap or exclusion of falsifying assignment regions.",
+      "module": "algebra8",
+      "name": "Falsifying-subcube covariance",
+      "novelty_key": "clause_pair_uniform_falsifying_subcube_overlap",
+      "novelty_mechanism_key": "clause_pair_uniform_falsifying_subcube_overlap",
+      "source_ids": [
+        "boolean"
+      ],
+      "source_relation": "Primary-source concepts are inspiration only. The precise bounded scalar and algorithm are independently proposed by root; no claim that the source established phase selection benefit.",
+      "source_urls": [
+        "https://arxiv.org/abs/2105.10386"
+      ],
+      "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "authored_by": "parallel_nodes",
+      "block_id": "NODE_EX01",
+      "columns": [
+        "f_core_covered_intersection"
+      ],
+      "definition_source": "work/ta100/core_extra_definitions.json",
+      "feature_key": "f_core_covered_intersection",
+      "id": "NODE_EX01",
+      "implementation_owner": "parallel_nodes",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "novelty_key": "covered_literal_candidate_intersection",
+      "novelty_mechanism_key": "covered_literal_candidate_intersection"
+    },
+    {
+      "authored_by": "parallel_nodes",
+      "block_id": "NODE_EX02",
+      "columns": [
+        "f_core_ite_output"
+      ],
+      "definition_source": "work/ta100/core_extra_definitions.json",
+      "feature_key": "f_core_ite_output",
+      "id": "NODE_EX02",
+      "implementation_owner": "parallel_nodes",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "novelty_key": "complete_four_clause_ite_function",
+      "novelty_mechanism_key": "complete_four_clause_ite_function"
+    }
+  ],
+  "external_node_candidates": [
+    {
+      "authored_by": "parallel_nodes",
+      "block_id": "NODE_EX01",
+      "definition_source": "work/ta100/core_extra_definitions.json",
+      "feature_key": "f_core_covered_intersection",
+      "id": "NODE_EX01",
+      "implementation_owner": "parallel_nodes",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "novelty_key": "covered_literal_candidate_intersection"
+    },
+    {
+      "authored_by": "parallel_nodes",
+      "block_id": "NODE_EX02",
+      "definition_source": "work/ta100/core_extra_definitions.json",
+      "feature_key": "f_core_ite_output",
+      "id": "NODE_EX02",
+      "implementation_owner": "parallel_nodes",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "novelty_key": "complete_four_clause_ite_function"
+    }
+  ],
+  "external_node_candidates_reference_only": [
+    {
+      "authored_by": "parallel_nodes",
+      "block_id": "NODE_EX01",
+      "definition_source": "work/ta100/core_extra_definitions.json",
+      "feature_key": "f_core_covered_intersection",
+      "id": "NODE_EX01",
+      "implementation_owner": "parallel_nodes",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "novelty_key": "covered_literal_candidate_intersection"
+    },
+    {
+      "authored_by": "parallel_nodes",
+      "block_id": "NODE_EX02",
+      "definition_source": "work/ta100/core_extra_definitions.json",
+      "feature_key": "f_core_ite_output",
+      "id": "NODE_EX02",
+      "implementation_owner": "parallel_nodes",
+      "iteration_id": null,
+      "joint_module": "algebra20",
+      "novelty_key": "complete_four_clause_ite_function"
+    }
+  ],
+  "implementation_owner": "parallel_static",
+  "iteration_points_assignment": "None assigned here; root owns future I-points and completed iteration accounting. Source readiness is not completion.",
+  "joint_feature_key_to_block_id": {
+    "algebra_bp_cavity_polarity": "RA10",
+    "algebra_canonical_lz78_ratio": "RA13",
+    "algebra_convex_fractional_pressure": "RA09",
+    "algebra_cover_packing_gap": "RA07",
+    "algebra_falsifying_subcube_covariance": "RA18",
+    "algebra_hall_deficiency": "RA06",
+    "algebra_high_order_walsh_mass": "RA12",
+    "algebra_ising_frustration": "RA02",
+    "algebra_literal_complement_pairing": "RA04",
+    "algebra_majority_autarky_support": "RA05",
+    "algebra_persistent_unsat_core": "RA17",
+    "algebra_plateau_connectedness": "RA15",
+    "algebra_raw_submodular_fraction": "RA03",
+    "algebra_renamable_horn_deficit": "RA01",
+    "algebra_signed_mode_alignment": "RA08",
+    "algebra_signed_real_rank_deficit": "RA11",
+    "algebra_sls_state_recurrence": "RA16",
+    "algebra_two_flip_cooperative_escape": "RA14",
+    "f_core_covered_intersection": "NODE_EX01",
+    "f_core_ite_output": "NODE_EX02"
+  },
+  "joint_module_feature_count": 20,
+  "necessary_synthetic_validation": {
+    "joint_integration": "algebra20 emits exactly20 distinct declared keys using one parse; synthetic integration passed.",
+    "scope": "Only constructed tiny formulas; no real CNF, performance labels, gate/test or independent audit/dry run.",
+    "status": "PASS",
+    "tests": 7
+  },
+  "prospective_degeneracy_decision": {
+    "RA14_q0_q1": "Missing because no variable pair.",
+    "RA15_q0": "Missing uninformative zero-dimensional local cube; no fake full-plateau signal.",
+    "RA16_q0": "Missing no flip choices.",
+    "RA17_q0": "Missing no core-touching clause population.",
+    "approved_by": "root",
+    "timing": "Before actual extraction"
+  },
+  "root_mechanism_count": 18,
+  "schema": "ta100.root_candidate_registry.v1",
+  "shared_context": {
+    "CPU": "One common parse. Wrapper total internal allowance=max(0,4.3-parse_cpu_s); outer formal worker5CPU/3GiB/12wall. algebra20 first runs the two bounded node-owned blocks with at most min(.5,total allowance), then ROOT18 with the actual remaining allowance.",
+    "Fstar": "First512 original-order non-tautological clauses of width<=16; duplicate and empty clause rows retained. Local variable IDs by first appearance; original IDs used only for declared deterministic tie-breaking.",
+    "LOCALcube": "Top12 Fstar variables by degree, ties original variable ID; other Fstar variables fixed to majority sign(ties true). Precompute exact falsified-clause energy for all2^q states; no full-instance answer is adopted.",
+    "missing": "Zero eligible denominator, zero coupling/bias direction, cap/CPU exhaustion and q=0 local-cube context produce explicit null/status. No partial enumeration masquerades as a full result."
+  },
+  "source_registry": {
+    "autarky": {
+      "title": "Kullmann (2011), Constraint satisfaction problems in clausal form",
+      "url": "https://arxiv.org/abs/1103.3693"
+    },
+    "boolean": {
+      "title": "O'Donnell, Analysis of Boolean Functions",
+      "url": "https://arxiv.org/abs/2105.10386"
+    },
+    "bp": {
+      "title": "Yedidia, Freeman and Weiss, Understanding Belief Propagation and its Generalizations",
+      "url": "https://www.merl.com/publications/docs/TR2001-22.pdf"
+    },
+    "energy": {
+      "title": "Kolmogorov and Zabih (2004), What Energy Functions Can Be Minimized via Graph Cuts?",
+      "url": "https://www.cs.cornell.edu/~rdz/Papers/KZ-PAMI04.pdf"
+    },
+    "horn": {
+      "title": "Mannila and Mehlhorn (1985), A fast algorithm for renaming a set of clauses as a Horn set",
+      "url": "https://people.mpi-inf.mpg.de/~mehlhorn/ftp/RenamingHorn.pdf"
+    },
+    "lz78": {
+      "title": "Ziv and Lempel (1978), Compression of Individual Sequences via Variable-Rate Coding",
+      "url": "https://cs.nyu.edu/home/people/in_memoriam/roweis/csc310-2006/extras/ziv_lempel_1978_variable-rate.pdf"
+    },
+    "satzilla": {
+      "title": "Xu et al., Features for SAT",
+      "url": "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf"
+    },
+    "satzilla2024": {
+      "title": "Shavit and Hoos (2024), Revisiting SATZilla Features in 2024",
+      "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.SAT.2024.27"
+    }
+  },
+  "source_sha256": {
+    "src/ta100/algebra_core.cpp": "7d847b3727af046838299c5d670d7891a22df83c2b382b6c47235f0faa58834d",
+    "src/ta100/algebra_features.hpp": "f651364112ea6f3d0d400185c3e240ee44104fce0824108f064aef125f210d89",
+    "src/ta100/cnf_data.hpp": "da85ba488b63e96071c7e1155dcaaed03601aa33423018050c451f10940b3b31",
+    "src/ta100/core_extra_features.hpp": "8e7afd308915e528a6eba6ac14b633e3328a2353cab42e277a8f84f452ef22d2",
+    "src/ta100/test_algebra_features.py": "1f3372ff9da0f9e7cab905fa9d69c8c24887d9d8b4fb6a82510e91d9a0f0c99b"
+  },
+  "status": "SOURCE_READY_SYNTHETIC_ONLY_NOT_EXECUTED"
+}

@@ -1,0 +1,288 @@
+{
+  "schema": "ta100.core_registry.v1",
+  "status": "PROPOSED_BEFORE_EXTRACTION",
+  "candidates": [
+    {
+      "candidate_id": "nodes_01",
+      "mechanism": "literal_repetition",
+      "feature_key": "f_core_literal_repetition",
+      "title": "Raw repeated signed literals within original clauses",
+      "formula": "sum_C (raw_width(C)-distinct_signed_width(C)) / raw_literal_count",
+      "complexity": "O(L+N) via per-clause signed stamp",
+      "primary_sources": [
+        "preprocess"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "Distinct from old incidence degree: opposite literals of one variable are not repeated signed literals.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_01",
+      "novelty_mechanism_key": "literal_repetition",
+      "columns": [
+        "f_core_literal_repetition"
+      ]
+    },
+    {
+      "candidate_id": "nodes_02",
+      "mechanism": "tautology",
+      "feature_key": "f_core_tautology",
+      "title": "Original clause tautology burden",
+      "formula": "count_C[exists x: x and -x in C] / M",
+      "complexity": "O(L+N) signed stamps",
+      "primary_sources": [
+        "preprocess"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "No propagation, residual formula or conditioning; original-clause semantics only.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_02",
+      "novelty_mechanism_key": "tautology",
+      "columns": [
+        "f_core_tautology"
+      ]
+    },
+    {
+      "candidate_id": "nodes_03",
+      "mechanism": "duplicate_clause",
+      "feature_key": "f_core_duplicate_clause",
+      "title": "Repeated canonical short constraints",
+      "formula": "sum_S max(freq(S)-1,0) / count_C[non-tautological and width<=8]",
+      "complexity": "O(L+S*8 log 8) expected hash indexing",
+      "primary_sources": [
+        "preprocess"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "Clause identity redundancy, not width moments or repeated literals.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_03",
+      "novelty_mechanism_key": "duplicate_clause",
+      "columns": [
+        "f_core_duplicate_clause"
+      ]
+    },
+    {
+      "candidate_id": "nodes_04",
+      "mechanism": "subsumption",
+      "feature_key": "f_core_subsumption",
+      "title": "Short strict-subsumption witnesses",
+      "formula": "count_C[3<=width(C)<=8 and exists D in F: 2<=width(D)<width(C) and D subset C] / eligible_C",
+      "complexity": "At most 255 subset hash probes per eligible clause; global2M probes",
+      "primary_sources": [
+        "preprocess"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "Subset deletion across different clause widths; zero if observed but none, CAPPED if global cap exceeded. Empty/unit subsumers are excluded to avoid duplicating root-UP/H03.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_04",
+      "novelty_mechanism_key": "subsumption",
+      "columns": [
+        "f_core_subsumption"
+      ]
+    },
+    {
+      "candidate_id": "nodes_05",
+      "mechanism": "self_subsumption",
+      "feature_key": "f_core_self_subsumption",
+      "title": "Width-four self-subsuming resolution",
+      "formula": "count_C[width(C)=4 and exists l in C: (C minus l) union {-l} in F] / count_C[width(C)=4]",
+      "complexity": "4 hash probes per width4 clause, global2M probes",
+      "primary_sources": [
+        "preprocess"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "Resolution of two clauses shortens them; all parents width4, excluding binary implication and ternary parity ownership.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_05",
+      "novelty_mechanism_key": "self_subsumption",
+      "columns": [
+        "f_core_self_subsumption"
+      ]
+    },
+    {
+      "candidate_id": "nodes_06",
+      "mechanism": "resolution_growth",
+      "feature_key": "f_core_resolution_fanout",
+      "title": "Davis-Putnam raw elimination fanout",
+      "formula": "sum_v p_v*n_v / sum_v(p_v+n_v), with one occurrence per non-tautological clause/literal",
+      "complexity": "O(L+N)",
+      "primary_sources": [
+        "preprocess"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "Pre-tautology resolution pair growth; no derived clauses, UP or assumptions.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_06",
+      "novelty_mechanism_key": "resolution_growth",
+      "columns": [
+        "f_core_resolution_fanout"
+      ]
+    },
+    {
+      "candidate_id": "nodes_07",
+      "mechanism": "resolvent_tautology",
+      "feature_key": "f_core_resolvent_tautology",
+      "title": "Tautological resolvents suppressing elimination blowup",
+      "formula": "tautological R(C,D,v) / eligible resolution pairs; parents have3..8 literals and at least one parent width>=4; p_v*n_v<=64",
+      "complexity": "O(N+P*64), P<=200000 exact tested pairs",
+      "primary_sources": [
+        "preprocess"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "Pairwise non-pivot complement witness; distinct from all-resolvents blocked clause quantifier.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_07",
+      "novelty_mechanism_key": "resolvent_tautology",
+      "columns": [
+        "f_core_resolvent_tautology"
+      ]
+    },
+    {
+      "candidate_id": "nodes_08",
+      "mechanism": "blockedness",
+      "feature_key": "f_core_blocked_polarity",
+      "title": "Original blocked-clause witness direction",
+      "formula": "(count_C[positive blocking literal] - count_C[negative blocking literal]) / eligible_C",
+      "complexity": "Clauses<=8; each opposite occurrence list<=16 and partner width<=8; global2M pair checks",
+      "primary_sources": [
+        "bce"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "Tests every relevant partner for admitted clauses; no iterative BCE, autarky search, UP or solve.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_08",
+      "novelty_mechanism_key": "blockedness",
+      "columns": [
+        "f_core_blocked_polarity"
+      ]
+    },
+    {
+      "candidate_id": "nodes_09",
+      "mechanism": "variable_twins",
+      "feature_key": "f_core_variable_twins",
+      "title": "Exact signed occurrence-column interchangeability",
+      "formula": "variables in size>=2 classes of equal (positive_clause_ID_set,negative_clause_ID_set) / active_variables",
+      "complexity": "O(L+N) fingerprint grouping, exact vector certificate; global2M comparisons",
+      "primary_sources": [
+        "sym"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "Certified transposition symmetry; not complete literal-complement clause pairing.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_09",
+      "novelty_mechanism_key": "variable_twins",
+      "columns": [
+        "f_core_variable_twins"
+      ]
+    },
+    {
+      "candidate_id": "nodes_10",
+      "mechanism": "local_flip_gain",
+      "feature_key": "f_core_majority_flip_gain",
+      "title": "One-step local search directional gain",
+      "formula": "(count_v[gain(v)>0 and majority(v)=false] - count_v[gain(v)>0 and majority(v)=true]) / active_variables; gain=make-break",
+      "complexity": "O(L+N), fixed majority assignment, tie=false",
+      "primary_sources": [
+        "gsat"
+      ],
+      "source_status": "Mechanism is source-grounded; this scalar and phase-selection hypothesis are new proposals, not a reported source result.",
+      "distinction": "No actual flip trajectory, no UP/conditioned branch, no satisfied/UNSAT answer emitted; not quadratic Ising frustration.",
+      "first_core_batch": true,
+      "execution_status": "PROPOSED_NOT_RUN",
+      "module_status_contract": "COMPLETE numeric with exact denominator; EMPTY/UNDEFINED/CAPPED/FAILED/TIMEOUT => null with explicit reason; no invented zero.",
+      "id": "nodes_10",
+      "novelty_mechanism_key": "local_flip_gain",
+      "columns": [
+        "f_core_majority_flip_gain"
+      ]
+    }
+  ],
+  "sources": {
+    "preprocess": {
+      "title": "Effective Preprocessing in SAT through Variable and Clause Elimination",
+      "url": "https://fmv.jku.at/papers/EenBiere-SAT05.pdf",
+      "kind": "primary research; defines subsumption, self-subsuming resolution and variable elimination"
+    },
+    "bce": {
+      "title": "Blocked Clause Elimination",
+      "url": "https://www.cs.helsinki.fi/u/mjarvisa/papers/jarvisalo-biere-heule.tacas10.pdf",
+      "kind": "primary research; blocking literal condition"
+    },
+    "sym": {
+      "title": "Solving Difficult SAT Instances in the Presence of Symmetry",
+      "url": "https://www.aloul.net/Papers/faloul_dac02_sym.pdf",
+      "kind": "primary research; syntactic symmetry background"
+    },
+    "gsat": {
+      "title": "A New Method for Solving Hard Satisfiability Problems",
+      "url": "https://www.cs.ubc.ca/~hoos/SATLIB/ubcsat/algorithms/SelLevMit92.pdf",
+      "kind": "primary research; single variable flip clause gain"
+    },
+    "covered": {
+      "title": "Covered Clause Elimination",
+      "url": "https://arxiv.org/abs/1011.5202",
+      "kind": "primary research; resolution intersection/covered literals"
+    },
+    "ite": {
+      "title": "Mining Definitions in Kissat with Kittens",
+      "url": "https://cca.informatik.uni-freiburg.de/papers/FleuryBiere-FMSD22.pdf",
+      "kind": "primary research; includes syntactic ITE gate extraction"
+    },
+    "core": {
+      "title": "An O(m) Algorithm for Cores Decomposition of Networks",
+      "url": "https://arxiv.org/abs/cs/0310049",
+      "kind": "primary research; graph core algorithm"
+    },
+    "articulation": {
+      "title": "Depth-First Search and Linear Graph Algorithms",
+      "url": "https://epubs.siam.org/doi/10.1137/0201010",
+      "kind": "primary research; undirected biconnectivity, not implication SCC"
+    },
+    "community": {
+      "title": "The Community Structure of SAT Formulas",
+      "url": "https://www.ugr.es/~jgiraldez/publications/2012_SAT_paper.pdf",
+      "kind": "primary research; CNF community modularity"
+    },
+    "features": {
+      "title": "Features for SAT",
+      "url": "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf",
+      "kind": "authors feature definitions; graph feature background"
+    },
+    "mixing": {
+      "title": "Assortative Mixing in Networks",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.89.208701",
+      "kind": "primary research; edge-end degree correlation"
+    },
+    "wl": {
+      "title": "The Weisfeiler-Leman Algorithm and Recognition of Graph Properties",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304397521005636",
+      "kind": "primary research; color-refinement distinctions"
+    },
+    "spectral": {
+      "title": "Laplacians of Graphs and Cheeger Inequalities",
+      "url": "https://fanchung.ucsd.edu/wp/cheeger.pdf",
+      "kind": "author primary exposition; unsigned expansion spectrum"
+    },
+    "fractal": {
+      "title": "The Fractal Dimension of SAT Formulas",
+      "url": "https://arxiv.org/abs/1308.5046",
+      "kind": "primary research; undirected CNF box-cover geometry"
+    }
+  }
+}

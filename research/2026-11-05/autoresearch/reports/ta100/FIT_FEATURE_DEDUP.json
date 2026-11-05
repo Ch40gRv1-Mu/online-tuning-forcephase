@@ -1,0 +1,61 @@
+{
+  "all_scheduled_columns_checked": true,
+  "available_columns_checked": 100,
+  "constants": [
+    {
+      "column": "td_target_support",
+      "fit_support": 93,
+      "observed_value": 1.0,
+      "round_id": "I004",
+      "support_sha256": "7271fbe0d9c12ced5616badf647e29e32f4e5493cbdf91383b183d149ca747c5"
+    },
+    {
+      "column": "f_core_self_subsumption",
+      "fit_support": 69,
+      "observed_value": 0.0,
+      "round_id": "I015",
+      "support_sha256": "2d2a4660d47455ca0a31c0bd56da4e117208a527d358a4fa94398d2d47496c78"
+    },
+    {
+      "column": "f_core_variable_twins",
+      "fit_support": 134,
+      "observed_value": 0.0,
+      "round_id": "I019",
+      "support_sha256": "f2e20b38b01d0c21bad910651de17729593062961ea3e8ede2f55e3347e887d5"
+    },
+    {
+      "column": "graph_community_polarity",
+      "fit_support": 130,
+      "observed_value": 0.0,
+      "round_id": "I038",
+      "support_sha256": "b7fa15193910d1594ced252379c56c12cfcaf97d0aa1da712bb93fa6636e00fb"
+    },
+    {
+      "column": "graph_modularity",
+      "fit_support": 125,
+      "observed_value": 0.0,
+      "round_id": "I051",
+      "support_sha256": "6ed86773a1c904b2ca1e0353005aefbf00d5f44777d705d21fb2b4b9d56de523"
+    }
+  ],
+  "exact_value_groups": [],
+  "feature_table_sha256": {
+    "outputs/ta100/features_algebra20_v1.json": "121dd0e8185a186d54f10cf2f19b5c959e14726542467ae9083def7137530735",
+    "outputs/ta100/features_core10_v1.json": "b1acdb38f903e53e1f66078f147850108103cd9f6862dfefd6cb9df5ed27b78b",
+    "outputs/ta100/features_dynamic_existing_v1.json": "3508baa20d9bd6d0d2d02eb5f0d0d412bcfcb1a0346abca90a61aee9beaf9a88",
+    "outputs/ta100/features_graph10_v1.json": "27e92a512f8dcefa2a7d5d6b824d0228f7a6d15b91455902a09f3ab3b7a6bb60",
+    "outputs/ta100/features_graph_all30_v1.json": "4bc8cd6a048162ed675ee58e0dae57bd8844f1729c715409e8115a9353181376",
+    "outputs/ta100/features_new_dynamic20_v1.json": "2d12393d84453585a81b18be89e64042da2a651563eb6fc4ff2fea6682f01df2"
+  },
+  "generated_utc": "2026-11-05T06:55:15.053414+00:00",
+  "high_pearson_pairs": [],
+  "high_pearson_threshold_diagnostic_only": 0.995,
+  "missing_feature_tables_for_rounds": [],
+  "monotonic_tie_pattern_groups": [],
+  "no_observation_columns": [],
+  "same_support_rule": "Entire observation support must match; no intersection-only comparisons.",
+  "scheduled_columns": 100,
+  "schema": "ta100.required_fit_only_feature_dedup.v1",
+  "scope": "Only FIT numeric feature values; identical nonempty observation-ID support required. No labels, feedback values/results, model fits or rescoring.",
+  "semantic_alias_note": "Constant/no-observation rows are reported as uninformative on this panel. They do not establish an original invention or create extra iterations. High correlations do not force a mechanism merge."
+}

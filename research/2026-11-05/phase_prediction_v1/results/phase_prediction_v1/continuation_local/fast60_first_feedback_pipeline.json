@@ -1,0 +1,74 @@
+{
+  "steps": [
+    {
+      "command": [
+        "scp",
+        "-o",
+        "ControlPath=/private/tmp/forcephase-phaseprediction-20261104-local.sock",
+        "-o",
+        "BatchMode=yes",
+        "-o",
+        "ConnectTimeout=10",
+        "-P",
+        "13752",
+        "vipuser@223.109.239.36:/home/vipuser/forcephase_phase_prediction_20261104/exports/fast60_dev40_v1_receipts.tar.gz",
+        "results/phase_prediction_v1/fast60_receipts.tar.gz"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "experiments/phase_prediction/import_receipts.py",
+        "--archive",
+        "results/phase_prediction_v1/fast60_receipts.tar.gz",
+        "--expected-sha256",
+        "028ded785dcb9dbf344d38ea412206a24e38625e54c8c9dee689f99cae65162f",
+        "--out",
+        "results/phase_prediction_v1/fast60_imported",
+        "--spec",
+        "configs/experiments/phase_prediction_v1/fast60_dev40_v1_spec.json",
+        "--cohort",
+        "configs/experiments/phase_prediction_v1/fast60_dev40_v1.csv"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"IMPORTED_HASH_VERIFIED_DEVELOPMENT_ONLY\", \"archive_sha256\": \"028ded785dcb9dbf344d38ea412206a24e38625e54c8c9dee689f99cae65162f\", \"files\": 371, \"parents\": 40, \"spec_sha256\": \"b30662bd3fcc86badd5d240dd4a9641a7569425d4964ebbceb31c41eec9b4a73\", \"cohort_sha256\": \"bc62884e0cbbb30cb25958103819065de954c3c84d6cfdac6e326bd85295d5f6\", \"scope\": \"Identity/transport check; strict matrix analysis is still required\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "experiments/phase_prediction/analyze_matrix.py",
+        "--root",
+        "results/phase_prediction_v1/fast60_imported",
+        "--out",
+        "results/phase_prediction_v1/fast60_analysis"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"mode\": \"static\", \"identity\": {\"checker_options\": [\"--no-trim\"], \"checker_sha256\": \"eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603\", \"common_sha256\": \"9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83\", \"extractor_memory_bytes\": 3221225472, \"extractor_sha256\": \"2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334\", \"memory_bytes\": 1610612736, \"mode\": \"static\", \"proof_file_limit_bytes\": 1073741824, \"runner_sha256\": \"32413e8769bfd70d1a14953373f4ee7000c469ce4d9300114245854109d6497a\", \"solver_sha256\": \"b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb\", \"source_commit\": \"c60730422e758ef1cebe7aeddf2dda31c996bf04\", \"telemetry_contract_sha256\": \"bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3\", \"verification\": \"timed_binary_LRAT_lrat_trim\"}, \"roles\": {\"development_feedback\": {\"parents\": 16, \"mean_par2\": {\"D\": 73.5413728125, \"Fplus\": 90.20492834375, \"Fminus\": 86.02870134375, \"Iminus\": 70.51229590625}, \"solved_seed_average_count\": {\"D\": 7, \"Fplus\": 4, \"Fminus\": 5, \"Iminus\": 7}, \"best_static_diagnostic\": \"Iminus\", \"three_action_oracle_mean_par2\": 71.219276, \"oracle_improvement_over_D\": 0.031575380274996956, \"oracle_improvement_over_best_static_control\": -0.010026337742426561, \"all_actions_censored_parents\": 9, \"action_semantics\": \"Static option pair from initialization.\"}, \"development_fit\": {\"parents\": 24, \"mean_par2\": {\"D\": 86.46420041666667, \"Fplus\": 86.3143568125, \"Fminus\": 90.080283, \"Iminus\": 88.37940870833333}, \"solved_seed_average_count\": {\"D\": 7.0, \"Fplus\": 7, \"Fminus\": 6, \"Iminus\": 6.5}, \"best_static_diagnostic\": \"Fplus\", \"three_action_oracle_mean_par2\": 84.131888125, \"oracle_improvement_over_D\": 0.02697431168538389, \"oracle_improvement_over_best_static_control\": 0.025285117888799835, \"all_actions_censored_parents\": 16, \"action_semantics\": \"Static option pair from initialization.\"}}, \"resource_recovery\": false, \"timing_contract\": {\"native_solver_wall_limit_s\": 60, \"process_cpu_fallback_s\": 62, \"external_wall_watchdog_s\": 70, \"score\": \"Observed CPU, success only when verified and CPU<=T; selector adds actual h.\", \"censoring_scope\": \"Native -t is a wall limit. UNKNOWN does not assert that T CPU seconds were consumed.\"}, \"solver_cpu_hours\": 3.7952677961111134, \"checker_and_model_cpu_hours\": 0.007649256726388888, \"feature_cpu_hours\": 0.003526928611111111, \"online_prefix_reached\": 0, \"interpretation\": \"Development diagnostic; no held-out confirmation or deployed policy claim.\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "experiments/phase_prediction/learn_round.py",
+        "--analysis",
+        "results/phase_prediction_v1/fast60_analysis",
+        "--plan",
+        "configs/policies/phase_prediction_v1/round02_plan.json",
+        "--out",
+        "results/phase_prediction_v1/fast60_round02",
+        "--memory",
+        "results/phase_prediction_v1/context/episodes.jsonl"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\"episode_id\": \"formal_round2_0\", \"reward\": 0.10402685048416382, \"descriptive_95pct_bootstrap\": [-7.758890038145339e-05, 0.25404853043970277]}, {\"episode_id\": \"formal_round2_1\", \"reward\": 0.0, \"descriptive_95pct_bootstrap\": [0.0, 0.0]}]\n",
+      "stderr": ""
+    }
+  ],
+  "status": "PASS",
+  "local_parent_and_waited_children_cpu_s": 0.567433,
+  "accounting": "Full pipeline expense, not a sum with nested learner cost receipts; within engineering reserve."
+}

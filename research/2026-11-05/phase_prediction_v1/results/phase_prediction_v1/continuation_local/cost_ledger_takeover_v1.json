@@ -1,0 +1,46 @@
+{
+  "status": "PROVISIONAL_AUTHENTICATION_PENDING",
+  "scope": "phase_prediction_v1 only; historical T60 autoresearch excluded",
+  "project_cpu_hours_limit": 100,
+  "known_pre_long_measured_cpu_hours": 3.5300653988994446,
+  "physical_entries": [
+    {
+      "stage": "P1",
+      "cpu_hours": 2.0069792877883335,
+      "basis": "Validated P1 component accounting; includes certification extension and failed first replay"
+    },
+    {
+      "stage": "online16_failed",
+      "cpu_hours": 0.13506111111111113,
+      "basis": "Whole GNU-time parent; never add its logical child matrix again"
+    },
+    {
+      "stage": "online16_v2",
+      "cpu_hours": 1.3879111111111113,
+      "basis": "Whole GNU-time parent including preparation/model/checker/feature/framework"
+    },
+    {
+      "stage": "binary_gate",
+      "cpu_hours": 0.00011388888888888889,
+      "basis": "Whole GNU-time parent; do not add its child gate cost separately"
+    }
+  ],
+  "long600_actual_physical_cpu_hours": null,
+  "long600_reserved_stage_cpu_hours": 14,
+  "inflight_conservative_reserve_cpu_hours": 0.4,
+  "unmeasured_engineering_reserve_cpu_hours": 2,
+  "local_new_implementation_tests_cpu_s": 0.139245,
+  "remaining_after_known_and_conservative_reserves_cpu_hours": 80.06993460110056,
+  "notes": [
+    "Last human-observed logical long600 total is 2.889331h at18:26UTC, not new physical execution evidence.",
+    "Current SSH authentication unavailable; do not fabricate a live cost or call the job stopped.",
+    "Initial compile and other unmeasured preparation remain unknown within engineering reserve; reserve is not exact measured spend.",
+    "No new development panel, gate or final confirmation launch authorized by this provisional arithmetic alone; require the long matrix and actual completed-parent resources."
+  ],
+  "sources_sha256": {
+    "results/phase_prediction_v1/p1_analysis/summary.json": "8dda79f0856729297cc5963a7998ea38b2eae3fa757af782c2d33065a0addd2a",
+    "results/phase_prediction_v1/server_receipts/online16_v2.resources.txt": "525270c4546b2100bf3fdc57b8c9ab86f0fc93e040574d10704d9461a1eca271",
+    "results/phase_prediction_v1/server_receipts/online16_failed.resources.txt": "be13a0678c6a4d42cb692940e0db88e553de6165e7196e943ab9be366c4394ff",
+    "results/phase_prediction_v1/server_receipts/binary_gate.resources.txt": "d2707b34a3754051431148eec811ee90926359f3d879a255a8fec505f69c6af4"
+  }
+}

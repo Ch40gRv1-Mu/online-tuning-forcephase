@@ -1,0 +1,104 @@
+{
+  "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "block_id": "B02",
+  "collection_manifest_sha256": "6a4d6ec1ca5a68dabf5230b799267bd2b4d55d8aad6ac0341ddaf25e55373abb",
+  "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "extractor_source_sha256": "9680b5385f8d9958ca04f70df00dee4cf8a8f66fed4f11b694b9d559699b61f9",
+  "protocol_path": "refine-logs/ta100/PROTOCOL.md",
+  "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+  "registry_path": "configs/ta100/core_registry_v1.json",
+  "registry_sha256": "da61e01ea3b2a4bc2e66bc71a0b532075b94ec88d809d883dd58ae04a8c29188",
+  "rounds": [
+    {
+      "columns": [
+        "f_core_literal_repetition"
+      ],
+      "hypothesis": "sum_C (raw_width(C)-distinct_signed_width(C)) / raw_literal_count",
+      "id": "I011",
+      "mechanism_key": "literal_repetition",
+      "registry_id": "nodes_01"
+    },
+    {
+      "columns": [
+        "f_core_tautology"
+      ],
+      "hypothesis": "count_C[exists x: x and -x in C] / M",
+      "id": "I012",
+      "mechanism_key": "tautology",
+      "registry_id": "nodes_02"
+    },
+    {
+      "columns": [
+        "f_core_duplicate_clause"
+      ],
+      "hypothesis": "sum_S max(freq(S)-1,0) / count_C[non-tautological and width<=8]",
+      "id": "I013",
+      "mechanism_key": "duplicate_clause",
+      "registry_id": "nodes_03"
+    },
+    {
+      "columns": [
+        "f_core_subsumption"
+      ],
+      "hypothesis": "count_C[3<=width(C)<=8 and exists D in F: 2<=width(D)<width(C) and D subset C] / eligible_C",
+      "id": "I014",
+      "mechanism_key": "subsumption",
+      "registry_id": "nodes_04"
+    },
+    {
+      "columns": [
+        "f_core_self_subsumption"
+      ],
+      "hypothesis": "count_C[width(C)=4 and exists l in C: (C minus l) union {-l} in F] / count_C[width(C)=4]",
+      "id": "I015",
+      "mechanism_key": "self_subsumption",
+      "registry_id": "nodes_05"
+    },
+    {
+      "columns": [
+        "f_core_resolution_fanout"
+      ],
+      "hypothesis": "sum_v p_v*n_v / sum_v(p_v+n_v), with one occurrence per non-tautological clause/literal",
+      "id": "I016",
+      "mechanism_key": "resolution_growth",
+      "registry_id": "nodes_06"
+    },
+    {
+      "columns": [
+        "f_core_resolvent_tautology"
+      ],
+      "hypothesis": "tautological R(C,D,v) / eligible resolution pairs; parents have3..8 literals and at least one parent width>=4; p_v*n_v<=64",
+      "id": "I017",
+      "mechanism_key": "resolvent_tautology",
+      "registry_id": "nodes_07"
+    },
+    {
+      "columns": [
+        "f_core_blocked_polarity"
+      ],
+      "hypothesis": "(count_C[positive blocking literal] - count_C[negative blocking literal]) / eligible_C",
+      "id": "I018",
+      "mechanism_key": "blockedness",
+      "registry_id": "nodes_08"
+    },
+    {
+      "columns": [
+        "f_core_variable_twins"
+      ],
+      "hypothesis": "variables in size>=2 classes of equal (positive_clause_ID_set,negative_clause_ID_set) / active_variables",
+      "id": "I019",
+      "mechanism_key": "variable_twins",
+      "registry_id": "nodes_09"
+    },
+    {
+      "columns": [
+        "f_core_majority_flip_gain"
+      ],
+      "hypothesis": "(count_v[gain(v)>0 and majority(v)=false] - count_v[gain(v)>0 and majority(v)=true]) / active_variables; gain=make-break",
+      "id": "I020",
+      "mechanism_key": "local_flip_gain",
+      "registry_id": "nodes_10"
+    }
+  ],
+  "schema": "ta100.block.v1"
+}

@@ -1,0 +1,33 @@
+{
+  "stage": "long600_fit16_recovery_v1",
+  "mode": "static",
+  "actions": [
+    "D",
+    "Fplus",
+    "Fminus",
+    "Iminus"
+  ],
+  "seeds": [
+    0
+  ],
+  "cutoff_s": 600,
+  "verification": "timed_binary_LRAT_lrat_trim",
+  "workers": 2,
+  "proof_file_limit_bytes": 8589934592,
+  "solver_upper_cpu_hours": 10.666666666666666,
+  "max_total_cpu_hours": 14,
+  "cohort_sha256": "069a38636e923affffef403d727ae451a273c157cec8d37fcde534f461aa6b4c",
+  "sampling": "same first 16 eligible frozen development_fit parents as online16; no replacements by observed outcomes",
+  "launch_condition": "Inherited PID absent; resource time exit1 and stopped progress; exact 56 source SHA reuse; new 8 keys frozen before any further outcomes",
+  "purpose": "One cutoff escalation motivated by 35/48 triple-censored P1 parents. This checks a 600s budget, not a reproduction of undocumented MiniSAT.",
+  "primary_cutoff_s": 600,
+  "diagnostic_subcutoffs_s": [
+    120,
+    300
+  ],
+  "data_boundary": "No development_gate or final test candidate enters this screen",
+  "future_reuse": "Identical physical measurements are reused via SHA-bound receipts, never silently rerun when a cohort grows",
+  "resource_rationale": "2 workers, 8GiB proof each, 12GiB free reserve, 28GiB prelaunch free floor. All 56 old runs below original4GiB cap; retain distinct source identity and immutable bytes.",
+  "resource_recovery": true,
+  "recovery_plan_sha256": "e155bfc433963f92029a4484ffaa19406a29e71cbfb2a5ffe498876750bbb692"
+}

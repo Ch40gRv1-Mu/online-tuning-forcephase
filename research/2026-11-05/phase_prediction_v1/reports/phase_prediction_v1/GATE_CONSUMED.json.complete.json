@@ -1,0 +1,11 @@
+{
+  "candidate_sha256": "1d4a4374b444ff5da12291291fad4ec18893300033c5ec1bca4ef698dc8eb182",
+  "companion_pairs_sha256": "a9766285cc5a6840c465e804608d9ecbe8a616d6d84ec1cb796804c58b73b8ae",
+  "evaluator_source_sha256": "15628de7efb41c4fef7adfabe35600d011d5cb5a18d51880130d7a72677e985d",
+  "manifest_sha256": "9703169044c17021b0d419bc8246105a5767ab782861f58f05f4355b574bb3ed",
+  "output": "/Users/expexp/Documents/ChatGPT/automated-reasoning/outputs/ta_feature_discovery/gate_once_v1.json",
+  "result_sha256": "e2c48c278094f44987b928bb462d30c8ce5fd21f7ae730127711be77e15e58cc",
+  "role_manifest_sha256": "07bc7d3e6c85a064dcfbb11a685f9d2363d02b441cbe0e19f11981b436a42ff9",
+  "source_sha256": "51dec2fdf3512571aaaac92d65915a39cd879a6b63083fd8b90a846ce90c6158",
+  "status": "COMPLETE"
+}

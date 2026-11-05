@@ -1,0 +1,202 @@
+version: 3
+project: phase_prediction_v1
+status: COMPLETED_SCOPED_NEGATIVE
+phase: COMPLETE_FROZEN_DEVELOPMENT_DEPLOYMENT_AND_BOUNDED_FEATURE_SEARCH
+updated_utc: 2026-11-05T05:50:15.000717+00:00
+local_project: /Users/expexp/Documents/ChatGPT/automated-reasoning/work/phase_prediction_20261104/project
+owner: Current project agent; no delegation or other-thread messaging
+workflow: Parent AGENTS and opening efficiency revision in AUTORESEARCH_WORKFLOW.md read and applied; historical six-program completion does not close this study.
+remote:
+  user: vipuser
+  host: 223.109.239.36
+  alternate_host: 180.127.11.177
+  port: 13752
+  root: /home/vipuser/forcephase_phase_prediction_20261104
+  control_socket: /private/tmp/forcephase-phaseprediction-20261104-local.sock
+  this_project_active_solver_queue: none
+  current_stage: choice_fit144_v1
+  current_stage_status: COMPLETE_144_VALID
+  terminal_time_pid_historical_only: 70802
+  do_not_relaunch: [long600_fit16, long600_dev40_v1, fast60_dev40_v1, depth192_v1]
+fast60_complete:
+  stage: fast60_dev40_v1
+  protocol_commit: 044185a
+  source_commit: 38198b3
+  fit_parents: 24
+  feedback_parents: 16
+  seeds: [0, 1]
+  cutoff_s: 60
+  validated_runs: 320
+  error_runs: 0
+  archive_sha256: 028ded785dcb9dbf344d38ea412206a24e38625e54c8c9dee689f99cae65162f
+  physical_parent_cpu_s: 13758.00
+  wall_s: 1786.10
+  workers: 8
+  cpu_busy_observed_percent: 100
+  fit_best_static: Fplus
+  feedback_best_static_diagnostic: Iminus
+  feedback_all_four_censored: 9
+  fit_all_four_censored: 16
+  feedback_free_three_action_oracle_par2: 71.219276
+  feedback_Iminus_par2: 70.51229590625
+  evidence: results/phase_prediction_v1/fast60_analysis
+structural_features:
+  depth_stage: depth192_v1
+  protocol_commit: bd48ba5
+  final_extractor_source_commit: 08245db
+  extraction_qualified_fit: 144
+  extraction_qualified_feedback: 48
+  valid: 192
+  failed: 0
+  numeric_pool: 43
+  new_solver_calls: 0
+  formula_depth_definition: Incidence leaf-peeling layers and recognized signed-gate SCC condensation depth; not unique recovered circuit depth
+  parent_physical_cpu_s: 140.57
+  parent_wall_s: 180.98
+  observed_parent_cpu_percent: 77
+  wall_includes_input_download_compile_and_extraction: true
+  download_wall_breakdown_separately_measured: false
+  archive_sha256: 1e1dd8852008e69c740d3b7e81ae16329095591d06977fe69142af136488e7ba
+  original_table_supported_labels_fit: 53
+  original_table_supported_labels_feedback: 19
+  original_table_feedback_total: 48
+  original_table_tree_correct: 12
+  original_table_fixed_true_correct: 12
+  original_table_gate_rule: Constant original true
+  original_phase_semantics_unverified: true
+  original_table_result: results/phase_prediction_v1/professor_depth_rules/RESULT.md
+learning:
+  completed_rounds: [1, 2, 3, 4]
+  frozen_unscored_rounds: []
+  shared_total_completed_rounds: 8
+  other_owner_completed_round_ids_metadata_only: [TA_R01, TA_R02, TA_R03, TA_R04]
+  additional_policy_rounds_without_new_allocation: 0
+  new_feature_checks_are_not_new_policy_rewards: true
+  round_cap: 8
+  proposals_per_round_cap: 2
+  max_depth: 3
+  round2_complete_proposals: 2
+  round3_complete_proposals: 2
+  round4_complete_proposals: 2
+  actual_new_depth_field_selected: false
+  candidates_beat_feedback_D_or_Iminus: false
+  stable_effect_supported: false
+  episodes: results/phase_prediction_v1/context/episodes.jsonl
+  round2: results/phase_prediction_v1/fast60_round02
+  round3: results/phase_prediction_v1/depth_fast60_round03
+  round4: results/phase_prediction_v1/depth_fast60_round04
+  feature_join: results/phase_prediction_v1/depth_fast60_analysis/feature_join.json
+  reused_runtime_rows: 320
+  no_new_solver_matrix: true
+  interpretation: Repeated exploratory development, not confirmation; positive rewards against weak fit-selected Fplus do not imply superiority to D/Iminus
+  gate_accesses: 0
+  final_test_outputs_read: 0
+  family_or_identity_or_answer_inputs_allowed: false
+  Iminus_learnable: false
+long600_history:
+  initial16_screen: Complete64valid;12all-censored; oracle improvement over Fplus only0.0000372911percent
+  expanded40: USER_SUPERSEDED_PARTIAL;159valid plus1 intentional cancellation, not a completeT600 matrix
+  expanded40_new_physical_cpu_s: 30155.99
+  cancellation_cpu_s_included_in_parent: 102.524881
+  mix_T60_T600: false
+budget:
+  research_total_cpu_hours_cap: 100
+  pre_expansion_completed_stage_cpu_h: 12.356484843343889
+  superseded_expansion_physical_cpu_h: 8.376663888888889
+  fast60_physical_cpu_h: 3.8216666666666667
+  depth192_physical_cpu_h: 0.03904722222222222
+  reconciled_this_project_completed_stage_cpu_h: 24.75393762112167
+  engineering_reserve_old_h: 2
+  engineering_reserve_new_h: 1
+  local_small_analyses_counted_within_engineering_reserve: true
+  deployment_conservative_reserve_h: 0
+  gate_conservative_reserve_h: 0
+  conditional_confirmation_conservative_reserve_h: 0
+  subtotal_with_existing_reserves_h: 27.833959820136947
+  shared_other_owner_measured_cpu_h: 0.08002219901527778
+  known_combined_measured_cpu_h: 24.833959820136947
+  accounting: Whole-parent physical cost is authoritative; do not add nested children or logical reused rows. Separate TA branch has its own owner and expense; reconcile shared allocation before new server spending, do not alter its jobs.
+deployment_and_gate:
+  actual_eight_deployments_complete: true
+  frozen_T60_deployment_commit: b80ae18
+  formal_start_status: COMPLETE8_ACTION_FEATURE_COST_CONSISTENT
+  other_owner_live_pid_observed: 63052
+  guard_receipt: results/phase_prediction_v1/continuation_local/deploy60_launch_receipt.json
+  own_solver_units_started: 8
+  actual_verified_solved: 1
+  mean_actual_deployment_par2: 105.006232085125
+  deployment_parent_cpu_s: 422.49
+  deployment_parent_wall_s: 61.90
+  deployment_analysis: results/phase_prediction_v1/deploy60_analysis/RESULT.md
+  gate_other_branch_metadata_only_seen: true
+  gate_other_branch_outputs_read: false
+  retained_failed_candidate: configs/policies/phase_prediction_v1/retained_failed_candidate_manifest.json
+  old_T600_deploy_code_applicable_unchanged: false
+  gate_threshold_point_improvement: 0.02
+  parent_paired_interval_direction_support_required: true
+  gate_accesses: 1
+  shared_gate_consumed_by: TA false/true reuse branch; not a CaDiCaL candidate evaluation
+  all_5355_final_candidates_sealed: true
+  no_gate_to_rescue_negative_candidates: true
+continuity:
+  automation_id: forcephase-autoresearch-continuation
+  status: TO_PAUSE_AFTER_GOAL_COMPLETION
+  minutes: 20
+  meaningful_changes_only: true
+  saved_prompt_updated_to_round4_complete: true
+feature_ownership:
+  other_owner: TA original34 statistics, clustering and shortD glue/level probes; no files or queue modified
+  this_owner: Completed novel implication, parity and signed choice/exclusion mechanisms; no active queue
+  nonduplication_sources: refine-logs/TA_R01_PROPOSALS.json, TA_R02_PROPOSALS.json, TA_R03_PROPOSALS.json and public source definitions only
+  shared_gate_reserved_or_used_by_other_owner: true
+  other_owner_gate_outputs_read: false
+new_feature_results:
+  implication_fit144_valid: 144
+  implication_fit_parent_cpu_s: 39.86
+  implication_fit_wall_s: 7.37
+  implication_original_fit_supported_labels: 53
+  implication_geometry_oof_correct: 37
+  fold_constant_oof_correct: 35
+  implication_modern_fit_parent_n: 24
+  implication_modern_net_gain: false
+  implication_feedback48_valid: 48
+  implication_feedback_parent_cpu_s: 14.97
+  implication_feedback_wall_s: 2.74
+  feedback_cycle_false_true: [2, 1]
+  feedback_no_cycle_false_true: [4, 9]
+  feedback_association_difference95: [-0.3571428571, 0.8792279412]
+  feedback_association_supported: false
+  decision: All3 bounded novel mechanisms reached their prespecified stopping conditions; no new variants or policy rounds.
+  parity_protocol: docs/PARITY_FEATURE_PROTOCOL_20261105.md
+  parity_status: COMPLETE_144_VALID_STOPPED
+  parity_exact: 144
+  parity_informative_parents: 59
+  parity_informative_supported_labels: 23
+  parity_oof_correct: 39
+  parity_parent_cpu_s: 41.06
+  parity_parent_wall_s: 7.19
+  parity_continuation_criteria_met: false
+  choice_status: COMPLETE_144_VALID_STOPPED
+  choice_exact: 140
+  choice_informative_parents: 46
+  choice_informative_supported_labels: 14
+  choice_oof_correct: 33
+  choice_parent_cpu_s: 57.89
+  choice_parent_wall_s: 9.82
+  choice_modern_informative: 5
+  choice_modern_model_not_fitted_due_frozen_coverage: true
+  choice_continuation_criteria_met: false
+  new_solver_calls_for_novel_features: 0
+  new_formal_policy_rewards: 0
+  novel_mechanism_cap: 3
+closure:
+  conclusion: No stable cost-effective D/Fplus/Fminus selector established within frozen scope; not a universal impossibility result.
+  final_report: reports/phase_prediction_v1/FINAL_REPORT.md
+  evidence: reports/phase_prediction_v1/FINAL_EVIDENCE.json
+  modern_independent_confirmation: NOT_TRIGGERED_NO_ELIGIBLE_POLICY
+  final5355_outputs_read: 0
+  shared_gate_single_consumption_preserved: true
+  closing_only_gate_reservation_aggregate_status_seen: true
+  numeric_or_per_instance_gate_performance_read_here: false
+  no_development_after_closing_metadata_exposure: true
+next_action: Deliver final report and portable code/results evidence bundle, mark only this completed scoped goal complete, and pause only its continuation heartbeat. Preserve all source, failures, receipts and sealed final candidates. Do not restart experiments or treat this scoped negative conclusion as proof that no useful feature exists.

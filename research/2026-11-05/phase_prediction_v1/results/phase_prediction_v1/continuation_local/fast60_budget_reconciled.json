@@ -1,0 +1,24 @@
+{
+  "previous_completed_stage_cpu_h": 12.356484843343889,
+  "superseded_long_dev40_new_physical_cpu_s": 30155.99,
+  "reconciled_completed_stage_cpu_h": 20.733148732232777,
+  "old_logical_counter_not_added_h": 16.91327029701777,
+  "cancellation_cpu_s_informational_already_in_parent": 102.524881,
+  "planned_with_engineering_and_downstream_reserves_h": 71.43314873223278,
+  "cap_h": 100,
+  "old_terminal_receipt": {
+    "utc": "2026-11-05T04:12:06Z",
+    "status": "USER_SUPERSEDED_PARTIAL_T600",
+    "records": 160,
+    "valid_completed_records": 159,
+    "interrupted_records": 1,
+    "logical_cpu_hours": 16.91327029701777,
+    "new_physical_cpu_s": 30155.99,
+    "parent_resources": "Command exited with non-zero status 1\n\tCommand being timed: \"python3 -u /home/vipuser/forcephase_phase_prediction_20261104/src/long_v9/run_matrix.py --base /home/vipuser/forcephase_phase_prediction_20261104 --stage long600_dev40_v1 --spec /home/vipuser/forcephase_phase_prediction_20261104/metadata/long600_dev40_v1_spec.json --cohort /home/vipuser/forcephase_phase_prediction_20261104/metadata/long600_dev40_v1.csv\"\n\tUser time (seconds): 29589.18\n\tSystem time (seconds): 566.81\n\tPercent of CPU this job got: 199%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 4:11:35\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 2441856\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 16\n\tMinor (reclaiming a frame) page faults: 36156253\n\tVoluntary context switches: 3229610\n\tInvoluntary context switches: 129933\n\tSwaps: 0\n\tFile system inputs: 1264\n\tFile system outputs: 132509992\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 1\n",
+    "parent_resources_sha256": "79ed39b65b8327a195ace536a3aa1924055e0d29d84ad6f29bb0071cf0122dbd",
+    "completion_claimed": false,
+    "original_json_changed": false
+  },
+  "new_stage": "fast60_dev40_v1",
+  "new_stage_physical_expense": "Pending GNU-time completion; no double-counting of logical or child counters."
+}

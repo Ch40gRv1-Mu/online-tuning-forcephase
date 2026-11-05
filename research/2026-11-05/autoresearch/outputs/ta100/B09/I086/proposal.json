@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_reason_reconvergence"
+    ],
+    "hypothesis": "抽样祖先遍历中再次碰到已访问祖先的边数占总祖先边数。",
+    "id": "I086",
+    "mechanism_key": "implication_dag_reconvergence",
+    "registry_id": "TD16"
+  },
+  "original_preexecution_config": "configs/ta100/B09.json",
+  "original_config_sha256": "93361ef727629ed8046c1d35d4d6981e1dd16e9512e634dba03b13acbc235f6f",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

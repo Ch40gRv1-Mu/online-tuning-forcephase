@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_laminarity"
+    ],
+    "hypothesis": "For sampled distinct support pairs A,B, f=#(A intersect B nonempty and neither A subset B nor B subset A)/#sampled pairs.",
+    "id": "I041",
+    "mechanism_key": "hyperedge_nonlaminar_crossing",
+    "registry_id": "S21"
+  },
+  "original_preexecution_config": "configs/ta100/B05.json",
+  "original_config_sha256": "70e452cf29ecd8fbef42cc34683ae4ad0d008fad7df10885b19cf858c2eea5e8",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

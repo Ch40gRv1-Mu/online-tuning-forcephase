@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_falsifying_subcube_covariance"
+    ],
+    "hypothesis": "All unordered F* clause pairs: P(U_C)=2^-k. Joint probability is0 on any shared opposite literal, otherwise2^-|union variables|. Return sum_pairs(joint-P_C*P_D)/sum_pairs(joint+P_C*P_D).",
+    "id": "I078",
+    "mechanism_key": "clause_pair_uniform_falsifying_subcube_overlap",
+    "registry_id": "RA18"
+  },
+  "original_preexecution_config": "configs/ta100/B08.json",
+  "original_config_sha256": "2c2b205bbb714ce7c0732d8cd22147e5fa8e6693734c5285fa9d50dbcb148243",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

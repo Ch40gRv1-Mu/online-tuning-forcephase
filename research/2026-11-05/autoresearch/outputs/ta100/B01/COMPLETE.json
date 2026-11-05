@@ -1,0 +1,157 @@
+{
+  "analysis_cpu_s_known": 7.161941000000001,
+  "analysis_cpu_unknown_workers": 0,
+  "bindings": {
+    "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+    "block_sha256": "e0ea71371c39d45ff6b469ffeea801bdb3aa7ccfdcceb787f1b6a49978d01243",
+    "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+    "features_sha256": "3508baa20d9bd6d0d2d02eb5f0d0d412bcfcb1a0346abca90a61aee9beaf9a88",
+    "learning_sha256": "f0779217c16e0530a5f9d02ff9d2d91eddf8431efd6e6022f2d4f5160101a3fb",
+    "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+    "registry_sha256": "1ded58f70a43470c3d70ef2be8e2f3060ac8a1bb77aa384aa4f984fb4a04a249",
+    "source_sha256": "506dc710e20dabfe36be1c60fd651770bd9a1ce6bc2a4f152040aabb4f172a92"
+  },
+  "block_id": "B01",
+  "cost_summary_shared_once": {
+    "cost_note": "Reused probe CPU is not new physical work; do not add this CPU to TA wall time.",
+    "new_extraction_cpu_s": 0.031134999999999996,
+    "new_extraction_wall_s": 0.046709374990314245,
+    "new_solver_cpu_s": 0.0,
+    "reused_probe_cpu_s": 194.25819005699995
+  },
+  "feedback_n": 60,
+  "fit_n": 180,
+  "members": {
+    "BLOCK_MANIFEST.json": "1e03021c0278444b4901964966a0562b416f7fd2dd1d27d6b2aef44180f1ac97",
+    "I001/result.json": "5559f0925e4b786c570fa5f2f9a4268437acc84debc7650cb97d379d3e2810f5",
+    "I002/result.json": "d3f28cbad7ca0f7c5f477665655779077862841f0a9fe7366df0b84594e5acfa",
+    "I003/result.json": "ee52194d74a556e72b4cb72d53a62affcf3916c16ac0d567be1590a89a577cf6",
+    "I004/result.json": "6ab0e93d746aa05143732781adcf3c5a21f0766003c9394021c1967b4aaa212f",
+    "I005/result.json": "b2d78f63b302c21291eeeb0767a479cea5589b4660beb9648f87b32adae1c075",
+    "I006/result.json": "5e7f01827210e53a894510c9b85e9b76d734a777dd554fe32e7bffd5db5dbd4d",
+    "I007/result.json": "a466197d7455918f09e4a4e7caad9c67c824bd77267106cdd5d2efb5e10d71a5",
+    "I008/result.json": "d330051665375dde000e3ab62bee9d8d77dc4385dd3f7f328c2b048fe9965115",
+    "I009/result.json": "71e76d150200f4d254d585d125a945692d4feb9ed3adf5fab089b5d12af03291",
+    "I010/result.json": "44a54e5a09c0ea6783056bb2028a083b1c26b7fcd3dc379f2843a916805e1bbe"
+  },
+  "rounds": [
+    {
+      "columns": [
+        "td_chrono_share"
+      ],
+      "hypothesis": "\u524d\u7f00\u4e2d\u5b9e\u9645\u91c7\u7528chronological backtracking\u7684\u51b2\u7a81\u4efd\u989d\u3002",
+      "id": "I001",
+      "mechanism_key": "backtracking_mode_mix",
+      "registry_id": "TD01",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_restart_reuse_share"
+      ],
+      "hypothesis": "\u81ea\u7136\u91cd\u542f\u4e2d\u4fdd\u7559\u81f3\u5c11\u4e00\u4e2a\u51b3\u7b56\u5c42\u7684\u6b21\u6570\u4efd\u989d\uff1b\u4e0d\u662f\u91cd\u542f\u9891\u7387\u3002",
+      "id": "I002",
+      "mechanism_key": "restart_prefix_preservation",
+      "registry_id": "TD02",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_phase_source_entropy"
+      ],
+      "hypothesis": "target\u3001saved\u3001\u5176\u4f59\u4e09\u4e2a\u51b3\u7b56\u76f8\u4f4d\u6765\u6e90\u6876\u7684\u5f52\u4e00\u5316\u71b5\u3002",
+      "id": "I003",
+      "mechanism_key": "native_source_arbitration",
+      "registry_id": "TD03",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_target_support"
+      ],
+      "hypothesis": "\u56fa\u5b9a\u53d8\u91cf\u6837\u672c\u4e2d\u5df2\u5b9a\u4e49target phase\u7684\u6d3b\u8dc3\u53d8\u91cf\u6bd4\u4f8b\u3002",
+      "id": "I004",
+      "mechanism_key": "target_phase_domain_coverage",
+      "registry_id": "TD04",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_best_target_gap"
+      ],
+      "hypothesis": "best_assigned\u4e0etarget_assigned\u7684\u5e26\u7b26\u53f7\u76f8\u5bf9\u5dee\uff1b\u5f53\u524dactive\u5f52\u4e00\u5316\u56e0\u5b50\u5728\u6bd4\u503c\u4e2d\u62b5\u6d88\u3002",
+      "id": "I005",
+      "mechanism_key": "target_memory_progress_lag",
+      "registry_id": "TD05",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_trail_momentum"
+      ],
+      "hypothesis": "\u5f53\u524dmode\u5185trail\u957f\u5ea6\u5febEMA\u76f8\u5bf9\u6162EMA\u7684\u504f\u79bb\u3002",
+      "id": "I006",
+      "mechanism_key": "assignment_frontier_momentum",
+      "registry_id": "TD06",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_learned_database_load"
+      ],
+      "hypothesis": "\u5f53\u524d\u5197\u4f59\u5b50\u53e5\u6570\u91cf\u76f8\u5bf9\u4e8e\u4ecd\u5b58\u4e0d\u53ef\u5197\u4f59\u5b50\u53e5\u6570\u91cf\u3002",
+      "id": "I007",
+      "mechanism_key": "learned_database_accumulation",
+      "registry_id": "TD07",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_saved_target_polarity_gap"
+      ],
+      "hypothesis": "target\u5df2\u5b9a\u4e49\u6837\u672c\u7684\u8d1f\u76f8\u4f4d\u6bd4\u4f8b\u51cf\u53bb\u5168\u90e8\u6d3b\u8dc3\u6837\u672csaved\u8d1f\u76f8\u4f4d\u6bd4\u4f8b\u3002",
+      "id": "I008",
+      "mechanism_key": "phase_memory_distribution_tension",
+      "registry_id": "TD08",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_learned_size_regime"
+      ],
+      "hypothesis": "\u5f53\u524dmode\u5b66\u4e60\u5b50\u53e5\u957f\u5ea6EMA\u76f8\u5bf9\u4e8e\u6574\u4e2a\u524d\u7f00learnt literal/learnt clause\u5747\u503c\u7684\u5bf9\u6570\u504f\u79bb\u3002",
+      "id": "I009",
+      "mechanism_key": "learned_width_regime_shift",
+      "registry_id": "TD09",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    },
+    {
+      "columns": [
+        "td_actual_potential_backtrack_gap"
+      ],
+      "hypothesis": "\u5b9e\u9645backtrack level EMA\u4e0e\u6f5c\u5728nonchronological backjump level EMA\u7684\u5f52\u4e00\u5316\u5dee\u3002",
+      "id": "I010",
+      "mechanism_key": "chronological_retained_depth",
+      "registry_id": "TD10",
+      "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+    }
+  ],
+  "schema": "ta100.block_execution.v1",
+  "started_ns": 1793857520568659000,
+  "status": "COMPLETE",
+  "statuses": {
+    "I001": "COMPLETE",
+    "I002": "COMPLETE",
+    "I003": "COMPLETE",
+    "I004": "COMPLETE",
+    "I005": "COMPLETE",
+    "I006": "COMPLETE",
+    "I007": "COMPLETE",
+    "I008": "COMPLETE",
+    "I009": "COMPLETE",
+    "I010": "COMPLETE"
+  },
+  "terminal_rounds": 10,
+  "wall_s": 2.9451751249143854,
+  "workers": 3
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "hash": "fe851239cedd4197c5390cee55fee723",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/fe851239cedd4197c5390cee55fee723.cnf",
+    "sha256": "a86fb6261fdb30937f8491018de013ea9c7ba0166faaee7e64b5ca0237905d18",
+    "header_variables": 324148
+  },
+  {
+    "hash": "6fab31665147f538da92dc16c3a239ad",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/6fab31665147f538da92dc16c3a239ad.cnf",
+    "sha256": "ea90e0faad01bed8c668767266fd36052da3f3c309804710ac4e902f50f7d7ec",
+    "header_variables": 1328
+  },
+  {
+    "hash": "8b267f95678c90b2179944de7233b090",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/8b267f95678c90b2179944de7233b090.cnf",
+    "sha256": "5c58de0e4b7da9b210ce0752ed13ce02863d6d894e33476230c5e87d47cbb848",
+    "header_variables": 1002
+  },
+  {
+    "hash": "8707ef793f0443b5804c56c2ffca322e",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/8707ef793f0443b5804c56c2ffca322e.cnf",
+    "sha256": "4feea23dd7fa964b39f0e936e0bef2b6c6c5fe886977408d89c41ec7a9e39072",
+    "header_variables": 1220
+  },
+  {
+    "hash": "539a1f4e4f7a95ab0ac55df50445cceb",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/539a1f4e4f7a95ab0ac55df50445cceb.cnf",
+    "sha256": "82610a019e314a3174ebd2491ad5eaef73f9254baa86b1e47a7856c374ac3805",
+    "header_variables": 5052
+  },
+  {
+    "hash": "753ca299a6ab46e28ece1aefa38f4947",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/753ca299a6ab46e28ece1aefa38f4947.cnf",
+    "sha256": "3cb5bc2f68cf693035d816bfcb4dbadc62fd64ce2cfcfa1cbdb13c9c19774662",
+    "header_variables": 489817
+  },
+  {
+    "hash": "46355da785714f239393e7630020cae3",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/46355da785714f239393e7630020cae3.cnf",
+    "sha256": "715b72da9f4c1709add9e486940d77e67d34ac5f0aa5f0ad97cd1dbe08929cae",
+    "header_variables": 4608
+  },
+  {
+    "hash": "8e1f70e59050693ef128bee0092a7f5f",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/8e1f70e59050693ef128bee0092a7f5f.cnf",
+    "sha256": "bdc9f5dcf0ee90ec697c80785ece380bd6eb71bbb4105abdd65fa504009578d2",
+    "header_variables": 5034
+  },
+  {
+    "hash": "526caead2f3c84c2918a2fc775dc3e97",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/526caead2f3c84c2918a2fc775dc3e97.cnf",
+    "sha256": "6da83293d5801b7385ea55f2abca6623fca3bdeb8a4c6145dbd83636ff4565e3",
+    "header_variables": 253
+  },
+  {
+    "hash": "8a05f9b6bf49285e40d0a197967ea5d3",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/8a05f9b6bf49285e40d0a197967ea5d3.cnf",
+    "sha256": "af0683da4ea92af1d5b7e218c67897750ce869edebed8a662c193256cdad32d9",
+    "header_variables": 4487
+  },
+  {
+    "hash": "fab2022deb130fe3ad1136a5c71b4109",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/fab2022deb130fe3ad1136a5c71b4109.cnf",
+    "sha256": "5d8f5a621357cac8ba878c6c81c2606c010d44d8c8a5c4a5a86a36566c5e7b0d",
+    "header_variables": 500
+  },
+  {
+    "hash": "d99fd10afec0eea1a41a429936bfef59",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/d99fd10afec0eea1a41a429936bfef59.cnf",
+    "sha256": "d690d165f9f148a818cc50eaa148dc5b86e6d681dd38f53474934d0c64647597",
+    "header_variables": 488489
+  },
+  {
+    "hash": "69f6dd335626a9b71bfc6f2332f52b9d",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/69f6dd335626a9b71bfc6f2332f52b9d.cnf",
+    "sha256": "adca1afbe357cffd40eda927094e3ab3cc96d90b6b43153d403728aeb39ca96e",
+    "header_variables": 227
+  },
+  {
+    "hash": "fea0f926e766ccba7c7dc261084ecbd0",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/fea0f926e766ccba7c7dc261084ecbd0.cnf",
+    "sha256": "79bbb46070fb0cac48fe3d6a0ea07a6187153c0ff5dae88a7c31855e3d7e1187",
+    "header_variables": 3166
+  },
+  {
+    "hash": "e442248e155eb81a811edd1deca8a2cd",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/e442248e155eb81a811edd1deca8a2cd.cnf",
+    "sha256": "c53138d27be4166b2022ea07f73217f11f1d1708e386fc297073396e7f14e428",
+    "header_variables": 842116
+  },
+  {
+    "hash": "2de9b79919882078aea76f297fc923e5",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/2de9b79919882078aea76f297fc923e5.cnf",
+    "sha256": "94a88d46995ff48b5c81b5006eb99ff4ee7bc5cf26c6f9bbc7bd432952be9c97",
+    "header_variables": 760
+  },
+  {
+    "hash": "2412325e3c099453b99c87864477363c",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/2412325e3c099453b99c87864477363c.cnf",
+    "sha256": "4edf6b303edeea81a0c564726b9dbb17740316ba44bdf0b4749e958f7804b1a8",
+    "header_variables": 2320
+  },
+  {
+    "hash": "f5c12b1eb9c49e994abb238576a9372b",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/f5c12b1eb9c49e994abb238576a9372b.cnf",
+    "sha256": "d5f69eabbe3d26e14a49435a2867cb95a6034eb60fa8f911058ff327921f9c7c",
+    "header_variables": 106053
+  },
+  {
+    "hash": "362d153b4162127bc42796180110f483",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/362d153b4162127bc42796180110f483.cnf",
+    "sha256": "907c98ebe3331af203f0f9f67529e6933255cd1b0550ecc7caf9d4cdc35514a0",
+    "header_variables": 5892
+  },
+  {
+    "hash": "081f111af59344b61346367a930e24f6",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/081f111af59344b61346367a930e24f6.cnf",
+    "sha256": "5b874afeed91345a786ac4345c97aa3e617c57f748570be83421d149b34abebc",
+    "header_variables": 252
+  },
+  {
+    "hash": "9f38c92ba81c754103444edc15c1f44b",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/9f38c92ba81c754103444edc15c1f44b.cnf",
+    "sha256": "4643215edf9eb5c4725a616082ecb2a08f84a86fae2f8a996f8656b9ccc93d7f",
+    "header_variables": 3488
+  },
+  {
+    "hash": "c0e828fb967fc4f0935cf06c6a6b1055",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/c0e828fb967fc4f0935cf06c6a6b1055.cnf",
+    "sha256": "062e3e1caccde25d126877403d6ff35dd5888dc0cc0552f48cfd1470298f648b",
+    "header_variables": 2564
+  },
+  {
+    "hash": "c05d4d3ecd06a2e3942fea09159dd27b",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/c05d4d3ecd06a2e3942fea09159dd27b.cnf",
+    "sha256": "8505ed3bdf7a83d6c03fadf50eb01a6e12dd4554428bc326542d17c7447dedb8",
+    "header_variables": 4800
+  },
+  {
+    "hash": "72cec28d6e34efe366150066b71edc33",
+    "role": "development_fit",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/72cec28d6e34efe366150066b71edc33.cnf",
+    "sha256": "51ea7e28614dd0ce83dedd3f26be6a639473031e86c318445cec755d393a5d17",
+    "header_variables": 78412
+  },
+  {
+    "hash": "a49ec44c8d9972cda278d48b6dbef09e",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/a49ec44c8d9972cda278d48b6dbef09e.cnf",
+    "sha256": "e023891725eacb1cd8e2d41176c0c61b6dbaa236c26ccec9a41b7a70a0e75929",
+    "header_variables": 258112
+  },
+  {
+    "hash": "16564a6acba6b9fc887c447d4e507767",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/16564a6acba6b9fc887c447d4e507767.cnf",
+    "sha256": "a9a740c9e3744b39f659a44e675760702b6530beb22a1842dd2a583a2d1264a2",
+    "header_variables": 802
+  },
+  {
+    "hash": "3c129545f090ef08b6ef89a2903ff83e",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/3c129545f090ef08b6ef89a2903ff83e.cnf",
+    "sha256": "8838372bcf9a8fd9987cec8dfed4c1b86584da2ffa6e9901414fc24b341a59cb",
+    "header_variables": 489104
+  },
+  {
+    "hash": "abadaf0ee0e21ff1a4b0e294f13ab5ab",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/abadaf0ee0e21ff1a4b0e294f13ab5ab.cnf",
+    "sha256": "438740bdef8cf12722ac599544614718ca77dc0b52e6eca406f2150d45c4a807",
+    "header_variables": 8357
+  },
+  {
+    "hash": "ebbda8d90dfd9b6500bf932f952907a6",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/ebbda8d90dfd9b6500bf932f952907a6.cnf",
+    "sha256": "2b1430ab0882f70fa080f9bfbd8b63b7c7f6bf361e897dda5be3688b0ee694e7",
+    "header_variables": 723395
+  },
+  {
+    "hash": "cabfdc91f644200767df9d480d2cc53e",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/cabfdc91f644200767df9d480d2cc53e.cnf",
+    "sha256": "e6bb9431a73d13d3eda1ffd4dfb32a875fb800c2dfb6992092913ac6d5208d6d",
+    "header_variables": 8620
+  },
+  {
+    "hash": "f626408ec204fd8e1a7924d0e59672e9",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/f626408ec204fd8e1a7924d0e59672e9.cnf",
+    "sha256": "da537c59532ee0cd1b42eaf937861be58c3d3a6de14e2151c98182226538697c",
+    "header_variables": 488448
+  },
+  {
+    "hash": "f33a6163305d6559043b7438a692dea9",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/f33a6163305d6559043b7438a692dea9.cnf",
+    "sha256": "e94c361a7243b2d347f8eee71c99506bad05fa7717077df5cb2bf84807026259",
+    "header_variables": 2848
+  },
+  {
+    "hash": "03e852aa864cfe6eb49c264b462b8157",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/03e852aa864cfe6eb49c264b462b8157.cnf",
+    "sha256": "0981c92590473e1e688842b0adff3627f9b08889327034182f1a2601c7668158",
+    "header_variables": 50777
+  },
+  {
+    "hash": "389bb0a8f3568f4bd0e71771df9093c5",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/389bb0a8f3568f4bd0e71771df9093c5.cnf",
+    "sha256": "cbe7a0eec797f1cd93a9ffdb32f4377c431f5ae10e3a8d4b826684d1be55de56",
+    "header_variables": 3492
+  },
+  {
+    "hash": "ea37a677b357328c1641ef2f6087bf66",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/ea37a677b357328c1641ef2f6087bf66.cnf",
+    "sha256": "b017c49f7c3448d570bf924716786540f220c67c34e95fa6be1a32c968264b86",
+    "header_variables": 945
+  },
+  {
+    "hash": "0e1d562093d5f4fc9013cf4a14a03f70",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/0e1d562093d5f4fc9013cf4a14a03f70.cnf",
+    "sha256": "41bd39956ff5bd83e3673ce990abdd27b7fe92e24c3e2f0815b02185bf77b1a1",
+    "header_variables": 14036
+  },
+  {
+    "hash": "99bd0555ca704df05fcaf6f9b84c7eef",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/99bd0555ca704df05fcaf6f9b84c7eef.cnf",
+    "sha256": "e008a44df32c3615e512f80ec6ad8052693a4b5129ab69de0b6bed356678f7d0",
+    "header_variables": 276
+  },
+  {
+    "hash": "2241a1fb5bdbac0c1a3c1980ed8b332d",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/2241a1fb5bdbac0c1a3c1980ed8b332d.cnf",
+    "sha256": "751145a8e891fb33cf886d3f3d36a07985a658b7a6b0515da97bea121977cb91",
+    "header_variables": 20925
+  },
+  {
+    "hash": "ed9f304b537a768f462bd1c723c5396e",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/ed9f304b537a768f462bd1c723c5396e.cnf",
+    "sha256": "58e5c4019f7bed6395044458752b7e87359cf7090c22bcd8b795de69a07bac44",
+    "header_variables": 24110
+  },
+  {
+    "hash": "6f354fbea13b25a49f3edc1cd10c48d5",
+    "role": "development_feedback",
+    "path": "/home/vipuser/forcephase_phase_prediction_20261104/phases/fast60_dev40_v1/data/6f354fbea13b25a49f3edc1cd10c48d5.cnf",
+    "sha256": "8682818fa6509574d8ae4702a578ad392acfd4808c864ad29c39d2bdae9ec85d",
+    "header_variables": 48032
+  }
+]

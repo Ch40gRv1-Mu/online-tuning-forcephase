@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_chrono_redecision_flip"
+    ],
+    "hypothesis": "chronological回退后，同一变量下次自由决策与撤销赋值符号不同的比例。",
+    "id": "I097",
+    "mechanism_key": "chronological_phase_transition",
+    "registry_id": "TD27"
+  },
+  "original_preexecution_config": "configs/ta100/B10.json",
+  "original_config_sha256": "67f43debe577a48dd5d37d15fccbcb00c27ebc3d4da3745941328b899ad634e0",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

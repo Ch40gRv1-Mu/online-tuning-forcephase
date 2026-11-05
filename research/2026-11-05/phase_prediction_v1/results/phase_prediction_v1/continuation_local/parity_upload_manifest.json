@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "35ffa0cda03e85b0b96e9758d208c4c7d0ae2950ceeb25b26ec4803ecdf8387e",
+  "members": {
+    "src/parity_v1/cnf_parity.cpp": "2f17ba71cda91efd812b0abdf58e960a74bd223ab2071a0faf5ceb52f159fca6",
+    "src/parity_v1/run_parity_features.py": "017667a3f777d3e170dc71cf46d6b44d429b64f6499917d9734a24e2ed6b966f",
+    "src/parity_v1/run_pilot.py": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "metadata/parity_fit144_v1.csv": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0"
+  },
+  "cohort_sha256": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0",
+  "owner": "current phase_prediction agent",
+  "new_solver_calls": 0,
+  "no_professor_or_performance_upload": true
+}

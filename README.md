@@ -1,5 +1,7 @@
 # Online Tuning of Forcephase
 
+**2026-11-05 更新：** 本周已完成的现代 CaDiCaL 实验、TA100 特征探索、全部候选汇总、费用和下一阶段 goal 草案见 [本周研究快照](research/2026-11-05/README.md)。尚未建立稳定优于强固定对照的选择策略；以下“已确认的起点”保留2026-10-18初始规划的历史语境。
+
 Research question: **When should a CDCL SAT solver use its native phase policy, and when should it force negative decision literals? Which observations available during solving predict that choice?**
 
 本仓库用于科研项目 **Online Tuning Forcephase H:1**。目标是得到可复现、有解释力的实证结论，以及在证据支持时得到低开销在线策略。性能提升是待检验假说，不是预设结论。

@@ -1,0 +1,22 @@
+{
+  "split_role": "development_fit",
+  "observation_kind": "complete_new_server_common_D_prefix_screen; no policy-training reward",
+  "parents": 16,
+  "reached_prefix": 14,
+  "mean_par2": {
+    "D": 196.80011875,
+    "Fminus": 210.001808625,
+    "Fplus": 210.002345625
+  },
+  "solved_counts": {
+    "D": 3,
+    "Fminus": 2,
+    "Fplus": 2
+  },
+  "oracle_improvement_over_keep_D": 3.1094366399475604e-06,
+  "all_actions_censored": 13,
+  "decision": "No positive switching labels at this prefix and T120; do not fabricate an informative glue policy. Complete the frozen longer from-start cutoff check before a broad conclusion.",
+  "configuration_semantics": "All configurations share D prefix; names denote fixed continuations after the K=1000 natural restart, not static from-start configurations.",
+  "protected_test_cases_used": 0,
+  "development_gate_cases_used": 0
+}

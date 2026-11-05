@@ -1,0 +1,8 @@
+{
+  "src/depth_v1/cnf_depth.cpp": "24ba94ea4e3c4956edbb8d608807b125a5a0059fa0cb1032026a1cd339348291",
+  "src/depth_v1/cnf_structure.cpp": "9f59eb26ca048cf8361f172ff2e757847958dc6eaae08bb1c25aba6d5b493b59",
+  "src/depth_v1/run_depth_features.py": "e2ada86d5c5c32b4a7e4b65d965956dd03aafad4faf07c57937d169a86539006",
+  "src/depth_v1/run_pilot.py": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+  "metadata/depth192_v1.csv": "f259dc2a26cca843360015833ae78291898bf7b1e7450389bd07bf7ea611ecf4",
+  "metadata/depth192_v1_protocol.md": "137d6076af21df250acd9203d985189ce4501e546a4367137028b8584be4db27"
+}

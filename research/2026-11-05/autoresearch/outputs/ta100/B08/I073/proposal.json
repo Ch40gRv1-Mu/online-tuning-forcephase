@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_canonical_lz78_ratio"
+    ],
+    "hypothesis": "Stream F* canonical signed literals in original clause traversal order, renaming variables by first appearance, with0 delimiters. LZ78 phrase factorization counts a final unmatched prefix as a reference phrase. Return phrase_count*log2(max(2,phrase_count))/(tokens*log2(2*n+1)).",
+    "id": "I073",
+    "mechanism_key": "first_appearance_signed_cnf_lz78_description",
+    "registry_id": "RA13"
+  },
+  "original_preexecution_config": "configs/ta100/B08.json",
+  "original_config_sha256": "2c2b205bbb714ce7c0732d8cd22147e5fa8e6693734c5285fa9d50dbcb148243",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

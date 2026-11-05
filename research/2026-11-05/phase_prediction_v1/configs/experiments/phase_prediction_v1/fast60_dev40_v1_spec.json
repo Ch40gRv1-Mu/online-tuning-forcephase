@@ -1,0 +1,28 @@
+{
+  "stage": "fast60_dev40_v1",
+  "mode": "static",
+  "actions": [
+    "D",
+    "Fplus",
+    "Fminus",
+    "Iminus"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "cutoff_s": 60,
+  "primary_cutoff_s": 60,
+  "fast_development": true,
+  "workers": 8,
+  "memory_bytes": 1610612736,
+  "proof_file_limit_bytes": 1073741824,
+  "verification": "timed_binary_LRAT_lrat_trim",
+  "solver_upper_cpu_hours": 5.333333333333333,
+  "max_total_cpu_hours": 16.5,
+  "cohort_sha256": "bc62884e0cbbb30cb25958103819065de954c3c84d6cfdac6e326bd85295d5f6",
+  "protocol_sha256": "607e771d09c97aa646ebd4beb85017fadd499e76a506193d6ca804814d1ba65c",
+  "created_utc": "2026-11-05T04:07:28.764176+00:00",
+  "budget_change_source": "User explicitly chose fast development and then60s; no new T60 feedback was read.",
+  "sampling": "Identical24fit+16feedback, no outcome/family replacements; all final candidates sealed."
+}

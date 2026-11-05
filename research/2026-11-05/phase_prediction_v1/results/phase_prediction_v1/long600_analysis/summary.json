@@ -1,0 +1,75 @@
+{
+  "checker_and_model_cpu_hours": 7.984520472221934e-05,
+  "feature_cpu_hours": 0.0016459280555555557,
+  "identity": {
+    "checker_options": [
+      "--no-trim"
+    ],
+    "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+    "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+    "memory_bytes": 3221225472,
+    "mode": "static",
+    "proof_file_limit_bytes": 8589934592,
+    "resource_recovery_sha256": "e025c5f2834effe2326f3e084370fe8c8d2ff5040cf4d9a06275cbc51067089c",
+    "runner_sha256": "e5ff9b6e16e2cdb33ff005af0a8175510d5c162d5a944a9481d9fab58096e541",
+    "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+    "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+    "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+    "verification": "timed_binary_LRAT_lrat_trim"
+  },
+  "interpretation": "Development diagnostic; no held-out confirmation or deployed policy claim.",
+  "mode": "static",
+  "online_prefix_reached": 0,
+  "resource_recovery": true,
+  "roles": {
+    "development_fit": {
+      "action_semantics": "Static option pair from initialization.",
+      "all_actions_censored_parents": 12,
+      "best_static_diagnostic": "Fplus",
+      "mean_par2": {
+        "D": 916.0938760625,
+        "Fminus": 1005.33776925,
+        "Fplus": 915.0987253125,
+        "Iminus": 936.9547271875
+      },
+      "oracle_improvement_over_D": 0.0010866702922180949,
+      "oracle_improvement_over_best_static_control": 3.729105839678226e-07,
+      "parents": 16,
+      "solved_seed_average_count": {
+        "D": 4,
+        "Fminus": 3,
+        "Fplus": 4,
+        "Iminus": 4
+      },
+      "subcutoff_diagnostics": {
+        "120": {
+          "best_static_diagnostic": "Iminus",
+          "mean_par2": {
+            "D": 196.7209825625,
+            "Fminus": 210.0029575625,
+            "Fplus": 196.506757,
+            "Iminus": 196.368062875
+          },
+          "oracle_improvement_over_best_static_control": -0.0007045589439260702,
+          "scope": "Within longer proof-timed runs; diagnostic censoring only, not a separate shorter-cutoff rerun.",
+          "three_action_oracle_mean_par2": 196.50641575
+        },
+        "300": {
+          "best_static_diagnostic": "Fplus",
+          "mean_par2": {
+            "D": 466.0938760625,
+            "Fminus": 525.0029575625,
+            "Fplus": 465.0987253125,
+            "Iminus": 488.868062875
+          },
+          "oracle_improvement_over_best_static_control": 7.337151908259898e-07,
+          "scope": "Within longer proof-timed runs; diagnostic censoring only, not a separate shorter-cutoff rerun.",
+          "three_action_oracle_mean_par2": 465.0983840625
+        }
+      },
+      "three_action_oracle_mean_par2": 915.0983840625
+    }
+  },
+  "solver_cpu_hours": 8.600143273055556
+}

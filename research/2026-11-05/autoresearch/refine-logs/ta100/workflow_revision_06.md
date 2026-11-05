@@ -1,0 +1,9 @@
+# Workflow revision06：完成60/100轮后
+
+B06社区、度量、消元和超图约简十项均完成；8项未进入最终fit策略，percolation与nonbacktracking被选中后，完整feedback相对旧静态分别退化4.7622%与1.8831%。modularity在可观测fit上恒定。无符号结构可能刻画题型，却没有在当前受限模型和面板上提供正向相位选择增量；不据此排除所有结构特征。
+
+实际优化：消除多处手工状态的漂移。此前STATE的completed_rounds正确，但next_action与TRACKER仍停留首块。checkpoint现在从实际COMPLETE成员绑定生成下一待执行块与完整十块跟踪表，避免恢复时重复已完成采集。计费继续按feature-table SHA只计一次。下一批只读已采齐algebra20，不重新解析原题。
+
+执行中新增的collection身份屏障第一次将静态public-population SHA误当collection-method SHA，B06在创建输出/拟合前被阻止。已在2ab992c修正为静态独立collection绑定、动态完整base绑定；单个合成性质验证拒绝错误method，即使population恰好相等也不放行。此为前置工程失败，未产生部分评分或新的solver物理工作，原数据/轮次不变。
+
+后续优先执行已冻结符号/松弛十项B07，动态采集由唯一owner并行。模型、阈值、身份、反馈屏障及gate/test边界不改。

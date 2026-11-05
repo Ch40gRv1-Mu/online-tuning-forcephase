@@ -1,0 +1,533 @@
+{
+  "scope": "One frozen SCC-cycle association on already-seen development_feedback, exploratory only.",
+  "all_feedback_parents": 48,
+  "eligible_supported_preferences": 16,
+  "feature_valid": 48,
+  "table_rows": [
+    "cycle",
+    "no_cycle"
+  ],
+  "table_columns": [
+    "false_preferred",
+    "true_preferred"
+  ],
+  "table": [
+    [
+      2,
+      1
+    ],
+    [
+      4,
+      9
+    ]
+  ],
+  "false_preference_proportion_difference": 0.3589743589743589,
+  "descriptive_parent_bootstrap95": [
+    -0.35714285714285715,
+    0.879227941176471
+  ],
+  "bootstrap_valid_draws": 1898,
+  "fisher_greater_descriptive_p": 0.30357142857142855,
+  "group_size_diagnostics": {
+    "True": {
+      "parents": 3,
+      "median_log_variables": 8.15851624481,
+      "median_log_clauses": 9.5105931016
+    },
+    "False": {
+      "parents": 13,
+      "median_log_variables": 9.94874768394,
+      "median_log_clauses": 11.6562896073
+    }
+  },
+  "support_requires_positive_point_and_interval": false,
+  "protocol_sha256": "92de9844444325c6087fa44c0070de7bb3bb6b7392b85aab688a9f2e3135cf57",
+  "source_sha256": "88bed756ca0272ebe03a8f33805e193048988e1356e7f13d95ae174d44d6e185",
+  "rows": [
+    {
+      "hash": "a49ec44c8d9972cda278d48b6dbef09e",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 12.4611527525,
+      "log_clauses": 13.5133224465
+    },
+    {
+      "hash": "16564a6acba6b9fc887c447d4e507767",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 6.68835471395,
+      "log_clauses": 10.7880811977
+    },
+    {
+      "hash": "3c129545f090ef08b6ef89a2903ff83e",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 13.1003324693,
+      "log_clauses": 14.2566329866
+    },
+    {
+      "hash": "abadaf0ee0e21ff1a4b0e294f13ab5ab",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "near_tie",
+      "log_variables": 9.03097444301,
+      "log_clauses": 10.3790382682
+    },
+    {
+      "hash": "ebbda8d90dfd9b6500bf932f952907a6",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 13.491712069,
+      "log_clauses": 14.3520127004
+    },
+    {
+      "hash": "cabfdc91f644200767df9d480d2cc53e",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 9.06195636621,
+      "log_clauses": 12.5672967264
+    },
+    {
+      "hash": "f626408ec204fd8e1a7924d0e59672e9",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 13.0989903438,
+      "log_clauses": 14.254384652
+    },
+    {
+      "hash": "f33a6163305d6559043b7438a692dea9",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 7.9547233345,
+      "log_clauses": 9.15281718573
+    },
+    {
+      "hash": "03e852aa864cfe6eb49c264b462b8157",
+      "label": "false",
+      "eligible": false,
+      "cycle": null,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 10.8352184689,
+      "log_clauses": 12.626002631
+    },
+    {
+      "hash": "389bb0a8f3568f4bd0e71771df9093c5",
+      "label": "false",
+      "eligible": true,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 8.15851624481,
+      "log_clauses": 9.50911074141
+    },
+    {
+      "hash": "ea37a677b357328c1641ef2f6087bf66",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 6.85224256905,
+      "log_clauses": 10.6133689321
+    },
+    {
+      "hash": "0e1d562093d5f4fc9013cf4a14a03f70",
+      "label": "false",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 9.5493807367,
+      "log_clauses": 10.8909075389
+    },
+    {
+      "hash": "99bd0555ca704df05fcaf6f9b84c7eef",
+      "label": null,
+      "eligible": false,
+      "cycle": null,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 5.62401750619,
+      "log_clauses": 12.7603283797
+    },
+    {
+      "hash": "2241a1fb5bdbac0c1a3c1980ed8b332d",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "one_solved_supported_bound",
+      "log_variables": 9.94874768394,
+      "log_clauses": 13.7755236313
+    },
+    {
+      "hash": "ed9f304b537a768f462bd1c723c5396e",
+      "label": "false",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 10.0903819712,
+      "log_clauses": 11.6562896073
+    },
+    {
+      "hash": "6f354fbea13b25a49f3edc1cd10c48d5",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 10.7796435537,
+      "log_clauses": 13.0141543642
+    },
+    {
+      "hash": "8e62c5d47920ffe36052f86177403e70",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 12.2703095587,
+      "log_clauses": 13.4129547138
+    },
+    {
+      "hash": "ac51df6b340190cd1182c06ff2955afa",
+      "label": "true",
+      "eligible": true,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 6.90875477932,
+      "log_clauses": 9.5105931016
+    },
+    {
+      "hash": "c86b261162cef181dc513963a8acb77f",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 11.317749645,
+      "log_clauses": 12.5106782045
+    },
+    {
+      "hash": "09cd83e233380d0ba1fc56cee88367b1",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 9.90852484405,
+      "log_clauses": 10.8280043573
+    },
+    {
+      "hash": "c0074020a48535e6062421cea2850dd0",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 7.58984151218,
+      "log_clauses": 10.2290432774
+    },
+    {
+      "hash": "89002102bdb86946869a06dc1f604315",
+      "label": null,
+      "eligible": false,
+      "cycle": null,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 14.5181015055,
+      "log_clauses": 15.2356542611
+    },
+    {
+      "hash": "f6f91f6a44c3953b788c026cbbaa4e91",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "near_tie",
+      "log_variables": 9.03097444301,
+      "log_clauses": 10.3790382682
+    },
+    {
+      "hash": "bc5a06872fa6dfc9acbc7f782f0a4439",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 12.2449038598,
+      "log_clauses": 13.445993506
+    },
+    {
+      "hash": "a70883771fd1c210d94a916d52510a3a",
+      "label": "true",
+      "eligible": false,
+      "cycle": null,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 11.3098051049,
+      "log_clauses": 13.1008598244
+    },
+    {
+      "hash": "21415e807689ea75536e846a24623de1",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 7.48211892355,
+      "log_clauses": 10.8499582529
+    },
+    {
+      "hash": "5d62e4d7ab116c477c8d4f5bd36907de",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 9.81142708669,
+      "log_clauses": 10.7002286893
+    },
+    {
+      "hash": "d1c28f29dc80ff82a3e32aa47fac8b41",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "near_tie",
+      "log_variables": 8.4091624472,
+      "log_clauses": 9.72304423075
+    },
+    {
+      "hash": "d4256f750a8db53113c128b397722443",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "near_tie",
+      "log_variables": 8.10952565975,
+      "log_clauses": 9.41987169587
+    },
+    {
+      "hash": "5c8f4e54e195d46053b04e232a5661c4",
+      "label": "false",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 6.39859493454,
+      "log_clauses": 8.59396903022
+    },
+    {
+      "hash": "fe9b9a35531e13dab41307e569386dab",
+      "label": null,
+      "eligible": false,
+      "cycle": null,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 14.610160071,
+      "log_clauses": 15.3273151342
+    },
+    {
+      "hash": "53e347648553a2f2223614d3b4a07a4b",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 7.62119516281,
+      "log_clauses": 10.7147954752
+    },
+    {
+      "hash": "2bdfcf23ac1829912a408402a540972a",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 9.62066034281,
+      "log_clauses": 13.0313505507
+    },
+    {
+      "hash": "e7ee736cb1d140b3f70c6f519097aa32",
+      "label": "true",
+      "eligible": false,
+      "cycle": null,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 6.15060276845,
+      "log_clauses": 13.8551321523
+    },
+    {
+      "hash": "96dea3458b5470bd6db5704a0d1e9742",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 11.9895694979,
+      "log_clauses": 12.900456561
+    },
+    {
+      "hash": "1b84df53843ecd90ec8c3c7a01cada6c",
+      "label": null,
+      "eligible": false,
+      "cycle": null,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 5.03695260241,
+      "log_clauses": 8.71948076085
+    },
+    {
+      "hash": "de8988028668791f35a7b9f94353b5b9",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 13.6437490471,
+      "log_clauses": 14.6321351968
+    },
+    {
+      "hash": "60e39615d3af069932865a28b1bf6330",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "near_tie",
+      "log_variables": 8.04718956217,
+      "log_clauses": 9.21691868734
+    },
+    {
+      "hash": "7bdf3e5401cc263951003b569bcd689c",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 11.9885631928,
+      "log_clauses": 12.899092318
+    },
+    {
+      "hash": "df813fe752353c2cc3b9040865aecfe4",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 13.1638104565,
+      "log_clauses": 14.0831906683
+    },
+    {
+      "hash": "b361efe85442bd535849708e2b7ac639",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "one_solved_supported_bound",
+      "log_variables": 10.5627418021,
+      "log_clauses": 11.6009454998
+    },
+    {
+      "hash": "47f5872181a581dff34eb33123fe3242",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 10.9772776369,
+      "log_clauses": 11.9989254673
+    },
+    {
+      "hash": "31e843c53a76ff3961935ad55b953298",
+      "label": "true",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "both_solved_clear",
+      "log_variables": 8.01994168768,
+      "log_clauses": 9.50368140228
+    },
+    {
+      "hash": "5dbe7b31f9b8d8e56045493439adb949",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 11.2598895558,
+      "log_clauses": 13.5305128793
+    },
+    {
+      "hash": "b99ba7e9113280393c64863dfbfa2c3b",
+      "label": null,
+      "eligible": false,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 8.48652777711,
+      "log_clauses": 9.27977314669
+    },
+    {
+      "hash": "d35dfc38e1681b48ebceb4113d205a23",
+      "label": null,
+      "eligible": false,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "neither_solved",
+      "log_variables": 7.89692465627,
+      "log_clauses": 9.09346942024
+    },
+    {
+      "hash": "ea40162dda3f9b923b6160854cf7f75a",
+      "label": "false",
+      "eligible": true,
+      "cycle": true,
+      "feature_status": "VALID",
+      "label_reason": "one_solved_supported_bound",
+      "log_variables": 13.6435673592,
+      "log_clauses": 14.6320675806
+    },
+    {
+      "hash": "7a44efe7c2dbf88a61e7cb750f307937",
+      "label": "false",
+      "eligible": true,
+      "cycle": false,
+      "feature_status": "VALID",
+      "label_reason": "one_solved_supported_bound",
+      "log_variables": 9.46070990954,
+      "log_clauses": 10.8528841863
+    }
+  ],
+  "gate_read": 0,
+  "final_test_read": 0,
+  "new_RICL_rewards": 0,
+  "new_solver_calls": 0,
+  "limitation": "No new action selector, no independent confirmation, no modernF transfer or causation; size diagnostics are not causal adjustment."
+}

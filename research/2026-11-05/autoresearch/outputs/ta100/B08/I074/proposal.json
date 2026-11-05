@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_two_flip_cooperative_escape"
+    ],
+    "hypothesis": "On the fixed LOCALcube, fraction of q-choose2 bit pairs with E(reference)-E(joint_flip)>0 while each individual gain<=0.",
+    "id": "I074",
+    "mechanism_key": "majority_local_cube_cooperative_two_flip_escape",
+    "registry_id": "RA14"
+  },
+  "original_preexecution_config": "configs/ta100/B08.json",
+  "original_config_sha256": "2c2b205bbb714ce7c0732d8cd22147e5fa8e6693734c5285fa9d50dbcb148243",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

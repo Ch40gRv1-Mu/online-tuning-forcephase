@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_articulation_fragility"
+    ],
+    "hypothesis": "For each variable v in an original component with N variable vertices, let s_i be variable counts in components after deleting v. f=max_v[((N-1)^2-sum_i s_i^2)/max(1,n^2)].",
+    "id": "I026",
+    "mechanism_key": "incidence_single_variable_separator_fragility",
+    "registry_id": "S06"
+  },
+  "original_preexecution_config": "configs/ta100/B03.json",
+  "original_config_sha256": "f1cdb2c13dee711eb5e9b558dcf47e1ce75bc007a1d538873f81a9462393b3a6",
+  "registry_sha256": "8bcc3d40f940f6c9ff59374c3f46e20b4b936d5fb66bc3d4877710a9adfe67bf",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

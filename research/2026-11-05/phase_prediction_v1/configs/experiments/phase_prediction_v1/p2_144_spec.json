@@ -1,0 +1,23 @@
+{
+  "stage": "p2_144",
+  "mode": "static",
+  "actions": [
+    "D",
+    "Fplus",
+    "Fminus",
+    "Iminus"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "cutoff_s": 120,
+  "verification": "timed_LRAT_independent_check",
+  "workers": 4,
+  "solver_upper_cpu_hours": 38.4,
+  "max_total_cpu_hours": 44,
+  "cohort_sha256": "abb3992aadfe19cfac5fbec97d7073a48f689a52f5362473029500d99d21f1a1",
+  "sampling": "first 96 eligible fit and first 48 eligible feedback in frozen hash order; 100MB/5M header variable cap",
+  "launch_condition": "P1 complete and valid with useful selection space; total project budget feasible",
+  "protected_data": "no development_gate, no 2022 Anniversary candidate data"
+}

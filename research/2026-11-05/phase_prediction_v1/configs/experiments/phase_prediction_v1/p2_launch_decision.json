@@ -1,0 +1,8 @@
+{
+  "status": "NOT_LAUNCHED",
+  "decision_basis": "Complete valid P1: three-action oracle gains only 0.2182478 percent over fixed Fplus at T=60 on 48 fit instances; below the protocol 2 percent policy gate. No new development feedback has been scored.",
+  "p2_static_144": "Do not launch or stage automatically. Frozen files remain prospective specifications, not performed experiments.",
+  "online16": "Mandatory bounded action-before-observation diagnostic continues independently with T=120 and timed LRAT.",
+  "test_pool": "sealed; no final test solver outputs read",
+  "limitation": "The P1 upper bound is cutoff-/panel-/solver-specific; it does not exclude longer-budget or online continuation gains."
+}

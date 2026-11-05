@@ -1,0 +1,52 @@
+{
+  "actor": "Current Codex, using actual round3 feedback and retained counterexamples",
+  "cutoff_s": 60,
+  "evaluation": "Exploratory repeated feedback; all four statics and same43-pool/depth3/minleaf8 control; no new solver, gate or test access",
+  "feature_contract": "Same depth43_v1, same physical320 outcomes, measured combined featureCPU exactly once",
+  "feedback_used": {
+    "counterexample": "Geometry rule chose D costing5.176627 where baseline Fplus cost0.740554; avoid treating cycle threshold as a reliable winner label",
+    "round3_gates": "Constant Fplus, reward 0; no gate-depth split survived measured cost",
+    "round3_geometry": "PAR2 86.321934375, reward +4.3046% vs fit-selected Fplus, interval [-1.0847%,14.4861%]; selected old cycle-excess feature, lost to fixed D/Iminus"
+  },
+  "next_decision": "No expansion of runtime matrix or new feature families to rescue these candidates; freeze retained/best-failed candidate for required T60 deployment consistency, then assess bounded stopping.",
+  "proposals": [
+    {
+      "depth": 3,
+      "features": [
+        "s_long_fraction",
+        "s_mean_length",
+        "s_binary_fraction",
+        "s_positive_fraction",
+        "s_mean_polarity_imbalance",
+        "d_core_vertex_fraction",
+        "d_leaf_peeling_rounds",
+        "g_cycle_excess_per_incidence"
+      ],
+      "kind": "clause_signal_with_core_interaction",
+      "min_leaf": 8,
+      "rationale": "Round2 length signal was stronger than isolated graph signal but failed strong controls; test whether fit-only core/peeling interactions reduce its errors. Extra depth retains minimum8 parent support and matched capacity; no feedback-fitted threshold."
+    },
+    {
+      "depth": 3,
+      "features": [
+        "d_gate_condensation_depth",
+        "d_gate_cyclic_variable_fraction",
+        "d_gate_variable_coverage",
+        "d_gate_output_positive_fraction",
+        "d_gate_depth_exact",
+        "s_horn_fraction",
+        "s_antihorn_fraction",
+        "s_positive_fraction",
+        "s_long_fraction"
+      ],
+      "kind": "signed_gate_and_clause_orientation_interaction",
+      "min_leaf": 8,
+      "rationale": "Gate-only rules produced no split in both original-label and modern feedback; test the bounded alternative that gate direction matters only together with clause orientation/length. A negative result stops adding gate variants in this feature block."
+    }
+  ],
+  "required_seeds": [
+    0,
+    1
+  ],
+  "round": 4
+}

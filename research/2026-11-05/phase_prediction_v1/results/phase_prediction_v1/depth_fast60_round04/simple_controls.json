@@ -1,0 +1,105 @@
+[
+  {
+    "depth": 3,
+    "feedback": {
+      "baseline_par2": 90.20492834375,
+      "baseline_solved_seed_average_count": 4,
+      "descriptive_95pct_bootstrap": [
+        -0.0010910615039836369,
+        -7.900743901112506e-06
+      ],
+      "feedback_parents": 16,
+      "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+      "policy_par2": 90.236455625,
+      "policy_solved_seed_average_count": 4,
+      "reward": -0.00034950730330240987,
+      "sum_par2_regret_to_free_three_action_oracle": 304.274874,
+      "worst_numeric_examples": [
+        {
+          "baseline_par2": 2.4897169999999997,
+          "features": {
+            "g_cycle_excess": 753032
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 2.8206569999999997
+        },
+        {
+          "baseline_par2": 0.7405539999999999,
+          "features": {
+            "g_cycle_excess": 557996
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 0.8787579999999999
+        },
+        {
+          "baseline_par2": 0.028207499999999996,
+          "features": {
+            "g_cycle_excess": 69017
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 0.0492785
+        }
+      ]
+    },
+    "fit_par2": 84.2585973125,
+    "input_features": [
+      "d_core_edge_fraction",
+      "d_core_vertex_fraction",
+      "d_gate_condensation_depth",
+      "d_gate_cyclic_variable_fraction",
+      "d_gate_depth_exact",
+      "d_gate_output_positive_fraction",
+      "d_gate_variable_coverage",
+      "d_incidence_geometry_exact",
+      "d_leaf_peeling_rounds",
+      "g_components",
+      "g_cycle_excess",
+      "g_cycle_excess_per_incidence",
+      "g_degree_cv",
+      "g_degree_entropy_normalized",
+      "g_degree_max",
+      "g_degree_mean",
+      "g_degree_p50",
+      "g_degree_p90",
+      "g_degree_two_fraction",
+      "g_gate_motif_fraction",
+      "g_gate_motifs_exact",
+      "g_largest_component_fraction",
+      "g_leaf_variable_fraction",
+      "s_antihorn_fraction",
+      "s_binary_fraction",
+      "s_clauses",
+      "s_cv_ratio",
+      "s_empty_fraction",
+      "s_header_variables",
+      "s_horn_fraction",
+      "s_jw_positive_fraction",
+      "s_length_std",
+      "s_log_clauses",
+      "s_log_variables",
+      "s_long_fraction",
+      "s_max_length",
+      "s_mean_length",
+      "s_mean_polarity_imbalance",
+      "s_positive_fraction",
+      "s_pure_variable_fraction",
+      "s_ternary_fraction",
+      "s_unit_fraction",
+      "s_variables"
+    ],
+    "min_leaf": 8,
+    "policy": {
+      "feature": "g_cycle_excess",
+      "left": {
+        "action": "D"
+      },
+      "missing": "left",
+      "right": {
+        "action": "Fplus"
+      },
+      "threshold": 27535
+    },
+    "policy_sha256": "7f7a015f89751cbd7992aa02df55ad59428d3d0cb5c76e86603c160dd2153583",
+    "training_scope": "Fit only; predeclared full numeric pool, same tree capacity, grid and total-budget loss."
+  }
+]

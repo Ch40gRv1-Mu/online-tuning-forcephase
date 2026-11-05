@@ -1,0 +1,191 @@
+{
+  "status": "FINAL_EVIDENCE_CHECK_PASSED_SCOPED_NEGATIVE",
+  "recorded_utc": "2026-11-05T05:43:12.486278+00:00",
+  "requirements": [
+    {
+      "requirement": "P1 complete verified matrix",
+      "status": "SATISFIED",
+      "path": "results/phase_prediction_v1/p1_analysis/integrity.json",
+      "sha256": "d6e0559c4655dda83e3ed2fb1800c6c928d1dde65f6ef63d6c539c0f8ebdffd5",
+      "runs": 144
+    },
+    {
+      "requirement": "online complete verified matrix",
+      "status": "SATISFIED",
+      "path": "results/phase_prediction_v1/online16_v2_analysis/integrity.json",
+      "sha256": "569e60f51f4808c0f4fc611f4ba326a360ff7454f53c75fdabda57944f999f6e",
+      "runs": 48
+    },
+    {
+      "requirement": "T600 complete verified matrix",
+      "status": "SATISFIED",
+      "path": "results/phase_prediction_v1/long600_analysis/integrity.json",
+      "sha256": "b193b5ea52937b0f50bf6aef692051860270fa4dce3a63134812066636692a27",
+      "runs": 64
+    },
+    {
+      "requirement": "T60 complete verified matrix",
+      "status": "SATISFIED",
+      "path": "results/phase_prediction_v1/fast60_analysis/integrity.json",
+      "sha256": "46ae9f0d79e8f9bf652099f632f7c38d974a5035a7e738ac52686eb4d820eb81",
+      "runs": 320
+    },
+    {
+      "requirement": "Bounded formal development including real rounds2/3/4 and all failures/counterexamples",
+      "status": "SATISFIED",
+      "path": "results/phase_prediction_v1/context/episodes.jsonl",
+      "sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "own_rounds": 4,
+      "own_episodes": 8,
+      "other_owner_rounds_metadata_only": 4,
+      "shared_rounds": 8
+    },
+    {
+      "requirement": "Eight actual deployments and independent feature/action/totalCPU replay",
+      "status": "SATISFIED",
+      "path": "results/phase_prediction_v1/deploy60_analysis/summary.json",
+      "sha256": "f3f9d7c6406b7eda61dcb0f3de765e8c00daed25aa9028dad2da1d1c7dc58f09",
+      "units": 8
+    },
+    {
+      "requirement": "Three novel nonduplicated feature mechanisms, frozen protocols, coverage, actual validation and costs",
+      "status": "SATISFIED",
+      "mechanisms": {
+        "implication": {
+          "path": "results/phase_prediction_v1/implication_fit144_cv/summary.json",
+          "sha256": "36c6d7234e24d8c7848911755a4882828035268858f4f4ff3e7d67baf94c9e2b",
+          "valid": 144,
+          "exact": 141,
+          "supported_labels": 53,
+          "correct": 37,
+          "constant_correct": 35,
+          "accuracy_delta95": [
+            -0.06666666666666665,
+            0.14583333333333337
+          ],
+          "weighted_error_rate": 0.3105255566177839,
+          "constant_weighted_error_rate": 0.40068314807904215,
+          "continuation_criteria_met": true
+        },
+        "parity": {
+          "path": "results/phase_prediction_v1/parity_fit144_cv/summary.json",
+          "sha256": "c56552df01100f136a06f286ad2d83e582b6a72fc5f37bdf6ac9dcdd318aa775",
+          "valid": 144,
+          "exact": 144,
+          "supported_labels": 53,
+          "correct": 39,
+          "constant_correct": 35,
+          "accuracy_delta95": [
+            -0.020833333333333263,
+            0.17783333333333307
+          ],
+          "weighted_error_rate": 0.40381282667423773,
+          "constant_weighted_error_rate": 0.40068314807904215,
+          "continuation_criteria_met": false
+        },
+        "choice": {
+          "path": "results/phase_prediction_v1/choice_fit144_cv/summary.json",
+          "sha256": "68987e4ee9be17f9fee2b4026008ce45bc5e74a2985879af726e28b2d0a3c06c",
+          "valid": 144,
+          "exact": 140,
+          "supported_labels": 53,
+          "correct": 33,
+          "constant_correct": 35,
+          "accuracy_delta95": [
+            -0.11476986128625474,
+            0.03703703703703698
+          ],
+          "weighted_error_rate": 0.49427188434851416,
+          "constant_weighted_error_rate": 0.40068314807904215,
+          "continuation_criteria_met": false
+        }
+      },
+      "implication_crosscheck": "results/phase_prediction_v1/implication_feedback48_association/summary.json",
+      "all_stopped_by_prespecified_conditions": true
+    },
+    {
+      "requirement": "Deduplicated expenses including failures;100CPUh envelope",
+      "status": "SATISFIED_WITH_EXPLICIT_UNMEASURED_ENGINEERING_RESERVE",
+      "cost": {
+        "this_project_measured_physical_stage_cpu_h": 24.75393762112167,
+        "other_owner_measured_cpu_s": 288.079916455,
+        "other_owner_cost_ledger_sha256": "fbb8cd333c43ccf37178b50644e44caf54f30c6bdaa2e980029e0203d674ffa0",
+        "known_combined_measured_cpu_h": 24.833959820136947,
+        "unmeasured_engineering_is_not_zero": true,
+        "existing_engineering_reserve_h": 3,
+        "known_plus_existing_reserve_h": 27.833959820136947,
+        "total_cap_h": 100,
+        "solver_or_trajectory_reuse_counted_again": false
+      }
+    },
+    {
+      "requirement": "One shared gate only; conditional independent confirmation",
+      "status": "NO_MODERN_CANDIDATE_QUALIFIED_CONFIRMATION_NOT_TRIGGERED",
+      "shared_gate_consumed_by": "Separate TA false/true branch",
+      "modern_gate_per_instance_or_numeric_results_read": 0,
+      "closing_only_metadata_aggregate_status_seen": true,
+      "all_development_finished_before_this_closing_status_read": true,
+      "gate_marker_sha256": "6d319ef9e1f7355cfe213cab17d4a0b3e08e1e811128a2c9756a5eeaae762608",
+      "final_test_outputs_read": 0,
+      "final_candidate_pool_sealed": 5355,
+      "never_reuse_same_gate_as_unseen": true
+    },
+    {
+      "requirement": "Full expanded40 T600 matrix",
+      "status": "SUPERSEDED_BY_EXPLICIT_USER_T60_SWITCH",
+      "original16_T600_complete": true,
+      "expanded40_T600_is_partial_only": true,
+      "evidence": "docs/FAST60_DEV40_PROTOCOL_20261105.md",
+      "cancelled_record_not_training_timeout": true
+    },
+    {
+      "requirement": "Numeric structural/observation schema, no family/identity/answer inputs; exact and available isohash separation from full5355pool",
+      "status": "SATISFIED",
+      "policies_validated": 8,
+      "development_parents": 192,
+      "protected_ids": 5355,
+      "protected_isohash_available": 5355,
+      "protected_intersections": 0,
+      "modern_score_label_diagnostic": {
+        "development_fit": {
+          "parents": 24,
+          "clear_capped_score_winner": 3,
+          "all_three_censored": 16
+        },
+        "development_feedback": {
+          "parents": 16,
+          "clear_capped_score_winner": 5,
+          "all_three_censored": 9
+        }
+      },
+      "clear_label_scope": "Auxiliary cappedT60 mean-over-two-seeds score winner using preexisting0.02/10% margin, not uncensored true runtime.",
+      "protected_isohash_intersections": 0,
+      "protected_isohash_source": "results/phase_prediction_v1/test_equivalence_audit.csv",
+      "protected_isohash_source_sha256": "26e27f46111c1ea418b24a032d4d848c950d9b3cdfbdd467998cdbf3cb51f48c",
+      "scope": "GBD isohash is practical equivalence deduplication, not a general isomorphism proof.",
+      "excluded_previously_exposed_entries": 336
+    }
+  ],
+  "artifact_identity": {
+    "docs/PHASE_PREDICTION_GOAL_20261103.md": "880fb149ccc743a136f7eb2c6371aadde84e3c150f218d00a91f035902b6868f",
+    "docs/PHASE_PREDICTION_PROTOCOL_20261103.md": "8199bb89556db18fefc3fd2b2a3ba038966c28f43872c1636c52e8349bd782d3",
+    "docs/FAST60_DEV40_PROTOCOL_20261105.md": "607e771d09c97aa646ebd4beb85017fadd499e76a506193d6ca804814d1ba65c",
+    "configs/policies/phase_prediction_v1/retained_failed_candidate.json": "a2266ffcbe387df09531179bdb66cc1198878fe59114a70a16de2ba7bec3ea4c",
+    "configs/policies/phase_prediction_v1/retained_failed_candidate_manifest.json": "ae99fde97d380215a0527ed5264bce120fab32a19875312ff4bb88cfa2fae10a",
+    "reports/phase_prediction_v1/INPUT_AUDIT.md": "7e4779c23544f06b6e14fb63e9c76cbe22851adc5f6c85b707ce9eaaf7d77bfb",
+    "reports/phase_prediction_v1/SOURCE_AUDIT.md": "4fbe8104e51f426549bfeb692aeb738cba0fc1718420fd8e7fa5bf6b7d811f4d"
+  },
+  "cost": {
+    "this_project_measured_physical_stage_cpu_h": 24.75393762112167,
+    "other_owner_measured_cpu_s": 288.079916455,
+    "other_owner_cost_ledger_sha256": "fbb8cd333c43ccf37178b50644e44caf54f30c6bdaa2e980029e0203d674ffa0",
+    "known_combined_measured_cpu_h": 24.833959820136947,
+    "unmeasured_engineering_is_not_zero": true,
+    "existing_engineering_reserve_h": 3,
+    "known_plus_existing_reserve_h": 27.833959820136947,
+    "total_cap_h": 100,
+    "solver_or_trajectory_reuse_counted_again": false
+  },
+  "conclusion": "No stable cost-effective selector established within frozen development and bounded allocation. Not a universal impossibility result; no independent final test executed.",
+  "closing_exposure_note": "Closing-only global gate reservation metadata included NOT_PASSED aggregate status after all feature development/scoring had ended. No per-instance gate outcome or numerical gate performance was read here; no subsequent development/update is performed."
+}

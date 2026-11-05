@@ -1,0 +1,86 @@
+{
+  "baseline_action": "true",
+  "candidate_id": "r01_length_signed_matched_tree",
+  "candidate_source_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "development_snapshot_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "gate_consumes_original_single_opportunity": true,
+  "gate_criteria": {
+    "full_parents": 60,
+    "minimum_relative_improvement": 0.02,
+    "only_once": true,
+    "paired_improvement_95_lower_positive": true
+  },
+  "gate_entry_metrics": {
+    "clear_parents": 24,
+    "largest_gain_fraction": 0.4986939207460547,
+    "relative_improvement": 0.05287635313535044,
+    "switches": 18
+  },
+  "gate_previously_scored_in_this_branch": false,
+  "measurement": "TA false/true T5000 PAR2 convention; features cost reported separately",
+  "policy": {
+    "baseline_action": "true",
+    "schema": "ta_cost_tree_v1",
+    "training": {
+      "allowed_features": [
+        "s_mean_length",
+        "s_length_std",
+        "s_binary_fraction",
+        "s_long_fraction",
+        "s_positive_fraction",
+        "s_mean_polarity_imbalance",
+        "g_cycle_excess_per_incidence",
+        "g_leaf_variable_fraction",
+        "g_largest_component_fraction",
+        "g_gate_motif_fraction"
+      ],
+      "baseline_total_cost_s": 1110486.242,
+      "cost_units": "TA wall seconds; feature CPU excluded",
+      "groups": 180,
+      "ids_sha256": "4b85257cd32ae4f3124ae425fc7948a8e463ccbe29313b23d8ddc79be59e8480",
+      "max_depth": 2,
+      "max_features": 2,
+      "min_leaf": 12,
+      "min_relative_improvement": 0.01,
+      "parents": 180,
+      "policy_total_cost_s": 1087337.3199999998,
+      "quantiles": [
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875
+      ],
+      "role": "development_fit"
+    },
+    "tree": {
+      "feature": "s_positive_fraction",
+      "left": {
+        "feature": "s_positive_fraction",
+        "left": {
+          "action": "true"
+        },
+        "right": {
+          "action": "false"
+        },
+        "threshold": 0.196010372787
+      },
+      "right": {
+        "feature": "s_length_std",
+        "left": {
+          "action": "false"
+        },
+        "right": {
+          "action": "true"
+        },
+        "threshold": 0.46287575042025
+      },
+      "threshold": 0.388031304508
+    }
+  },
+  "protected_final_test": 5355,
+  "schema": "ta_gate_candidate_v1",
+  "selection": "Best feedback gain among static candidates satisfying precommitted >=12 switches, >=20 clear parents, >=2% improvement; earliest round breaks exact cost ties. Dynamic candidates add zero to static fallback and lose to this policy. Same rule as ordinary tree; no ICL advantage claimed. R3 sign-only has slightly higher gain but10 switches, ineligible."
+}

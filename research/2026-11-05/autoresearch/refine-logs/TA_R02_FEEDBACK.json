@@ -1,0 +1,458 @@
+{
+  "models": {
+    "graph_signed_context": {
+      "loss_examples": [
+        {
+          "action": "false",
+          "delta_s": 798.2420000000002,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.617716704799,
+            "g_gate_motif_fraction": 0.00508907549573,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.00104097268488,
+            "s_binary_fraction": 0.235953904337,
+            "s_length_std": 6.34998491502,
+            "s_long_fraction": 0.0128187128247,
+            "s_mean_length": 2.89586355826,
+            "s_mean_polarity_imbalance": 0.517196585101,
+            "s_positive_fraction": 0.232962324221
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 693.797,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.928537326246,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0720954988858,
+            "s_long_fraction": 0.999969243072,
+            "s_mean_length": 13.9996001599,
+            "s_mean_polarity_imbalance": 0.000361691511709,
+            "s_positive_fraction": 0.499998283605
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.653,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.718084959286,
+            "g_gate_motif_fraction": 0.00103362315316,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.87503832539,
+            "s_length_std": 7.0761663821,
+            "s_long_fraction": 0.0547391086211,
+            "s_mean_length": 3.65368829612,
+            "s_mean_polarity_imbalance": 0.662717238905,
+            "s_positive_fraction": 0.468100931945
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.500055643616,
+            "g_gate_motif_fraction": 0.213038101863,
+            "g_largest_component_fraction": 0.999996125713,
+            "g_leaf_variable_fraction": 3.87428713117e-06,
+            "s_binary_fraction": 0.298323317974,
+            "s_length_std": 0.4621280877,
+            "s_long_fraction": 0.0,
+            "s_mean_length": 2.69865178207,
+            "s_mean_polarity_imbalance": 0.0826700640546,
+            "s_positive_fraction": 0.472083948672
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.561222944012,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.991700902166,
+            "s_length_std": 3.51072277122,
+            "s_long_fraction": 0.00827845331241,
+            "s_mean_length": 2.31674890068,
+            "s_mean_polarity_imbalance": 0.772551866637,
+            "s_positive_fraction": 0.428057137256
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.475892178416,
+            "g_gate_motif_fraction": 0.549588200346,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.579997426743,
+            "s_length_std": 8.57235273852,
+            "s_long_fraction": 0.00976036540255,
+            "s_mean_length": 2.50835215028,
+            "s_mean_polarity_imbalance": 0.150383757102,
+            "s_positive_fraction": 0.50094816558
+          }
+        }
+      ],
+      "metrics": {
+        "bootstrap": {
+          "cost_ratio_95": [
+            0.8604547562265186,
+            1.0066255827665083
+          ],
+          "groups": 60,
+          "improvement_95": [
+            -0.006625582766508176,
+            0.1395452437734814
+          ],
+          "mean_delta_s_95": [
+            -814.2570054166654,
+            34.69332999999997
+          ],
+          "note": "Exploratory paired interval; feedback reuse is not multiplicity-adjusted.",
+          "samples": 2000,
+          "seed": 20261105,
+          "unit": "equivalence_group"
+        },
+        "clear_accuracy": 0.75,
+        "clear_parents": 24,
+        "largest_gain_fraction": 0.49869619234303947,
+        "max_regression_s": 798.2420000000002,
+        "relative_improvement": 0.05287573813314983,
+        "switches": 14
+      },
+      "tree": {
+        "feature": "s_positive_fraction",
+        "left": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          },
+          "threshold": 0.196010372787
+        },
+        "right": {
+          "feature": "g_cycle_excess_per_incidence",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          },
+          "threshold": 0.706277858220875
+        },
+        "threshold": 0.388031304508
+      }
+    },
+    "matched_simple_tree": {
+      "loss_examples": [
+        {
+          "action": "false",
+          "delta_s": 798.2420000000002,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.617716704799,
+            "g_gate_motif_fraction": 0.00508907549573,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.00104097268488,
+            "s_binary_fraction": 0.235953904337,
+            "s_length_std": 6.34998491502,
+            "s_long_fraction": 0.0128187128247,
+            "s_mean_length": 2.89586355826,
+            "s_mean_polarity_imbalance": 0.517196585101,
+            "s_positive_fraction": 0.232962324221
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 693.797,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.928537326246,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0720954988858,
+            "s_long_fraction": 0.999969243072,
+            "s_mean_length": 13.9996001599,
+            "s_mean_polarity_imbalance": 0.000361691511709,
+            "s_positive_fraction": 0.499998283605
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.5289999999999999,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.611083789811,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0758174781143,
+            "s_long_fraction": 2.04347701701e-06,
+            "s_mean_length": 3.00010421733,
+            "s_mean_polarity_imbalance": 9.45194733766e-05,
+            "s_positive_fraction": 0.500018050087
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.500055643616,
+            "g_gate_motif_fraction": 0.213038101863,
+            "g_largest_component_fraction": 0.999996125713,
+            "g_leaf_variable_fraction": 3.87428713117e-06,
+            "s_binary_fraction": 0.298323317974,
+            "s_length_std": 0.4621280877,
+            "s_long_fraction": 0.0,
+            "s_mean_length": 2.69865178207,
+            "s_mean_polarity_imbalance": 0.0826700640546,
+            "s_positive_fraction": 0.472083948672
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.561222944012,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.991700902166,
+            "s_length_std": 3.51072277122,
+            "s_long_fraction": 0.00827845331241,
+            "s_mean_length": 2.31674890068,
+            "s_mean_polarity_imbalance": 0.772551866637,
+            "s_positive_fraction": 0.428057137256
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.475892178416,
+            "g_gate_motif_fraction": 0.549588200346,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.579997426743,
+            "s_length_std": 8.57235273852,
+            "s_long_fraction": 0.00976036540255,
+            "s_mean_length": 2.50835215028,
+            "s_mean_polarity_imbalance": 0.150383757102,
+            "s_positive_fraction": 0.50094816558
+          }
+        }
+      ],
+      "metrics": {
+        "bootstrap": {
+          "cost_ratio_95": [
+            0.8614796471345462,
+            1.006674396121245
+          ],
+          "groups": 60,
+          "improvement_95": [
+            -0.006674396121245041,
+            0.13852035286545386
+          ],
+          "mean_delta_s_95": [
+            -809.9065079166667,
+            36.448636249999495
+          ],
+          "note": "Exploratory paired interval; feedback reuse is not multiplicity-adjusted.",
+          "samples": 2000,
+          "seed": 20261104,
+          "unit": "equivalence_group"
+        },
+        "clear_accuracy": 0.7916666666666666,
+        "clear_parents": 24,
+        "largest_gain_fraction": 0.4986939207460547,
+        "max_regression_s": 798.2420000000002,
+        "relative_improvement": 0.05287635313535044,
+        "switches": 18
+      },
+      "tree": {
+        "feature": "s_positive_fraction",
+        "left": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          },
+          "threshold": 0.196010372787
+        },
+        "right": {
+          "feature": "s_length_std",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          },
+          "threshold": 0.46287575042025
+        },
+        "threshold": 0.388031304508
+      }
+    },
+    "sign_binary_context": {
+      "loss_examples": [
+        {
+          "action": "false",
+          "delta_s": 798.2420000000002,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.617716704799,
+            "g_gate_motif_fraction": 0.00508907549573,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.00104097268488,
+            "s_binary_fraction": 0.235953904337,
+            "s_length_std": 6.34998491502,
+            "s_long_fraction": 0.0128187128247,
+            "s_mean_length": 2.89586355826,
+            "s_mean_polarity_imbalance": 0.517196585101,
+            "s_positive_fraction": 0.232962324221
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 693.797,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.928537326246,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0720954988858,
+            "s_long_fraction": 0.999969243072,
+            "s_mean_length": 13.9996001599,
+            "s_mean_polarity_imbalance": 0.000361691511709,
+            "s_positive_fraction": 0.499998283605
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.5289999999999999,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.611083789811,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0758174781143,
+            "s_long_fraction": 2.04347701701e-06,
+            "s_mean_length": 3.00010421733,
+            "s_mean_polarity_imbalance": 9.45194733766e-05,
+            "s_positive_fraction": 0.500018050087
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.500055643616,
+            "g_gate_motif_fraction": 0.213038101863,
+            "g_largest_component_fraction": 0.999996125713,
+            "g_leaf_variable_fraction": 3.87428713117e-06,
+            "s_binary_fraction": 0.298323317974,
+            "s_length_std": 0.4621280877,
+            "s_long_fraction": 0.0,
+            "s_mean_length": 2.69865178207,
+            "s_mean_polarity_imbalance": 0.0826700640546,
+            "s_positive_fraction": 0.472083948672
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.561222944012,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.991700902166,
+            "s_length_std": 3.51072277122,
+            "s_long_fraction": 0.00827845331241,
+            "s_mean_length": 2.31674890068,
+            "s_mean_polarity_imbalance": 0.772551866637,
+            "s_positive_fraction": 0.428057137256
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.475892178416,
+            "g_gate_motif_fraction": 0.549588200346,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.579997426743,
+            "s_length_std": 8.57235273852,
+            "s_long_fraction": 0.00976036540255,
+            "s_mean_length": 2.50835215028,
+            "s_mean_polarity_imbalance": 0.150383757102,
+            "s_positive_fraction": 0.50094816558
+          }
+        }
+      ],
+      "metrics": {
+        "bootstrap": {
+          "cost_ratio_95": [
+            0.8614796471345462,
+            1.006674396121245
+          ],
+          "groups": 60,
+          "improvement_95": [
+            -0.006674396121245041,
+            0.13852035286545386
+          ],
+          "mean_delta_s_95": [
+            -809.9065079166667,
+            36.448636249999495
+          ],
+          "note": "Exploratory paired interval; feedback reuse is not multiplicity-adjusted.",
+          "samples": 2000,
+          "seed": 20261104,
+          "unit": "equivalence_group"
+        },
+        "clear_accuracy": 0.7916666666666666,
+        "clear_parents": 24,
+        "largest_gain_fraction": 0.4986939207460547,
+        "max_regression_s": 798.2420000000002,
+        "relative_improvement": 0.05287635313535044,
+        "switches": 14
+      },
+      "tree": {
+        "feature": "s_positive_fraction",
+        "left": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          },
+          "threshold": 0.196010372787
+        },
+        "right": {
+          "feature": "s_binary_fraction",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          },
+          "threshold": 0.174557342785875
+        },
+        "threshold": 0.388031304508
+      }
+    }
+  },
+  "round": "TA-R02"
+}

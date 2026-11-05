@@ -1,0 +1,789 @@
+{
+  "checksum_manifests": [
+    {
+      "path": "/Users/expexp/Documents/Codex/2026-10-28/new-chat/work/forcephase/benchmarks/checksums.csv",
+      "sha256": "befecf0283b1433627dbd96687311482e088220a0dd52914ccebedc2e5801f14"
+    }
+  ],
+  "experiment_id": "ta_gate_static_v1",
+  "extractor_source_sha256": "9f59eb26ca048cf8361f172ff2e757847958dc6eaae08bb1c25aba6d5b493b59",
+  "gate_candidate_sha256": "1d4a4374b444ff5da12291291fad4ec18893300033c5ec1bca4ef698dc8eb182",
+  "gate_population_ids": [
+    "fcc4c4522c54db2f1cee86fe0fff5f4a",
+    "ae9c53347ee8072745ed230992e164ee",
+    "0205e2dffaef93a90c239df31755f2e1",
+    "f1cd694d42891a20c96a65ee1c321edc",
+    "8f391f2bf8167f1b96467f3479b33dc5",
+    "110f8eb8b9b80204fe955ea0973bbb00",
+    "28eeb2beac7005a9afa98e4d3aaca621",
+    "5314fd6ccb53b6f6af49a594ea68a273",
+    "2c8eb0402be32cf281e23f00d5a16259",
+    "6f6a20cd654701b5e7fe9e9e0e5e7787",
+    "5c24cfeff639fefdead9a5641f65fa22",
+    "989ca6ab309ca52a6ff957b6896aa03e",
+    "f37757b26c83935780be4f814f8ea401",
+    "207ebdf62e5ce54c8b4ddeeb17843a56",
+    "84282cd481f7614f444951064c707030",
+    "8733dfd02c923d69720500c9ec8ce36a",
+    "9118e76885506476cd50cef8b2ec5def",
+    "96a472b1fd7bf855fbe44fc2d5e745ce",
+    "296fd43ed40e242875984420f29be73f",
+    "43ebdada6f6153b50a140ba908d5bf44",
+    "08d56c03e6561f6b9bec2e3f344ea3de",
+    "95abe8aeebbe88fcb0503b13109593b3",
+    "5ff5e9d5aab95667d3d2bd50e1e6792a",
+    "00d5a43a481477fa4d56a2ce152a6cfb",
+    "96977e8e00a3728097861502a449e343",
+    "ac3887576c2ce781202b9fe0fdc31420",
+    "a09eb02bbaa7a0ae171123a782c2164d",
+    "95931bb010dba306e24c79c120044ff9",
+    "a0bcdaffb0ea36b678899fd86bdc7f18",
+    "aa5585572cc045a3c2209b083635d598",
+    "dbe12d6d2e341d7b4e4216142f29e170",
+    "f371fb73e6bd6d05b306519818bd5c89",
+    "68e33d998466bbdd4bfb7249a5790e4f",
+    "d3e4e0f01836bb359725c6aa5072afce",
+    "6415a71364351c0a521fdee510bc2589",
+    "dff4ea0af62900ab4d404f3bf7649a4d",
+    "c21096fa2f550785c33dc862d83bc941",
+    "3ec81fcaac5a1da8a6ca4da0b9d8eb02",
+    "822cf4daaa4e1d16ad53d088ff567f32",
+    "50519e9e964f30dc34992f0348bd7005",
+    "f569dc48ad062a3110ff08a8d59e59ab",
+    "4cf3505e5183c26bbd97d89fdaa93f8c",
+    "43fbacb24ea30054dece1de179c4ca7e",
+    "91c429adc2dc8430461b6d87a9aef335",
+    "1d18837c0ced5c18a3a4693993e61728",
+    "5c47810953b22baa5f6f45585430fc77",
+    "4761df10c93b58dc5985ca8a43c959cf",
+    "f3abc375afaf48c7eae21500b773bd21",
+    "dbb42e010bed2259e4e27bc43e4d86c6",
+    "77e655b23c0a50d911c0384ef8fe266d",
+    "a1fdd60d2570f47fb14956ac9e96951f",
+    "c8cde50f32ca3f78a4c74a173c63449b",
+    "78e8f5b0d59512cc4910fd63b4acb7fa",
+    "6ebe901234af9615bb85b688a26ef2c4",
+    "7a5e9bdbf9b8c025b1f986d6098b6206",
+    "41915707d831e1365389d3cc47c7953f",
+    "affe8884c8c744ab2f07683ed1cf0d1a",
+    "a7e7d0f855781da215aed50e523a821c",
+    "80d8c77f6cab179d469462221f3f624a",
+    "3b5d7ec347010e177bfa04b298fc75cf"
+  ],
+  "node_id": "remote-8cpu-gate",
+  "profile": {
+    "extract_cpu_s": 2.0,
+    "extract_memory_bytes": 3221225472,
+    "extract_wall_s": 8.0,
+    "kind": "cnf_static_v1",
+    "max_download_bytes": 134217728,
+    "max_plain_bytes": 100000000
+  },
+  "resource_exclusions": [
+    {
+      "instance_id": "96a472b1fd7bf855fbe44fc2d5e745ce",
+      "reason": "plain_size_or_variable_cap"
+    },
+    {
+      "instance_id": "43ebdada6f6153b50a140ba908d5bf44",
+      "reason": "plain_size_or_variable_cap"
+    },
+    {
+      "instance_id": "ac3887576c2ce781202b9fe0fdc31420",
+      "reason": "plain_size_or_variable_cap"
+    },
+    {
+      "instance_id": "6415a71364351c0a521fdee510bc2589",
+      "reason": "plain_size_or_variable_cap"
+    },
+    {
+      "instance_id": "dff4ea0af62900ab4d404f3bf7649a4d",
+      "reason": "plain_size_or_variable_cap"
+    },
+    {
+      "instance_id": "c8cde50f32ca3f78a4c74a173c63449b",
+      "reason": "plain_size_or_variable_cap"
+    },
+    {
+      "instance_id": "6ebe901234af9615bb85b688a26ef2c4",
+      "reason": "plain_size_or_variable_cap"
+    },
+    {
+      "instance_id": "7a5e9bdbf9b8c025b1f986d6098b6206",
+      "reason": "plain_size_or_variable_cap"
+    },
+    {
+      "instance_id": "41915707d831e1365389d3cc47c7953f",
+      "reason": "plain_size_or_variable_cap"
+    }
+  ],
+  "resource_exclusions_sha256": "732bdb2940ff4b99b387f50f805fa2a9592fed3c706fc3d0ffc964323437d0ff",
+  "role_manifest_sha256": "07bc7d3e6c85a064dcfbb11a685f9d2363d02b441cbe0e19f11981b436a42ff9",
+  "schema_version": 1,
+  "shard_id": "one-time-gate",
+  "tasks": [
+    {
+      "compressed_sha256": "45319c98b80d03990c9ccdd2a355c11025546062896846c53091336fa7e7899e",
+      "input_sha256": "6e03117b00d7df8084d1d76e8ebd9474125c96b30b07daa581adbcde14440937",
+      "instance_id": "fcc4c4522c54db2f1cee86fe0fff5f4a",
+      "metadata": {
+        "bytes": 99066279,
+        "clauses": 4317588,
+        "variables": 1636233
+      },
+      "public_url": "https://benchmark-database.de/file/fcc4c4522c54db2f1cee86fe0fff5f4a",
+      "role": "development_gate",
+      "task_key": "67ff05c812f41786a6edcbe299239c25b1469a2890281e98b7398042356cf7bc"
+    },
+    {
+      "compressed_sha256": "976cdb09c6489c592eff9796d04e2be4b8c3e05f6b04a2c703fbf4e4952186b5",
+      "input_sha256": "7ae6a46ccb91ee53d6d8d183bced5db11c49eaae99c78b2c1c9ba01d04655c63",
+      "instance_id": "ae9c53347ee8072745ed230992e164ee",
+      "metadata": {
+        "bytes": 145201,
+        "clauses": 9722,
+        "variables": 2983
+      },
+      "public_url": "https://benchmark-database.de/file/ae9c53347ee8072745ed230992e164ee",
+      "role": "development_gate",
+      "task_key": "20ca792f01386d3072cd796d92535f7185cfc77896dfdbe4989a9ff73581f164"
+    },
+    {
+      "compressed_sha256": "b23712b22c24f96bfeeda1fb8fdcd32dbc39c8f37d2f8ba49b69b79829875395",
+      "input_sha256": "a4c0a98f171d02b1780abd700050c7f7fde11fd52f99f1d2bd8ecfcc0c748eac",
+      "instance_id": "0205e2dffaef93a90c239df31755f2e1",
+      "metadata": {
+        "bytes": 23954046,
+        "clauses": 933756,
+        "variables": 103337
+      },
+      "public_url": "https://benchmark-database.de/file/0205e2dffaef93a90c239df31755f2e1",
+      "role": "development_gate",
+      "task_key": "de81c703bbd502eff558ce1344281273ad3ef3d7acea2acfdbdd8c9755a00c55"
+    },
+    {
+      "compressed_sha256": "5bf7c9ee8e48de43c4700a7a74ae2ee40669efac2b75fe8cd3f1df34a593c8f9",
+      "input_sha256": "fa943629ece00da65aea7f2ce5dac001baa0bcff1a7f42d6ad2bfbc9c4a8d090",
+      "instance_id": "f1cd694d42891a20c96a65ee1c321edc",
+      "metadata": {
+        "bytes": 3482177,
+        "clauses": 166276,
+        "variables": 7932
+      },
+      "public_url": "https://benchmark-database.de/file/f1cd694d42891a20c96a65ee1c321edc",
+      "role": "development_gate",
+      "task_key": "dfc876c2988d83c2ad4898b8dff91dd0a4b97fad2a44d0a6cbe6508a9981811c"
+    },
+    {
+      "compressed_sha256": "4d1dea5ca2efde89744c547b69990148c6e0fa3e247ba5f78f82c085697c7ff9",
+      "input_sha256": "2f23038727e67a9c3179d8a2bad23fe56e2e5a2952c79b84f42ed4f61df4654a",
+      "instance_id": "8f391f2bf8167f1b96467f3479b33dc5",
+      "metadata": {
+        "bytes": 8191823,
+        "clauses": 389661,
+        "variables": 11086
+      },
+      "public_url": "https://benchmark-database.de/file/8f391f2bf8167f1b96467f3479b33dc5",
+      "role": "development_gate",
+      "task_key": "0d83fac7bd9de20cd497db72b4bfbfd166d2633bd0e2f1b412c03739a83e479c"
+    },
+    {
+      "compressed_sha256": "fcda61076695cc9f09fd4dd1ba302ddb72bd6fab04d29612c04d4c5bc6be4fea",
+      "input_sha256": "56cd26bfd63e66949d40d565145d958943def5ff882097a65850cb4fee6fd32f",
+      "instance_id": "110f8eb8b9b80204fe955ea0973bbb00",
+      "metadata": {
+        "bytes": 382656,
+        "clauses": 25042,
+        "variables": 825
+      },
+      "public_url": "https://benchmark-database.de/file/110f8eb8b9b80204fe955ea0973bbb00",
+      "role": "development_gate",
+      "task_key": "b107ece3b6413404efc87cfaa04ef21d41ed9151cbced928df2aacedb7b1eb8c"
+    },
+    {
+      "compressed_sha256": "b593364c559acab10fed9546371efe2f96683fd2c21021439dc340d6fa1ea85c",
+      "input_sha256": "758e21c6bdb82922f0eb1c12f5ff492d27d0c7bd3415f9bfe2111963ed5d1884",
+      "instance_id": "28eeb2beac7005a9afa98e4d3aaca621",
+      "metadata": {
+        "bytes": 31120473,
+        "clauses": 1553818,
+        "variables": 489124
+      },
+      "public_url": "https://benchmark-database.de/file/28eeb2beac7005a9afa98e4d3aaca621",
+      "role": "development_gate",
+      "task_key": "c0db875a87578e92a5b79e32b15364ca5bfb4b387dab8042fa642d0f7b677040"
+    },
+    {
+      "compressed_sha256": "51907671051cdecfab72b2c27d8cfc767b926a6203e58771251fc0fe06d22c6a",
+      "input_sha256": "ec4d0975a10d8f7085c82249c990bdfcc99365f72575f823d877c943bcf7fa1b",
+      "instance_id": "5314fd6ccb53b6f6af49a594ea68a273",
+      "metadata": {
+        "bytes": 31128561,
+        "clauses": 1553935,
+        "variables": 488843
+      },
+      "public_url": "https://benchmark-database.de/file/5314fd6ccb53b6f6af49a594ea68a273",
+      "role": "development_gate",
+      "task_key": "bdcdb5e43ad23df04fa58a524c022e20782f091ad2e0f36a13b981c8d8349d41"
+    },
+    {
+      "compressed_sha256": "74ab861e2284c627e56937118c8f38746560395171d4c1ffe8623803350be23a",
+      "input_sha256": "734a1be902dbb2f6d5927f77734a75daa6416140aa05704484177ac999a9d319",
+      "instance_id": "2c8eb0402be32cf281e23f00d5a16259",
+      "metadata": {
+        "bytes": 31094496,
+        "clauses": 1552964,
+        "variables": 488712
+      },
+      "public_url": "https://benchmark-database.de/file/2c8eb0402be32cf281e23f00d5a16259",
+      "role": "development_gate",
+      "task_key": "12f96dda300564425c72ed79bd71d8f60aa9fcdab249fae8feba2572e257afb8"
+    },
+    {
+      "compressed_sha256": "42e29a2523a89bc1304e5f9158ce1bcd0961565bb1016a3abd2281be1a97a670",
+      "input_sha256": "fef5e2fab11e4167376711abd0a19f1ceeb8c093c3bed7d91a022f0f2a6d8e68",
+      "instance_id": "6f6a20cd654701b5e7fe9e9e0e5e7787",
+      "metadata": {
+        "bytes": 698759,
+        "clauses": 52938,
+        "variables": 2295
+      },
+      "public_url": "https://benchmark-database.de/file/6f6a20cd654701b5e7fe9e9e0e5e7787",
+      "role": "development_gate",
+      "task_key": "b750c952835a89b55b6008f6abc14d9e5966c6b32e884da92113d768462a3f35"
+    },
+    {
+      "compressed_sha256": "d595b9bbd41b55a74a137f0e328d119dfb47bd3c51f8659c5d69f3edcf8e5ff8",
+      "input_sha256": "ca3b6feb22f778d4519f3da8dfb1c5989a69187e2a6c04e696005977b3c1458b",
+      "instance_id": "5c24cfeff639fefdead9a5641f65fa22",
+      "metadata": {
+        "bytes": 156408,
+        "clauses": 11076,
+        "variables": 4004
+      },
+      "public_url": "https://benchmark-database.de/file/5c24cfeff639fefdead9a5641f65fa22",
+      "role": "development_gate",
+      "task_key": "7b3744bc3aac88288a374e7db490a6bcc47606b899c2c27efd1c3928137390b6"
+    },
+    {
+      "compressed_sha256": "31752200dab75187bcf02889824f806e3de47cd27c162bd0a74cc785a16da8b7",
+      "input_sha256": "cb08d69722837564efdf9b2e940f6b7a5d73f87def5dbbcfcd93ab3c5037f218",
+      "instance_id": "989ca6ab309ca52a6ff957b6896aa03e",
+      "metadata": {
+        "bytes": 157738,
+        "clauses": 10653,
+        "variables": 3327
+      },
+      "public_url": "https://benchmark-database.de/file/989ca6ab309ca52a6ff957b6896aa03e",
+      "role": "development_gate",
+      "task_key": "04610e73f6df7438bcf271299c6d2aebb88180e292e9814da30da624c8e27995"
+    },
+    {
+      "compressed_sha256": "7637676b96aaacb4d90ae6e1a8031a3046fe2546d53bc780d96de3b534a8d690",
+      "input_sha256": "2452e1964103c0680ced126c4303e4552326f63c8eaa669b1d8d726c978fcb9e",
+      "instance_id": "f37757b26c83935780be4f814f8ea401",
+      "metadata": {
+        "bytes": 14557769,
+        "clauses": 699346,
+        "variables": 79787
+      },
+      "public_url": "https://benchmark-database.de/file/f37757b26c83935780be4f814f8ea401",
+      "role": "development_gate",
+      "task_key": "240a01d9e05c1c7ac9b32a259425381a22c9a4e316d84f410dca78404f307db7"
+    },
+    {
+      "compressed_sha256": "3e34f19ffca8fafdad0a571268892478ecff86de6f3b82edad43cdc7f5d64144",
+      "input_sha256": "d48ffa1e146c4a673ca6287e9305d9d5a23f4694a80b8bd2587977c03873b8e9",
+      "instance_id": "207ebdf62e5ce54c8b4ddeeb17843a56",
+      "metadata": {
+        "bytes": 20668286,
+        "clauses": 885166,
+        "variables": 194668
+      },
+      "public_url": "https://benchmark-database.de/file/207ebdf62e5ce54c8b4ddeeb17843a56",
+      "role": "development_gate",
+      "task_key": "ced90d397cd34e378bc3c4b7544f3fd189954d98762bd4a0606d4f58f81e2e28"
+    },
+    {
+      "compressed_sha256": "3e7f873b6d464e51e220d3555d03cf43c18c6cae40e3d079b57d781e0eedda21",
+      "input_sha256": "8dc9e7655aca6de61587ca83f768eda29b4d7cfb7add4438bd865c7f3258786f",
+      "instance_id": "84282cd481f7614f444951064c707030",
+      "metadata": {
+        "bytes": 175279,
+        "clauses": 11072,
+        "variables": 3328
+      },
+      "public_url": "https://benchmark-database.de/file/84282cd481f7614f444951064c707030",
+      "role": "development_gate",
+      "task_key": "51c2e4f2c3c4d1de4a36956f54b76f46d2f46032c77275a87192232bee82e631"
+    },
+    {
+      "compressed_sha256": "329881c829c5d7fc1c2a85f41d0f88218253c086d4c0d9021f3bb33bc31a86eb",
+      "input_sha256": "fa66334a47133538acdaa3a67c1614379f50a3ddfab7e60c39221b56d5ba2bb2",
+      "instance_id": "8733dfd02c923d69720500c9ec8ce36a",
+      "metadata": {
+        "bytes": 53954112,
+        "clauses": 2303783,
+        "variables": 519984
+      },
+      "public_url": "https://benchmark-database.de/file/8733dfd02c923d69720500c9ec8ce36a",
+      "role": "development_gate",
+      "task_key": "e4bd9a0654980555ddcc9893524157c1b11d4e574b2acacd871b74bdd6261524"
+    },
+    {
+      "compressed_sha256": "aef3830a01a28947c6b4b151fac24a09a5c4980ef8305b74f97fbe4cbd3837da",
+      "input_sha256": "9cb50243606f7fa261a1e92a8faa3f04180023da1760f86ef7dd62b2a1d487b8",
+      "instance_id": "9118e76885506476cd50cef8b2ec5def",
+      "metadata": {
+        "bytes": 1242580,
+        "clauses": 19380,
+        "variables": 153
+      },
+      "public_url": "https://benchmark-database.de/file/9118e76885506476cd50cef8b2ec5def",
+      "role": "development_gate",
+      "task_key": "de45354f3f9a90bd8ba73201e0dd9853c119f2b068eee74311162387eb770adb"
+    },
+    {
+      "compressed_sha256": "94b4054482ad153508d0574004c251c4f2a311633acf2007803666297b61c70e",
+      "input_sha256": "9192896bdc3d3224e572eed8c19af793ffac3d4456626f2a1088819d810a3a9f",
+      "instance_id": "296fd43ed40e242875984420f29be73f",
+      "metadata": {
+        "bytes": 11969310,
+        "clauses": 552424,
+        "variables": 14240
+      },
+      "public_url": "https://benchmark-database.de/file/296fd43ed40e242875984420f29be73f",
+      "role": "development_gate",
+      "task_key": "e398cac90771044cf33370b9c4d7d7ca6955668ba73ad85dd806935be094ae7b"
+    },
+    {
+      "compressed_sha256": "8d24b32a0cf912b3e347e690f7c323ca7531c0a832ee52850bdeda1cb733b43f",
+      "input_sha256": "efb7e17df494bfa073e839056a7263cceec6269cf8c1c6cef03c6da5a7ae0973",
+      "instance_id": "08d56c03e6561f6b9bec2e3f344ea3de",
+      "metadata": {
+        "bytes": 286332,
+        "clauses": 18844,
+        "variables": 663
+      },
+      "public_url": "https://benchmark-database.de/file/08d56c03e6561f6b9bec2e3f344ea3de",
+      "role": "development_gate",
+      "task_key": "590c0446791ea19771453a256ec38f17ea97d7b2366fab88f601381d8173ad27"
+    },
+    {
+      "compressed_sha256": "c70a9a3f6d819740d6845bf777b4a2517e2639f343d99882b05e143ab5923882",
+      "input_sha256": "16b4a18847a91863b67e70a93ba8fdeaf02d25f03d518a477d707a661fd33808",
+      "instance_id": "95abe8aeebbe88fcb0503b13109593b3",
+      "metadata": {
+        "bytes": 50984722,
+        "clauses": 2184406,
+        "variables": 491780
+      },
+      "public_url": "https://benchmark-database.de/file/95abe8aeebbe88fcb0503b13109593b3",
+      "role": "development_gate",
+      "task_key": "e4bfaa7f5c7bb34ae0f4a5164235a57351c6a8d2178ce6f8299c4c629fc37f9b"
+    },
+    {
+      "compressed_sha256": "e66fecc46355a892b6b604082d52d7cb2726ceb6d8f1997fc9874115a93d8feb",
+      "input_sha256": "6ce6bda3c247b1a8b0714a229b92f84bf849a9a634076eaaf6bc2d599aaf42d2",
+      "instance_id": "5ff5e9d5aab95667d3d2bd50e1e6792a",
+      "metadata": {
+        "bytes": 1182893,
+        "clauses": 73629,
+        "variables": 26076
+      },
+      "public_url": "https://benchmark-database.de/file/5ff5e9d5aab95667d3d2bd50e1e6792a",
+      "role": "development_gate",
+      "task_key": "33d63c08d9212d59185a1843506073261675b4d4f775b1282d31b3718f8a18a1"
+    },
+    {
+      "compressed_sha256": "5516ab2104fa98ba89fbb512f2bc5adf24f95ead37e82482be595c2c8c1114c2",
+      "input_sha256": "03633885a7b17597738c2947ab2fbc3c19f0e0121c6ea46dbcfea8e4138b8a9a",
+      "instance_id": "00d5a43a481477fa4d56a2ce152a6cfb",
+      "metadata": {
+        "bytes": 1318246,
+        "clauses": 79728,
+        "variables": 2670
+      },
+      "public_url": "https://benchmark-database.de/file/00d5a43a481477fa4d56a2ce152a6cfb",
+      "role": "development_gate",
+      "task_key": "32364a77064386b4b1017af7f5e2cb28b07e3da7c245b22a57988138b8bae58c"
+    },
+    {
+      "compressed_sha256": "31b74772b628cdc1156a7b19bef51ec94dc516ee9eea8a035712c86fbf61e659",
+      "input_sha256": "59a2b4f7463a447066b617723b8aa274573ed8e028d86373f054d515af6abb7d",
+      "instance_id": "96977e8e00a3728097861502a449e343",
+      "metadata": {
+        "bytes": 115043,
+        "clauses": 8333,
+        "variables": 4512
+      },
+      "public_url": "https://benchmark-database.de/file/96977e8e00a3728097861502a449e343",
+      "role": "development_gate",
+      "task_key": "b00e67b9842b821d12e75d546c443c20ec637433236fd5d66d53448d702d6896"
+    },
+    {
+      "compressed_sha256": "fb15d6eecd2de145907d5d28626c2ab46ff1860761d93b79ffdc3b7e35a1df19",
+      "input_sha256": "186093b206718e3bd066a5ee6d3f9a8ca64afc6c71b08a62856c243e634f4846",
+      "instance_id": "a09eb02bbaa7a0ae171123a782c2164d",
+      "metadata": {
+        "bytes": 764819,
+        "clauses": 57681,
+        "variables": 2448
+      },
+      "public_url": "https://benchmark-database.de/file/a09eb02bbaa7a0ae171123a782c2164d",
+      "role": "development_gate",
+      "task_key": "5723aaa91c0014c46fb467413a7b1974438f389457cecc42310ad32a585cf8f8"
+    },
+    {
+      "compressed_sha256": "61295547bdb4559ab791b8463aac03736bb475e4461647aa9bce855ad369e6d3",
+      "input_sha256": "fa6316bedede302e49b4e1acadba7d0a6edf58d7f08574e7d67b692ab447e518",
+      "instance_id": "95931bb010dba306e24c79c120044ff9",
+      "metadata": {
+        "bytes": 17038699,
+        "clauses": 835965,
+        "variables": 260336
+      },
+      "public_url": "https://benchmark-database.de/file/95931bb010dba306e24c79c120044ff9",
+      "role": "development_gate",
+      "task_key": "89c5815268464a1932a1498237de7e49d2dd553eb77c9b58066c235dedb1571b"
+    },
+    {
+      "compressed_sha256": "cf38f2659dd6146084940ec311c05d69019f2990a7e7f39938ab4b562e63a935",
+      "input_sha256": "5ede69caeee70d7bd6c52d49a340c8fe85f1018bea51047b58eda0ea8e84717f",
+      "instance_id": "a0bcdaffb0ea36b678899fd86bdc7f18",
+      "metadata": {
+        "bytes": 386792,
+        "clauses": 16697,
+        "variables": 4487
+      },
+      "public_url": "https://benchmark-database.de/file/a0bcdaffb0ea36b678899fd86bdc7f18",
+      "role": "development_gate",
+      "task_key": "0faf07637e392bfba41106ae6545c9b20300748bc57161264a2e155901d9b109"
+    },
+    {
+      "compressed_sha256": "480ea4642eaf294b23f1b46dbeb37c7c51aabddf30f0183759bfc518af90acb6",
+      "input_sha256": "186cd0b352985d3d927fd29a90809bbf6c8b7f7d1ee6b7e60c7ba851d8db587a",
+      "instance_id": "aa5585572cc045a3c2209b083635d598",
+      "metadata": {
+        "bytes": 1022452,
+        "clauses": 62391,
+        "variables": 2445
+      },
+      "public_url": "https://benchmark-database.de/file/aa5585572cc045a3c2209b083635d598",
+      "role": "development_gate",
+      "task_key": "344c0bb1a567eefa2728d70d86cbcf720f35a938cfcb664e466f0b02e71aa2fd"
+    },
+    {
+      "compressed_sha256": "1b80df61515dfe4652a0d73a59fb287efd3cb0e95d43899c243cf3e17f7a1a02",
+      "input_sha256": "dd910dcc478d28303565cc26795b539db17de30230902fcf87400a85c12b01bb",
+      "instance_id": "dbe12d6d2e341d7b4e4216142f29e170",
+      "metadata": {
+        "bytes": 15069461,
+        "clauses": 722493,
+        "variables": 83454
+      },
+      "public_url": "https://benchmark-database.de/file/dbe12d6d2e341d7b4e4216142f29e170",
+      "role": "development_gate",
+      "task_key": "2558b4ab22e43c92df1aaa65ee45781f79b346c2199741374bc7b2d6a01d8993"
+    },
+    {
+      "compressed_sha256": "fb663d8a4adbd8f2222b74949213ac7e096061120ef9546812c71182f2976aea",
+      "input_sha256": "eb6cc838ded5b29c62937b183fa15c7247075a6d95db38b7ee5dad8c8959661e",
+      "instance_id": "f371fb73e6bd6d05b306519818bd5c89",
+      "metadata": {
+        "bytes": 161936,
+        "clauses": 13501,
+        "variables": 1000
+      },
+      "public_url": "https://benchmark-database.de/file/f371fb73e6bd6d05b306519818bd5c89",
+      "role": "development_gate",
+      "task_key": "1ce35c3487ff2ea839b6c5b1180322c5856e7a66dd1d3f9b532856191c157f1e"
+    },
+    {
+      "compressed_sha256": "af2e88f246a29ce877b3c0d03af40c79ce4970fb2fe01b95d9a606b29d850334",
+      "input_sha256": "8f7a643162c518fd686bab737d8992b5748cc061e8ddf203f3e33730263dc197",
+      "instance_id": "68e33d998466bbdd4bfb7249a5790e4f",
+      "metadata": {
+        "bytes": 386753,
+        "clauses": 16697,
+        "variables": 4487
+      },
+      "public_url": "https://benchmark-database.de/file/68e33d998466bbdd4bfb7249a5790e4f",
+      "role": "development_gate",
+      "task_key": "82fc68b2c5ff0017a5cd73330ab17030da62b2a37a13d8aeb2b8c33e66403bcb"
+    },
+    {
+      "compressed_sha256": "ef62d536e76ae18000ab2394352fd9c3a534f7694621ef7e90897b8a277cb6aa",
+      "input_sha256": "f27be9b1b7bb43c2dcec32c9332c0d4f9f3320dabce835d23a131efa73d1f078",
+      "instance_id": "d3e4e0f01836bb359725c6aa5072afce",
+      "metadata": {
+        "bytes": 22593485,
+        "clauses": 874467,
+        "variables": 92439
+      },
+      "public_url": "https://benchmark-database.de/file/d3e4e0f01836bb359725c6aa5072afce",
+      "role": "development_gate",
+      "task_key": "7585758d8808836e87d242794004a114aa38bb64346bcc7aef7371b3a51ce6ad"
+    },
+    {
+      "compressed_sha256": "c84f519571dd1884f77a9d92beba5aad9452a92c4707e48782a58ec4607d5d11",
+      "input_sha256": "8e35ce4c0f71d6e0dd1b130f637ac9b742b3aab9abd4f1dd236ec1be211b7834",
+      "instance_id": "c21096fa2f550785c33dc862d83bc941",
+      "metadata": {
+        "bytes": 61613,
+        "clauses": 4949,
+        "variables": 550
+      },
+      "public_url": "https://benchmark-database.de/file/c21096fa2f550785c33dc862d83bc941",
+      "role": "development_gate",
+      "task_key": "eed2b2788c369026c1d0087ed5c541b304c0826ffcb0697f1a91ad21913d0d65"
+    },
+    {
+      "compressed_sha256": "104a39c466be32edb518ecaaebde3548db372a3857b3987191c2c46ab0763214",
+      "input_sha256": "63489eea8c526a62cb2e01099a7e8a53ee736f18238d83f963faca807846c9f8",
+      "instance_id": "3ec81fcaac5a1da8a6ca4da0b9d8eb02",
+      "metadata": {
+        "bytes": 5861787,
+        "clauses": 312356,
+        "variables": 52092
+      },
+      "public_url": "https://benchmark-database.de/file/3ec81fcaac5a1da8a6ca4da0b9d8eb02",
+      "role": "development_gate",
+      "task_key": "15931823dfa4b5bf4a98e4f87c5f23aa180d323f8750b588d3e046862610ab7a"
+    },
+    {
+      "compressed_sha256": "821b44883639c7025145b7be7763d45db01938d99da20a2eccc56432184e83b0",
+      "input_sha256": "52863961df9cf2439359c9a23bb3c26ce18346a2966a7daf109fc0d2a46e99ff",
+      "instance_id": "822cf4daaa4e1d16ad53d088ff567f32",
+      "metadata": {
+        "bytes": 326969,
+        "clauses": 26040,
+        "variables": 1365
+      },
+      "public_url": "https://benchmark-database.de/file/822cf4daaa4e1d16ad53d088ff567f32",
+      "role": "development_gate",
+      "task_key": "484c0efcdc59fa059bcd079d6a3a2c28eb5d470fa80e25f1c1c745a8c4ab8ddf"
+    },
+    {
+      "compressed_sha256": "7bd133579ea293cef55a137c298c760725e5e2301458b38f439f1fa52e097b29",
+      "input_sha256": "9facfc19f4db07ba1fdfe4d2dbb711990fb985e03f5b89778ec9ffefccff29f3",
+      "instance_id": "50519e9e964f30dc34992f0348bd7005",
+      "metadata": {
+        "bytes": 386507,
+        "clauses": 16697,
+        "variables": 4487
+      },
+      "public_url": "https://benchmark-database.de/file/50519e9e964f30dc34992f0348bd7005",
+      "role": "development_gate",
+      "task_key": "a327c3f22afa25dc3cfdfbd5f5634b6875f5303921f1e4967f77b2d45576c2c8"
+    },
+    {
+      "compressed_sha256": "25da764610dc79ac7331bedd4de50cbe6faf8503c605727abc1e9219c0dc0451",
+      "input_sha256": "f89479bde5399a7313fc82c0923e906944c45462ed27988972a506850cdef6cf",
+      "instance_id": "f569dc48ad062a3110ff08a8d59e59ab",
+      "metadata": {
+        "bytes": 64549483,
+        "clauses": 3181365,
+        "variables": 76200
+      },
+      "public_url": "https://benchmark-database.de/file/f569dc48ad062a3110ff08a8d59e59ab",
+      "role": "development_gate",
+      "task_key": "b387347e5962a97be945e1c371a7ae767722e87cad073049c835a3be93d8da80"
+    },
+    {
+      "compressed_sha256": "127e2046a08dd56fbe6367fd8be54687ffdec76d4bee4de46c6d6342c6bd87c6",
+      "input_sha256": "d294ec24db4fd8a7fcb9f3cf6fa233f313bcd107044e451172aeadc4ae0c02df",
+      "instance_id": "4cf3505e5183c26bbd97d89fdaa93f8c",
+      "metadata": {
+        "bytes": 4135363,
+        "clauses": 195254,
+        "variables": 8966
+      },
+      "public_url": "https://benchmark-database.de/file/4cf3505e5183c26bbd97d89fdaa93f8c",
+      "role": "development_gate",
+      "task_key": "f2e2efc7a1de2ea407f2002d313987d15fe193f00fc2f29a49a946a93636d99e"
+    },
+    {
+      "compressed_sha256": "2e2e30dc28ce27f975225804ab38ee346d2e996d599957424354c67dc7fcb55b",
+      "input_sha256": "bf246b9a0224c76fd78c46778fe3d93b392fd696ee9d0758d376d6f155fdac08",
+      "instance_id": "43fbacb24ea30054dece1de179c4ca7e",
+      "metadata": {
+        "bytes": 588318,
+        "clauses": 48439,
+        "variables": 802
+      },
+      "public_url": "https://benchmark-database.de/file/43fbacb24ea30054dece1de179c4ca7e",
+      "role": "development_gate",
+      "task_key": "8b44b823f06d0357676fc2e7e5dbf35964d44356d79a7b773799fc69f69c940b"
+    },
+    {
+      "compressed_sha256": "d6cf935e03069ded9149c90dae8dcd879f657bbf0734cf785abfb20364b292df",
+      "input_sha256": "9d69130dbd5c57086781a4798bfbea98aa4dd1c197419ed4cbdd40bf7264c86e",
+      "instance_id": "91c429adc2dc8430461b6d87a9aef335",
+      "metadata": {
+        "bytes": 142488,
+        "clauses": 9625,
+        "variables": 2964
+      },
+      "public_url": "https://benchmark-database.de/file/91c429adc2dc8430461b6d87a9aef335",
+      "role": "development_gate",
+      "task_key": "038443ae1d049468adcb80103f32871dece6ec2035f3bdf4d44a30328bd1d18e"
+    },
+    {
+      "compressed_sha256": "f478e87edfd222efbf22706f73c89fefc5ff2291c8fffbcd8266edd8c73cc0f1",
+      "input_sha256": "25c30c0878f6bb8034445a0b5852f2b9179e1679bc6bedfddf9088f413efb8d9",
+      "instance_id": "1d18837c0ced5c18a3a4693993e61728",
+      "metadata": {
+        "bytes": 13457873,
+        "clauses": 668213,
+        "variables": 213083
+      },
+      "public_url": "https://benchmark-database.de/file/1d18837c0ced5c18a3a4693993e61728",
+      "role": "development_gate",
+      "task_key": "30f66d6db4f8900fdbb95ba04d91e0589f6257d2e9f14cb0e1d1df3cd340d08c"
+    },
+    {
+      "compressed_sha256": "ddc5401e59d155512cf289cea0844387ee2a0ebcb487b223f983f5e84673da8f",
+      "input_sha256": "f7a77b5915493720f0c7ad4dd04743063b1cc196cec63233955a6c48db820a7a",
+      "instance_id": "5c47810953b22baa5f6f45585430fc77",
+      "metadata": {
+        "bytes": 31043988,
+        "clauses": 1550302,
+        "variables": 488500
+      },
+      "public_url": "https://benchmark-database.de/file/5c47810953b22baa5f6f45585430fc77",
+      "role": "development_gate",
+      "task_key": "53372cadd966e3fac8c66195f12a0db294036809854ba903d17bdff637cdf494"
+    },
+    {
+      "compressed_sha256": "c184946175c52931579f5fc312e6b8f0b15cc9f2c4bf4d97d28245cc3f590073",
+      "input_sha256": "86b4d6979b225cfb3cf553b6d5157ef18cd81880279995b10fe3c96e5d900b8e",
+      "instance_id": "4761df10c93b58dc5985ca8a43c959cf",
+      "metadata": {
+        "bytes": 386808,
+        "clauses": 16697,
+        "variables": 4487
+      },
+      "public_url": "https://benchmark-database.de/file/4761df10c93b58dc5985ca8a43c959cf",
+      "role": "development_gate",
+      "task_key": "a3149ab131dcbb518163f6faa7d4675d17d9bc4580bc610bcc1e377b04740023"
+    },
+    {
+      "compressed_sha256": "a61791616e38c1ad78e7c19815ecee941e842055bc15dec730173ade6bb97486",
+      "input_sha256": "937ec11b29143cbb27213a42737ce9fcdb20b43d6e4f4b3c90b40d83a6c5163d",
+      "instance_id": "f3abc375afaf48c7eae21500b773bd21",
+      "metadata": {
+        "bytes": 38948285,
+        "clauses": 1273608,
+        "variables": 319200
+      },
+      "public_url": "https://benchmark-database.de/file/f3abc375afaf48c7eae21500b773bd21",
+      "role": "development_gate",
+      "task_key": "d8b5ab49b05dec73926c6a465f49f710b463dfb728707c0b12ee05de6f5b6b93"
+    },
+    {
+      "compressed_sha256": "bc80e58d8b3f0cad7c2553ada269639afef339767f08a13518258a06bb63073e",
+      "input_sha256": "163e390edd9a4dd010ef36ab7299e62cbb9ee0e1edbbd3f724b14a8d839b951e",
+      "instance_id": "dbb42e010bed2259e4e27bc43e4d86c6",
+      "metadata": {
+        "bytes": 85307,
+        "clauses": 6248,
+        "variables": 3432
+      },
+      "public_url": "https://benchmark-database.de/file/dbb42e010bed2259e4e27bc43e4d86c6",
+      "role": "development_gate",
+      "task_key": "c94467843e28db6353446bac5219de9120c91e1f1204ccdb98efd8ebc65d8b9c"
+    },
+    {
+      "compressed_sha256": "9bd7ebb6a39dcfd8ed5a5649d6a3202eb9c1cdd97e36ad3e60a54d2fd5f69dbb",
+      "input_sha256": "342d106e91d59e80b4ee4f69fabfa4d393adfeb5122e57c5e9ea675adf9a033b",
+      "instance_id": "77e655b23c0a50d911c0384ef8fe266d",
+      "metadata": {
+        "bytes": 19119523,
+        "clauses": 934037,
+        "variables": 294338
+      },
+      "public_url": "https://benchmark-database.de/file/77e655b23c0a50d911c0384ef8fe266d",
+      "role": "development_gate",
+      "task_key": "8bf21188da544f4b976343d9f026153dd7d6bacb4df93e85fbb2d4d6787a7081"
+    },
+    {
+      "compressed_sha256": "a0b99339c3be42ea59cfb4d917414f217fbb16860722fe43784d255fb7d59cb3",
+      "input_sha256": "071d0a27e54b00d21aa899bfec7d949df6791bf84d92cfd52dbb0d67f493d61a",
+      "instance_id": "a1fdd60d2570f47fb14956ac9e96951f",
+      "metadata": {
+        "bytes": 9995490,
+        "clauses": 467452,
+        "variables": 12623
+      },
+      "public_url": "https://benchmark-database.de/file/a1fdd60d2570f47fb14956ac9e96951f",
+      "role": "development_gate",
+      "task_key": "f326d1931cc1a842f3c43bcff66c1b1f1de720d775e6f6c5b87707ffa1b14a6d"
+    },
+    {
+      "compressed_sha256": "a59d080b701c78bb7e341eb1ba18b893709f23e47c71f69cfabd6934791587ff",
+      "input_sha256": "b5f5fe3b7b77c0fd2ebbc022dbc2713d13390c965550fadc59e08ea1133905f6",
+      "instance_id": "78e8f5b0d59512cc4910fd63b4acb7fa",
+      "metadata": {
+        "bytes": 534205,
+        "clauses": 41072,
+        "variables": 1904
+      },
+      "public_url": "https://benchmark-database.de/file/78e8f5b0d59512cc4910fd63b4acb7fa",
+      "role": "development_gate",
+      "task_key": "8645f82099499ab83536e4449d8c873a51ca2a5928ef75818245965c1dd6ac9f"
+    },
+    {
+      "compressed_sha256": "eb9fc53cf79c6627c1aefb6e8240febb2c94ae87cef853b3033e3c9ebb7d8f60",
+      "input_sha256": "66cdb423557041a972adf5f1200c6c3bbeaeebc92dbc266c460bac5dd19e9531",
+      "instance_id": "affe8884c8c744ab2f07683ed1cf0d1a",
+      "metadata": {
+        "bytes": 16875332,
+        "clauses": 829219,
+        "variables": 259410
+      },
+      "public_url": "https://benchmark-database.de/file/affe8884c8c744ab2f07683ed1cf0d1a",
+      "role": "development_gate",
+      "task_key": "2a05d48e005c51446debbc38992122346588339b57c4a76920465a747749d368"
+    },
+    {
+      "compressed_sha256": "93acd44b6ad942156eee651c936d193f3a08828ee25f7f176d0f56b956d9b96c",
+      "input_sha256": "c8a91cb6f69f7d88b98fd9a935006e0d9ca600457fa89cdfdfbc876f4c7ad59f",
+      "instance_id": "a7e7d0f855781da215aed50e523a821c",
+      "metadata": {
+        "bytes": 1518693,
+        "clauses": 93483,
+        "variables": 33427
+      },
+      "public_url": "https://benchmark-database.de/file/a7e7d0f855781da215aed50e523a821c",
+      "role": "development_gate",
+      "task_key": "1fe15da4ff68247f93df64824d749fe421de545041d8408740eabd393bf4f1a1"
+    },
+    {
+      "compressed_sha256": "e7f677d8f87763e61d84958271639a8ed78e1e50814ba0b4a94e0807346a5c30",
+      "input_sha256": "836c090f69634dd74f106ddf98be45ef73834309110e1606b402495ee3bb6a5a",
+      "instance_id": "80d8c77f6cab179d469462221f3f624a",
+      "metadata": {
+        "bytes": 925203,
+        "clauses": 60026,
+        "variables": 1065
+      },
+      "public_url": "https://benchmark-database.de/file/80d8c77f6cab179d469462221f3f624a",
+      "role": "development_gate",
+      "task_key": "dcb3b84d20b1272534fc1f7e870d299845f3e37556c67deccfb4a5439ebd6576"
+    },
+    {
+      "compressed_sha256": "3ce464fb9cf39c7818d4da76def8c5a3cdf3f6a2c270eeeb4d264873e026686d",
+      "input_sha256": "c85efa6b1ea54421a302ac3e0db69bdc160260ab138bcd994014e066c29c16fb",
+      "instance_id": "3b5d7ec347010e177bfa04b298fc75cf",
+      "metadata": {
+        "bytes": 11293076,
+        "clauses": 574910,
+        "variables": 172500
+      },
+      "public_url": "https://benchmark-database.de/file/3b5d7ec347010e177bfa04b298fc75cf",
+      "role": "development_gate",
+      "task_key": "aea322b769568cb0397cfa4a713ae6351287954458b638e5a935d39bb1179afc"
+    }
+  ]
+}

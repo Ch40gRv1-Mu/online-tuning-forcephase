@@ -1,0 +1,11 @@
+{
+  "this_project_measured_physical_stage_cpu_h": 24.75393762112167,
+  "other_owner_measured_cpu_s": 288.079916455,
+  "other_owner_cost_ledger_sha256": "fbb8cd333c43ccf37178b50644e44caf54f30c6bdaa2e980029e0203d674ffa0",
+  "known_combined_measured_cpu_h": 24.833959820136947,
+  "unmeasured_engineering_is_not_zero": true,
+  "existing_engineering_reserve_h": 3,
+  "known_plus_existing_reserve_h": 27.833959820136947,
+  "total_cap_h": 100,
+  "solver_or_trajectory_reuse_counted_again": false
+}

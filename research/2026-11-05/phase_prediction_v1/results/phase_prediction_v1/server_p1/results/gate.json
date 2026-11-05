@@ -1,0 +1,54 @@
+{
+  "cpu_s": 0.19511,
+  "note": "Synthetic gate inputs only; no development or final test performance used.",
+  "status": "PASS",
+  "test_count": 8,
+  "tests": [
+    {
+      "action": "D",
+      "cpu_s": 0.008612999999999999,
+      "passed": true,
+      "test": "SAT_model"
+    },
+    {
+      "action": "D",
+      "cpu_s": 0.068928,
+      "passed": true,
+      "test": "UNSAT_LRAT"
+    },
+    {
+      "action": "Fplus",
+      "cpu_s": 0.006587,
+      "passed": true,
+      "test": "SAT_model"
+    },
+    {
+      "action": "Fplus",
+      "cpu_s": 0.053144,
+      "passed": true,
+      "test": "UNSAT_LRAT"
+    },
+    {
+      "action": "Fminus",
+      "cpu_s": 0.0069949999999999995,
+      "passed": true,
+      "test": "SAT_model"
+    },
+    {
+      "action": "Fminus",
+      "cpu_s": 0.040435,
+      "passed": true,
+      "test": "UNSAT_LRAT"
+    },
+    {
+      "cpu_s": 0.005422,
+      "passed": true,
+      "test": "structure_tree"
+    },
+    {
+      "cpu_s": 0.004986,
+      "passed": true,
+      "test": "structure_cycle"
+    }
+  ]
+}

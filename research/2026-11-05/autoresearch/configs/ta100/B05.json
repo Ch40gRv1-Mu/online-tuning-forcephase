@@ -1,0 +1,104 @@
+{
+  "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "block_id": "B05",
+  "collection_manifest_sha256": "2792ca7a34cd655cb3ea6a8b1139ec6a51729d1b3f6396d8185d319cfed15d2a",
+  "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "extractor_source_sha256": "44f7de9321146d4f6ea5d195ac747300e74851fd82e21215ad205c2551a5223e",
+  "protocol_path": "refine-logs/ta100/PROTOCOL.md",
+  "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+  "registry_path": "configs/ta100/graph_registry_v3.json",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "rounds": [
+    {
+      "columns": [
+        "graph_laminarity"
+      ],
+      "hypothesis": "For sampled distinct support pairs A,B, f=#(A intersect B nonempty and neither A subset B nor B subset A)/#sampled pairs.",
+      "id": "I041",
+      "mechanism_key": "hyperedge_nonlaminar_crossing",
+      "registry_id": "S21"
+    },
+    {
+      "columns": [
+        "graph_shattering"
+      ],
+      "hypothesis": "For tested triples S of variable vertices, collect masks C intersect S. f=#triples realizing all eight masks/#tested triples.",
+      "id": "I042",
+      "mechanism_key": "incidence_neighborhood_shattering",
+      "registry_id": "S22"
+    },
+    {
+      "columns": [
+        "graph_cutrank"
+      ],
+      "hypothesis": "For16 fixed balanced cuts of a <=128-node unsigned incidence sample, compute GF(2) rank of cross-cut adjacency; f=mean(rank/min(side_sizes)).",
+      "id": "I043",
+      "mechanism_key": "incidence_cutrank_complexity",
+      "registry_id": "S23"
+    },
+    {
+      "columns": [
+        "graph_chordality"
+      ],
+      "hypothesis": "Run maximum cardinality search on a bounded induced primal sample. For each vertex test whether its later neighbors form a clique; f=violating vertices / eligible vertices.",
+      "id": "I044",
+      "mechanism_key": "primal_chordality_defect",
+      "registry_id": "S24"
+    },
+    {
+      "columns": [
+        "graph_hyperbolicity"
+      ],
+      "hypothesis": "For128 sampled connected quadruples, sort the three distance-pair sums a>=b>=c; delta=(a-b)/2. f=max(delta)/max(1,sample_diameter).",
+      "id": "I045",
+      "mechanism_key": "incidence_metric_hyperbolicity",
+      "registry_id": "S25"
+    },
+    {
+      "columns": [
+        "graph_majority_gate_coverage"
+      ],
+      "hypothesis": "Count complete signed z<->MAJ(a,b,c) six-clause templates: (-a or -b or z),(-a or -c or z),(-b or -c or z),(a or b or -z),(a or c or -z),(b or c or -z). f=#covered output variables/n.",
+      "id": "I046",
+      "mechanism_key": "complete_majority_gate_templates",
+      "registry_id": "S26"
+    },
+    {
+      "columns": [
+        "graph_reconvergence"
+      ],
+      "hypothesis": "For each retained gate z<-a,b, check whether a,b have a common defined ancestor within two gate hops. f=#such gates/#eligible retained gates.",
+      "id": "I047",
+      "mechanism_key": "recognized_gate_reconvergence",
+      "registry_id": "S27"
+    },
+    {
+      "columns": [
+        "graph_gate_output_direction"
+      ],
+      "hypothesis": "For retained signed AND templates z<->(a and b), f=(#z>0-#z<0)/#retained gates.",
+      "id": "I048",
+      "mechanism_key": "recognized_gate_output_polarity",
+      "registry_id": "S28"
+    },
+    {
+      "columns": [
+        "graph_gate_ambiguity"
+      ],
+      "hypothesis": "f=#variables with more than one distinct complete gate-definition signature/#variables with at least one complete definition.",
+      "id": "I049",
+      "mechanism_key": "gate_definition_ambiguity",
+      "registry_id": "S29"
+    },
+    {
+      "columns": [
+        "graph_gate_congruence"
+      ],
+      "hypothesis": "Group unambiguous signed AND gates by normalized signed input pair; f=sum_classes max(0,class_size-1)/#retained_gates.",
+      "id": "I050",
+      "mechanism_key": "circuit_structural_congruence",
+      "registry_id": "S30"
+    }
+  ],
+  "schema": "ta100.block.v1"
+}

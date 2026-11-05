@@ -1,0 +1,104 @@
+{
+  "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "block_id": "B04",
+  "collection_manifest_sha256": "2792ca7a34cd655cb3ea6a8b1139ec6a51729d1b3f6396d8185d319cfed15d2a",
+  "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "extractor_source_sha256": "44f7de9321146d4f6ea5d195ac747300e74851fd82e21215ad205c2551a5223e",
+  "protocol_path": "refine-logs/ta100/PROTOCOL.md",
+  "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+  "registry_path": "configs/ta100/graph_registry_v3.json",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "rounds": [
+    {
+      "columns": [
+        "graph_controllability"
+      ],
+      "hypothesis": "On the acyclic evaluable gate portion, primary inputs have CC0=CC1=1. AND literal z: CC0(z)=1+min(CC0(a),CC0(b)); CC1(z)=1+CC1(a)+CC1(b), swapping 0/1 for negated literals. f=mean[(CC1(v)-CC0(v))/(CC1(v)+CC0(v))] over defined outputs.",
+      "id": "I031",
+      "mechanism_key": "circuit_combinational_controllability",
+      "registry_id": "S31"
+    },
+    {
+      "columns": [
+        "graph_observability"
+      ],
+      "hypothesis": "Initialize CO(v)=0 for recovered outputs used by residual constraints or with no gate consumer. For signed AND z<-a,b, candidate CO(a)=CO(z)+CC1(b)+1 and CO(b)=CO(z)+CC1(a)+1; take minima over consumers. f=mean(CO/(CO+CC0+CC1)) over finite defined outputs.",
+      "id": "I032",
+      "mechanism_key": "circuit_combinational_observability",
+      "registry_id": "S32"
+    },
+    {
+      "columns": [
+        "graph_binate_cones"
+      ],
+      "hypothesis": "For each unambiguous gate cone expanded to two hops, collect signed ancestor literals. f=#cones containing both u and not-u for some ancestor / #fully expanded cones.",
+      "id": "I033",
+      "mechanism_key": "reconvergent_cone_binate_support",
+      "registry_id": "S33"
+    },
+    {
+      "columns": [
+        "graph_other_functional"
+      ],
+      "hypothesis": "For a sampled support S with3..4 variables, evaluate conjunction of all clauses wholly contained in S. Count S if some variable is a total deterministic function of the rest (exactly one output value for every input row), excluding affine, AND/OR, majority, ITE and cardinality/exclusion relations. f=#qualified supports/#evaluated supports.",
+      "id": "I034",
+      "mechanism_key": "non_template_local_functional_determination",
+      "registry_id": "S34"
+    },
+    {
+      "columns": [
+        "graph_canalizing_depth"
+      ],
+      "hypothesis": "For each sampled nonconstant local satisfaction predicate on3..4 variables, recursively find a literal restriction making the predicate constant, continue on the other branch, and maximize chain length. f=mean(max_depth/arity).",
+      "id": "I035",
+      "mechanism_key": "local_function_canalizing_hierarchy",
+      "registry_id": "S35"
+    },
+    {
+      "columns": [
+        "graph_anf_degree"
+      ],
+      "hypothesis": "For each nonconstant local predicate on3..4 variables, compute ANF coefficients by the Boolean Mobius transform; discard affine predicates. f=mean(max nonzero monomial degree/arity).",
+      "id": "I036",
+      "mechanism_key": "non_affine_local_polynomial_degree",
+      "registry_id": "S36"
+    },
+    {
+      "columns": [
+        "graph_sign_bundling"
+      ],
+      "hypothesis": "For non-tautological clauses with1<=k<=64, let P_k(j) be the observed clause-frequency distribution of j positive literals conditional on arity k; let p be positive literal fraction in this eligible population. f=sum_k P(k)*KL(P_k || Binomial(k,p)). Degenerate p=0/1 is defined by its exact limiting distribution.",
+      "id": "I037",
+      "mechanism_key": "within_clause_sign_binomial_deviance",
+      "registry_id": "S37"
+    },
+    {
+      "columns": [
+        "graph_community_polarity"
+      ],
+      "hypothesis": "For the fixed unsigned sample partition from S11, b_g=(positive-negative full-input literal incidences of sampled variables in community g)/literal_count_g. f=sum_g weight_g*(b_g-b_selected)^2, where b_selected is the mean over the sampled variable population.",
+      "id": "I038",
+      "mechanism_key": "community_encoding_polarity_heterogeneity",
+      "registry_id": "S38"
+    },
+    {
+      "columns": [
+        "graph_transport_curvature"
+      ],
+      "hypothesis": "For each of32 incidence edges u-v, form16 equal atoms approximating each lazy neighborhood measure:8 at the endpoint and8 seeded sampled neighbors. Solve the16x16 minimum-cost assignment with graph-distance costs in{0,1,2,3}. f=mean(1-W1).",
+      "id": "I039",
+      "mechanism_key": "incidence_lazy_transport_curvature",
+      "registry_id": "S39"
+    },
+    {
+      "columns": [
+        "graph_betti1"
+      ],
+      "hypothesis": "On a <=96-variable induced primal sample, form its clique2-complex. beta1=E-V+components-rank_GF2(boundaries of all triangles); f=beta1/max(1,E).",
+      "id": "I040",
+      "mechanism_key": "primal_triangle_filled_cycle_homology",
+      "registry_id": "S40"
+    }
+  ],
+  "schema": "ta100.block.v1"
+}

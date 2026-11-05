@@ -1,0 +1,105 @@
+{
+  "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "block_id": "B09",
+  "collection_manifest_sha256": "de848394be261bd01ad4d6209473198e0730c4ac75152aeb4fb3184343dd03c8",
+  "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "extractor_source_sha256": "3ebb653dbd66f2c4a166fbde154fb2e342cec428a86fa5aa42b40ddb397e2e74",
+  "observer_bundle_sha256": "e52370b41d6e9a0cc5adc98dc64ea8b785340817313560325453058bfc5c067b",
+  "protocol_path": "refine-logs/ta100/PROTOCOL.md",
+  "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+  "registry_path": "configs/ta100/dynamic_registry_v2.json",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "rounds": [
+    {
+      "columns": [
+        "td_learned_pure_sign_balance"
+      ],
+      "hypothesis": "新学习子句中全正与全负子句的差，占非空学习子句数。",
+      "id": "I081",
+      "mechanism_key": "learned_clause_sign_coherence",
+      "registry_id": "TD11"
+    },
+    {
+      "columns": [
+        "td_reason_sign_transmission"
+      ],
+      "hypothesis": "带唯一决策祖先的抽样隐含赋值中，隐含文字符号与该决策祖先符号一致的比例减去不一致比例。",
+      "id": "I082",
+      "mechanism_key": "implication_sign_transmission",
+      "registry_id": "TD12"
+    },
+    {
+      "columns": [
+        "td_sign_lifetime_gap"
+      ],
+      "hypothesis": "本前缀内赋值并撤销且观测完整的正负赋值，其以冲突数计的平均存活期差。",
+      "id": "I083",
+      "mechanism_key": "phase_assignment_persistence",
+      "registry_id": "TD13"
+    },
+    {
+      "columns": [
+        "td_resolution_compression"
+      ],
+      "hypothesis": "主冲突分析中消耗的不同reason子句数量相对于最终1UIP子句文字数的平均比。",
+      "id": "I084",
+      "mechanism_key": "resolution_proof_compression",
+      "registry_id": "TD14"
+    },
+    {
+      "columns": [
+        "td_reason_depth"
+      ],
+      "hypothesis": "固定抽样冲突文字至最近决策/根文字的最长理由祖先深度中位数。",
+      "id": "I085",
+      "mechanism_key": "implication_ancestry_depth",
+      "registry_id": "TD15"
+    },
+    {
+      "columns": [
+        "td_reason_reconvergence"
+      ],
+      "hypothesis": "抽样祖先遍历中再次碰到已访问祖先的边数占总祖先边数。",
+      "id": "I086",
+      "mechanism_key": "implication_dag_reconvergence",
+      "registry_id": "TD16"
+    },
+    {
+      "columns": [
+        "td_uip_trail_localization"
+      ],
+      "hypothesis": "当前决策层中，1UIP在trail上距层尾的相对位置的均值。",
+      "id": "I087",
+      "mechanism_key": "uip_conflict_locality",
+      "registry_id": "TD17"
+    },
+    {
+      "columns": [
+        "td_cut_level_entropy"
+      ],
+      "hypothesis": "每个最终学习子句按其文字decision level占比计算归一化熵，再取前缀均值。",
+      "id": "I088",
+      "mechanism_key": "conflict_cut_level_occupancy",
+      "registry_id": "TD18"
+    },
+    {
+      "columns": [
+        "td_clause_target_phase_violation"
+      ],
+      "hypothesis": "每个新学习子句仅当其所有变量TARGET phase已定义时可评价；计算可完整评价学习子句被既有TARGET向量全部否定的比例。无可评价事件为null，未知target事件不当作0。",
+      "id": "I089",
+      "mechanism_key": "learned_target_memory_constraint_compatibility",
+      "registry_id": "TD19v2"
+    },
+    {
+      "columns": [
+        "td_conflict_variable_turnover"
+      ],
+      "hypothesis": "两个相邻固定128分析冲突窗口中，被分析变量集合的Jaccard距离。",
+      "id": "I090",
+      "mechanism_key": "search_region_turnover",
+      "registry_id": "TD20"
+    }
+  ],
+  "schema": "ta100.block.v1"
+}

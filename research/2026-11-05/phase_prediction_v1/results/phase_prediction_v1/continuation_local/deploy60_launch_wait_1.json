@@ -1,0 +1,5 @@
+{
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 20, in <module>\nRuntimeError: Other active research owner/timing process; preserving it: [{\"pid\": 63052, \"comm\": \"python3\", \"args\": \"python3 /home/vipuser/forcephase_phase_prediction_20261104/phases/ta-static-gate51-v1/src/node_worker.py --manifest /home/vipuser/forcephase_phase_prediction_20261104/phases/ta-static-gate51-v1/manifest.json --extractor-source /home/vipuser/forcephase_phase_prediction_20261104/phases/ta-static-gate51-v1/src/cnf_structure.cpp --extractor-binary /home/vipuser/forcephase_phase_prediction_20261104/bin/cnf_structure --expected-binary-sha256 2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334 --output-dir /home/vipuser/forcephase_phase_prediction_20261104/phases/ta-static-gate51-v1/output --node-id remote-8cpu-gate --max-workers 3 --input-cache /home/vipuser/forcephase_phase_prediction_20261104/data --gate-candidate-sha256 1d4a4374b444ff5da12291291fad4ec18893300033c5ec1bca4ef698dc8eb182 \"}]\n"
+}

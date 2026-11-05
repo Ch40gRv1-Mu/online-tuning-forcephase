@@ -1,0 +1,1049 @@
+{
+  "schema": "ta100.top10_distinct_policies.v1",
+  "unique_policy_count": 13,
+  "source_ranking_sha256": "982ebb71707aa4e40d202f4d896c5675b2b5a5e87349bd78af65fb6be0b0202b",
+  "ranking": "Existing full60 exploratory feedback gain vs frozen old static policy; exact functional-tree duplicates merged, preserving existing order.",
+  "cost_note": "PAR2 on TA timing scale; acquisition cost excluded, no new evaluation.",
+  "missing": "Resource-ineligible or missing/nonfinite required feature on reached branch => true.",
+  "feature_definitions": {
+    "td_chrono_share": {
+      "plain_definition": "前缀中实际采用chronological backtracking的冲突份额。",
+      "formula": "c_chrono_frac",
+      "conditioning": "共同native-D动作前前缀"
+    },
+    "td_restart_reuse_share": {
+      "plain_definition": "自然重启中保留至少一个决策层的次数份额；不是重启频率。",
+      "formula": "c_reuse_frac",
+      "conditioning": "不以restart频率代替"
+    },
+    "td_phase_source_entropy": {
+      "plain_definition": "target、saved、其余三个决策相位来源桶的归一化熵。",
+      "formula": "p=[c_target_src_frac,c_saved_src_frac,1-c_target_src_frac-c_saved_src_frac]; H=-sum(p_i*ln(p_i))/ln(3)",
+      "conditioning": "同一checkpoint三个互斥来源桶"
+    },
+    "td_target_support": {
+      "plain_definition": "固定变量样本中已定义target phase的活跃变量比例。",
+      "formula": "x_target_set_frac",
+      "conditioning": "固定变量样本；未知值保留缺失"
+    },
+    "td_best_target_gap": {
+      "plain_definition": "best_assigned与target_assigned的带符号相对差；当前active归一化因子在比值中抵消。",
+      "formula": "(x_best_frac-x_target_frac)/(abs(x_best_frac)+abs(x_target_frac))",
+      "conditioning": "共同checkpoint的两个记忆状态"
+    },
+    "td_trail_momentum": {
+      "plain_definition": "当前mode内trail长度快EMA相对慢EMA的偏离。",
+      "formula": "x_trail_ratio-1",
+      "conditioning": "当前solver mode动作前状态"
+    },
+    "td_learned_database_load": {
+      "plain_definition": "当前冗余子句数量相对于仍存不可冗余子句数量。",
+      "formula": "x_red_per_irr",
+      "conditioning": "共同checkpoint；不读终局"
+    },
+    "td_saved_target_polarity_gap": {
+      "plain_definition": "target已定义样本的负相位比例减去全部活跃样本saved负相位比例。",
+      "formula": "x_target_neg_frac-x_saved_neg_frac",
+      "conditioning": "target已定义样本与完整活跃样本"
+    },
+    "td_learned_size_regime": {
+      "plain_definition": "当前mode学习子句长度EMA相对于整个前缀learnt literal/learnt clause均值的对数偏离。",
+      "formula": "ln(x_size_avg/c_size_mean)",
+      "conditioning": "共同prefix与当前mode，不能混终局"
+    },
+    "td_actual_potential_backtrack_gap": {
+      "plain_definition": "实际backtrack level EMA与潜在nonchronological backjump level EMA的归一化差。",
+      "formula": "(x_level_avg-x_jump_avg)/(abs(x_level_avg)+abs(x_jump_avg))",
+      "conditioning": "与冲突层/平均jump分别定义"
+    },
+    "f_core_literal_repetition": {
+      "plain_definition": "Raw repeated signed literals within original clauses",
+      "formula": "sum_C (raw_width(C)-distinct_signed_width(C)) / raw_literal_count",
+      "conditioning": "共享parser原始统计"
+    },
+    "f_core_tautology": {
+      "plain_definition": "Original clause tautology burden",
+      "formula": "count_C[exists x: x and -x in C] / M",
+      "conditioning": "不把普通重复当重言"
+    },
+    "f_core_duplicate_clause": {
+      "plain_definition": "Repeated canonical short constraints",
+      "formula": "sum_S max(freq(S)-1,0) / count_C[non-tautological and width<=8]",
+      "conditioning": "固定短子句上下文"
+    },
+    "f_core_subsumption": {
+      "plain_definition": "Short strict-subsumption witnesses",
+      "formula": "count_C[3<=width(C)<=8 and exists D in F: 2<=width(D)<width(C) and D subset C] / eligible_C",
+      "conditioning": "固定context与完整环境检查"
+    },
+    "f_core_self_subsumption": {
+      "plain_definition": "Width-four self-subsuming resolution",
+      "formula": "count_C[width(C)=4 and exists l in C: (C minus l) union {-l} in F] / count_C[width(C)=4]",
+      "conditioning": "width4与完整证书"
+    },
+    "f_core_resolution_fanout": {
+      "plain_definition": "Davis-Putnam raw elimination fanout",
+      "formula": "sum_v p_v*n_v / sum_v(p_v+n_v), with one occurrence per non-tautological clause/literal",
+      "conditioning": "输入静态计数；非实际solver消解"
+    },
+    "f_core_resolvent_tautology": {
+      "plain_definition": "Tautological resolvents suppressing elimination blowup",
+      "formula": "tautological R(C,D,v) / eligible resolution pairs; parents have3..8 literals and at least one parent width>=4; p_v*n_v<=64",
+      "conditioning": "有界parent与partner环境"
+    },
+    "f_core_blocked_polarity": {
+      "plain_definition": "Original blocked-clause witness direction",
+      "formula": "(count_C[positive blocking literal] - count_C[negative blocking literal]) / eligible_C",
+      "conditioning": "所有所需partner检查完成才有值"
+    },
+    "f_core_variable_twins": {
+      "plain_definition": "Exact signed occurrence-column interchangeability",
+      "formula": "variables in size>=2 classes of equal (positive_clause_ID_set,negative_clause_ID_set) / active_variables",
+      "conditioning": "精确全列相等；非graph WL近似"
+    },
+    "f_core_majority_flip_gain": {
+      "plain_definition": "One-step local search directional gain",
+      "formula": "(count_v[gain(v)>0 and majority(v)=false] - count_v[gain(v)>0 and majority(v)=true]) / active_variables; gain=make-break",
+      "conditioning": "静态固定赋值；不是双翻合作逃逸"
+    },
+    "graph_incidence_assortativity": {
+      "plain_definition": "Tests whether high-degree variables preferentially carry long constraints, a joint incidence pattern absent from the marginal degree and length summaries.",
+      "formula": "r=PearsonCorr_{(v,C) in E}(d_v,k_C), where k_C=|vars(C)| and d_v=#clauses containing v. Return null for zero endpoint variance.",
+      "conditioning": "完整非重言 incidence；零端点方差缺失"
+    },
+    "graph_sign_arity_information": {
+      "plain_definition": "Measures whether encoding polarity is distributed differently between short and long constraints, even at identical total positive fraction.",
+      "formula": "I(S;K)=sum_{s,k} p(s,k) log[p(s,k)/(p(s)p(k))] over literal occurrences, with K=min(clause_literal_count,9), S=positive/negative; normalize by H(S) when nonzero.",
+      "conditioning": "固定arity桶；sign熵为零缺失"
+    },
+    "graph_horn_interface": {
+      "plain_definition": "Quantifies interaction between a tractable Horn portion and the remaining constraints, instead of just the Horn-clause fraction.",
+      "formula": "Let h_v and a_v count incidences of v in Horn and non-Horn clauses. f=sum_v min(h_v,a_v)/max(1,L).",
+      "conditioning": "非重言原始输入；无UP"
+    },
+    "graph_butterfly_overlap": {
+      "plain_definition": "Detects constraints repeatedly addressing the same variable pairs: local overlap concentration, beyond total cycle excess.",
+      "formula": "q_uv=#clauses containing both u and v. B=sum_{u<v} choose(q_uv,2); f=B/max(1,sum_C choose(k_C,2)).",
+      "conditioning": "完整有界pair枚举；超限缺失"
+    },
+    "graph_core_retention": {
+      "plain_definition": "Measures how much survives recursive leaf removal, exposing an irreducible interaction core.",
+      "formula": "Peel all degree<2 vertices from the undirected incidence graph to a fixed point. f=#retained variable vertices/max(1,n).",
+      "conditioning": "剥离到固定点；无赋值"
+    },
+    "graph_articulation_fragility": {
+      "plain_definition": "Measures the fraction of variable pairs whose connection relies on one variable, a decomposition bottleneck hidden by connected-component size.",
+      "formula": "For each variable v in an original component with N variable vertices, let s_i be variable counts in components after deleting v. f=max_v[((N-1)^2-sum_i s_i^2)/max(1,n^2)].",
+      "conditioning": "完整incidence图；不使用有向SCC"
+    },
+    "graph_diffusion_return": {
+      "plain_definition": "Tests repeated-walk trapping and local circulation, rather than the sign alignment of the leading eigenvector.",
+      "formula": "S=D^(-1/2) A D^(-1/2) on the unsigned incidence graph. f=tr(S^4)/max(1,n+m), estimated by mean_{8 fixed seeds} z^T S^4 z/(n+m) for Rademacher z.",
+      "conditioning": "8个固定探针；不是signed leading-mode"
+    },
+    "graph_primal_transitivity": {
+      "plain_definition": "Measures whether neighboring variables also interact with each other, a local closure mechanism beyond node degrees or incidence cycle rank.",
+      "formula": "On the deduplicated primal graph G_V, f=3*triangle_count/max(1,sum_v choose(deg_GV(v),2)).",
+      "conditioning": "精确有界投影；超限缺失"
+    },
+    "graph_gate_sharing": {
+      "plain_definition": "Measures repeated use of intermediate results: DAG sharing rather than the existing number of gate-shaped templates.",
+      "formula": "Detect complete signed AND templates z<->(a and b), retain uniquely defined output variables. Let f_u=#retained gates using variable u as an input. f=sum_u max(0,f_u-1)/max(1,sum_u f_u).",
+      "conditioning": "只用无歧义完整门模板"
+    },
+    "graph_circuit_residual_interface": {
+      "plain_definition": "Distinguishes an internally closed circuit from gate outputs heavily constrained by a non-circuit residual.",
+      "formula": "Let O be uniquely defined gate outputs and T the set of defining clauses of retained gates. f=sum_{v in O} #incidences(v,C notin T)/max(1,sum_{v in O}d_v).",
+      "conditioning": "已识别门定义并集外部界面"
+    },
+    "graph_controllability": {
+      "plain_definition": "Approximates which value is cheaper to force through a whole recovered cone rather than from a local sign count.",
+      "formula": "On the acyclic evaluable gate portion, primary inputs have CC0=CC1=1. AND literal z: CC0(z)=1+min(CC0(a),CC0(b)); CC1(z)=1+CC1(a)+CC1(b), swapping 0/1 for negated literals. f=mean[(CC1(v)-CC0(v))/(CC1(v)+CC0(v))] over defined outputs.",
+      "conditioning": "排除歧义/循环部分并记录coverage"
+    },
+    "graph_observability": {
+      "plain_definition": "Measures difficulty of exposing an internal signal at an interface, distinct from forcing its value.",
+      "formula": "Initialize CO(v)=0 for recovered outputs used by residual constraints or with no gate consumer. For signed AND z<-a,b, candidate CO(a)=CO(z)+CC1(b)+1 and CO(b)=CO(z)+CC1(a)+1; take minima over consumers. f=mean(CO/(CO+CC0+CC1)) over finite defined outputs.",
+      "conditioning": "相同可求值gate portion"
+    },
+    "graph_binate_cones": {
+      "plain_definition": "Detects local binateness from opposite uses of one source, even when fan-in simply shares variables.",
+      "formula": "For each unambiguous gate cone expanded to two hops, collect signed ancestor literals. f=#cones containing both u and not-u for some ancestor / #fully expanded cones.",
+      "conditioning": "有界cone；非无符号reconvergence"
+    },
+    "graph_other_functional": {
+      "plain_definition": "Finds functional structure missed by the reserved local gate and parity libraries.",
+      "formula": "For a sampled support S with3..4 variables, evaluate conjunction of all clauses wholly contained in S. Count S if some variable is a total deterministic function of the rest (exactly one output value for every input row), excluding affine, AND/OR, majority, ITE and cardinality/exclusion relations. f=#qualified supports/#evaluated supports.",
+      "conditioning": "排除affine/AND/OR/MAJ/ITE/cardinality"
+    },
+    "graph_canalizing_depth": {
+      "plain_definition": "Measures hierarchical dominating inputs rather than symmetric or parity-like dependence.",
+      "formula": "For each sampled nonconstant local satisfaction predicate on3..4 variables, recursively find a literal restriction making the predicate constant, continue on the other branch, and maximize chain length. f=mean(max_depth/arity).",
+      "conditioning": "≤16 truth rows；固定有界support"
+    },
+    "graph_anf_degree": {
+      "plain_definition": "Tests genuine higher-order interaction order, without recovering or counting affine parity equations.",
+      "formula": "For each nonconstant local predicate on3..4 variables, compute ANF coefficients by the Boolean Mobius transform; discard affine predicates. f=mean(max nonzero monomial degree/arity).",
+      "conditioning": "排除affine；不是实数energy Walsh"
+    },
+    "graph_sign_bundling": {
+      "plain_definition": "Tests whether like-polarity literals bundle within constraints more than an independent-sign baseline predicts, even when sign-vs-arity first moments agree.",
+      "formula": "For non-tautological clauses with1<=k<=64, let P_k(j) be the observed clause-frequency distribution of j positive literals conditional on arity k; let p be positive literal fraction in this eligible population. f=sum_k P(k)*KL(P_k || Binomial(k,p)). Degenerate p=0/1 is defined by its exact limiting distribution.",
+      "conditioning": "width1..64条件人口；非clause-pair subcube"
+    },
+    "graph_community_polarity": {
+      "plain_definition": "Detects oppositely encoded modules whose global sign bias cancels.",
+      "formula": "For the fixed unsigned sample partition from S11, b_g=(positive-negative full-input literal incidences of sampled variables in community g)/literal_count_g. f=sum_g weight_g*(b_g-b_selected)^2, where b_selected is the mean over the sampled variable population.",
+      "conditioning": "复用固定partition，仅样本变量"
+    },
+    "graph_transport_curvature": {
+      "plain_definition": "Measures neighborhood convergence/divergence via optimal transportation, not a Laplacian eigenvalue summary.",
+      "formula": "For each of32 incidence edges u-v, form16 equal atoms approximating each lazy neighborhood measure:8 at the endpoint and8 seeded sampled neighbors. Solve the16x16 minimum-cost assignment with graph-distance costs in{0,1,2,3}. f=mean(1-W1).",
+      "conditioning": "≤32边；经验邻居测度非全图证书"
+    },
+    "graph_betti1": {
+      "plain_definition": "Distinguishes genuine higher-order holes from ordinary cycles that are filled by dense local triangles.",
+      "formula": "On a <=96-variable induced primal sample, form its clique2-complex. beta1=E-V+components-rank_GF2(boundaries of all triangles); f=beta1/max(1,E).",
+      "conditioning": "≤96变量；三角形填充后留下的hole"
+    },
+    "graph_laminarity": {
+      "plain_definition": "Measures whether constraint scopes nest as a hierarchy or cross one another.",
+      "formula": "For sampled distinct support pairs A,B, f=#(A intersect B nonempty and neither A subset B nor B subset A)/#sampled pairs.",
+      "conditioning": "有界support集合"
+    },
+    "graph_shattering": {
+      "plain_definition": "Measures whether constraint scopes realize unrestricted local set patterns, a bounded VC-dimension witness.",
+      "formula": "For tested triples S of variable vertices, collect masks C intersect S. f=#triples realizing all eight masks/#tested triples.",
+      "conditioning": "有界三元组；无literal sign或SAT判定"
+    },
+    "graph_cutrank": {
+      "plain_definition": "Measures independent boundary neighborhoods in linear-algebraic terms rather than edge density.",
+      "formula": "For16 fixed balanced cuts of a <=128-node unsigned incidence sample, compute GF(2) rank of cross-cut adjacency; f=mean(rank/min(side_sizes)).",
+      "conditioning": "固定16个样本cut；非逻辑XOR rank"
+    },
+    "graph_chordality": {
+      "plain_definition": "Detects whether all long induced cycles admit chords, a perfect-elimination structural class.",
+      "formula": "Run maximum cardinality search on a bounded induced primal sample. For each vertex test whether its later neighbors form a clique; f=violating vertices / eligible vertices.",
+      "conditioning": "≤96变量；与宽度阈值不同"
+    },
+    "graph_hyperbolicity": {
+      "plain_definition": "Tests thin/tree-like metric geometry even in graphs with many short cycles.",
+      "formula": "For128 sampled connected quadruples, sort the three distance-pair sums a>=b>=c; delta=(a-b)/2. f=max(delta)/max(1,sample_diameter).",
+      "conditioning": "≤128个连通quadruple"
+    },
+    "graph_majority_gate_coverage": {
+      "plain_definition": "Identifies threshold/carry gates rather than AND/OR or affine parity logic.",
+      "formula": "Count complete signed z<->MAJ(a,b,c) six-clause templates: (-a or -b or z),(-a or -c or z),(-b or -c or z),(a or b or -z),(a or c or -z),(b or c or -z). f=#covered output variables/n.",
+      "conditioning": "要求全部六句；不计XOR/ITE"
+    },
+    "graph_reconvergence": {
+      "plain_definition": "Captures correlated fan-in from a diverged-and-rejoined signal, unlike simple fan-out sharing.",
+      "formula": "For each retained gate z<-a,b, check whether a,b have a common defined ancestor within two gate hops. f=#such gates/#eligible retained gates.",
+      "conditioning": "唯一、完整门；截断cone不作零"
+    },
+    "graph_gate_output_direction": {
+      "plain_definition": "Restores the absolute output orientation discarded by unsigned template coverage.",
+      "formula": "For retained signed AND templates z<->(a and b), f=(#z>0-#z<0)/#retained gates.",
+      "conditioning": "保留绝对输出orientation"
+    },
+    "graph_gate_ambiguity": {
+      "plain_definition": "Tests functional aliasing/competing local explanations, which can invalidate a single recovered DAG.",
+      "formula": "f=#variables with more than one distinct complete gate-definition signature/#variables with at least one complete definition.",
+      "conditioning": "精确重复不是新定义"
+    },
+    "graph_gate_congruence": {
+      "plain_definition": "Finds multiple variables that compute the same function of the same signals, even without identical clauses.",
+      "formula": "Group unambiguous signed AND gates by normalized signed input pair; f=sum_classes max(0,class_size-1)/#retained_gates.",
+      "conditioning": "不要求输出变量拥有相同外部邻域"
+    },
+    "graph_modularity": {
+      "plain_definition": "Separates strongly localized modules from globally intertwined constraints.",
+      "formula": "Q=sum_g[e_g/E-(vol_g/(2E))^2] for the unsigned bounded incidence sample partition from four fixed label-propagation sweeps.",
+      "conditioning": "≤128节点固定样本；非全图最优值"
+    },
+    "graph_box_scaling": {
+      "plain_definition": "Tests multi-scale self-similarity, rather than one connectivity or degree statistic.",
+      "formula": "Fit the slope d=-slope(log r,log N_cover(r)) for r=1,2,4 on a fixed bounded incidence neighborhood; N_cover is greedy radius-r ball cover.",
+      "conditioning": "≤128节点样本；非全图fractal维数证书"
+    },
+    "graph_k33_witness": {
+      "plain_definition": "Finds unavoidable nonplanar wiring, a topological obstruction to planar separator intuition.",
+      "formula": "f=#tested variable triples with at least three common clause neighbors / #tested triples; each success is an explicit K3,3 subgraph witness.",
+      "conditioning": "有界变量三元组；零不证明平面"
+    },
+    "graph_elimination_width": {
+      "plain_definition": "Measures separator width required by an elimination ordering rather than literal resolvent growth.",
+      "formula": "On a fixed <=96-variable induced primal sample, repeatedly remove the vertex with minimum fill-edge count; f=max live-neighbor count / max(1,sample_variables-1).",
+      "conditioning": "≤96变量诱导样本；非全图treewidth证书"
+    },
+    "graph_percolation": {
+      "plain_definition": "Measures distributed connectivity resilience under many simultaneous removals, distinct from a single articulation bottleneck.",
+      "formula": "For fixed deletion rates q=0,1/4,1/2,3/4,1 on a <=128-node incidence sample, measure largest surviving variable-component fraction (zero if no survivors); average three seeds at interior q; f is the trapezoidal area on[0,1].",
+      "conditioning": "固定删除率与种子；非逻辑restriction"
+    },
+    "graph_betweenness": {
+      "plain_definition": "Finds vertices through which many shortest information paths pass, including non-articulation bottlenecks.",
+      "formula": "On a <=128-node incidence sample, compute Brandes betweenness for 16 fixed source vertices; f=max normalized internal-vertex dependency.",
+      "conditioning": "固定16个源的有界样本"
+    },
+    "graph_harmonic_access": {
+      "plain_definition": "Measures usable global access distance, distinct from self-similar cover scaling or walk returns.",
+      "formula": "f=mean_{distinct connected sampled variable pairs}(1/d_incidence(u,v)); disconnected pairs contribute zero.",
+      "conditioning": "有界样本；不连通对计零"
+    },
+    "graph_detour": {
+      "plain_definition": "Measures how efficiently alternative routes replace a direct edge, beyond whether the edge is merely a bridge.",
+      "formula": "For up to32 sampled incidence edges e=(u,v), remove e and find d_{G-e}(u,v); f=mean(1/d), taking zero when disconnected.",
+      "conditioning": "≤32样本边；断开取零"
+    },
+    "graph_nonbacktracking": {
+      "plain_definition": "Measures onward branching once immediate edge reversal is forbidden.",
+      "formula": "Let x_0(u->v)=1 and x_{t+1}(u->v)=sum_{w in N(v),w!=u} x_t(v->w). f=sum x_3 / max(1,sum x_2).",
+      "conditioning": "有界样本；非普通walk返回率"
+    },
+    "graph_gyo": {
+      "plain_definition": "Tests alpha-acyclic join structure, which can be reducible even when the incidence graph has cycles.",
+      "formula": "Run GYO rules on sampled variable-support hyperedges: delete degree<=1 variables and contained support edges to a fixed point. f=remaining incidence mass / initial incidence mass.",
+      "conditioning": "有界sample；与signed subsumption不同"
+    },
+    "algebra_renamable_horn_deficit": {
+      "plain_definition": "Encoding orientation relative to a tractable constraint class.",
+      "formula": "Minimize sum_C choose(np_C,2) under variable sign flips. Starting with no flips, run12 coordinate passes in local first-appearance variable order; flip only on strict reduction. Divide final violated pairs by sum_C choose(width_C,2).",
+      "conditioning": "F*；不称精确renamable-Horn"
+    },
+    "algebra_ising_frustration": {
+      "plain_definition": "Frustration remaining after a bounded gauge search.",
+      "formula": "J_ij=sum_C 2^-width_C sign_i sign_j over distinct variable pairs. Start all spins+1;12 greedy coordinate sweeps minimize sum J_ij s_i s_j, flipping only on strict decrease. Return |J| mass with J_ij s_i s_j>0 divided by total |J|.",
+      "conditioning": "F*；有非零|J|质量"
+    },
+    "algebra_raw_submodular_fraction": {
+      "plain_definition": "How much pairwise interaction already has the submodular coefficient sign in raw coordinates.",
+      "formula": "For the same raw J, return sum_{J_ij<0}|J_ij|/sum|J_ij|. No spin or gauge optimization.",
+      "conditioning": "原坐标；不进行gauge优化"
+    },
+    "algebra_literal_complement_pairing": {
+      "plain_definition": "Global complement symmetry of constraint language.",
+      "formula": "Fraction of F* clause rows whose sorted all-literal negation also appears in F*. Duplicate rows remain in the fraction; an empty clause is its own complement.",
+      "conditioning": "F*；保留重复row"
+    },
+    "algebra_majority_autarky_support": {
+      "plain_definition": "Self-satisfying removable support under a fixed assignment.",
+      "formula": "Set each variable to its F* majority sign, ties true. Start S=all active variables; synchronously remove every S variable in any clause touched by S but unsatisfied by all S-assigned literals. At most128 passes; verify every remaining touched clause is satisfied. Return |S|/n.",
+      "conditioning": "F*；≤128轮且实际条件验证"
+    },
+    "algebra_hall_deficiency": {
+      "plain_definition": "Deficit of distinct variable resources for constraints.",
+      "formula": "Compute exact maximum clause-variable bipartite matching on F*. Return(m-matching_size)/m; empty clauses are unmatched rows, without adopting a SAT answer.",
+      "conditioning": "F*；空子句为unmatched row"
+    },
+    "algebra_cover_packing_gap": {
+      "plain_definition": "Gap between disjoint constraint demands and a shared variable hitting cover.",
+      "formula": "Greedily pack variable-disjoint clauses by(width,original clause ID). Greedily hit uncovered clauses by maximum uncovered occurrence, ties lowest original variable ID. Return(cover_size-packing_size)/m.",
+      "conditioning": "F*；空子句使cover未定义"
+    },
+    "algebra_signed_mode_alignment": {
+      "plain_definition": "Alignment of aggregate linear pressure with a strong signed interaction direction.",
+      "formula": "Use16 normalized sparse J power steps, starting x_i=sin(1.7*(i+1)). Let h_i=-sum_C sign_i2^-width_C. Return|dot(x,h)|/||h||, where x is unit norm.",
+      "conditioning": "F*；零mode或bias范数缺失"
+    },
+    "algebra_convex_fractional_pressure": {
+      "plain_definition": "Fractional directional pressure after relaxation of clause satisfaction.",
+      "formula": "Starting x=.5,64 projected subgradient steps minimize sum_C max(0,1-sum_l truth(l))+.05sum_i(x_i-.5)^2-h_i*x_i, h_i=(pos_i-neg_i)/degree_i. eta=.05/sqrt(t+1)/sqrt(maxdegree); clip[0,1]. Return mean(x-.5).",
+      "conditioning": "F*；固定算法，非LP最优解"
+    },
+    "algebra_bp_cavity_polarity": {
+      "plain_definition": "Nonlinear clause-to-variable cavity pressure.",
+      "formula": "Uniform prior;12 synchronous OR-factor sweeps damped.5. Factor-to-variable log odds are sign(l)*[-log(1-product(other literal false probabilities))]; cavity excludes that factor. Clamp probability to[1e-9,1-1e-9] and log odds to[-20,20]. Return mean(2*p_i-1).",
+      "conditioning": "F*；clamp固定，不称真实marginal"
+    },
+    "algebra_signed_real_rank_deficit": {
+      "plain_definition": "Signed linear constraint-direction dependence.",
+      "formula": "First64 F* rows; columns are exactly their variables,<=1024. Entries are literal signs. Gaussian partial pivoting with absolute1e-9 pivot threshold. Return1-rank/min(rows,columns).",
+      "conditioning": "first64 F*行；≤1024列；1e-9 pivot"
+    },
+    "algebra_high_order_walsh_mass": {
+      "plain_definition": "Higher-order interaction energy beyond linear/quadratic terms.",
+      "formula": "Take first128 F* clauses of width<=8. Expand each U_C=2^-k product_l(1-sign(l)*z_v). Sum coefficients by variable subset with duplicate clauses retained. Return sum_{degree>=3} coefficient^2 / sum_{nonconstant} coefficient^2.",
+      "conditioning": "first128 F* width≤8；保留duplicate"
+    },
+    "algebra_canonical_lz78_ratio": {
+      "plain_definition": "Repeated description/grammar in encoding order.",
+      "formula": "Stream F* canonical signed literals in original clause traversal order, renaming variables by first appearance, with0 delimiters. LZ78 phrase factorization counts a final unmatched prefix as a reference phrase. Return phrase_count*log2(max(2,phrase_count))/(tokens*log2(2*n+1)).",
+      "conditioning": "F*首次出现变量编号；明确order-sensitive"
+    },
+    "algebra_two_flip_cooperative_escape": {
+      "plain_definition": "Synergistic escape invisible to single-flip gains.",
+      "formula": "On the fixed LOCALcube, fraction of q-choose2 bit pairs with E(reference)-E(joint_flip)>0 while each individual gain<=0.",
+      "conditioning": "top12 degree变量，其余固定majority"
+    },
+    "algebra_plateau_connectedness": {
+      "plain_definition": "Topology of neutral moves, not merely first-flip gain.",
+      "formula": "Exact BFS component of the majority reference using only hypercube edges whose endpoint energies both equal the reference energy. Return component_size/2^q.",
+      "conditioning": "q=0前瞻缺失；非单翻gain"
+    },
+    "algebra_sls_state_recurrence": {
+      "plain_definition": "Revisitation/cycling in a finite stochastic local landscape.",
+      "formula": "Starting at the majority reference,128 steps: with probability1/16 choose a random bit; otherwise choose a minimum-energy neighbor, ties randomized. Always move even uphill. mt19937 seed0, decisions via integer modulo. Return1-unique_visited_states/129.",
+      "conditioning": "seed0；总129状态；允许uphill"
+    },
+    "algebra_persistent_unsat_core": {
+      "plain_definition": "Constraint persistence across movement, a different object from state recurrence or plateau geometry.",
+      "formula": "Using exactly the same129-state trajectory as RA16, among clauses touching the LOCALcube and violated at least once, return the fraction violated in all129 states.",
+      "conditioning": "仅触及local core且曾unsat的clauses"
+    },
+    "algebra_falsifying_subcube_covariance": {
+      "plain_definition": "Relative overlap or exclusion of falsifying assignment regions.",
+      "formula": "All unordered F* clause pairs: P(U_C)=2^-k. Joint probability is0 on any shared opposite literal, otherwise2^-|union variables|. Return sum_pairs(joint-P_C*P_D)/sum_pairs(joint+P_C*P_D).",
+      "conditioning": "F*所有pair；不是within-clause KL"
+    },
+    "f_core_covered_intersection": {
+      "plain_definition": "mean_{eligible(C,l)} |(intersection_{D in RC(F,C,l)} (D\\{-l}))\\C|, RC contains exactly non-tautological resolvent partners.",
+      "formula": "mean_{eligible(C,l)} |(intersection_{D in RC(F,C,l)} (D\\{-l}))\\C|, RC contains exactly non-tautological resolvent partners.",
+      "conditioning": "first256 context；完整admitted complementary环境"
+    },
+    "f_core_ite_output": {
+      "plain_definition": "number of distinct absolute output variables y with complete (-s,-a,y),(-s,a,-y),(s,-b,y),(s,b,-y) certificate / number of distinct context variables; |y|,|s|,|a|,|b| all distinct.",
+      "formula": "number of distinct absolute output variables y with complete (-s,-a,y),(-s,a,-y),(s,-b,y),(s,b,-y) certificate / number of distinct context variables; |y|,|s|,|a|,|b| all distinct.",
+      "conditioning": "first256 ternary context；四句必须齐备"
+    },
+    "td_learned_pure_sign_balance": {
+      "plain_definition": "新学习子句中全正与全负子句的差，占非空学习子句数。",
+      "formula": "(learned_all_positive-learned_all_negative)/learned_nonempty",
+      "conditioning": "非空学习clauses；未到checkpoint缺失"
+    },
+    "td_reason_sign_transmission": {
+      "plain_definition": "带唯一决策祖先的抽样隐含赋值中，隐含文字符号与该决策祖先符号一致的比例减去不一致比例。",
+      "formula": "(same_sign_ancestor-opposite_sign_ancestor)/unique_ancestor_implications",
+      "conditioning": "固定sample与唯一祖先条件"
+    },
+    "td_sign_lifetime_gap": {
+      "plain_definition": "本前缀内赋值并撤销且观测完整的正负赋值，其以冲突数计的平均存活期差。",
+      "formula": "mean(lifetime|negative)-mean(lifetime|positive)",
+      "conditioning": "明确发生撤销；右删失不伪造"
+    },
+    "td_resolution_compression": {
+      "plain_definition": "主冲突分析中消耗的不同reason子句数量相对于最终1UIP子句文字数的平均比。",
+      "formula": "mean(distinct_resolved_reason_clauses/max(1,learned_size))",
+      "conditioning": "最终有效学习clause事件"
+    },
+    "td_reason_depth": {
+      "plain_definition": "固定抽样冲突文字至最近决策/根文字的最长理由祖先深度中位数。",
+      "formula": "median(max_reason_path_depth(sampled_conflict_literals))",
+      "conditioning": "固定冲突literal sample"
+    },
+    "td_reason_reconvergence": {
+      "plain_definition": "抽样祖先遍历中再次碰到已访问祖先的边数占总祖先边数。",
+      "formula": "revisited_ancestor_edges/visited_ancestor_edges",
+      "conditioning": "固定有界祖先遍历"
+    },
+    "td_uip_trail_localization": {
+      "plain_definition": "当前决策层中，1UIP在trail上距层尾的相对位置的均值。",
+      "formula": "mean((trail_end-uip_trail_index)/current_level_trail_length)",
+      "conditioning": "最终1UIP与当前层trail长度"
+    },
+    "td_cut_level_entropy": {
+      "plain_definition": "每个最终学习子句按其文字decision level占比计算归一化熵，再取前缀均值。",
+      "formula": "mean(-sum_l p_l*ln(p_l)/ln(number_of_nonempty_levels)); singleton=0",
+      "conditioning": "单层clause按冻结定义取0"
+    },
+    "td_clause_target_phase_violation": {
+      "plain_definition": "每个新学习子句仅当其所有变量TARGET phase已定义时可评价；计算可完整评价学习子句被既有TARGET向量全部否定的比例。无可评价事件为null，未知target事件不当作0。",
+      "formula": "fully_falsified_under_target/fully_target_evaluable_learned_clauses",
+      "conditioning": "仅完整可评价事件；替换旧TD19"
+    },
+    "td_conflict_variable_turnover": {
+      "plain_definition": "两个相邻固定128分析冲突窗口中，被分析变量集合的Jaccard距离。",
+      "formula": "1-estimated_Jaccard_bottom_k(V_prev,V_recent); fixed k256 and seed, estimate not exact full-set Jaccard",
+      "conditioning": "固定k256与seed；非精确全set声称"
+    },
+    "td_bump_concentration": {
+      "plain_definition": "前缀变量冲突分析bump计数分布的Herfindahl指数。",
+      "formula": "sum_v bump_count[v]^2/(sum_v bump_count[v])^2",
+      "conditioning": "共同动作前prefix；非原始activity尺度"
+    },
+    "td_activity_rank_enrichment": {
+      "plain_definition": "最近抽样256学习子句变量，在动作前checkpoint当前activity前10%中的占比相对基准0.1的偏离。",
+      "formula": "learned_variables_in_top_activity_decile/learned_variable_occurrences-0.1",
+      "conditioning": "当前动作前rank，非历史pre-bump rank"
+    },
+    "td_learned_recurrence": {
+      "plain_definition": "最近128学习子句分别与前一128窗口的最近文字集合相似度均值；符号保留。",
+      "formula": "mean_C max_D estimated_Jaccard(signed_literals(C),signed_literals(D))",
+      "conditioning": "每clause固定8 minhash"
+    },
+    "td_learned_postassertion_reuse_age": {
+      "plain_definition": "固定bottom-k256学习子句样本中，明确跳过定义该子句的birth driving assertion后，首次再次作为reason使用的冲突年龄中位数；未复用者保持右删失。",
+      "formula": "median(first_postassertion_reason_use_conflict-birth_conflict)",
+      "conditioning": "bottom-k256；右删失；替换旧TD24"
+    },
+    "td_blocker_success_share": {
+      "plain_definition": "主搜索传播检查中，因blocking literal已满足而跳过reason子句读取的比例。",
+      "formula": "satisfied_blocker_skips/watch_entries_examined",
+      "conditioning": "只加计数，不改变watch顺序"
+    },
+    "td_restart_signed_retention": {
+      "plain_definition": "重启前被赋值的固定样本中，重启后仍赋同一符号的负赋值保留率减去正赋值保留率。",
+      "formula": "P(retained_same_sign|pre_negative)-P(retained_same_sign|pre_positive)",
+      "conditioning": "同256样本，两个sign均需支持"
+    },
+    "td_chrono_redecision_flip": {
+      "plain_definition": "chronological回退后，同一变量下次自由决策与撤销赋值符号不同的比例。",
+      "formula": "flipped_redecisions_after_chrono/matched_redecisions_after_chrono",
+      "conditioning": "匹配后消费状态，非边际saved比例"
+    },
+    "td_conflict_burstiness": {
+      "plain_definition": "相邻主分析冲突间自由决策数间隔的变异系数；不是间隔均值。",
+      "formula": "sqrt(mean(gap^2)-mean(gap)^2)/mean(gap)",
+      "conditioning": "至少32个间隔；非mean rate"
+    },
+    "td_glue_size_dependence": {
+      "plain_definition": "学习子句按固定长度桶分层后，Glue与长度的有序联合相关；使用Spearman桶秩协方差。",
+      "formula": "corr(rank_bin(learned_size),rank_bin(glue))",
+      "conditioning": "81格；常数边缘分布缺失"
+    },
+    "td_lemma_dependency_depth": {
+      "plain_definition": "学习子句的证明依赖深度，定义原始reason子句为0，新子句为1+其已用reason子句最大深度。",
+      "formula": "mean(log1p(1+max(reason_clause_dependency_depth)))",
+      "conditioning": "原始reasons深度0；溢出缺失"
+    }
+  },
+  "policies": [
+    {
+      "rank": 1,
+      "representative_round": "I001",
+      "members": [
+        "I001"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "feature": "s_positive_fraction",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.196010372787
+          },
+          "right": {
+            "feature": "td_chrono_share",
+            "left": {
+              "action": "false"
+            },
+            "right": {
+              "action": "true"
+            },
+            "threshold": 0.226738
+          },
+          "threshold": 0.388031304508
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": 0.0016006724978476772,
+      "gain_vs_fixed_true": 0.05439238790894785,
+      "exploratory_interval95_vs_old_static": [
+        -0.0016853268262476573,
+        0.006909699376192766
+      ],
+      "result_path": "outputs/ta100/B01/I001/result.json",
+      "result_sha256": "5559f0925e4b786c570fa5f2f9a4268437acc84debc7650cb97d379d3e2810f5",
+      "fit_group_cv_gain": -0.0063470545757631225
+    },
+    {
+      "rank": 2,
+      "representative_round": "I002",
+      "members": [
+        "I002",
+        "I004",
+        "I005",
+        "I006",
+        "I007",
+        "I008",
+        "I009",
+        "I010",
+        "I011",
+        "I012",
+        "I013",
+        "I014",
+        "I015",
+        "I016",
+        "I017",
+        "I018",
+        "I019",
+        "I020",
+        "I021",
+        "I022",
+        "I023",
+        "I024",
+        "I025",
+        "I026",
+        "I028",
+        "I029",
+        "I030",
+        "I031",
+        "I032",
+        "I033",
+        "I034",
+        "I035",
+        "I036",
+        "I037",
+        "I038",
+        "I039",
+        "I040",
+        "I041",
+        "I042",
+        "I043",
+        "I044",
+        "I045",
+        "I046",
+        "I047",
+        "I048",
+        "I049",
+        "I050",
+        "I051",
+        "I052",
+        "I053",
+        "I054",
+        "I056",
+        "I057",
+        "I058",
+        "I060",
+        "I061",
+        "I062",
+        "I063",
+        "I064",
+        "I065",
+        "I067",
+        "I068",
+        "I070",
+        "I071",
+        "I072",
+        "I073",
+        "I074",
+        "I075",
+        "I076",
+        "I077",
+        "I078",
+        "I079",
+        "I080",
+        "I081",
+        "I082",
+        "I083",
+        "I084",
+        "I085",
+        "I086",
+        "I087",
+        "I089",
+        "I090",
+        "I091",
+        "I092",
+        "I093",
+        "I094",
+        "I097",
+        "I100"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "feature": "s_positive_fraction",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.196010372787
+          },
+          "right": {
+            "feature": "s_length_std",
+            "left": {
+              "action": "false"
+            },
+            "right": {
+              "action": "true"
+            },
+            "threshold": 0.46287575042025
+          },
+          "threshold": 0.388031304508
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": 0.0,
+      "gain_vs_fixed_true": 0.05287635313535044,
+      "exploratory_interval95_vs_old_static": [
+        0.0,
+        0.0
+      ],
+      "result_path": "outputs/ta100/B01/I002/result.json",
+      "result_sha256": "d3f28cbad7ca0f7c5f477665655779077862841f0a9fe7366df0b84594e5acfa",
+      "fit_group_cv_gain": 0.0
+    },
+    {
+      "rank": 3,
+      "representative_round": "I027",
+      "members": [
+        "I027"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "g_cycle_excess_per_incidence",
+          "left": {
+            "feature": "g_cycle_excess_per_incidence",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.448787720882375
+          },
+          "right": {
+            "feature": "graph_diffusion_return",
+            "left": {
+              "action": "false"
+            },
+            "right": {
+              "action": "true"
+            },
+            "threshold": 0.00514181419561497
+          },
+          "threshold": 0.48654943603899997
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": -0.0006476847269609731,
+      "gain_vs_fixed_true": 0.05226291561473273,
+      "exploratory_interval95_vs_old_static": [
+        -0.012786492219778595,
+        0.010291881596772372
+      ],
+      "result_path": "outputs/ta100/B03/I027/result.json",
+      "result_sha256": "a6d717ced301ad8b7424f617c46c8c7662fc61bf01c1007db99b84f75fee43dd",
+      "fit_group_cv_gain": -0.002388074531058937
+    },
+    {
+      "rank": 4,
+      "representative_round": "I069",
+      "members": [
+        "I069"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "feature": "s_positive_fraction",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.196010372787
+          },
+          "right": {
+            "feature": "algebra_convex_fractional_pressure",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": -0.010195831732056088
+          },
+          "threshold": 0.388031304508
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": -0.016824303383519812,
+      "gain_vs_fixed_true": 0.03694165755879397,
+      "exploratory_interval95_vs_old_static": [
+        -0.07726058778240212,
+        0.014287659762392569
+      ],
+      "result_path": "outputs/ta100/B07/I069/result.json",
+      "result_sha256": "5f94a8dd5e5bfa7b0521529c13e5c3af8b9db97b7bbcaa7b697ae01be04ff5c0",
+      "fit_group_cv_gain": 0.007280599971633328
+    },
+    {
+      "rank": 5,
+      "representative_round": "I098",
+      "members": [
+        "I098"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "feature": "s_positive_fraction",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.196010372787
+          },
+          "right": {
+            "feature": "td_conflict_burstiness",
+            "left": {
+              "action": "false"
+            },
+            "right": {
+              "action": "true"
+            },
+            "threshold": 2.8081808542
+          },
+          "threshold": 0.388031304508
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": -0.017321616817607133,
+      "gain_vs_fixed_true": 0.036470640245466424,
+      "exploratory_interval95_vs_old_static": [
+        -0.07811300954617811,
+        0.01389039687097692
+      ],
+      "result_path": "outputs/ta100/B10/I098/result.json",
+      "result_sha256": "73d1f8528b987b5517b687812e54f1bbdcede137e0f5accaddf0053f970c1894",
+      "fit_group_cv_gain": -0.006931933358465203
+    },
+    {
+      "rank": 6,
+      "representative_round": "I059",
+      "members": [
+        "I059"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "feature": "s_positive_fraction",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.196010372787
+          },
+          "right": {
+            "feature": "graph_nonbacktracking",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 3.9407252165999047
+          },
+          "threshold": 0.388031304508
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": -0.018830666388464534,
+      "gain_vs_fixed_true": 0.035041383712616336,
+      "exploratory_interval95_vs_old_static": [
+        -0.07860169049574219,
+        0.011471510970840778
+      ],
+      "result_path": "outputs/ta100/B06/I059/result.json",
+      "result_sha256": "0637cb846d7d3fbdabffdb76f12ece13da626e7204a895b63ae41adff8c557c4",
+      "fit_group_cv_gain": 0.005520658647760968
+    },
+    {
+      "rank": 7,
+      "representative_round": "I095",
+      "members": [
+        "I095"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "feature": "s_positive_fraction",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.196010372787
+          },
+          "right": {
+            "feature": "td_blocker_success_share",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.6019017555777499
+          },
+          "threshold": 0.388031304508
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": -0.02101699232153531,
+      "gain_vs_fixed_true": 0.0329706627216515,
+      "exploratory_interval95_vs_old_static": [
+        -0.08156324289958104,
+        0.005745851451758794
+      ],
+      "result_path": "outputs/ta100/B10/I095/result.json",
+      "result_sha256": "3947d6cc5d09ab063cf4ef825af8f2e348a0b3c7e963f0cc4f429b52365118d9",
+      "fit_group_cv_gain": 4.206870220957448e-05
+    },
+    {
+      "rank": 8,
+      "representative_round": "I003",
+      "members": [
+        "I003"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_mean_length",
+          "left": {
+            "feature": "s_mean_length",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 2.5630158765375004
+          },
+          "right": {
+            "feature": "td_phase_source_entropy",
+            "left": {
+              "action": "false"
+            },
+            "right": {
+              "action": "true"
+            },
+            "threshold": 0.40352420417540247
+          },
+          "threshold": 2.673101892945
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": -0.022517827027330073,
+      "gain_vs_fixed_true": 0.03154918668175821,
+      "exploratory_interval95_vs_old_static": [
+        -0.0977550141142201,
+        0.01630921191460556
+      ],
+      "result_path": "outputs/ta100/B01/I003/result.json",
+      "result_sha256": "ee52194d74a556e72b4cb72d53a62affcf3916c16ac0d567be1590a89a577cf6",
+      "fit_group_cv_gain": -0.0072594687714571116
+    },
+    {
+      "rank": 9,
+      "representative_round": "I066",
+      "members": [
+        "I066"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_mean_length",
+          "left": {
+            "feature": "s_mean_length",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 2.5630158765375004
+          },
+          "right": {
+            "feature": "algebra_hall_deficiency",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.58056640625
+          },
+          "threshold": 2.673101892945
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": -0.024712663802219703,
+      "gain_vs_fixed_true": 0.029470404871252076,
+      "exploratory_interval95_vs_old_static": [
+        -0.10035702470592996,
+        0.012509748385822554
+      ],
+      "result_path": "outputs/ta100/B07/I066/result.json",
+      "result_sha256": "03e64019b5e9e4008b91ebeb301ec26846f21a6a9bdabc82d69b54448bc44d32",
+      "fit_group_cv_gain": 0.007220279292573517
+    },
+    {
+      "rank": 10,
+      "representative_round": "I099",
+      "members": [
+        "I099"
+      ],
+      "policy": {
+        "baseline_action": "true",
+        "tree": {
+          "feature": "s_mean_length",
+          "left": {
+            "feature": "s_mean_length",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 2.5630158765375004
+          },
+          "right": {
+            "feature": "td_glue_size_dependence",
+            "left": {
+              "action": "true"
+            },
+            "right": {
+              "action": "false"
+            },
+            "threshold": 0.751223465906
+          },
+          "threshold": 2.673101892945
+        },
+        "fallback_policy": null,
+        "required_dynamic_features": null
+      },
+      "gain_vs_old_static": -0.025026782725233288,
+      "gain_vs_fixed_true": 0.029172895411338273,
+      "exploratory_interval95_vs_old_static": [
+        -0.10055295040804983,
+        0.012785426986783283
+      ],
+      "result_path": "outputs/ta100/B10/I099/result.json",
+      "result_sha256": "bc0341b33fb686eeb2865fce65cfe141228df62498ba703fc54236545af677f8",
+      "fit_group_cv_gain": 0.0
+    }
+  ]
+}

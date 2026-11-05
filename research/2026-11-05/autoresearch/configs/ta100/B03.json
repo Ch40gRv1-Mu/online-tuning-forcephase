@@ -1,0 +1,104 @@
+{
+  "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "block_id": "B03",
+  "collection_manifest_sha256": "04d8944dc4dc8e7eaf87c945fe4feff101b8aad6f012473278d4fd22d03d9a85",
+  "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "extractor_source_sha256": "c42eed86bca482aa13bc52606903cfe90ec5f17d68f3f598302a120cf7dfd63b",
+  "protocol_path": "refine-logs/ta100/PROTOCOL.md",
+  "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+  "registry_path": "configs/ta100/graph_registry_v1.json",
+  "registry_sha256": "8bcc3d40f940f6c9ff59374c3f46e20b4b936d5fb66bc3d4877710a9adfe67bf",
+  "rounds": [
+    {
+      "columns": [
+        "graph_incidence_assortativity"
+      ],
+      "hypothesis": "r=PearsonCorr_{(v,C) in E}(d_v,k_C), where k_C=|vars(C)| and d_v=#clauses containing v. Return null for zero endpoint variance.",
+      "id": "I021",
+      "mechanism_key": "incidence_joint_degree_arity_assortativity",
+      "registry_id": "S01"
+    },
+    {
+      "columns": [
+        "graph_sign_arity_information"
+      ],
+      "hypothesis": "I(S;K)=sum_{s,k} p(s,k) log[p(s,k)/(p(s)p(k))] over literal occurrences, with K=min(clause_literal_count,9), S=positive/negative; normalize by H(S) when nonzero.",
+      "id": "I022",
+      "mechanism_key": "literal_sign_constraint_arity_mutual_information",
+      "registry_id": "S02"
+    },
+    {
+      "columns": [
+        "graph_horn_interface"
+      ],
+      "hypothesis": "Let h_v and a_v count incidences of v in Horn and non-Horn clauses. f=sum_v min(h_v,a_v)/max(1,L).",
+      "id": "I023",
+      "mechanism_key": "horn_nonhorn_incidence_interface",
+      "registry_id": "S03"
+    },
+    {
+      "columns": [
+        "graph_butterfly_overlap"
+      ],
+      "hypothesis": "q_uv=#clauses containing both u and v. B=sum_{u<v} choose(q_uv,2); f=B/max(1,sum_C choose(k_C,2)).",
+      "id": "I024",
+      "mechanism_key": "incidence_butterfly_overlap_reuse",
+      "registry_id": "S04"
+    },
+    {
+      "columns": [
+        "graph_core_retention"
+      ],
+      "hypothesis": "Peel all degree<2 vertices from the undirected incidence graph to a fixed point. f=#retained variable vertices/max(1,n).",
+      "id": "I025",
+      "mechanism_key": "incidence_iterated_core_retention",
+      "registry_id": "S05"
+    },
+    {
+      "columns": [
+        "graph_articulation_fragility"
+      ],
+      "hypothesis": "For each variable v in an original component with N variable vertices, let s_i be variable counts in components after deleting v. f=max_v[((N-1)^2-sum_i s_i^2)/max(1,n^2)].",
+      "id": "I026",
+      "mechanism_key": "incidence_single_variable_separator_fragility",
+      "registry_id": "S06"
+    },
+    {
+      "columns": [
+        "graph_diffusion_return"
+      ],
+      "hypothesis": "S=D^(-1/2) A D^(-1/2) on the unsigned incidence graph. f=tr(S^4)/max(1,n+m), estimated by mean_{8 fixed seeds} z^T S^4 z/(n+m) for Rademacher z.",
+      "id": "I027",
+      "mechanism_key": "unsigned_incidence_diffusion_return",
+      "registry_id": "S07"
+    },
+    {
+      "columns": [
+        "graph_primal_transitivity"
+      ],
+      "hypothesis": "On the deduplicated primal graph G_V, f=3*triangle_count/max(1,sum_v choose(deg_GV(v),2)).",
+      "id": "I028",
+      "mechanism_key": "primal_transitivity_wedge_closure",
+      "registry_id": "S08"
+    },
+    {
+      "columns": [
+        "graph_gate_sharing"
+      ],
+      "hypothesis": "Detect complete signed AND templates z<->(a and b), retain uniquely defined output variables. Let f_u=#retained gates using variable u as an input. f=sum_u max(0,f_u-1)/max(1,sum_u f_u).",
+      "id": "I029",
+      "mechanism_key": "recognized_gate_dataflow_sharing",
+      "registry_id": "S09"
+    },
+    {
+      "columns": [
+        "graph_circuit_residual_interface"
+      ],
+      "hypothesis": "Let O be uniquely defined gate outputs and T the set of defining clauses of retained gates. f=sum_{v in O} #incidences(v,C notin T)/max(1,sum_{v in O}d_v).",
+      "id": "I030",
+      "mechanism_key": "recognized_circuit_residual_interface",
+      "registry_id": "S10"
+    }
+  ],
+  "schema": "ta100.block.v1"
+}

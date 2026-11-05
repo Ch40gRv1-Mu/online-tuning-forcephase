@@ -1,0 +1,10 @@
+{
+  "comparison": "Fplus vs D; complete P1 48 development-fit parents, seed0, T60",
+  "point_improvement": 0.03551234342937171,
+  "descriptive_95pct_parent_bootstrap": [
+    -0.001237770332150001,
+    0.08791786606354313
+  ],
+  "draws": 5000,
+  "interpretation": "Exploratory development diagnostic only; static winner selected on same panel; no final-test or generalization claim."
+}

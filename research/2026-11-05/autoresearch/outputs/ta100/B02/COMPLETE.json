@@ -1,0 +1,141 @@
+{
+  "analysis_cpu_s_known": 6.899642000000001,
+  "analysis_cpu_unknown_workers": 0,
+  "bindings": {
+    "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+    "block_sha256": "ed9fd890d57edbc322927c1d4e58715cef5c49a5b100c341c1e1090ee6fb7ab4",
+    "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+    "features_sha256": "b1acdb38f903e53e1f66078f147850108103cd9f6862dfefd6cb9df5ed27b78b",
+    "learning_sha256": "f0779217c16e0530a5f9d02ff9d2d91eddf8431efd6e6022f2d4f5160101a3fb",
+    "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+    "registry_sha256": "da61e01ea3b2a4bc2e66bc71a0b532075b94ec88d809d883dd58ae04a8c29188",
+    "source_sha256": "506dc710e20dabfe36be1c60fd651770bd9a1ce6bc2a4f152040aabb4f172a92"
+  },
+  "block_id": "B02",
+  "cost_summary_shared_once": {},
+  "feedback_n": 60,
+  "fit_n": 180,
+  "members": {
+    "BLOCK_MANIFEST.json": "9ffd28c0e0e84b86d7f3939706f77b007515f7c67001c84ecd44d4dd1e6c9d72",
+    "I011/result.json": "082d75883290c841f717864f61411ebe4c9c27a9c143308995156437c1cbc99e",
+    "I012/result.json": "f41de6c5c4a10933ac01123a5402df25d585ff95bb6357c1fd53ed3fb56d4518",
+    "I013/result.json": "893d8ff6ad21514a237b4be10eead4de7158cdac95aabb59eaff3d43a01aee87",
+    "I014/result.json": "a9953824dc8901d0513b7dfcfd8081af55d30e9dddd500e7e20f7e8ce484d90f",
+    "I015/result.json": "883310cd623a27687b8f897af91c43a4213eb93d11903d1df86cb332fb7e9917",
+    "I016/result.json": "a8597b53b8c2cf674f7fa4eb9a7ec136c6eecf1795e5e01cbdb5b21116525e2e",
+    "I017/result.json": "6d7337575adfaf37a639a99f77afa47821c17c341b8e7b278c916ad10f166596",
+    "I018/result.json": "7c00dbbd8644a7cd1bbba3cbf8bfeae1d71faf2e808f348cb5091573b610707a",
+    "I019/result.json": "1c979992dc37926b75950aecf5656fe6a64b753cb5307b531849918c738b7ffb",
+    "I020/result.json": "565070e413f196339d84aa82b002f7e6f2e497e799a3f6234bb5b75a205df389"
+  },
+  "rounds": [
+    {
+      "columns": [
+        "f_core_literal_repetition"
+      ],
+      "hypothesis": "sum_C (raw_width(C)-distinct_signed_width(C)) / raw_literal_count",
+      "id": "I011",
+      "mechanism_key": "literal_repetition",
+      "registry_id": "nodes_01"
+    },
+    {
+      "columns": [
+        "f_core_tautology"
+      ],
+      "hypothesis": "count_C[exists x: x and -x in C] / M",
+      "id": "I012",
+      "mechanism_key": "tautology",
+      "registry_id": "nodes_02"
+    },
+    {
+      "columns": [
+        "f_core_duplicate_clause"
+      ],
+      "hypothesis": "sum_S max(freq(S)-1,0) / count_C[non-tautological and width<=8]",
+      "id": "I013",
+      "mechanism_key": "duplicate_clause",
+      "registry_id": "nodes_03"
+    },
+    {
+      "columns": [
+        "f_core_subsumption"
+      ],
+      "hypothesis": "count_C[3<=width(C)<=8 and exists D in F: 2<=width(D)<width(C) and D subset C] / eligible_C",
+      "id": "I014",
+      "mechanism_key": "subsumption",
+      "registry_id": "nodes_04"
+    },
+    {
+      "columns": [
+        "f_core_self_subsumption"
+      ],
+      "hypothesis": "count_C[width(C)=4 and exists l in C: (C minus l) union {-l} in F] / count_C[width(C)=4]",
+      "id": "I015",
+      "mechanism_key": "self_subsumption",
+      "registry_id": "nodes_05"
+    },
+    {
+      "columns": [
+        "f_core_resolution_fanout"
+      ],
+      "hypothesis": "sum_v p_v*n_v / sum_v(p_v+n_v), with one occurrence per non-tautological clause/literal",
+      "id": "I016",
+      "mechanism_key": "resolution_growth",
+      "registry_id": "nodes_06"
+    },
+    {
+      "columns": [
+        "f_core_resolvent_tautology"
+      ],
+      "hypothesis": "tautological R(C,D,v) / eligible resolution pairs; parents have3..8 literals and at least one parent width>=4; p_v*n_v<=64",
+      "id": "I017",
+      "mechanism_key": "resolvent_tautology",
+      "registry_id": "nodes_07"
+    },
+    {
+      "columns": [
+        "f_core_blocked_polarity"
+      ],
+      "hypothesis": "(count_C[positive blocking literal] - count_C[negative blocking literal]) / eligible_C",
+      "id": "I018",
+      "mechanism_key": "blockedness",
+      "registry_id": "nodes_08"
+    },
+    {
+      "columns": [
+        "f_core_variable_twins"
+      ],
+      "hypothesis": "variables in size>=2 classes of equal (positive_clause_ID_set,negative_clause_ID_set) / active_variables",
+      "id": "I019",
+      "mechanism_key": "variable_twins",
+      "registry_id": "nodes_09"
+    },
+    {
+      "columns": [
+        "f_core_majority_flip_gain"
+      ],
+      "hypothesis": "(count_v[gain(v)>0 and majority(v)=false] - count_v[gain(v)>0 and majority(v)=true]) / active_variables; gain=make-break",
+      "id": "I020",
+      "mechanism_key": "local_flip_gain",
+      "registry_id": "nodes_10"
+    }
+  ],
+  "schema": "ta100.block_execution.v1",
+  "started_ns": 1793858630728803000,
+  "status": "COMPLETE",
+  "statuses": {
+    "I011": "COMPLETE",
+    "I012": "COMPLETE",
+    "I013": "COMPLETE",
+    "I014": "COMPLETE",
+    "I015": "COMPLETE",
+    "I016": "COMPLETE",
+    "I017": "COMPLETE",
+    "I018": "COMPLETE",
+    "I019": "COMPLETE",
+    "I020": "COMPLETE"
+  },
+  "terminal_rounds": 10,
+  "wall_s": 2.8924431250197813,
+  "workers": 3
+}

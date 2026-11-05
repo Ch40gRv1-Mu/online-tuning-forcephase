@@ -1,0 +1,406 @@
+{
+  "scope": "Fit-only prespecified5fold characterization; original-label target, no held-out feedback or RICL reward.",
+  "protocol_sha256": "ace04d0632c0169ddd80b661f9c41eb0cf4707e9e6fe499460f8b0b8730636d3",
+  "source_sha256": "a62dbb6431c0894fdfd614fd9c2d413c3a3048fc151cedef2e424d2599816948",
+  "cohort_sha256": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0",
+  "feature_identity": {
+    "binary_sha256": "3c09f935a435d6e6c6584182fe77d6a98f996970af368f317d48ecf7a8212a1b",
+    "cohort_sha256": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0",
+    "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "runner_sha256": "017667a3f777d3e170dc71cf46d6b44d429b64f6499917d9734a24e2ed6b966f",
+    "source_sha256": "2f17ba71cda91efd812b0abdf58e960a74bd223ab2071a0faf5ceb52f159fca6"
+  },
+  "all_fit_parents": 144,
+  "labelled_fit_parents": 53,
+  "informative_parity_parents": 59,
+  "informative_labelled_parity_parents": 23,
+  "scores": {
+    "constant": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 35,
+      "accuracy": 0.660377358490566,
+      "weighted_error": 33.665067927730476,
+      "weighted_error_rate": 0.40068314807904215,
+      "prediction_counts_all_parents": {
+        "false": 0,
+        "true": 144
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": 0.0,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "weighted_error_rate_reduction": 0.0,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.1132075471698113,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.05999999999999994,
+          0.28260869565217395
+        ],
+        "weighted_error_rate_reduction": -0.09083433441964078,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.37613485803346497,
+          0.2312553179049622
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "parity_participation": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 39,
+      "accuracy": 0.7358490566037735,
+      "weighted_error": 33.92802094435807,
+      "weighted_error_rate": 0.40381282667423773,
+      "prediction_counts_all_parents": {
+        "false": 15,
+        "true": 129
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": 0.07547169811320753,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.020833333333333263,
+          0.17783333333333307
+        ],
+        "weighted_error_rate_reduction": -0.003129678595195584,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.04729505066891016,
+          0.034620086481478345
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.18867924528301883,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          0.020000000000000014,
+          0.3584905660377359
+        ],
+        "weighted_error_rate_reduction": -0.09396401301483637,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.3687583501882495,
+          0.2253288705635744
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "parity_orientation": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 32,
+      "accuracy": 0.6037735849056604,
+      "weighted_error": 38.09370850148108,
+      "weighted_error_rate": 0.45339302677616183,
+      "prediction_counts_all_parents": {
+        "false": 20,
+        "true": 124
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": -0.05660377358490565,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.15094339622641506,
+          0.039999999999999925
+        ],
+        "weighted_error_rate_reduction": -0.05270987869711968,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.1673694420809857,
+          0.009126359902534315
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.05660377358490565,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.10449725058915948,
+          0.2115384615384615
+        ],
+        "weighted_error_rate_reduction": -0.14354421311676047,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.40499181853538607,
+          0.16025100822681598
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "old34_control": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 29,
+      "accuracy": 0.5471698113207547,
+      "weighted_error": 26.033241999767675,
+      "weighted_error_rate": 0.30984881365940137,
+      "prediction_counts_all_parents": {
+        "false": 64,
+        "true": 80
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": -0.1132075471698113,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.28260869565217395,
+          0.05999999999999994
+        ],
+        "weighted_error_rate_reduction": 0.09083433441964078,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.23125531790496245,
+          0.3761348580334648
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.0,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "weighted_error_rate_reduction": 0.0,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    }
+  },
+  "fold_models": [
+    {
+      "fold": 0,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "parity_participation": {
+          "feature": "p_shared_variable_fraction",
+          "threshold": 0.38014602711625,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "parity_orientation": {
+          "feature": "p_forbidden_even_fraction",
+          "threshold": 0.0,
+          "missing": "right",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000232018561485,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "parity_participation": {
+          "feature": "p_shared_variable_fraction",
+          "threshold": 0.41788892113725,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "parity_orientation": {
+          "feature": "p_forbidden_even_fraction",
+          "threshold": 0.0,
+          "missing": "right",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.0002573194859255,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "parity_participation": {
+          "feature": "p_shared_variable_fraction",
+          "threshold": 0.3850699284325,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "parity_orientation": {
+          "feature": "p_forbidden_even_fraction",
+          "threshold": 0.5902356230029999,
+          "missing": "right",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000103799045049,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "parity_participation": {
+          "feature": "p_max_template_degree",
+          "threshold": 16.0,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "parity_orientation": {
+          "action": "true"
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000193628510172,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "training_parents": 116,
+      "validation_parents": 28,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "parity_participation": {
+          "feature": "p_shared_variable_fraction",
+          "threshold": 0.380769958072125,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "parity_orientation": {
+          "feature": "p_forbidden_even_fraction",
+          "threshold": 0.0,
+          "missing": "right",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 1.777830996775e-05,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    }
+  ],
+  "continuation_criteria_met": false,
+  "feature_cpu_s_sum": 31.217613,
+  "local_analysis_cpu_s": 1.258166,
+  "feedback_read": 0,
+  "gate_read": 0,
+  "final_test_read": 0,
+  "new_RICL_rewards": 0,
+  "new_solver_calls": 0,
+  "limitations": [
+    "Already-seen fit data; intervals condition on out-of-fold predictions and are exploratory.",
+    "Original phase/version unverified; no automatic mapping to modernF\u00b1.",
+    "No cost comparison combining oldTA wall and featureCPU; no deployment claim.",
+    "No hidden reuse of another agent gate; later policy needs available shared8-round slot."
+  ]
+}

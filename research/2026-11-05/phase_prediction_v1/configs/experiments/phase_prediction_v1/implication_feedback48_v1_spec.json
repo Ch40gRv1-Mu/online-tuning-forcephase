@@ -1,0 +1,12 @@
+{
+  "cohort_sha256": "67c977f53eacbafd3737e284e55de3aa560828f9c160fd458afba4f690feb20b",
+  "binary_sha256": "ab61b1f2f10fb18aa9bac9217364e57a54f441f93c65b1511682b00ee16cfd50",
+  "source_sha256": "0eb3a635681d25106b5bfe609f4bd9e8f27c34e4e52f0f3ea9efff057c73b996",
+  "question": "Predeclared SCC-cycle association; no new policy fitting or reward",
+  "roles": [
+    "development_feedback"
+  ],
+  "parents": 48,
+  "per_child_cpu_s": 10,
+  "per_child_memory_bytes": 1610612736
+}

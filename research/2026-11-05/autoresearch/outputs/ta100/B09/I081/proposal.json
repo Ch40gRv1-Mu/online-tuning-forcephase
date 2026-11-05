@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_learned_pure_sign_balance"
+    ],
+    "hypothesis": "新学习子句中全正与全负子句的差，占非空学习子句数。",
+    "id": "I081",
+    "mechanism_key": "learned_clause_sign_coherence",
+    "registry_id": "TD11"
+  },
+  "original_preexecution_config": "configs/ta100/B09.json",
+  "original_config_sha256": "93361ef727629ed8046c1d35d4d6981e1dd16e9512e634dba03b13acbc235f6f",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

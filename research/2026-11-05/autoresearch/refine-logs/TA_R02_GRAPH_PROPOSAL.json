@@ -1,0 +1,41 @@
+{
+  "actor": "parallel_static",
+  "feedback_interpretation": [
+    "R1 graph/gate has a positive exploratory point estimate but its paired interval includes no improvement; the two largest reported regressions occur in different cycle regimes and both have zero detected gate motifs. Gate absence is therefore not a sufficient structural explanation for false routing.",
+    "Fit clusters retain a true-preferred main cluster; the small 8-parent or 7/1-parent outlier groups have no clear false winners and cannot justify a new false-routing cluster. Cluster membership is not supplied as a predictor.",
+    "This is a constrained exploratory proposal after full feedback, not an independent confirmation or a claim that the new feature pair improves cost."
+  ],
+  "feedback_source": "refine-logs/TA_R01_FEEDBACK.json",
+  "feedback_source_sha256": "17069e3292e4521bec22b8f35ab434a5392da092bdde31003d7340c671ee2e4e",
+  "mechanism": "Unsigned cycle structure is invariant under globally flipping variable signs and cannot by itself determine which Boolean phase is preferable. Positive-literal fraction changes with encoding direction and can provide that directional anchor. A two-level interaction can condition the sign-based choice on structural redundancy without treating zero recognized gate motifs as evidence for false.",
+  "proposal": {
+    "features": [
+      "g_cycle_excess_per_incidence",
+      "s_positive_fraction"
+    ],
+    "hypothesis": "Cycle redundancy may identify a useful structural context only when paired with encoding polarity. Keep graph context but replace gate-motif presence with positive-literal fraction; learn thresholds and actions exclusively on fit with the unchanged bounded cost-tree procedure.",
+    "id": "graph_signed_context",
+    "max_depth": 2,
+    "min_leaf": 12,
+    "min_relative_improvement": 0.01,
+    "quantiles": [
+      0.125,
+      0.25,
+      0.375,
+      0.5,
+      0.625,
+      0.75,
+      0.875
+    ],
+    "seed": 20261105
+  },
+  "round": "TA-R02",
+  "schema": "ta-offline-single-proposal-v1",
+  "training_contract": {
+    "cost_and_population": "Preserve all parent rows and the existing feature-cost accounting and evaluation criteria.",
+    "evaluation": "Root commits the consolidated R2 proposals before a single complete feedback evaluation; no gate/test access.",
+    "maximum_distinct_numeric_features": 2,
+    "missing_feature_fallback": "Fit-best fixed phase under the existing implementation.",
+    "thresholds_and_actions": "Unchanged full-fit seven-quantile search; no hand-set threshold or action from feedback examples."
+  }
+}

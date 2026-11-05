@@ -1,0 +1,14 @@
+{
+  "status": "RETAINED_BEST_FAILED_NOT_VALIDATED_WINNER",
+  "source_episode": "formal_round2_0",
+  "selection_scope": "Best feedback PAR2 among6 observed proposals at rounds2through4; exploratory selection, not untouched evaluation",
+  "policy_file": "configs/policies/phase_prediction_v1/retained_failed_candidate.json",
+  "policy_file_sha256": "a2266ffcbe387df09531179bdb66cc1198878fe59114a70a16de2ba7bec3ea4c",
+  "extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+  "feature_contract": "Original34 feature pool and corresponding CPU fee; do not deploy using depth43 extractor",
+  "offline_feedback_par2": 80.82119375,
+  "feedback_D_par2": 73.5413728125,
+  "feedback_Iminus_par2": 70.51229590625,
+  "eligible_for_gate": false,
+  "next_action": "Freeze consistentT60 deployment contract/source before original required8 actual first4fit+first4feedback seed0 checks. Respect shared node load and other owner. No full matrix rerun or gate access."
+}

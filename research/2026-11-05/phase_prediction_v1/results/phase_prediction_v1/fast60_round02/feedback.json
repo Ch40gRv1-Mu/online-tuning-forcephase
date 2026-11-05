@@ -1,0 +1,442 @@
+[
+  {
+    "acceptance": "exploratory_positive_pending_gate_and_deployment",
+    "analysis_identity": {
+      "checker_options": [
+        "--no-trim"
+      ],
+      "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+      "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+      "extractor_memory_bytes": 3221225472,
+      "extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+      "memory_bytes": 1610612736,
+      "mode": "static",
+      "proof_file_limit_bytes": 1073741824,
+      "runner_sha256": "32413e8769bfd70d1a14953373f4ee7000c469ce4d9300114245854109d6497a",
+      "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+      "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+      "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+      "verification": "timed_binary_LRAT_lrat_trim"
+    },
+    "baseline_par2": 90.20492834375,
+    "baseline_solved_seed_average_count": 4,
+    "descriptive_95pct_bootstrap": [
+      -7.758890038145339e-05,
+      0.25404853043970277
+    ],
+    "development_gate_cases_used": 0,
+    "episode_id": "formal_round2_0",
+    "evaluation_cases_sha256": "42cec4ecd10687b47459f3a69739de2ff054d2545c9a8152c097326c710a841b",
+    "evaluation_kind": "new_server_formal_static_cost_matrix",
+    "feedback_parents": 16,
+    "fit_parents": 24,
+    "frozen_static_baseline_from_fit": "Fplus",
+    "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+    "is_deployment_validation": false,
+    "learner_sha256": "925c45fcf90cc0c0dd0caa4d07b73c56fb3b0d3cdf85708dd62a5102e7e4c0b2",
+    "local_fit_and_evaluation_cpu_s": 0.191087,
+    "matched_simple_control": {
+      "depth": 2,
+      "feedback": {
+        "baseline_par2": 90.20492834375,
+        "baseline_solved_seed_average_count": 4,
+        "descriptive_95pct_bootstrap": [
+          -7.758890038145339e-05,
+          0.25404853043970277
+        ],
+        "feedback_parents": 16,
+        "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+        "policy_par2": 80.82119375,
+        "policy_solved_seed_average_count": 6,
+        "reward": 0.10402685048416382,
+        "sum_par2_regret_to_free_three_action_oracle": 153.63068399999997,
+        "worst_numeric_examples": [
+          {
+            "baseline_par2": 0.7405539999999999,
+            "features": {
+              "s_long_fraction": 3.2854749154e-06
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 0.8399570000000001
+          },
+          {
+            "baseline_par2": 0.028207499999999996,
+            "features": {
+              "s_long_fraction": 0.0123690835069
+            },
+            "selected_action": "D",
+            "selected_par2": 0.059213499999999995
+          },
+          {
+            "baseline_par2": 0.020374999999999997,
+            "features": {
+              "s_long_fraction": 0
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 0.036735
+          }
+        ]
+      },
+      "fit_par2": 84.25773510416667,
+      "input_features": [
+        "g_components",
+        "g_cycle_excess",
+        "g_cycle_excess_per_incidence",
+        "g_degree_cv",
+        "g_degree_entropy_normalized",
+        "g_degree_max",
+        "g_degree_mean",
+        "g_degree_p50",
+        "g_degree_p90",
+        "g_degree_two_fraction",
+        "g_gate_motif_fraction",
+        "g_gate_motifs_exact",
+        "g_largest_component_fraction",
+        "g_leaf_variable_fraction",
+        "s_antihorn_fraction",
+        "s_binary_fraction",
+        "s_clauses",
+        "s_cv_ratio",
+        "s_empty_fraction",
+        "s_header_variables",
+        "s_horn_fraction",
+        "s_jw_positive_fraction",
+        "s_length_std",
+        "s_log_clauses",
+        "s_log_variables",
+        "s_long_fraction",
+        "s_max_length",
+        "s_mean_length",
+        "s_mean_polarity_imbalance",
+        "s_positive_fraction",
+        "s_pure_variable_fraction",
+        "s_ternary_fraction",
+        "s_unit_fraction",
+        "s_variables"
+      ],
+      "min_leaf": 12,
+      "policy": {
+        "feature": "s_long_fraction",
+        "left": {
+          "action": "Fplus"
+        },
+        "missing": "left",
+        "right": {
+          "action": "D"
+        },
+        "threshold": 0.00977806038068
+      },
+      "policy_sha256": "d6e0a74244cbff3c38edf1d45cae92663800ac10593b5ab725b69d5f503e9e03",
+      "training_scope": "Fit only; predeclared full numeric pool, same tree capacity, grid and total-budget loss."
+    },
+    "panel_contract": {
+      "cutoff_s": 60,
+      "independent_parents": 40,
+      "required_seeds": [
+        0,
+        1
+      ]
+    },
+    "plan_sha256": "2970e81468db5396bb68cbfc75f6572a289cb888b23928e0117a1373a3cb96d7",
+    "policy": {
+      "feature": "s_long_fraction",
+      "left": {
+        "action": "Fplus"
+      },
+      "missing": "left",
+      "right": {
+        "action": "D"
+      },
+      "threshold": 0.00977806038068
+    },
+    "policy_par2": 80.82119375,
+    "policy_solved_seed_average_count": 6,
+    "policy_vs_matched_simple_control": {
+      "baseline_par2": 80.82119375,
+      "baseline_solved_seed_average_count": 6,
+      "descriptive_95pct_bootstrap": [
+        0.0,
+        0.0
+      ],
+      "feedback_parents": 16,
+      "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+      "policy_par2": 80.82119375,
+      "policy_solved_seed_average_count": 6,
+      "reward": 0.0,
+      "sum_par2_regret_to_free_three_action_oracle": 153.63068399999997,
+      "worst_numeric_examples": [
+        {
+          "baseline_par2": 120,
+          "features": {
+            "s_long_fraction": 0
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        },
+        {
+          "baseline_par2": 120,
+          "features": {
+            "s_long_fraction": 0.00827845331241
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        },
+        {
+          "baseline_par2": 120,
+          "features": {
+            "s_long_fraction": 0.00976036540255
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        }
+      ]
+    },
+    "proposal_kind": "clause_length_and_polarity",
+    "proposal_rationale": "Round1 length/binary stumps had uncertain gains and costly mistakes. Fit a shallow rule with richer directly computed clause and polarity summaries; do not infer an application label.",
+    "protected_test_cases_used": 0,
+    "reward": 0.10402685048416382,
+    "round": 2,
+    "split_role": "development_feedback",
+    "sum_par2_regret_to_free_three_action_oracle": 153.63068399999997,
+    "threshold_fitter_sha256": "78101b69436fe1082971cbf760c3b89e819d736e26c671175fb3f811ec332455",
+    "worst_numeric_examples": [
+      {
+        "baseline_par2": 0.7405539999999999,
+        "features": {
+          "s_long_fraction": 3.2854749154e-06
+        },
+        "selected_action": "Fplus",
+        "selected_par2": 0.8399570000000001
+      },
+      {
+        "baseline_par2": 0.028207499999999996,
+        "features": {
+          "s_long_fraction": 0.0123690835069
+        },
+        "selected_action": "D",
+        "selected_par2": 0.059213499999999995
+      },
+      {
+        "baseline_par2": 0.020374999999999997,
+        "features": {
+          "s_long_fraction": 0
+        },
+        "selected_action": "Fplus",
+        "selected_par2": 0.036735
+      }
+    ]
+  },
+  {
+    "acceptance": "nonpositive_feedback_retained_for_memory_and_counterexamples",
+    "analysis_identity": {
+      "checker_options": [
+        "--no-trim"
+      ],
+      "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+      "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+      "extractor_memory_bytes": 3221225472,
+      "extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+      "memory_bytes": 1610612736,
+      "mode": "static",
+      "proof_file_limit_bytes": 1073741824,
+      "runner_sha256": "32413e8769bfd70d1a14953373f4ee7000c469ce4d9300114245854109d6497a",
+      "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+      "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+      "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+      "verification": "timed_binary_LRAT_lrat_trim"
+    },
+    "baseline_par2": 90.20492834375,
+    "baseline_solved_seed_average_count": 4,
+    "descriptive_95pct_bootstrap": [
+      0.0,
+      0.0
+    ],
+    "development_gate_cases_used": 0,
+    "episode_id": "formal_round2_1",
+    "evaluation_cases_sha256": "42cec4ecd10687b47459f3a69739de2ff054d2545c9a8152c097326c710a841b",
+    "evaluation_kind": "new_server_formal_static_cost_matrix",
+    "feedback_parents": 16,
+    "fit_parents": 24,
+    "frozen_static_baseline_from_fit": "Fplus",
+    "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+    "is_deployment_validation": false,
+    "learner_sha256": "925c45fcf90cc0c0dd0caa4d07b73c56fb3b0d3cdf85708dd62a5102e7e4c0b2",
+    "local_fit_and_evaluation_cpu_s": 0.10162800000000002,
+    "matched_simple_control": {
+      "depth": 2,
+      "feedback": {
+        "baseline_par2": 90.20492834375,
+        "baseline_solved_seed_average_count": 4,
+        "descriptive_95pct_bootstrap": [
+          -7.758890038145339e-05,
+          0.25404853043970277
+        ],
+        "feedback_parents": 16,
+        "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+        "policy_par2": 80.82119375,
+        "policy_solved_seed_average_count": 6,
+        "reward": 0.10402685048416382,
+        "sum_par2_regret_to_free_three_action_oracle": 153.63068399999997,
+        "worst_numeric_examples": [
+          {
+            "baseline_par2": 0.7405539999999999,
+            "features": {
+              "s_long_fraction": 3.2854749154e-06
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 0.8399570000000001
+          },
+          {
+            "baseline_par2": 0.028207499999999996,
+            "features": {
+              "s_long_fraction": 0.0123690835069
+            },
+            "selected_action": "D",
+            "selected_par2": 0.059213499999999995
+          },
+          {
+            "baseline_par2": 0.020374999999999997,
+            "features": {
+              "s_long_fraction": 0
+            },
+            "selected_action": "Fplus",
+            "selected_par2": 0.036735
+          }
+        ]
+      },
+      "fit_par2": 84.25773510416667,
+      "input_features": [
+        "g_components",
+        "g_cycle_excess",
+        "g_cycle_excess_per_incidence",
+        "g_degree_cv",
+        "g_degree_entropy_normalized",
+        "g_degree_max",
+        "g_degree_mean",
+        "g_degree_p50",
+        "g_degree_p90",
+        "g_degree_two_fraction",
+        "g_gate_motif_fraction",
+        "g_gate_motifs_exact",
+        "g_largest_component_fraction",
+        "g_leaf_variable_fraction",
+        "s_antihorn_fraction",
+        "s_binary_fraction",
+        "s_clauses",
+        "s_cv_ratio",
+        "s_empty_fraction",
+        "s_header_variables",
+        "s_horn_fraction",
+        "s_jw_positive_fraction",
+        "s_length_std",
+        "s_log_clauses",
+        "s_log_variables",
+        "s_long_fraction",
+        "s_max_length",
+        "s_mean_length",
+        "s_mean_polarity_imbalance",
+        "s_positive_fraction",
+        "s_pure_variable_fraction",
+        "s_ternary_fraction",
+        "s_unit_fraction",
+        "s_variables"
+      ],
+      "min_leaf": 12,
+      "policy": {
+        "feature": "s_long_fraction",
+        "left": {
+          "action": "Fplus"
+        },
+        "missing": "left",
+        "right": {
+          "action": "D"
+        },
+        "threshold": 0.00977806038068
+      },
+      "policy_sha256": "d6e0a74244cbff3c38edf1d45cae92663800ac10593b5ab725b69d5f503e9e03",
+      "training_scope": "Fit only; predeclared full numeric pool, same tree capacity, grid and total-budget loss."
+    },
+    "panel_contract": {
+      "cutoff_s": 60,
+      "independent_parents": 40,
+      "required_seeds": [
+        0,
+        1
+      ]
+    },
+    "plan_sha256": "2970e81468db5396bb68cbfc75f6572a289cb888b23928e0117a1373a3cb96d7",
+    "policy": {
+      "action": "Fplus"
+    },
+    "policy_par2": 90.20492834375,
+    "policy_solved_seed_average_count": 4,
+    "policy_vs_matched_simple_control": {
+      "baseline_par2": 80.82119375,
+      "baseline_solved_seed_average_count": 6,
+      "descriptive_95pct_bootstrap": [
+        -0.33980451478852247,
+        8.464466876534349e-05
+      ],
+      "feedback_parents": 16,
+      "interval_scope": "Exploratory repeated development feedback, not confirmation; parent is resampling unit.",
+      "policy_par2": 90.20492834375,
+      "policy_solved_seed_average_count": 4,
+      "reward": -0.11610487495119415,
+      "sum_par2_regret_to_free_three_action_oracle": 303.7704375,
+      "worst_numeric_examples": [
+        {
+          "baseline_par2": 36.638814499999995,
+          "features": {
+            "s_long_fraction": 0.0122939368539
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        },
+        {
+          "baseline_par2": 53.5353995,
+          "features": {
+            "s_long_fraction": 0.0145201763945
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 120
+        },
+        {
+          "baseline_par2": 2.0289805,
+          "features": {
+            "s_long_fraction": 0.0547391086211
+          },
+          "selected_action": "Fplus",
+          "selected_par2": 2.4897169999999997
+        }
+      ]
+    },
+    "proposal_kind": "graph_only",
+    "proposal_rationale": "Test the stated tree/gate structure perspective with numeric invariant graph measurements; compare its real extraction cost with the clause-only proposal.",
+    "protected_test_cases_used": 0,
+    "reward": 0.0,
+    "round": 2,
+    "split_role": "development_feedback",
+    "sum_par2_regret_to_free_three_action_oracle": 303.7704375,
+    "threshold_fitter_sha256": "78101b69436fe1082971cbf760c3b89e819d736e26c671175fb3f811ec332455",
+    "worst_numeric_examples": [
+      {
+        "baseline_par2": 120,
+        "features": {},
+        "selected_action": "Fplus",
+        "selected_par2": 120
+      },
+      {
+        "baseline_par2": 120,
+        "features": {},
+        "selected_action": "Fplus",
+        "selected_par2": 120
+      },
+      {
+        "baseline_par2": 120,
+        "features": {},
+        "selected_action": "Fplus",
+        "selected_par2": 120
+      }
+    ]
+  }
+]

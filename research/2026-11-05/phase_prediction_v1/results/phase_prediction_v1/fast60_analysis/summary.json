@@ -1,0 +1,77 @@
+{
+  "checker_and_model_cpu_hours": 0.007649256726388888,
+  "feature_cpu_hours": 0.003526928611111111,
+  "identity": {
+    "checker_options": [
+      "--no-trim"
+    ],
+    "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+    "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "extractor_memory_bytes": 3221225472,
+    "extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+    "memory_bytes": 1610612736,
+    "mode": "static",
+    "proof_file_limit_bytes": 1073741824,
+    "runner_sha256": "32413e8769bfd70d1a14953373f4ee7000c469ce4d9300114245854109d6497a",
+    "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+    "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+    "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+    "verification": "timed_binary_LRAT_lrat_trim"
+  },
+  "interpretation": "Development diagnostic; no held-out confirmation or deployed policy claim.",
+  "mode": "static",
+  "online_prefix_reached": 0,
+  "resource_recovery": false,
+  "roles": {
+    "development_feedback": {
+      "action_semantics": "Static option pair from initialization.",
+      "all_actions_censored_parents": 9,
+      "best_static_diagnostic": "Iminus",
+      "mean_par2": {
+        "D": 73.5413728125,
+        "Fminus": 86.02870134375,
+        "Fplus": 90.20492834375,
+        "Iminus": 70.51229590625
+      },
+      "oracle_improvement_over_D": 0.031575380274996956,
+      "oracle_improvement_over_best_static_control": -0.010026337742426561,
+      "parents": 16,
+      "solved_seed_average_count": {
+        "D": 7,
+        "Fminus": 5,
+        "Fplus": 4,
+        "Iminus": 7
+      },
+      "three_action_oracle_mean_par2": 71.219276
+    },
+    "development_fit": {
+      "action_semantics": "Static option pair from initialization.",
+      "all_actions_censored_parents": 16,
+      "best_static_diagnostic": "Fplus",
+      "mean_par2": {
+        "D": 86.46420041666667,
+        "Fminus": 90.080283,
+        "Fplus": 86.3143568125,
+        "Iminus": 88.37940870833333
+      },
+      "oracle_improvement_over_D": 0.02697431168538389,
+      "oracle_improvement_over_best_static_control": 0.025285117888799835,
+      "parents": 24,
+      "solved_seed_average_count": {
+        "D": 7.0,
+        "Fminus": 6,
+        "Fplus": 7,
+        "Iminus": 6.5
+      },
+      "three_action_oracle_mean_par2": 84.131888125
+    }
+  },
+  "solver_cpu_hours": 3.7952677961111134,
+  "timing_contract": {
+    "censoring_scope": "Native -t is a wall limit. UNKNOWN does not assert that T CPU seconds were consumed.",
+    "external_wall_watchdog_s": 70,
+    "native_solver_wall_limit_s": 60,
+    "process_cpu_fallback_s": 62,
+    "score": "Observed CPU, success only when verified and CPU<=T; selector adds actual h."
+  }
+}

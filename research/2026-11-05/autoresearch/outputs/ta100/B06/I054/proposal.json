@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_elimination_width"
+    ],
+    "hypothesis": "On a fixed <=96-variable induced primal sample, repeatedly remove the vertex with minimum fill-edge count; f=max live-neighbor count / max(1,sample_variables-1).",
+    "id": "I054",
+    "mechanism_key": "primal_elimination_separator_width",
+    "registry_id": "S14"
+  },
+  "original_preexecution_config": "configs/ta100/B06.json",
+  "original_config_sha256": "a507f246e46953efcd5cd01d205a199f4c23feb22f42987324c233c5c1cc1aa0",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

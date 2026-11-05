@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_hall_deficiency"
+    ],
+    "hypothesis": "Compute exact maximum clause-variable bipartite matching on F*. Return(m-matching_size)/m; empty clauses are unmatched rows, without adopting a SAT answer.",
+    "id": "I066",
+    "mechanism_key": "clause_variable_max_matching_deficiency",
+    "registry_id": "RA06"
+  },
+  "original_preexecution_config": "configs/ta100/B07.json",
+  "original_config_sha256": "ad609c29f98ea558286b03ba5c05a812bcb0c7784c0a97f753598e955bf35189",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

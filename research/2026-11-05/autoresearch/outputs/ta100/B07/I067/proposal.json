@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_cover_packing_gap"
+    ],
+    "hypothesis": "Greedily pack variable-disjoint clauses by(width,original clause ID). Greedily hit uncovered clauses by maximum uncovered occurrence, ties lowest original variable ID. Return(cover_size-packing_size)/m.",
+    "id": "I067",
+    "mechanism_key": "clause_packing_variable_cover_duality_gap",
+    "registry_id": "RA07"
+  },
+  "original_preexecution_config": "configs/ta100/B07.json",
+  "original_config_sha256": "ad609c29f98ea558286b03ba5c05a812bcb0c7784c0a97f753598e955bf35189",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

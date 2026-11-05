@@ -1,0 +1,22 @@
+{
+  "split_role": "development_fit",
+  "observation_kind": "complete_new_server_screening; not an independent policy reward",
+  "evaluation_cases_sha256": "f3a66578a76c61f092789e3d60fa75c2eca45c14aa8c2380d2393c63f5e9e235",
+  "parents": 48,
+  "static_mean_par2": {
+    "D": 93.73884752083333,
+    "Fplus": 90.409961375,
+    "Fminus": 94.46073547916667
+  },
+  "static_solved": {
+    "D": 11,
+    "Fplus": 13,
+    "Fminus": 11
+  },
+  "three_action_oracle_mean_par2": 90.21264364583334,
+  "oracle_improvement_over_fit_single_best_static": 0.0021824777509662496,
+  "decision": "Stop conditional static144 expansion; at T60 the optimistic selection ceiling is below 2 percent. Continue mandatory bounded online16 to avoid inferring online ineffectiveness from static data.",
+  "policy_update": "Round2 structural proposals remain unscored; do not fabricate feedback rewards or promote an always-Fplus rule as independently validated.",
+  "protected_test_cases_used": 0,
+  "development_gate_cases_used": 0
+}

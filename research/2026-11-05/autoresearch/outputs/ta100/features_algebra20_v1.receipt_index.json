@@ -1,0 +1,2342 @@
+{
+  "bindings": {
+    "base_manifest_sha256": "1e1807699a180693ec10d336f98a469bca244fd171e08ee3e06462670ffa656f",
+    "collection_manifest_sha256": "67400c639ccf0dee7e76b20fa123fc182ea94b2746d1740f914ef9f4d02a44b6",
+    "method": {
+      "base_worker_source_sha256": "864b37866e78b55d671146d81d71e825aad9250a9b78cfb70374f1b806ca5b39",
+      "binary_sha256": "abe148460b94ca3d3bd802ebbae4112e0447023b6a4142594f2881a8b639c9d4",
+      "cpu_helper_sha256": "7b0e95364847b13f54268cd2b2f5e383839169ca0a613460b05e202c11d8d3e2",
+      "dependency_sha256": {
+        "algebra_features.hpp": "f651364112ea6f3d0d400185c3e240ee44104fce0824108f064aef125f210d89",
+        "core_extra_features.hpp": "8e7afd308915e528a6eba6ac14b633e3328a2353cab42e277a8f84f452ef22d2"
+      },
+      "extractor_source_sha256": "7d847b3727af046838299c5d670d7891a22df83c2b382b6c47235f0faa58834d",
+      "group": "algebra20",
+      "parser_source_sha256": "da85ba488b63e96071c7e1155dcaaed03601aa33423018050c451f10940b3b31",
+      "worker_source_sha256": "241318b7f228f706fe421174ff3aaae7df3c1c06da8d31d122a9d55aeae03747"
+    },
+    "profile": {
+      "cpu_s": 5.0,
+      "header_max_variables": 5000000,
+      "input_max_bytes": 100000000,
+      "kind": "ta100_static_group_v1",
+      "memory_bytes": 3221225472,
+      "output_bytes": 8388608,
+      "parser_max_clauses": 2000000,
+      "parser_max_literals": 20000000,
+      "reservation_cpu_s": 30.0,
+      "wall_s": 12.0
+    },
+    "receipt_index_content_sha256": "6a2e91c2f16c79a9281cf5971ca470ae207f80a974ce7d7fdbe403c79da43364",
+    "source_sha256": "7d847b3727af046838299c5d670d7891a22df83c2b382b6c47235f0faa58834d",
+    "table_builder_sha256": "a2046fcb458f43d5e009672603fdf8302c70a54506f3e037a901d735f730531e",
+    "worker_import_source_sha256": "241318b7f228f706fe421174ff3aaae7df3c1c06da8d31d122a9d55aeae03747"
+  },
+  "records": [
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ddbdddcb7e8820b2a112b7bfb588cf0b9432ca4936b8aa9ab5a7d4b05e5d9590.json"
+      ],
+      "input_sha256": "a86fb6261fdb30937f8491018de013ea9c7ba0166faaee7e64b5ca0237905d18",
+      "instance_id": "fe851239cedd4197c5390cee55fee723",
+      "receipt_content_sha256": "f1c8e84bde83715232be592de1565dc8603dcb1d477625f9fedb5869394c7c9b",
+      "receipt_file_sha256": "c7a938ba2a62c8219c0b5d84a85339b69deb2336b2a15a954b4a3e6907e04d15",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ddbdddcb7e8820b2a112b7bfb588cf0b9432ca4936b8aa9ab5a7d4b05e5d9590.json",
+      "role": "development_fit",
+      "task_key": "ddbdddcb7e8820b2a112b7bfb588cf0b9432ca4936b8aa9ab5a7d4b05e5d9590"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/dbb6cf9d854fcf3f1862c725c2680c76af5e2360935221084cd16a915be5610c.json"
+      ],
+      "input_sha256": "ea90e0faad01bed8c668767266fd36052da3f3c309804710ac4e902f50f7d7ec",
+      "instance_id": "6fab31665147f538da92dc16c3a239ad",
+      "receipt_content_sha256": "2a5ebaaa13f883cc93a92a66e476c47f468264d689d0538d925736c02f91c312",
+      "receipt_file_sha256": "ff9d7ce9293f2fb5d4f8730ed5571346838ff18f57b9cfdaf0c7c8fab52cbd57",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/dbb6cf9d854fcf3f1862c725c2680c76af5e2360935221084cd16a915be5610c.json",
+      "role": "development_fit",
+      "task_key": "dbb6cf9d854fcf3f1862c725c2680c76af5e2360935221084cd16a915be5610c"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f0cf47d962b455b72a7b70394bb384ca6f7fce0510caf1eb40f84ee7d6f7542d.json"
+      ],
+      "input_sha256": "5c58de0e4b7da9b210ce0752ed13ce02863d6d894e33476230c5e87d47cbb848",
+      "instance_id": "8b267f95678c90b2179944de7233b090",
+      "receipt_content_sha256": "58c61c6ff6499672137b6e78647472767f499aa64c4c366c3cdadbf514aa1f4b",
+      "receipt_file_sha256": "bd796a6cf612fabf75ddf645cc9e5145f1fea0b823200f9d9e500348f55701c5",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f0cf47d962b455b72a7b70394bb384ca6f7fce0510caf1eb40f84ee7d6f7542d.json",
+      "role": "development_fit",
+      "task_key": "f0cf47d962b455b72a7b70394bb384ca6f7fce0510caf1eb40f84ee7d6f7542d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/47ae84be971a852cdb0f2cfcdc6a4bc70652877479de907681bd08b7ad1fa861.json"
+      ],
+      "input_sha256": "4feea23dd7fa964b39f0e936e0bef2b6c6c5fe886977408d89c41ec7a9e39072",
+      "instance_id": "8707ef793f0443b5804c56c2ffca322e",
+      "receipt_content_sha256": "4737160cad0685106a1a581fa7e596543ee2ed12e6ea8d946a883c650932c4f3",
+      "receipt_file_sha256": "1e51f0108cff69b1d9e123cb71ab2ebb58d5202d0198a64f885b8eca3364d893",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/47ae84be971a852cdb0f2cfcdc6a4bc70652877479de907681bd08b7ad1fa861.json",
+      "role": "development_fit",
+      "task_key": "47ae84be971a852cdb0f2cfcdc6a4bc70652877479de907681bd08b7ad1fa861"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b2f18d102dd986bc1e918d47c73c5f0182eb096f996c81bf0b11665de9e4f487.json"
+      ],
+      "input_sha256": "82610a019e314a3174ebd2491ad5eaef73f9254baa86b1e47a7856c374ac3805",
+      "instance_id": "539a1f4e4f7a95ab0ac55df50445cceb",
+      "receipt_content_sha256": "0ec12825c92856dc62afb549d0f4fac22fdce38b4e1a35f8710dfbe6d6b9cc39",
+      "receipt_file_sha256": "6f99fb0561ecae55512d347031ff312e5595268ebfca4d9dc8ebf36e1cad2f7f",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b2f18d102dd986bc1e918d47c73c5f0182eb096f996c81bf0b11665de9e4f487.json",
+      "role": "development_fit",
+      "task_key": "b2f18d102dd986bc1e918d47c73c5f0182eb096f996c81bf0b11665de9e4f487"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/460fdcd86d5a2afad4ac7c6e5db60a2cf75aaadbfb1a942dd49e31b6bcc42a6f.json"
+      ],
+      "input_sha256": "3cb5bc2f68cf693035d816bfcb4dbadc62fd64ce2cfcfa1cbdb13c9c19774662",
+      "instance_id": "753ca299a6ab46e28ece1aefa38f4947",
+      "receipt_content_sha256": "9bcf89154d88f2ec05686a307ffd8d7454cad2f986a9c367dd2561ecb3c051d9",
+      "receipt_file_sha256": "da42e804d82bd613d577b086aa8a7e330a4ac96e697d9515c413d12990fb09a3",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/460fdcd86d5a2afad4ac7c6e5db60a2cf75aaadbfb1a942dd49e31b6bcc42a6f.json",
+      "role": "development_fit",
+      "task_key": "460fdcd86d5a2afad4ac7c6e5db60a2cf75aaadbfb1a942dd49e31b6bcc42a6f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/4b91112be1bf0b60152d71fe6dd4c396c272bd9bd8c66f7f5a30fa59911b33fa.json"
+      ],
+      "input_sha256": "715b72da9f4c1709add9e486940d77e67d34ac5f0aa5f0ad97cd1dbe08929cae",
+      "instance_id": "46355da785714f239393e7630020cae3",
+      "receipt_content_sha256": "7783b56e88d45662cc9d6f16ee8870e0bca83ab3c9bb69969a72b081f4d67944",
+      "receipt_file_sha256": "6588c79fa30cb3f492e076c2db82edb5fb993dd6560498394c603c9280afcc2a",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/4b91112be1bf0b60152d71fe6dd4c396c272bd9bd8c66f7f5a30fa59911b33fa.json",
+      "role": "development_fit",
+      "task_key": "4b91112be1bf0b60152d71fe6dd4c396c272bd9bd8c66f7f5a30fa59911b33fa"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/884628d36ba081fe46351b8ebf0382131c8bf3775f5428be156e8cdd1ad8c63d.json"
+      ],
+      "input_sha256": "bdc9f5dcf0ee90ec697c80785ece380bd6eb71bbb4105abdd65fa504009578d2",
+      "instance_id": "8e1f70e59050693ef128bee0092a7f5f",
+      "receipt_content_sha256": "a0e792755851078ac8562376aed8285875940f07a5c088c4ef9057741dc01199",
+      "receipt_file_sha256": "8c663113c62778a5cb91acea830c961f969faf3680ed0244643119c16a4438ba",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/884628d36ba081fe46351b8ebf0382131c8bf3775f5428be156e8cdd1ad8c63d.json",
+      "role": "development_fit",
+      "task_key": "884628d36ba081fe46351b8ebf0382131c8bf3775f5428be156e8cdd1ad8c63d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/cc104e5f4d3c2221f6327d4b65a381da20584a769da33371eedd6b543b44c604.json"
+      ],
+      "input_sha256": "6da83293d5801b7385ea55f2abca6623fca3bdeb8a4c6145dbd83636ff4565e3",
+      "instance_id": "526caead2f3c84c2918a2fc775dc3e97",
+      "receipt_content_sha256": "62d92c62c68794b7c7142fc672a244438c2f9f2b120fbea107827c330916b32d",
+      "receipt_file_sha256": "d4c81a1a9963a71469f0de1a07281db674b7e8d867f7f5da7453094193fcf80d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/cc104e5f4d3c2221f6327d4b65a381da20584a769da33371eedd6b543b44c604.json",
+      "role": "development_fit",
+      "task_key": "cc104e5f4d3c2221f6327d4b65a381da20584a769da33371eedd6b543b44c604"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/c664577ecb3eb3dfe2f568112c0f6473ac356eee82305b34ecc1ee24113d0346.json"
+      ],
+      "input_sha256": "af0683da4ea92af1d5b7e218c67897750ce869edebed8a662c193256cdad32d9",
+      "instance_id": "8a05f9b6bf49285e40d0a197967ea5d3",
+      "receipt_content_sha256": "a40a8c91e3f1b3fd2286b221f4e62f544d44a3bc4425b64515d370c10fe5cefb",
+      "receipt_file_sha256": "4ff7f24c49d03d1fc2e7aee7a727554f206d5df09266506bdcd7436fb46f60b3",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/c664577ecb3eb3dfe2f568112c0f6473ac356eee82305b34ecc1ee24113d0346.json",
+      "role": "development_fit",
+      "task_key": "c664577ecb3eb3dfe2f568112c0f6473ac356eee82305b34ecc1ee24113d0346"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1a5dbd93d3654348ad99beac89cb758a23a932b459208f253de8add55410860e.json"
+      ],
+      "input_sha256": "5d8f5a621357cac8ba878c6c81c2606c010d44d8c8a5c4a5a86a36566c5e7b0d",
+      "instance_id": "fab2022deb130fe3ad1136a5c71b4109",
+      "receipt_content_sha256": "efafd10fedd4b063a855df57396ea6bfe96fa82fc540a3768b7f70f19544dd29",
+      "receipt_file_sha256": "0527e3934ab717dada7f0e31f8f3169ff30ecb97560ee990d3c32274d974319b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1a5dbd93d3654348ad99beac89cb758a23a932b459208f253de8add55410860e.json",
+      "role": "development_fit",
+      "task_key": "1a5dbd93d3654348ad99beac89cb758a23a932b459208f253de8add55410860e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/4dfa5ddeb20887215f6fdbc3cac8d47e20cba8a74e6e0018850f9f0e62b58cd4.json"
+      ],
+      "input_sha256": "d690d165f9f148a818cc50eaa148dc5b86e6d681dd38f53474934d0c64647597",
+      "instance_id": "d99fd10afec0eea1a41a429936bfef59",
+      "receipt_content_sha256": "ccf6a51dfcdd84cc3c1bc4d6f1fe26b15645ad719cef881c0ce051d501dcdfba",
+      "receipt_file_sha256": "f376b1ca2d2a4f55733717b0c764f943667d282cc4ba4b5caaef7657dc0f78e0",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/4dfa5ddeb20887215f6fdbc3cac8d47e20cba8a74e6e0018850f9f0e62b58cd4.json",
+      "role": "development_fit",
+      "task_key": "4dfa5ddeb20887215f6fdbc3cac8d47e20cba8a74e6e0018850f9f0e62b58cd4"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/5cea76d68dff9eea023cea803aca461fd005b9c1d70572249b85c89ea7571405.json"
+      ],
+      "input_sha256": "adca1afbe357cffd40eda927094e3ab3cc96d90b6b43153d403728aeb39ca96e",
+      "instance_id": "69f6dd335626a9b71bfc6f2332f52b9d",
+      "receipt_content_sha256": "de1d91df03a915ea0efe3a9ef3f3d495becf22149e5f88c73d269e1694853902",
+      "receipt_file_sha256": "2a77be57367395287ef7abc2bafaea90d353f5db1e8f7585182b15b46db18e14",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/5cea76d68dff9eea023cea803aca461fd005b9c1d70572249b85c89ea7571405.json",
+      "role": "development_fit",
+      "task_key": "5cea76d68dff9eea023cea803aca461fd005b9c1d70572249b85c89ea7571405"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/48961ad2a1ddf683892379063292db78c86d9e5af3c805213c25ca963ab2403f.json"
+      ],
+      "input_sha256": "79bbb46070fb0cac48fe3d6a0ea07a6187153c0ff5dae88a7c31855e3d7e1187",
+      "instance_id": "fea0f926e766ccba7c7dc261084ecbd0",
+      "receipt_content_sha256": "61ca76d59fbd2554a9523d5b5271cc6abeed8af8205c8c490bde40e389f8cfa4",
+      "receipt_file_sha256": "a5e3a69f252290f16d24c010dc2af74cf1f5b131a03f479d343222b11f10f14f",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/48961ad2a1ddf683892379063292db78c86d9e5af3c805213c25ca963ab2403f.json",
+      "role": "development_fit",
+      "task_key": "48961ad2a1ddf683892379063292db78c86d9e5af3c805213c25ca963ab2403f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f657f9f71faff6b418825a000d57de9df36d0e69604fa9b2b5ef5e371448c5da.json"
+      ],
+      "input_sha256": "c53138d27be4166b2022ea07f73217f11f1d1708e386fc297073396e7f14e428",
+      "instance_id": "e442248e155eb81a811edd1deca8a2cd",
+      "receipt_content_sha256": "2544f6a7afae64a0d9ab584ef59ee395d648d51c00342ea36a3dd2ffddefa672",
+      "receipt_file_sha256": "f1682500e55513ef89e68f213e0656e6c79b7e0f2eab814f23c791e72667ec92",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f657f9f71faff6b418825a000d57de9df36d0e69604fa9b2b5ef5e371448c5da.json",
+      "role": "development_fit",
+      "task_key": "f657f9f71faff6b418825a000d57de9df36d0e69604fa9b2b5ef5e371448c5da"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1de02575f310ddbec2d512341136a488347865322808aa39975a5dc800ba0e51.json"
+      ],
+      "input_sha256": "94a88d46995ff48b5c81b5006eb99ff4ee7bc5cf26c6f9bbc7bd432952be9c97",
+      "instance_id": "2de9b79919882078aea76f297fc923e5",
+      "receipt_content_sha256": "4417d5e8aaf870f92b94326276946703a18a417e4df6750b6f5cd7c380dcc4ac",
+      "receipt_file_sha256": "7e2059ba5d1e0474f110ef88ff79afa534c9f2bc22d395e4cefb739b80a811db",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1de02575f310ddbec2d512341136a488347865322808aa39975a5dc800ba0e51.json",
+      "role": "development_fit",
+      "task_key": "1de02575f310ddbec2d512341136a488347865322808aa39975a5dc800ba0e51"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/e43dd94099a9724f2f7c4b0ef6aaae657f8c410d3cdd230eaee92df2628e541f.json"
+      ],
+      "input_sha256": "4edf6b303edeea81a0c564726b9dbb17740316ba44bdf0b4749e958f7804b1a8",
+      "instance_id": "2412325e3c099453b99c87864477363c",
+      "receipt_content_sha256": "9520e5a8d013b251a9a1f0f8cd24bd52ffc2913b98fb68252f1bf5ea8e862d32",
+      "receipt_file_sha256": "bb934a5663b7613ab1e2e58448498c4af19b73d05ad59d7910e6f92f4b9ebb9f",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/e43dd94099a9724f2f7c4b0ef6aaae657f8c410d3cdd230eaee92df2628e541f.json",
+      "role": "development_fit",
+      "task_key": "e43dd94099a9724f2f7c4b0ef6aaae657f8c410d3cdd230eaee92df2628e541f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ff107a66e4b38b02b237dcd33f8dae5c8197b553938ed31e62b69042a2542a69.json"
+      ],
+      "input_sha256": "d5f69eabbe3d26e14a49435a2867cb95a6034eb60fa8f911058ff327921f9c7c",
+      "instance_id": "f5c12b1eb9c49e994abb238576a9372b",
+      "receipt_content_sha256": "7c673426842e7a116aa5884f010fd9a7b345020ee5b41c52417f14ac5a65106f",
+      "receipt_file_sha256": "99e3d908aa89386c1ab5cc450fe50d46e5106a801a7062ad4105b8ee328da7cc",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ff107a66e4b38b02b237dcd33f8dae5c8197b553938ed31e62b69042a2542a69.json",
+      "role": "development_fit",
+      "task_key": "ff107a66e4b38b02b237dcd33f8dae5c8197b553938ed31e62b69042a2542a69"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b73b70ad7c13de8b9e5e032f9a7dccf298be3f253be40da5077af34b282493dd.json"
+      ],
+      "input_sha256": "907c98ebe3331af203f0f9f67529e6933255cd1b0550ecc7caf9d4cdc35514a0",
+      "instance_id": "362d153b4162127bc42796180110f483",
+      "receipt_content_sha256": "cc80a3c458022664a178621905b35a664f4de6937397d9412fd78443558f705b",
+      "receipt_file_sha256": "a8a2998a8ccb88cef11aed617fd87a8a61e20dc5576dde0ec53e59ac44f94405",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b73b70ad7c13de8b9e5e032f9a7dccf298be3f253be40da5077af34b282493dd.json",
+      "role": "development_fit",
+      "task_key": "b73b70ad7c13de8b9e5e032f9a7dccf298be3f253be40da5077af34b282493dd"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f6873cc88a9cd6abb9edb584fe1026aa04112d9c333ada11a7e0afbbef4effaf.json"
+      ],
+      "input_sha256": "5b874afeed91345a786ac4345c97aa3e617c57f748570be83421d149b34abebc",
+      "instance_id": "081f111af59344b61346367a930e24f6",
+      "receipt_content_sha256": "0a10930eb0732382a8d4ecf271df3cb04c98f1773c05a949c0c6a90451d82d7b",
+      "receipt_file_sha256": "c4d12ba568220ef59018a34ddd0aaacdda527c91da5638d345abc5e429e38baf",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f6873cc88a9cd6abb9edb584fe1026aa04112d9c333ada11a7e0afbbef4effaf.json",
+      "role": "development_fit",
+      "task_key": "f6873cc88a9cd6abb9edb584fe1026aa04112d9c333ada11a7e0afbbef4effaf"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/97cbfaa290ed2ff9d5e63dfa6e45a2cf01de372c41be9143b7f62e99456383d9.json"
+      ],
+      "input_sha256": "4643215edf9eb5c4725a616082ecb2a08f84a86fae2f8a996f8656b9ccc93d7f",
+      "instance_id": "9f38c92ba81c754103444edc15c1f44b",
+      "receipt_content_sha256": "a28d48c5769e810c525a04e042f8fe4a0d66800bcae9e23f9f6e544a147e7a00",
+      "receipt_file_sha256": "dfd3679ddae2d4ef5dbc02a17a0db0007c67ce6aaccecd59343950c1c22dcfde",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/97cbfaa290ed2ff9d5e63dfa6e45a2cf01de372c41be9143b7f62e99456383d9.json",
+      "role": "development_fit",
+      "task_key": "97cbfaa290ed2ff9d5e63dfa6e45a2cf01de372c41be9143b7f62e99456383d9"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/2aaf186c0ac48b2fd4a5bf0459de26b8cf6295dafda76fc635e07e62a71373b2.json"
+      ],
+      "input_sha256": "062e3e1caccde25d126877403d6ff35dd5888dc0cc0552f48cfd1470298f648b",
+      "instance_id": "c0e828fb967fc4f0935cf06c6a6b1055",
+      "receipt_content_sha256": "f62d678d4a747e5c9982c50129de9d1e419f51c79c271eadf1a82472e833f134",
+      "receipt_file_sha256": "5f05a5758bd38a44453eab1029d4ddb1c403010f0957aa55963d9d743391b227",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/2aaf186c0ac48b2fd4a5bf0459de26b8cf6295dafda76fc635e07e62a71373b2.json",
+      "role": "development_fit",
+      "task_key": "2aaf186c0ac48b2fd4a5bf0459de26b8cf6295dafda76fc635e07e62a71373b2"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/71f67307d26b70750c34a2396a52944edbb31c718c4d33ece41a5f008ca1f546.json"
+      ],
+      "input_sha256": "8505ed3bdf7a83d6c03fadf50eb01a6e12dd4554428bc326542d17c7447dedb8",
+      "instance_id": "c05d4d3ecd06a2e3942fea09159dd27b",
+      "receipt_content_sha256": "18e68ab187c582bb95dfd4d008a6e7b26603396eb5cc4727723bdce542fff0c6",
+      "receipt_file_sha256": "73927477c7f941f6711207f4e0afbd67fb9db572a9619a8b1ed4f93c341a7494",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/71f67307d26b70750c34a2396a52944edbb31c718c4d33ece41a5f008ca1f546.json",
+      "role": "development_fit",
+      "task_key": "71f67307d26b70750c34a2396a52944edbb31c718c4d33ece41a5f008ca1f546"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/a004ad47950d322e19fb6590be464972fc716167d9d58b5972247ff323604288.json"
+      ],
+      "input_sha256": "51ea7e28614dd0ce83dedd3f26be6a639473031e86c318445cec755d393a5d17",
+      "instance_id": "72cec28d6e34efe366150066b71edc33",
+      "receipt_content_sha256": "3f658696cc2dea572645336eda25bb2d4c9129a4b541553900d89129834ca71f",
+      "receipt_file_sha256": "4d84422f710cfef5791761d365e6c6fb0a0c6a5eb111fdc45a294d988a4cbf62",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/a004ad47950d322e19fb6590be464972fc716167d9d58b5972247ff323604288.json",
+      "role": "development_fit",
+      "task_key": "a004ad47950d322e19fb6590be464972fc716167d9d58b5972247ff323604288"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/be9424cef85acbd5f9ea16817f786bf1aa41d9e63479534b1f51fa707b9504c6.json"
+      ],
+      "input_sha256": "fc1bcce755b590ba8f38b10da5d16cfa08eb1ea77d398c896e48dcda75147f32",
+      "instance_id": "f1973c0a4e960a914ff12aa7e4e9293c",
+      "receipt_content_sha256": "c6ab4ed7adf24becd9a823b7b83791c3da0ca1d7d8908332d8bc0552e1ed9023",
+      "receipt_file_sha256": "b7e356326e9fcfb4ddd47c772dc6122662dc1db2d4dca4df8296f7e076a55a38",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/be9424cef85acbd5f9ea16817f786bf1aa41d9e63479534b1f51fa707b9504c6.json",
+      "role": "development_fit",
+      "task_key": "be9424cef85acbd5f9ea16817f786bf1aa41d9e63479534b1f51fa707b9504c6"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/c8f34f9cb35b6a27f513c842640c8ed0508889b5b9632cd9cd030bde7cceeb20.json"
+      ],
+      "input_sha256": "dade2981937ad8bed40e2cd87423b6743a5a3ee001f8d7135978c2016da57bef",
+      "instance_id": "5d7bc1fb0f3269d88f732d3fb81abe59",
+      "receipt_content_sha256": "d367b23fbb482fc67f20964e53de7cf34e55b6706042042491e1f7dbc132b7c0",
+      "receipt_file_sha256": "36b87a7607d0d2a733baaf8676621fa8e3a0e744a1bd29272d65aea252f7e0b0",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/c8f34f9cb35b6a27f513c842640c8ed0508889b5b9632cd9cd030bde7cceeb20.json",
+      "role": "development_fit",
+      "task_key": "c8f34f9cb35b6a27f513c842640c8ed0508889b5b9632cd9cd030bde7cceeb20"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ae07a8823d6b4c4f5da28a38b17f3ccadc5e340ddfd7cd75d46364b418bab693.json"
+      ],
+      "input_sha256": "a80a5bd122c51500945b2744a5d430c4c9397e6e7848a148df9bac48831d7d03",
+      "instance_id": "c6470503d1ff16cbafa18764b13d80ed",
+      "receipt_content_sha256": "44e646c36bab9f514498d8aee704131277162da4df92f8de318061b851f2f197",
+      "receipt_file_sha256": "c635c23dc13ac6f966c372c44738cd4ece4ab2141e731d83bd8e19b6f0b7c7fb",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ae07a8823d6b4c4f5da28a38b17f3ccadc5e340ddfd7cd75d46364b418bab693.json",
+      "role": "development_fit",
+      "task_key": "ae07a8823d6b4c4f5da28a38b17f3ccadc5e340ddfd7cd75d46364b418bab693"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/78d928a7bab7091c1ca02dd31f1f9a0a8535b0e2d47ce89845c9434e934536d3.json"
+      ],
+      "input_sha256": "d487719bbab2977de4fbaaa815e12027190e29cb344a1020f089f853b2bf87b8",
+      "instance_id": "0e36fa2e12f32cde67937803299fb57b",
+      "receipt_content_sha256": "5ea3e229454073e523ff2691fdf7653b98d1512e31e8515b60fcbb513b8224b0",
+      "receipt_file_sha256": "76dc6fc141001bef48cecbfc79090de9acc898eeff5f27bc25b9a1cec3f5710a",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/78d928a7bab7091c1ca02dd31f1f9a0a8535b0e2d47ce89845c9434e934536d3.json",
+      "role": "development_fit",
+      "task_key": "78d928a7bab7091c1ca02dd31f1f9a0a8535b0e2d47ce89845c9434e934536d3"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/cf32d73ee3e5a0a4843c7d25fe8f33317a5a1d10969eba417553ab7debe83424.json"
+      ],
+      "input_sha256": "28bf61a385c6a12975a45b1fe15badc282e6fb8960aa24126f38bf016bfbea08",
+      "instance_id": "70da0b784f49350e05c0ff8434acdc15",
+      "receipt_content_sha256": "8e34724247875f88c6b2976c12f03a52b81fda6503da95e9b274b12c5e7363b2",
+      "receipt_file_sha256": "a7dc599a3f5762f2b46ede257deb53e86bd285f464c23dfd5a5b79fbf65283f2",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/cf32d73ee3e5a0a4843c7d25fe8f33317a5a1d10969eba417553ab7debe83424.json",
+      "role": "development_fit",
+      "task_key": "cf32d73ee3e5a0a4843c7d25fe8f33317a5a1d10969eba417553ab7debe83424"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/088e6a52f2b8b955b6b4f4073bf7e03c2cf744e4f8a439a34586af65b138ad12.json"
+      ],
+      "input_sha256": "66eed3751ae85783d036a9231b847eed441f246c0e9a9ed3dff7eb029b62a558",
+      "instance_id": "de8c42d50f1dbf43a731f1916dc6bf01",
+      "receipt_content_sha256": "eed148fa51af59817d04fa66690169602358ccc5a92b89c2387149735df4ce0d",
+      "receipt_file_sha256": "996a7e0cff6829d3f33e7fce5ca86c48bbc29246470bcb630b44ad39a2a8bec7",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/088e6a52f2b8b955b6b4f4073bf7e03c2cf744e4f8a439a34586af65b138ad12.json",
+      "role": "development_fit",
+      "task_key": "088e6a52f2b8b955b6b4f4073bf7e03c2cf744e4f8a439a34586af65b138ad12"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/a12bf12db4f5015473974edc95f012c747f479124d3864ad21c192590f695116.json"
+      ],
+      "input_sha256": "70325fbff8c0ab207e018695f0980facefb080af044023561b2d4c1ed3d77e78",
+      "instance_id": "d2af3fde615d7c4d4a4574fc8839970e",
+      "receipt_content_sha256": "e2aef673a17e2219601406943a29f6d67a30ee509ab98531430f0aff6b5290b3",
+      "receipt_file_sha256": "29dd73ed57bb85b10befc40f9c8a42b4b2a1d3762631c43627bcd60d885da63e",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/a12bf12db4f5015473974edc95f012c747f479124d3864ad21c192590f695116.json",
+      "role": "development_fit",
+      "task_key": "a12bf12db4f5015473974edc95f012c747f479124d3864ad21c192590f695116"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/0cdacf05fe5aa83931f0a57a4d634c6c3d43a7b0e5f7ffc637ee2d1a76a0f9af.json"
+      ],
+      "input_sha256": "d45db8bce82d19dbd5b35c41842904b01e174329da2e9c4fd7df504d1173f3d9",
+      "instance_id": "04648cef5bed430ab6429991fa9e107d",
+      "receipt_content_sha256": "8fcebe0e4396d6505e50c33a9c2779ac5321f1a339314a2305e43e3d1bf2967a",
+      "receipt_file_sha256": "fefd5f3721da1eb4fcf0912ba11bb20f55cfcf3983e202acdf6acb35195465bf",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/0cdacf05fe5aa83931f0a57a4d634c6c3d43a7b0e5f7ffc637ee2d1a76a0f9af.json",
+      "role": "development_fit",
+      "task_key": "0cdacf05fe5aa83931f0a57a4d634c6c3d43a7b0e5f7ffc637ee2d1a76a0f9af"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/0ca122fc85e025f2147782560b3f8b3645ec789c6ebac97579a1f120e7ed1520.json"
+      ],
+      "input_sha256": "4a92ea0f399a291eb8fcbd2cdd6a0e2aadbdc5a7e14bdabf73f21af6dc4d42ab",
+      "instance_id": "24bde22f729a988fb2394b644cb60d39",
+      "receipt_content_sha256": "c1b944d1995c5599c402feabd1310a15ba36d2baf65aca969a075aba584f9bcf",
+      "receipt_file_sha256": "5c5d12759916fcc329a9368da41d829d920424b7bee9247630825896e721eddc",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/0ca122fc85e025f2147782560b3f8b3645ec789c6ebac97579a1f120e7ed1520.json",
+      "role": "development_fit",
+      "task_key": "0ca122fc85e025f2147782560b3f8b3645ec789c6ebac97579a1f120e7ed1520"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/a4c28f1104adec2f0db9b3534bcee93b05e25ac639f92730b8adcc6d07e2a4ee.json"
+      ],
+      "input_sha256": "82045f6bc620fb82bbac573540bf5edee55c07d6a44ad70758104b6217042d45",
+      "instance_id": "3197b65ef50328394a0c9e73281d7122",
+      "receipt_content_sha256": "ee38b224d9a8ef96fa26e547712c7f0efb8d52ed7dba6fc97c9494a50b3ca03f",
+      "receipt_file_sha256": "0bdef30c935d29aee62e63aa4caa92f984b5f6f664c94ab24f9960267924de3b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/a4c28f1104adec2f0db9b3534bcee93b05e25ac639f92730b8adcc6d07e2a4ee.json",
+      "role": "development_fit",
+      "task_key": "a4c28f1104adec2f0db9b3534bcee93b05e25ac639f92730b8adcc6d07e2a4ee"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ac9f9bfec858b7b1868b6feac90eb9e575386641a631a99a5a26bbc57022dd8e.json"
+      ],
+      "input_sha256": "71a0df3992835e3493c82b2f8a92cd902e728f6d1cf807b48cd892b672e6f409",
+      "instance_id": "c8d21db50338d9d5743802bcae77a466",
+      "receipt_content_sha256": "5519f77bb74b7dc9cfb218088374bf1208b3a70b70681078002a661ef4b0cd23",
+      "receipt_file_sha256": "80640db04978ceb7ebc26cc786ad0fa5339500e6ea9b78c2bc1f10efe182cd04",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ac9f9bfec858b7b1868b6feac90eb9e575386641a631a99a5a26bbc57022dd8e.json",
+      "role": "development_fit",
+      "task_key": "ac9f9bfec858b7b1868b6feac90eb9e575386641a631a99a5a26bbc57022dd8e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b4f13fafda91c6d7271e0f18e5aaa069522f77da0660b57a185fe5c67bd21f34.json"
+      ],
+      "input_sha256": "bb17a276801c0539dff1147e8e3c9a708670e5926590c8a05555955fd44ea499",
+      "instance_id": "395829127ec213c2e69a6a13dda3623b",
+      "receipt_content_sha256": "cc4f16d3c235562ce17b03362a71db80968664ca192b30df5588de6e95fb8ec7",
+      "receipt_file_sha256": "eae69b37dbce03cf64628b1ad46f1fb6f7d1536bf3b2b08e2e4f6cfa178c9cff",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b4f13fafda91c6d7271e0f18e5aaa069522f77da0660b57a185fe5c67bd21f34.json",
+      "role": "development_fit",
+      "task_key": "b4f13fafda91c6d7271e0f18e5aaa069522f77da0660b57a185fe5c67bd21f34"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b3f9bcd6a4b29e3abe5c61286c7180b0a75c2223538b04598631bcfbd6079736.json"
+      ],
+      "input_sha256": "839fc813f15d03948ff10070290463d370c21f0813ab2f48edbff19b469460ec",
+      "instance_id": "0ccb0f855352783a972be45188bf3164",
+      "receipt_content_sha256": "9e236fb6c31a2ecff0fd0fe50707d1d60ef0b7a4879b08e366614e96d5e71ebf",
+      "receipt_file_sha256": "7b08936234a6b8996ba3d156aa18feae03e389764de9fcf2140265b37b57e17d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b3f9bcd6a4b29e3abe5c61286c7180b0a75c2223538b04598631bcfbd6079736.json",
+      "role": "development_fit",
+      "task_key": "b3f9bcd6a4b29e3abe5c61286c7180b0a75c2223538b04598631bcfbd6079736"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/40bfd19f96eaeac0e438ef5d45e26986b0476ecab77ea1811dd9f1db1a38e373.json"
+      ],
+      "input_sha256": "ead8eb33c4c9365737c7c8b3580ca8ee9c3a8ae244ddea0d68f361bd63bb93c9",
+      "instance_id": "fbdca334e6985cd2de8718b60695b5f6",
+      "receipt_content_sha256": "d6201d8c1c4a1997a4b1959d1ecd7b468cdd45a6d6fcdeebbe75b84058269d6e",
+      "receipt_file_sha256": "435fc47fed0434c0ee5ade75eb914c013acc698d378b4d066fe30e0d1037de85",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/40bfd19f96eaeac0e438ef5d45e26986b0476ecab77ea1811dd9f1db1a38e373.json",
+      "role": "development_fit",
+      "task_key": "40bfd19f96eaeac0e438ef5d45e26986b0476ecab77ea1811dd9f1db1a38e373"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/9ae3aada12cebe2bfb294406aaca4bca9bfb5a29557648d68642da2f31f32fc7.json"
+      ],
+      "input_sha256": "6c6e953a92baf3b6747f6d1e046b2d06a56b3fbbaae4446064d1d16fa7c0e85b",
+      "instance_id": "c0bd86bd7ca2c65e44311de374168150",
+      "receipt_content_sha256": "30e97cac61007004744b7a57f92a513b38070b4a3704143ed7f11d792101fe00",
+      "receipt_file_sha256": "885e97aa9c6275e856e5235fe93b6fbf80f74b88ef192345dc28e932e09dc73e",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/9ae3aada12cebe2bfb294406aaca4bca9bfb5a29557648d68642da2f31f32fc7.json",
+      "role": "development_fit",
+      "task_key": "9ae3aada12cebe2bfb294406aaca4bca9bfb5a29557648d68642da2f31f32fc7"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/99c55dd4da940d64ff7667691ac3d697f06a3a9e2ff65f9d690b97d3e9644849.json"
+      ],
+      "input_sha256": "bfeeea739b5804dd156fdf98ca9cbb3422d47f02813bd756d41f30e87559a6ed",
+      "instance_id": "3bfa92996634d2ddc6c0568bba9a0f99",
+      "receipt_content_sha256": "e874c17a851584cd35fe4f85f7a3ec346ec655ff6e45cc420df089786776f701",
+      "receipt_file_sha256": "bbd5681e850cee81a8d5aece48974985b02c4de7d7a79df7b7b1fbfc8c193e42",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/99c55dd4da940d64ff7667691ac3d697f06a3a9e2ff65f9d690b97d3e9644849.json",
+      "role": "development_fit",
+      "task_key": "99c55dd4da940d64ff7667691ac3d697f06a3a9e2ff65f9d690b97d3e9644849"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1cfdd52e9859ad6f2b2140d81b6a0c2fc89e42ab31b3088d03bad43cc7c9358e.json"
+      ],
+      "input_sha256": "f1d044b3fec9b1906e0f23f1c3c16500af307c60f76d573cae3de8e1967b0024",
+      "instance_id": "4e3195a382f5af213444736fcc8b364f",
+      "receipt_content_sha256": "d896b3a00e8a9709dbb6c0ecc92e1463c1963de7c6fd30cf65c95c8d4533683d",
+      "receipt_file_sha256": "755bab3caab53871b81430fd7e29e097f9c2ddc985cf9917f7da389f90fd5ff7",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1cfdd52e9859ad6f2b2140d81b6a0c2fc89e42ab31b3088d03bad43cc7c9358e.json",
+      "role": "development_fit",
+      "task_key": "1cfdd52e9859ad6f2b2140d81b6a0c2fc89e42ab31b3088d03bad43cc7c9358e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/103666aa8a45762cf369688b10556ea1e076701b9e7af987483b5bfd5e5de5d1.json"
+      ],
+      "input_sha256": "d8deec69c6c5f42737dd6c058199b87531ce706c714e8c5e79c4fc73297ab62a",
+      "instance_id": "0aa22564d00e9716519918d84b25c4a7",
+      "receipt_content_sha256": "55e73f39377e24a669ddb668dafa3dffc566b4b0143fd0e45f117a1b9724c9d8",
+      "receipt_file_sha256": "19c0f63dad626b60ebb98edef3e6e73116822480bee7265ae97a481bb8611ed0",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/103666aa8a45762cf369688b10556ea1e076701b9e7af987483b5bfd5e5de5d1.json",
+      "role": "development_fit",
+      "task_key": "103666aa8a45762cf369688b10556ea1e076701b9e7af987483b5bfd5e5de5d1"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1ca108a432ceb874aa368683718c5d2dcaf585ba88176141b35cadf1c25a0d55.json"
+      ],
+      "input_sha256": "6fc26ddf6ca6e8abfacc55bfc8f9df3c32b65b5ad25a426c4f76d8a7d1dca408",
+      "instance_id": "8e81131a0c4fbd01e90bb6e20d00c547",
+      "receipt_content_sha256": "7b69fedd947c81256a64d7088f0288f7afc4bb8ecf3a698f6d76a633687b5c76",
+      "receipt_file_sha256": "55defd21991fa3bda332dcb008c384f43c5ed135c9d0f8fd56f64265612cc737",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1ca108a432ceb874aa368683718c5d2dcaf585ba88176141b35cadf1c25a0d55.json",
+      "role": "development_fit",
+      "task_key": "1ca108a432ceb874aa368683718c5d2dcaf585ba88176141b35cadf1c25a0d55"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ff1f575c75fa57bcb398eec28770eb7aceac2d0692f1c91316dd695bdc6a252b.json"
+      ],
+      "input_sha256": "59a5d6030b24fd8267c261c4f399d9796e25b4fe9c9484748ab41fa44f87ae08",
+      "instance_id": "965bc4f6691b2e5f7388aaa9ba68f768",
+      "receipt_content_sha256": "80eb8a3fadf636f7171b8365edf6f8825373d6f721b422c7788fb6a490eae302",
+      "receipt_file_sha256": "52568af7f7490c8560b2bd12b8568e60db97f95750dff41ce76900ee9edcc06d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ff1f575c75fa57bcb398eec28770eb7aceac2d0692f1c91316dd695bdc6a252b.json",
+      "role": "development_fit",
+      "task_key": "ff1f575c75fa57bcb398eec28770eb7aceac2d0692f1c91316dd695bdc6a252b"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/d39eceaed2afc03cac807675b0fed59e07cef88f5a76f2fef4a00f22deef99c5.json"
+      ],
+      "input_sha256": "14887077164918d0a1209df365c6e316162ee84450b2df19b0a4562b2b957d15",
+      "instance_id": "1c30806c5aa9cd54bf823c20fa078243",
+      "receipt_content_sha256": "b665390ae52c453107608ed8ee14a06e752ba03946a100307178320dbc8ad593",
+      "receipt_file_sha256": "cd82fb068a9aaff4e2460769f51309096926a8dac91bde362cb0b16a455744e8",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/d39eceaed2afc03cac807675b0fed59e07cef88f5a76f2fef4a00f22deef99c5.json",
+      "role": "development_fit",
+      "task_key": "d39eceaed2afc03cac807675b0fed59e07cef88f5a76f2fef4a00f22deef99c5"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/310139090234a0d842a1b70e364917831cc7b15f63e164ea5efed44c701b0d00.json"
+      ],
+      "input_sha256": "ba1bfc189730636fb0647c65dc731a31d63b507ca459f60d4abba90689aa4f4d",
+      "instance_id": "07cea7a64248a60d509368d09d3057c2",
+      "receipt_content_sha256": "23700e5a6e86dccd18ffde3324159a306b8c714dd2d80750acabf20b9d96c2d3",
+      "receipt_file_sha256": "3401e7be537008422b92b3848e483412e144cb238c0e219930d020c540f8d888",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/310139090234a0d842a1b70e364917831cc7b15f63e164ea5efed44c701b0d00.json",
+      "role": "development_fit",
+      "task_key": "310139090234a0d842a1b70e364917831cc7b15f63e164ea5efed44c701b0d00"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/fe9bd643f1c0d5742b30c338536c783b8166429da7ca28e464ecbd7c78fc0783.json"
+      ],
+      "input_sha256": "3c7201417c543b0729fed3f2687bc980e6e35bfb426e2acf188e23b27ac19dcd",
+      "instance_id": "d839601ab519549e507de27b868fa48b",
+      "receipt_content_sha256": "20d7503f995ce283acbf670053964a8936f7296bf68569bcb285127168534294",
+      "receipt_file_sha256": "4f4e435a6ccf861afbfa56fdaea54804d86b23236d722944928429f1920257e6",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/fe9bd643f1c0d5742b30c338536c783b8166429da7ca28e464ecbd7c78fc0783.json",
+      "role": "development_fit",
+      "task_key": "fe9bd643f1c0d5742b30c338536c783b8166429da7ca28e464ecbd7c78fc0783"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/4f064b503e82c7a0e47c58cd28e152d425c258b94d550c4ea3d87de3e810f65e.json"
+      ],
+      "input_sha256": "874eb53114d44c94bf073395c9630e3e73460063121a58dc965982dd874dc62e",
+      "instance_id": "6f730dd121471749dc0b4baca2573bf7",
+      "receipt_content_sha256": "614718dd662c13d84f0a5da38ba3310fc0f49c3f9661bb3fc4e0c84c5d9569c5",
+      "receipt_file_sha256": "c8719e3df407ac2bfded9898fa578948349c4beb176c5dabefd50077fd638566",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/4f064b503e82c7a0e47c58cd28e152d425c258b94d550c4ea3d87de3e810f65e.json",
+      "role": "development_fit",
+      "task_key": "4f064b503e82c7a0e47c58cd28e152d425c258b94d550c4ea3d87de3e810f65e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/69c8ea5989849913fb7ef5fa36f17cef743ecab6c9c1beb43eb725c10c95657e.json"
+      ],
+      "input_sha256": "6bcedfc9f9a7efcf71946999fe88a1fe6b896a2bd89f9c1175f2e619521ac3db",
+      "instance_id": "69ad7473757d30d55fabab7882268483",
+      "receipt_content_sha256": "21ece19648f8c897a85b92bf1cd7e29b50ffc0aff17fb29df1d28f3ab6174551",
+      "receipt_file_sha256": "44ffa2db1a8d96bdb3ad4b1e8626ce57f761e96bb59b51568f297bad8dbc5d5d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/69c8ea5989849913fb7ef5fa36f17cef743ecab6c9c1beb43eb725c10c95657e.json",
+      "role": "development_fit",
+      "task_key": "69c8ea5989849913fb7ef5fa36f17cef743ecab6c9c1beb43eb725c10c95657e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/d51fb4126a64aa5ec385920c778568be2876e6801ba0fd2b850192cb0bd3e6ee.json"
+      ],
+      "input_sha256": "a2764eb285d8e173df1cf9a4d4fe47378ecbc2008bd56d99a9185668a38c0be3",
+      "instance_id": "8af30680e9329ae30c2cdbece636c470",
+      "receipt_content_sha256": "80339d5253477985ab1058f90fc85ab17acaa9ff4e854940d21bb2ba0f54e253",
+      "receipt_file_sha256": "9795e43e36133265eb112cb012d6327888ee9bd282c88d7ce91f5eb3ea2c2a85",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/d51fb4126a64aa5ec385920c778568be2876e6801ba0fd2b850192cb0bd3e6ee.json",
+      "role": "development_fit",
+      "task_key": "d51fb4126a64aa5ec385920c778568be2876e6801ba0fd2b850192cb0bd3e6ee"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/e4e14b7c5b9b42c65cc23b04b0405aca0a46b3629dbf940aedcbe4b6e16ab24f.json"
+      ],
+      "input_sha256": "975f5b18af757abaac276ffb65d2f01cee1df33e6a38fb4d8efa0d5a835e0484",
+      "instance_id": "82851650dea77d44864b3fd8ae387691",
+      "receipt_content_sha256": "7a38d1d743616d68d84c2a3bd979f103008e725ba7e2bb3b2c0159d30b780d2f",
+      "receipt_file_sha256": "616d86661631ba28ffd30493067f9ebf8ed2333106c5e70de23a9e6c2f301e6b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/e4e14b7c5b9b42c65cc23b04b0405aca0a46b3629dbf940aedcbe4b6e16ab24f.json",
+      "role": "development_fit",
+      "task_key": "e4e14b7c5b9b42c65cc23b04b0405aca0a46b3629dbf940aedcbe4b6e16ab24f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/35e4c196c492870d90f2b4bafecbd26688ccfb61b97b139a0ed8c6c96a9bf94d.json"
+      ],
+      "input_sha256": "63666d4822e7be11a6b2b7d3b248c655e9e9e78c0d0c5f239320cef89776df96",
+      "instance_id": "418b8aa42088cb0b1d85014dfa285b25",
+      "receipt_content_sha256": "7fa097bd88c82a25317aa2b504222734488842b790a25c26a6c92334b8945f15",
+      "receipt_file_sha256": "29355d3d3925a0176cc5c1f63c158cc5e8e16c0b580ac24c0f5f3fa775f98ba6",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/35e4c196c492870d90f2b4bafecbd26688ccfb61b97b139a0ed8c6c96a9bf94d.json",
+      "role": "development_fit",
+      "task_key": "35e4c196c492870d90f2b4bafecbd26688ccfb61b97b139a0ed8c6c96a9bf94d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/3d93d6d441e4b8fcb7fe6f300afaa0f529ddfebb5e22def7184d74434ac0a3d0.json"
+      ],
+      "input_sha256": "c3d774473387647f82ee399e98c48e3e0cc3057b73c076d7e17eb8fa3d98560e",
+      "instance_id": "46a8727e27d848faafd83a990c2e01a7",
+      "receipt_content_sha256": "6a668643fe6e8a558e144ffeb6c5d8e806247d568ae03e2c5fdadacddc9adadb",
+      "receipt_file_sha256": "da17d3fa01857763c683cf8225b9b74eaa0047e055b177a7b15dd9baa4c1d584",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/3d93d6d441e4b8fcb7fe6f300afaa0f529ddfebb5e22def7184d74434ac0a3d0.json",
+      "role": "development_fit",
+      "task_key": "3d93d6d441e4b8fcb7fe6f300afaa0f529ddfebb5e22def7184d74434ac0a3d0"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/cc42508672150788537459e9fb04b8c9ca8c4baaecb1ec010d44cab92faeb837.json"
+      ],
+      "input_sha256": "898fcd5e008df0ea75b4cdf24ee56c9cde3fc5432a464825c3568a7d31e8f472",
+      "instance_id": "35b9091b90bd28a492c9556d6fc4348d",
+      "receipt_content_sha256": "50e1cf6265ec18dff999249c6aa8a2a6a40fa8260e78fe0db6bd2eaf5c1ffc61",
+      "receipt_file_sha256": "c7afd2b8ff2c4087e187c79b0c85ee18591dc9cc3ec4d76f263fcff8623d0ef5",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/cc42508672150788537459e9fb04b8c9ca8c4baaecb1ec010d44cab92faeb837.json",
+      "role": "development_fit",
+      "task_key": "cc42508672150788537459e9fb04b8c9ca8c4baaecb1ec010d44cab92faeb837"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f45342f6b08a3acac7ac5357de0dd03949cb3debe0a460f24c6af25a9c31b50c.json"
+      ],
+      "input_sha256": "422e7250ac60e245219c52346c62f00736b42b7f91383cf611f3fbe137fad469",
+      "instance_id": "5246b7b99ba005af421d86299f7d26d0",
+      "receipt_content_sha256": "8b5254d0e1dc29b52b9060a55e81c356ddcc28f18da99663784984de7410202f",
+      "receipt_file_sha256": "b535dde7b90bb1d636b4e996ac2d376b1dafd8ec9755088b3f2ed648f6a3f970",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f45342f6b08a3acac7ac5357de0dd03949cb3debe0a460f24c6af25a9c31b50c.json",
+      "role": "development_fit",
+      "task_key": "f45342f6b08a3acac7ac5357de0dd03949cb3debe0a460f24c6af25a9c31b50c"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/8a09bb446068097cda95ce29e84ee70288df016375a6f4a9be14c02a381197f5.json"
+      ],
+      "input_sha256": "1b18219ad5fe71c9db9a3d118ebeb29feae128da0c296a557d0bc2423e1ba08a",
+      "instance_id": "c569d4b2b2e90a1a70bd23a1169355ef",
+      "receipt_content_sha256": "ea1ad194efd558850d00ad63315e44a4a6e1bf8d95e490b3e6b1abe9069d5308",
+      "receipt_file_sha256": "bed72d27acc2f777c29a9e9468577d33bc8198f6e7429f30cc8d03cbfc8f6c7c",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/8a09bb446068097cda95ce29e84ee70288df016375a6f4a9be14c02a381197f5.json",
+      "role": "development_fit",
+      "task_key": "8a09bb446068097cda95ce29e84ee70288df016375a6f4a9be14c02a381197f5"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/679dbbaede8a46cae47e189fe9c517c0628bd999279b797ab4a777d5a2a96ae2.json"
+      ],
+      "input_sha256": "e73caf0c3d62cfa5ce1b8c80c83c30df50c7e99275f1f43f69acdd043f050735",
+      "instance_id": "5831f35622f3e6c666f0cee6cac60e4c",
+      "receipt_content_sha256": "cfffb53f53c5d378c0976d098afc8d8a2dd01d88243a6eccaba0a5ff26e27e98",
+      "receipt_file_sha256": "d0a0049a9b6c3724997f3fa8cfa5d5ce8fcba61b9613b420fc9c8b2712474c0b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/679dbbaede8a46cae47e189fe9c517c0628bd999279b797ab4a777d5a2a96ae2.json",
+      "role": "development_fit",
+      "task_key": "679dbbaede8a46cae47e189fe9c517c0628bd999279b797ab4a777d5a2a96ae2"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/3935b6b8b1ccdecbde60ed73e1049c8258ad28d53d68369b1a8fcab1d7ad79f3.json"
+      ],
+      "input_sha256": "d1adcacd7bab7a4ae25eb91986b0733c0a72d40271b697a7074eb75e594ace94",
+      "instance_id": "1a92907cdec0528583a8f49a818b406d",
+      "receipt_content_sha256": "896d2c48feddbb3c5773d428e205b1c4ea145cac2d0e40cd77980da69efdcbe4",
+      "receipt_file_sha256": "0e3553518efe15d1f235a0a580617d514cb445dc1f3632ad22c37d297448e261",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/3935b6b8b1ccdecbde60ed73e1049c8258ad28d53d68369b1a8fcab1d7ad79f3.json",
+      "role": "development_fit",
+      "task_key": "3935b6b8b1ccdecbde60ed73e1049c8258ad28d53d68369b1a8fcab1d7ad79f3"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/668b413c75dc3c3af7fa6880a84889e17550dbbee92c802486ad9032309386fb.json"
+      ],
+      "input_sha256": "b38a0161e666b101d04db08a7d8791002a80eb809c3fea69bef30fdbef9b2009",
+      "instance_id": "292bedf65cee7cc38fe8b2725eb50868",
+      "receipt_content_sha256": "466453b0dc0fb6f69ae149ac220d864266f76a6b3fae58facc1ee05a69a53ffe",
+      "receipt_file_sha256": "cd9d0304999af82afd174e87a823151fbcb4435f92bff456a61129c8f1897360",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/668b413c75dc3c3af7fa6880a84889e17550dbbee92c802486ad9032309386fb.json",
+      "role": "development_fit",
+      "task_key": "668b413c75dc3c3af7fa6880a84889e17550dbbee92c802486ad9032309386fb"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/5e620844e7beaafb82e0195c066876cdb1d74816e4d22741e126300a5f10148c.json"
+      ],
+      "input_sha256": "b4390b24ffb133cfcd00d5db77a6e865d112521e94d63c8db1037e3556530a87",
+      "instance_id": "944b4eaecefa1d15c2d2a8ac0c2d1c31",
+      "receipt_content_sha256": "59a50801abeac4dd06d28a34e91b6f9695deec99b0ada4b22978c0cef22c2fb1",
+      "receipt_file_sha256": "579641f8bdc7eec9388b326afd1893ea270021168b24b5c9cf9ee4d6dc8c9bc7",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/5e620844e7beaafb82e0195c066876cdb1d74816e4d22741e126300a5f10148c.json",
+      "role": "development_fit",
+      "task_key": "5e620844e7beaafb82e0195c066876cdb1d74816e4d22741e126300a5f10148c"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/47a388c8bf94a8545a9b780d389eb8a715766c7a261743315eb4bf8052259a1d.json"
+      ],
+      "input_sha256": "7b4fa7a4019d793f0c96ead52e655e51f4ac3390bfae71f4a58e6034bad4548e",
+      "instance_id": "d5928883c1e1f70764a31a83aa419eaf",
+      "receipt_content_sha256": "2d33c92882ef41f0c34461e9ceae3e3325ed40b66b8c104bf1d46f40949bada8",
+      "receipt_file_sha256": "0c759e25a7419000bb052d4acd2143e53139ede22e1047184088e3038d27e721",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/47a388c8bf94a8545a9b780d389eb8a715766c7a261743315eb4bf8052259a1d.json",
+      "role": "development_fit",
+      "task_key": "47a388c8bf94a8545a9b780d389eb8a715766c7a261743315eb4bf8052259a1d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b1a2c788584577145c27dfeba734b1dcc721aa102aac3a53482410d5846732e0.json"
+      ],
+      "input_sha256": "871b625d0509c985c821c0ea6f703729bcc51c9ddf9cbc52b26ea1c7be25fb8f",
+      "instance_id": "c033577c6f5f9a1545537518af964305",
+      "receipt_content_sha256": "220a56b7c7db48081e43e8338d9e80da2b943435ff7785f8e0124aae0d87ccaf",
+      "receipt_file_sha256": "7ea17df0ab329fdfbfe8b181039def671565981c9fa9d26219c2ae44cadd04f8",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b1a2c788584577145c27dfeba734b1dcc721aa102aac3a53482410d5846732e0.json",
+      "role": "development_fit",
+      "task_key": "b1a2c788584577145c27dfeba734b1dcc721aa102aac3a53482410d5846732e0"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/007e39fc5a3c7805bf4085306b199e52cf409cccf521fa7e6d2ee0f5737254f6.json"
+      ],
+      "input_sha256": "8277fa4f83c32d064b7396d89db871af51a5edc10b0a33bbbe2984dd2b393cfd",
+      "instance_id": "3cda1cbfbcabfc71ece7961d4d6ad1bb",
+      "receipt_content_sha256": "3790039ff8f88e4aa8531ba06880b9bd08bcbda1c31a29550cbd2c3c6df5840d",
+      "receipt_file_sha256": "528f956b8f2afeac1053cec14e1f595dc6b4c5eba428e9170e80e2503dd02af8",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/007e39fc5a3c7805bf4085306b199e52cf409cccf521fa7e6d2ee0f5737254f6.json",
+      "role": "development_fit",
+      "task_key": "007e39fc5a3c7805bf4085306b199e52cf409cccf521fa7e6d2ee0f5737254f6"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ae98b85cb285607df79f58e38cc2b1050bd78783c9aead77588fa35af0bb884e.json"
+      ],
+      "input_sha256": "c0ff7f0dbae8283a733097a365405c80e3fe3c0041a4eb26e0e9878c86a32bb8",
+      "instance_id": "04f43bb4a4f2c193a18e7195a4fd8e41",
+      "receipt_content_sha256": "09e77e678175f23247936b39fe532f909fe09a08ba3cc5bb4cdf30665a804e0f",
+      "receipt_file_sha256": "42753a86fc89e9de96d0d8178da9bf65715be893ec92e992c415482d3250dca3",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ae98b85cb285607df79f58e38cc2b1050bd78783c9aead77588fa35af0bb884e.json",
+      "role": "development_fit",
+      "task_key": "ae98b85cb285607df79f58e38cc2b1050bd78783c9aead77588fa35af0bb884e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/9e4f3d40c07f451c63ad41353e8758d92c5a0c966c2c386bb027dfe83bf2a8c1.json"
+      ],
+      "input_sha256": "92e5fa675073ba9aad91afa4b81129fed5757ea37872fc2dbc3bd4ba0d720a4c",
+      "instance_id": "a497d784c61c330f012dcd80d44dcd43",
+      "receipt_content_sha256": "589f8375ce0f7c3e67427f4fbf3368ca56a0bcd449f123bb3035c21b0075e782",
+      "receipt_file_sha256": "0d31573f0b362552f42fb102bbe861cf21b438b58ecd026245b57748fc17262e",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/9e4f3d40c07f451c63ad41353e8758d92c5a0c966c2c386bb027dfe83bf2a8c1.json",
+      "role": "development_fit",
+      "task_key": "9e4f3d40c07f451c63ad41353e8758d92c5a0c966c2c386bb027dfe83bf2a8c1"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/66a24057ec5380e6a169fa58122e4ccba8942064633521324c786fabf2741c7e.json"
+      ],
+      "input_sha256": "40bd545b6e3563463de70918a6033ae2432c3598048bf4b061bd562e97458ff9",
+      "instance_id": "1576e239e1c17939f24688a12fb10fae",
+      "receipt_content_sha256": "0e535f2d69ac0709b2af306f026f0aee4f6c60d1997a061b6fb9be17abbebd47",
+      "receipt_file_sha256": "d3579fe93ca9b44334aadd46dd2dd17f6a7dd04ade39bc3d9e7d18b207bd2c32",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/66a24057ec5380e6a169fa58122e4ccba8942064633521324c786fabf2741c7e.json",
+      "role": "development_fit",
+      "task_key": "66a24057ec5380e6a169fa58122e4ccba8942064633521324c786fabf2741c7e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/54e23595d822b4eee5bc91d2051ba0e86ca8eea556196bd270ee27c4c60b3376.json"
+      ],
+      "input_sha256": "7e13773a13fbf9b46d486297786c72ba657f363f64330fcdadcd856e2fb2d304",
+      "instance_id": "98e8aa2ace21d3362ef51524ad546764",
+      "receipt_content_sha256": "d1b1739f99a255fdc4bf790c1ebd02605fead2ea1cd752d4245f628441de13b7",
+      "receipt_file_sha256": "d92bd07c649f8ccf4426ee7acf28c5251f0b7f9066829f67ff9896d99b40308b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/54e23595d822b4eee5bc91d2051ba0e86ca8eea556196bd270ee27c4c60b3376.json",
+      "role": "development_fit",
+      "task_key": "54e23595d822b4eee5bc91d2051ba0e86ca8eea556196bd270ee27c4c60b3376"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/3a285f8dd8716d9ef3d0ed87926100ab34d1fc46ee6f06b997a3f3508b15049c.json"
+      ],
+      "input_sha256": "ece344b77e9468a26fca9e13f2df6e961383290c48e9fc3a64737ee67e13e7d3",
+      "instance_id": "22c8d6aa86d51e15ef5ab37479eda22b",
+      "receipt_content_sha256": "e91f706f36726b1314632fee7b7e323b256ed6f40e1f9bab5cd6026bca76c29a",
+      "receipt_file_sha256": "e5d86c292857af63640f02c39983fd24f04491ba26f528741b382796acde8282",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/3a285f8dd8716d9ef3d0ed87926100ab34d1fc46ee6f06b997a3f3508b15049c.json",
+      "role": "development_fit",
+      "task_key": "3a285f8dd8716d9ef3d0ed87926100ab34d1fc46ee6f06b997a3f3508b15049c"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/2816d503b7ad52c6bedddada416935dcb8c5fe42454cc8a087b13d61fa5ee2ab.json"
+      ],
+      "input_sha256": "4d12688b1285558bbcad596251088ec9a858adf6f1cebc6638a05baed095b3ae",
+      "instance_id": "4f4d22ce7643079412975a662e9363fd",
+      "receipt_content_sha256": "8a1fbfc94a15050b5ef217ba8841f9bee011ad6a34d08717deb8c40408b6913e",
+      "receipt_file_sha256": "a418bd549921d3db89ab35d22a647a7e4a273367d96116a09e85ec2e46490964",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/2816d503b7ad52c6bedddada416935dcb8c5fe42454cc8a087b13d61fa5ee2ab.json",
+      "role": "development_fit",
+      "task_key": "2816d503b7ad52c6bedddada416935dcb8c5fe42454cc8a087b13d61fa5ee2ab"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/241955dc65a45c12450fc35d801b35ae4ff41ada2ce2fd05625961e23d84c275.json"
+      ],
+      "input_sha256": "35c5efb370cf0f34cd984abb0bd8b3e5561f88cd88a3f6772254b4101e7db528",
+      "instance_id": "fdc4dd704e4d93a50fafb1debd8a6789",
+      "receipt_content_sha256": "4b4aeb8c3667e9f0aec33682164fcf8cec7aad6b540c27cc8b75c12bd4fe966d",
+      "receipt_file_sha256": "693ec5442d82091eaab915e45e3226b93d1f9ee08257ec8f792a2acca3e4380a",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/241955dc65a45c12450fc35d801b35ae4ff41ada2ce2fd05625961e23d84c275.json",
+      "role": "development_fit",
+      "task_key": "241955dc65a45c12450fc35d801b35ae4ff41ada2ce2fd05625961e23d84c275"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/8ee996e7f80857c21458bb42f7af19492cce44e782f2c5f672306fb58dd6142b.json"
+      ],
+      "input_sha256": "409a47c2d553d9af7229ce3c05455263cc371f7f078ef3071efc203b5f87b61f",
+      "instance_id": "0f269188707a1b2f309dd1c70bfe22b0",
+      "receipt_content_sha256": "73bb670147691ccd0e6bbd6c7695032dbd58681c640618d67a0b9085871d804e",
+      "receipt_file_sha256": "dbb695717f8c1faaaab440c923043eb7aee6139afac8918989ed495276d0f457",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/8ee996e7f80857c21458bb42f7af19492cce44e782f2c5f672306fb58dd6142b.json",
+      "role": "development_fit",
+      "task_key": "8ee996e7f80857c21458bb42f7af19492cce44e782f2c5f672306fb58dd6142b"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/9e838c63a558218accda5746d8441b7b34cfcc421d487440871ce92b9e8a14c6.json"
+      ],
+      "input_sha256": "2a4e7c2561a8e56df1ab667db77ccb82687860843b34b5b3ab45a54b44a5a587",
+      "instance_id": "41f507717c7c4553d23cd0cd1fc40104",
+      "receipt_content_sha256": "e3ef9523823c9c65783bfaee41d0718e6634fcc6de50a2023597357d42d4b9bc",
+      "receipt_file_sha256": "c98e94ffb1cfdb376fe09c5e5b81eee4005abe921aa435503ec7fa415fde1185",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/9e838c63a558218accda5746d8441b7b34cfcc421d487440871ce92b9e8a14c6.json",
+      "role": "development_fit",
+      "task_key": "9e838c63a558218accda5746d8441b7b34cfcc421d487440871ce92b9e8a14c6"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/19af6a5bd166e2d1daafd2a12f953c91190c8deacf1aa0a154d83596e43c17c7.json"
+      ],
+      "input_sha256": "5015bd457b93d37e8a4f899510d6e81bd8f2208c07370b82166a62cc3164bc4a",
+      "instance_id": "f0bafebdcce23ccfbaf6c27a7522069b",
+      "receipt_content_sha256": "e399e8e5504ef9a564eaaaced7656bd929e2262959ea2207b5c6c3dfdd936351",
+      "receipt_file_sha256": "552f9d8e65186c8d02db672d83fa93b897637f2b2095ba34b1c93b5dd47ce63c",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/19af6a5bd166e2d1daafd2a12f953c91190c8deacf1aa0a154d83596e43c17c7.json",
+      "role": "development_fit",
+      "task_key": "19af6a5bd166e2d1daafd2a12f953c91190c8deacf1aa0a154d83596e43c17c7"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/be218067a368dc5e4e109b70fc7c8cacd2be6bea6a8018480bede842ec1f7a08.json"
+      ],
+      "input_sha256": "8572196848c9548a462363090b19c2d8d252c061bf00030efc160a9732401311",
+      "instance_id": "321732c1a401ff109b2f2b447e3dbe5e",
+      "receipt_content_sha256": "8280cae4469d489a4accfa172489b5a661338c4f69edfc6be92559d48a76718f",
+      "receipt_file_sha256": "506866ad87490f8c062ede0d6491a7b336ec22d1e06e7c8840802cf45c7a270d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/be218067a368dc5e4e109b70fc7c8cacd2be6bea6a8018480bede842ec1f7a08.json",
+      "role": "development_fit",
+      "task_key": "be218067a368dc5e4e109b70fc7c8cacd2be6bea6a8018480bede842ec1f7a08"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/c19d0a8311db42e3e5ca06c0d4f445fe9c7431f07c1212babfb5d661ef38084b.json"
+      ],
+      "input_sha256": "79618e35c83016fd1a188eb63ed499c3d1d4c364f710c9c9a93eb7925054a9af",
+      "instance_id": "77a0d54f2fb3740a9a321623c0c10f3e",
+      "receipt_content_sha256": "171bd941a25ce8d365c72f4e4066509e45fa260181538f466ef38b2e31e61869",
+      "receipt_file_sha256": "8c09cb6dcf881d36998ca920641675eeee05b6fb8d630d4e63ad2b0877f39367",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/c19d0a8311db42e3e5ca06c0d4f445fe9c7431f07c1212babfb5d661ef38084b.json",
+      "role": "development_fit",
+      "task_key": "c19d0a8311db42e3e5ca06c0d4f445fe9c7431f07c1212babfb5d661ef38084b"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/6b4499a49b2adc7a6e1eb0f3f83ba892396e23ed7046fd2a80fa07159a07d0cd.json"
+      ],
+      "input_sha256": "fe844d381d52dab9f1d010a90232044cf9327a6a3031ff40b63ec4d398ea5480",
+      "instance_id": "9f1cb42232335f84435126b5ae0fb701",
+      "receipt_content_sha256": "f2298cf96cd0ff6ab7422cee9563e32001ae5b50901d084dc09bd3b1aba0e50f",
+      "receipt_file_sha256": "268555ed09af53816e6c95c6f753e3017e437f6fe6e345b1bba5adc18d5c9aa5",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/6b4499a49b2adc7a6e1eb0f3f83ba892396e23ed7046fd2a80fa07159a07d0cd.json",
+      "role": "development_fit",
+      "task_key": "6b4499a49b2adc7a6e1eb0f3f83ba892396e23ed7046fd2a80fa07159a07d0cd"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/cf3e5e830a32426202ce4f337fe15fd0c53e40dd437753b110c5cbfac31ea276.json"
+      ],
+      "input_sha256": "3ce4a05858326856d2357e670ca2a188bc92a363c396e7bb850dc2851a3901cd",
+      "instance_id": "d0298807e51730261ef65db827dcd70f",
+      "receipt_content_sha256": "da6f7a3802ab222c126516035ea156627e3b4145a39b3c82a146155fcb0ac445",
+      "receipt_file_sha256": "689c92f381dab0e40b2553503748d8e26ea2d8069a11d8145e0aafb848f68bc4",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/cf3e5e830a32426202ce4f337fe15fd0c53e40dd437753b110c5cbfac31ea276.json",
+      "role": "development_fit",
+      "task_key": "cf3e5e830a32426202ce4f337fe15fd0c53e40dd437753b110c5cbfac31ea276"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/838e864668ea44a4f48cf43feda36c1a52981d85e579ac9dd4f6e8562d2e457f.json"
+      ],
+      "input_sha256": "9e4c57b9739f39a924d03267f05542831dc87fec9e9e2238f5e4ba11886378f4",
+      "instance_id": "42f1311ce504db8cc0cb590a568da20a",
+      "receipt_content_sha256": "7107750f7d0e402e9c9b81a4e7dd2cfaa8418e59dc79772ea7e881cf100bcf00",
+      "receipt_file_sha256": "a33e26fb43e7b9d325fe6050fc87ed1b8a62d4a430e903c08687c383d0db6ded",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/838e864668ea44a4f48cf43feda36c1a52981d85e579ac9dd4f6e8562d2e457f.json",
+      "role": "development_fit",
+      "task_key": "838e864668ea44a4f48cf43feda36c1a52981d85e579ac9dd4f6e8562d2e457f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/5a57605fd8cf7f7f3a6142bce9b664d044fdec7f11d365846e3c934d9ab7346a.json"
+      ],
+      "input_sha256": "1e966f7c7accf8109eaae14b942639da31cb34d786b0bd2d4a2a499ed6121bb9",
+      "instance_id": "849950561ddce887c78fef773dccfa80",
+      "receipt_content_sha256": "23b06a82aecefd0cdcc7f536598e00ec085dcfafd467a4356c2817f76eaad7bb",
+      "receipt_file_sha256": "f1385ebaa2660affa96d7de41cd5786c04fa72a87291382b985b38f46042d58a",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/5a57605fd8cf7f7f3a6142bce9b664d044fdec7f11d365846e3c934d9ab7346a.json",
+      "role": "development_fit",
+      "task_key": "5a57605fd8cf7f7f3a6142bce9b664d044fdec7f11d365846e3c934d9ab7346a"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ed62591a5988df398b3f20ff2ff1f0dbe4d7f0fbbbba69716a82540a8b2032b1.json"
+      ],
+      "input_sha256": "a03f39bf573a9e09c6f212919eac06e16f9c9f07343d051bdf4fdc5e19537446",
+      "instance_id": "f17dfbed8c18716a41b231702e127524",
+      "receipt_content_sha256": "8691df088098c91327c504204c120bad4131e8fae954e6643be9efdc34cc5295",
+      "receipt_file_sha256": "3fc06b89093e3827c6da4834d52a87b287fea5a0db529d2b9c74ed91fb1ba448",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ed62591a5988df398b3f20ff2ff1f0dbe4d7f0fbbbba69716a82540a8b2032b1.json",
+      "role": "development_fit",
+      "task_key": "ed62591a5988df398b3f20ff2ff1f0dbe4d7f0fbbbba69716a82540a8b2032b1"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/90ebe00a5c1d1995a1327b604515883fe9ddb51b5180c3a4943c6dcb098c39f9.json"
+      ],
+      "input_sha256": "e67bb0065623cb1014899f98553b33cf3f93706b81204b8e6282cc4d66898752",
+      "instance_id": "35ec95b9b2398fb522db178855016ae0",
+      "receipt_content_sha256": "336348a3535bff0c4964528c8da2fb888d618c94dcfc906f6c5dc6b51382d58e",
+      "receipt_file_sha256": "983642bbe7c099c26d3d83e7a490480ddceabd43ba2050c1538572f2cb06d031",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/90ebe00a5c1d1995a1327b604515883fe9ddb51b5180c3a4943c6dcb098c39f9.json",
+      "role": "development_fit",
+      "task_key": "90ebe00a5c1d1995a1327b604515883fe9ddb51b5180c3a4943c6dcb098c39f9"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/7496872d12b43dafdf47c1459066558736a19ed767273d8c67607c68c8cb4d53.json"
+      ],
+      "input_sha256": "6dda901641d91a62109db01a61099f89dc300e929c4af49ad8845e3c3b887b47",
+      "instance_id": "cb66276897e4d1ff1368a4430598e11c",
+      "receipt_content_sha256": "72e4deca9c39b7d03803c6df0f8923273b3fba0715dec496dcb478cf28e63c4d",
+      "receipt_file_sha256": "544a42bd26e63c4c78812e93ae68aa6fa05551d77e76e175e37f54e5e88c6927",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/7496872d12b43dafdf47c1459066558736a19ed767273d8c67607c68c8cb4d53.json",
+      "role": "development_fit",
+      "task_key": "7496872d12b43dafdf47c1459066558736a19ed767273d8c67607c68c8cb4d53"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1b3b029c30b6e2be8d48d1ded538145004af2fa05829fa4c2546edb3cdcde494.json"
+      ],
+      "input_sha256": "0fba025fd217e26e12d47ac3dc3674ad43b7f31b7b9011ee9116815953ceda78",
+      "instance_id": "b3d3680b3287a989ce61a6db1054efd2",
+      "receipt_content_sha256": "4f61e94ad940062c9e2cdbb998a46b6f791a0f7c24691302f7961857508312a0",
+      "receipt_file_sha256": "47dadd34ad24c590e6afd4d7528a3cc35e0932e3d429ea4b60ceedc249dcf751",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1b3b029c30b6e2be8d48d1ded538145004af2fa05829fa4c2546edb3cdcde494.json",
+      "role": "development_fit",
+      "task_key": "1b3b029c30b6e2be8d48d1ded538145004af2fa05829fa4c2546edb3cdcde494"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/4a5fdee35ba4551c6e0d74303f92bdab4f6ff10fd68cbd8b273dcc92c4cc94b9.json"
+      ],
+      "input_sha256": "ceadf3c390c072f24c7e55b604c99342fc1077de391ade00d8aa7ec7bf119229",
+      "instance_id": "fc67d414ea20a0ffffc087d7577af2fe",
+      "receipt_content_sha256": "155372db247a6c69459dfa3e2e7136296e579142a0ce2d6cb2ca8d5928950ae0",
+      "receipt_file_sha256": "0864388239cfa8df32f3604f18ec1870406c6f05ac2a6ac3407a86c156e3eefb",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/4a5fdee35ba4551c6e0d74303f92bdab4f6ff10fd68cbd8b273dcc92c4cc94b9.json",
+      "role": "development_fit",
+      "task_key": "4a5fdee35ba4551c6e0d74303f92bdab4f6ff10fd68cbd8b273dcc92c4cc94b9"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/169891f8072868aa828c075d0b21a61f388b61bd83a1e1688a4802d7ec2a860e.json"
+      ],
+      "input_sha256": "85dc7984528bcf1c692dbdaa13ed4443bbf549c450fb02cba752e4fb4f502f2a",
+      "instance_id": "d971241ca861121371d20be1d61c15a3",
+      "receipt_content_sha256": "5849006464f0f11e8ef4148567631b7ec267aff1b403bd25391fc0671c805c98",
+      "receipt_file_sha256": "f405774fbf4620870951aa562f15087290205600a07e243d14a51ea153b19030",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/169891f8072868aa828c075d0b21a61f388b61bd83a1e1688a4802d7ec2a860e.json",
+      "role": "development_fit",
+      "task_key": "169891f8072868aa828c075d0b21a61f388b61bd83a1e1688a4802d7ec2a860e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/698807c17ff13bf1283ec0be2e7417103e4ce8f3c91d063b4627fcb1394f4c72.json"
+      ],
+      "input_sha256": "f04d87abe42b9081bec4e0b021ce300699ad390e43c99fb9a1a01fe95adeb7ef",
+      "instance_id": "87f093067622b91fa9dc0de149c8b92c",
+      "receipt_content_sha256": "2d68433bdc39a7544c75281b36b07191768ee9ce0989735e50cf56d359276f5f",
+      "receipt_file_sha256": "c93208e9d7d005dca03058a954801b7a2e8410f450e3fe77bfd4162a4e1681a7",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/698807c17ff13bf1283ec0be2e7417103e4ce8f3c91d063b4627fcb1394f4c72.json",
+      "role": "development_fit",
+      "task_key": "698807c17ff13bf1283ec0be2e7417103e4ce8f3c91d063b4627fcb1394f4c72"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f1ad9a7616f036d33cc55886f131b08cf5f38256979d079606374cb1a659e7d9.json"
+      ],
+      "input_sha256": "af40c3cde5fb3cbc95c038397bca3b58a453931abc74f0914676d06e8a5eb63e",
+      "instance_id": "602c8a200227ab9d64d855164d35b5cf",
+      "receipt_content_sha256": "2c1f6da0184346aef436120cc3b14b6eddbb94f12364933f29fa7b14281eb4f7",
+      "receipt_file_sha256": "1d9315524b9b2034dcf2386da5039c50ab84d9fc1e9605c9f5398c1d09651bda",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f1ad9a7616f036d33cc55886f131b08cf5f38256979d079606374cb1a659e7d9.json",
+      "role": "development_fit",
+      "task_key": "f1ad9a7616f036d33cc55886f131b08cf5f38256979d079606374cb1a659e7d9"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f6a9272383f2460fe917ddb772f42de0f6356ab25fe78046569b166ffcb5a6a8.json"
+      ],
+      "input_sha256": "8fe818c2bc32131fd6342051c9140696ace05fb62432adffe1f2b5b56b08990a",
+      "instance_id": "3619135ee5865be0a107449fb31defd9",
+      "receipt_content_sha256": "ccc2eeff49028d5157a3839ef5eed76fa6f1b0fe69a0d8d1fcf642c0547c4795",
+      "receipt_file_sha256": "33e903f338223cc018df75d39cb42b44c045de04939357a159a2b667cbe8a86a",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f6a9272383f2460fe917ddb772f42de0f6356ab25fe78046569b166ffcb5a6a8.json",
+      "role": "development_fit",
+      "task_key": "f6a9272383f2460fe917ddb772f42de0f6356ab25fe78046569b166ffcb5a6a8"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f3cb5a8b133f1679eeb6e548a41da5de9d5589937fecfd132ad2dfdb612bebca.json"
+      ],
+      "input_sha256": "773833d592a65a8a22b254cc8c8ed98f641736705bc2018e0a7e6f8a072048de",
+      "instance_id": "e430acf720b63044e5c825a00a76b0eb",
+      "receipt_content_sha256": "92f6d02e89963f050c3cdb560427facaedd744215135f889c5aeca897da0b3a9",
+      "receipt_file_sha256": "cda297072cfa5b2823077542aaa429c3aa7eb02f3c508e211555bb8905f9d5e4",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f3cb5a8b133f1679eeb6e548a41da5de9d5589937fecfd132ad2dfdb612bebca.json",
+      "role": "development_fit",
+      "task_key": "f3cb5a8b133f1679eeb6e548a41da5de9d5589937fecfd132ad2dfdb612bebca"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/09dbc410150bf30d517024605bcd5e29c2420eac35228df5d1ca49af7c19fb70.json"
+      ],
+      "input_sha256": "52b7fc9c9773fe94065d180f0cf7aa0dce50461f7cfcb1d36a517421cab630f9",
+      "instance_id": "1b9f94befb5bc867c0e882f49973f793",
+      "receipt_content_sha256": "d9020906dd882c00a931c91bd335b80385e0d9b74c6cc4c2d7def1f352e61e0f",
+      "receipt_file_sha256": "f7f701dc1c8f86c24db67c36dcd28bb238667be48edfdfc89aaa3b31a1ad0c56",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/09dbc410150bf30d517024605bcd5e29c2420eac35228df5d1ca49af7c19fb70.json",
+      "role": "development_fit",
+      "task_key": "09dbc410150bf30d517024605bcd5e29c2420eac35228df5d1ca49af7c19fb70"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/0d702efa41de8b143aec5dd8649392e82398016ec12f825262a9f68fedd3242f.json"
+      ],
+      "input_sha256": "89cd0d3be21de667864f6c2d63637431f65f19defa9ce0d1233334ab826bb505",
+      "instance_id": "6e139783cfbcfeec85b49750ad11a615",
+      "receipt_content_sha256": "94581e7923c017bb94435eb2b986c999ac65b13056bf071bd451577f42920996",
+      "receipt_file_sha256": "d2a5c6e3bfcceb88d5f23d2d4b675d4f207a44625c2cb5048b6723e3fcc6a79b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/0d702efa41de8b143aec5dd8649392e82398016ec12f825262a9f68fedd3242f.json",
+      "role": "development_fit",
+      "task_key": "0d702efa41de8b143aec5dd8649392e82398016ec12f825262a9f68fedd3242f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/2a6c22cc509aa8cd1328fe4b6b2bfd9f4e276c5f7084b3cabeba93a874ed53ba.json"
+      ],
+      "input_sha256": "41faaa4a2e7616b9e854bd8bc0255c6fc875ba1b48781ecdd1b19884fac24b8f",
+      "instance_id": "ca3c65a863526793968fc30618a42709",
+      "receipt_content_sha256": "a96b901d087da7525e66145fef01d25bede55f8ea99fe643b1206e4af606a850",
+      "receipt_file_sha256": "9b0127fb1d4585b0ad5a3da30926effa93a366c376593eb5748dfbb94118a827",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/2a6c22cc509aa8cd1328fe4b6b2bfd9f4e276c5f7084b3cabeba93a874ed53ba.json",
+      "role": "development_fit",
+      "task_key": "2a6c22cc509aa8cd1328fe4b6b2bfd9f4e276c5f7084b3cabeba93a874ed53ba"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/12a3a366f42db5242de9929d71f740ab885f1eaa5c955d0604c536b35aee35c7.json"
+      ],
+      "input_sha256": "7f3e57a9bf962129671128877b8e013f97009124f67d04e4fefc3ea097b41a8e",
+      "instance_id": "56913ff910c49dd5010653720970d944",
+      "receipt_content_sha256": "f75ea5dce46ba785722d00ca04d8b1d690c460785f084c05dbeb4565e5d49f9a",
+      "receipt_file_sha256": "fe5a4826d6dba71b789fc39750396e56bfdfd98ccb892b1fbfdff7b35ce7d2eb",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/12a3a366f42db5242de9929d71f740ab885f1eaa5c955d0604c536b35aee35c7.json",
+      "role": "development_fit",
+      "task_key": "12a3a366f42db5242de9929d71f740ab885f1eaa5c955d0604c536b35aee35c7"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f3fcb44b90cf4ed8f8bb938b5a1c77cb6567dbb5c29d9287b9c56e87f2e30630.json"
+      ],
+      "input_sha256": "96b8e9afda8e602c0d341c7d0624e8afd5399bf3aaaee59b595ecf2101c17212",
+      "instance_id": "0a4880c0e882e6a4a31943522573c394",
+      "receipt_content_sha256": "cddb21beb0999b57cb5de04cca3b54ab066f0684773ed55f33daabc69977dc72",
+      "receipt_file_sha256": "15ca31056a10f5ec2ba5a7d6a66a2e776e7f1277500530f6e7645a80fea514dd",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f3fcb44b90cf4ed8f8bb938b5a1c77cb6567dbb5c29d9287b9c56e87f2e30630.json",
+      "role": "development_fit",
+      "task_key": "f3fcb44b90cf4ed8f8bb938b5a1c77cb6567dbb5c29d9287b9c56e87f2e30630"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/8f33c7c401f49fe6c02ad9b84abe6075af28cd2efed3f09f12146bfddfbb9275.json"
+      ],
+      "input_sha256": "63e7aac6c7dcfcb2e77e4e07f585cb72802395872eda64420a155f497a16a5e9",
+      "instance_id": "75cc1f02ed4b8c06553ef579b163e1be",
+      "receipt_content_sha256": "17a05e8bb47fe525db47b7502fdaa8c1c45e49e2b346e329017aaf22ff25755c",
+      "receipt_file_sha256": "223c3a54b08cb0b5ed9bb02e027cfbfd5f01136c72b91db5c2e0f6bb67f515a2",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/8f33c7c401f49fe6c02ad9b84abe6075af28cd2efed3f09f12146bfddfbb9275.json",
+      "role": "development_fit",
+      "task_key": "8f33c7c401f49fe6c02ad9b84abe6075af28cd2efed3f09f12146bfddfbb9275"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1da629806258d2bc8982689b2980908f8073dcccbfe8abb71d4ebc4a3f6b322b.json"
+      ],
+      "input_sha256": "8ca0acf3b5bee970d885e9efb8f607a467b6d8fa75bbd62f5cc0e29ba4cff0d7",
+      "instance_id": "29b573e0f7b922c4bd0a675db005265f",
+      "receipt_content_sha256": "fead5f6a7b08a1d81f8e85f8bc4bff0317a8b3ed0a4e84e777785df984fd20f2",
+      "receipt_file_sha256": "e9d57a1c3e7a768c71c757428911b6e3024b0dd84b345c333836c66984169e79",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1da629806258d2bc8982689b2980908f8073dcccbfe8abb71d4ebc4a3f6b322b.json",
+      "role": "development_fit",
+      "task_key": "1da629806258d2bc8982689b2980908f8073dcccbfe8abb71d4ebc4a3f6b322b"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/0f53881f1de64a813a8773b50a8d9ff1073d0e4ed75f63fa44f6595c5fca34a2.json"
+      ],
+      "input_sha256": "6fa702e2d004b43c7beae256a33a89e7cdb52db9d592f5630226991902b93795",
+      "instance_id": "9dd565d002c343712eb5deda187e9034",
+      "receipt_content_sha256": "6ec0221f2efc69fa21325e739e6a6b62f5934aa76dd50b25ed5a5eebfa5bc71d",
+      "receipt_file_sha256": "b6301916484ad2e9b5b1363c1d9f8e393260e644862fcaa4b50fcabfd881276f",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/0f53881f1de64a813a8773b50a8d9ff1073d0e4ed75f63fa44f6595c5fca34a2.json",
+      "role": "development_fit",
+      "task_key": "0f53881f1de64a813a8773b50a8d9ff1073d0e4ed75f63fa44f6595c5fca34a2"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f498e9c34a53b94b6d86bd829ce9c7c4aa698f7c4b5995469c7d1daa04e86b65.json"
+      ],
+      "input_sha256": "4983d220296cf66fc502f07647743855b239a18edc7d919db18035c867cc82b3",
+      "instance_id": "fae6cf26f3da1e7d8fc4926a9ca86b61",
+      "receipt_content_sha256": "bd07724288fba426da51bce244cc6a121ba9f898e2088500d7ef4c47bbf624e3",
+      "receipt_file_sha256": "c93b89c94959f7f2717cc0ec0d56e7356e3713a9c81ffd092d999c06a48a0d25",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f498e9c34a53b94b6d86bd829ce9c7c4aa698f7c4b5995469c7d1daa04e86b65.json",
+      "role": "development_fit",
+      "task_key": "f498e9c34a53b94b6d86bd829ce9c7c4aa698f7c4b5995469c7d1daa04e86b65"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/6ebb5b06fcc7bc435bebdc64c7c8cae0b4e82b37281a1028d1faeb82683dfb4e.json"
+      ],
+      "input_sha256": "96ed68efd2f07b669b29416705660884b3f5223814729423d7a77b203f04d1b2",
+      "instance_id": "3ef7fa06c6380f12cfe2970873da6fb1",
+      "receipt_content_sha256": "74fa4d32d5c7bc48614f95b34fbba3d04ca2ab9313d09433aa1ba473b71298af",
+      "receipt_file_sha256": "01ed58a0d414c34f1a210507a51b9187b09df7e22f8f48fedd903dfaba1d812b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/6ebb5b06fcc7bc435bebdc64c7c8cae0b4e82b37281a1028d1faeb82683dfb4e.json",
+      "role": "development_fit",
+      "task_key": "6ebb5b06fcc7bc435bebdc64c7c8cae0b4e82b37281a1028d1faeb82683dfb4e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/2484f76ea389033a2006319ae971059427e1c194f2522ee2a9199bef038496fa.json"
+      ],
+      "input_sha256": "8da8afe13ebbde37f7fd60b521669b734f18c5d5739ef6ba0bbd476161c83ba3",
+      "instance_id": "5911653e4edadec391654c8f06353f9a",
+      "receipt_content_sha256": "557c0b1ce1fd8f6de07aad2f0a4682e85567e55b167100fadfa5470484b414d6",
+      "receipt_file_sha256": "44c6ea55e7efff5efdc0bcb4c845a77b041e8eeea3dcc2828957495c4afc7ecb",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/2484f76ea389033a2006319ae971059427e1c194f2522ee2a9199bef038496fa.json",
+      "role": "development_fit",
+      "task_key": "2484f76ea389033a2006319ae971059427e1c194f2522ee2a9199bef038496fa"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b839a526614e884763ba5e57e19e6e52d0e07839b45d7306ebde4609cff49710.json"
+      ],
+      "input_sha256": "ef35fe8a9933d5fbba1053ffa92601087be9bb3efebad83dd7e42ce51429cf40",
+      "instance_id": "d89fc3e9c24e0383e940464f4704657e",
+      "receipt_content_sha256": "c83d69b4e930ab5d3f8648bd2d85e78d38de9cb0fd2d6e7adb41ef66041a55e4",
+      "receipt_file_sha256": "0600f2c87f7a7d9846c78b8373eb25addf00068bf321876d6404faa376194a74",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b839a526614e884763ba5e57e19e6e52d0e07839b45d7306ebde4609cff49710.json",
+      "role": "development_fit",
+      "task_key": "b839a526614e884763ba5e57e19e6e52d0e07839b45d7306ebde4609cff49710"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/4df4bb23dbd3eb3b7591e293f803c365e7bc565c7132ffdea7c6c4f85822aecc.json"
+      ],
+      "input_sha256": "52e8c2bba3e7bbcfed7517c2054e56788831b9e4de1090c63e77b9cc882dc763",
+      "instance_id": "27cb3a6ca772613c5998d7f78a55ba45",
+      "receipt_content_sha256": "4e0e7c5bd80cb768fce01a88b01c12328622ff34d420c647b21e67a20feea617",
+      "receipt_file_sha256": "0af9394c13240043fef6d846012b4b4f210d9a066f5f822f8b37bbd4719433ae",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/4df4bb23dbd3eb3b7591e293f803c365e7bc565c7132ffdea7c6c4f85822aecc.json",
+      "role": "development_fit",
+      "task_key": "4df4bb23dbd3eb3b7591e293f803c365e7bc565c7132ffdea7c6c4f85822aecc"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f6377ab15d0f5c7a62d0ef8b2c959dd3a7ad053b69aeb854d91028b50615aba7.json"
+      ],
+      "input_sha256": "eb9a4740b712b149f08d5b430ae5907109eac3f231ce549a281703bc8e0965fb",
+      "instance_id": "695d8f6a2ee6e89e5a4f5d94abc3aca6",
+      "receipt_content_sha256": "cb412d0f361c91f1cf4f9f3f906cff03fa2a67e068161a09529b623fb30f4ff9",
+      "receipt_file_sha256": "86b77e02e22bd5ae1ad6f2b68052b006a34604b3da6be87dfe8c3ff5bca25e0c",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f6377ab15d0f5c7a62d0ef8b2c959dd3a7ad053b69aeb854d91028b50615aba7.json",
+      "role": "development_fit",
+      "task_key": "f6377ab15d0f5c7a62d0ef8b2c959dd3a7ad053b69aeb854d91028b50615aba7"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/a972e44b917835bb6e31b00d815653b46c633a1d46cef4d4a88ad6dd2e740c05.json"
+      ],
+      "input_sha256": "b2b55ca5352ae48bd9f212c1b5c0bd40a53f16b97ab16a3b206dfd3dd32f2dc2",
+      "instance_id": "12820b981e6b199a1b1a8c896386a337",
+      "receipt_content_sha256": "6b50316c98a7ca397f691881cbfa237e6088f8ca50ffeca74fbf7a91178f6003",
+      "receipt_file_sha256": "4f0664b1dd1e624b64446bf124f8a386a68067e47b73bc0e8ae8d57a8fcaca92",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/a972e44b917835bb6e31b00d815653b46c633a1d46cef4d4a88ad6dd2e740c05.json",
+      "role": "development_fit",
+      "task_key": "a972e44b917835bb6e31b00d815653b46c633a1d46cef4d4a88ad6dd2e740c05"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/8df3f48baa45fd947c88708369e6d3e651eb44e5aef23475836f1bab38b24bfe.json"
+      ],
+      "input_sha256": "5b25f54a70c44c310b4e56fe6f5e10b3f07c8ccb75d7492a3c8b0c73cd33cb49",
+      "instance_id": "bea83d274b1c57b2171b380e34fd645d",
+      "receipt_content_sha256": "08841762b41a18aff9df431683d96816ac067d0dea693680b6d89d125376c85f",
+      "receipt_file_sha256": "7f36a3d4986419c1913b851d8ce0eb941c59355630935a75134fa27ff1b0b320",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/8df3f48baa45fd947c88708369e6d3e651eb44e5aef23475836f1bab38b24bfe.json",
+      "role": "development_fit",
+      "task_key": "8df3f48baa45fd947c88708369e6d3e651eb44e5aef23475836f1bab38b24bfe"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b3f66cbe659d72791b5ff6dba1c97e736e33996e497cd827683fc26aacbbac58.json"
+      ],
+      "input_sha256": "9c8ddd5ad86590ef636f46a61ecf4732abf42dadee70fd2be3c0783c08e7160f",
+      "instance_id": "847c8843ee292b9b31f0c346574af260",
+      "receipt_content_sha256": "d4398f0dad5b8907f61a6abebed2017db85b985173d8a30845e502b2d32a2406",
+      "receipt_file_sha256": "5d7e6a30a98dfe89f7cf5da2d81e13f98d8e5ba51990687b74d693280927767f",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b3f66cbe659d72791b5ff6dba1c97e736e33996e497cd827683fc26aacbbac58.json",
+      "role": "development_fit",
+      "task_key": "b3f66cbe659d72791b5ff6dba1c97e736e33996e497cd827683fc26aacbbac58"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/84efbd398d5456a26e5f60009916a0c1b05a61e593198b7ff2affd02e924517d.json"
+      ],
+      "input_sha256": "0c9693f9dba510919be754a36dd0875dee7a53f33a502eb36b97e5bbde9ea68d",
+      "instance_id": "918d9e7c2e197312517736421d728958",
+      "receipt_content_sha256": "ebfeffc548c832b756dd42a0a20aaa7def3a697b1da3b5dff5edfcd983c0b197",
+      "receipt_file_sha256": "0ca8c1427c38ad894b2a28fc449c9bc1f380e413ee6b35315eecc32a753d8585",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/84efbd398d5456a26e5f60009916a0c1b05a61e593198b7ff2affd02e924517d.json",
+      "role": "development_fit",
+      "task_key": "84efbd398d5456a26e5f60009916a0c1b05a61e593198b7ff2affd02e924517d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b40721707ab7a6575c8bacd877d1223f0323293777c3787f04ba5e7318da80d9.json"
+      ],
+      "input_sha256": "181b73ff4a56dca6860e6e5feee38835d4d6d23208337fbc1303e4b93467a87f",
+      "instance_id": "3a1f1b4b9a521737cc760017fe9d8b43",
+      "receipt_content_sha256": "5e9dd16ea201b02e0260b610b1d20a59eea2d0dcb09e199810ab17d1c18e3a23",
+      "receipt_file_sha256": "e6c1305335b45cff065b4877271faabf089e3ce53ac0887823737ded5d7696ff",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b40721707ab7a6575c8bacd877d1223f0323293777c3787f04ba5e7318da80d9.json",
+      "role": "development_fit",
+      "task_key": "b40721707ab7a6575c8bacd877d1223f0323293777c3787f04ba5e7318da80d9"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/cf96cd605f0bd1dabe16905c23571904f5bf59f8380f978d2468dff21ce1ea99.json"
+      ],
+      "input_sha256": "d60cad9e8029253151e1a0896724e73535be0f850c179e7da70584af714d731b",
+      "instance_id": "acc0bc3ef52aa228cc35c2d9bb3ae249",
+      "receipt_content_sha256": "d9c8aabb0338bc3b4eb8984b78e87952995cf67ccfebfab07a8bee4b2b033382",
+      "receipt_file_sha256": "bd2a874aeaf1b8587a3d0872acccab9a148bc35e6066743d08ecbe486da0b865",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/cf96cd605f0bd1dabe16905c23571904f5bf59f8380f978d2468dff21ce1ea99.json",
+      "role": "development_fit",
+      "task_key": "cf96cd605f0bd1dabe16905c23571904f5bf59f8380f978d2468dff21ce1ea99"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/b75e6f17827197b9b792893fc18046fb2f9c74ace32c28329df83c06c73f0f7c.json"
+      ],
+      "input_sha256": "2d3166f230aeb1d6de65b4d8edf4bde8ec88dbf6c913a41e2048ac1d26e3f6c4",
+      "instance_id": "546f8e069aa450002a30c9c47538fe95",
+      "receipt_content_sha256": "c930a298842a5861dfd53bee1ea8974f312db5ef441393a7cbbb96ee426dc9c8",
+      "receipt_file_sha256": "8e3af1d6f980a04061694930263997122683decfc3a5c2bbd09778c4804e60bc",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/b75e6f17827197b9b792893fc18046fb2f9c74ace32c28329df83c06c73f0f7c.json",
+      "role": "development_fit",
+      "task_key": "b75e6f17827197b9b792893fc18046fb2f9c74ace32c28329df83c06c73f0f7c"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/5ba675d5a0b2d6e7ed52fe371f4a3302268f82036fe40f058b2e8b04087a1bc6.json"
+      ],
+      "input_sha256": "89c464dd68a9c19752843b3906ee658e999201b96bdd9e193d64703fcfcfd6f1",
+      "instance_id": "4c037368864330bff3940837ac28ac14",
+      "receipt_content_sha256": "5affcf15a327660a65d69aa0813f64cf57d8535398ab471806e6909409648087",
+      "receipt_file_sha256": "5378b1446e5cba294353aec8333d1bb52d8efb2d3659f9097a00edbf5ad3f843",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/5ba675d5a0b2d6e7ed52fe371f4a3302268f82036fe40f058b2e8b04087a1bc6.json",
+      "role": "development_fit",
+      "task_key": "5ba675d5a0b2d6e7ed52fe371f4a3302268f82036fe40f058b2e8b04087a1bc6"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/81bbf7ada351a229a033a9afde8d02af35b7ec23f59c417babd1ce0d8a9fc59f.json"
+      ],
+      "input_sha256": "8469232dce636ee64d77804b32a8f62ac982baa7366c1dee76071afcc6215933",
+      "instance_id": "98a991c902324b02349e766ad357cdc6",
+      "receipt_content_sha256": "531bbd20fe168a8a88585c4281371851ea3c3274621572ec79d206ce7cd1de48",
+      "receipt_file_sha256": "6be193040c7f926bd9acade060cbff72ae6bdbc05d2693f626529ab8a72cc97c",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/81bbf7ada351a229a033a9afde8d02af35b7ec23f59c417babd1ce0d8a9fc59f.json",
+      "role": "development_fit",
+      "task_key": "81bbf7ada351a229a033a9afde8d02af35b7ec23f59c417babd1ce0d8a9fc59f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/44f3238ef1c31c0f50b1e088305915df9ccf184b3c5320c533413af3de3f4ac2.json"
+      ],
+      "input_sha256": "dd878bbdde2626d0dedaee5bd017a29252ba5eb4899c79684923c8fc4b58e6dc",
+      "instance_id": "e707c7e87816dd02ae433d268bd327c6",
+      "receipt_content_sha256": "203ed23ebda906ea1dbf7d8cef07e60fc4dc62fef61e617d5dd177c968646fe5",
+      "receipt_file_sha256": "12fdbc2f924768a059deb006c9bccfcb5383d5f2724fde60e4cb074bc68b866d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/44f3238ef1c31c0f50b1e088305915df9ccf184b3c5320c533413af3de3f4ac2.json",
+      "role": "development_fit",
+      "task_key": "44f3238ef1c31c0f50b1e088305915df9ccf184b3c5320c533413af3de3f4ac2"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/3876d2967ab73d9d000f316a077627874167c8d1328785cc367ecd5e631aab30.json"
+      ],
+      "input_sha256": "a63ebf37cc70884ee4c2f0ba32cb7c5434bfa4a3817536254a33cd9a907a25af",
+      "instance_id": "41d14756a06872844577fc0abddb58aa",
+      "receipt_content_sha256": "fd850a345368d1d1f2198939aa7b0a186de289c0ef0066c3e603cb21f414c6c0",
+      "receipt_file_sha256": "7319ecba3b8ddc6a1cbf73355e84ef59eeefd3327fea39cf54750191e50f89b9",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/3876d2967ab73d9d000f316a077627874167c8d1328785cc367ecd5e631aab30.json",
+      "role": "development_fit",
+      "task_key": "3876d2967ab73d9d000f316a077627874167c8d1328785cc367ecd5e631aab30"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/601d12d77d00ba9258bf860561600d09826d87cad9d35e8e87d24b5c4a4dae71.json"
+      ],
+      "input_sha256": "161a95db0a12658f95d2945b959143a600f346a455d0fb8722c0bc999eae7df3",
+      "instance_id": "d88a8a62342be0ef04bd3b429f311352",
+      "receipt_content_sha256": "07bef829eeb8f5d217814e70bda55d6e154716070cf417c773dbcf610abc6e0f",
+      "receipt_file_sha256": "f10231317ce570462755db529b721e12427eb90301ffbc892b333fcb3f15476d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/601d12d77d00ba9258bf860561600d09826d87cad9d35e8e87d24b5c4a4dae71.json",
+      "role": "development_fit",
+      "task_key": "601d12d77d00ba9258bf860561600d09826d87cad9d35e8e87d24b5c4a4dae71"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1b080084e3cbeae60ae4cfa596e6d035e0f4836a3762e5fb7ece326de37ff066.json"
+      ],
+      "input_sha256": "afe45eb73d0d58968eebe3f648689a7bfebf5ae337412fb584a376ab640b579a",
+      "instance_id": "a932cd15aa770c7874b12476153b7df2",
+      "receipt_content_sha256": "bac1f79938bf74655e22decb66f72bcac0dd036ef639e9bbebdf251bf78b2b4e",
+      "receipt_file_sha256": "57ca61bb61b347a71539f2464064d43abd746e94ab253ec903a2246985a81b57",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1b080084e3cbeae60ae4cfa596e6d035e0f4836a3762e5fb7ece326de37ff066.json",
+      "role": "development_fit",
+      "task_key": "1b080084e3cbeae60ae4cfa596e6d035e0f4836a3762e5fb7ece326de37ff066"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/dfa25e589a6809de67d78b166f0a91e443408c21befdc7d1de65b5a717ecd075.json"
+      ],
+      "input_sha256": "be0f75fa56d8c761cc18296e3a506b760c0429fec2ae3fe7da4a31ad03556d60",
+      "instance_id": "16ff47a05b769ed6a04c7175cfc6da55",
+      "receipt_content_sha256": "2ec72a687c86eee64e2141a9cd05a130171c349ee76043f2fe9a6c4557573072",
+      "receipt_file_sha256": "3406e744edb95b11684d0398eab19fddc3fd2da70bb25774f1ac2c8213bc8540",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/dfa25e589a6809de67d78b166f0a91e443408c21befdc7d1de65b5a717ecd075.json",
+      "role": "development_fit",
+      "task_key": "dfa25e589a6809de67d78b166f0a91e443408c21befdc7d1de65b5a717ecd075"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/59a9dd211032e539ba3b8da90174d3c8a8fee28d2507acff186e4d0c55397031.json"
+      ],
+      "input_sha256": "1d0564210e9e3a7ff515711bf111a5da57b580d25a3032c18c64467c78c1f36c",
+      "instance_id": "6cb995b1c550beb579c53e27f6ca881a",
+      "receipt_content_sha256": "3b05b9f4178218a09a64c77762955c8c15a8cf0535611a851b3354466965d424",
+      "receipt_file_sha256": "ed6af39d1d317301a88d2f67b8ad05974715241dd1365778b4ea4aa09e56d8a5",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/59a9dd211032e539ba3b8da90174d3c8a8fee28d2507acff186e4d0c55397031.json",
+      "role": "development_fit",
+      "task_key": "59a9dd211032e539ba3b8da90174d3c8a8fee28d2507acff186e4d0c55397031"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/de8c0f11c5fb9a865c7600005141bec65ff92b32ff017acd190dc9306553c260.json"
+      ],
+      "input_sha256": "c20ea0635d0d4859123436fd529bf13d1a1e4a6c44969bc6eff68975f04c29a0",
+      "instance_id": "90bec6dcf2399d7c7f73acba44a8641e",
+      "receipt_content_sha256": "735e5e55165374867d882f724f953443cc00cc8d47e0c2f5e643f22b22493453",
+      "receipt_file_sha256": "e853a3c75dfd24be490b8b7c6d0c98fd2472ecdd4b5ae7618b6767cdbefc3cf3",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/de8c0f11c5fb9a865c7600005141bec65ff92b32ff017acd190dc9306553c260.json",
+      "role": "development_fit",
+      "task_key": "de8c0f11c5fb9a865c7600005141bec65ff92b32ff017acd190dc9306553c260"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/3b060b418bed437ffd7adbdbace1c856c01a733f72b6273eefa4b7004fa52f8e.json"
+      ],
+      "input_sha256": "20c88fb2ba4d207d9974e0704a6026893dc13cb5e2b4ceaeb496cc72455ae0d5",
+      "instance_id": "908433870bee8ba2c86f266d0b002fdb",
+      "receipt_content_sha256": "fe643788df16722c8d150c7e7e411b5839128b582b0a68d2846f52f41df91da2",
+      "receipt_file_sha256": "e4fae69196a4df798d7caac9eb88e20fe8a6c759308982e6d4539acfbcaa5667",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/3b060b418bed437ffd7adbdbace1c856c01a733f72b6273eefa4b7004fa52f8e.json",
+      "role": "development_fit",
+      "task_key": "3b060b418bed437ffd7adbdbace1c856c01a733f72b6273eefa4b7004fa52f8e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/0ecde43aadfe4ff99719ee77a6d97eea86a0014aba57a574bfe7e827742a7282.json"
+      ],
+      "input_sha256": "cd7270bcf08084d7f7a994ea9f4698a94c2b796d9fee9f74ba66eb5cf92337ed",
+      "instance_id": "b1c8eaa002ac2fa1c8bfd1002738e78e",
+      "receipt_content_sha256": "189ff0244bd56594e6614392e7f0a31c1884cf22f93b58292703c2103ba15eca",
+      "receipt_file_sha256": "0aa6a8517fbdca21bc07e70ab33eaa3fbfd58fa8f095f1f0f7a73f106683a667",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/0ecde43aadfe4ff99719ee77a6d97eea86a0014aba57a574bfe7e827742a7282.json",
+      "role": "development_fit",
+      "task_key": "0ecde43aadfe4ff99719ee77a6d97eea86a0014aba57a574bfe7e827742a7282"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/456b646452b750a39db137d92868bb6fe2eba9f94ab628b66d73a47369e757da.json"
+      ],
+      "input_sha256": "2905d297cd9a8ceb4564788e35a0dcbdb4934a4df6ef26ac36b7fc03494bf20f",
+      "instance_id": "1a936d41e3439d602c3ddcf96458a38c",
+      "receipt_content_sha256": "6ce9a257057978f99fdc38fe3f59c8c366ef6c41413c0e9b85230517093a539f",
+      "receipt_file_sha256": "a70070f1f22c09bc529203de1c0f6af8930fc01a7df2e74c8483919657473b02",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/456b646452b750a39db137d92868bb6fe2eba9f94ab628b66d73a47369e757da.json",
+      "role": "development_fit",
+      "task_key": "456b646452b750a39db137d92868bb6fe2eba9f94ab628b66d73a47369e757da"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/a94e47fe19b4c565e4356cab3bbb239a6a08a489b1d84044d9641ea2c10724f9.json"
+      ],
+      "input_sha256": "92d69a56836e0abbc2381d8ad1f00d5b409e4627685080e869c4432b8de36188",
+      "instance_id": "06d2ca2ee0b47f00d93090495f7fd4f4",
+      "receipt_content_sha256": "ea6cb5bead6bd1da7da8e35e9f35a74d24ce4c583e3adc3f66f4a62d70fd7c3d",
+      "receipt_file_sha256": "5ba93b7fc2747a627ed831f8e9183f491d9cb545657aeba9617bc0f9b1947749",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/a94e47fe19b4c565e4356cab3bbb239a6a08a489b1d84044d9641ea2c10724f9.json",
+      "role": "development_fit",
+      "task_key": "a94e47fe19b4c565e4356cab3bbb239a6a08a489b1d84044d9641ea2c10724f9"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/94357b30cb2a657a455de51a247921a7e075cd8ef6667f3dcd7c7084774c9639.json"
+      ],
+      "input_sha256": "e998f84f8c5a38a905cac47e459adb03d8ced09fffafaeb81e760ad28bac7869",
+      "instance_id": "9277f5d1bc65276294617e672c4f2443",
+      "receipt_content_sha256": "51ea744aad5e5a3458c8b68b9b6744d4048a1c83f5adf555066d193debef55e2",
+      "receipt_file_sha256": "07c9b6b96ade8ab6dafd05b37d3f3a82d12fb67b01c14f5870ab798f6be5bce6",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/94357b30cb2a657a455de51a247921a7e075cd8ef6667f3dcd7c7084774c9639.json",
+      "role": "development_fit",
+      "task_key": "94357b30cb2a657a455de51a247921a7e075cd8ef6667f3dcd7c7084774c9639"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1106ff6a06c77151df128615f4989fddbdc666d5dc8ae8d2440b5ac433def32d.json"
+      ],
+      "input_sha256": "a7366f1d8657558775528726df9533267b7bf4ce5f897fc736c58dbd8b4b8eff",
+      "instance_id": "35748015c5f16c9ee7e4d1894af497a0",
+      "receipt_content_sha256": "adcc5b82d43e29f839d1cb5b6b08b345a3780b39aa3b469a6300bf5c9bc071db",
+      "receipt_file_sha256": "d53f5960a7904cdfafa44f8e95763d93413f358e6703be56ce502ad66090fe51",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1106ff6a06c77151df128615f4989fddbdc666d5dc8ae8d2440b5ac433def32d.json",
+      "role": "development_fit",
+      "task_key": "1106ff6a06c77151df128615f4989fddbdc666d5dc8ae8d2440b5ac433def32d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/6bb54b0cbf50f0eaa373d42852f4d1f0016da40d107f63a5beec845699341c2f.json"
+      ],
+      "input_sha256": "18e5798af169c4967c731763a3095229a3f5b99d66f70ff3f82bec7cb6de5f64",
+      "instance_id": "fdefca5f5236d5a8361dbdff0d017eeb",
+      "receipt_content_sha256": "b8962fbe46bc42526c9aaf8ca0215c6f2208a1860ee27153f05b0a7211b71d0a",
+      "receipt_file_sha256": "c12581779cfb39c125cb70f12b62b53544d580652e686d3454a339df70cdb350",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/6bb54b0cbf50f0eaa373d42852f4d1f0016da40d107f63a5beec845699341c2f.json",
+      "role": "development_fit",
+      "task_key": "6bb54b0cbf50f0eaa373d42852f4d1f0016da40d107f63a5beec845699341c2f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/e797d86f8003b35e0ef84dfafb40747166b4967f8eeca275ebfd23cd2f851bed.json"
+      ],
+      "input_sha256": "76532ac4309fa8175eb6e62842e2124a7ffd40da3b6837a32462ea80e950a939",
+      "instance_id": "901fa244999d250bc8d8cce19cabc114",
+      "receipt_content_sha256": "3ba809718208a2e6057021f6e016ee1d3a88bcfeabc76634e15102c7208349d2",
+      "receipt_file_sha256": "f4cbf7d30d2c126fe51cdf58e26e83b31e3e3af0f5992dad4d409f2424710c42",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/e797d86f8003b35e0ef84dfafb40747166b4967f8eeca275ebfd23cd2f851bed.json",
+      "role": "development_fit",
+      "task_key": "e797d86f8003b35e0ef84dfafb40747166b4967f8eeca275ebfd23cd2f851bed"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/64c3dd38f2cff6ef3093ac2d341ad82697a1a2e80f9451517b5df004036a215d.json"
+      ],
+      "input_sha256": "5104020c76e95654e62d59d0167a446884ddf266fb46e6d5a649ab0538340eb8",
+      "instance_id": "981c4e83c5dd3694af4c367958e0ee5f",
+      "receipt_content_sha256": "9f3befe19578f00b6015f30260080953f099cf3073f57b944ea4170d90db2771",
+      "receipt_file_sha256": "9f948048ba0b50967bc60cb0a03582273e25626e8b30279215419cd11f407c0e",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/64c3dd38f2cff6ef3093ac2d341ad82697a1a2e80f9451517b5df004036a215d.json",
+      "role": "development_fit",
+      "task_key": "64c3dd38f2cff6ef3093ac2d341ad82697a1a2e80f9451517b5df004036a215d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/71946330b8f1aa75df37e610ba1b455b101a8b31810b55f2d7e0e87b56aefba0.json"
+      ],
+      "input_sha256": "da67705f243baac288d2eb63c6c5e6d336068a92e72e55576bf4cfc10d692517",
+      "instance_id": "30f64b3b0870ce5d22d4217782224dfe",
+      "receipt_content_sha256": "87368676c5e74a7f79a91d3144d7e0397f6e5c20d5e310fe347f7f83defd9275",
+      "receipt_file_sha256": "e2407f3544dd6a9743083e8ee717bcab31115efa35d9b60bb72f5f57ccf58b08",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/71946330b8f1aa75df37e610ba1b455b101a8b31810b55f2d7e0e87b56aefba0.json",
+      "role": "development_fit",
+      "task_key": "71946330b8f1aa75df37e610ba1b455b101a8b31810b55f2d7e0e87b56aefba0"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/0dde1c21fafb73fd68300350323b78993fa566bd9e3c0dbce9b93f1c5ec1a994.json"
+      ],
+      "input_sha256": "aa6ccd3ce9754c7407426e30aa18c796a82bfcdfb0a309b6a7e9e4a140b60126",
+      "instance_id": "76bef98aafe7e718e98761f058c7dc1d",
+      "receipt_content_sha256": "90d98ed73dff4e47f449624dfff1fa9d22f2b45e564c3feb7063e20f0c4c084a",
+      "receipt_file_sha256": "522c94c85fcabe974571aec5a67e208a09260a5096ff8cfa83aa00d1e797ad4e",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/0dde1c21fafb73fd68300350323b78993fa566bd9e3c0dbce9b93f1c5ec1a994.json",
+      "role": "development_fit",
+      "task_key": "0dde1c21fafb73fd68300350323b78993fa566bd9e3c0dbce9b93f1c5ec1a994"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/a36d2df4c87e4bfb416b69e7ce337020572d5a8b37137629fae2852877b90682.json"
+      ],
+      "input_sha256": "76ac0ffd608bbfa31d1579eeb14dc3a7edc874027783e70bcd95d902942a3197",
+      "instance_id": "c7ee94464ba3b25e97fc9b38868b7154",
+      "receipt_content_sha256": "8bd1732dd582619ae11528e06c1acb201996ed2afc7cc24f97b388815b46f696",
+      "receipt_file_sha256": "61d32fe7d4d469ec3b57b26894841003af4073072bdb4723d1fae4055aa4ac50",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/a36d2df4c87e4bfb416b69e7ce337020572d5a8b37137629fae2852877b90682.json",
+      "role": "development_fit",
+      "task_key": "a36d2df4c87e4bfb416b69e7ce337020572d5a8b37137629fae2852877b90682"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/0712c02b3d23a123948b4a575d0a4c4d9a61a6781288b2d87a36bb14661f9449.json"
+      ],
+      "input_sha256": "09832848d3c4a52517cee047820cc3b7b52ee3c347d4dfab07410e4ff852bc62",
+      "instance_id": "6ef090a10c10352090100af7b6654c31",
+      "receipt_content_sha256": "6c3471ff23beb7952f0c4a8030e7bb3752f6aff8b98a5e680e4e7233270d9b76",
+      "receipt_file_sha256": "574a449bc2e8ea9b76366a225729634c1c30ed5ffa02ccb9f350754bba177345",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/0712c02b3d23a123948b4a575d0a4c4d9a61a6781288b2d87a36bb14661f9449.json",
+      "role": "development_fit",
+      "task_key": "0712c02b3d23a123948b4a575d0a4c4d9a61a6781288b2d87a36bb14661f9449"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/056535a479bf7812004f819909b8fc4312bf631db0bf54bc9b0953d807c14d78.json"
+      ],
+      "input_sha256": "47627af0f6ebe8d1cb89880b0fb2c52a61539a0b97341899787887ac717d5610",
+      "instance_id": "b18b24418dd863c1d631698d7d45041f",
+      "receipt_content_sha256": "1bc810602cad896ec4491ef14eb3d28bf4a2129d34bbb5bd01c4675f470ce1ae",
+      "receipt_file_sha256": "cc8cbd2bd85211b0b6599fc5d8b5d5882e5cac0c37cadf69a5f5cc6e17c8d41d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/056535a479bf7812004f819909b8fc4312bf631db0bf54bc9b0953d807c14d78.json",
+      "role": "development_fit",
+      "task_key": "056535a479bf7812004f819909b8fc4312bf631db0bf54bc9b0953d807c14d78"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/bcd6f4da08a6ea50d45010752c34db450de1f931b6d130224ca8994f5f9edf7f.json"
+      ],
+      "input_sha256": "a37a3f891d438d859c3285a1236ddc3d4e92cc50bb6e5dd74f1e3390c999400b",
+      "instance_id": "416e33a8463911546e4cd87d282a7e1e",
+      "receipt_content_sha256": "5bd65db722e2b799ebbd7d5328ad96d519e0c9d529ee33980e05eb1b47cfaff0",
+      "receipt_file_sha256": "a394d9e5aa5de07d10f4c9bbafdd004425b7c729731f37f03177fda306abc9fd",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/bcd6f4da08a6ea50d45010752c34db450de1f931b6d130224ca8994f5f9edf7f.json",
+      "role": "development_fit",
+      "task_key": "bcd6f4da08a6ea50d45010752c34db450de1f931b6d130224ca8994f5f9edf7f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/618ee53b209fa2651f848e0557c9d5ae4845ea308948f56e7d6a8465d682fe76.json"
+      ],
+      "input_sha256": "b9952bfc412b7ac97e799ff0cc2872b1a6c1f171ff85b24bdeb681a25a7b8f68",
+      "instance_id": "8b22396ef06770c7dfa7552a610fc911",
+      "receipt_content_sha256": "bbaf8be36df428bd72f97c68c28bc5335df61284764e193f8562a7ffdf5498de",
+      "receipt_file_sha256": "ac74dc1408d8a6a2c4e1029d8d8347a1939b9eb97a0459f3b9559c18c519b031",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/618ee53b209fa2651f848e0557c9d5ae4845ea308948f56e7d6a8465d682fe76.json",
+      "role": "development_fit",
+      "task_key": "618ee53b209fa2651f848e0557c9d5ae4845ea308948f56e7d6a8465d682fe76"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/c8d1dc22debf81e5edd1c8cf68e1dd796939d90e51dde3c64057abf938ec4ee9.json"
+      ],
+      "input_sha256": "4bbc0928fb71f0cb30af3fe78e50d52e649aac99f9d8f29fed678b6d72ec1928",
+      "instance_id": "663bb5659e42c2c75f74354f48895302",
+      "receipt_content_sha256": "8d0646f84a72e83737d8733af99856bda05f4e510c709fe4595fad3f229e5652",
+      "receipt_file_sha256": "0c7868e86328f7ac7b5e188d6441fe31e14d698fe112e57b96a73c83a5e73527",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/c8d1dc22debf81e5edd1c8cf68e1dd796939d90e51dde3c64057abf938ec4ee9.json",
+      "role": "development_fit",
+      "task_key": "c8d1dc22debf81e5edd1c8cf68e1dd796939d90e51dde3c64057abf938ec4ee9"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/c2b8dd9c1520b715bb92f29181fa44ba215cd28e96ed9eb706287a40bd6d7f51.json"
+      ],
+      "input_sha256": "7e9d896a8d31789b009b3b5ac6c6938aefe0aaa0990e854279db9211a212303f",
+      "instance_id": "efc1b7cc3861df8c2b68ca10399b794e",
+      "receipt_content_sha256": "114592f1e8881b2c24cdf4de9363ea5116b527b7eed4b4977dc4716b8588e2cd",
+      "receipt_file_sha256": "2abb9e13725e06e2de174f32f34e5ecab75f74aa73d0794ebdc516ff8e03eb4d",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/c2b8dd9c1520b715bb92f29181fa44ba215cd28e96ed9eb706287a40bd6d7f51.json",
+      "role": "development_fit",
+      "task_key": "c2b8dd9c1520b715bb92f29181fa44ba215cd28e96ed9eb706287a40bd6d7f51"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ed769a294a60fbaea7f7c8f4645ae3f5c4006951106f29f73362a86c6941175a.json"
+      ],
+      "input_sha256": "86bb0a23b63a6a90efda17de902835291595316554e52ed6171dc7df2f22fd30",
+      "instance_id": "27570c6780aaade3dc771c6a12534fb8",
+      "receipt_content_sha256": "88ec2197fe13491c6ad53a4cfc463496e1bf5f1fed33f5bf2b8eaa9997635895",
+      "receipt_file_sha256": "9dcd881ad94281ac6391397f35c2e60513ae2e83e95b5bfc94b44262032777b4",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ed769a294a60fbaea7f7c8f4645ae3f5c4006951106f29f73362a86c6941175a.json",
+      "role": "development_fit",
+      "task_key": "ed769a294a60fbaea7f7c8f4645ae3f5c4006951106f29f73362a86c6941175a"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/169ef518d99b05c4529ded29d532309222f035aa9b209aa2da90cafdba3efa3d.json"
+      ],
+      "input_sha256": "0de68a09b2bf8865162d9e796df51fc7fcf66579553daa824f4ce4e69f850c81",
+      "instance_id": "f25a1df88f89c6bcbe2602fa7f6e816b",
+      "receipt_content_sha256": "e357717220282155d75e70b3ca6bd74be8da55950af8e0fcd8cff842561114b2",
+      "receipt_file_sha256": "84ce97e25754bb676a09bdfc746632b59219a50e5562d33902cb8565b66466c5",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/169ef518d99b05c4529ded29d532309222f035aa9b209aa2da90cafdba3efa3d.json",
+      "role": "development_fit",
+      "task_key": "169ef518d99b05c4529ded29d532309222f035aa9b209aa2da90cafdba3efa3d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/ceeedca4bd410b9f750472344e924af0d6c07a82c77abf2c81b1ff4a446edd60.json"
+      ],
+      "input_sha256": "f38bc60bb64713aa686c27788c0c4cff181f798ebb415c6e97c979573b915f62",
+      "instance_id": "d6afa5689d75e37111656db8980dd54b",
+      "receipt_content_sha256": "053e2c4ae7692829a094d9a06fa058cb0e184b342bbe314d4fc7c74126bf98eb",
+      "receipt_file_sha256": "877b804fd9c81ea840202e4443352613aaecf4b51e54c1bed0662f288f68a82e",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/ceeedca4bd410b9f750472344e924af0d6c07a82c77abf2c81b1ff4a446edd60.json",
+      "role": "development_fit",
+      "task_key": "ceeedca4bd410b9f750472344e924af0d6c07a82c77abf2c81b1ff4a446edd60"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f5036d80e2f059083d12ed0374afa971f090cf991b14aa19741d11cf80f30f5c.json"
+      ],
+      "input_sha256": "3c325d0151b54f5ea123acdb2aabadef301c8cd5acea3e212d717de407eb08a1",
+      "instance_id": "25390e9d1fa1926485db7eb2d5a20ea8",
+      "receipt_content_sha256": "a03a25df5f27fa7d84a1cfbb4513ffe5f1eff0c5895e3dc6259b2dcaf110d208",
+      "receipt_file_sha256": "763c91de3bcc63eb5a36b86d3592ba796e84845778d171833a3b0dd65522812c",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f5036d80e2f059083d12ed0374afa971f090cf991b14aa19741d11cf80f30f5c.json",
+      "role": "development_fit",
+      "task_key": "f5036d80e2f059083d12ed0374afa971f090cf991b14aa19741d11cf80f30f5c"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/57419fcaf56902b0f15030de82eeaa0211e6f49f2218b044fd2adccf37fd38d6.json"
+      ],
+      "input_sha256": "582a4c071196570e817d16ea8c108dc7a9634af5a5b8d455936cf4502b3158ed",
+      "instance_id": "22df1827e3253fc824cc7ce806d75e0a",
+      "receipt_content_sha256": "e548ec8b402cfcce12fb2c723f564ee04437731f77327c0758b5d349ada206a5",
+      "receipt_file_sha256": "68eb7f6e19c7427db09960444649b269fc674bed406754bacf784c975c7745d9",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/57419fcaf56902b0f15030de82eeaa0211e6f49f2218b044fd2adccf37fd38d6.json",
+      "role": "development_fit",
+      "task_key": "57419fcaf56902b0f15030de82eeaa0211e6f49f2218b044fd2adccf37fd38d6"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/56d724714ecfeb42a6e02fab4aeec1ccfbff279df347b2bb548ef13b241de5e4.json"
+      ],
+      "input_sha256": "4a0d523a27d176f8c90236387d138a029829de0450a37bc5291b7f606dbe4e89",
+      "instance_id": "1d90be3e37a42432d281cf6c1b8eae4b",
+      "receipt_content_sha256": "e928f31fe55af1303d6d240ff926b73ec2505656e241a65d37af9698a76db2e6",
+      "receipt_file_sha256": "e77a7e1e05e93070571b3ebe3a559adc8f53e9a05ccac104dbd828e6e4070ce8",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/56d724714ecfeb42a6e02fab4aeec1ccfbff279df347b2bb548ef13b241de5e4.json",
+      "role": "development_fit",
+      "task_key": "56d724714ecfeb42a6e02fab4aeec1ccfbff279df347b2bb548ef13b241de5e4"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/a5bf4c1eb1776348c0f13af0adb9aa7fee1416b7dccc808ac63bf14e80b6a482.json"
+      ],
+      "input_sha256": "a1a8bf879149d62d177025364e40f6b61e31cb801ccb54a8c0e9b89e15dba733",
+      "instance_id": "98a9352230efc411c092f1dcdcdedcfc",
+      "receipt_content_sha256": "e3b18dad51be2d91d4c2c95092dc3ad744f6145fd189fe7cbb9452aa4fe59fb0",
+      "receipt_file_sha256": "6bb1cf8c1450ff953e80caa24fa2bae3b9e3b52b866c2003c80c1930dc4892f6",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/a5bf4c1eb1776348c0f13af0adb9aa7fee1416b7dccc808ac63bf14e80b6a482.json",
+      "role": "development_fit",
+      "task_key": "a5bf4c1eb1776348c0f13af0adb9aa7fee1416b7dccc808ac63bf14e80b6a482"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/c9206ee7aec42eef91eefe45442c55fa88cb73e41429c76f671c3df154037246.json"
+      ],
+      "input_sha256": "e023891725eacb1cd8e2d41176c0c61b6dbaa236c26ccec9a41b7a70a0e75929",
+      "instance_id": "a49ec44c8d9972cda278d48b6dbef09e",
+      "receipt_content_sha256": "e507c9e71f84bb3362127f432b89a405f0081824e88c476073e623a63508f403",
+      "receipt_file_sha256": "eab4c656455fb4c3f6e1a345c0ea9a60b876597ee97ebc68a3c0bbbd7325e2c2",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/c9206ee7aec42eef91eefe45442c55fa88cb73e41429c76f671c3df154037246.json",
+      "role": "development_feedback",
+      "task_key": "c9206ee7aec42eef91eefe45442c55fa88cb73e41429c76f671c3df154037246"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/d9126dc3802a32eb7308a5b69fb5f81796a65d86b1a97397a62296f265d547c6.json"
+      ],
+      "input_sha256": "a9a740c9e3744b39f659a44e675760702b6530beb22a1842dd2a583a2d1264a2",
+      "instance_id": "16564a6acba6b9fc887c447d4e507767",
+      "receipt_content_sha256": "9b5e0d7ad1c70cce6f0c0b07f1784c415de7b76271d048b397f96c0fbb149a22",
+      "receipt_file_sha256": "c34dc77d895d3683dbe423a8ed1ea1c2e7619ca2747f93ffc176845335fc02fb",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/d9126dc3802a32eb7308a5b69fb5f81796a65d86b1a97397a62296f265d547c6.json",
+      "role": "development_feedback",
+      "task_key": "d9126dc3802a32eb7308a5b69fb5f81796a65d86b1a97397a62296f265d547c6"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/543658c292494c0a5ded932088a041033902d074bd4f42e78cbd963c048be11a.json"
+      ],
+      "input_sha256": "8838372bcf9a8fd9987cec8dfed4c1b86584da2ffa6e9901414fc24b341a59cb",
+      "instance_id": "3c129545f090ef08b6ef89a2903ff83e",
+      "receipt_content_sha256": "5e0b7194b196fb57775c8528f7d7ed7d4724c442ba531a87bbaa93ab3811f807",
+      "receipt_file_sha256": "81a5ccf0eb4891e78c8eb29504c10a031b2f0a80cb511a0a2ba6c4d7c2f5d7f1",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/543658c292494c0a5ded932088a041033902d074bd4f42e78cbd963c048be11a.json",
+      "role": "development_feedback",
+      "task_key": "543658c292494c0a5ded932088a041033902d074bd4f42e78cbd963c048be11a"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/3e4c304665e3e383e946a028e4003117d83f468e12ff099d596def140eb15554.json"
+      ],
+      "input_sha256": "438740bdef8cf12722ac599544614718ca77dc0b52e6eca406f2150d45c4a807",
+      "instance_id": "abadaf0ee0e21ff1a4b0e294f13ab5ab",
+      "receipt_content_sha256": "5dde3a53d2d92f8c1a400f1a76a486318df113d200ce0a91969f7f50ade54228",
+      "receipt_file_sha256": "27567f54d0dd52602f6925b5a76a83e479ea40a8d882a060d808311c07794489",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/3e4c304665e3e383e946a028e4003117d83f468e12ff099d596def140eb15554.json",
+      "role": "development_feedback",
+      "task_key": "3e4c304665e3e383e946a028e4003117d83f468e12ff099d596def140eb15554"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/d83c1c8cecf74ab499581a8d4512f0d01f85d1aff6357e91d052ee20c2363da6.json"
+      ],
+      "input_sha256": "2b1430ab0882f70fa080f9bfbd8b63b7c7f6bf361e897dda5be3688b0ee694e7",
+      "instance_id": "ebbda8d90dfd9b6500bf932f952907a6",
+      "receipt_content_sha256": "d21a0c2197d97e7bd5816ca696fb20943c85971430c7fd4cc9b05eae5c4bfea4",
+      "receipt_file_sha256": "6659fb8f0627efbc59b8cba8f13058854fedc5a9b0fda6acc037bbba0dfe9ba8",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/d83c1c8cecf74ab499581a8d4512f0d01f85d1aff6357e91d052ee20c2363da6.json",
+      "role": "development_feedback",
+      "task_key": "d83c1c8cecf74ab499581a8d4512f0d01f85d1aff6357e91d052ee20c2363da6"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/94faffa1d3620fb09a78bb30c3b6e5fd1134de9845a874a4c612d105df875769.json"
+      ],
+      "input_sha256": "e6bb9431a73d13d3eda1ffd4dfb32a875fb800c2dfb6992092913ac6d5208d6d",
+      "instance_id": "cabfdc91f644200767df9d480d2cc53e",
+      "receipt_content_sha256": "9366530923d11e49cd2bd2e629dab0db8fd1121018ee07a395cbe45f5e24f719",
+      "receipt_file_sha256": "75a6d9e28baaedf09a5f9216e5233d8c277949ee8368019cdf70c24cb9ecba02",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/94faffa1d3620fb09a78bb30c3b6e5fd1134de9845a874a4c612d105df875769.json",
+      "role": "development_feedback",
+      "task_key": "94faffa1d3620fb09a78bb30c3b6e5fd1134de9845a874a4c612d105df875769"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f23082559280687a6a4c8b5a52efdbca156dfad2eef0d6e04145cd466241fd3b.json"
+      ],
+      "input_sha256": "da537c59532ee0cd1b42eaf937861be58c3d3a6de14e2151c98182226538697c",
+      "instance_id": "f626408ec204fd8e1a7924d0e59672e9",
+      "receipt_content_sha256": "814bf221d22271ca7994f8dc74cdb99bacd5fedd67b005550b2c37303310a772",
+      "receipt_file_sha256": "e94d84764227a8ad16ce76febdd24ce000dcc19e6ea449c48abf4d7ae0bb7114",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f23082559280687a6a4c8b5a52efdbca156dfad2eef0d6e04145cd466241fd3b.json",
+      "role": "development_feedback",
+      "task_key": "f23082559280687a6a4c8b5a52efdbca156dfad2eef0d6e04145cd466241fd3b"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/dc75a1b38180257d83fcf1376c21e7cba679770cdcf74b0dcfe7d8d1ed43366b.json"
+      ],
+      "input_sha256": "e94c361a7243b2d347f8eee71c99506bad05fa7717077df5cb2bf84807026259",
+      "instance_id": "f33a6163305d6559043b7438a692dea9",
+      "receipt_content_sha256": "a02fe8281ba3186786961c2baedd10012153bfae4f493158627a035222922d7e",
+      "receipt_file_sha256": "6d53625b73bd8403a104ae9a9b387fd5eaf7033f6d9c287943db3b29b3a17095",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/dc75a1b38180257d83fcf1376c21e7cba679770cdcf74b0dcfe7d8d1ed43366b.json",
+      "role": "development_feedback",
+      "task_key": "dc75a1b38180257d83fcf1376c21e7cba679770cdcf74b0dcfe7d8d1ed43366b"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/31f9cdea1d55812551c608c987c54c88d6b861c4366b2f997e0f6576aeb09126.json"
+      ],
+      "input_sha256": "0981c92590473e1e688842b0adff3627f9b08889327034182f1a2601c7668158",
+      "instance_id": "03e852aa864cfe6eb49c264b462b8157",
+      "receipt_content_sha256": "2739e5cbd912509bff9a47b3fa74e0009f11bb012ee47397555876f7f0115873",
+      "receipt_file_sha256": "f1c37087ae0168558bc58877de51b376e2c1d27fbba96341ae0da4a6acf44d26",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/31f9cdea1d55812551c608c987c54c88d6b861c4366b2f997e0f6576aeb09126.json",
+      "role": "development_feedback",
+      "task_key": "31f9cdea1d55812551c608c987c54c88d6b861c4366b2f997e0f6576aeb09126"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1f17d44bcd965f866147ba97e02dc4b3f3253c12af66f4c88082e17ea4e23ae4.json"
+      ],
+      "input_sha256": "cbe7a0eec797f1cd93a9ffdb32f4377c431f5ae10e3a8d4b826684d1be55de56",
+      "instance_id": "389bb0a8f3568f4bd0e71771df9093c5",
+      "receipt_content_sha256": "7c66db8534aed1ce9a1b4e4a06d2dcde4e110837d68fc0caedeff70ed2854c92",
+      "receipt_file_sha256": "660216ca603bbf91338aa916a12d3ea9f1774bf637bf9bf0285c63dae8909410",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1f17d44bcd965f866147ba97e02dc4b3f3253c12af66f4c88082e17ea4e23ae4.json",
+      "role": "development_feedback",
+      "task_key": "1f17d44bcd965f866147ba97e02dc4b3f3253c12af66f4c88082e17ea4e23ae4"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/947c0949f41b38dbe1900e90d9b71a241b91a9252f6f49b5b8f3c43a02309eea.json"
+      ],
+      "input_sha256": "b017c49f7c3448d570bf924716786540f220c67c34e95fa6be1a32c968264b86",
+      "instance_id": "ea37a677b357328c1641ef2f6087bf66",
+      "receipt_content_sha256": "c10d5bd3ac6291b63915e3230a4329df4f2556ec1359141f95bab8cb2b1abb1e",
+      "receipt_file_sha256": "bbaf828844f367b0c8d5f6994ea8146bf2c9af82c4761448435049e7c4bde6ac",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/947c0949f41b38dbe1900e90d9b71a241b91a9252f6f49b5b8f3c43a02309eea.json",
+      "role": "development_feedback",
+      "task_key": "947c0949f41b38dbe1900e90d9b71a241b91a9252f6f49b5b8f3c43a02309eea"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/bb1f40a42eb24bc3a46fe3243d0aef4e77dcc41b4175c2dd63e152cd92f8c980.json"
+      ],
+      "input_sha256": "41bd39956ff5bd83e3673ce990abdd27b7fe92e24c3e2f0815b02185bf77b1a1",
+      "instance_id": "0e1d562093d5f4fc9013cf4a14a03f70",
+      "receipt_content_sha256": "b2940692621d84f89cac8c8dbc55b4a21882b6d2f82c6dbe151a844c7caf7e35",
+      "receipt_file_sha256": "a6fb38c9fc1c76ebbc0bee20a98b431f1dc5c1d8f8d170217f9db4a1657fe699",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/bb1f40a42eb24bc3a46fe3243d0aef4e77dcc41b4175c2dd63e152cd92f8c980.json",
+      "role": "development_feedback",
+      "task_key": "bb1f40a42eb24bc3a46fe3243d0aef4e77dcc41b4175c2dd63e152cd92f8c980"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/368ddf234f1e78fb87b308f0ecbbb8365925369314f2c214b8e60bc16ab9c8fa.json"
+      ],
+      "input_sha256": "e008a44df32c3615e512f80ec6ad8052693a4b5129ab69de0b6bed356678f7d0",
+      "instance_id": "99bd0555ca704df05fcaf6f9b84c7eef",
+      "receipt_content_sha256": "e5916737920b86d912d8d98a3d49fe89fafcfbfce13d7b3121234c9b787c98b7",
+      "receipt_file_sha256": "f5cab67bd307cf89180b9417bac20cff74ef3e1b95def0abc6b7d900bf8639a7",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/368ddf234f1e78fb87b308f0ecbbb8365925369314f2c214b8e60bc16ab9c8fa.json",
+      "role": "development_feedback",
+      "task_key": "368ddf234f1e78fb87b308f0ecbbb8365925369314f2c214b8e60bc16ab9c8fa"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/911250da7dc72a0e205a4096a0711598e1e050c246c4032461642e544859cd3b.json"
+      ],
+      "input_sha256": "751145a8e891fb33cf886d3f3d36a07985a658b7a6b0515da97bea121977cb91",
+      "instance_id": "2241a1fb5bdbac0c1a3c1980ed8b332d",
+      "receipt_content_sha256": "edaedba6465c1f4217d885a49a3ff5635a53f3dce2162508b85d7bf5b884c8ba",
+      "receipt_file_sha256": "30830fd0ff98b109be96ddd77dbf19d6a6110016e6017bca418508bdb2fc7f12",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/911250da7dc72a0e205a4096a0711598e1e050c246c4032461642e544859cd3b.json",
+      "role": "development_feedback",
+      "task_key": "911250da7dc72a0e205a4096a0711598e1e050c246c4032461642e544859cd3b"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/884679172e4c56262a47304d46577e1c53ec53a702d362f9c62cf6c34eb2a4a2.json"
+      ],
+      "input_sha256": "58e5c4019f7bed6395044458752b7e87359cf7090c22bcd8b795de69a07bac44",
+      "instance_id": "ed9f304b537a768f462bd1c723c5396e",
+      "receipt_content_sha256": "2b0fe70a4461bd4fd20c1285c69f0046af2aedf4619fc332974ed5bbf203ef5d",
+      "receipt_file_sha256": "346678ea2202b045dfa3f61dbe8914820ba62cfbb52003c75e3fbc1df16f5cc5",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/884679172e4c56262a47304d46577e1c53ec53a702d362f9c62cf6c34eb2a4a2.json",
+      "role": "development_feedback",
+      "task_key": "884679172e4c56262a47304d46577e1c53ec53a702d362f9c62cf6c34eb2a4a2"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/9af2afd63be53680c38c65406b17cc06c50a4e826c5f260f4fdd9c20f9547ad1.json"
+      ],
+      "input_sha256": "8682818fa6509574d8ae4702a578ad392acfd4808c864ad29c39d2bdae9ec85d",
+      "instance_id": "6f354fbea13b25a49f3edc1cd10c48d5",
+      "receipt_content_sha256": "16e9bd4e8d66aa3d4fc3aa586ace370b1cd05f4bb19658a754ef2ec24a193686",
+      "receipt_file_sha256": "e1c3d4e2102da6697765bf26f9fe1ae2c79d5c5f7a26878f89a31c090df08a5e",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/9af2afd63be53680c38c65406b17cc06c50a4e826c5f260f4fdd9c20f9547ad1.json",
+      "role": "development_feedback",
+      "task_key": "9af2afd63be53680c38c65406b17cc06c50a4e826c5f260f4fdd9c20f9547ad1"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f9347764b60fd07f90dcd3a3ed4d7ded4a6bb7c044bd3a253b2a385537392609.json"
+      ],
+      "input_sha256": "084c0481f215ee7aed0aad41bfdbe7744b6f460ad10c5d55e32104d055ccf4fa",
+      "instance_id": "8e62c5d47920ffe36052f86177403e70",
+      "receipt_content_sha256": "6b87084b93effbcbd34f8bee6cf782994d5692abdfabda79f1ecfbabfa4d7aea",
+      "receipt_file_sha256": "8d4ed7e59463109a18c9cc12687a2895fb3d19e767b6049328d1b7b211e605e0",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f9347764b60fd07f90dcd3a3ed4d7ded4a6bb7c044bd3a253b2a385537392609.json",
+      "role": "development_feedback",
+      "task_key": "f9347764b60fd07f90dcd3a3ed4d7ded4a6bb7c044bd3a253b2a385537392609"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/84c69a6ba4ee496e2aab6a544fe9560972a413a34b383a5ba873e1cd03d455db.json"
+      ],
+      "input_sha256": "53759ee4ecbba6d140f954e162e638cf24fdfe2c26f2e5f01172364c99bf775f",
+      "instance_id": "ac51df6b340190cd1182c06ff2955afa",
+      "receipt_content_sha256": "fb10ed5ddec9139c627fa6af45f6b0ed5a83bb81be19cbee7fe7c9daaaabe33d",
+      "receipt_file_sha256": "6bbcb5e915a087119569fe0fb2352c9c5b492a299bcda913c9c3cf7a161f7925",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/84c69a6ba4ee496e2aab6a544fe9560972a413a34b383a5ba873e1cd03d455db.json",
+      "role": "development_feedback",
+      "task_key": "84c69a6ba4ee496e2aab6a544fe9560972a413a34b383a5ba873e1cd03d455db"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/1b059123af99f7f870ef9cc86536290aeb959750fe7637d399d03dbadab4073f.json"
+      ],
+      "input_sha256": "8b5bcbdbb45aff74cfacebbd01b9178d500c9a07273e2dbfec39e67a0c8f88b9",
+      "instance_id": "c86b261162cef181dc513963a8acb77f",
+      "receipt_content_sha256": "8aa444e25560f4653bfbd994b9a521bebbc8f1d96109d697321562ef1369746e",
+      "receipt_file_sha256": "3ec609c361db37f95869de4f8cff014558cf010bdbec498e0fe17aec5e198322",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/1b059123af99f7f870ef9cc86536290aeb959750fe7637d399d03dbadab4073f.json",
+      "role": "development_feedback",
+      "task_key": "1b059123af99f7f870ef9cc86536290aeb959750fe7637d399d03dbadab4073f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/28e7e812367ffd9b3d1f026f340a352ed66ca4dd75715fe59c0f9c2f9998a8e7.json"
+      ],
+      "input_sha256": "04ce53ff1a1c3b7285f4c99be56d8fed5e042cdaf5e946e7e23e732faef9ad68",
+      "instance_id": "09cd83e233380d0ba1fc56cee88367b1",
+      "receipt_content_sha256": "70191682e5c1bfa363e90cd40aabe78aba67d815eeedf6999538316cc8ca52e0",
+      "receipt_file_sha256": "1678ce0a13cfddbf3b7bbb8981b99ca3b76cbba911b3bafd31ce47658fb3ca16",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/28e7e812367ffd9b3d1f026f340a352ed66ca4dd75715fe59c0f9c2f9998a8e7.json",
+      "role": "development_feedback",
+      "task_key": "28e7e812367ffd9b3d1f026f340a352ed66ca4dd75715fe59c0f9c2f9998a8e7"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/5cd63c08d347df31c6cccac647dc23ee68c34fdcc8c31a04b6051bdf8e132526.json"
+      ],
+      "input_sha256": "55d82a81ef50c01462d799c60c13fedc40a992c2b5c3adee12e24592e86dadec",
+      "instance_id": "c0074020a48535e6062421cea2850dd0",
+      "receipt_content_sha256": "77de0afc6958d6505a977329ccce3bcf9805d45b5c4e9bbef10e40b2e7ca2cfa",
+      "receipt_file_sha256": "a6b0fc40dae100a148d3d19ac48604dedfc226283f7e34e47bcf6f2557f5cf34",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/5cd63c08d347df31c6cccac647dc23ee68c34fdcc8c31a04b6051bdf8e132526.json",
+      "role": "development_feedback",
+      "task_key": "5cd63c08d347df31c6cccac647dc23ee68c34fdcc8c31a04b6051bdf8e132526"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/a65d374c346194de7cc8e1ddb84770036efac6413c4871576838ef1595abb661.json"
+      ],
+      "input_sha256": "50ba123a0e576565de57bfb2347cd20441634cea0ee9ca493c7d0cb1cdc139bd",
+      "instance_id": "89002102bdb86946869a06dc1f604315",
+      "receipt_content_sha256": "32ac1853b106c2c0f661b0a373c434795f9e71a9e2bdd13f8978201ad0dbed0e",
+      "receipt_file_sha256": "d430c3ae6a18e6d0f91799effcfaffb1f3c249ceebaf99ee4ae6e080f0ea9b4b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/a65d374c346194de7cc8e1ddb84770036efac6413c4871576838ef1595abb661.json",
+      "role": "development_feedback",
+      "task_key": "a65d374c346194de7cc8e1ddb84770036efac6413c4871576838ef1595abb661"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/d8a54509971bfdf964615c63add63c55644ebf57275c2dc63420d773da7f53d5.json"
+      ],
+      "input_sha256": "92a7cfea825f7c3d496d281a5ee4ef1a293f9383d35c3cfefc7b16b2ea34ab34",
+      "instance_id": "f6f91f6a44c3953b788c026cbbaa4e91",
+      "receipt_content_sha256": "7bf9ad3bb4af176ddeeb8a1eb8874f81153c6a05f5180c8f6ad5983a37299ca0",
+      "receipt_file_sha256": "db68b7a4f02e8b460bedcf18944866286fda11b67b4e36d3d041e62ac074ead3",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/d8a54509971bfdf964615c63add63c55644ebf57275c2dc63420d773da7f53d5.json",
+      "role": "development_feedback",
+      "task_key": "d8a54509971bfdf964615c63add63c55644ebf57275c2dc63420d773da7f53d5"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/466f0c2b4d3450bc28c5db21775deeea9d331d2ba721fa3f56f1e75ff843f500.json"
+      ],
+      "input_sha256": "b8424f411addc4c973a01e4b8035a149dcc1516ed465485f34bbf991f266188f",
+      "instance_id": "bc5a06872fa6dfc9acbc7f782f0a4439",
+      "receipt_content_sha256": "b370123becaf923ea1a47a10fa3f2f7ef403b7d230e19a3621f0339de9f3d17e",
+      "receipt_file_sha256": "121e750dcef148b90d2818c2d2f5e600189327ba3eada0ad725ee1dd8d0330ec",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/466f0c2b4d3450bc28c5db21775deeea9d331d2ba721fa3f56f1e75ff843f500.json",
+      "role": "development_feedback",
+      "task_key": "466f0c2b4d3450bc28c5db21775deeea9d331d2ba721fa3f56f1e75ff843f500"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/4e8a15cf913854c42a83be9937a7216c42df49b350561b35e4d83dd3ed47cfe0.json"
+      ],
+      "input_sha256": "563f42dc89d80baf2e672f2cba5abd59e41909980da7cccdf788119dd2538e5f",
+      "instance_id": "a70883771fd1c210d94a916d52510a3a",
+      "receipt_content_sha256": "7cf4b096b5ef5ff629b084261275c5b9083ef74895256f7d0a9a0cbff7474bed",
+      "receipt_file_sha256": "ecd1bf17a22c42401dc88f4e5911c2fb24231e6c23f7c93561b143cd2961b56c",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/4e8a15cf913854c42a83be9937a7216c42df49b350561b35e4d83dd3ed47cfe0.json",
+      "role": "development_feedback",
+      "task_key": "4e8a15cf913854c42a83be9937a7216c42df49b350561b35e4d83dd3ed47cfe0"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/891cd5b40b9b6f7d18c33b92e932042ae28c3113adca35ac2f473d6b56bf4bb5.json"
+      ],
+      "input_sha256": "733571b8e7db55b24a62e366703e5228e8680caa495f4ce20e7c96351e3a762b",
+      "instance_id": "21415e807689ea75536e846a24623de1",
+      "receipt_content_sha256": "353fa278cbe9ad704b2604ec2949469aefcfa906caed726a382a3b153509fcde",
+      "receipt_file_sha256": "a6902712ae98f5135906f179ab4a286d2e90dd9f8948c06585fe610efd912ca2",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/891cd5b40b9b6f7d18c33b92e932042ae28c3113adca35ac2f473d6b56bf4bb5.json",
+      "role": "development_feedback",
+      "task_key": "891cd5b40b9b6f7d18c33b92e932042ae28c3113adca35ac2f473d6b56bf4bb5"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/0b68b31ccd890768aa5ca3def9b7bb82bbcee8e79ddabe34aef9697607528a01.json"
+      ],
+      "input_sha256": "178b4229116087e0c656a47ae59652e9e950f7f98f36a49ce7cd2c6b614d7ec7",
+      "instance_id": "5d62e4d7ab116c477c8d4f5bd36907de",
+      "receipt_content_sha256": "f8b69fc6f820533bf3db01c276d053822456d8f7a6d92562a31846b29a80bf66",
+      "receipt_file_sha256": "fe281459058918ed7ada2033364b6d8d2f633a33a8d80b0751b45d49abd28b66",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/0b68b31ccd890768aa5ca3def9b7bb82bbcee8e79ddabe34aef9697607528a01.json",
+      "role": "development_feedback",
+      "task_key": "0b68b31ccd890768aa5ca3def9b7bb82bbcee8e79ddabe34aef9697607528a01"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/253648f964f03545be562b77e84e442ed1dbf121529470aa6cd4a75becec5178.json"
+      ],
+      "input_sha256": "58972b0cfc49e736b9d6e21ea662e938e556e7c5ebe7bbde93749d973186db68",
+      "instance_id": "d1c28f29dc80ff82a3e32aa47fac8b41",
+      "receipt_content_sha256": "2ae6b13a4e0b7c22aee2d49aa7ce0e239ccacf2479f72569a0b110696948e31f",
+      "receipt_file_sha256": "2ae55dfe56e1c4fe184efa1ca8c17db661556a38eefd4581a06498f53cc66ae2",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/253648f964f03545be562b77e84e442ed1dbf121529470aa6cd4a75becec5178.json",
+      "role": "development_feedback",
+      "task_key": "253648f964f03545be562b77e84e442ed1dbf121529470aa6cd4a75becec5178"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/52bacb54dfcc91d9beb4a251e8c4f6e560aee0daeda7c668691713a0c7d575ea.json"
+      ],
+      "input_sha256": "65e41d237ec152b622dcb8631b46b9c0e2076539d2c2298ccc259b269a512bd8",
+      "instance_id": "d4256f750a8db53113c128b397722443",
+      "receipt_content_sha256": "8b57c0776197a1543045ffb83e934ad7b1bb60257288d63842dc805051151739",
+      "receipt_file_sha256": "77a7047c617638790bf14f6b4f3dc38aba101061b3b6ff94cf3764ca4bf425aa",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/52bacb54dfcc91d9beb4a251e8c4f6e560aee0daeda7c668691713a0c7d575ea.json",
+      "role": "development_feedback",
+      "task_key": "52bacb54dfcc91d9beb4a251e8c4f6e560aee0daeda7c668691713a0c7d575ea"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/c0edafa92b4b46deeb86f484c9eade7d2adce7edadbfcfb41f6bccd5fffab193.json"
+      ],
+      "input_sha256": "e0c761703826be3a2d61919f0c060dd2488ff084e0d84133c244308776f6106e",
+      "instance_id": "5c8f4e54e195d46053b04e232a5661c4",
+      "receipt_content_sha256": "61c7820d122516d280fc29273c651ab75682487bd1c192796b3387e2288de6c5",
+      "receipt_file_sha256": "a5e3ee882c8d9b88b0c74fd0c7e8666754606cb3f63e214f65b030ea254720fd",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/c0edafa92b4b46deeb86f484c9eade7d2adce7edadbfcfb41f6bccd5fffab193.json",
+      "role": "development_feedback",
+      "task_key": "c0edafa92b4b46deeb86f484c9eade7d2adce7edadbfcfb41f6bccd5fffab193"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f689c5a84e582037bc7c0d6e0ac4c0c3b3ebc1dce26105d43c903f6682140c41.json"
+      ],
+      "input_sha256": "96f88a6578978a7087a16f0a84ea10c2d58b8da7620e547885b8274b2c0fbdd2",
+      "instance_id": "fe9b9a35531e13dab41307e569386dab",
+      "receipt_content_sha256": "b1ab7ed0910af5fb93b7ae6d3029b4868fd61e273f2eec43b7f2bec380a20b8e",
+      "receipt_file_sha256": "97c17344537c0d1b53029ee62716e9ced8a03ddeac4fe320f0368ce49a4c3027",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f689c5a84e582037bc7c0d6e0ac4c0c3b3ebc1dce26105d43c903f6682140c41.json",
+      "role": "development_feedback",
+      "task_key": "f689c5a84e582037bc7c0d6e0ac4c0c3b3ebc1dce26105d43c903f6682140c41"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/96617896a9aab7c695874ab56ff80820080de046e7282a0801b25f02da32b722.json"
+      ],
+      "input_sha256": "868a1371e5195ab85eb4ef94375c2e14feb18bb6418ef83bb85b5f918e2bb19c",
+      "instance_id": "53e347648553a2f2223614d3b4a07a4b",
+      "receipt_content_sha256": "3fd4acc90581ed8b14143eac6ca4e5d753d6909bb7f10bf5f43e6ab0768b2a2c",
+      "receipt_file_sha256": "1d122beb50a2c8d46af9a775a889524673611b4112aa35f2e092faf2b49ceb3e",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/96617896a9aab7c695874ab56ff80820080de046e7282a0801b25f02da32b722.json",
+      "role": "development_feedback",
+      "task_key": "96617896a9aab7c695874ab56ff80820080de046e7282a0801b25f02da32b722"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/54c5190f8ed07c25dd01a5556c67897c7d91f6a98b8b306ee90abb548419b38d.json"
+      ],
+      "input_sha256": "dfdb799f9ee5aa511aed952c9e1c4fc32af8da1667542017d4202ef8e414cf0c",
+      "instance_id": "2bdfcf23ac1829912a408402a540972a",
+      "receipt_content_sha256": "96796fac2df42d6a9975d9bd744532d241bbc855630cae94da68bb328d11686e",
+      "receipt_file_sha256": "6fe462f19bb260816e808516cb87cd68848d7d9010338bc03dd1e0c4e72555cc",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/54c5190f8ed07c25dd01a5556c67897c7d91f6a98b8b306ee90abb548419b38d.json",
+      "role": "development_feedback",
+      "task_key": "54c5190f8ed07c25dd01a5556c67897c7d91f6a98b8b306ee90abb548419b38d"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/d14109b31b693785b186fb59c4451daf2b0ac8ebe52bd09080b57c694b9600f8.json"
+      ],
+      "input_sha256": "cf4f157e2176e1ac6a2ee7a60c2115998344d6ffe77e82d64db558afcc55d953",
+      "instance_id": "e7ee736cb1d140b3f70c6f519097aa32",
+      "receipt_content_sha256": "9d31943b6295401b9d1b1661c0f76ef2a89dbf27455bf2c19c2a6c71c4b9bbd3",
+      "receipt_file_sha256": "2b9f385a2d8d4ea7ed6f63756e06e1b925c2be3d49aa9a7480800610c633cdee",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/d14109b31b693785b186fb59c4451daf2b0ac8ebe52bd09080b57c694b9600f8.json",
+      "role": "development_feedback",
+      "task_key": "d14109b31b693785b186fb59c4451daf2b0ac8ebe52bd09080b57c694b9600f8"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/37d164b590148c5c5335bf1203d974accb16dc8f46780aae18014fe5c04703fd.json"
+      ],
+      "input_sha256": "53d9f6fbd0a4d19d1281e79fb60b0d16284eb408b678fd932775f80629155bb2",
+      "instance_id": "96dea3458b5470bd6db5704a0d1e9742",
+      "receipt_content_sha256": "cfbdfcdd4abc1126e1e42bb86151a01dff986ebd552836f73bc2c9148e9f6092",
+      "receipt_file_sha256": "29eb04384e7a35147631a7459653b15306547a743ee72509efb252a466689cae",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/37d164b590148c5c5335bf1203d974accb16dc8f46780aae18014fe5c04703fd.json",
+      "role": "development_feedback",
+      "task_key": "37d164b590148c5c5335bf1203d974accb16dc8f46780aae18014fe5c04703fd"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/f88e54e5a17d6fb57890f8faa0aa377b57e04fa72a1da58a2301378a8089b82e.json"
+      ],
+      "input_sha256": "d4a999db60e61564eebc46338d1cc9b1ad94b9ade22913049f87338cab731af3",
+      "instance_id": "1b84df53843ecd90ec8c3c7a01cada6c",
+      "receipt_content_sha256": "41794554c33f3099e6af84bb2ebe07473c56f680db5d2e92b84bf9991f20736e",
+      "receipt_file_sha256": "3ce7ac78251f39e1a430423fcc25eec71a0eb6ddeaf5f85bdbdbe7e3ef11d476",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/f88e54e5a17d6fb57890f8faa0aa377b57e04fa72a1da58a2301378a8089b82e.json",
+      "role": "development_feedback",
+      "task_key": "f88e54e5a17d6fb57890f8faa0aa377b57e04fa72a1da58a2301378a8089b82e"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/d629b17164738b3c2d5ab5bba78034c8b63ede06d074d45be1a1ed212c4c089a.json"
+      ],
+      "input_sha256": "aae9a04e887600025a6d1a1c76384df55a907418a1c9112624135f5101a44ec8",
+      "instance_id": "de8988028668791f35a7b9f94353b5b9",
+      "receipt_content_sha256": "9411fb46040c19c044e193179d63a4df0745d58b811ed0b7a4a2692c7e8b72c9",
+      "receipt_file_sha256": "8e43ea2f53add59f82f748c94b868285d3f574cb9d725ff21d596cb9f6add139",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/d629b17164738b3c2d5ab5bba78034c8b63ede06d074d45be1a1ed212c4c089a.json",
+      "role": "development_feedback",
+      "task_key": "d629b17164738b3c2d5ab5bba78034c8b63ede06d074d45be1a1ed212c4c089a"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/04afe151957e79f49793e3ea7c4a842e7c949ac8d95aa61c1ee3800b18a3d782.json"
+      ],
+      "input_sha256": "40ccb94e2afeedcd84fc8232b3b048e7b0d63bd6a00ff1d3f76003fe2ddbb2eb",
+      "instance_id": "60e39615d3af069932865a28b1bf6330",
+      "receipt_content_sha256": "c9b36abb12f47b586ae2c12e29ce51ada5ee4c2b612352699f2b6e7166ce7e90",
+      "receipt_file_sha256": "f42cc2eeb917a97797d061c32fbaffb59cb98ebe195e8a6aa93a916aa999560b",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/04afe151957e79f49793e3ea7c4a842e7c949ac8d95aa61c1ee3800b18a3d782.json",
+      "role": "development_feedback",
+      "task_key": "04afe151957e79f49793e3ea7c4a842e7c949ac8d95aa61c1ee3800b18a3d782"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/613a933c57155c40288fafea66d76d1c00c1b48444e7cbbd59a2d455b5768264.json"
+      ],
+      "input_sha256": "7aada02dc300ce6db773dbab34f115969174896a161b6d28ce37f5743e8fff4f",
+      "instance_id": "7bdf3e5401cc263951003b569bcd689c",
+      "receipt_content_sha256": "d7e68ea0e72ad7a87e3749dc9907fc0689154ca01e71857b77f58cc9e8adc710",
+      "receipt_file_sha256": "581659a9bedd4b390910ffcff60aac0ac8189c331ec446cd7b2c844454578671",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/613a933c57155c40288fafea66d76d1c00c1b48444e7cbbd59a2d455b5768264.json",
+      "role": "development_feedback",
+      "task_key": "613a933c57155c40288fafea66d76d1c00c1b48444e7cbbd59a2d455b5768264"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/dc189ba3b29b2f7042ab06e5a9b7083331d6dd15efda14082af9e7fcd35efe04.json"
+      ],
+      "input_sha256": "5350dbb96fd38547cd1b31b960e8e202c98ae195284046731103bece77545025",
+      "instance_id": "df813fe752353c2cc3b9040865aecfe4",
+      "receipt_content_sha256": "f26205a6c3179ff75a2f8df5b05385e1a6f7fb4757271e16427c6f694ed05d90",
+      "receipt_file_sha256": "00d852b25afc5b855cfe379736c20590b6aa1d7055e5f5bef935a168a61d1d56",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/dc189ba3b29b2f7042ab06e5a9b7083331d6dd15efda14082af9e7fcd35efe04.json",
+      "role": "development_feedback",
+      "task_key": "dc189ba3b29b2f7042ab06e5a9b7083331d6dd15efda14082af9e7fcd35efe04"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/7b9796d2526dcd70f31209fd8706f7b0f2affe7fa801dadf3e83e1bf5614ad3c.json"
+      ],
+      "input_sha256": "c26ccb49d0922806da2c37b42a4aafa4b1e2eeeeea4b05eddce568c0b6c7c658",
+      "instance_id": "b361efe85442bd535849708e2b7ac639",
+      "receipt_content_sha256": "e0d5c12b2deb42dea44c35a75d527d3819039d2a06cdf559b5441ea898bc1790",
+      "receipt_file_sha256": "95a1b4340046415fa486bfc7753455ce1c4ca233367868842b4d932c7bf393f5",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/7b9796d2526dcd70f31209fd8706f7b0f2affe7fa801dadf3e83e1bf5614ad3c.json",
+      "role": "development_feedback",
+      "task_key": "7b9796d2526dcd70f31209fd8706f7b0f2affe7fa801dadf3e83e1bf5614ad3c"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/e0bfa7ad09b9302018049cfd0c590222e8bda5dd0ac8567d3d6eed418c9cb3e1.json"
+      ],
+      "input_sha256": "910171697fa9101d22b0ad6867f957f56231dd50e4e5c07edddfcfee6d657e38",
+      "instance_id": "47f5872181a581dff34eb33123fe3242",
+      "receipt_content_sha256": "51865dc5900fc9450ff388a8989d2232a9cb48dc9772902d546065ed3182994c",
+      "receipt_file_sha256": "df22c70cb504965ec9b8f8808c36edae07ec8070da6cc338033b1e0ba8759598",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/e0bfa7ad09b9302018049cfd0c590222e8bda5dd0ac8567d3d6eed418c9cb3e1.json",
+      "role": "development_feedback",
+      "task_key": "e0bfa7ad09b9302018049cfd0c590222e8bda5dd0ac8567d3d6eed418c9cb3e1"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/88f9a423f735c2373715b9e3b55d44cb9767eac298ba7bb7fae3df8843d577ea.json"
+      ],
+      "input_sha256": "a1414a4953ab90373cc10dfb1d0b0df768b24aeb243a84bb1809c349d81a16de",
+      "instance_id": "31e843c53a76ff3961935ad55b953298",
+      "receipt_content_sha256": "a75fab33bbf9e11f1980b89c9b9cbea76b0b4b907c264413b35e017992ebe106",
+      "receipt_file_sha256": "090e30a594bd556d248fd1608ba10d285893ba7d5c3de96a425dc9d99e49ed41",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/88f9a423f735c2373715b9e3b55d44cb9767eac298ba7bb7fae3df8843d577ea.json",
+      "role": "development_feedback",
+      "task_key": "88f9a423f735c2373715b9e3b55d44cb9767eac298ba7bb7fae3df8843d577ea"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/8a59bd909e308ab5a28442c4d516e1cee5e820d4b21c1bc62b012c1a3c9a5d4f.json"
+      ],
+      "input_sha256": "35d948bb58257ffab61118cfa2a5d521b5232a144e2fec964110287549e76b5e",
+      "instance_id": "5dbe7b31f9b8d8e56045493439adb949",
+      "receipt_content_sha256": "ad3c2f3ba201621fed774bb1425741681984471a1649c8fdaa0c9728073d2dab",
+      "receipt_file_sha256": "fc8d66634b8e4215be28eb7d4fbea28ea671cad5a8f6a3809a3458b3114e9567",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/8a59bd909e308ab5a28442c4d516e1cee5e820d4b21c1bc62b012c1a3c9a5d4f.json",
+      "role": "development_feedback",
+      "task_key": "8a59bd909e308ab5a28442c4d516e1cee5e820d4b21c1bc62b012c1a3c9a5d4f"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/4864892319454f08c74390e01456ff8ffcee37da079129a16205f7a752824730.json"
+      ],
+      "input_sha256": "e3e3079cc4b2ee5861fdb3bce6d3ed6a471e6a0f1273591f9ef499d6bbf6d716",
+      "instance_id": "b99ba7e9113280393c64863dfbfa2c3b",
+      "receipt_content_sha256": "1331060474de14147524d9a217b7406c22a54ef2f125259d1be7bbe985873544",
+      "receipt_file_sha256": "4b19058d46d87222f04433b5721846c0ce21027409f1ceeac3c53db793b61ce6",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/4864892319454f08c74390e01456ff8ffcee37da079129a16205f7a752824730.json",
+      "role": "development_feedback",
+      "task_key": "4864892319454f08c74390e01456ff8ffcee37da079129a16205f7a752824730"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/15d3f79156f09bf7937475db03f8370365df14e9b30b0ca96379165bd0a02ab9.json"
+      ],
+      "input_sha256": "e58609bec6d88719e2e84598e0aa5da72cf830083fc68f70400821f1eeb38809",
+      "instance_id": "d35dfc38e1681b48ebceb4113d205a23",
+      "receipt_content_sha256": "4f64151fdd1fc78389a72ff85d6db42c2f5ed5db768159786515be4b7845aea4",
+      "receipt_file_sha256": "95ec120e6d9280a8283a2cc775b59842780ca79b88cff49ea0cf28ad4def1e04",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/15d3f79156f09bf7937475db03f8370365df14e9b30b0ca96379165bd0a02ab9.json",
+      "role": "development_feedback",
+      "task_key": "15d3f79156f09bf7937475db03f8370365df14e9b30b0ca96379165bd0a02ab9"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/63cf1a0c7cb3176c59678cec0cf40630ac98ac9d23c0b6593fc26093122e0f14.json"
+      ],
+      "input_sha256": "7202149c629eb1d6ba80db6a44a17258c315263381067070d40e88fdbc775366",
+      "instance_id": "ea40162dda3f9b923b6160854cf7f75a",
+      "receipt_content_sha256": "5492e99704788d90dcc82b7b579bedac68d46115a1287b53bc6482b15e48fbf4",
+      "receipt_file_sha256": "41924e35b1b7d80f0334f4620e451d431da2e5bf0551c76fdd038e3048349279",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/63cf1a0c7cb3176c59678cec0cf40630ac98ac9d23c0b6593fc26093122e0f14.json",
+      "role": "development_feedback",
+      "task_key": "63cf1a0c7cb3176c59678cec0cf40630ac98ac9d23c0b6593fc26093122e0f14"
+    },
+    {
+      "equivalent_paths": [
+        "work/ta100/algebra20_v1/output/results/9e6802b97756f5972087921849f551fc1c25edbfae41f06d9f93df4ed05584b8.json"
+      ],
+      "input_sha256": "030a86c2d6550b78ea1f95e34fcf168758d8117da601f47ec649a52249be08b2",
+      "instance_id": "7a44efe7c2dbf88a61e7cb750f307937",
+      "receipt_content_sha256": "6a7e43d64ceb25cae5e125cf080ef71c6457dc5e9d7aed72950dccd41c7a44ba",
+      "receipt_file_sha256": "5fa00f89c41598107781545a6e09b2283a01380856aa089f726ea78aa5f23de5",
+      "receipt_path": "work/ta100/algebra20_v1/output/results/9e6802b97756f5972087921849f551fc1c25edbfae41f06d9f93df4ed05584b8.json",
+      "role": "development_feedback",
+      "task_key": "9e6802b97756f5972087921849f551fc1c25edbfae41f06d9f93df4ed05584b8"
+    }
+  ],
+  "schema": "ta100.static_receipt_index.v1"
+}

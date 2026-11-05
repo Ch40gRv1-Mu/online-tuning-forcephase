@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_community_polarity"
+    ],
+    "hypothesis": "For the fixed unsigned sample partition from S11, b_g=(positive-negative full-input literal incidences of sampled variables in community g)/literal_count_g. f=sum_g weight_g*(b_g-b_selected)^2, where b_selected is the mean over the sampled variable population.",
+    "id": "I038",
+    "mechanism_key": "community_encoding_polarity_heterogeneity",
+    "registry_id": "S38"
+  },
+  "original_preexecution_config": "configs/ta100/B04.json",
+  "original_config_sha256": "63f35476a7e708b9534df47b2e57d104a89783b1705dc812aac7e6edc35a47e7",
+  "registry_sha256": "c7900963193cc4323186c2f41b2236980d3b93e86a459bd586564c22b351c981",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

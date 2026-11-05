@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"utc\": \"2026-11-05T05:31:42.109923+00:00\", \"time_pid\": 70144, \"command\": [\"/usr/bin/time\", \"-v\", \"-o\", \"/home/vipuser/forcephase_phase_prediction_20261104/logs/parity_fit144_v1.resources.txt\", \"flock\", \"-n\", \"-F\", \"/home/vipuser/forcephase_phase_prediction_20261104/phases/parity_fit144_v1/.owner.lock\", \"python3\", \"-u\", \"/home/vipuser/forcephase_phase_prediction_20261104/src/parity_v1/run_parity_features.py\", \"--base\", \"/home/vipuser/forcephase_phase_prediction_20261104\", \"--cohort\", \"/home/vipuser/forcephase_phase_prediction_20261104/metadata/parity_fit144_v1.csv\", \"--cohort-sha256\", \"be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0\"], \"other_active_research\": [], \"available_memory_bytes\": 15603838976, \"archive_sha256\": \"35ffa0cda03e85b0b96e9758d208c4c7d0ae2950ceeb25b26ec4803ecdf8387e\", \"new_solver_calls\": 0}\n",
+  "stderr": ""
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "ta-offline-proposals-v1",
+  "round": "TA-R01",
+  "plan_commit": "3bf1cf7",
+  "source": "Predefined length/signed and graph/gate hypotheses; no new TA feedback read",
+  "proposals": [
+    {
+      "id": "length_signed",
+      "features": ["s_mean_length", "s_length_std", "s_binary_fraction", "s_long_fraction", "s_positive_fraction", "s_mean_polarity_imbalance"],
+      "max_depth": 2,
+      "seed": 20261104,
+      "hypothesis": "Length information may become directional when conditioned on signed structure. Select thresholds/actions on fit only."
+    },
+    {
+      "id": "graph_gate",
+      "features": ["g_cycle_excess_per_incidence", "g_leaf_variable_fraction", "g_largest_component_fraction", "g_gate_motif_fraction"],
+      "max_depth": 2,
+      "seed": 20261105,
+      "hypothesis": "Tree-likeness and local gate motifs may reveal preference regions hidden by overall length summaries."
+    }
+  ]
+}

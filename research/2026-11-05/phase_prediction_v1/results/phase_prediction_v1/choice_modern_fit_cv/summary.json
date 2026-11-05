@@ -1,0 +1,12 @@
+{
+  "status": "INSUFFICIENT_CHOICE_FEATURE_COVERAGE_FOR_PRESPECIFIED_MODEL",
+  "modern_fit_parents": 24,
+  "informative_choice_parents": 5,
+  "required": 10,
+  "models_fitted": 0,
+  "new_solver_calls": 0,
+  "feedback_used": 0,
+  "gate_used": 0,
+  "final_test_used": 0,
+  "protocol_sha256": "7ba6042a072d5584c955befd3eb0d00c38f8bf544b985c277d2f8d4b8f986436"
+}

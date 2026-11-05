@@ -1,0 +1,102 @@
+{
+  "constant": {
+    "model": {
+      "action": "true"
+    }
+  },
+  "tree_geometry": {
+    "model": {
+      "feature": "d_core_vertex_fraction",
+      "threshold": 0.999780866902625,
+      "missing": "left",
+      "left": {
+        "action": "false"
+      },
+      "right": {
+        "action": "true"
+      }
+    },
+    "fit_weighted_error": 21.66108753751015,
+    "fit_constant_weighted_error": 33.665067927730476,
+    "allowed_features": [
+      "d_core_edge_fraction",
+      "d_core_vertex_fraction",
+      "d_incidence_geometry_exact",
+      "d_leaf_peeling_rounds"
+    ]
+  },
+  "gate_depth_polarity": {
+    "model": {
+      "action": "true"
+    },
+    "fit_weighted_error": 33.665067927730476,
+    "fit_constant_weighted_error": 33.665067927730476,
+    "allowed_features": [
+      "d_gate_condensation_depth",
+      "d_gate_cyclic_variable_fraction",
+      "d_gate_depth_exact",
+      "d_gate_output_positive_fraction",
+      "d_gate_variable_coverage"
+    ]
+  },
+  "matched_all43": {
+    "model": {
+      "feature": "s_unit_fraction",
+      "threshold": 0.000232018561485,
+      "missing": "left",
+      "left": {
+        "action": "true"
+      },
+      "right": {
+        "action": "false"
+      }
+    },
+    "fit_weighted_error": 20.86432027375896,
+    "fit_constant_weighted_error": 33.665067927730476,
+    "allowed_features": [
+      "d_core_edge_fraction",
+      "d_core_vertex_fraction",
+      "d_gate_condensation_depth",
+      "d_gate_cyclic_variable_fraction",
+      "d_gate_depth_exact",
+      "d_gate_output_positive_fraction",
+      "d_gate_variable_coverage",
+      "d_incidence_geometry_exact",
+      "d_leaf_peeling_rounds",
+      "g_components",
+      "g_cycle_excess",
+      "g_cycle_excess_per_incidence",
+      "g_degree_cv",
+      "g_degree_entropy_normalized",
+      "g_degree_max",
+      "g_degree_mean",
+      "g_degree_p50",
+      "g_degree_p90",
+      "g_degree_two_fraction",
+      "g_gate_motif_fraction",
+      "g_gate_motifs_exact",
+      "g_largest_component_fraction",
+      "g_leaf_variable_fraction",
+      "s_antihorn_fraction",
+      "s_binary_fraction",
+      "s_clauses",
+      "s_cv_ratio",
+      "s_empty_fraction",
+      "s_header_variables",
+      "s_horn_fraction",
+      "s_jw_positive_fraction",
+      "s_length_std",
+      "s_log_clauses",
+      "s_log_variables",
+      "s_long_fraction",
+      "s_max_length",
+      "s_mean_length",
+      "s_mean_polarity_imbalance",
+      "s_positive_fraction",
+      "s_pure_variable_fraction",
+      "s_ternary_fraction",
+      "s_unit_fraction",
+      "s_variables"
+    ]
+  }
+}

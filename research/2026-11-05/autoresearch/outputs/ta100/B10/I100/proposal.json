@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_lemma_dependency_depth"
+    ],
+    "hypothesis": "学习子句的证明依赖深度，定义原始reason子句为0，新子句为1+其已用reason子句最大深度。",
+    "id": "I100",
+    "mechanism_key": "learned_proof_ancestry",
+    "registry_id": "TD30"
+  },
+  "original_preexecution_config": "configs/ta100/B10.json",
+  "original_config_sha256": "67f43debe577a48dd5d37d15fccbcb00c27ebc3d4da3745941328b899ad634e0",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

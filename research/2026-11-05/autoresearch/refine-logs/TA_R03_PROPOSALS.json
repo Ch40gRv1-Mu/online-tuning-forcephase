@@ -1,0 +1,38 @@
+{
+  "feedback_source_sha256": "13a8080f49c0836686b3d49b443901d8cfabdc7c473c0f6b42ce888e0099b326",
+  "proposals": [
+    {
+      "features": [
+        "s_positive_fraction",
+        "s_mean_length"
+      ],
+      "hypothesis": "Uniform long clauses and uniform short clauses had similar low dispersion in the full feedback counterexamples. Test signed fraction with mean length directly; fit alone chooses thresholds and polarity.",
+      "id": "sign_mean_length",
+      "max_depth": 2,
+      "seed": 20261104
+    },
+    {
+      "features": [
+        "s_positive_fraction",
+        "s_mean_polarity_imbalance"
+      ],
+      "hypothesis": "A global positive-literal fraction can conceal different distributions of polarity across variables. Test the existing mean per-variable polarity imbalance as a conditioning feature for the existing signed preference, rather than another unsigned density or clause-size proxy. Fit alone chooses thresholds and actions.",
+      "id": "sign_local_imbalance",
+      "max_depth": 2,
+      "min_leaf": 12,
+      "min_relative_improvement": 0.01,
+      "quantiles": [
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875
+      ],
+      "seed": 20261105
+    }
+  ],
+  "round": "TA-R03",
+  "schema": "ta-offline-proposals-v1"
+}

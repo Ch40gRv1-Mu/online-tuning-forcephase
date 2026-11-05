@@ -1,0 +1,38 @@
+{
+  "kind": "completed_long_budget_fit_screen_not_policy_reward",
+  "role": "development_fit",
+  "parents": 16,
+  "seeds": [
+    0
+  ],
+  "cutoff_s": 600,
+  "runs": 64,
+  "all_four_actions_censored_parents": 12,
+  "mean_par2_s": {
+    "D": 916.0938760625,
+    "Fminus": 1005.33776925,
+    "Fplus": 915.0987253125,
+    "Iminus": 936.9547271875,
+    "three_action_oracle": 915.0983840625
+  },
+  "solved": {
+    "D": 4,
+    "Fminus": 3,
+    "Fplus": 4,
+    "Iminus": 4
+  },
+  "oracle_vs_best_static": {
+    "descriptive_paired_parent_95pct": [
+      0.0,
+      1.4396247772774373e-06
+    ],
+    "first": "three_action_oracle",
+    "mean_delta_s": -0.00034125000001949957,
+    "relative_improvement": 3.729105839678226e-07,
+    "second": "Fplus"
+  },
+  "archive_sha256": "d004b4c0c2a08920e0ea334231bf84f56af7a534e62ec5c1e54cdd9d4142f019",
+  "source_cases_sha256": "c0baaa119c45bfe5d2b2540716e075a419d7887718424c547dda5d7e6c876319",
+  "known_physical_cpu_h": 12.356484843343889,
+  "decision": "Do not train a selector on negligible oracle variation of this16-parent/seed0 screen or claim general failure. Freeze broader40-parent24fit16feedback/two-seed T600 development before new outcomes. Keep failed runs/costs and Iminus. No new policy reward, no gate/test feedback."
+}

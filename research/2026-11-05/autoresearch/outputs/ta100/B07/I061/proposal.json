@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_renamable_horn_deficit"
+    ],
+    "hypothesis": "Minimize sum_C choose(np_C,2) under variable sign flips. Starting with no flips, run12 coordinate passes in local first-appearance variable order; flip only on strict reduction. Divide final violated pairs by sum_C choose(width_C,2).",
+    "id": "I061",
+    "mechanism_key": "horn_variable_orientation_pair_deficit",
+    "registry_id": "RA01"
+  },
+  "original_preexecution_config": "configs/ta100/B07.json",
+  "original_config_sha256": "ad609c29f98ea558286b03ba5c05a812bcb0c7784c0a97f753598e955bf35189",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

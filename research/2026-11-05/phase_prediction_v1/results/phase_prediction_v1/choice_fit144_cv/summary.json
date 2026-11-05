@@ -1,0 +1,366 @@
+{
+  "scope": "Fit-only prespecified5fold characterization; original-label target, no held-out feedback or RICL reward.",
+  "protocol_sha256": "7ba6042a072d5584c955befd3eb0d00c38f8bf544b985c277d2f8d4b8f986436",
+  "source_sha256": "86fc37d62ba1b3954c607f97d53d7243e4dc0db907a1362f391afad688d413c4",
+  "cohort_sha256": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0",
+  "feature_identity": {
+    "binary_sha256": "3bc1e4ad5bbd5431fd02348c967c619d62137b9e64684f8ca2ffe52ebe831a04",
+    "cohort_sha256": "be54565afcf2c7b3d823e476490713970a465dcd0571c1ea06054cb3c56b6ca0",
+    "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "runner_sha256": "1d885f3537eb4fb06739a8df8707436ad6bfd3fa6140c07f724e8c948bbf6157",
+    "source_sha256": "6d53ea0cf57b73ef2015399b5b0107668fa52af19b5811545115c890e233a164"
+  },
+  "all_fit_parents": 144,
+  "labelled_fit_parents": 53,
+  "informative_choice_parents": 46,
+  "informative_labelled_choice_parents": 14,
+  "scores": {
+    "constant": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 35,
+      "accuracy": 0.660377358490566,
+      "weighted_error": 33.665067927730476,
+      "weighted_error_rate": 0.40068314807904215,
+      "prediction_counts_all_parents": {
+        "false": 0,
+        "true": 144
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": 0.0,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "weighted_error_rate_reduction": 0.0,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.1132075471698113,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.05999999999999994,
+          0.28260869565217395
+        ],
+        "weighted_error_rate_reduction": -0.09083433441964078,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.37613485803346497,
+          0.2312553179049622
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "choice_participation": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 33,
+      "accuracy": 0.6226415094339622,
+      "weighted_error": 41.52831642941366,
+      "weighted_error_rate": 0.49427188434851416,
+      "prediction_counts_all_parents": {
+        "false": 11,
+        "true": 133
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": -0.037735849056603765,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.11476986128625474,
+          0.03703703703703698
+        ],
+        "weighted_error_rate_reduction": -0.093588736269472,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.23957484238147364,
+          0.018022099058613614
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.07547169811320753,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.10870553359683799,
+          0.2549019607843137
+        ],
+        "weighted_error_rate_reduction": -0.1844230706891128,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.47877341050276956,
+          0.1664857525608522
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "choice_orientation": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 33,
+      "accuracy": 0.6226415094339622,
+      "weighted_error": 41.52831642941366,
+      "weighted_error_rate": 0.49427188434851416,
+      "prediction_counts_all_parents": {
+        "false": 11,
+        "true": 133
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": -0.037735849056603765,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.11476986128625474,
+          0.03703703703703698
+        ],
+        "weighted_error_rate_reduction": -0.093588736269472,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.23957484238147364,
+          0.018022099058613614
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.07547169811320753,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.10870553359683799,
+          0.2549019607843137
+        ],
+        "weighted_error_rate_reduction": -0.1844230706891128,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.47877341050276956,
+          0.1664857525608522
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    },
+    "old34_control": {
+      "all_parents": 144,
+      "labelled_parents": 53,
+      "labelled_coverage": 0.3680555555555556,
+      "correct": 29,
+      "accuracy": 0.5471698113207547,
+      "weighted_error": 26.033241999767675,
+      "weighted_error_rate": 0.30984881365940137,
+      "prediction_counts_all_parents": {
+        "false": 64,
+        "true": 80
+      },
+      "vs_fold_fit_constant": {
+        "accuracy_delta": -0.1132075471698113,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          -0.28260869565217395,
+          0.05999999999999994
+        ],
+        "weighted_error_rate_reduction": 0.09083433441964078,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          -0.23125531790496245,
+          0.3761348580334648
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      },
+      "vs_old34_control": {
+        "accuracy_delta": 0.0,
+        "accuracy_delta_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "weighted_error_rate_reduction": 0.0,
+        "weighted_error_rate_reduction_parent_bootstrap_95pct": [
+          0.0,
+          0.0
+        ],
+        "bootstrap_valid_draws": 2000,
+        "bootstrap_parent_draws": 2000
+      }
+    }
+  },
+  "fold_models": [
+    {
+      "fold": 0,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "choice_participation": {
+          "action": "true"
+        },
+        "choice_orientation": {
+          "action": "true"
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000232018561485,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "choice_participation": {
+          "feature": "e_block_variable_fraction",
+          "threshold": 0.00123955559636,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "choice_orientation": {
+          "feature": "e_block_variable_fraction",
+          "threshold": 0.00123955559636,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.0002573194859255,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "choice_participation": {
+          "action": "true"
+        },
+        "choice_orientation": {
+          "action": "true"
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000103799045049,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "training_parents": 115,
+      "validation_parents": 29,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "choice_participation": {
+          "feature": "e_block_variable_fraction",
+          "threshold": 0.0016006706383525,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "choice_orientation": {
+          "feature": "e_block_variable_fraction",
+          "threshold": 0.0016006706383525,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 0.000193628510172,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "training_parents": 116,
+      "validation_parents": 28,
+      "models": {
+        "constant": {
+          "action": "true"
+        },
+        "choice_participation": {
+          "action": "true"
+        },
+        "choice_orientation": {
+          "action": "true"
+        },
+        "old34_control": {
+          "feature": "s_unit_fraction",
+          "threshold": 1.777830996775e-05,
+          "missing": "left",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          }
+        }
+      }
+    }
+  ],
+  "continuation_criteria_met": false,
+  "feature_cpu_s_sum": 48.836126,
+  "local_analysis_cpu_s": 1.2594400000000001,
+  "feedback_read": 0,
+  "gate_read": 0,
+  "final_test_read": 0,
+  "new_RICL_rewards": 0,
+  "new_solver_calls": 0,
+  "limitations": [
+    "Already-seen fit data; intervals condition on out-of-fold predictions and are exploratory.",
+    "Original phase/version unverified; no automatic mapping to modernF\u00b1.",
+    "No cost comparison combining oldTA wall and featureCPU; no deployment claim.",
+    "No hidden reuse of another agent gate; later policy needs available shared8-round slot."
+  ]
+}

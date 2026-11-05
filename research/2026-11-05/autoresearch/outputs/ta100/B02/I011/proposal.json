@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "f_core_literal_repetition"
+    ],
+    "hypothesis": "sum_C (raw_width(C)-distinct_signed_width(C)) / raw_literal_count",
+    "id": "I011",
+    "mechanism_key": "literal_repetition",
+    "registry_id": "nodes_01"
+  },
+  "original_preexecution_config": "configs/ta100/B02.json",
+  "original_config_sha256": "ed9fd890d57edbc322927c1d4e58715cef5c49a5b100c341c1e1090ee6fb7ab4",
+  "registry_sha256": "da61e01ea3b2a4bc2e66bc71a0b532075b94ec88d809d883dd58ae04a8c29188",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_incidence_assortativity"
+    ],
+    "hypothesis": "r=PearsonCorr_{(v,C) in E}(d_v,k_C), where k_C=|vars(C)| and d_v=#clauses containing v. Return null for zero endpoint variance.",
+    "id": "I021",
+    "mechanism_key": "incidence_joint_degree_arity_assortativity",
+    "registry_id": "S01"
+  },
+  "original_preexecution_config": "configs/ta100/B03.json",
+  "original_config_sha256": "f1cdb2c13dee711eb5e9b558dcf47e1ce75bc007a1d538873f81a9462393b3a6",
+  "registry_sha256": "8bcc3d40f940f6c9ff59374c3f46e20b4b936d5fb66bc3d4877710a9adfe67bf",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

@@ -1,0 +1,35 @@
+{
+  "physical_long_attempts": [
+    {
+      "stage": "long600_fit16",
+      "cpu_s": 27518.129999999997,
+      "cpu_h": 7.643924999999999,
+      "resources_sha256": "c999c6e97bf3399a270ddd7387e41c515f34e8913f5382040eec1986de7ea805"
+    },
+    {
+      "stage": "long600_fit16_recovery_v1",
+      "cpu_s": 1218.74,
+      "cpu_h": 0.3385388888888889,
+      "resources_sha256": "afca04267461c07aa2c44488083462659dc25a281a652df057db94c700efedbf"
+    },
+    {
+      "stage": "long600_fit16_recovery_v2",
+      "cpu_s": 1218.09,
+      "cpu_h": 0.3383583333333333,
+      "resources_sha256": "6dea20529244d3cd4dfc5b6126ccc10e6ea8c4eab09abd3344023bcf4e7e7455"
+    },
+    {
+      "stage": "long600_fit16_recovery_v3",
+      "cpu_s": 1820.15,
+      "cpu_h": 0.5055972222222223,
+      "resources_sha256": "9370d4476b7a07e05cb9c48eff96412e4ae670f1e7f8ada117ed6fd890a174b5"
+    }
+  ],
+  "long600_total_physical_cpu_h": 8.826419444444443,
+  "prior_known_measured_cpu_h": 3.5300653988994446,
+  "known_measured_total_cpu_h": 12.356484843343889,
+  "unmeasured_engineering_reserve_cpu_h": 2,
+  "logical_matrix_cpu_h_not_added": 8.601869046315834,
+  "total_study_budget_cpu_h": 100,
+  "scope": "GNU parent receipts include children; all attempts counted once, failed proof and resource stops included."
+}

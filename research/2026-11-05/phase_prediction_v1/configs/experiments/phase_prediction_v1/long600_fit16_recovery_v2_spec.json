@@ -1,0 +1,34 @@
+{
+  "stage": "long600_fit16_recovery_v2",
+  "mode": "static",
+  "actions": [
+    "D",
+    "Fplus",
+    "Fminus",
+    "Iminus"
+  ],
+  "seeds": [
+    0
+  ],
+  "cutoff_s": 600,
+  "verification": "timed_binary_LRAT_lrat_trim",
+  "workers": 2,
+  "proof_file_limit_bytes": 8589934592,
+  "solver_upper_cpu_hours": 10.666666666666666,
+  "max_total_cpu_hours": 14,
+  "cohort_sha256": "069a38636e923affffef403d727ae451a273c157cec8d37fcde534f461aa6b4c",
+  "sampling": "same first 16 eligible frozen development_fit parents as online16; no replacements by observed outcomes",
+  "launch_condition": "Both previous matrix processes terminal; v1 disk-admission failure log and timefile SHA bound. Exact58 reused plus6 new keys frozen.",
+  "purpose": "One cutoff escalation motivated by 35/48 triple-censored P1 parents. This checks a 600s budget, not a reproduction of undocumented MiniSAT.",
+  "primary_cutoff_s": 600,
+  "diagnostic_subcutoffs_s": [
+    120,
+    300
+  ],
+  "data_boundary": "No development_gate or final test candidate enters this screen",
+  "future_reuse": "Identical physical measurements are reused via SHA-bound receipts, never silently rerun when a cohort grows",
+  "resource_rationale": "Same2workers8GiB proof each and12GiB floor; active proof physical allocation is charged against its reserved capacity once. No safety floor reduction.",
+  "resource_recovery": true,
+  "recovery_plan_sha256": "09afcfaf78a8797f90376d2ce9943ecccde7e7b995735701f2c159f6cc5ef1e0",
+  "resource_recovery_version": 2
+}

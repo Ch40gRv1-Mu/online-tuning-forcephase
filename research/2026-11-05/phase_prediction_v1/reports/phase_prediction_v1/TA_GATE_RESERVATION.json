@@ -1,0 +1,20 @@
+{
+  "owner_thread": "01a1a93a-0059-7561-9c42-a5ded9d82c94",
+  "branch": "TA false/true reuse",
+  "status": "COMPLETE_GATE_CONSUMED_NOT_PASSED",
+  "candidate_sha256": "1d4a4374b444ff5da12291291fad4ec18893300033c5ec1bca4ef698dc8eb182",
+  "parent_candidate": "configs/ta_feature_discovery/frozen_gate_candidate_v1.json",
+  "global_gate_ledger": "reports/phase_prediction_v1/GATE_CONSUMED.json",
+  "gate_timings_accessed_by_TA_branch": true,
+  "gate_reserved_for_TA_branch": false,
+  "proposal_rounds": [
+    "TA-R01",
+    "TA-R02",
+    "TA-R03",
+    "TA-R04"
+  ],
+  "shared_completed_rounds_observed": 8,
+  "final_test_outputs_read": 0,
+  "gate_consumed": true,
+  "TA_owned_workers_live": 0
+}

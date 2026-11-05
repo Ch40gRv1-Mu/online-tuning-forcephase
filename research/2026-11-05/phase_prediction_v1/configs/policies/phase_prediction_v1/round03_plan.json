@@ -1,0 +1,24 @@
+{
+  "round": 3,
+  "actor": "Current Codex, updating from actual round2 and original-label depth feedback",
+  "cutoff_s": 60,
+  "required_seeds": [0, 1],
+  "proposals": [
+    {
+      "kind": "incidence_peeling_and_core",
+      "depth": 2,
+      "min_leaf": 8,
+      "features": ["d_leaf_peeling_rounds", "d_core_vertex_fraction", "d_core_edge_fraction", "d_incidence_geometry_exact", "g_cycle_excess_per_incidence", "g_leaf_variable_fraction", "g_degree_two_fraction"],
+      "rationale": "Round2 coarse graph rule collapsed to a constant. Test the newly measured recursive leaf/core geometry directly, paying its actual full extraction cost; original-table stump's tied accuracy does not establish modern transfer."
+    },
+    {
+      "kind": "signed_gate_depth_and_cycles",
+      "depth": 2,
+      "min_leaf": 8,
+      "features": ["d_gate_condensation_depth", "d_gate_cyclic_variable_fraction", "d_gate_variable_coverage", "d_gate_output_positive_fraction", "d_gate_depth_exact", "g_gate_motif_fraction"],
+      "rationale": "Original-table gate stump did not split. Test actual modern three-action cost labels rather than assuming false/true semantics transfer; SCC condensation depth is a proxy, not recovered original circuit depth."
+    }
+  ],
+  "feature_contract": "depth43_v1: original34 plus exactly9 new numeric fields, combined measured CPU once",
+  "evaluation": "Complete40parents and two seeds; fit-only thresholds/actions; parent bootstrap exploratory; fixedIminus and matched43-field simple tree mandatory; no gate/test"
+}

@@ -1,0 +1,1236 @@
+{
+  "byte_metadata_corrections": [
+    {
+      "gbd_feature_bytes": 8315950,
+      "input_sha256": "1e966f7c7accf8109eaae14b942639da31cb34d786b0bd2d4a2a499ed6121bb9",
+      "instance_id": "849950561ddce887c78fef773dccfa80",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 8318128,
+      "task_key": "0565df8b95dcc8816a7d3908e92ff69c6f9da320570b037de23dd2e44671f5fc"
+    },
+    {
+      "gbd_feature_bytes": 45775206,
+      "input_sha256": "aae9a04e887600025a6d1a1c76384df55a907418a1c9112624135f5101a44ec8",
+      "instance_id": "de8988028668791f35a7b9f94353b5b9",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 45775834,
+      "task_key": "0a5ec8b6837d5c4465944e149f75169f97d4e4792ca89d91d95570067638da78"
+    },
+    {
+      "gbd_feature_bytes": 194616,
+      "input_sha256": "9c8ddd5ad86590ef636f46a61ecf4732abf42dadee70fd2be3c0783c08e7160f",
+      "instance_id": "847c8843ee292b9b31f0c346574af260",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 195447,
+      "task_key": "0be783ea296bda45c73d7b3b69b26b71a832d83a3ed158fcd05fcbe2cc110f68"
+    },
+    {
+      "gbd_feature_bytes": 178110,
+      "input_sha256": "d1adcacd7bab7a4ae25eb91986b0733c0a72d40271b697a7074eb75e594ace94",
+      "instance_id": "1a92907cdec0528583a8f49a818b406d",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 178261,
+      "task_key": "0cc58f785c112ea6265185c086c741b3113005926c70529a4dbc8d3943858ae1"
+    },
+    {
+      "gbd_feature_bytes": 19830358,
+      "input_sha256": "7e13773a13fbf9b46d486297786c72ba657f363f64330fcdadcd856e2fb2d304",
+      "instance_id": "98e8aa2ace21d3362ef51524ad546764",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 19830509,
+      "task_key": "113062d7df9d34a149dfa07afcfb0a44c5a6d96078fbb9307621bbda51871665"
+    },
+    {
+      "gbd_feature_bytes": 1151713,
+      "input_sha256": "c20ea0635d0d4859123436fd529bf13d1a1e4a6c44969bc6eff68975f04c29a0",
+      "instance_id": "90bec6dcf2399d7c7f73acba44a8641e",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 1152327,
+      "task_key": "12eef43714036eabbd585d9c8a20d573c2e4c7f20d596b189f9ac1a436fcc215"
+    },
+    {
+      "gbd_feature_bytes": 360335,
+      "input_sha256": "c3d774473387647f82ee399e98c48e3e0cc3057b73c076d7e17eb8fa3d98560e",
+      "instance_id": "46a8727e27d848faafd83a990c2e01a7",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 360371,
+      "task_key": "144ec2f68ac6207a3992d5c4681afe90eb1e020cfbbeb713f9a1dec264a213b1"
+    },
+    {
+      "gbd_feature_bytes": 81850474,
+      "input_sha256": "50ba123a0e576565de57bfb2347cd20441634cea0ee9ca493c7d0cb1cdc139bd",
+      "instance_id": "89002102bdb86946869a06dc1f604315",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 81852163,
+      "task_key": "1561520aaf4787aff28a8fba374d51bd91456d30a489dd1d89fa2dcf4d397aab"
+    },
+    {
+      "gbd_feature_bytes": 11154004,
+      "input_sha256": "5b25f54a70c44c310b4e56fe6f5e10b3f07c8ccb75d7492a3c8b0c73cd33cb49",
+      "instance_id": "bea83d274b1c57b2171b380e34fd645d",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 11157302,
+      "task_key": "1754a73244923c4154a3855e490f71bed7adb59f22f34bb6257de973ce3cb3e4"
+    },
+    {
+      "gbd_feature_bytes": 13657191,
+      "input_sha256": "a03f39bf573a9e09c6f212919eac06e16f9c9f07343d051bdf4fdc5e19537446",
+      "instance_id": "f17dfbed8c18716a41b231702e127524",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 13657402,
+      "task_key": "191e7cfb771e8d9ec5476aa8ae630b45a00d65ec2f88622dccea3f4978815ed0"
+    },
+    {
+      "gbd_feature_bytes": 92066,
+      "input_sha256": "cd7270bcf08084d7f7a994ea9f4698a94c2b796d9fee9f74ba66eb5cf92337ed",
+      "instance_id": "b1c8eaa002ac2fa1c8bfd1002738e78e",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 92225,
+      "task_key": "19ef9aa98e03f0a00482fd556f87b9ad999e73c32ffea24842fb03a79ae6a441"
+    },
+    {
+      "gbd_feature_bytes": 6761740,
+      "input_sha256": "20c88fb2ba4d207d9974e0704a6026893dc13cb5e2b4ceaeb496cc72455ae0d5",
+      "instance_id": "908433870bee8ba2c86f266d0b002fdb",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 6762286,
+      "task_key": "1acda4a776a426cdc966e3b796b87aea0062588c265783a16d7e39222a7126ec"
+    },
+    {
+      "gbd_feature_bytes": 8216773,
+      "input_sha256": "53d9f6fbd0a4d19d1281e79fb60b0d16284eb408b678fd932775f80629155bb2",
+      "instance_id": "96dea3458b5470bd6db5704a0d1e9742",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 8216833,
+      "task_key": "1b993d21f4a0409e923239909c7ee60421e5c61c9ae52990898e7e31547813de"
+    },
+    {
+      "gbd_feature_bytes": 31066899,
+      "input_sha256": "8da8afe13ebbde37f7fd60b521669b734f18c5d5739ef6ba0bbd476161c83ba3",
+      "instance_id": "5911653e4edadec391654c8f06353f9a",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 31067164,
+      "task_key": "1e0a9066a495503a98a84801f3ddbcbb643515f0ab8e0ca96c5696008e1a677f"
+    },
+    {
+      "gbd_feature_bytes": 6924224,
+      "input_sha256": "dfdb799f9ee5aa511aed952c9e1c4fc32af8da1667542017d4202ef8e414cf0c",
+      "instance_id": "2bdfcf23ac1829912a408402a540972a",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 6924856,
+      "task_key": "1eb565add2dd593afc7d2f8b3e3444039ec068fb4d0ebf284ab432d56c725801"
+    },
+    {
+      "gbd_feature_bytes": 156462,
+      "input_sha256": "8fe818c2bc32131fd6342051c9140696ace05fb62432adffe1f2b5b56b08990a",
+      "instance_id": "3619135ee5865be0a107449fb31defd9",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 156598,
+      "task_key": "1fe4b7963dd133dd7ca1ef29a579fac81eb5b5afc1118b2d95b0c75d8221f674"
+    },
+    {
+      "gbd_feature_bytes": 379984,
+      "input_sha256": "4bbc0928fb71f0cb30af3fe78e50d52e649aac99f9d8f29fed678b6d72ec1928",
+      "instance_id": "663bb5659e42c2c75f74354f48895302",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 380553,
+      "task_key": "22bafa638fe0573e80ea2327b9fb72941e3ffd0b0cd02f5342d4ff4ececa8d00"
+    },
+    {
+      "gbd_feature_bytes": 138775,
+      "input_sha256": "e58609bec6d88719e2e84598e0aa5da72cf830083fc68f70400821f1eeb38809",
+      "instance_id": "d35dfc38e1681b48ebceb4113d205a23",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 138872,
+      "task_key": "2462cd7f0355cb73e856234c763a3b40113df92ddcdf85e929f8eb2198953e14"
+    },
+    {
+      "gbd_feature_bytes": 67410,
+      "input_sha256": "a37a3f891d438d859c3285a1236ddc3d4e92cc50bb6e5dd74f1e3390c999400b",
+      "instance_id": "416e33a8463911546e4cd87d282a7e1e",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 67488,
+      "task_key": "247bf14dbd931d27121f7fac294417d3ef59ae47c89083cd0cb49809fdf764bd"
+    },
+    {
+      "gbd_feature_bytes": 248357,
+      "input_sha256": "4a0d523a27d176f8c90236387d138a029829de0450a37bc5291b7f606dbe4e89",
+      "instance_id": "1d90be3e37a42432d281cf6c1b8eae4b",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 248458,
+      "task_key": "2639d7f17ca27ea4c5a24508c1a0a8f435d2e343ac91da2f023f134233710fbb"
+    },
+    {
+      "gbd_feature_bytes": 278189,
+      "input_sha256": "773833d592a65a8a22b254cc8c8ed98f641736705bc2018e0a7e6f8a072048de",
+      "instance_id": "e430acf720b63044e5c825a00a76b0eb",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 278309,
+      "task_key": "27a2277ee55bb22af2537564c85313b0dbaaebd011e21c445c456edbe9a6aab3"
+    },
+    {
+      "gbd_feature_bytes": 226914,
+      "input_sha256": "b38a0161e666b101d04db08a7d8791002a80eb809c3fea69bef30fdbef9b2009",
+      "instance_id": "292bedf65cee7cc38fe8b2725eb50868",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 227002,
+      "task_key": "284c92045c33d7a43af9f2b608fc4f2772ae553d4cc35db6687626d3eaebdc5c"
+    },
+    {
+      "gbd_feature_bytes": 19055025,
+      "input_sha256": "35d948bb58257ffab61118cfa2a5d521b5232a144e2fec964110287549e76b5e",
+      "instance_id": "5dbe7b31f9b8d8e56045493439adb949",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 19055176,
+      "task_key": "28f684a017202c58d120fd73bda89fb028746e53fcebe7922074935de3fb1916"
+    },
+    {
+      "gbd_feature_bytes": 142447,
+      "input_sha256": "8572196848c9548a462363090b19c2d8d252c061bf00030efc160a9732401311",
+      "instance_id": "321732c1a401ff109b2f2b447e3dbe5e",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 142623,
+      "task_key": "297fad351ddb64db6a204fd48a43b99f03f1fa98e336f38ec1bef611bf5b3fae"
+    },
+    {
+      "gbd_feature_bytes": 481131,
+      "input_sha256": "6dda901641d91a62109db01a61099f89dc300e929c4af49ad8845e3c3b887b47",
+      "instance_id": "cb66276897e4d1ff1368a4430598e11c",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 481320,
+      "task_key": "2c977d646863efa9cd9038cca4434d52a72185307d46f25cac875c99c9a674c6"
+    },
+    {
+      "gbd_feature_bytes": 32477,
+      "input_sha256": "92e5fa675073ba9aad91afa4b81129fed5757ea37872fc2dbc3bd4ba0d720a4c",
+      "instance_id": "a497d784c61c330f012dcd80d44dcd43",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 32558,
+      "task_key": "2ebd712ed3cc32f3f358cdd0d223f3d432a727fd65212ed9f8d86c6e7f8e7a6c"
+    },
+    {
+      "gbd_feature_bytes": 13285524,
+      "input_sha256": "4d12688b1285558bbcad596251088ec9a858adf6f1cebc6638a05baed095b3ae",
+      "instance_id": "4f4d22ce7643079412975a662e9363fd",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 13289014,
+      "task_key": "31c0d874bf5fbeeb9d4d8355c2046e6f3776d483f26a8973f22a43b6ee506517"
+    },
+    {
+      "gbd_feature_bytes": 386593,
+      "input_sha256": "58972b0cfc49e736b9d6e21ea662e938e556e7c5ebe7bbde93749d973186db68",
+      "instance_id": "d1c28f29dc80ff82a3e32aa47fac8b41",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 386714,
+      "task_key": "31e9c5f6ec17f07d37f967cd1e2fe2f0603e7ae5831e968fbd7cfcae45a48cfd"
+    },
+    {
+      "gbd_feature_bytes": 13478959,
+      "input_sha256": "084c0481f215ee7aed0aad41bfdbe7744b6f460ad10c5d55e32104d055ccf4fa",
+      "instance_id": "8e62c5d47920ffe36052f86177403e70",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 13479169,
+      "task_key": "35cf119f0db43ba5af2ee48b687bb50805488b1f3c5151d38ad8ebe2c4e16279"
+    },
+    {
+      "gbd_feature_bytes": 199343,
+      "input_sha256": "65e41d237ec152b622dcb8631b46b9c0e2076539d2c2298ccc259b269a512bd8",
+      "instance_id": "d4256f750a8db53113c128b397722443",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 199565,
+      "task_key": "36788ed3c900974b8cc6ba550ea66059b9269320cd93fa694cdde4f3bb79a109"
+    },
+    {
+      "gbd_feature_bytes": 253056,
+      "input_sha256": "6bcedfc9f9a7efcf71946999fe88a1fe6b896a2bd89f9c1175f2e619521ac3db",
+      "instance_id": "69ad7473757d30d55fabab7882268483",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 253230,
+      "task_key": "3d37b2bea5faff9ba38abbbfe4648d20ec5bef72215c106f182268e348ae2f70"
+    },
+    {
+      "gbd_feature_bytes": 515993,
+      "input_sha256": "b4390b24ffb133cfcd00d5db77a6e865d112521e94d63c8db1037e3556530a87",
+      "instance_id": "944b4eaecefa1d15c2d2a8ac0c2d1c31",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 516045,
+      "task_key": "3d87d3e83555fbb8c575ccbbffde026c591c0749e59fe3a8d816b028f751fe46"
+    },
+    {
+      "gbd_feature_bytes": 13733628,
+      "input_sha256": "ef35fe8a9933d5fbba1053ffa92601087be9bb3efebad83dd7e42ce51429cf40",
+      "instance_id": "d89fc3e9c24e0383e940464f4704657e",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 13733843,
+      "task_key": "3ec8dd091d093071dd3edac27b305e5ae85150b53fd6408277aa2893bb1bee3d"
+    },
+    {
+      "gbd_feature_bytes": 261851,
+      "input_sha256": "be0f75fa56d8c761cc18296e3a506b760c0429fec2ae3fe7da4a31ad03556d60",
+      "instance_id": "16ff47a05b769ed6a04c7175cfc6da55",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 261974,
+      "task_key": "3f485b7a6021edea9bb1c6597cc87d657fd228cc05e60bdac9083950dee7c1f3"
+    },
+    {
+      "gbd_feature_bytes": 806649,
+      "input_sha256": "422e7250ac60e245219c52346c62f00736b42b7f91383cf611f3fbe137fad469",
+      "instance_id": "5246b7b99ba005af421d86299f7d26d0",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 806699,
+      "task_key": "4944850134f55a320b83d5f597bd83ad228070fd8cd1619516e009492bbb52fa"
+    },
+    {
+      "gbd_feature_bytes": 5015275,
+      "input_sha256": "7f3e57a9bf962129671128877b8e013f97009124f67d04e4fefc3ea097b41a8e",
+      "instance_id": "56913ff910c49dd5010653720970d944",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 5015324,
+      "task_key": "4caa8f50d6785325d768e31e29ea0400756161e019ebd1f78448614cc86130fb"
+    },
+    {
+      "gbd_feature_bytes": 5131588,
+      "input_sha256": "18e5798af169c4967c731763a3095229a3f5b99d66f70ff3f82bec7cb6de5f64",
+      "instance_id": "fdefca5f5236d5a8361dbdff0d017eeb",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 5132271,
+      "task_key": "4d5218ad13c641b344bbbb0aa942b67d86da0e2293f6b641633da95ca0f73a03"
+    },
+    {
+      "gbd_feature_bytes": 2109386,
+      "input_sha256": "3ce4a05858326856d2357e670ca2a188bc92a363c396e7bb850dc2851a3901cd",
+      "instance_id": "d0298807e51730261ef65db827dcd70f",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 2109490,
+      "task_key": "4e2882f465168b35a005ef8eecd7b6654bd034be7080f9f30b53370ec1429957"
+    },
+    {
+      "gbd_feature_bytes": 10768,
+      "input_sha256": "9e4c57b9739f39a924d03267f05542831dc87fec9e9e2238f5e4ba11886378f4",
+      "instance_id": "42f1311ce504db8cc0cb590a568da20a",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 10806,
+      "task_key": "5231569aa0052133ef6604fb546d27d9bb0f0f9dace3a3e187ae6720e17bc049"
+    },
+    {
+      "gbd_feature_bytes": 67298,
+      "input_sha256": "e0c761703826be3a2d61919f0c060dd2488ff084e0d84133c244308776f6106e",
+      "instance_id": "5c8f4e54e195d46053b04e232a5661c4",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 67374,
+      "task_key": "5435fe665b12e915f8de0958cd60a254c83e14ace4c83532523de030b8928554"
+    },
+    {
+      "gbd_feature_bytes": 16388935,
+      "input_sha256": "40bd545b6e3563463de70918a6033ae2432c3598048bf4b061bd562e97458ff9",
+      "instance_id": "1576e239e1c17939f24688a12fb10fae",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 16399235,
+      "task_key": "5526498349213442ea071952cfcd292a72fd4b4135620a35b76aa7427f4dccc9"
+    },
+    {
+      "gbd_feature_bytes": 2688693,
+      "input_sha256": "910171697fa9101d22b0ad6867f957f56231dd50e4e5c07edddfcfee6d657e38",
+      "instance_id": "47f5872181a581dff34eb33123fe3242",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 2688749,
+      "task_key": "5545b9c02ea0e783bbc8788a879751e9a5db98fbf745e5fd07a53995bfe045ad"
+    },
+    {
+      "gbd_feature_bytes": 19071711,
+      "input_sha256": "76ac0ffd608bbfa31d1579eeb14dc3a7edc874027783e70bcd95d902942a3197",
+      "instance_id": "c7ee94464ba3b25e97fc9b38868b7154",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 19071908,
+      "task_key": "56c1fe29840c3b4f59735aedd2a3bcf36bd3546f16222939fbabbfbfb0e8ff27"
+    },
+    {
+      "gbd_feature_bytes": 13567380,
+      "input_sha256": "86bb0a23b63a6a90efda17de902835291595316554e52ed6171dc7df2f22fd30",
+      "instance_id": "27570c6780aaade3dc771c6a12534fb8",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 13567854,
+      "task_key": "58025e793247abce21d3b3145af732d476215ff0a8374983648e9301f16c2f14"
+    },
+    {
+      "gbd_feature_bytes": 444138,
+      "input_sha256": "b2b55ca5352ae48bd9f212c1b5c0bd40a53f16b97ab16a3b206dfd3dd32f2dc2",
+      "instance_id": "12820b981e6b199a1b1a8c896386a337",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 444323,
+      "task_key": "589429cc267de915f8d3cc6d7ab8dd9c1c589819dfb9de293e1173c01ba84266"
+    },
+    {
+      "gbd_feature_bytes": 45773488,
+      "input_sha256": "ceadf3c390c072f24c7e55b604c99342fc1077de391ade00d8aa7ec7bf119229",
+      "instance_id": "fc67d414ea20a0ffffc087d7577af2fe",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 45774132,
+      "task_key": "591cb7b3e2539f44dae9b49855e8b56dba29001e001606b9b869533966c9eb60"
+    },
+    {
+      "gbd_feature_bytes": 161775,
+      "input_sha256": "53759ee4ecbba6d140f954e162e638cf24fdfe2c26f2e5f01172364c99bf775f",
+      "instance_id": "ac51df6b340190cd1182c06ff2955afa",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 161935,
+      "task_key": "59bebf41abf961e95c80a6f9668f99d7c632c28bd495196bd7a0185520546183"
+    },
+    {
+      "gbd_feature_bytes": 36670675,
+      "input_sha256": "f04d87abe42b9081bec4e0b021ce300699ad390e43c99fb9a1a01fe95adeb7ef",
+      "instance_id": "87f093067622b91fa9dc0de149c8b92c",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 36671545,
+      "task_key": "5cab290474fd8ca5387fe121ceda848f92d062be2331772eb1895b14e23b59ef"
+    },
+    {
+      "gbd_feature_bytes": 16883057,
+      "input_sha256": "fe844d381d52dab9f1d010a90232044cf9327a6a3031ff40b63ec4d398ea5480",
+      "instance_id": "9f1cb42232335f84435126b5ae0fb701",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 16883268,
+      "task_key": "5f38736fcf4f2b6837b8b232cfcb1f896255749e624ed6e6cacfe40575c34215"
+    },
+    {
+      "gbd_feature_bytes": 382099,
+      "input_sha256": "63e7aac6c7dcfcb2e77e4e07f585cb72802395872eda64420a155f497a16a5e9",
+      "instance_id": "75cc1f02ed4b8c06553ef579b163e1be",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 382613,
+      "task_key": "61cd305c331cee308bc68f7e486b825ca655547252522517952ceb831dd78674"
+    },
+    {
+      "gbd_feature_bytes": 1352551,
+      "input_sha256": "dd878bbdde2626d0dedaee5bd017a29252ba5eb4899c79684923c8fc4b58e6dc",
+      "instance_id": "e707c7e87816dd02ae433d268bd327c6",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 1352651,
+      "task_key": "62a9d1ac55dd7e43c4fe7d9cbdc46f27d9255535944e2c5b2b0604d119c5ce7f"
+    },
+    {
+      "gbd_feature_bytes": 443479,
+      "input_sha256": "55d82a81ef50c01462d799c60c13fedc40a992c2b5c3adee12e24592e86dadec",
+      "instance_id": "c0074020a48535e6062421cea2850dd0",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 443690,
+      "task_key": "667cfff62b1a821ca483a79c49823eee55aa3bfa94620040cd4a2560eac75760"
+    },
+    {
+      "gbd_feature_bytes": 16684470,
+      "input_sha256": "a1a8bf879149d62d177025364e40f6b61e31cb801ccb54a8c0e9b89e15dba733",
+      "instance_id": "98a9352230efc411c092f1dcdcdedcfc",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 16684621,
+      "task_key": "6969c0d8c36f9cd73710afeeb3ff15742c69b79f4390fe2b99ce56eefc0506e6"
+    },
+    {
+      "gbd_feature_bytes": 386663,
+      "input_sha256": "2905d297cd9a8ceb4564788e35a0dcbdb4934a4df6ef26ac36b7fc03494bf20f",
+      "instance_id": "1a936d41e3439d602c3ddcf96458a38c",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 386784,
+      "task_key": "6d4c2209aeaf07c9054c02b46c68f7f4df5e3d6517bfc6f9f94ef39ef18aaf11"
+    },
+    {
+      "gbd_feature_bytes": 17137512,
+      "input_sha256": "96b8e9afda8e602c0d341c7d0624e8afd5399bf3aaaee59b595ecf2101c17212",
+      "instance_id": "0a4880c0e882e6a4a31943522573c394",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 17137654,
+      "task_key": "6db9be0e66a7c2881d1ed36921075ef8eb479e8cdee2f4d695b9ad7270d53029"
+    },
+    {
+      "gbd_feature_bytes": 19034630,
+      "input_sha256": "898fcd5e008df0ea75b4cdf24ee56c9cde3fc5432a464825c3568a7d31e8f472",
+      "instance_id": "35b9091b90bd28a492c9556d6fc4348d",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 19034781,
+      "task_key": "6efeeaed37da7ead9ae08ffac114602ee573a36ef9aef6d4e6d9028e6698377d"
+    },
+    {
+      "gbd_feature_bytes": 15666100,
+      "input_sha256": "ece344b77e9468a26fca9e13f2df6e961383290c48e9fc3a64737ee67e13e7d3",
+      "instance_id": "22c8d6aa86d51e15ef5ab37479eda22b",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 15669790,
+      "task_key": "6f9f32d9896b2328f2744ad1d9965668eb13248554251db4e24794cee19a7ad6"
+    },
+    {
+      "gbd_feature_bytes": 31035007,
+      "input_sha256": "7b4fa7a4019d793f0c96ead52e655e51f4ac3390bfae71f4a58e6034bad4548e",
+      "instance_id": "d5928883c1e1f70764a31a83aa419eaf",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 31035215,
+      "task_key": "71e3ab510b60dff1abc9de195a3faba5633cf2d469f65489742f7cac3c0acc41"
+    },
+    {
+      "gbd_feature_bytes": 588797,
+      "input_sha256": "868a1371e5195ab85eb4ef94375c2e14feb18bb6418ef83bb85b5f918e2bb19c",
+      "instance_id": "53e347648553a2f2223614d3b4a07a4b",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 588994,
+      "task_key": "744717ed225d3e90ddc004f444d7540f6c653657f755c01207e123e2043471a7"
+    },
+    {
+      "gbd_feature_bytes": 14958031,
+      "input_sha256": "e998f84f8c5a38a905cac47e459adb03d8ced09fffafaeb81e760ad28bac7869",
+      "instance_id": "9277f5d1bc65276294617e672c4f2443",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 14958182,
+      "task_key": "74af01b3badb82500ede9efc69a2e399fcdaf07e8a44cb8d9e496d668b0a4750"
+    },
+    {
+      "gbd_feature_bytes": 90175312,
+      "input_sha256": "96f88a6578978a7087a16f0a84ea10c2d58b8da7620e547885b8274b2c0fbdd2",
+      "instance_id": "fe9b9a35531e13dab41307e569386dab",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 90176990,
+      "task_key": "753fccab8db3d0b8f8ec7bccae35cb3ead37436a7d23e193b50c6afb5aca2570"
+    },
+    {
+      "gbd_feature_bytes": 8194454,
+      "input_sha256": "7aada02dc300ce6db773dbab34f115969174896a161b6d28ce37f5743e8fff4f",
+      "instance_id": "7bdf3e5401cc263951003b569bcd689c",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 8194517,
+      "task_key": "759f53a467d96e7165ec40c19c76ebf6ceeed888db4095db5cadf77658a32a84"
+    },
+    {
+      "gbd_feature_bytes": 32425,
+      "input_sha256": "89cd0d3be21de667864f6c2d63637431f65f19defa9ce0d1233334ab826bb505",
+      "instance_id": "6e139783cfbcfeec85b49750ad11a615",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 32507,
+      "task_key": "7775258268f17cdaf7d31462907652a387b8d6bbf5bfa700603d125d25e65095"
+    },
+    {
+      "gbd_feature_bytes": 13918164,
+      "input_sha256": "aa6ccd3ce9754c7407426e30aa18c796a82bfcdfb0a309b6a7e9e4a140b60126",
+      "instance_id": "76bef98aafe7e718e98761f058c7dc1d",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 13918312,
+      "task_key": "7922abbc85616b7fa1804fe31b7e9d0e730764bbc1641bedd523f4dca5f03fbf"
+    },
+    {
+      "gbd_feature_bytes": 790336,
+      "input_sha256": "04ce53ff1a1c3b7285f4c99be56d8fed5e042cdaf5e946e7e23e732faef9ad68",
+      "instance_id": "09cd83e233380d0ba1fc56cee88367b1",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 790385,
+      "task_key": "793ef4aec5a4f5884a8c585cf24995cf74b00f028b8be9b61b8d10ceba0d9bfe"
+    },
+    {
+      "gbd_feature_bytes": 14079602,
+      "input_sha256": "5104020c76e95654e62d59d0167a446884ddf266fb46e6d5a649ab0538340eb8",
+      "instance_id": "981c4e83c5dd3694af4c367958e0ee5f",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 14079692,
+      "task_key": "79d83866bf4aedb51166c1008ea9cb072c8463daf8b8f274802f49b43afc1b59"
+    },
+    {
+      "gbd_feature_bytes": 128380,
+      "input_sha256": "afe45eb73d0d58968eebe3f648689a7bfebf5ae337412fb584a376ab640b579a",
+      "instance_id": "a932cd15aa770c7874b12476153b7df2",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 128548,
+      "task_key": "7c71da83d3c74cf799f7b2b96cea8eb32003667ce01f9f87dc6931601b326870"
+    },
+    {
+      "gbd_feature_bytes": 23832053,
+      "input_sha256": "161a95db0a12658f95d2945b959143a600f346a455d0fb8722c0bc999eae7df3",
+      "instance_id": "d88a8a62342be0ef04bd3b429f311352",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 23832212,
+      "task_key": "7e287fe2509efa5c9fee8fa590287b81caf0bfbc90a887646da7254853eea361"
+    },
+    {
+      "gbd_feature_bytes": 1786849,
+      "input_sha256": "c26ccb49d0922806da2c37b42a4aafa4b1e2eeeeea4b05eddce568c0b6c7c658",
+      "instance_id": "b361efe85442bd535849708e2b7ac639",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 1786918,
+      "task_key": "80c42a0313c8c6394a3eba688fd4f3851da621fd3c81301d1c5b6e4940c14e52"
+    },
+    {
+      "gbd_feature_bytes": 2112705,
+      "input_sha256": "7e9d896a8d31789b009b3b5ac6c6938aefe0aaa0990e854279db9211a212303f",
+      "instance_id": "efc1b7cc3861df8c2b68ca10399b794e",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 2113374,
+      "task_key": "81408222542abdd86e208cd67bddedeb7d239d685737856ac50900918c34bd2f"
+    },
+    {
+      "gbd_feature_bytes": 769624,
+      "input_sha256": "030a86c2d6550b78ea1f95e34fcf168758d8117da601f47ec649a52249be08b2",
+      "instance_id": "7a44efe7c2dbf88a61e7cb750f307937",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 769729,
+      "task_key": "81a3328f637c6fd4e45d2dacc1908b83a928bca080ec6d049b235830a4a7766a"
+    },
+    {
+      "gbd_feature_bytes": 64016361,
+      "input_sha256": "cf4f157e2176e1ac6a2ee7a60c2115998344d6ffe77e82d64db558afcc55d953",
+      "instance_id": "e7ee736cb1d140b3f70c6f519097aa32",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 64048891,
+      "task_key": "81a3aa9f78182a0b904b0a4820f14864361114c48e163cbad19ed7a8f95ac392"
+    },
+    {
+      "gbd_feature_bytes": 46817504,
+      "input_sha256": "2a4e7c2561a8e56df1ab667db77ccb82687860843b34b5b3ab45a54b44a5a587",
+      "instance_id": "41f507717c7c4553d23cd0cd1fc40104",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 46818392,
+      "task_key": "8457547f73f5923d8d53116dec64bc4d7861e7eebdd9aec8ee8eb8f23f63be57"
+    },
+    {
+      "gbd_feature_bytes": 723441,
+      "input_sha256": "0fba025fd217e26e12d47ac3dc3674ad43b7f31b7b9011ee9116815953ceda78",
+      "instance_id": "b3d3680b3287a989ce61a6db1054efd2",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 723871,
+      "task_key": "890fe5638c3413f10ba54a69530fb3ad2ba2692af50e9a1f6317fc766332358d"
+    },
+    {
+      "gbd_feature_bytes": 38277,
+      "input_sha256": "eb9a4740b712b149f08d5b430ae5907109eac3f231ce549a281703bc8e0965fb",
+      "instance_id": "695d8f6a2ee6e89e5a4f5d94abc3aca6",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 38353,
+      "task_key": "899d5526f64b1934c41c3be3999c1ff94999861cd5c61ec76b4a356fa91b3429"
+    },
+    {
+      "gbd_feature_bytes": 9701006,
+      "input_sha256": "2d3166f230aeb1d6de65b4d8edf4bde8ec88dbf6c913a41e2048ac1d26e3f6c4",
+      "instance_id": "546f8e069aa450002a30c9c47538fe95",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 9701065,
+      "task_key": "8c2fb11710fc9082065a9fac3651f295fbdd88226a59f1901808d0fbe52842f2"
+    },
+    {
+      "gbd_feature_bytes": 202481,
+      "input_sha256": "a2764eb285d8e173df1cf9a4d4fe47378ecbc2008bd56d99a9185668a38c0be3",
+      "instance_id": "8af30680e9329ae30c2cdbece636c470",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 202603,
+      "task_key": "90875ccbaba75c9219cda5f1e01686ba91aa2a0508785cee48698d06cb32c103"
+    },
+    {
+      "gbd_feature_bytes": 31079982,
+      "input_sha256": "a7366f1d8657558775528726df9533267b7bf4ce5f897fc736c58dbd8b4b8eff",
+      "instance_id": "35748015c5f16c9ee7e4d1894af497a0",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 31080398,
+      "task_key": "90e20998601070e0390e1a1d1e8ec95b64dbf1d9654704542a862e61034501eb"
+    },
+    {
+      "gbd_feature_bytes": 149069,
+      "input_sha256": "e3e3079cc4b2ee5861fdb3bce6d3ed6a471e6a0f1273591f9ef499d6bbf6d716",
+      "instance_id": "b99ba7e9113280393c64863dfbfa2c3b",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 149178,
+      "task_key": "91e9a25695ecafffb2f45d17c834cee4fea0b686ba512586e2af4a6ea6dcfb37"
+    },
+    {
+      "gbd_feature_bytes": 781395,
+      "input_sha256": "af40c3cde5fb3cbc95c038397bca3b58a453931abc74f0914676d06e8a5eb63e",
+      "instance_id": "602c8a200227ab9d64d855164d35b5cf",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 781500,
+      "task_key": "940954c574be31846f390fc5f6c22254acf84689981be97ad01fe05c0803fd19"
+    },
+    {
+      "gbd_feature_bytes": 4586658,
+      "input_sha256": "8b5bcbdbb45aff74cfacebbd01b9178d500c9a07273e2dbfec39e67a0c8f88b9",
+      "instance_id": "c86b261162cef181dc513963a8acb77f",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 4586788,
+      "task_key": "945b7369c28f6fabce62356883440dcf489e9a2a407e9483b882014d77b3b3f0"
+    },
+    {
+      "gbd_feature_bytes": 133802,
+      "input_sha256": "8469232dce636ee64d77804b32a8f62ac982baa7366c1dee76071afcc6215933",
+      "instance_id": "98a991c902324b02349e766ad357cdc6",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 133970,
+      "task_key": "9b6f3193a8816007ae282bb1492c3bfc38d3d5953ad45ad8b0c2c4aa97270753"
+    },
+    {
+      "gbd_feature_bytes": 5039120,
+      "input_sha256": "181b73ff4a56dca6860e6e5feee38835d4d6d23208337fbc1303e4b93467a87f",
+      "instance_id": "3a1f1b4b9a521737cc760017fe9d8b43",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 5039346,
+      "task_key": "a034debe60ada395ad37926f50d31be626b72beb5530869f0ce92a85f4666244"
+    },
+    {
+      "gbd_feature_bytes": 148392,
+      "input_sha256": "40ccb94e2afeedcd84fc8232b3b048e7b0d63bd6a00ff1d3f76003fe2ddbb2eb",
+      "instance_id": "60e39615d3af069932865a28b1bf6330",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 148551,
+      "task_key": "a17c893df6022c01441526a0b76f54e754d1c2513562b8fe26098ac6fad92192"
+    },
+    {
+      "gbd_feature_bytes": 205892,
+      "input_sha256": "5015bd457b93d37e8a4f899510d6e81bd8f2208c07370b82166a62cc3164bc4a",
+      "instance_id": "f0bafebdcce23ccfbaf6c27a7522069b",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 205931,
+      "task_key": "a2efcc4890c18ee18741bb1a1ecb380d6a8668d698fa080c43e9395e8b9bcff4"
+    },
+    {
+      "gbd_feature_bytes": 19488605,
+      "input_sha256": "76532ac4309fa8175eb6e62842e2124a7ffd40da3b6837a32462ea80e950a939",
+      "instance_id": "901fa244999d250bc8d8cce19cabc114",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 19488802,
+      "task_key": "a38c796a036b86e2cc5a6047d4c0b9382ea3f338ceaa4e4d15b6ab705790266f"
+    },
+    {
+      "gbd_feature_bytes": 67394,
+      "input_sha256": "41faaa4a2e7616b9e854bd8bc0255c6fc875ba1b48781ecdd1b19884fac24b8f",
+      "instance_id": "ca3c65a863526793968fc30618a42709",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 67471,
+      "task_key": "a7d9b67ed5fb35116418c103d697f4c91a8f37338fdf8fc980db085aadfdb004"
+    },
+    {
+      "gbd_feature_bytes": 135435,
+      "input_sha256": "63666d4822e7be11a6b2b7d3b248c655e9e9e78c0d0c5f239320cef89776df96",
+      "instance_id": "418b8aa42088cb0b1d85014dfa285b25",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 135602,
+      "task_key": "a9b43f6614c5224220425c1d30e400c24528c3d4e1f94d4a859d2f2f4a2b0ab9"
+    },
+    {
+      "gbd_feature_bytes": 298502,
+      "input_sha256": "6fa702e2d004b43c7beae256a33a89e7cdb52db9d592f5630226991902b93795",
+      "instance_id": "9dd565d002c343712eb5deda187e9034",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 298622,
+      "task_key": "ab7e762759b7d7cb4ca21edd80185a34e2b39fb85397bd3d9b69d56b02aae169"
+    },
+    {
+      "gbd_feature_bytes": 10035736,
+      "input_sha256": "975f5b18af757abaac276ffb65d2f01cee1df33e6a38fb4d8efa0d5a835e0484",
+      "instance_id": "82851650dea77d44864b3fd8ae387691",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 10037198,
+      "task_key": "ad33a51dbd7929a6d3a227c25c9759c20c484ccbab7c95a931db1d604c968d38"
+    },
+    {
+      "gbd_feature_bytes": 73902390,
+      "input_sha256": "da67705f243baac288d2eb63c6c5e6d336068a92e72e55576bf4cfc10d692517",
+      "instance_id": "30f64b3b0870ce5d22d4217782224dfe",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 73904003,
+      "task_key": "ae0300a01ea6f9379f1651badecdca83061e8f815c1d812732a8766880f88eaa"
+    },
+    {
+      "gbd_feature_bytes": 14756924,
+      "input_sha256": "52b7fc9c9773fe94065d180f0cf7aa0dce50461f7cfcb1d36a517421cab630f9",
+      "instance_id": "1b9f94befb5bc867c0e882f49973f793",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 14757075,
+      "task_key": "afc8e4220415ad3fecda4ec28ec6f6b1144a645cb437fd2bf580a63719afade5"
+    },
+    {
+      "gbd_feature_bytes": 905127,
+      "input_sha256": "733571b8e7db55b24a62e366703e5228e8680caa495f4ce20e7c96351e3a762b",
+      "instance_id": "21415e807689ea75536e846a24623de1",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 905284,
+      "task_key": "b358bb18613bcc5459ba489a545e830e214771b0c1afb0404c6881a38505c863"
+    },
+    {
+      "gbd_feature_bytes": 3980374,
+      "input_sha256": "09832848d3c4a52517cee047820cc3b7b52ee3c347d4dfab07410e4ff852bc62",
+      "instance_id": "6ef090a10c10352090100af7b6654c31",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 3980423,
+      "task_key": "b3f19e9b2ec38b5bfffb24c4bb7dbffb6150fb048850dd33f64e3cc3dbd20115"
+    },
+    {
+      "gbd_feature_bytes": 4536450,
+      "input_sha256": "47627af0f6ebe8d1cb89880b0fb2c52a61539a0b97341899787887ac717d5610",
+      "instance_id": "b18b24418dd863c1d631698d7d45041f",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 4536506,
+      "task_key": "b67c219b736d0abf80a5f1c05b3d216170bd939f9cda71841cc21a596ad18bfc"
+    },
+    {
+      "gbd_feature_bytes": 14977140,
+      "input_sha256": "35c5efb370cf0f34cd984abb0bd8b3e5561f88cd88a3f6772254b4101e7db528",
+      "instance_id": "fdc4dd704e4d93a50fafb1debd8a6789",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 14977288,
+      "task_key": "b8505d272bb2635dc57a0561e5ce53c2906f733069a0b2e41c6cf3c54a026cec"
+    },
+    {
+      "gbd_feature_bytes": 591144,
+      "input_sha256": "92a7cfea825f7c3d496d281a5ee4ef1a293f9383d35c3cfefc7b16b2ea34ab34",
+      "instance_id": "f6f91f6a44c3953b788c026cbbaa4e91",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 591268,
+      "task_key": "b9474b556ae95656bbc55d79b585e4e98ec9f854a3e85c336c9b50ebeb32613c"
+    },
+    {
+      "gbd_feature_bytes": 156571,
+      "input_sha256": "85dc7984528bcf1c692dbdaa13ed4443bbf549c450fb02cba752e4fb4f502f2a",
+      "instance_id": "d971241ca861121371d20be1d61c15a3",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 156708,
+      "task_key": "bcb4f17751028e0be351cf27b974204682430eca4d76dd4bce1f95d6f32ef7b7"
+    },
+    {
+      "gbd_feature_bytes": 704015,
+      "input_sha256": "178b4229116087e0c656a47ae59652e9e950f7f98f36a49ce7cd2c6b614d7ec7",
+      "instance_id": "5d62e4d7ab116c477c8d4f5bd36907de",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 704155,
+      "task_key": "c0da55672e52191a1b20b1c122084d398dc7ee3126443d2c626b639f6ce1db24"
+    },
+    {
+      "gbd_feature_bytes": 55707,
+      "input_sha256": "582a4c071196570e817d16ea8c108dc7a9634af5a5b8d455936cf4502b3158ed",
+      "instance_id": "22df1827e3253fc824cc7ce806d75e0a",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 55783,
+      "task_key": "c2aec9097ee35880f40c7369aef704ff757d53544972c19e3e45cf5f5dc39120"
+    },
+    {
+      "gbd_feature_bytes": 704073,
+      "input_sha256": "8277fa4f83c32d064b7396d89db871af51a5edc10b0a33bbbe2984dd2b393cfd",
+      "instance_id": "3cda1cbfbcabfc71ece7961d4d6ad1bb",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 704224,
+      "task_key": "c3e0d0b0cbb3b2e2a7c0122643cbe2342e49848ff5e0d9c0fd0e16e41976e8a0"
+    },
+    {
+      "gbd_feature_bytes": 23150476,
+      "input_sha256": "409a47c2d553d9af7229ce3c05455263cc371f7f078ef3071efc203b5f87b61f",
+      "instance_id": "0f269188707a1b2f309dd1c70bfe22b0",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 23150627,
+      "task_key": "c50649e16bce60a1f63d1a66754195264317bb97dfff906782dccc3c8ea43e1b"
+    },
+    {
+      "gbd_feature_bytes": 259168,
+      "input_sha256": "b9952bfc412b7ac97e799ff0cc2872b1a6c1f171ff85b24bdeb681a25a7b8f68",
+      "instance_id": "8b22396ef06770c7dfa7552a610fc911",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 259347,
+      "task_key": "c76d67bb29764fa7710c712df42ab79f4f512eada6cc4485f0ffdca80016156d"
+    },
+    {
+      "gbd_feature_bytes": 17098703,
+      "input_sha256": "4983d220296cf66fc502f07647743855b239a18edc7d919db18035c867cc82b3",
+      "instance_id": "fae6cf26f3da1e7d8fc4926a9ca86b61",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 17098920,
+      "task_key": "c7ed70696672219dba3f86bc352dc85672e37df205f0dbe2e971afb836e60b9d"
+    },
+    {
+      "gbd_feature_bytes": 29474746,
+      "input_sha256": "c0ff7f0dbae8283a733097a365405c80e3fe3c0041a4eb26e0e9878c86a32bb8",
+      "instance_id": "04f43bb4a4f2c193a18e7195a4fd8e41",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 29474802,
+      "task_key": "cec8d3bf5f24b6320824b0caad9d8b465649a46163191f1e5f37e94e742cabe9"
+    },
+    {
+      "gbd_feature_bytes": 49900820,
+      "input_sha256": "871b625d0509c985c821c0ea6f703729bcc51c9ddf9cbc52b26ea1c7be25fb8f",
+      "instance_id": "c033577c6f5f9a1545537518af964305",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 49901852,
+      "task_key": "d481cfd1ef2c90ac8ab63b1afed45c19d4d180b1d40b4d6bcf911ebdbc785bef"
+    },
+    {
+      "gbd_feature_bytes": 3734127,
+      "input_sha256": "92d69a56836e0abbc2381d8ad1f00d5b409e4627685080e869c4432b8de36188",
+      "instance_id": "06d2ca2ee0b47f00d93090495f7fd4f4",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 3734285,
+      "task_key": "d5a28bcf6d54e28794b5d34158afd86d275eee3e81731542861a00822eb03363"
+    },
+    {
+      "gbd_feature_bytes": 17143494,
+      "input_sha256": "52e8c2bba3e7bbcfed7517c2054e56788831b9e4de1090c63e77b9cc882dc763",
+      "instance_id": "27cb3a6ca772613c5998d7f78a55ba45",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 17143645,
+      "task_key": "d66b8b62e6e52c6338fb9ebd69f614a2890cca8ab94d4166b9fddd79e61209ec"
+    },
+    {
+      "gbd_feature_bytes": 4918926,
+      "input_sha256": "96ed68efd2f07b669b29416705660884b3f5223814729423d7a77b203f04d1b2",
+      "instance_id": "3ef7fa06c6380f12cfe2970873da6fb1",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 4918989,
+      "task_key": "d7af5b480ee397c133b3d90572a5563dab1217840c529d938b1f9fdd2775bb55"
+    },
+    {
+      "gbd_feature_bytes": 17106,
+      "input_sha256": "79618e35c83016fd1a188eb63ed499c3d1d4c364f710c9c9a93eb7925054a9af",
+      "instance_id": "77a0d54f2fb3740a9a321623c0c10f3e",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 17154,
+      "task_key": "db99e740a5d6a3d3d56ca86082eb5a3287613b415465d825244cbb52def992d3"
+    },
+    {
+      "gbd_feature_bytes": 377075,
+      "input_sha256": "0c9693f9dba510919be754a36dd0875dee7a53f33a502eb36b97e5bbde9ea68d",
+      "instance_id": "918d9e7c2e197312517736421d728958",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 377579,
+      "task_key": "e34b59f83381ee23de284f1ca3f981e5e5571e35a4eddb186fea5caa91e11063"
+    },
+    {
+      "gbd_feature_bytes": 150840,
+      "input_sha256": "d4a999db60e61564eebc46338d1cc9b1ad94b9ade22913049f87338cab731af3",
+      "instance_id": "1b84df53843ecd90ec8c3c7a01cada6c",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 151575,
+      "task_key": "e3982efbb59b2c7cbfa3716f4b6726bb61521c9dfadaa96a7baa135f5adf304f"
+    },
+    {
+      "gbd_feature_bytes": 617954,
+      "input_sha256": "89c464dd68a9c19752843b3906ee658e999201b96bdd9e193d64703fcfcfd6f1",
+      "instance_id": "4c037368864330bff3940837ac28ac14",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 618093,
+      "task_key": "e5dec1dfa665aa9a1044c047f68b2b76e9978952ac49408da52f6bbd92955730"
+    },
+    {
+      "gbd_feature_bytes": 45773643,
+      "input_sha256": "7202149c629eb1d6ba80db6a44a17258c315263381067070d40e88fdbc775366",
+      "instance_id": "ea40162dda3f9b923b6160854cf7f75a",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 45774287,
+      "task_key": "e739bd8f3be79fe21b64ac531211c41fceabab176f291005d15cfcc85f6c227c"
+    },
+    {
+      "gbd_feature_bytes": 12463469,
+      "input_sha256": "b8424f411addc4c973a01e4b8035a149dcc1516ed465485f34bbf991f266188f",
+      "instance_id": "bc5a06872fa6dfc9acbc7f782f0a4439",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 12463703,
+      "task_key": "e9036009a497a65647a9b4073c8af2e6c4c43d06bff254cf90cf21b9a451f8c3"
+    },
+    {
+      "gbd_feature_bytes": 27753070,
+      "input_sha256": "5350dbb96fd38547cd1b31b960e8e202c98ae195284046731103bece77545025",
+      "instance_id": "df813fe752353c2cc3b9040865aecfe4",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 27753257,
+      "task_key": "e95414dca030bf5044bc8413c540a8e37e8fe7cc4a170d59a9bdd390dd16d0e9"
+    },
+    {
+      "gbd_feature_bytes": 226946,
+      "input_sha256": "a1414a4953ab90373cc10dfb1d0b0df768b24aeb243a84bb1809c349d81a16de",
+      "instance_id": "31e843c53a76ff3961935ad55b953298",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 227055,
+      "task_key": "ea48d84ff3aebbbe6cf21dccd2335447102be2eac5acb611f730194dd253a562"
+    },
+    {
+      "gbd_feature_bytes": 332055,
+      "input_sha256": "d60cad9e8029253151e1a0896724e73535be0f850c179e7da70584af714d731b",
+      "instance_id": "acc0bc3ef52aa228cc35c2d9bb3ae249",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 332245,
+      "task_key": "eb63d3d00ad7e62d41d01a1121904141a7d3962d25f92278cf32ded650a5f35e"
+    },
+    {
+      "gbd_feature_bytes": 14076695,
+      "input_sha256": "3c325d0151b54f5ea123acdb2aabadef301c8cd5acea3e212d717de407eb08a1",
+      "instance_id": "25390e9d1fa1926485db7eb2d5a20ea8",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 14076933,
+      "task_key": "ecd0ac6a9ce9b965ce461b5e1e0f6f5afacf8285faaa4487415f17cf531e9ffa"
+    },
+    {
+      "gbd_feature_bytes": 399289,
+      "input_sha256": "1d0564210e9e3a7ff515711bf111a5da57b580d25a3032c18c64467c78c1f36c",
+      "instance_id": "6cb995b1c550beb579c53e27f6ca881a",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 399470,
+      "task_key": "ed2e825df3a79a29037a3c4cfdbe231e754408a796b868a4448cf0980ff4e18a"
+    },
+    {
+      "gbd_feature_bytes": 3317265,
+      "input_sha256": "1b18219ad5fe71c9db9a3d118ebeb29feae128da0c296a557d0bc2423e1ba08a",
+      "instance_id": "c569d4b2b2e90a1a70bd23a1169355ef",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 3318673,
+      "task_key": "ef37ea7ce1f82d6ce4c35a3c2a28b3eec58bd51f5b733c4e6d245e8d7dbad53d"
+    },
+    {
+      "gbd_feature_bytes": 9315958,
+      "input_sha256": "563f42dc89d80baf2e672f2cba5abd59e41909980da7cccdf788119dd2538e5f",
+      "instance_id": "a70883771fd1c210d94a916d52510a3a",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 9324855,
+      "task_key": "f2215041622d38fd97649722401c8262e09958f8f6a761b6da9bab478a894b94"
+    },
+    {
+      "gbd_feature_bytes": 1668802,
+      "input_sha256": "e67bb0065623cb1014899f98553b33cf3f93706b81204b8e6282cc4d66898752",
+      "instance_id": "35ec95b9b2398fb522db178855016ae0",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 1669102,
+      "task_key": "f226a8366c9e2e07f6178e861126c0db0f54dd556df053de11aa20721156d43c"
+    },
+    {
+      "gbd_feature_bytes": 8911112,
+      "input_sha256": "a63ebf37cc70884ee4c2f0ba32cb7c5434bfa4a3817536254a33cd9a907a25af",
+      "instance_id": "41d14756a06872844577fc0abddb58aa",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 8911180,
+      "task_key": "f2282bdaf78befb605b881feebee62cc93b8e1a3a1c648ea7c46ec5ae60d5127"
+    },
+    {
+      "gbd_feature_bytes": 10015538,
+      "input_sha256": "f38bc60bb64713aa686c27788c0c4cff181f798ebb415c6e97c979573b915f62",
+      "instance_id": "d6afa5689d75e37111656db8980dd54b",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_local_manifest.json",
+      "original_node_id": "local-imac",
+      "raw_cnf_bytes": 10015595,
+      "task_key": "f30c148d704149d6e2c9fbc827985ff9989a6c50aff56b9d0623f0483ab105b9"
+    },
+    {
+      "gbd_feature_bytes": 8401144,
+      "input_sha256": "8ca0acf3b5bee970d885e9efb8f607a467b6d8fa75bbd62f5cc0e29ba4cff0d7",
+      "instance_id": "29b573e0f7b922c4bd0a675db005265f",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 8401286,
+      "task_key": "f9d23c924365106bc763d9d605bb7fb0eaae4c8a3e628c26165443b321145fd3"
+    },
+    {
+      "gbd_feature_bytes": 1103686,
+      "input_sha256": "e73caf0c3d62cfa5ce1b8c80c83c30df50c7e99275f1f43f69acdd043f050735",
+      "instance_id": "5831f35622f3e6c666f0cee6cac60e4c",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 1112287,
+      "task_key": "fadc9b38cb97d44f5350a6cb367cfbcef8898ccd7e6581e4af33c51a78c84826"
+    },
+    {
+      "gbd_feature_bytes": 6623517,
+      "input_sha256": "0de68a09b2bf8865162d9e796df51fc7fcf66579553daa824f4ce4e69f850c81",
+      "instance_id": "f25a1df88f89c6bcbe2602fa7f6e816b",
+      "original_assignment_manifest": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "original_node_id": "remote-8cpu",
+      "raw_cnf_bytes": 6624127,
+      "task_key": "ff7e16606d7b86eeb63a90ea17953f3a2d1b1b29acaadaadd5c30ba8fb25731b"
+    }
+  ],
+  "experiment_id": "ta_static_v1",
+  "frozen_public_checksum_source": {
+    "path": "/Users/expexp/Documents/Codex/2026-10-28/new-chat/work/forcephase/benchmarks/checksums.csv",
+    "raw_size_column": "bytes_cnf",
+    "sha256": "befecf0283b1433627dbd96687311482e088220a0dd52914ccebedc2e5801f14"
+  },
+  "identity_preservation": {
+    "all_exact_raw_sizes_within_frozen_cap": true,
+    "compressed_sha256_unchanged": true,
+    "extractor_source_sha256_unchanged": true,
+    "input_sha256_unchanged": true,
+    "profile_unchanged": true,
+    "task_keys_unchanged": true,
+    "tasks": 128
+  },
+  "input_cache": "/home/vipuser/forcephase_phase_prediction_20261104/data",
+  "launch_conditions": [
+    "Commit protocol, source fix, recovery manifest and sidecar before execution.",
+    "Preserve root-reported terminal remote96 completion and all 3 old failed receipts in an immutable original output location.",
+    "Use a new output binding, the new node ID, unchanged worker/extractor, and existing verified input cache.",
+    "Never restart an original local/remote output or silently rerun completed healthy tasks."
+  ],
+  "local_controller_terminal_exit_code": 2,
+  "local_import_output_dir": "/Users/expexp/Documents/ChatGPT/automated-reasoning/outputs/ta_feature_discovery/static_remote_recovery_v1",
+  "local_terminal_evidence": {
+    "build_exists": false,
+    "completion_exists": false,
+    "inflight": [],
+    "observed_utc": "2026-11-05T04:54:44.141034+00:00",
+    "owner_binding_sha256": "e39e4b79252cd1ccffba3e1662ee1505faedc8cc9602846cf8deec8196435147",
+    "owner_observation_sha256": "e52793245c56c5264647e6a1cf238eedef0b8b2824dbb2bd25884b4b49533cb7",
+    "owner_pid": 45565,
+    "owner_pid_exists": false,
+    "results": [],
+    "temporary": []
+  },
+  "new_recovery_costs": "Record separately; do not erase earlier preparation failures or charge them as unmeasured zero.",
+  "node_id": "remote-8cpu-recovery",
+  "old_failed_cpu_s": 1.185257515,
+  "original_assignments": [
+    {
+      "path": "configs/ta_feature_discovery/static_local_manifest.json",
+      "planned": 32,
+      "sha256": "12d89865657a7adc1eda564f5160a4883af2be560bc777c77595b082d715834c"
+    },
+    {
+      "path": "configs/ta_feature_discovery/static_remote_manifest.json",
+      "planned": 96,
+      "sha256": "6a87f6723d5b41132b05133c602114f80fa8e6588353f9df5756b81e59ea4329"
+    }
+  ],
+  "owner": "root",
+  "previously_unstarted_tasks": 125,
+  "prior_failed_attempts_retained": 3,
+  "recorded_utc": "2026-11-05T04:54:44.141034+00:00",
+  "recovery_manifest": "configs/ta_feature_discovery/static_recovery_manifest_v1.json",
+  "recovery_manifest_file_sha256": "79240f971c5d9f9a0b4dbab834f7398707bacecf2c0594b0cac7b43ee89d8cc0",
+  "relative_output_dir": "static_remote_recovery_v1",
+  "remote_terminal_evidence": {
+    "active_tasks": 0,
+    "completed": 3,
+    "completion_status": "STOPPED_INCOMPLETE",
+    "controller_session_id": 7050,
+    "exit_code": 2,
+    "failure": "input byte count differs from frozen public metadata",
+    "feature_cpu_s": 0.0,
+    "old_artifact_preservation": "Root owner will copy original receipts/completion before recovery launch; never overwrite original output.",
+    "planned": 96,
+    "preparation_cpu_s": 1.185257515,
+    "raw_input_sha_checks_reported": "PASSED for all 3 failed preparations",
+    "source": "Root owner authoritative terminal tool result",
+    "statuses": {
+      "FAILED": 3
+    }
+  },
+  "requested_max_workers": 3,
+  "schema": "ta_feature_discovery.static_recovery.v1",
+  "shard_id": "all-128-missing-recovery-v1",
+  "state": "READY_FOR_ROOT_COMMIT_NOT_EXECUTED",
+  "statistical_barrier": "No feedback/candidate scoring until all 240 parent rows have final feature state; gate/test remain sealed."
+}

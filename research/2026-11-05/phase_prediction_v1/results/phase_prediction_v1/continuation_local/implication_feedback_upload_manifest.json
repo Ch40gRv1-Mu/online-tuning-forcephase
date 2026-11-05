@@ -1,0 +1,11 @@
+{
+  "archive_sha256": "6c7a68c3f0e7414c87141e842a283c61dfddf0d2c420a06b7bad5e2673f47ff6",
+  "members": {
+    "src/implication_feedback_v1/run_implication_feedback.py": "2c043e6bb073ef92024da575b146c3094b07632f54e76414d7ba9053f672ffde",
+    "src/implication_feedback_v1/run_pilot.py": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "metadata/implication_feedback48_v1.csv": "67c977f53eacbafd3737e284e55de3aa560828f9c160fd458afba4f690feb20b",
+    "metadata/implication_feedback48_v1_spec.json": "d60c8c2cf7b4edcccc872cbc131b2a2edb089f4d7be5c687be519dc346e091cd"
+  },
+  "no_solver_calls": true,
+  "no_old_performance_upload": true
+}

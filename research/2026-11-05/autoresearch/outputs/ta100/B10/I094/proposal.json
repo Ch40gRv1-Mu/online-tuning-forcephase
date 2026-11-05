@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_learned_postassertion_reuse_age"
+    ],
+    "hypothesis": "固定bottom-k256学习子句样本中，明确跳过定义该子句的birth driving assertion后，首次再次作为reason使用的冲突年龄中位数；未复用者保持右删失。",
+    "id": "I094",
+    "mechanism_key": "learned_lemma_postassertion_reuse_latency",
+    "registry_id": "TD24v2"
+  },
+  "original_preexecution_config": "configs/ta100/B10.json",
+  "original_config_sha256": "67f43debe577a48dd5d37d15fccbcb00c27ebc3d4da3745941328b899ad634e0",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

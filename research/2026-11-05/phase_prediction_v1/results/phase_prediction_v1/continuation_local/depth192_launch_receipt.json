@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"utc\": \"2026-11-05T04:54:28Z\", \"stage\": \"depth192_v1\", \"command\": [\"/usr/bin/time\", \"-v\", \"-o\", \"/home/vipuser/forcephase_phase_prediction_20261104/logs/depth192_v1.resources.txt\", \"flock\", \"-n\", \"-F\", \"/home/vipuser/forcephase_phase_prediction_20261104/phases/depth192_v1/.execution.lock\", \"python3\", \"-u\", \"/home/vipuser/forcephase_phase_prediction_20261104/src/depth_v1/run_depth_features.py\", \"--base\", \"/home/vipuser/forcephase_phase_prediction_20261104\", \"--cohort\", \"/home/vipuser/forcephase_phase_prediction_20261104/metadata/depth192_v1.csv\"], \"protocol_commit\": \"bd48ba5\", \"source_commit\": \"08245db\", \"parents\": 192, \"fit\": 144, \"feedback\": 48, \"new_solver_runs\": 0, \"feature_cpu_budget_h\": 6, \"conservative_research_envelope_h\": 64.75481539889945, \"time_pid\": 58782}\n",
+  "stderr": ""
+}

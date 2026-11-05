@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "algebra_persistent_unsat_core"
+    ],
+    "hypothesis": "Using exactly the same129-state trajectory as RA16, among clauses touching the LOCALcube and violated at least once, return the fraction violated in all129 states.",
+    "id": "I077",
+    "mechanism_key": "fixed_noisy_walk_persistent_constraint_identity",
+    "registry_id": "RA17"
+  },
+  "original_preexecution_config": "configs/ta100/B08.json",
+  "original_config_sha256": "2c2b205bbb714ce7c0732d8cd22147e5fa8e6693734c5285fa9d50dbcb148243",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

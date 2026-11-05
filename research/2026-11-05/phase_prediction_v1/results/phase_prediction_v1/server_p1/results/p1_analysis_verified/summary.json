@@ -1,0 +1,35 @@
+{
+  "dataset_role": "development_fit_pilot; not held-out validation",
+  "parents": 48,
+  "static_mean_par2": {
+    "D": 93.73884752083333,
+    "Fplus": 90.409961375,
+    "Fminus": 94.46073547916667
+  },
+  "static_solved": {
+    "D": 11,
+    "Fplus": 13,
+    "Fminus": 11
+  },
+  "pilot_single_best_static_diagnostic": "Fplus",
+  "oracle_mean_par2_diagnostic": 90.21264364583334,
+  "oracle_improvement_over_D": 0.03761731628091869,
+  "oracle_improvement_over_pilot_SBS": 0.0021824777509662496,
+  "nominal_winners": {
+    "unresolved": 35,
+    "Fminus": 2,
+    "Fplus": 6,
+    "D": 5
+  },
+  "clear_winners": {
+    "ambiguous_or_unresolved": 42,
+    "Fplus": 4,
+    "D": 1,
+    "Fminus": 1
+  },
+  "feature_mean_cpu_s": 0.34339922916666665,
+  "feature_median_cpu_s": 0.029188,
+  "solver_cpu_hours": 1.9005095516666666,
+  "verification_cpu_hours": 0.10189107973277778,
+  "policies_diagnostic": []
+}

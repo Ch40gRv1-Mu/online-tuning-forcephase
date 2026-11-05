@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "graph_primal_transitivity"
+    ],
+    "hypothesis": "On the deduplicated primal graph G_V, f=3*triangle_count/max(1,sum_v choose(deg_GV(v),2)).",
+    "id": "I028",
+    "mechanism_key": "primal_transitivity_wedge_closure",
+    "registry_id": "S08"
+  },
+  "original_preexecution_config": "configs/ta100/B03.json",
+  "original_config_sha256": "f1cdb2c13dee711eb5e9b558dcf47e1ce75bc007a1d538873f81a9462393b3a6",
+  "registry_sha256": "8bcc3d40f940f6c9ff59374c3f46e20b4b936d5fb66bc3d4877710a9adfe67bf",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

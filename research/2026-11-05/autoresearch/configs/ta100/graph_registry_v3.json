@@ -1,0 +1,1346 @@
+{
+  "candidate_count": 40,
+  "candidates": [
+    {
+      "asymptotic_cost": "O(L+n+m) time; O(n+m) storage",
+      "columns": [
+        "graph_incidence_assortativity"
+      ],
+      "cost_tier": "A_LINEAR",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_incidence_assortativity",
+      "id": "S01",
+      "implementation": "First stream obtains d_v,k_C; second accumulates six Pearson sums over unique variable-clause edges. No projected edges.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Tests whether high-degree variables preferentially carry long constraints, a joint incidence pattern absent from the marginal degree and length summaries.",
+      "module": "graph10",
+      "name": "Variable-degree/constraint-arity endpoint coupling",
+      "novelty_key": "incidence_joint_degree_arity_assortativity",
+      "novelty_mechanism_key": "incidence_joint_degree_arity_assortativity",
+      "novelty_vs_existing": "Old34 contain separate degree/length moments, not their incidence-conditioned joint statistic.",
+      "primary_definition": "r=PearsonCorr_{(v,C) in E}(d_v,k_C), where k_C=|vars(C)| and d_v=#clauses containing v. Return null for zero endpoint variance.",
+      "source_ids": [
+        "assort"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://arxiv.org/abs/cond-mat/0209450"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(L) time; O(1) extra storage",
+      "columns": [
+        "graph_sign_arity_information"
+      ],
+      "cost_tier": "A_LINEAR",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_sign_arity_information",
+      "id": "S02",
+      "implementation": "Accumulate an exact 2x9 table while parsing canonical non-tautological clauses; no fitted bins or output labels.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures whether encoding polarity is distributed differently between short and long constraints, even at identical total positive fraction.",
+      "module": "graph10",
+      "name": "Sign/constraint-arity dependence",
+      "novelty_key": "literal_sign_constraint_arity_mutual_information",
+      "novelty_mechanism_key": "literal_sign_constraint_arity_mutual_information",
+      "novelty_vs_existing": "Joint dependence differs from overall polarity, clause lengths and the existing length-weighted signed clause sum.",
+      "primary_definition": "I(S;K)=sum_{s,k} p(s,k) log[p(s,k)/(p(s)p(k))] over literal occurrences, with K=min(clause_literal_count,9), S=positive/negative; normalize by H(S) when nonzero.",
+      "source_ids": [
+        "satzilla"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(L) time; O(n) storage",
+      "columns": [
+        "graph_horn_interface"
+      ],
+      "cost_tier": "A_LINEAR",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_horn_interface",
+      "id": "S03",
+      "implementation": "Count positive literals per clause to classify Horn; accumulate h_v,a_v. Anti-Horn is not a second family.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Quantifies interaction between a tractable Horn portion and the remaining constraints, instead of just the Horn-clause fraction.",
+      "module": "graph10",
+      "name": "Horn/non-Horn shared-variable interface",
+      "novelty_key": "horn_nonhorn_incidence_interface",
+      "novelty_mechanism_key": "horn_nonhorn_incidence_interface",
+      "novelty_vs_existing": "Old Horn fraction and pure-variable statistics do not locate the common interface. No root propagation or renamable-Horn search.",
+      "primary_definition": "Let h_v and a_v count incidences of v in Horn and non-Horn clauses. f=sum_v min(h_v,a_v)/max(1,L).",
+      "source_ids": [
+        "satzilla"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(sum_C k_C^2), explicitly capped; bounded map",
+      "columns": [
+        "graph_butterfly_overlap"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_butterfly_overlap",
+      "id": "S04",
+      "implementation": "Enumerate within-clause variable pairs into an exact hash map capped at 1000000 keys/2000000 visits; on cap use null, not a biased partial count. A later frozen wedge sampler may replace it under the same family.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Detects constraints repeatedly addressing the same variable pairs: local overlap concentration, beyond total cycle excess.",
+      "module": "graph10",
+      "name": "Repeated two-variable constraint overlap",
+      "novelty_key": "incidence_butterfly_overlap_reuse",
+      "novelty_mechanism_key": "incidence_butterfly_overlap_reuse",
+      "novelty_vs_existing": "Old cycle excess counts all independent cycles; it cannot distinguish concentrated 4-cycle reuse. Not a ternary parity or exclusion template.",
+      "primary_definition": "q_uv=#clauses containing both u and v. B=sum_{u<v} choose(q_uv,2); f=B/max(1,sum_C choose(k_C,2)).",
+      "source_ids": [
+        "butterfly"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://arxiv.org/abs/1801.00338"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(L+n+m) time/storage",
+      "columns": [
+        "graph_core_retention"
+      ],
+      "cost_tier": "A_LINEAR",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_core_retention",
+      "id": "S05",
+      "implementation": "CSR incidence graph; queue every low-degree vertex once; decrement neighboring live degrees. No assignments and no clause propagation.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures how much survives recursive leaf removal, exposing an irreducible interaction core.",
+      "module": "graph10",
+      "name": "Recursive incidence-core retention",
+      "novelty_key": "incidence_iterated_core_retention",
+      "novelty_mechanism_key": "incidence_iterated_core_retention",
+      "novelty_vs_existing": "Initial leaf fraction and raw cycle excess do not determine how far recursive topological peeling cascades. Not the H03 UP residual or the root autarky feature.",
+      "primary_definition": "Peel all degree<2 vertices from the undirected incidence graph to a fixed point. f=#retained variable vertices/max(1,n).",
+      "source_ids": [
+        "core"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://arxiv.org/abs/cs/0310049"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(L+n+m) time/storage",
+      "columns": [
+        "graph_articulation_fragility"
+      ],
+      "cost_tier": "A_LINEAR",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_articulation_fragility",
+      "id": "S06",
+      "implementation": "Iterative undirected DFS with lowlinks and variable-weighted subtree sizes; only variable deletions, no directed SCC or implication edges.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures the fraction of variable pairs whose connection relies on one variable, a decomposition bottleneck hidden by connected-component size.",
+      "module": "graph10",
+      "name": "Articulation separation mass",
+      "novelty_key": "incidence_single_variable_separator_fragility",
+      "novelty_mechanism_key": "incidence_single_variable_separator_fragility",
+      "novelty_vs_existing": "Largest component and leaf counts are not separator robustness. Explicitly different graph/object from the other owner's binary implication SCC/depth.",
+      "primary_definition": "For each variable v in an original component with N variable vertices, let s_i be variable counts in components after deleting v. f=max_v[((N-1)^2-sum_i s_i^2)/max(1,n^2)].",
+      "source_ids": [
+        "articulation"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://epubs.siam.org/doi/abs/10.1137/0201010"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(32L) time; O(n+m) storage",
+      "columns": [
+        "graph_diffusion_return"
+      ],
+      "cost_tier": "B_FIXED_PASSES",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_diffusion_return",
+      "id": "S07",
+      "implementation": "Eight reproducible random probes; four sparse matrix-vector products each. Fixed seed is provenance, never a model input; report Monte Carlo standard error.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Tests repeated-walk trapping and local circulation, rather than the sign alignment of the leading eigenvector.",
+      "module": "graph10",
+      "name": "Unsigned incidence diffusion return",
+      "novelty_key": "unsigned_incidence_diffusion_return",
+      "novelty_mechanism_key": "unsigned_incidence_diffusion_return",
+      "novelty_vs_existing": "Root reserves signed principal-eigenmode alignment; this uses unsigned all-mode trace/return dynamics, with no leading-mode phase pressure.",
+      "primary_definition": "S=D^(-1/2) A D^(-1/2) on the unsigned incidence graph. f=tr(S^4)/max(1,n+m), estimated by mean_{8 fixed seeds} z^T S^4 z/(n+m) for Rademacher z.",
+      "source_ids": [
+        "walk"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://cs.yale.edu/publications/techreports/tr1029.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(sum k_C^2 + triangle intersections), capped",
+      "columns": [
+        "graph_primal_transitivity"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_primal_transitivity",
+      "id": "S08",
+      "implementation": "Construct projected edges only under a frozen 2000000-edge cap; exact oriented triangle counting. On cap return null; a fixed wedge estimator belongs to this same family.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures whether neighboring variables also interact with each other, a local closure mechanism beyond node degrees or incidence cycle rank.",
+      "module": "graph10",
+      "name": "Variable co-occurrence transitivity",
+      "novelty_key": "primal_transitivity_wedge_closure",
+      "novelty_mechanism_key": "primal_transitivity_wedge_closure",
+      "novelty_vs_existing": "No existing34 feature counts primal closed wedges. Clause length alone cannot distinguish overlap of different clauses.",
+      "primary_definition": "On the deduplicated primal graph G_V, f=3*triangle_count/max(1,sum_v choose(deg_GV(v),2)).",
+      "source_ids": [
+        "satzilla"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(L+matched_templates), capped motif map",
+      "columns": [
+        "graph_gate_sharing"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_gate_sharing",
+      "id": "S09",
+      "implementation": "Reuse bounded binary/ternary template index. For each unambiguous retained gate count its two input incidences; count only this sharing scalar, with separate coverage/ambiguity diagnostics.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures repeated use of intermediate results: DAG sharing rather than the existing number of gate-shaped templates.",
+      "module": "graph10",
+      "name": "Recognized-gate output sharing",
+      "novelty_key": "recognized_gate_dataflow_sharing",
+      "novelty_mechanism_key": "recognized_gate_dataflow_sharing",
+      "novelty_vs_existing": "Old g_gate_motif_fraction discards the recovered dependency relation; no implication-SCC depth, parity template or new gate type.",
+      "primary_definition": "Detect complete signed AND templates z<->(a and b), retain uniquely defined output variables. Let f_u=#retained gates using variable u as an input. f=sum_u max(0,f_u-1)/max(1,sum_u f_u).",
+      "source_ids": [
+        "circuit",
+        "cadical"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/",
+        "https://github.com/arminbiere/cadical/blob/rel-3.0.1/src/congruence.cpp"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(L+matched_templates), bounded map",
+      "columns": [
+        "graph_circuit_residual_interface"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; alternative normalizations, thresholds, summaries or budgets do not create additional iterations.",
+      "feature_key": "graph_circuit_residual_interface",
+      "id": "S10",
+      "implementation": "After the same complete-template recognition, mark defining clause IDs and count output incidences outside their union; do not infer SAT truth or gate orientation preference.",
+      "implementation_file": "src/ta100/graph_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Distinguishes an internally closed circuit from gate outputs heavily constrained by a non-circuit residual.",
+      "module": "graph10",
+      "name": "Recovered-circuit/residual constraint interface",
+      "novelty_key": "recognized_circuit_residual_interface",
+      "novelty_mechanism_key": "recognized_circuit_residual_interface",
+      "novelty_vs_existing": "Not gate coverage or fan-out sharing: it measures coupling to constraints that no recognized gate explains.",
+      "primary_definition": "Let O be uniquely defined gate outputs and T the set of defining clauses of retained gates. f=sum_{v in O} #incidences(v,C notin T)/max(1,sum_{v in O}d_v).",
+      "source_ids": [
+        "circuit"
+      ],
+      "source_relation": "The linked work supplies the underlying concept/algorithm. This exact routing descriptor and its phase relevance are proposed here, not claimed results of the cited work.",
+      "source_urls": [
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(4*sample_vertices^2), sample_vertices<=128",
+      "columns": [
+        "graph_modularity"
+      ],
+      "cost_tier": "B_FIXED_PASSES",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_modularity",
+      "id": "S11",
+      "implementation": "Use the explicitly recorded <=128-node incidence sample; fixed seeded/tied vertex visitation and label order. Report modularity of that heuristic sample partition, not maximum or full-instance modularity.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Separates strongly localized modules from globally intertwined constraints.",
+      "module": "graph20",
+      "name": "Constraint communities",
+      "novelty_key": "unsigned_constraint_community_modularity",
+      "novelty_mechanism_key": "unsigned_constraint_community_modularity",
+      "novelty_vs_existing": "No old34 community partition; existing feature-space kmeans is a different object.",
+      "primary_definition": "Q=sum_g[e_g/E-(vol_g/(2E))^2] for the unsigned bounded incidence sample partition from four fixed label-propagation sweeps.",
+      "proxy_scope": "Heuristic modularity on the fixed local sample; sample node/incidence coverage is required.",
+      "source_ids": [
+        "community"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://arxiv.org/abs/1606.03329"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(sample_size^3), sample_size<=128",
+      "columns": [
+        "graph_box_scaling"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_box_scaling",
+      "id": "S12",
+      "implementation": "Construct one deterministic 128-node connected BFS sample; greedily cover in degree order; report sample coverage and the three cover counts.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Tests multi-scale self-similarity, rather than one connectivity or degree statistic.",
+      "module": "graph20",
+      "name": "Metric self-similarity",
+      "novelty_key": "incidence_box_cover_scaling",
+      "novelty_mechanism_key": "incidence_box_cover_scaling",
+      "novelty_vs_existing": "Fractal geometry was not in old34; not a different quantile of diameter.",
+      "primary_definition": "Fit the slope d=-slope(log r,log N_cover(r)) for r=1,2,4 on a fixed bounded incidence neighborhood; N_cover is greedy radius-r ball cover.",
+      "proxy_scope": "Local sampled box-cover slope, not full-instance fractal dimension.",
+      "source_ids": [
+        "fractal"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://arxiv.org/abs/1308.5046"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(128*bounded_intersections), <=200000 visits",
+      "columns": [
+        "graph_k33_witness"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_k33_witness",
+      "id": "S13",
+      "implementation": "At most 128 bounded-degree variable triples generated from shared-clause neighborhoods; intersect occurrence lists with a total visit cap.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Finds unavoidable nonplanar wiring, a topological obstruction to planar separator intuition.",
+      "module": "graph20",
+      "name": "Planarity obstruction witness",
+      "novelty_key": "incidence_nonplanar_minor_witness",
+      "novelty_mechanism_key": "incidence_nonplanar_minor_witness",
+      "novelty_vs_existing": "A K3,3 witness differs from simple 4-cycle counts and does not assert planarity when no witness is found.",
+      "primary_definition": "f=#tested variable triples with at least three common clause neighbors / #tested triples; each success is an explicit K3,3 subgraph witness.",
+      "proxy_scope": "Witness rate only; zero is not a proof of planarity.",
+      "source_ids": [
+        "planar"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://jgaa.info/index.php/jgaa/article/view/paper91"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(96^4) worst-case bounded small graph",
+      "columns": [
+        "graph_elimination_width"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_elimination_width",
+      "id": "S14",
+      "implementation": "Build only a bounded induced sample; bitset min-fill updates; no full long-clause clique expansion.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures separator width required by an elimination ordering rather than literal resolvent growth.",
+      "module": "graph20",
+      "name": "Induced elimination width",
+      "novelty_key": "primal_elimination_separator_width",
+      "novelty_mechanism_key": "primal_elimination_separator_width",
+      "novelty_vs_existing": "Logical DP/resolution growth is node-owned; this computes unsigned graph elimination width.",
+      "primary_definition": "On a fixed <=96-variable induced primal sample, repeatedly remove the vertex with minimum fill-edge count; f=max live-neighbor count / max(1,sample_variables-1).",
+      "proxy_scope": "Heuristic width of the explicitly recorded induced sample; not a certified bound on full-instance treewidth.",
+      "source_ids": [
+        "rankwidth"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://web.math.princeton.edu/~pds/papers/rankwidth/paper.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(9*(sample_vertices+sample_edges))",
+      "columns": [
+        "graph_percolation"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_percolation",
+      "id": "S15",
+      "implementation": "Fixed seeded Bernoulli deletion masks; three seeds per q; DSU or BFS; no CNF assignment or propagation.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures distributed connectivity resilience under many simultaneous removals, distinct from a single articulation bottleneck.",
+      "module": "graph20",
+      "name": "Random-deletion connectivity robustness",
+      "novelty_key": "unsigned_vertex_percolation_robustness",
+      "novelty_mechanism_key": "unsigned_vertex_percolation_robustness",
+      "novelty_vs_existing": "Not H06 assigned-variable propagation and not a second core threshold.",
+      "primary_definition": "For fixed deletion rates q=0,1/4,1/2,3/4,1 on a <=128-node incidence sample, measure largest surviving variable-component fraction (zero if no survivors); average three seeds at interior q; f is the trapezoidal area on[0,1].",
+      "proxy_scope": "Random topological deletions on a bounded graph, not logical restrictions.",
+      "source_ids": [
+        "assort"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://arxiv.org/abs/cond-mat/0209450"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(16*(sample_vertices+sample_edges))",
+      "columns": [
+        "graph_betweenness"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_betweenness",
+      "id": "S16",
+      "implementation": "Unweighted BFS path counts and reverse dependency accumulation; normalize using sampled source-target pairs.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Finds vertices through which many shortest information paths pass, including non-articulation bottlenecks.",
+      "module": "graph20",
+      "name": "Shortest-path load centralization",
+      "novelty_key": "geodesic_flow_bottleneck",
+      "novelty_mechanism_key": "geodesic_flow_bottleneck",
+      "novelty_vs_existing": "Articulation asks whether a path exists; this asks where geodesic traffic concentrates.",
+      "primary_definition": "On a <=128-node incidence sample, compute Brandes betweenness for 16 fixed source vertices; f=max normalized internal-vertex dependency.",
+      "source_ids": [
+        "walk"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://cs.yale.edu/publications/techreports/tr1029.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(128*(sample_vertices+sample_edges))",
+      "columns": [
+        "graph_harmonic_access"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_harmonic_access",
+      "id": "S17",
+      "implementation": "All-pairs BFS within the same bounded sample; preserve disconnected pairs in the denominator.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures usable global access distance, distinct from self-similar cover scaling or walk returns.",
+      "module": "graph20",
+      "name": "Metric access efficiency",
+      "novelty_key": "incidence_harmonic_access_distance",
+      "novelty_mechanism_key": "incidence_harmonic_access_distance",
+      "novelty_vs_existing": "Old34 contain no pair distances; not the old degree moments.",
+      "primary_definition": "f=mean_{distinct connected sampled variable pairs}(1/d_incidence(u,v)); disconnected pairs contribute zero.",
+      "source_ids": [
+        "satzilla"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(32*(sample_vertices+sample_edges))",
+      "columns": [
+        "graph_detour"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_detour",
+      "id": "S18",
+      "implementation": "BFS on the bounded sample while skipping exactly one undirected edge; no solver changes.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures how efficiently alternative routes replace a direct edge, beyond whether the edge is merely a bridge.",
+      "module": "graph20",
+      "name": "Alternative-path detour",
+      "novelty_key": "incidence_replacement_path_detour",
+      "novelty_mechanism_key": "incidence_replacement_path_detour",
+      "novelty_vs_existing": "Different from vertex-separator mass and triangle count; it tests edge-level replacement geometry.",
+      "primary_definition": "For up to32 sampled incidence edges e=(u,v), remove e and find d_{G-e}(u,v); f=mean(1/d), taking zero when disconnected.",
+      "source_ids": [
+        "walk"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://cs.yale.edu/publications/techreports/tr1029.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(3*sample_edges) with endpoint sum trick",
+      "columns": [
+        "graph_nonbacktracking"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_nonbacktracking",
+      "id": "S19",
+      "implementation": "Run three sparse directed-edge DP passes on bounded sample; normalize between passes to prevent overflow and retain the growth multiplier.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures onward branching once immediate edge reversal is forbidden.",
+      "module": "graph20",
+      "name": "Nonbacktracking branch growth",
+      "novelty_key": "incidence_nonbacktracking_branch_growth",
+      "novelty_mechanism_key": "incidence_nonbacktracking_branch_growth",
+      "novelty_vs_existing": "Root leading signed mode and unsigned return trace do not measure no-backtracking branch continuation.",
+      "primary_definition": "Let x_0(u->v)=1 and x_{t+1}(u->v)=sum_{w in N(v),w!=u} x_t(v->w). f=sum x_3 / max(1,sum x_2).",
+      "source_ids": [
+        "walk"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://cs.yale.edu/publications/techreports/tr1029.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(sample_edges^3) bounded",
+      "columns": [
+        "graph_gyo"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_gyo",
+      "id": "S20",
+      "implementation": "At most128 hyperedges/128 variables with exact subset bitsets; count completion rounds and coverage.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Tests alpha-acyclic join structure, which can be reducible even when the incidence graph has cycles.",
+      "module": "graph20",
+      "name": "Unsigned join-tree reducibility",
+      "novelty_key": "hypergraph_join_tree_reducibility",
+      "novelty_mechanism_key": "hypergraph_join_tree_reducibility",
+      "novelty_vs_existing": "Unsigned support containment plus joint GYO fixed point differs from signed clause subsumption and plain graph 2-core.",
+      "primary_definition": "Run GYO rules on sampled variable-support hyperedges: delete degree<=1 variables and contained support edges to a fixed point. f=remaining incidence mass / initial incidence mass.",
+      "source_ids": [
+        "gyo",
+        "gyo_algorithm"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://research.ibm.com/publications/degrees-of-acyclicity-for-hypergraphs-and-relational-database-schemes",
+        "https://web.cecs.pdx.edu/~maier/TheoryBook/MAIER/C13.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(128^2*bitset_words)",
+      "columns": [
+        "graph_laminarity"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_laminarity",
+      "id": "S21",
+      "implementation": "Bitset support intersections on at most128 sampled hyperedges; exact pair count on this recorded sample.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures whether constraint scopes nest as a hierarchy or cross one another.",
+      "module": "graph30",
+      "name": "Crossing constraint supports",
+      "novelty_key": "hyperedge_nonlaminar_crossing",
+      "novelty_mechanism_key": "hyperedge_nonlaminar_crossing",
+      "novelty_vs_existing": "Butterflies measure repeated overlap size; laminarity tests the containment relation between scopes.",
+      "primary_definition": "For sampled distinct support pairs A,B, f=#(A intersect B nonempty and neither A subset B nor B subset A)/#sampled pairs.",
+      "source_ids": [
+        "gyo"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://research.ibm.com/publications/degrees-of-acyclicity-for-hypergraphs-and-relational-database-schemes"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(64*128)",
+      "columns": [
+        "graph_shattering"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_shattering",
+      "id": "S22",
+      "implementation": "At most64 seeded variable triples; scan at most128 sample hyperedges; include empty intersections.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures whether constraint scopes realize unrestricted local set patterns, a bounded VC-dimension witness.",
+      "module": "graph30",
+      "name": "Neighborhood set-system expressiveness",
+      "novelty_key": "incidence_neighborhood_shattering",
+      "novelty_mechanism_key": "incidence_neighborhood_shattering",
+      "novelty_vs_existing": "Ignores literal signs and truth: not a complete XOR/parity template, gate extraction, or exclusion block.",
+      "primary_definition": "For tested triples S of variable vertices, collect masks C intersect S. f=#triples realizing all eight masks/#tested triples.",
+      "proxy_scope": "Witness rate for sampled triples, not an exact VC-dimension estimate.",
+      "source_ids": [
+        "vc"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://doi.org/10.1016/0097-3165(72)90019-2"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(16*128^3/word_size)",
+      "canonical_novelty_witness": "Root algebraA11 is signed local clause-row real rank only. Matrices [[1,1],[1,-1]] and [[1,1],[1,1]] have identical unsigned incidence cut-rank but different signed real rank. Object and field differences are explicit, not a raw-rank rename.",
+      "columns": [
+        "graph_cutrank"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_cutrank",
+      "id": "S23",
+      "implementation": "64/128-bit Gaussian elimination on binary cross-cut matrices. No extraction or solving of XOR constraints.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures independent boundary neighborhoods in linear-algebraic terms rather than edge density.",
+      "module": "graph30",
+      "name": "Algebraic boundary complexity",
+      "novelty_key": "incidence_cutrank_complexity",
+      "novelty_mechanism_key": "incidence_cutrank_complexity",
+      "novelty_vs_existing": "The other owner's parity templates concern signed logical equations; this is rank of an unsigned graph cut.",
+      "primary_definition": "For16 fixed balanced cuts of a <=128-node unsigned incidence sample, compute GF(2) rank of cross-cut adjacency; f=mean(rank/min(side_sizes)).",
+      "proxy_scope": "Sample-cut rank, not the minimum rank-width over all decomposition trees.",
+      "source_ids": [
+        "rankwidth"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://web.math.princeton.edu/~pds/papers/rankwidth/paper.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(96^3) bounded",
+      "columns": [
+        "graph_chordality"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_chordality",
+      "id": "S24",
+      "implementation": "Bitset MCS and clique tests on <=96 variables; no logical clause elimination.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Detects whether all long induced cycles admit chords, a perfect-elimination structural class.",
+      "module": "graph30",
+      "name": "Induced-cycle/chordality defect",
+      "novelty_key": "primal_chordality_defect",
+      "novelty_mechanism_key": "primal_chordality_defect",
+      "novelty_vs_existing": "Not a width threshold: a large clique can be chordal while having large elimination width.",
+      "primary_definition": "Run maximum cardinality search on a bounded induced primal sample. For each vertex test whether its later neighbors form a clique; f=violating vertices / eligible vertices.",
+      "source_ids": [
+        "rankwidth"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://web.math.princeton.edu/~pds/papers/rankwidth/paper.pdf"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(128^3) distance preprocessing plus128 quadruples",
+      "columns": [
+        "graph_hyperbolicity"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_hyperbolicity",
+      "id": "S25",
+      "implementation": "Reuse bounded-sample BFS distances; reject disconnected quadruples with explicit denominator.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Tests thin/tree-like metric geometry even in graphs with many short cycles.",
+      "module": "graph30",
+      "name": "Geodesic tree-likeness",
+      "novelty_key": "incidence_metric_hyperbolicity",
+      "novelty_mechanism_key": "incidence_metric_hyperbolicity",
+      "novelty_vs_existing": "Incidence cycle excess is combinatorial; this is a four-point metric condition.",
+      "primary_definition": "For128 sampled connected quadruples, sort the three distance-pair sums a>=b>=c; delta=(a-b)/2. f=max(delta)/max(1,sample_diameter).",
+      "source_ids": [
+        "hyperbolicity"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://www-sop.inria.fr/members/David.Coudert/code/hyperbolicity.shtml"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "<=200000 joins; bounded ternary hash index",
+      "columns": [
+        "graph_majority_gate_coverage"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "dedup_note": "One complete majority/carry mechanism, not separate sign variants or arities.",
+      "feature_key": "graph_majority_gate_coverage",
+      "id": "S26",
+      "implementation": "Generate candidate output triples through bounded ternary occurrence joins and require all six exact canonical clauses; cap candidate joins and return null if incomplete.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Identifies threshold/carry gates rather than AND/OR or affine parity logic.",
+      "module": "graph30",
+      "name": "Majority/carry functional motifs",
+      "novelty_key": "complete_majority_gate_templates",
+      "novelty_mechanism_key": "complete_majority_gate_templates",
+      "novelty_vs_existing": "No ITE/MUX duplication (node-owned); no XOR or choice/exclusion template. Majority is a different Boolean relation.",
+      "primary_definition": "Count complete signed z<->MAJ(a,b,c) six-clause templates: (-a or -b or z),(-a or -c or z),(-b or -c or z),(a or b or -z),(a or c or -z),(b or c or -z). f=#covered output variables/n.",
+      "source_ids": [
+        "circuit"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(gates*bounded_cone_size)",
+      "columns": [
+        "graph_reconvergence"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_reconvergence",
+      "id": "S27",
+      "implementation": "Expand two-hop ancestor sets of each unambiguous gate, with per-cone cap64; report eligible cone coverage.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Captures correlated fan-in from a diverged-and-rejoined signal, unlike simple fan-out sharing.",
+      "module": "graph30",
+      "name": "Reconvergent dataflow diamond",
+      "novelty_key": "recognized_gate_reconvergence",
+      "novelty_mechanism_key": "recognized_gate_reconvergence",
+      "novelty_vs_existing": "Sharing can exist with no reconvergence; this tests reunion, not number of consumers.",
+      "primary_definition": "For each retained gate z<-a,b, check whether a,b have a common defined ancestor within two gate hops. f=#such gates/#eligible retained gates.",
+      "source_ids": [
+        "circuit",
+        "motifs"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/",
+        "https://pubmed.ncbi.nlm.nih.gov/12399590/"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(retained_gates)",
+      "columns": [
+        "graph_gate_output_direction"
+      ],
+      "cost_tier": "A_LINEAR",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_gate_output_direction",
+      "id": "S28",
+      "implementation": "Use only the existing fully verified gate-template signatures and exclude ambiguous outputs.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Restores the absolute output orientation discarded by unsigned template coverage.",
+      "module": "graph30",
+      "name": "Gate output encoding direction",
+      "novelty_key": "recognized_gate_output_polarity",
+      "novelty_mechanism_key": "recognized_gate_output_polarity",
+      "novelty_vs_existing": "Old g_gate_motif_fraction does not retain output sign. Root Ising coupling is pairwise co-occurrence, not functional output role.",
+      "primary_definition": "For retained signed AND templates z<->(a and b), f=(#z>0-#z<0)/#retained gates.",
+      "source_ids": [
+        "circuit"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(matched_templates) bounded index",
+      "columns": [
+        "graph_gate_ambiguity"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_gate_ambiguity",
+      "id": "S29",
+      "implementation": "Count distinct signed canonical (output,input1,input2) signatures; exact duplicates are not separate definitions.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Tests functional aliasing/competing local explanations, which can invalidate a single recovered DAG.",
+      "module": "graph30",
+      "name": "Competing functional definitions",
+      "novelty_key": "gate_definition_ambiguity",
+      "novelty_mechanism_key": "gate_definition_ambiguity",
+      "novelty_vs_existing": "Node-owned clause duplicates and local orbit signatures do not measure conflicting logical output definitions.",
+      "primary_definition": "f=#variables with more than one distinct complete gate-definition signature/#variables with at least one complete definition.",
+      "source_ids": [
+        "circuit"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(retained_gates)",
+      "columns": [
+        "graph_gate_congruence"
+      ],
+      "cost_tier": "A_LINEAR",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_gate_congruence",
+      "id": "S30",
+      "implementation": "Hash normalized signed input pairs, keeping output role; do not rewrite or merge CNF variables.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Finds multiple variables that compute the same function of the same signals, even without identical clauses.",
+      "module": "graph30",
+      "name": "Repeated computed-function congruence",
+      "novelty_key": "circuit_structural_congruence",
+      "novelty_mechanism_key": "circuit_structural_congruence",
+      "novelty_vs_existing": "Not same-column twins or graph automorphism; functional outputs can have different external neighborhoods.",
+      "primary_definition": "Group unambiguous signed AND gates by normalized signed input pair; f=sum_classes max(0,class_size-1)/#retained_gates.",
+      "source_ids": [
+        "cadical"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://github.com/arminbiere/cadical/blob/rel-3.0.1/src/congruence.cpp"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(retained_gates+n)",
+      "columns": [
+        "graph_controllability"
+      ],
+      "cost_tier": "B_FIXED_PASSES",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_controllability",
+      "id": "S31",
+      "implementation": "Topological evaluation using known inputs; cyclic/ambiguous outputs excluded with coverage; cap costs to avoid overflow. No binary implication SCC/depth statistic.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Approximates which value is cheaper to force through a whole recovered cone rather than from a local sign count.",
+      "module": "graph40",
+      "name": "Composed forcing-cost direction",
+      "novelty_key": "circuit_combinational_controllability",
+      "novelty_mechanism_key": "circuit_combinational_controllability",
+      "novelty_vs_existing": "This is a combinational testability recurrence, not UP, shortest-path depth, BP marginals or raw gate orientation.",
+      "primary_definition": "On the acyclic evaluable gate portion, primary inputs have CC0=CC1=1. AND literal z: CC0(z)=1+min(CC0(a),CC0(b)); CC1(z)=1+CC1(a)+CC1(b), swapping 0/1 for negated literals. f=mean[(CC1(v)-CC0(v))/(CC1(v)+CC0(v))] over defined outputs.",
+      "source_caveat": "SCOAP DOI verified but full primary text inaccessible; recurrences are independently and explicitly defined as the proposed feature.",
+      "source_ids": [
+        "scoap",
+        "circuit"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://doi.org/10.1109/TCS.1979.1084687",
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(retained_gates+n)",
+      "columns": [
+        "graph_observability"
+      ],
+      "cost_tier": "B_FIXED_PASSES",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_observability",
+      "id": "S32",
+      "implementation": "Reverse topological traversal of the same evaluable gate portion; undefined/cyclic/interface-free cones remain missing.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures difficulty of exposing an internal signal at an interface, distinct from forcing its value.",
+      "module": "graph40",
+      "name": "Signal observability bottleneck",
+      "novelty_key": "circuit_combinational_observability",
+      "novelty_mechanism_key": "circuit_combinational_observability",
+      "novelty_vs_existing": "Not the controllability direction scalar: this propagates visibility backward from an interface.",
+      "primary_definition": "Initialize CO(v)=0 for recovered outputs used by residual constraints or with no gate consumer. For signed AND z<-a,b, candidate CO(a)=CO(z)+CC1(b)+1 and CO(b)=CO(z)+CC1(a)+1; take minima over consumers. f=mean(CO/(CO+CC0+CC1)) over finite defined outputs.",
+      "source_caveat": "Explicit proposed AND-only recurrence; not a claim to reproduce every SCOAP variant.",
+      "source_ids": [
+        "scoap",
+        "circuit"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://doi.org/10.1109/TCS.1979.1084687",
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(gates*bounded_cone_size)",
+      "columns": [
+        "graph_binate_cones"
+      ],
+      "cost_tier": "B_CAPPED",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_binate_cones",
+      "id": "S33",
+      "implementation": "Propagate signs through the recovered signed-AND identities; cap64 ancestor literals/cone, exclude truncated cones.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Detects local binateness from opposite uses of one source, even when fan-in simply shares variables.",
+      "module": "graph40",
+      "name": "Opposite-polarity ancestor reuse",
+      "novelty_key": "reconvergent_cone_binate_support",
+      "novelty_mechanism_key": "reconvergent_cone_binate_support",
+      "novelty_vs_existing": "Reconvergence alone ignores sign; this asks whether the reunited signal has opposite logical orientations.",
+      "primary_definition": "For each unambiguous gate cone expanded to two hops, collect signed ancestor literals. f=#cones containing both u and not-u for some ancestor / #fully expanded cones.",
+      "source_ids": [
+        "circuit",
+        "canalizing"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/",
+        "https://arxiv.org/abs/q-bio/0606013"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "<=64*16*bounded_local_clauses",
+      "columns": [
+        "graph_other_functional"
+      ],
+      "cost_tier": "C_LOCAL_TRUTH_TABLE",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_other_functional",
+      "id": "S34",
+      "implementation": "At most64 seeded support candidates;16 truth rows each; collect subclauses through indexed occurrences with a shared2M-visit cap. Do not report truth or a solved instance.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Finds functional structure missed by the reserved local gate and parity libraries.",
+      "module": "graph40",
+      "name": "Non-template functional local relations",
+      "novelty_key": "non_template_local_functional_determination",
+      "novelty_mechanism_key": "non_template_local_functional_determination",
+      "novelty_vs_existing": "Explicitly excludes all reserved templates; no full-instance SAT/model counting.",
+      "primary_definition": "For a sampled support S with3..4 variables, evaluate conjunction of all clauses wholly contained in S. Count S if some variable is a total deterministic function of the rest (exactly one output value for every input row), excluding affine, AND/OR, majority, ITE and cardinality/exclusion relations. f=#qualified supports/#evaluated supports.",
+      "source_ids": [
+        "circuit",
+        "boolean"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/",
+        "https://arxiv.org/abs/2105.10386"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(64*3^4*4)",
+      "columns": [
+        "graph_canalizing_depth"
+      ],
+      "cost_tier": "C_LOCAL_TRUTH_TABLE",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_canalizing_depth",
+      "id": "S35",
+      "implementation": "Exact enumeration over <=16 truth rows with memoized restrictions, bounded local supports as S34; no propagation/search trace.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures hierarchical dominating inputs rather than symmetric or parity-like dependence.",
+      "module": "graph40",
+      "name": "Local nested canalization",
+      "novelty_key": "local_function_canalizing_hierarchy",
+      "novelty_mechanism_key": "local_function_canalizing_hierarchy",
+      "novelty_vs_existing": "Not node's flip gain at a uniform assignment: this examines all local restriction branches as a Boolean-function property.",
+      "primary_definition": "For each sampled nonconstant local satisfaction predicate on3..4 variables, recursively find a literal restriction making the predicate constant, continue on the other branch, and maximize chain length. f=mean(max_depth/arity).",
+      "source_ids": [
+        "canalizing"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://arxiv.org/abs/q-bio/0606013"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(64*4*16)",
+      "canonical_novelty_witness": "This transforms the Boolean satisfaction predicate of a bounded local subformula overGF2 and excludes affine cases. Root Walsh measures real-valued unsatisfied-clause-count energy. Duplicating a clause leaves this Boolean predicate unchanged but changes the root energy: not aliases.",
+      "columns": [
+        "graph_anf_degree"
+      ],
+      "cost_tier": "C_LOCAL_TRUTH_TABLE",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_anf_degree",
+      "id": "S36",
+      "implementation": "Same bounded truth tables; in-place xor transform over16 entries; affine/XOR cases excluded and eligibility recorded.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Tests genuine higher-order interaction order, without recovering or counting affine parity equations.",
+      "module": "graph40",
+      "name": "Nonlinear local algebraic degree",
+      "novelty_key": "non_affine_local_polynomial_degree",
+      "novelty_mechanism_key": "non_affine_local_polynomial_degree",
+      "novelty_vs_existing": "Other owner's complete parity is affine and excluded; root submodularity concerns real pairwise curvature, not Boolean polynomial degree.",
+      "primary_definition": "For each nonconstant local predicate on3..4 variables, compute ANF coefficients by the Boolean Mobius transform; discard affine predicates. f=mean(max nonzero monomial degree/arity).",
+      "source_ids": [
+        "boolean",
+        "canalizing"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://arxiv.org/abs/2105.10386",
+        "https://arxiv.org/abs/q-bio/0606013"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(L+64^2) time; O(64^2) storage",
+      "columns": [
+        "graph_sign_bundling"
+      ],
+      "cost_tier": "A_LINEAR",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_sign_bundling",
+      "id": "S37",
+      "implementation": "Exact65x65 contingency table and precomputed log binomial coefficients; clauses longer than64 are excluded under this predeclared conditional population and their count is a coverage diagnostic. No assignment, pair-energy or falsifying-subcube overlap.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Tests whether like-polarity literals bundle within constraints more than an independent-sign baseline predicts, even when sign-vs-arity first moments agree.",
+      "module": "graph40",
+      "name": "Within-constraint sign bundling",
+      "novelty_key": "within_clause_sign_binomial_deviance",
+      "novelty_mechanism_key": "within_clause_sign_binomial_deviance",
+      "novelty_vs_existing": "Unlike S02 which uses one literal sign against arity, this uses the full within-clause sign-count distribution; unlike root pairwise falsifying subcube overlap it does not enumerate clause pairs or assignment volumes.",
+      "primary_definition": "For non-tautological clauses with1<=k<=64, let P_k(j) be the observed clause-frequency distribution of j positive literals conditional on arity k; let p be positive literal fraction in this eligible population. f=sum_k P(k)*KL(P_k || Binomial(k,p)). Degenerate p=0/1 is defined by its exact limiting distribution.",
+      "source_ids": [
+        "assort"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://arxiv.org/abs/cond-mat/0209450"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(L) after community setup",
+      "columns": [
+        "graph_community_polarity"
+      ],
+      "cost_tier": "B_FIXED_PASSES",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_community_polarity",
+      "id": "S38",
+      "implementation": "Reuse the same four-sweep partition of the <=128-node incidence sample; accumulate full-input literal sign mass only for sampled variable vertices. Report sampled variable coverage.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Detects oppositely encoded modules whose global sign bias cancels.",
+      "module": "graph40",
+      "name": "Module-to-module encoding disagreement",
+      "novelty_key": "community_encoding_polarity_heterogeneity",
+      "novelty_mechanism_key": "community_encoding_polarity_heterogeneity",
+      "novelty_vs_existing": "Old global polarity and per-variable imbalance do not identify how encoding directions aggregate by interacting modules.",
+      "primary_definition": "For the fixed unsigned sample partition from S11, b_g=(positive-negative full-input literal incidences of sampled variables in community g)/literal_count_g. f=sum_g weight_g*(b_g-b_selected)^2, where b_selected is the mean over the sampled variable population.",
+      "proxy_scope": "Within the recorded sampled variables, not a full-instance optimal partition statistic.",
+      "source_ids": [
+        "community",
+        "assort"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://arxiv.org/abs/1606.03329",
+        "https://arxiv.org/abs/cond-mat/0209450"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(32*16^3 + bounded_adjacency_queries)",
+      "columns": [
+        "graph_transport_curvature"
+      ],
+      "cost_tier": "C_LOCAL_TRANSPORT",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_transport_curvature",
+      "id": "S39",
+      "implementation": "Neighbor supports of adjacent incidence endpoints have distances<=3; equality/adjacency tests suffice. Hungarian assignment is fixed small; report edge/neighbor sampling.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Measures neighborhood convergence/divergence via optimal transportation, not a Laplacian eigenvalue summary.",
+      "module": "graph40",
+      "name": "Local transport contraction",
+      "novelty_key": "incidence_lazy_transport_curvature",
+      "novelty_mechanism_key": "incidence_lazy_transport_curvature",
+      "novelty_vs_existing": "Root Hall deficiency is feasibility in variable-clause matching; this is a weighted transport cost between local walk measures.",
+      "primary_definition": "For each of32 incidence edges u-v, form16 equal atoms approximating each lazy neighborhood measure:8 at the endpoint and8 seeded sampled neighbors. Solve the16x16 minimum-cost assignment with graph-distance costs in{0,1,2,3}. f=mean(1-W1).",
+      "proxy_scope": "Curvature of empirical lazy neighbor measures, not an exact global curvature certificate.",
+      "source_ids": [
+        "curvature"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://arxiv.org/abs/math/0701886"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    },
+    {
+      "asymptotic_cost": "O(bounded_triangles*bounded_rank*bitset_words)",
+      "columns": [
+        "graph_betti1"
+      ],
+      "cost_tier": "C_SMALL_GRAPH",
+      "counting_rule": "One mechanism family; threshold/quantile/log/normalization/budget variants remain this same family.",
+      "feature_key": "graph_betti1",
+      "id": "S40",
+      "implementation": "Enumerate <=20000 sample triangles; sparse/bitset elimination of3-edge boundary vectors; cap work with null on truncation.",
+      "implementation_file": "src/ta100/graph_extra_features.hpp",
+      "implementation_phase": "SOURCE_READY_SYNTHETIC_ONLY",
+      "mechanism": "Distinguishes genuine higher-order holes from ordinary cycles that are filled by dense local triangles.",
+      "module": "graph40",
+      "name": "Cycles surviving triangle filling",
+      "novelty_key": "primal_triangle_filled_cycle_homology",
+      "novelty_mechanism_key": "primal_triangle_filled_cycle_homology",
+      "novelty_vs_existing": "Old incidence cycle rank and triangle transitivity cannot determine independent holes after triangle-boundary relations; GF2 here is unsigned topology, not logical parity.",
+      "primary_definition": "On a <=96-variable induced primal sample, form its clique2-complex. beta1=E-V+components-rank_GF2(boundaries of all triangles); f=beta1/max(1,E).",
+      "source_ids": [
+        "homology"
+      ],
+      "source_relation": "Underlying concept/algorithm only; the exact proposed scalar, bounded approximation and phase relevance are hypotheses, not reported results of the source.",
+      "source_urls": [
+        "https://gudhi.inria.fr/python/latest/simplex_tree_ref.html"
+      ],
+      "status": "PROPOSED_NOT_EXTRACTED_NOT_SCORED"
+    }
+  ],
+  "dedup_exceptions": "Node agent explicitly ceded core/articulation/modularity/butterfly/assortativity/fractal candidates to this graph owner. ITE/MUX remains node-owned and is absent here.",
+  "dependency_binding_note": "Extra header includes stable graph_features.hpp and common cnf_data.hpp. All transitive source hashes must be bound by the root execution manifest/build snapshot; frozen first10 source remains untouched.",
+  "excluded_owners": [
+    "Other owner: binary implication SCC/condensation depth and orientation; complete ternary parity; choice/exclusion-block structure.",
+    "Root: renamable-Horn, signed frustration/Ising coupling, pseudoBoolean submodularity, literal-complement clause symmetry, bounded autarky, Hall matching, greedy packing/hitting, signed principal eigenmode, LP phase pressure, BP cavity polarization.",
+    "Node agent: canonical redundancy, resolution growth, blockedness, local orbit signatures, flip-energy.",
+    "Legacy H01-H06: old counts/signed clause sums, root-UP residual, short CDCL traces and complementary assigned-variable UP probes."
+  ],
+  "execution_extension": "workflow03 graph_all30 shares one parser and one5CPU allowance; signed/functional40 first, then30, then20; original scalar definitions unchanged",
+  "implementation_scope": "Frozen graph_features.hpp/graph_core.cpp contain first10 only; remaining source is graph_extra_features.hpp/graph_extra_core.cpp and is independently frozen per extra group. No first10 source mutation during its execution.",
+  "legacy_feature_names": [
+    "s_header_variables",
+    "s_variables",
+    "s_clauses",
+    "s_log_variables",
+    "s_log_clauses",
+    "s_cv_ratio",
+    "s_mean_length",
+    "s_length_std",
+    "s_max_length",
+    "s_unit_fraction",
+    "s_binary_fraction",
+    "s_ternary_fraction",
+    "s_long_fraction",
+    "s_empty_fraction",
+    "s_positive_fraction",
+    "s_horn_fraction",
+    "s_antihorn_fraction",
+    "s_pure_variable_fraction",
+    "s_mean_polarity_imbalance",
+    "s_jw_positive_fraction",
+    "g_components",
+    "g_largest_component_fraction",
+    "g_cycle_excess",
+    "g_cycle_excess_per_incidence",
+    "g_leaf_variable_fraction",
+    "g_degree_two_fraction",
+    "g_degree_mean",
+    "g_degree_cv",
+    "g_degree_p50",
+    "g_degree_p90",
+    "g_degree_max",
+    "g_degree_entropy_normalized",
+    "g_gate_motif_fraction",
+    "g_gate_motifs_exact",
+    "feature_wall_s"
+  ],
+  "module_cli": "graph_core --module graph10 INPUT; graph_extra_core --module graph20|graph30|graph40 INPUT; groups are disjoint sets of10, not cumulative.",
+  "necessary_synthetic_validation": {
+    "includes": [
+      "recursive core vs separator",
+      "joint sign/arity and Horn interface",
+      "chordality and triangle-filled homology",
+      "complete vs missing majority template",
+      "signed gate direction and forcing cost",
+      "reserved affine exclusion vs nonlinear local function",
+      "sign bundling distinct from sign-arity first moment",
+      "empty denominator is missing"
+    ],
+    "status": "PASS",
+    "tests": 8
+  },
+  "not_completed_iterations": true,
+  "notation": "F is the input clause multiset. For descriptor graphs, each clause is literal-deduplicated; tautological clauses are excluded and counted as diagnostics; duplicate clause rows remain distinct unless a definition explicitly says otherwise. E uses one edge per variable-clause pair, L=|E| unless literal occurrences explicitly specified; n,m count included variables/clauses. All formulas and caps must be frozen before extraction.",
+  "novelty_policy": "Canonical novelty key = graph/constraint object + mathematical operation + hypothesized mechanism. No threshold, quantile, log, mean-vs-tail, observation checkpoint or normalization variant counts as a new family. Root centrally adjudicates adjacent mechanisms; these are proposals, not an assertion of 40 accepted distinct iterations.",
+  "owner": "parallel_static",
+  "schema": "ta100.static_candidate_registry.v1",
+  "scope": "Research-input registry only. Root owns protocol commits, data access, extraction, scoring and claims. Consumed gate is exploratory; final5355 remain sealed.",
+  "source_files": {
+    "src/ta100/graph_core.cpp": "c42eed86bca482aa13bc52606903cfe90ec5f17d68f3f598302a120cf7dfd63b",
+    "src/ta100/graph_extra_core.cpp": "dcc1de824c0295f0c3a14243eb684fdc5a141ef9b2f2df8ee6d43ce4b71c78c7",
+    "src/ta100/graph_extra_features.hpp": "0c82851b156e6a4d88f548a7d2e8126f3f487530a5b39aa0d531fb93d11c93cd",
+    "src/ta100/graph_features.hpp": "5110f471c25ddefdc5fe228f20da2bce400404004d97af85182761bdc5a0bfa6",
+    "src/ta100/test_graph_features.py": "baa32268494036a2f7ad78cabf630050cf13f92d6ad4f6be3ea1a9295a8d0764"
+  },
+  "source_ready_count": 40,
+  "source_registry": {
+    "articulation": {
+      "basis": "Undirected articulation decomposition.",
+      "title": "Depth-First Search and Linear Graph Algorithms",
+      "url": "https://epubs.siam.org/doi/abs/10.1137/0201010"
+    },
+    "assort": {
+      "basis": "Endpoint mixing statistics.",
+      "title": "Mixing patterns in networks",
+      "url": "https://arxiv.org/abs/cond-mat/0209450"
+    },
+    "boolean": {
+      "basis": "Finite Boolean-function analysis.",
+      "title": "Analysis of Boolean Functions, O'Donnell",
+      "url": "https://arxiv.org/abs/2105.10386"
+    },
+    "butterfly": {
+      "basis": "Bipartite butterfly counting.",
+      "title": "Butterfly Counting in Bipartite Networks",
+      "url": "https://arxiv.org/abs/1801.00338"
+    },
+    "cadical": {
+      "basis": "AND and ITE gate recognition.",
+      "title": "CaDiCaL congruence implementation, rel-3.0.1",
+      "url": "https://github.com/arminbiere/cadical/blob/rel-3.0.1/src/congruence.cpp"
+    },
+    "canalizing": {
+      "basis": "Canalizing functional hierarchy.",
+      "title": "Nested Canalyzing, Unate Cascade, and Polynomial Functions",
+      "url": "https://arxiv.org/abs/q-bio/0606013"
+    },
+    "circuit": {
+      "basis": "CNF circuit reconstruction.",
+      "title": "Extracting Hardware Circuits from CNF Formulas",
+      "url": "https://research.jku.at/de/publications/extracting-hardware-circuits-from-cnf-formulas/"
+    },
+    "community": {
+      "basis": "SAT community structure.",
+      "title": "Community Structure in Industrial SAT Instances",
+      "url": "https://arxiv.org/abs/1606.03329"
+    },
+    "core": {
+      "basis": "Core peeling.",
+      "title": "An O(m) Algorithm for Cores Decomposition",
+      "url": "https://arxiv.org/abs/cs/0310049"
+    },
+    "curvature": {
+      "basis": "Neighborhood transportation contraction.",
+      "title": "Ricci curvature of Markov chains on metric spaces",
+      "url": "https://arxiv.org/abs/math/0701886"
+    },
+    "fractal": {
+      "basis": "SAT metric self-similarity.",
+      "title": "The Fractal Dimension of SAT Formulas",
+      "url": "https://arxiv.org/abs/1308.5046"
+    },
+    "gyo": {
+      "basis": "Hypergraph acyclicity.",
+      "title": "Degrees of acyclicity for hypergraphs and relational database schemes",
+      "url": "https://research.ibm.com/publications/degrees-of-acyclicity-for-hypergraphs-and-relational-database-schemes"
+    },
+    "gyo_algorithm": {
+      "basis": "Unsigned GYO reduction rules.",
+      "title": "Maier: Acyclic Database Schemes, Graham reduction",
+      "url": "https://web.cecs.pdx.edu/~maier/TheoryBook/MAIER/C13.pdf"
+    },
+    "homology": {
+      "basis": "Simplicial homology construction.",
+      "title": "GUDHI Simplex Tree official documentation",
+      "url": "https://gudhi.inria.fr/python/latest/simplex_tree_ref.html"
+    },
+    "hyperbolicity": {
+      "basis": "Four-point graph metric.",
+      "title": "Computing the Gromov Hyperbolicity of Graphs, Coudert",
+      "url": "https://www-sop.inria.fr/members/David.Coudert/code/hyperbolicity.shtml"
+    },
+    "motifs": {
+      "basis": "Small wiring patterns.",
+      "title": "Network Motifs: Simple Building Blocks of Complex Networks",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12399590/"
+    },
+    "planar": {
+      "basis": "Planar embedding recognition.",
+      "title": "Simplified O(n) Planarity by Edge Addition",
+      "url": "https://jgaa.info/index.php/jgaa/article/view/paper91"
+    },
+    "rankwidth": {
+      "basis": "Cut-rank structural width.",
+      "title": "Approximating clique-width and branch-width",
+      "url": "https://web.math.princeton.edu/~pds/papers/rankwidth/paper.pdf"
+    },
+    "satzilla": {
+      "basis": "SAT structural feature taxonomy.",
+      "title": "Features for SAT, Xu et al.",
+      "url": "https://www.cs.ubc.ca/labs/algorithms/Projects/SATzilla/Report_SAT_features.pdf"
+    },
+    "scoap": {
+      "basis": "Circuit testability motivation; DOI metadata verified, full paper unavailable in this session. Proposed recurrences are explicitly specified independently.",
+      "title": "Controllability/observability analysis of digital circuits, Goldstein",
+      "url": "https://doi.org/10.1109/TCS.1979.1084687"
+    },
+    "vc": {
+      "basis": "Set-system shattering; publication identity verified in author university bibliography: https://profiles.ucalgary.ca/norbert-sauer",
+      "title": "On the density of families of sets, Sauer",
+      "url": "https://doi.org/10.1016/0097-3165(72)90019-2"
+    },
+    "walk": {
+      "basis": "Diffusion and return probabilities.",
+      "title": "Random Walks on Graphs: A Survey",
+      "url": "https://cs.yale.edu/publications/techreports/tr1029.pdf"
+    }
+  },
+  "status": "40_PRECISE_CANDIDATES_SOURCE_READY_NOT_EXECUTED"
+}

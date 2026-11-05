@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETE_SCOPED_NEGATIVE",
+  "gate_passed": false,
+  "gate_improvement_percent": -0.007158070997470567,
+  "gate_improvement_95_percent": [
+    -0.198810572584619,
+    0.1806591450936778
+  ],
+  "gate_oracle_headroom_percent": 0.9276489458117987,
+  "deadline_utc": "2026-11-05T05:34:03Z",
+  "completed_utc": "2026-11-05T05:19:28.010102+00:00",
+  "original_single_gate_consumed": true,
+  "final_test_read": 0,
+  "next_action": "Stop this TA research goal. Retain candidate/results/failures; no new proposal or test run."
+}

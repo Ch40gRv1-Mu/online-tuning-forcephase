@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "027341a89837820e392410d86b5c1887cbc9c6e625fcf896b40cae6a5d124b45",
+  "members": {
+    "src/deploy60_v1/analyze_matrix.py": "924e07c5864c2bf745cada16c85cdc7967f992afaa933447f762b738d3121b94",
+    "src/deploy60_v1/deploy_batch60.py": "e5a44da535ff4aceb33be040f0084b3f2e3cab99710a10f90e730491ff55664c",
+    "src/deploy60_v1/deploy_static60.py": "6b067a6f35ddf5e583321c695254e4d40358a5c716ca636d90b9e080ad1ad594",
+    "src/deploy60_v1/deployment_consistency.py": "c40d3f3d4c7c78ea19b0c579860c74c5a3b543e1c7717d911bc5142ca166b4e5",
+    "src/deploy60_v1/matrix_reuse.py": "6ccbecf6427c8aed86efa6ea566f7d5575038effafd797ffefae20cdf0cf704f",
+    "src/deploy60_v1/online_gate.py": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+    "src/deploy60_v1/policy.py": "ca9f0a5f81b63ab72d45c5627284a0e8a054d26f6e07494008f6557bc848006c",
+    "src/deploy60_v1/resource_recovery.py": "e025c5f2834effe2326f3e084370fe8c8d2ff5040cf4d9a06275cbc51067089c",
+    "src/deploy60_v1/run_matrix.py": "32413e8769bfd70d1a14953373f4ee7000c469ce4d9300114245854109d6497a",
+    "src/deploy60_v1/run_pilot.py": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "metadata/deploy60_consistency8_v1_spec.json": "86c9663980790e9a263dfbd3eb6b0fe80302f03b4f28f2bffcf7116adc921b03",
+    "metadata/deploy60_parent_manifest.json": "ae8ceecb74fe4f1a51d1268e9b536c50477591d232bc5c7ee74e7255cfd78190",
+    "metadata/deploy60_retained_policy.json": "a2266ffcbe387df09531179bdb66cc1198878fe59114a70a16de2ba7bec3ea4c",
+    "metadata/deploy60_source_integrity.json": "46ae9f0d79e8f9bf652099f632f7c38d974a5035a7e738ac52686eb4d820eb81"
+  },
+  "scope": "Required public research source, numeric executable policy, public input identity-only manifest and complete/valid source receipt. No professor attachment, timing table, context or old local performance."
+}

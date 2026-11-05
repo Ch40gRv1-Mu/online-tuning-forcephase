@@ -1,0 +1,697 @@
+{
+  "analysis_events": [
+    {
+      "block_id": "B01",
+      "charged_known_worker_cpu_s": 7.161941000000001,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B01",
+      "feature_table_sha256": "3508baa20d9bd6d0d2d02eb5f0d0d412bcfcb1a0346abca90a61aee9beaf9a88",
+      "file_sha256": "990c0a6bcd5299ba8928c316aa9922c7e82a375cd1612ef2c4fb4fe7d02114fe",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B01/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 2.9451751249143854
+    },
+    {
+      "block_id": "B02",
+      "charged_known_worker_cpu_s": 6.899642000000001,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B02",
+      "feature_table_sha256": "b1acdb38f903e53e1f66078f147850108103cd9f6862dfefd6cb9df5ed27b78b",
+      "file_sha256": "a418229e04c513bf6dc6b6565a3ed14a719be2a70f7eb434f05f46e01300f972",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B02/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 2.8924431250197813
+    },
+    {
+      "block_id": "B03",
+      "charged_known_worker_cpu_s": 7.230986000000001,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B03",
+      "feature_table_sha256": "27e92a512f8dcefa2a7d5d6b824d0228f7a6d15b91455902a09f3ab3b7a6bb60",
+      "file_sha256": "6412bb34e10459572a390da9dcbfe924381dd2e5d210964476dd8ca1085bb31c",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B03/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 2.9701795829460025
+    },
+    {
+      "block_id": "B04",
+      "charged_known_worker_cpu_s": 7.173616000000001,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B04",
+      "feature_table_sha256": "4bc8cd6a048162ed675ee58e0dae57bd8844f1729c715409e8115a9353181376",
+      "file_sha256": "e352d8f7cd8af019bc3a329cc103c6f41539d0203eeac0f0e582fd0ad3b0a664",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B04/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 2.8880260000005364
+    },
+    {
+      "block_id": "B05",
+      "charged_known_worker_cpu_s": 7.173971,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B05",
+      "feature_table_sha256": "4bc8cd6a048162ed675ee58e0dae57bd8844f1729c715409e8115a9353181376",
+      "file_sha256": "13e687680e7444ec1aa2bca9ce65fb841028dedf191105c12ce563017d3404de",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B05/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 2.9706952499691397
+    },
+    {
+      "block_id": "B06",
+      "charged_known_worker_cpu_s": 7.182872999999999,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B06",
+      "feature_table_sha256": "4bc8cd6a048162ed675ee58e0dae57bd8844f1729c715409e8115a9353181376",
+      "file_sha256": "eb1f1af62f9ffb7d94b51bbc0b0d36a2ab82457cb25cff0fe387621572cb14cc",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B06/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 2.9247128749266267
+    },
+    {
+      "block_id": "B07",
+      "charged_known_worker_cpu_s": 7.494199,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B07",
+      "feature_table_sha256": "121dd0e8185a186d54f10cf2f19b5c959e14726542467ae9083def7137530735",
+      "file_sha256": "7c8b0a8dd84b9e1eb889ae39ea785c114a3ce57b6bceef568040bc4b4e7a2e47",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B07/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 3.0505952920066193
+    },
+    {
+      "block_id": "B08",
+      "charged_known_worker_cpu_s": 7.204695000000001,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B08",
+      "feature_table_sha256": "121dd0e8185a186d54f10cf2f19b5c959e14726542467ae9083def7137530735",
+      "file_sha256": "ffbf4448c1e736ef4b05f380e50677be7cb35104b8076d2fcbb88be3299ff9ff",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B08/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 2.775345916976221
+    },
+    {
+      "block_id": "B09",
+      "charged_known_worker_cpu_s": 7.029971,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B09",
+      "feature_table_sha256": "2d12393d84453585a81b18be89e64042da2a651563eb6fc4ff2fea6682f01df2",
+      "file_sha256": "88994a6f82751e91f70fcd91b4efce7ddea8ccdb4eff25a27fd7a7677f6c7fad",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B09/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 3.0331960000330582
+    },
+    {
+      "block_id": "B10",
+      "charged_known_worker_cpu_s": 7.338691,
+      "cost_summary_shared_once_not_recharged": true,
+      "event_id": "analysis:B10",
+      "feature_table_sha256": "2d12393d84453585a81b18be89e64042da2a651563eb6fc4ff2fea6682f01df2",
+      "file_sha256": "dc6441bf6e23bd5945e5fda0fe6d8c882809d307c4509a51dc19da8a0585a222",
+      "note": "Full-block worker CPU counted once; per-round files are components, not extra charges. Parent/startup overhead remains unmetered unless separately recorded.",
+      "path": "outputs/ta100/B10/COMPLETE.json",
+      "terminal_rounds": 10,
+      "unknown_worker_count": 0,
+      "wall_s": 3.1053562079323456
+    }
+  ],
+  "as_of_utc": "2026-11-05T06:55:24.809627+00:00",
+  "budget": {
+    "measured_headroom_cpu_s_excluding_unmetered": 16922.81698563,
+    "parent_project_limit_cpu_s": 360000,
+    "stage_allocated_cpu_s": 18000,
+    "stage_measured_fraction": 0.05984350079833333,
+    "this_is_not_an_exact_remaining_budget": true
+  },
+  "builds_and_selftests": [
+    {
+      "canonical_receipt_id": "eedf83d880a981ec8a91993c8a5d989207d062152a7a2393acb114e6b4d0765e",
+      "charged_cpu_s": 7.276606860999999,
+      "compiled_groups": [
+        "core10",
+        "graph10"
+      ],
+      "components_are_included_not_additional": {
+        "build_cpu_s": 7.200082999999999,
+        "controller_cpu_s": 0.076523861
+      },
+      "duplicate_receipt_copies_not_charged": [
+        {
+          "file_sha256": "304730f6c546d85e3c412b57808b3429da57c7cdf864c721f3bd99554360d913",
+          "path": "work/ta100/collection_delivery_v1/build_receipt.json"
+        }
+      ],
+      "event_id": "static_build_core10_graph10",
+      "file_sha256": "304730f6c546d85e3c412b57808b3429da57c7cdf864c721f3bd99554360d913",
+      "new_physical_work": true,
+      "path": "work/ta100/build_v1/build_receipt.json",
+      "status": "COMPLETE",
+      "wall_s": 7.315453868999612
+    },
+    {
+      "canonical_receipt_id": "2cc640da640bbd612c18f7e9bf9abeb951f23f56ce0dbcfcc13d890f4449fdad",
+      "charged_cpu_s": 9.302940797,
+      "components_are_included_not_additional": {
+        "build_cpu_s": 9.17149,
+        "controller_cpu_s": 0.128146797,
+        "synthetic_check_cpu_s": 0.0033040000000001957
+      },
+      "duplicate_receipt_copies_not_charged": [
+        {
+          "file_sha256": "90b4a5af55121898de8dec20b036d5f2a66c4932f0545f5cd257353ed57ca0e9",
+          "path": "work/ta100/graph_all30_v1/build_receipt.json"
+        }
+      ],
+      "event_id": "static_build_graph_all30",
+      "file_sha256": "90b4a5af55121898de8dec20b036d5f2a66c4932f0545f5cd257353ed57ca0e9",
+      "new_physical_work": true,
+      "path": "work/ta100/build_graph_all30_v1/build_receipt.json",
+      "status": "COMPLETE",
+      "wall_s": 9.261668475999613
+    },
+    {
+      "canonical_receipt_id": "43e0339c72871e7e3c6155dc4ee92b9ebe32dc6715b907856aabe94fedd83895",
+      "charged_cpu_s": 8.29247815,
+      "components_are_included_not_additional": {
+        "build_cpu_s": 8.053986,
+        "controller_cpu_s": 0.23488715,
+        "synthetic_check_cpu_s": 0.0036050000000007465
+      },
+      "duplicate_receipt_copies_not_charged": [
+        {
+          "file_sha256": "93b1e52a2c17184b304752ef7c026553f8427582df8c098789b61b08499b974c",
+          "path": "work/ta100/algebra20_v1/build_receipt.json"
+        }
+      ],
+      "event_id": "static_build_algebra20",
+      "file_sha256": "93b1e52a2c17184b304752ef7c026553f8427582df8c098789b61b08499b974c",
+      "new_physical_work": true,
+      "path": "work/ta100/build_algebra20_v1/build_receipt.json",
+      "status": "COMPLETE",
+      "wall_s": 8.205619656000636
+    },
+    {
+      "canonical_receipt_id": "fa8fbdfa811743276cd8ad4fae653788e5c791ffbb61f73f78dbffa90db76ba1",
+      "charged_cpu_s": 165.25150011600002,
+      "components_are_included_not_additional": {
+        "child_cpu_s": 165.24245000000002,
+        "controller_cpu_s": 0.009050115999999997
+      },
+      "duplicate_receipt_copies_not_charged": [
+        {
+          "file_sha256": "248d68e6c1fc434bd23863065c373f4e1a55b427c05e44e30f49f42cb7f9247e",
+          "path": "work/ta100/observer_build_logs_v1/build_receipt.json"
+        }
+      ],
+      "event_id": "observer_build",
+      "file_sha256": "248d68e6c1fc434bd23863065c373f4e1a55b427c05e44e30f49f42cb7f9247e",
+      "new_physical_work": true,
+      "path": "work/ta100/observer_build_receipt_v1.json",
+      "status": "COMPLETE",
+      "wall_s": 165.45339980299468
+    }
+  ],
+  "deduplication_rules": [
+    "Use immutable collection-manifest/method identity and feature-table SHA; multiple scoring blocks referencing one table do not create new physical collection events.",
+    "Build receipt canonical IDs identify copied receipt aliases; top-level total includes child/components and is charged once, without adding nested steps.",
+    "Delivery receipt collection totals repeat already charged CPU; only separately metered archive/controller CPU is additional.",
+    "Completed-block analysis CPU is charged once per block; per-round CPU files are components.",
+    "When available, newD full process-tree stage CPU supersedes per-row sums, with reconciliation exposed rather than added twice.",
+    "No server CPU is added to historical TA wall time or PAR2 as a fabricated end-to-end cost."
+  ],
+  "engineering_issues_without_new_solver_work": [
+    {
+      "evidence": "Root coordinator report",
+      "issue": "Collection-identity guard initially compared static base population SHA with collection SHA",
+      "new_solver_jobs": 0,
+      "preparation_cpu_s": null,
+      "resolution_commit": "2ab992c",
+      "scope": "Rejected B06 before scoring/output; prior blocks not rerun"
+    },
+    {
+      "evidence": "work/ta100/new_dynamic192_v1/stage_receipt.json",
+      "issue": "NewD prelaunch receipt JSON-encoding guard",
+      "new_solver_jobs": 0,
+      "preparation_cpu_s": null,
+      "scope": "Zero tasks and zero solver jobs; original source/binary/receipt unchanged, frozen raw receipt independently represented"
+    }
+  ],
+  "feature_table_usage_deduplicated": [
+    {
+      "charged_as_new_collection": true,
+      "complete": true,
+      "consuming_blocks": [
+        "B02"
+      ],
+      "expected_inputs": 192,
+      "physical_collection_id": "static:6a4d6ec1ca5a68dabf5230b799267bd2b4d55d8aad6ac0341ddaf25e55373abb",
+      "repeated_block_references_do_not_add_collection_cpu": true,
+      "table": {
+        "file_sha256": "b1acdb38f903e53e1f66078f147850108103cd9f6862dfefd6cb9df5ed27b78b",
+        "path": "outputs/ta100/features_core10_v1.json"
+      }
+    },
+    {
+      "charged_as_new_collection": true,
+      "complete": true,
+      "consuming_blocks": [
+        "B03"
+      ],
+      "expected_inputs": 192,
+      "physical_collection_id": "static:04d8944dc4dc8e7eaf87c945fe4feff101b8aad6f012473278d4fd22d03d9a85",
+      "repeated_block_references_do_not_add_collection_cpu": true,
+      "table": {
+        "file_sha256": "27e92a512f8dcefa2a7d5d6b824d0228f7a6d15b91455902a09f3ab3b7a6bb60",
+        "path": "outputs/ta100/features_graph10_v1.json"
+      }
+    },
+    {
+      "charged_as_new_collection": true,
+      "complete": true,
+      "consuming_blocks": [
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "expected_inputs": 192,
+      "physical_collection_id": "static:2792ca7a34cd655cb3ea6a8b1139ec6a51729d1b3f6396d8185d319cfed15d2a",
+      "repeated_block_references_do_not_add_collection_cpu": true,
+      "table": {
+        "file_sha256": "4bc8cd6a048162ed675ee58e0dae57bd8844f1729c715409e8115a9353181376",
+        "path": "outputs/ta100/features_graph_all30_v1.json"
+      }
+    },
+    {
+      "charged_as_new_collection": true,
+      "complete": true,
+      "consuming_blocks": [
+        "B07",
+        "B08"
+      ],
+      "expected_inputs": 192,
+      "physical_collection_id": "static:67400c639ccf0dee7e76b20fa123fc182ea94b2746d1740f914ef9f4d02a44b6",
+      "repeated_block_references_do_not_add_collection_cpu": true,
+      "table": {
+        "file_sha256": "121dd0e8185a186d54f10cf2f19b5c959e14726542467ae9083def7137530735",
+        "path": "outputs/ta100/features_algebra20_v1.json"
+      }
+    },
+    {
+      "charged_as_new_collection": false,
+      "complete": true,
+      "consuming_blocks": [
+        "B01"
+      ],
+      "expected_inputs": 192,
+      "historical_probe_cpu_s_not_recharged": 194.25819005699995,
+      "new_postprocessing_cpu_s": 0.031134999999999996,
+      "new_postprocessing_wall_s": 0.046709374990314245,
+      "new_solver_cpu_s": 0.0,
+      "physical_collection_id": "historical_D_prefix_192",
+      "repeated_block_references_do_not_add_collection_cpu": true,
+      "table": {
+        "file_sha256": "3508baa20d9bd6d0d2d02eb5f0d0d412bcfcb1a0346abca90a61aee9beaf9a88",
+        "path": "outputs/ta100/features_dynamic_existing_v1.json"
+      }
+    },
+    {
+      "charged_as_new_collection": true,
+      "complete": true,
+      "consuming_blocks": [
+        "B09",
+        "B10"
+      ],
+      "expected_inputs": 192,
+      "per_table_probe_cpu_is_nested_not_extra": 218.055812599,
+      "physical_collection_id": "new_nativeD:de848394be261bd01ad4d6209473198e0730c4ac75152aeb4fb3184343dd03c8",
+      "repeated_block_references_do_not_add_collection_cpu": true,
+      "table": {
+        "file_sha256": "2d12393d84453585a81b18be89e64042da2a651563eb6fc4ff2fea6682f01df2",
+        "path": "outputs/ta100/features_new_dynamic20_v1.json"
+      }
+    }
+  ],
+  "historical_reuse": {
+    "D_prefix_192": {
+      "charged_new_solver_cpu_s": 0,
+      "historical_cpu_s": 194.25819005699995,
+      "note": "Historical probe work remains historical, despite reuse by10newmechanism rounds."
+    },
+    "cached_R1_baseline": {
+      "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+      "charged_new_refitting_cpu_s": 0,
+      "note": "The frozen baseline and fixed folds are reused; their original fitting cost is outside TA100 and not reconstructed here."
+    },
+    "old_TA_wall_labels": {
+      "charged_new_solver_cpu_s": 0,
+      "note": "Provided measurements reused; reported TA wall/PAR2 sums are not this stage physical CPU."
+    }
+  },
+  "new_dynamic_collection": {
+    "charged_cpu_s": 218.72073848099998,
+    "delivery": {
+      "archive_bytes": 280777,
+      "archive_sha256": "13f7810935a43a4da53f32aabe604e6a736bab36170302c8aa0ae995923e69f5",
+      "charged_remote_index_archive_cpu_s": 0.178276855,
+      "file_sha256": "2c442c5896875655beb1067ff0df636122dd2a92232fc245fa48023174bf517a",
+      "path": "work/ta100/new_dynamic192_v1/index_archive_receipt.json"
+    },
+    "feature_columns": 20,
+    "feature_table": {
+      "file_sha256": "2d12393d84453585a81b18be89e64042da2a651563eb6fc4ff2fea6682f01df2",
+      "path": "outputs/ta100/features_new_dynamic20_v1.json"
+    },
+    "instance_prefixes": 192,
+    "local_copy_and_merge": {
+      "charged_copy_extract_cpu_s": 0.129271,
+      "charged_merge_cpu_s": 0.11729799999999999,
+      "file_sha256": "b6cee869375a589e9a1e773fca8304a1a3f46ec9727ab5e93b88d70238d3417d",
+      "path": "work/ta100/new_dynamic192_v1/copy_merge_cost_v1.json",
+      "payload_merge_cpu_s_included_not_added": 0.03214399999999999,
+      "unknown_remote_read_cpu_s": null
+    },
+    "manifest": {
+      "file_sha256": "de848394be261bd01ad4d6209473198e0730c4ac75152aeb4fb3184343dd03c8",
+      "path": "configs/ta100/new_dynamic192_manifest_v1.json"
+    },
+    "no_terminal_answers_adopted": true,
+    "physical_charge_count": 1,
+    "physical_collection_id": "new_nativeD:de848394be261bd01ad4d6209473198e0730c4ac75152aeb4fb3184343dd03c8",
+    "receipt_index": {
+      "file_sha256": "3c189b3985e0e9a545c01ff9e781a8ab7b9672719d4bb333f2898b879539ecaa",
+      "path": "work/ta100/new_dynamic192_v1/receipt_index.json"
+    },
+    "reconciliation": {
+      "explanation": "The top-level process-tree stage total is charged once; per-row sums and child/parent components are contained in it.",
+      "metering_parent_cpu_s": 0.0039114809999999944,
+      "per_row_cpu_sum_included_not_added": 218.055812599,
+      "process_tree_cpu_s": 218.716827,
+      "stage_minus_per_row_cpu_s": 0.6649258819999773
+    },
+    "row_completion": {
+      "file_sha256": "d97e4d086033217719b4b89efa8e01862ca5be23e2fc6ef0250ed2073445c276",
+      "path": "work/ta100/new_dynamic192_v1/output/completion.json"
+    },
+    "stage_receipt": {
+      "file_sha256": "7907b1c3400cd2377f9df4bc3c1571056c0baabfd1de8cfe0078879380b0cbf9",
+      "path": "work/ta100/new_dynamic192_v1/stage_receipt.json"
+    },
+    "status": "COMPLETE_FULL192",
+    "statuses": {
+      "COMPLETE": 104,
+      "EARLY_SOLVED_UNVERIFIED": 15,
+      "MISSING": 73
+    },
+    "wall_s": 29.795425714000885
+  },
+  "schema": "ta100.resource_costs.v1",
+  "scope": {
+    "completed_feature_tables_observed": 6,
+    "distinct_static_group_collections": 4,
+    "gate_test_read": false,
+    "new_full_phase_runtime_matrix_runs": 0,
+    "note": "Four static-group tables, one historical-D-log-derived table, and one newD20 table. Four static collections plus one new boundedD collection, not five static collections.",
+    "population": "Frozen180fit+60feedback;192 eligible public inputs",
+    "stage": "TA100 only"
+  },
+  "static_collections": [
+    {
+      "charged_cpu_s": 135.17351523099993,
+      "collection_manifest_sha256": "6a4d6ec1ca5a68dabf5230b799267bd2b4d55d8aad6ac0341ddaf25e55373abb",
+      "completion": {
+        "file_sha256": "166a59d85c9b9365fafb5ef70d81505397bd476953f6fb04a87d1e4457728b99",
+        "path": "work/ta100/collection_delivery_v1/core10_v1/output/completion.json"
+      },
+      "components_are_included_not_additional": {
+        "controller_cpu_s": 1.2549614009999992,
+        "feature_cpu_s": 124.94138799999999,
+        "preparation_cpu_s": 8.977165829999993,
+        "total_accounted_cpu_s": 135.17351523099993
+      },
+      "event_id": "static:6a4d6ec1ca5a68dabf5230b799267bd2b4d55d8aad6ac0341ddaf25e55373abb",
+      "feature_table": {
+        "file_sha256": "b1acdb38f903e53e1f66078f147850108103cd9f6862dfefd6cb9df5ed27b78b",
+        "path": "outputs/ta100/features_core10_v1.json"
+      },
+      "group": "core10",
+      "instance_measurements": 192,
+      "method": {
+        "base_worker_source_sha256": "864b37866e78b55d671146d81d71e825aad9250a9b78cfb70374f1b806ca5b39",
+        "binary_sha256": "43ed57715d1be4ece068750bafce6c37e601db60b175d3c131da4e034aec06e5",
+        "cpu_helper_sha256": "7b0e95364847b13f54268cd2b2f5e383839169ca0a613460b05e202c11d8d3e2",
+        "dependency_sha256": {},
+        "extractor_source_sha256": "9680b5385f8d9958ca04f70df00dee4cf8a8f66fed4f11b694b9d559699b61f9",
+        "group": "core10",
+        "parser_source_sha256": "da85ba488b63e96071c7e1155dcaaed03601aa33423018050c451f10940b3b31",
+        "worker_source_sha256": "241318b7f228f706fe421174ff3aaae7df3c1c06da8d31d122a9d55aeae03747"
+      },
+      "method_count": 10,
+      "physical_charge_count": 1,
+      "role_counts": {
+        "development_feedback": 48,
+        "development_fit": 144
+      },
+      "statuses": {
+        "COMPLETE": 178,
+        "RESOURCE_LIMIT": 14
+      }
+    },
+    {
+      "charged_cpu_s": 207.98639099699997,
+      "collection_manifest_sha256": "04d8944dc4dc8e7eaf87c945fe4feff101b8aad6f012473278d4fd22d03d9a85",
+      "completion": {
+        "file_sha256": "5b9294e851138c4db1e5d76a8db275a7bcc6bb8dc00e54a00dbdd9181e4aaf7b",
+        "path": "work/ta100/collection_delivery_v1/graph10_v1/output/completion.json"
+      },
+      "components_are_included_not_additional": {
+        "controller_cpu_s": 1.844669583000006,
+        "feature_cpu_s": 197.6216169999999,
+        "preparation_cpu_s": 8.520104413999993,
+        "total_accounted_cpu_s": 207.98639099699997
+      },
+      "event_id": "static:04d8944dc4dc8e7eaf87c945fe4feff101b8aad6f012473278d4fd22d03d9a85",
+      "feature_table": {
+        "file_sha256": "27e92a512f8dcefa2a7d5d6b824d0228f7a6d15b91455902a09f3ab3b7a6bb60",
+        "path": "outputs/ta100/features_graph10_v1.json"
+      },
+      "group": "graph10",
+      "instance_measurements": 192,
+      "method": {
+        "base_worker_source_sha256": "864b37866e78b55d671146d81d71e825aad9250a9b78cfb70374f1b806ca5b39",
+        "binary_sha256": "28ef94f5335fb706a13a27e58d1e9a90608b14142c5c335eee63641e6d7b51b4",
+        "cpu_helper_sha256": "7b0e95364847b13f54268cd2b2f5e383839169ca0a613460b05e202c11d8d3e2",
+        "dependency_sha256": {
+          "graph_features.hpp": "5110f471c25ddefdc5fe228f20da2bce400404004d97af85182761bdc5a0bfa6"
+        },
+        "extractor_source_sha256": "c42eed86bca482aa13bc52606903cfe90ec5f17d68f3f598302a120cf7dfd63b",
+        "group": "graph10",
+        "parser_source_sha256": "da85ba488b63e96071c7e1155dcaaed03601aa33423018050c451f10940b3b31",
+        "worker_source_sha256": "241318b7f228f706fe421174ff3aaae7df3c1c06da8d31d122a9d55aeae03747"
+      },
+      "method_count": 10,
+      "physical_charge_count": 1,
+      "role_counts": {
+        "development_feedback": 48,
+        "development_fit": 144
+      },
+      "statuses": {
+        "COMPLETE": 170,
+        "RESOURCE_LIMIT": 14,
+        "TIMEOUT": 8
+      }
+    },
+    {
+      "charged_cpu_s": 185.166785018,
+      "collection_manifest_sha256": "2792ca7a34cd655cb3ea6a8b1139ec6a51729d1b3f6396d8185d319cfed15d2a",
+      "completion": {
+        "file_sha256": "dae320221c8ba5d0a24d006c4a88733d633540b0988cdd8e6eb62a315b455087",
+        "path": "work/ta100/graph_all30_v1/output/completion.json"
+      },
+      "components_are_included_not_additional": {
+        "controller_cpu_s": 1.8184305460000014,
+        "feature_cpu_s": 174.116078,
+        "preparation_cpu_s": 9.232276471999997,
+        "total_accounted_cpu_s": 185.166785018
+      },
+      "event_id": "static:2792ca7a34cd655cb3ea6a8b1139ec6a51729d1b3f6396d8185d319cfed15d2a",
+      "feature_table": {
+        "file_sha256": "4bc8cd6a048162ed675ee58e0dae57bd8844f1729c715409e8115a9353181376",
+        "path": "outputs/ta100/features_graph_all30_v1.json"
+      },
+      "group": "graph_all30",
+      "instance_measurements": 192,
+      "method": {
+        "base_worker_source_sha256": "864b37866e78b55d671146d81d71e825aad9250a9b78cfb70374f1b806ca5b39",
+        "binary_sha256": "eeb7842b300ff8a25ea0db37163fb7072fa2865e055c9a30de71870c8bad3ed2",
+        "cpu_helper_sha256": "7b0e95364847b13f54268cd2b2f5e383839169ca0a613460b05e202c11d8d3e2",
+        "dependency_sha256": {
+          "graph_extra_features.hpp": "0c82851b156e6a4d88f548a7d2e8126f3f487530a5b39aa0d531fb93d11c93cd",
+          "graph_features.hpp": "5110f471c25ddefdc5fe228f20da2bce400404004d97af85182761bdc5a0bfa6"
+        },
+        "extractor_source_sha256": "44f7de9321146d4f6ea5d195ac747300e74851fd82e21215ad205c2551a5223e",
+        "group": "graph_all30",
+        "parser_source_sha256": "da85ba488b63e96071c7e1155dcaaed03601aa33423018050c451f10940b3b31",
+        "worker_source_sha256": "241318b7f228f706fe421174ff3aaae7df3c1c06da8d31d122a9d55aeae03747"
+      },
+      "method_count": 30,
+      "physical_charge_count": 1,
+      "role_counts": {
+        "development_feedback": 48,
+        "development_fit": 144
+      },
+      "statuses": {
+        "COMPLETE": 178,
+        "RESOURCE_LIMIT": 14
+      }
+    },
+    {
+      "charged_cpu_s": 66.63348396300002,
+      "collection_manifest_sha256": "67400c639ccf0dee7e76b20fa123fc182ea94b2746d1740f914ef9f4d02a44b6",
+      "completion": {
+        "file_sha256": "2fa65e877d93845c4db8a19a58dd30f892858bfd2906cd92dd85abef0cae0630",
+        "path": "work/ta100/algebra20_v1/output/completion.json"
+      },
+      "components_are_included_not_additional": {
+        "controller_cpu_s": 0.8812700789999981,
+        "feature_cpu_s": 56.462223000000016,
+        "preparation_cpu_s": 9.289990884000007,
+        "total_accounted_cpu_s": 66.63348396300002
+      },
+      "event_id": "static:67400c639ccf0dee7e76b20fa123fc182ea94b2746d1740f914ef9f4d02a44b6",
+      "feature_table": {
+        "file_sha256": "121dd0e8185a186d54f10cf2f19b5c959e14726542467ae9083def7137530735",
+        "path": "outputs/ta100/features_algebra20_v1.json"
+      },
+      "group": "algebra20",
+      "instance_measurements": 192,
+      "method": {
+        "base_worker_source_sha256": "864b37866e78b55d671146d81d71e825aad9250a9b78cfb70374f1b806ca5b39",
+        "binary_sha256": "abe148460b94ca3d3bd802ebbae4112e0447023b6a4142594f2881a8b639c9d4",
+        "cpu_helper_sha256": "7b0e95364847b13f54268cd2b2f5e383839169ca0a613460b05e202c11d8d3e2",
+        "dependency_sha256": {
+          "algebra_features.hpp": "f651364112ea6f3d0d400185c3e240ee44104fce0824108f064aef125f210d89",
+          "core_extra_features.hpp": "8e7afd308915e528a6eba6ac14b633e3328a2353cab42e277a8f84f452ef22d2"
+        },
+        "extractor_source_sha256": "7d847b3727af046838299c5d670d7891a22df83c2b382b6c47235f0faa58834d",
+        "group": "algebra20",
+        "parser_source_sha256": "da85ba488b63e96071c7e1155dcaaed03601aa33423018050c451f10940b3b31",
+        "worker_source_sha256": "241318b7f228f706fe421174ff3aaae7df3c1c06da8d31d122a9d55aeae03747"
+      },
+      "method_count": 20,
+      "physical_charge_count": 1,
+      "role_counts": {
+        "development_feedback": 48,
+        "development_fit": 144
+      },
+      "statuses": {
+        "COMPLETE": 178,
+        "RESOURCE_LIMIT": 14
+      }
+    }
+  ],
+  "static_delivery_events": [
+    {
+      "archive_bytes": 330421,
+      "archive_sha256": "5c227054cd5bbd42b468e980e734e8a241c3ae1a1299f8eafbdcda6f432a2bcb",
+      "charged_cpu_s": 0.421174362,
+      "event_id": "static_delivery_core10_graph10",
+      "file_sha256": "b37417811a1458dc8c6c4f53d12c154bdc3a61e9a0d61bf54d90aea27d7b1532",
+      "groups": [
+        "core10",
+        "graph10"
+      ],
+      "note": "Only archive/validation controller CPU charged here; collection CPU repeated inside delivery metadata is excluded.",
+      "path": "work/ta100/collection_delivery_v1/collection_delivery_v1_receipt.json",
+      "wall_s": 0.3375422149983933
+    },
+    {
+      "archive_bytes": 201843,
+      "archive_sha256": "4d4db08ed85533c7cc2763bec29fca0b1a553c688b89930b7b55cafc75e845f1",
+      "charged_cpu_s": 0.324031683,
+      "event_id": "static_delivery_graph_all30",
+      "file_sha256": "15728414c4432148b5fafeaf8d509c9cd9c0e8ed3522c2e7eae6ce5fdd10175b",
+      "groups": [
+        "graph_all30"
+      ],
+      "note": "Only archive/validation controller CPU charged here; collection CPU repeated inside delivery metadata is excluded.",
+      "path": "work/ta100/graph_all30_v1/delivery_receipt.json",
+      "wall_s": 0.22581707000063034
+    },
+    {
+      "archive_bytes": 188082,
+      "archive_sha256": "4c1a82e3dd456aa46e725b840ec2c8ced2d71080b35864d5766d2b14b1dcce0b",
+      "charged_cpu_s": 0.286802856,
+      "event_id": "static_delivery_algebra20",
+      "file_sha256": "1512269d9d0895bf7917cb547452fb13b32ee1b706a84a01712a5b968085fad4",
+      "groups": [
+        "algebra20"
+      ],
+      "note": "Only archive/validation controller CPU charged here; collection CPU repeated inside delivery metadata is excluded.",
+      "path": "work/ta100/algebra20_v1/delivery_receipt.json",
+      "wall_s": 0.1965419730040594
+    }
+  ],
+  "status": "COMPLETE_MEASURED_LEDGER_WITH_UNMETERED_ITEMS",
+  "summary": {
+    "analysis_completed_blocks": 10,
+    "analysis_completed_rounds": 100,
+    "historical_reused_probe_cpu_s_not_charged": 194.25819005699995,
+    "known_completed_block_analysis_cpu_s": 71.890585,
+    "known_metered_new_cpu_hours_lower_bound": 0.29921750399166663,
+    "known_metered_new_cpu_s_lower_bound": 1077.18301437,
+    "new_D_collection_cpu_s": 218.72073848099998,
+    "new_D_delivery_or_postprocessing_cpu_s": 0.42484585500000005,
+    "new_physical_native_D_prefixes": 192,
+    "new_physical_structural_instance_group_measurements": 768,
+    "observer_build_and_selftest_cpu_s": 165.25150011600002,
+    "reused_D_log_postprocessing_cpu_s": 0.031134999999999996,
+    "static_builds_cpu_s": 24.872025808,
+    "static_collections_cpu_s": 594.9601752089999,
+    "static_delivery_cpu_s": 1.032008901,
+    "unmetered_items_are_not_zero": true,
+    "wall_times_are_per_event_not_summed": "Workers/groups overlap; CPU totals may be summed after deduplication, event wall times may not."
+  },
+  "unmetered_or_outside_scope": [
+    {
+      "cpu_s": null,
+      "item": "Local coding, literature review, source transformations, ordinary synthetic test compilation/runs before metered builds",
+      "treatment": "unknown; not silently zero and not included in measured lower bound"
+    },
+    {
+      "cpu_s": null,
+      "item": "Local feature-table merges, manifest preparation, transport packing/SSH/SCP not covered by explicit archive/build receipts",
+      "treatment": "unknown; metered remote archive controller events are included separately"
+    },
+    {
+      "cpu_s": null,
+      "item": "Analysis parent process, executor startup/IPC and report/workflow assembly overhead beyond worker CPU fields",
+      "treatment": "unknown; no duplicate charge of analysis worker components"
+    },
+    {
+      "cpu_s": null,
+      "item": "This resource-ledger assembly and its refreshes",
+      "treatment": "unmetered bookkeeping, no experiments/rescoring"
+    },
+    {
+      "cpu_s": null,
+      "item": "NewD remote SSH cat/read transport overhead and prelaunch JSON-guard preparation",
+      "treatment": "Explicit unknown in collector receipts; not silently zero."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "feedback_source_sha256": "17069e3292e4521bec22b8f35ab434a5392da092bdde31003d7340c671ee2e4e",
+  "proposals": [
+    {
+      "features": [
+        "s_positive_fraction",
+        "s_binary_fraction"
+      ],
+      "hypothesis": "R1 length variation split suggests near-uniform short-clause encodings. Test binary fraction as a more direct structure context for the signed preference region; fit alone chooses actions and seven-quantile thresholds.",
+      "id": "sign_binary_context",
+      "max_depth": 2,
+      "seed": 20261104
+    },
+    {
+      "features": [
+        "g_cycle_excess_per_incidence",
+        "s_positive_fraction"
+      ],
+      "hypothesis": "Cycle redundancy may identify a useful structural context only when paired with encoding polarity. Keep graph context but replace gate-motif presence with positive-literal fraction; learn thresholds and actions exclusively on fit with the unchanged bounded cost-tree procedure.",
+      "id": "graph_signed_context",
+      "max_depth": 2,
+      "min_leaf": 12,
+      "min_relative_improvement": 0.01,
+      "quantiles": [
+        0.125,
+        0.25,
+        0.375,
+        0.5,
+        0.625,
+        0.75,
+        0.875
+      ],
+      "seed": 20261105
+    }
+  ],
+  "round": "TA-R02",
+  "schema": "ta-offline-proposals-v1"
+}

@@ -1,0 +1,7 @@
+{
+  "binary_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+  "checker_sha256": "1ecb6f0712a83f8166f93dc8864672a8c9355d41f085c8d5a35d970671a73431",
+  "host": "ubuntu22",
+  "runner_sha256": "e1c708d3c3e0843a273479ed940860f6e031c8fe54e9c96b2bd740a0eb669929",
+  "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04"
+}

@@ -1,0 +1,104 @@
+{
+  "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "block_id": "B08",
+  "collection_manifest_sha256": "67400c639ccf0dee7e76b20fa123fc182ea94b2746d1740f914ef9f4d02a44b6",
+  "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "extractor_source_sha256": "7d847b3727af046838299c5d670d7891a22df83c2b382b6c47235f0faa58834d",
+  "protocol_path": "refine-logs/ta100/PROTOCOL.md",
+  "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+  "registry_path": "configs/ta100/algebra_registry_v1.json",
+  "registry_sha256": "5a878535e1a226907cb1d3878abd9f1e06deda60ab688aa04d486d939bf6d9a5",
+  "rounds": [
+    {
+      "columns": [
+        "algebra_signed_real_rank_deficit"
+      ],
+      "hypothesis": "First64 F* rows; columns are exactly their variables,<=1024. Entries are literal signs. Gaussian partial pivoting with absolute1e-9 pivot threshold. Return1-rank/min(rows,columns).",
+      "id": "I071",
+      "mechanism_key": "signed_clause_row_real_rank_deficiency",
+      "registry_id": "RA11"
+    },
+    {
+      "columns": [
+        "algebra_high_order_walsh_mass"
+      ],
+      "hypothesis": "Take first128 F* clauses of width<=8. Expand each U_C=2^-k product_l(1-sign(l)*z_v). Sum coefficients by variable subset with duplicate clauses retained. Return sum_{degree>=3} coefficient^2 / sum_{nonconstant} coefficient^2.",
+      "id": "I072",
+      "mechanism_key": "real_unsatisfied_count_energy_high_order_walsh",
+      "registry_id": "RA12"
+    },
+    {
+      "columns": [
+        "algebra_canonical_lz78_ratio"
+      ],
+      "hypothesis": "Stream F* canonical signed literals in original clause traversal order, renaming variables by first appearance, with0 delimiters. LZ78 phrase factorization counts a final unmatched prefix as a reference phrase. Return phrase_count*log2(max(2,phrase_count))/(tokens*log2(2*n+1)).",
+      "id": "I073",
+      "mechanism_key": "first_appearance_signed_cnf_lz78_description",
+      "registry_id": "RA13"
+    },
+    {
+      "columns": [
+        "algebra_two_flip_cooperative_escape"
+      ],
+      "hypothesis": "On the fixed LOCALcube, fraction of q-choose2 bit pairs with E(reference)-E(joint_flip)>0 while each individual gain<=0.",
+      "id": "I074",
+      "mechanism_key": "majority_local_cube_cooperative_two_flip_escape",
+      "registry_id": "RA14"
+    },
+    {
+      "columns": [
+        "algebra_plateau_connectedness"
+      ],
+      "hypothesis": "Exact BFS component of the majority reference using only hypercube edges whose endpoint energies both equal the reference energy. Return component_size/2^q.",
+      "id": "I075",
+      "mechanism_key": "majority_local_cube_equal_energy_connectivity",
+      "registry_id": "RA15"
+    },
+    {
+      "columns": [
+        "algebra_sls_state_recurrence"
+      ],
+      "hypothesis": "Starting at the majority reference,128 steps: with probability1/16 choose a random bit; otherwise choose a minimum-energy neighbor, ties randomized. Always move even uphill. mt19937 seed0, decisions via integer modulo. Return1-unique_visited_states/129.",
+      "id": "I076",
+      "mechanism_key": "fixed_noisy_walk_local_cube_state_recurrence",
+      "registry_id": "RA16"
+    },
+    {
+      "columns": [
+        "algebra_persistent_unsat_core"
+      ],
+      "hypothesis": "Using exactly the same129-state trajectory as RA16, among clauses touching the LOCALcube and violated at least once, return the fraction violated in all129 states.",
+      "id": "I077",
+      "mechanism_key": "fixed_noisy_walk_persistent_constraint_identity",
+      "registry_id": "RA17"
+    },
+    {
+      "columns": [
+        "algebra_falsifying_subcube_covariance"
+      ],
+      "hypothesis": "All unordered F* clause pairs: P(U_C)=2^-k. Joint probability is0 on any shared opposite literal, otherwise2^-|union variables|. Return sum_pairs(joint-P_C*P_D)/sum_pairs(joint+P_C*P_D).",
+      "id": "I078",
+      "mechanism_key": "clause_pair_uniform_falsifying_subcube_overlap",
+      "registry_id": "RA18"
+    },
+    {
+      "columns": [
+        "f_core_covered_intersection"
+      ],
+      "hypothesis": null,
+      "id": "I079",
+      "mechanism_key": "covered_literal_candidate_intersection",
+      "registry_id": "NODE_EX01"
+    },
+    {
+      "columns": [
+        "f_core_ite_output"
+      ],
+      "hypothesis": null,
+      "id": "I080",
+      "mechanism_key": "complete_four_clause_ite_function",
+      "registry_id": "NODE_EX02"
+    }
+  ],
+  "schema": "ta100.block.v1"
+}

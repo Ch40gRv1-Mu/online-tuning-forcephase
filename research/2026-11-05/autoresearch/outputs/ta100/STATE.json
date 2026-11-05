@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "status": "COMPLETE_SCOPED_NEGATIVE",
+  "owner_thread": "01a1a93a-0059-7561-9c42-a5ded9d82c94",
+  "target_rounds": 100,
+  "completed_rounds": 100,
+  "completed_blocks": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10"
+  ],
+  "workflow_revisions": 10,
+  "new_scored_solver_CPU_s": 0,
+  "new_existing_log_extraction_CPU_s": 0.031135,
+  "new_model_job_CPU_s": 7.161941,
+  "next_action": "Preserve all100 results,10 workflow revisions,caches and receipts. No further science scheduled; consumed gate and final test remain sealed.",
+  "model_job_CPU_s_known": 71.890585,
+  "feature_table_costs_once": {
+    "3508baa20d9bd6d0d2d02eb5f0d0d412bcfcb1a0346abca90a61aee9beaf9a88": {
+      "cost_note": "Reused probe CPU is not new physical work; do not add this CPU to TA wall time.",
+      "new_extraction_cpu_s": 0.031134999999999996,
+      "new_extraction_wall_s": 0.046709374990314245,
+      "new_solver_cpu_s": 0.0,
+      "reused_probe_cpu_s": 194.25819005699995
+    },
+    "b1acdb38f903e53e1f66078f147850108103cd9f6862dfefd6cb9df5ed27b78b": {
+      "controller_cpu_s": 1.2549614009999992,
+      "feature_cpu_s": 124.94138799999999,
+      "preparation_cpu_s": 8.977165829999993,
+      "total_accounted_cpu_s": 135.17351523099993
+    },
+    "27e92a512f8dcefa2a7d5d6b824d0228f7a6d15b91455902a09f3ab3b7a6bb60": {
+      "controller_cpu_s": 1.844669583000006,
+      "feature_cpu_s": 197.6216169999999,
+      "preparation_cpu_s": 8.520104413999993,
+      "total_accounted_cpu_s": 207.98639099699997
+    },
+    "4bc8cd6a048162ed675ee58e0dae57bd8844f1729c715409e8115a9353181376": {
+      "controller_cpu_s": 1.8184305460000014,
+      "feature_cpu_s": 174.116078,
+      "preparation_cpu_s": 9.232276471999997,
+      "total_accounted_cpu_s": 185.166785018
+    },
+    "121dd0e8185a186d54f10cf2f19b5c959e14726542467ae9083def7137530735": {
+      "controller_cpu_s": 0.8812700789999981,
+      "feature_cpu_s": 56.462223000000016,
+      "preparation_cpu_s": 9.289990884000007,
+      "total_accounted_cpu_s": 66.63348396300002
+    },
+    "2d12393d84453585a81b18be89e64042da2a651563eb6fc4ff2fea6682f01df2": {
+      "merge_cpu_s_to_payload": 0.03214399999999999,
+      "merge_wall_s_to_payload": 0.03214679204393178,
+      "new_child_cpu_s": 204.66864999999999,
+      "new_probe_cpu_s": 218.055812599,
+      "not_added_to_TA_wall": true,
+      "observer_build_cost": "Referenced separately once by immutable build receipt; not charged again per field or shard.",
+      "sum_child_wall_s": 209.70953381896834
+    }
+  },
+  "no_gate_or_test_evaluation": true,
+  "goal_status": "complete",
+  "final_report": "reports/ta100/REPORT.md",
+  "catalogue": "reports/ta100/FEATURE_CATALOGUE.md",
+  "resource_ledger": "reports/ta100/RESOURCE_COSTS.json",
+  "decision": "No credible incremental phase-selection signal under the fixed shallow-rule exploratory procedure. Three reason-DAG features have insufficient coverage, not a valid rejection.",
+  "goal_started_utc": "2026-11-05T05:27:30+00:00",
+  "last_score_completed_utc": "2026-11-05T06:53:27.681404+00:00",
+  "finalized_utc": "2026-11-05T06:56:25.079110+00:00",
+  "goal_elapsed_wall_s": 5462,
+  "goal_completed_utc": "2026-11-05T06:58:32+00:00",
+  "all_ta100_workers_terminal": true,
+  "dedicated_ssh_control_closed": true
+}

@@ -1,0 +1,133 @@
+{
+  "checker_and_model_cpu_hours": 0.007649256726388888,
+  "feature_cpu_hours": 0.003526928611111111,
+  "identity": {
+    "checker_options": [
+      "--no-trim"
+    ],
+    "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+    "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "extractor_memory_bytes": 1610612736,
+    "extractor_sha256": "7bb7756f28d9ed550b583dd303f80549069129bd80ea9d37190ce6ebebda9896",
+    "feature_contract": "depth43_v1",
+    "feature_join_and_whitelist_source_sha256": "840e1ce33abd85b992073369cf23d6301510a0644f8be00d46ab187e9c30fdde",
+    "feature_stage_identity": {
+      "base_structure_source_sha256": "9f59eb26ca048cf8361f172ff2e757847958dc6eaae08bb1c25aba6d5b493b59",
+      "binary_sha256": "7bb7756f28d9ed550b583dd303f80549069129bd80ea9d37190ce6ebebda9896",
+      "cohort_sha256": "f259dc2a26cca843360015833ae78291898bf7b1e7450389bd07bf7ea611ecf4",
+      "runner_sha256": "e2ada86d5c5c32b4a7e4b65d965956dd03aafad4faf07c57937d169a86539006",
+      "source_sha256": "24ba94ea4e3c4956edbb8d608807b125a5a0059fa0cb1032026a1cd339348291"
+    },
+    "memory_bytes": 1610612736,
+    "mode": "static",
+    "numeric_feature_allowlist": [
+      "d_core_edge_fraction",
+      "d_core_vertex_fraction",
+      "d_gate_condensation_depth",
+      "d_gate_cyclic_variable_fraction",
+      "d_gate_depth_exact",
+      "d_gate_output_positive_fraction",
+      "d_gate_variable_coverage",
+      "d_incidence_geometry_exact",
+      "d_leaf_peeling_rounds",
+      "g_components",
+      "g_cycle_excess",
+      "g_cycle_excess_per_incidence",
+      "g_degree_cv",
+      "g_degree_entropy_normalized",
+      "g_degree_max",
+      "g_degree_mean",
+      "g_degree_p50",
+      "g_degree_p90",
+      "g_degree_two_fraction",
+      "g_gate_motif_fraction",
+      "g_gate_motifs_exact",
+      "g_largest_component_fraction",
+      "g_leaf_variable_fraction",
+      "s_antihorn_fraction",
+      "s_binary_fraction",
+      "s_clauses",
+      "s_cv_ratio",
+      "s_empty_fraction",
+      "s_header_variables",
+      "s_horn_fraction",
+      "s_jw_positive_fraction",
+      "s_length_std",
+      "s_log_clauses",
+      "s_log_variables",
+      "s_long_fraction",
+      "s_max_length",
+      "s_mean_length",
+      "s_mean_polarity_imbalance",
+      "s_positive_fraction",
+      "s_pure_variable_fraction",
+      "s_ternary_fraction",
+      "s_unit_fraction",
+      "s_variables"
+    ],
+    "original_analysis_cases_sha256": "42cec4ecd10687b47459f3a69739de2ff054d2545c9a8152c097326c710a841b",
+    "original_runtime_extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+    "proof_file_limit_bytes": 1073741824,
+    "runner_sha256": "32413e8769bfd70d1a14953373f4ee7000c469ce4d9300114245854109d6497a",
+    "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+    "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+    "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+    "verification": "timed_binary_LRAT_lrat_trim"
+  },
+  "interpretation": "Original validated T60 outcomes, versioned depth43 features and measured costs; old summary roles remain static-only diagnostics.",
+  "mode": "static",
+  "online_prefix_reached": 0,
+  "resource_recovery": false,
+  "roles": {
+    "development_feedback": {
+      "action_semantics": "Static option pair from initialization.",
+      "all_actions_censored_parents": 9,
+      "best_static_diagnostic": "Iminus",
+      "mean_par2": {
+        "D": 73.5413728125,
+        "Fminus": 86.02870134375,
+        "Fplus": 90.20492834375,
+        "Iminus": 70.51229590625
+      },
+      "oracle_improvement_over_D": 0.031575380274996956,
+      "oracle_improvement_over_best_static_control": -0.010026337742426561,
+      "parents": 16,
+      "solved_seed_average_count": {
+        "D": 7,
+        "Fminus": 5,
+        "Fplus": 4,
+        "Iminus": 7
+      },
+      "three_action_oracle_mean_par2": 71.219276
+    },
+    "development_fit": {
+      "action_semantics": "Static option pair from initialization.",
+      "all_actions_censored_parents": 16,
+      "best_static_diagnostic": "Fplus",
+      "mean_par2": {
+        "D": 86.46420041666667,
+        "Fminus": 90.080283,
+        "Fplus": 86.3143568125,
+        "Iminus": 88.37940870833333
+      },
+      "oracle_improvement_over_D": 0.02697431168538389,
+      "oracle_improvement_over_best_static_control": 0.025285117888799835,
+      "parents": 24,
+      "solved_seed_average_count": {
+        "D": 7.0,
+        "Fminus": 6,
+        "Fplus": 7,
+        "Iminus": 6.5
+      },
+      "three_action_oracle_mean_par2": 84.131888125
+    }
+  },
+  "solver_cpu_hours": 3.7952677961111134,
+  "timing_contract": {
+    "censoring_scope": "Native -t is a wall limit. UNKNOWN does not assert that T CPU seconds were consumed.",
+    "external_wall_watchdog_s": 70,
+    "native_solver_wall_limit_s": 60,
+    "process_cpu_fallback_s": 62,
+    "score": "Observed CPU, success only when verified and CPU<=T; selector adds actual h."
+  }
+}

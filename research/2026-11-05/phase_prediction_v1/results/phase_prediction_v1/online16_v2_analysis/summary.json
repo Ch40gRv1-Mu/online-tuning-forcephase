@@ -1,0 +1,41 @@
+{
+  "checker_and_model_cpu_hours": 7.122453222222215e-05,
+  "feature_cpu_hours": 0.0014984219444444443,
+  "identity": {
+    "checker_sha256": "1ecb6f0712a83f8166f93dc8864672a8c9355d41f085c8d5a35d970671a73431",
+    "common_sha256": "9b4fd58812fb1335be2c51ad7f2102677995ad63eb637484010d12c9c250fb83",
+    "extractor_sha256": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+    "mode": "online",
+    "runner_sha256": "39441fd47c7ca73420420eb648b2bdcd8dfdc4a3d2cbe780dfd4431779067a14",
+    "solver_sha256": "b619194fdfd455e8d64f52d8234e0cb0652035acf2214853e1d0ebca6b4e52fd",
+    "source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+    "spec_sha256": "7d578fe4bb3a743834131d3aa5ca886109a0666d41ea76d7f0ac736f19babd8a",
+    "telemetry_contract_sha256": "bf490ab950935888c333536469c96e9c789e45399f0c87b50e53a686312e01f3",
+    "verification": "timed_LRAT_independent_check"
+  },
+  "interpretation": "Development diagnostic; no held-out confirmation or deployed policy claim.",
+  "mode": "online",
+  "online_prefix_reached": 14,
+  "roles": {
+    "development_fit": {
+      "action_semantics": "All configurations share D prefix; names denote fixed continuations after the K=1000 natural restart, not static from-start configurations.",
+      "all_actions_censored_parents": 13,
+      "best_static_diagnostic": "D",
+      "mean_par2": {
+        "D": 196.80011875,
+        "Fminus": 210.001808625,
+        "Fplus": 210.002345625
+      },
+      "oracle_improvement_over_D": 3.1094366399475604e-06,
+      "oracle_improvement_over_best_static_control": 3.1094366399475604e-06,
+      "parents": 16,
+      "solved_seed_average_count": {
+        "D": 3,
+        "Fminus": 2,
+        "Fplus": 2
+      },
+      "three_action_oracle_mean_par2": 196.7995068125
+    }
+  },
+  "solver_cpu_hours": 1.3748885066666667
+}

@@ -1,0 +1,908 @@
+{
+  "clusters": {
+    "2": {
+      "assigned": 141,
+      "missing": 39,
+      "note": "Fit-only descriptive grouping; a cluster is not a validated routing policy.",
+      "parents": 180,
+      "profiles": [
+        {
+          "clear_counts": {
+            "false": 19,
+            "true": 37
+          },
+          "clear_parents": 56,
+          "cluster": 0,
+          "double_timeouts": 66,
+          "feature_quantiles_10_50_90": {
+            "g_cycle_excess_per_incidence": [
+              0.441789704188,
+              0.534186761115,
+              0.7290757083002001
+            ],
+            "g_gate_motif_fraction": [
+              0.0,
+              0.00146440716151,
+              0.5535634244908
+            ],
+            "g_largest_component_fraction": [
+              0.9999899731249999,
+              1.0,
+              1.0
+            ],
+            "g_leaf_variable_fraction": [
+              0.0,
+              0.0,
+              0.0002040244129324
+            ],
+            "s_binary_fraction": [
+              0.0016657955796772887,
+              0.512487273163,
+              0.9676618070278
+            ],
+            "s_length_std": [
+              0.41076681850560004,
+              0.878689997456,
+              8.368373024484
+            ],
+            "s_long_fraction": [
+              0.0,
+              0.00983952192912,
+              0.14867090518799997
+            ],
+            "s_mean_length": [
+              2.266789128232,
+              2.7284624456,
+              4.549869887409998
+            ],
+            "s_mean_polarity_imbalance": [
+              0.054630806364200035,
+              0.209498165484,
+              0.8674624802043999
+            ],
+            "s_positive_fraction": [
+              0.13203512192880007,
+              0.431472450688,
+              0.5009130972312
+            ]
+          },
+          "groups": 133,
+          "initialization_preferred_actions": [
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true"
+          ],
+          "mean_cost_s": {
+            "false": 5815.84139849624,
+            "true": 5568.039706766917
+          },
+          "parents": 133,
+          "preference_supported": true,
+          "preferred_action": "true",
+          "preferred_action_agreement": 1.0,
+          "total_cost_s": {
+            "false": 773506.906,
+            "true": 740549.281
+          }
+        },
+        {
+          "clear_counts": {
+            "false": 0,
+            "true": 0
+          },
+          "clear_parents": 0,
+          "cluster": 1,
+          "double_timeouts": 7,
+          "feature_quantiles_10_50_90": {
+            "g_cycle_excess_per_incidence": [
+              0.4975535774712,
+              0.5087985421465,
+              0.5093541219097
+            ],
+            "g_gate_motif_fraction": [
+              0.0008175015249100002,
+              0.001565018150965,
+              0.001799257872435
+            ],
+            "g_largest_component_fraction": [
+              0.9997297884034,
+              1.0,
+              1.0
+            ],
+            "g_leaf_variable_fraction": [
+              0.002173935119636,
+              0.002288536541725,
+              0.004141897796634999
+            ],
+            "s_binary_fraction": [
+              0.3723671691358,
+              0.3746286771085,
+              0.5128367585182999
+            ],
+            "s_length_std": [
+              0.751095867297,
+              0.7687827860415,
+              0.8255674127582
+            ],
+            "s_long_fraction": [
+              0.003642450742592,
+              0.00369352676417,
+              0.019384405433088992
+            ],
+            "s_mean_length": [
+              2.568723486511,
+              2.6722160755199997,
+              2.672920114779
+            ],
+            "s_mean_polarity_imbalance": [
+              0.2316379502863,
+              0.2366425850285,
+              0.2475932356304
+            ],
+            "s_positive_fraction": [
+              0.3466926730652,
+              0.3536327754635,
+              0.3546133021967
+            ]
+          },
+          "groups": 8,
+          "initialization_preferred_actions": [
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true"
+          ],
+          "mean_cost_s": {
+            "false": 8750.003125,
+            "true": 8750.003
+          },
+          "parents": 8,
+          "preference_supported": false,
+          "preferred_action": "true",
+          "preferred_action_agreement": 1.0,
+          "total_cost_s": {
+            "false": 70000.025,
+            "true": 70000.024
+          }
+        }
+      ],
+      "role": "development_fit"
+    },
+    "3": {
+      "assigned": 141,
+      "missing": 39,
+      "note": "Fit-only descriptive grouping; a cluster is not a validated routing policy.",
+      "parents": 180,
+      "profiles": [
+        {
+          "clear_counts": {
+            "false": 19,
+            "true": 37
+          },
+          "clear_parents": 56,
+          "cluster": 0,
+          "double_timeouts": 66,
+          "feature_quantiles_10_50_90": {
+            "g_cycle_excess_per_incidence": [
+              0.441789704188,
+              0.534186761115,
+              0.7290757083002001
+            ],
+            "g_gate_motif_fraction": [
+              0.0,
+              0.00146440716151,
+              0.5535634244908
+            ],
+            "g_largest_component_fraction": [
+              0.9999899731249999,
+              1.0,
+              1.0
+            ],
+            "g_leaf_variable_fraction": [
+              0.0,
+              0.0,
+              0.0002040244129324
+            ],
+            "s_binary_fraction": [
+              0.0016657955796772887,
+              0.512487273163,
+              0.9676618070278
+            ],
+            "s_length_std": [
+              0.41076681850560004,
+              0.878689997456,
+              8.368373024484
+            ],
+            "s_long_fraction": [
+              0.0,
+              0.00983952192912,
+              0.14867090518799997
+            ],
+            "s_mean_length": [
+              2.266789128232,
+              2.7284624456,
+              4.549869887409998
+            ],
+            "s_mean_polarity_imbalance": [
+              0.054630806364200035,
+              0.209498165484,
+              0.8674624802043999
+            ],
+            "s_positive_fraction": [
+              0.13203512192880007,
+              0.431472450688,
+              0.5009130972312
+            ]
+          },
+          "groups": 133,
+          "initialization_preferred_actions": [
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true"
+          ],
+          "mean_cost_s": {
+            "false": 5815.84139849624,
+            "true": 5568.039706766917
+          },
+          "parents": 133,
+          "preference_supported": true,
+          "preferred_action": "true",
+          "preferred_action_agreement": 1.0,
+          "total_cost_s": {
+            "false": 773506.906,
+            "true": 740549.281
+          }
+        },
+        {
+          "clear_counts": {
+            "false": 0,
+            "true": 0
+          },
+          "clear_parents": 0,
+          "cluster": 1,
+          "double_timeouts": 7,
+          "feature_quantiles_10_50_90": {
+            "g_cycle_excess_per_incidence": [
+              0.506102938338,
+              0.508807902802,
+              0.5093735611766
+            ],
+            "g_gate_motif_fraction": [
+              0.00118654648849,
+              0.00156694267913,
+              0.0018018618812199998
+            ],
+            "g_largest_component_fraction": [
+              0.9996397178712,
+              1.0,
+              1.0
+            ],
+            "g_leaf_variable_fraction": [
+              0.0021735059275480003,
+              0.00228450265898,
+              0.002491877413576
+            ],
+            "s_binary_fraction": [
+              0.3721637510484,
+              0.37441802037,
+              0.3757572396974
+            ],
+            "s_length_std": [
+              0.750302887999,
+              0.763879902926,
+              0.7759892578022001
+            ],
+            "s_long_fraction": [
+              0.003632132916846,
+              0.00367933205972,
+              0.0037333955881059997
+            ],
+            "s_mean_length": [
+              2.67033496441,
+              2.67233143566,
+              2.6730110038620003
+            ],
+            "s_mean_polarity_imbalance": [
+              0.2311706839104,
+              0.234794331617,
+              0.23998012355599999
+            ],
+            "s_positive_fraction": [
+              0.3532398235124,
+              0.353733406513,
+              0.3547135955006
+            ]
+          },
+          "groups": 7,
+          "initialization_preferred_actions": [
+            "true",
+            null,
+            "true",
+            "true",
+            null,
+            null,
+            null,
+            null,
+            null,
+            "true"
+          ],
+          "mean_cost_s": {
+            "false": 10000.0,
+            "true": 10000.0
+          },
+          "parents": 7,
+          "preference_supported": false,
+          "preferred_action": null,
+          "preferred_action_agreement": null,
+          "total_cost_s": {
+            "false": 70000.0,
+            "true": 70000.0
+          }
+        },
+        {
+          "clear_counts": {
+            "false": 0,
+            "true": 0
+          },
+          "clear_parents": 0,
+          "cluster": 2,
+          "double_timeouts": 0,
+          "feature_quantiles_10_50_90": {
+            "g_cycle_excess_per_incidence": [
+              0.479749631811,
+              0.479749631811,
+              0.479749631811
+            ],
+            "g_gate_motif_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "g_largest_component_fraction": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "g_leaf_variable_fraction": [
+              0.00796812749004,
+              0.00796812749004,
+              0.00796812749004
+            ],
+            "s_binary_fraction": [
+              0.83147033534,
+              0.83147033534,
+              0.83147033534
+            ],
+            "s_length_std": [
+              0.937981193604,
+              0.937981193604,
+              0.937981193604
+            ],
+            "s_long_fraction": [
+              0.0558899398108,
+              0.0558899398108,
+              0.0558899398108
+            ],
+            "s_mean_length": [
+              2.33533963887,
+              2.33533963887,
+              2.33533963887
+            ],
+            "s_mean_polarity_imbalance": [
+              0.2642055156,
+              0.2642055156,
+              0.2642055156
+            ],
+            "s_positive_fraction": [
+              0.332106038292,
+              0.332106038292,
+              0.332106038292
+            ]
+          },
+          "groups": 1,
+          "initialization_preferred_actions": [
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true",
+            "true"
+          ],
+          "mean_cost_s": {
+            "false": 0.025,
+            "true": 0.024
+          },
+          "parents": 1,
+          "preference_supported": false,
+          "preferred_action": "true",
+          "preferred_action_agreement": 1.0,
+          "total_cost_s": {
+            "false": 0.025,
+            "true": 0.024
+          }
+        }
+      ],
+      "role": "development_fit"
+    }
+  },
+  "models": {
+    "graph_gate": {
+      "loss_examples": [
+        {
+          "action": "false",
+          "delta_s": 1484.981,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.462789431633,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 0.999947094528,
+            "g_leaf_variable_fraction": 0.00657470733655,
+            "s_binary_fraction": 0.711281250588,
+            "s_length_std": 1.9480349068,
+            "s_long_fraction": 0.00274937162388,
+            "s_mean_length": 2.42148590513,
+            "s_mean_polarity_imbalance": 0.240849996944,
+            "s_positive_fraction": 0.404846035847
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 693.797,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.928537326246,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0720954988858,
+            "s_long_fraction": 0.999969243072,
+            "s_mean_length": 13.9996001599,
+            "s_mean_polarity_imbalance": 0.000361691511709,
+            "s_positive_fraction": 0.499998283605
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 1.2850000000000001,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.457413365425,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 0.999951378422,
+            "g_leaf_variable_fraction": 0.0125443671902,
+            "s_binary_fraction": 0.735422189612,
+            "s_length_std": 1.91764693846,
+            "s_long_fraction": 0.00338474358171,
+            "s_mean_length": 2.40203232098,
+            "s_mean_polarity_imbalance": 0.268600858975,
+            "s_positive_fraction": 0.404812486185
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.653,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.718084959286,
+            "g_gate_motif_fraction": 0.00103362315316,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.87503832539,
+            "s_length_std": 7.0761663821,
+            "s_long_fraction": 0.0547391086211,
+            "s_mean_length": 3.65368829612,
+            "s_mean_polarity_imbalance": 0.662717238905,
+            "s_positive_fraction": 0.468100931945
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.500055643616,
+            "g_gate_motif_fraction": 0.213038101863,
+            "g_largest_component_fraction": 0.999996125713,
+            "g_leaf_variable_fraction": 3.87428713117e-06,
+            "s_binary_fraction": 0.298323317974,
+            "s_length_std": 0.4621280877,
+            "s_long_fraction": 0.0,
+            "s_mean_length": 2.69865178207,
+            "s_mean_polarity_imbalance": 0.0826700640546,
+            "s_positive_fraction": 0.472083948672
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.561222944012,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.991700902166,
+            "s_length_std": 3.51072277122,
+            "s_long_fraction": 0.00827845331241,
+            "s_mean_length": 2.31674890068,
+            "s_mean_polarity_imbalance": 0.772551866637,
+            "s_positive_fraction": 0.428057137256
+          }
+        }
+      ],
+      "metrics": {
+        "bootstrap": {
+          "cost_ratio_95": [
+            0.8615751371701278,
+            1.0113808219279263
+          ],
+          "groups": 60,
+          "improvement_95": [
+            -0.01138082192792632,
+            0.1384248628298722
+          ],
+          "mean_delta_s_95": [
+            -801.8117187500002,
+            61.06166250000038
+          ],
+          "note": "Exploratory paired interval; feedback reuse is not multiplicity-adjusted.",
+          "samples": 2000,
+          "seed": 20261105,
+          "unit": "equivalence_group"
+        },
+        "clear_accuracy": 0.7083333333333334,
+        "clear_parents": 24,
+        "largest_gain_fraction": 0.5053615040282485,
+        "max_regression_s": 1484.981,
+        "relative_improvement": 0.05015395864974048,
+        "switches": 13
+      },
+      "tree": {
+        "feature": "g_cycle_excess_per_incidence",
+        "left": {
+          "feature": "g_gate_motif_fraction",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          },
+          "threshold": 0.0
+        },
+        "right": {
+          "feature": "g_cycle_excess_per_incidence",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          },
+          "threshold": 0.706277858220875
+        },
+        "threshold": 0.48654943603899997
+      }
+    },
+    "length_signed": {
+      "loss_examples": [
+        {
+          "action": "false",
+          "delta_s": 798.2420000000002,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.617716704799,
+            "g_gate_motif_fraction": 0.00508907549573,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.00104097268488,
+            "s_binary_fraction": 0.235953904337,
+            "s_length_std": 6.34998491502,
+            "s_long_fraction": 0.0128187128247,
+            "s_mean_length": 2.89586355826,
+            "s_mean_polarity_imbalance": 0.517196585101,
+            "s_positive_fraction": 0.232962324221
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 693.797,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.928537326246,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0720954988858,
+            "s_long_fraction": 0.999969243072,
+            "s_mean_length": 13.9996001599,
+            "s_mean_polarity_imbalance": 0.000361691511709,
+            "s_positive_fraction": 0.499998283605
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.5289999999999999,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.611083789811,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0758174781143,
+            "s_long_fraction": 2.04347701701e-06,
+            "s_mean_length": 3.00010421733,
+            "s_mean_polarity_imbalance": 9.45194733766e-05,
+            "s_positive_fraction": 0.500018050087
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.500055643616,
+            "g_gate_motif_fraction": 0.213038101863,
+            "g_largest_component_fraction": 0.999996125713,
+            "g_leaf_variable_fraction": 3.87428713117e-06,
+            "s_binary_fraction": 0.298323317974,
+            "s_length_std": 0.4621280877,
+            "s_long_fraction": 0.0,
+            "s_mean_length": 2.69865178207,
+            "s_mean_polarity_imbalance": 0.0826700640546,
+            "s_positive_fraction": 0.472083948672
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.561222944012,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.991700902166,
+            "s_length_std": 3.51072277122,
+            "s_long_fraction": 0.00827845331241,
+            "s_mean_length": 2.31674890068,
+            "s_mean_polarity_imbalance": 0.772551866637,
+            "s_positive_fraction": 0.428057137256
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.475892178416,
+            "g_gate_motif_fraction": 0.549588200346,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.579997426743,
+            "s_length_std": 8.57235273852,
+            "s_long_fraction": 0.00976036540255,
+            "s_mean_length": 2.50835215028,
+            "s_mean_polarity_imbalance": 0.150383757102,
+            "s_positive_fraction": 0.50094816558
+          }
+        }
+      ],
+      "metrics": {
+        "bootstrap": {
+          "cost_ratio_95": [
+            0.8614796471345462,
+            1.006674396121245
+          ],
+          "groups": 60,
+          "improvement_95": [
+            -0.006674396121245041,
+            0.13852035286545386
+          ],
+          "mean_delta_s_95": [
+            -809.9065079166667,
+            36.448636249999495
+          ],
+          "note": "Exploratory paired interval; feedback reuse is not multiplicity-adjusted.",
+          "samples": 2000,
+          "seed": 20261104,
+          "unit": "equivalence_group"
+        },
+        "clear_accuracy": 0.7916666666666666,
+        "clear_parents": 24,
+        "largest_gain_fraction": 0.4986939207460547,
+        "max_regression_s": 798.2420000000002,
+        "relative_improvement": 0.05287635313535044,
+        "switches": 18
+      },
+      "tree": {
+        "feature": "s_positive_fraction",
+        "left": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          },
+          "threshold": 0.196010372787
+        },
+        "right": {
+          "feature": "s_length_std",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          },
+          "threshold": 0.46287575042025
+        },
+        "threshold": 0.388031304508
+      }
+    },
+    "matched_simple_tree": {
+      "loss_examples": [
+        {
+          "action": "false",
+          "delta_s": 798.2420000000002,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.617716704799,
+            "g_gate_motif_fraction": 0.00508907549573,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.00104097268488,
+            "s_binary_fraction": 0.235953904337,
+            "s_length_std": 6.34998491502,
+            "s_long_fraction": 0.0128187128247,
+            "s_mean_length": 2.89586355826,
+            "s_mean_polarity_imbalance": 0.517196585101,
+            "s_positive_fraction": 0.232962324221
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 693.797,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.928537326246,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0720954988858,
+            "s_long_fraction": 0.999969243072,
+            "s_mean_length": 13.9996001599,
+            "s_mean_polarity_imbalance": 0.000361691511709,
+            "s_positive_fraction": 0.499998283605
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.5289999999999999,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.611083789811,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.0,
+            "s_length_std": 0.0758174781143,
+            "s_long_fraction": 2.04347701701e-06,
+            "s_mean_length": 3.00010421733,
+            "s_mean_polarity_imbalance": 9.45194733766e-05,
+            "s_positive_fraction": 0.500018050087
+          }
+        },
+        {
+          "action": "false",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.500055643616,
+            "g_gate_motif_fraction": 0.213038101863,
+            "g_largest_component_fraction": 0.999996125713,
+            "g_leaf_variable_fraction": 3.87428713117e-06,
+            "s_binary_fraction": 0.298323317974,
+            "s_length_std": 0.4621280877,
+            "s_long_fraction": 0.0,
+            "s_mean_length": 2.69865178207,
+            "s_mean_polarity_imbalance": 0.0826700640546,
+            "s_positive_fraction": 0.472083948672
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.561222944012,
+            "g_gate_motif_fraction": 0.0,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.991700902166,
+            "s_length_std": 3.51072277122,
+            "s_long_fraction": 0.00827845331241,
+            "s_mean_length": 2.31674890068,
+            "s_mean_polarity_imbalance": 0.772551866637,
+            "s_positive_fraction": 0.428057137256
+          }
+        },
+        {
+          "action": "true",
+          "delta_s": 0.0,
+          "features": {
+            "g_cycle_excess_per_incidence": 0.475892178416,
+            "g_gate_motif_fraction": 0.549588200346,
+            "g_largest_component_fraction": 1.0,
+            "g_leaf_variable_fraction": 0.0,
+            "s_binary_fraction": 0.579997426743,
+            "s_length_std": 8.57235273852,
+            "s_long_fraction": 0.00976036540255,
+            "s_mean_length": 2.50835215028,
+            "s_mean_polarity_imbalance": 0.150383757102,
+            "s_positive_fraction": 0.50094816558
+          }
+        }
+      ],
+      "metrics": {
+        "bootstrap": {
+          "cost_ratio_95": [
+            0.8614796471345462,
+            1.006674396121245
+          ],
+          "groups": 60,
+          "improvement_95": [
+            -0.006674396121245041,
+            0.13852035286545386
+          ],
+          "mean_delta_s_95": [
+            -809.9065079166667,
+            36.448636249999495
+          ],
+          "note": "Exploratory paired interval; feedback reuse is not multiplicity-adjusted.",
+          "samples": 2000,
+          "seed": 20261104,
+          "unit": "equivalence_group"
+        },
+        "clear_accuracy": 0.7916666666666666,
+        "clear_parents": 24,
+        "largest_gain_fraction": 0.4986939207460547,
+        "max_regression_s": 798.2420000000002,
+        "relative_improvement": 0.05287635313535044,
+        "switches": 18
+      },
+      "tree": {
+        "feature": "s_positive_fraction",
+        "left": {
+          "feature": "s_positive_fraction",
+          "left": {
+            "action": "true"
+          },
+          "right": {
+            "action": "false"
+          },
+          "threshold": 0.196010372787
+        },
+        "right": {
+          "feature": "s_length_std",
+          "left": {
+            "action": "false"
+          },
+          "right": {
+            "action": "true"
+          },
+          "threshold": 0.46287575042025
+        },
+        "threshold": 0.388031304508
+      }
+    }
+  },
+  "round": "TA-R01"
+}

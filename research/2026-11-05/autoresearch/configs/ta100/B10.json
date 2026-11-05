@@ -1,0 +1,105 @@
+{
+  "baseline_sha256": "26a8753718008ed817fe3335236ef136f38624a2d1a6db20bd51c6042688751f",
+  "block_id": "B10",
+  "collection_manifest_sha256": "de848394be261bd01ad4d6209473198e0730c4ac75152aeb4fb3184343dd03c8",
+  "dataset_sha256": "26a3ff4e7b3fbda802c5cc67198d2b90523fbd89fa0c06e981813e5a8d5f21be",
+  "extractor_source_sha256": "3ebb653dbd66f2c4a166fbde154fb2e342cec428a86fa5aa42b40ddb397e2e74",
+  "observer_bundle_sha256": "e52370b41d6e9a0cc5adc98dc64ea8b785340817313560325453058bfc5c067b",
+  "protocol_path": "refine-logs/ta100/PROTOCOL.md",
+  "protocol_sha256": "0ca593974a5868fb90f967df92933919fec6f2e9647510f622f67fa39404d00f",
+  "registry_path": "configs/ta100/dynamic_registry_v2.json",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "rounds": [
+    {
+      "columns": [
+        "td_bump_concentration"
+      ],
+      "hypothesis": "前缀变量冲突分析bump计数分布的Herfindahl指数。",
+      "id": "I091",
+      "mechanism_key": "search_attention_concentration",
+      "registry_id": "TD21"
+    },
+    {
+      "columns": [
+        "td_activity_rank_enrichment"
+      ],
+      "hypothesis": "最近抽样256学习子句变量，在动作前checkpoint当前activity前10%中的占比相对基准0.1的偏离。",
+      "id": "I092",
+      "mechanism_key": "conflict_activity_rank_localization",
+      "registry_id": "TD22"
+    },
+    {
+      "columns": [
+        "td_learned_recurrence"
+      ],
+      "hypothesis": "最近128学习子句分别与前一128窗口的最近文字集合相似度均值；符号保留。",
+      "id": "I093",
+      "mechanism_key": "learned_constraint_recurrence",
+      "registry_id": "TD23"
+    },
+    {
+      "columns": [
+        "td_learned_postassertion_reuse_age"
+      ],
+      "hypothesis": "固定bottom-k256学习子句样本中，明确跳过定义该子句的birth driving assertion后，首次再次作为reason使用的冲突年龄中位数；未复用者保持右删失。",
+      "id": "I094",
+      "mechanism_key": "learned_lemma_postassertion_reuse_latency",
+      "registry_id": "TD24v2"
+    },
+    {
+      "columns": [
+        "td_blocker_success_share"
+      ],
+      "hypothesis": "主搜索传播检查中，因blocking literal已满足而跳过reason子句读取的比例。",
+      "id": "I095",
+      "mechanism_key": "watcher_short_circuit_success",
+      "registry_id": "TD25"
+    },
+    {
+      "columns": [
+        "td_restart_signed_retention"
+      ],
+      "hypothesis": "重启前被赋值的固定样本中，重启后仍赋同一符号的负赋值保留率减去正赋值保留率。",
+      "id": "I096",
+      "mechanism_key": "restart_signed_state_retention",
+      "registry_id": "TD26"
+    },
+    {
+      "columns": [
+        "td_chrono_redecision_flip"
+      ],
+      "hypothesis": "chronological回退后，同一变量下次自由决策与撤销赋值符号不同的比例。",
+      "id": "I097",
+      "mechanism_key": "chronological_phase_transition",
+      "registry_id": "TD27"
+    },
+    {
+      "columns": [
+        "td_conflict_burstiness"
+      ],
+      "hypothesis": "相邻主分析冲突间自由决策数间隔的变异系数；不是间隔均值。",
+      "id": "I098",
+      "mechanism_key": "search_conflict_renewal_dispersion",
+      "registry_id": "TD28"
+    },
+    {
+      "columns": [
+        "td_glue_size_dependence"
+      ],
+      "hypothesis": "学习子句按固定长度桶分层后，Glue与长度的有序联合相关；使用Spearman桶秩协方差。",
+      "id": "I099",
+      "mechanism_key": "learned_level_width_dependence",
+      "registry_id": "TD29"
+    },
+    {
+      "columns": [
+        "td_lemma_dependency_depth"
+      ],
+      "hypothesis": "学习子句的证明依赖深度，定义原始reason子句为0，新子句为1+其已用reason子句最大深度。",
+      "id": "I100",
+      "mechanism_key": "learned_proof_ancestry",
+      "registry_id": "TD30"
+    }
+  ],
+  "schema": "ta100.block.v1"
+}

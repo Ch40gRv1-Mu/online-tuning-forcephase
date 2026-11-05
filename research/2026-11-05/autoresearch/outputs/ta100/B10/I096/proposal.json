@@ -1,0 +1,16 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_restart_signed_retention"
+    ],
+    "hypothesis": "重启前被赋值的固定样本中，重启后仍赋同一符号的负赋值保留率减去正赋值保留率。",
+    "id": "I096",
+    "mechanism_key": "restart_signed_state_retention",
+    "registry_id": "TD26"
+  },
+  "original_preexecution_config": "configs/ta100/B10.json",
+  "original_config_sha256": "67f43debe577a48dd5d37d15fccbcb00c27ebc3d4da3745941328b899ad634e0",
+  "registry_sha256": "008e6024f011c3ecd5b36c7623c7f45418ef27264ea7eb69359052636661bcde",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

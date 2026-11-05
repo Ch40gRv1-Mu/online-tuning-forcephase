@@ -1,0 +1,17 @@
+{
+  "schema": "ta100.frozen_proposal_export.v1",
+  "proposal": {
+    "columns": [
+      "td_phase_source_entropy"
+    ],
+    "hypothesis": "target、saved、其余三个决策相位来源桶的归一化熵。",
+    "id": "I003",
+    "mechanism_key": "native_source_arbitration",
+    "registry_id": "TD03",
+    "source_relation": "Literature/source describes mechanisms; feature formula and predictive hypothesis are ours, unscored."
+  },
+  "original_preexecution_config": "configs/ta100/B01.json",
+  "original_config_sha256": "e0ea71371c39d45ff6b469ffeea801bdb3aa7ccfdcceb787f1b6a49978d01243",
+  "registry_sha256": "1ded58f70a43470c3d70ef2be8e2f3060ac8a1bb77aa384aa4f984fb4a04a249",
+  "note": "Post-execution export of original frozen references; not a new preregistration."
+}

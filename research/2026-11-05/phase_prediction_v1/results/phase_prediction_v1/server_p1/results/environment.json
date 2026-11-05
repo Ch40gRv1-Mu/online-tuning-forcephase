@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-11-04T15:15:25.288707+00:00",
+  "host": "ubuntu22",
+  "platform": "Linux-6.2.0-37-generic-x86_64-with-glibc2.35",
+  "available_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "cadical_version": "3.0.1",
+  "cadical_source_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+  "build_info": "Version 3.0.1\ng++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0 -Wall -Wextra -O3 -DNDEBUG\nWed Nov 4 23:15:15 CST 2026 Linux ubuntu22 6.2.0-37-generic x86_64\n",
+  "binary_sha256": {
+    "bin/cadical": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+    "bin/cnf_structure": "2f4cc472d4430b10785688b68ec0afb5d80e18eb7c90564754d08214c398f334",
+    "bin/lrat-check": "1ecb6f0712a83f8166f93dc8864672a8c9355d41f085c8d5a35d970671a73431"
+  },
+  "vendor_sha256": "2dccd6ecc1878348dd70194d51df6b69006bf86439b5b3c395a5c5dd8863201e",
+  "status": "built; correctness gate still required",
+  "privacy": "professor CSV/image and local performance records were not transferred"
+}

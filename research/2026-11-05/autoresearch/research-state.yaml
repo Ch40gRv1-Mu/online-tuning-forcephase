@@ -1,0 +1,143 @@
+version: 1
+project: forcephase-simple-consistent-features
+status: COMPLETED_SCOPED_NEGATIVE
+created_date: '2026-10-29'
+goal_thread_id: '01a1832b-3f46-7e13-9410-a0b2e0f885f3'
+automation_id: forcephase-autoresearch
+continuity_minutes: 20
+continuity_status: PAUSED_AFTER_PRESET_COMPLETION
+phase: COMPLETE
+related_active_project:
+  path: work/phase_prediction_20261104/project
+  scope: Separate newer phase_prediction_v1 no-family study. This parent state describes the historical six-program study only.
+  authoritative_status: work/phase_prediction_20261104/project/reports/phase_prediction_v1/STATUS.md
+  testing_note: literature/test_sets_and_fast_screen_2026-11-04.md
+  decision: Preserve the newer project's frozen fit/feedback/gate/test roles and existing owner. Do not infer that its goal is complete from this historical state.
+latest_feature_clarification:
+  date: '2026-11-04'
+  user_confirmed: deck-like means DAG-like; longer clauses more likely Fminus is a hypothesis.
+  catalogue: literature/phase_feature_catalogue_2026-11-04.md
+  status: DOCUMENTATION_ONLY_NO_NEW_EXECUTION
+  next_action: Preserve frozen current proposals. Evaluate bounded candidates only on complete permitted development evidence; new extractors require a committed protocol, and dynamic fields require pre-action continuation semantics and costs.
+current_hypothesis: none
+latest_user_data_reuse_request:
+  date: '2026-11-04'
+  source: /Users/expexp/.codex/attachments/d72b682d-d232-4410-838a-6fbcb063bbc5/data.xlsx
+  source_sha256: 51dec2fdf3512571aaaac92d65915a39cd879a6b63083fd8b90a846ce90c6158
+  instruction: Use TA-provided wall times; do not separately run or rerun SAT instances for this analysis.
+  scope: Offline two-polarity structure analysis, preserving existing development/gate/test separation. Input feature extraction is distinct from SAT solving.
+  new_solver_measurements_for_this_analysis: false
+  later_exception: rapid_feature_discovery_plan.user_dynamic_authorization permits bounded server feature probes, while complete runtime labels remain reused.
+  note: literature/ta_walltime_reuse_2026-11-04.md
+  next_action: Freeze a bounded offline protocol, reuse existing permitted CNFs/features and TA timing labels, and preserve censored rows. Do not fabricate D or pre-action dynamic features from terminal statistics.
+rapid_feature_discovery_plan:
+  date: '2026-11-04'
+  status: COMPLETE_SCOPED_NEGATIVE
+  protocol_commit: 3bf1cf7
+  original_protocol_commit: fedbbaa
+  goal_thread_id: 01a1a93a-0059-7561-9c42-a5ded9d82c94
+  goal_status: complete
+  user_parallel_authorization: Explicitly requested agent and node parallelism, actual execution and optional work on another computer.
+  current_agents: [parallel_static, parallel_learning, parallel_nodes]
+  node_status: Authenticated vipuser ControlMaster established in temporary socket; supplied dual SSH endpoints match the existing remote identity. No password persisted. Separate additional computer not yet identified.
+  plan: refine-logs/EXPERIMENT_PLAN.md
+  tracker: refine-logs/EXPERIMENT_TRACKER.md
+  target: TA false/true timing preference, with static features first and bounded optional early dynamic probes.
+  labels: Reuse TA wall times; no new complete SAT runtime matrix.
+  user_dynamic_authorization: User explicitly permits server collection of Glue and decision level. This supplements the prior no-rerun scope only for necessary short feature probes.
+  proposed_dynamic_limit: One fixed D prefix per eligible development instance, 2 CPU seconds including parsing, first40 coverage block then at most192; stage allocation at most1 CPU hour within the existing100-hour cap.
+  learning: Fit-only transforms and thresholds; clustering k2/3; at most4 in-context proposal rounds within the existing global8-round limit, at most2 proposals each, matched simple-tree control.
+  delivery_checkpoint_utc: '2026-11-05 05:34:03'
+  delivery_reason: User can wait about40 additional minutes from04:54UTC; report first scored static comparison within15–20minutes, then current complete evidence by40minutes without changing frozen criteria.
+  fit_label_screen: Completed180fit; true1110486.242, false1147053.219, oracle1048771.926, free_oracle_gain0.0555741383.
+  execution_status: AllR1-R4 and original60gate complete. Static development191available48excluded1unavailable; dynamic192terminal121complete56missing15early-unverified. Gate51terminal48complete3public-download failures, all60parents retained with12fallbacks. All TA-owned workers terminated; no full phase runtime matrix rerun.
+  development_result: Best gate-eligible candidate R1 ordinary tree uses positive-literal fraction and clause-length standard deviation; feedback improvement5.2876353percent,18switches24clear,95percent interval[-0.6674percent,13.8520percent]. Same policy as length/signed proposal; no demonstrated ICL advantage. Both dynamic candidates retain their static fallback with zero increment.
+  candidate_freeze: configs/ta_feature_discovery/frozen_gate_candidate_v1.json
+  candidate_commit: 3d0d4ca
+  report: reports/ta_feature_discovery/REPORT.md
+  shared_round_accounting: Latest other-owner state has4 completed CaDiCaL rounds; TA4 rounds bring shared observed count to8. No additional proposal rounds are scheduled.
+  gate_status: CONSUMED_ONCE_COMPLETE_NOT_PASSED. Gate gain -0.007158percent,95percent improvement interval[-0.198811percent,0.180659percent],20reported solved versus20fixedtrue. Full60gate and the originalsingle ledger retained; final5355 test remains sealed.
+  next_action: No further science in this completed TA branch. Preserve candidate, all eight proposals, negative results, receipts and costs; do not modify the rule or reopen this gate. Other CaDiCaL owner retains its own active goal and authorized deployment work, with the shared gate already consumed.
+next_action: No further scientific execution in this completed round. All six pre-set hypotheses finished and no candidate passed the held-out net-cost screen. Preserve outputs and conclude the active goal with a scoped negative result; pause only this completed heartbeat. New features/data/budgets require a new research round, not silent reopening.
+external_evidence_note:
+  date: '2026-11-04'
+  path: literature/external_phase_encoding_2026-11-04.md
+  status: INTERPRETATION_ONLY_NO_EXECUTION
+  decision: Preserve completed round and criteria. Treat signed gate motifs and exclusion-choice structure as possible next-round hypotheses, not validated selectors.
+  next_action: If a new round is undertaken, resolve external raw-data/configuration identity, then commit a bounded structural-feature protocol before exploratory execution. Existing 300 outcomes remain exploratory; evaluate net cost against D by held-out family.
+completed_hypotheses: [H01_cost_aware_static_rule, H02_signed_clause_asymmetry, H03_root_propagation_residual, H04_short_original_D_trace, H05_relative_phase_response, H06_conditioned_propagation]
+max_hypothesis_families: 6
+max_confirmation_candidates: 1
+outer_loop_every_completed_hypotheses: 2
+development:
+  root: /Users/expexp/Documents/ChatGPT/automated-reasoning/work/expanded_parents/results
+  raw_parents: 300
+  clear_labels: 69
+  clear_families: 46
+  cost_valid_parents: 291
+  role: EXPLORATORY_ALREADY_EXAMINED
+runtime:
+  server: 'root@223.109.239.36:13756'
+  ssh_control: /Users/expexp/Documents/Codex/2026-10-28/new-chat/work/ssh-fast
+  remote_root: /root/forcephase_subinstances_paired_v1_20261028
+  workers: 8
+  memory_mb_per_worker: 1536
+  parent_cutoff_s: 60
+  wall_watchdog_extra_s: 10
+  checker_cpu_s: 60
+  checker_wall_s: 70
+  proof_temporary_cap_gib: 1
+  disk_reserve_gib: 16
+  solver_sha256: 025f51c05ddfd257e9d29a96e33ff62cb429150307b14282bcdabc12de8eb5cb
+resources:
+  prior_campaign_accounted_cpu_s_snapshot: 69452.23356
+  autoresearch_H02_extraction_cpu_s: 14.171706096
+  autoresearch_H02_build_cpu_s: 1.05
+  autoresearch_H03_extraction_cpu_s: 30.459939538
+  autoresearch_H03_build_cpu_s: 1.37
+  autoresearch_H04_feature_and_verification_cpu_s: 145.037806932
+  autoresearch_H05_new_feature_and_verification_cpu_s: 288.228035326
+  autoresearch_H06_extraction_cpu_s: 27.70918453
+  autoresearch_H06_build_cpu_s: 2.28
+  inherited_config_cpu_hours: 50
+  inherited_limit_source: work/expanded_parents/results/config.json:max_total_cpu_hours
+  inherited_limit_provenance: Prior execution configuration; not represented as a freshly user-approved budget.
+  scheduling_rule: Keep inherited conservative envelope pending provenance reconciliation; checkpoint after each block. A planning boundary is not an approval requirement.
+  progress_check_minutes: 20
+research_boundaries:
+  formal_block_max_wall_hours: 2
+  new_confirmation_parents_max: 160
+  new_confirmation_block_size: 40
+  fresh_family_target: 10
+  repeated_seeds: [0, 1, 2]
+  repeated_seed0_extra: 1
+  independent_audit: false
+  dryrun: false
+notifications:
+  meaningful_changes_only: true
+  email_authorized: true
+  email_scope: User explicitly requested email for problems during the active rapid feature-discovery goal; no routine or unrelated mail.
+  email_recipient: ccmuagent@gmail.com
+
+ta100_discovery:
+  status: COMPLETE_SCOPED_NEGATIVE
+  user_authorization: Explicit100iterations, online primary-source research, nonredundant proposals, results logging and workflow optimization every10. Supersedes oldroundcap for this new exploratory phase only.
+  protocol: refine-logs/ta100/PROTOCOL.md
+  tracker: refine-logs/ta100/TRACKER.md
+  state: outputs/ta100/STATE.json
+  completed_rounds: 100
+  target_rounds: 100
+  workflow_revisions: 10
+  data: Original180fit60feedback only; consumedgate forbidden, final5355 sealed.
+  new_stage_allocation_CPU_h: 5
+  whole_research_limit_CPU_h: 100
+  model_reference: Frozen old10static R1 model andcached5fold predictions.
+  goal_status: complete
+  problem_email: 1a1aa792003fa7c2; two pre-execution identity mismatches corrected autonomously, no duplicate solver units.
+  next_action: Preserve100 terminal rounds and10 workflow revisions; no further science scheduled. Gate/test remain sealed; separate CaDiCaL owner remains authoritative for its own active study.
+  report: reports/ta100/REPORT.md
+  catalogue: reports/ta100/FEATURE_CATALOGUE.md
+  resource_ledger: reports/ta100/RESOURCE_COSTS.json
+  result: Twelve new fields selected, one positive feedback point estimate and eleven regressions; best I001 +0.1601percent with interval crossing zero and fit-group-CV -0.6347percent. Eighty-eight not selected; five constant and three reason-DAG fields low coverage. No credible added signal; not a proof that useful features do not exist.
+  result_email: 1a1aaf2399fa4e9b; user explicitly requested all rules and results by email; sent to ccmuagent@gmail.com with three attachments and read-back verified filenames/byte sizes.
+  result_email_receipt: reports/ta100/email_delivery/SENT.json
