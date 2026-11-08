@@ -7,9 +7,22 @@ from pathlib import Path
 from .common import check_model, parse_stats, validate_spec, write
 from .export_results import export
 from .stage_inputs import stage
+from .filter_manifest import exclude, score_status
 
 
 class ScientificContracts(unittest.TestCase):
+    def test_external_filter_preserves_missing_coverage_and_any_solve(self):
+        self.assertTrue(exclude([False,False,False]))
+        self.assertFalse(exclude([False,None,False]))
+        self.assertFalse(exclude([False,True,False]))
+        self.assertFalse(exclude([False,False]))
+
+    def test_official_scores_use_penalty_not_nominal_cutoff(self):
+        self.assertFalse(score_status(["10000","10000"],5000))
+        self.assertTrue(score_status(["2000","1004.301"],1000))
+        self.assertIsNone(score_status(["10000","missing"],5000))
+        self.assertIsNone(score_status(["nan"],5000))
+
     def test_missing_statistics_are_not_zero(self):
         self.assertIsNone(parse_stats("s UNKNOWN\n")["conflicts"])
         self.assertEqual(parse_stats("c conflicts: 0 0 per second\n")["conflicts"], 0)

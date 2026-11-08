@@ -68,14 +68,33 @@ def load_manifest(path):
     return rows
 
 
+def validate_formal_cohort(spec, manifest, rows):
+    if any(r["role"] != "baseline_development" for r in rows):
+        raise ValueError("formal cohort has unapproved roles")
+    if len(rows) == 5355 and not spec.get("cohort_filter_receipt_path"):
+        return
+    path = spec.get("cohort_filter_receipt_path")
+    if not path or sha(path) != spec.get("cohort_filter_receipt_sha256"):
+        raise ValueError("subset requires a frozen external-filter receipt")
+    receipt = read(path)
+    if receipt.get("policy") != "official_all_tracks_unsolved_v1" or receipt["manifest_sha256"] != sha(manifest):
+        raise ValueError("unsupported filter or mismatched filtered manifest")
+    selected = {r["instance_key"] for r in rows}
+    retained, excluded = set(receipt["retained_ids"]), set(receipt["excluded_ids"])
+    if selected != retained or retained & excluded or len(retained | excluded) != 5355 or \
+            receipt["master_inputs"] != 5355 or receipt["retained_count"] != len(rows) or \
+            receipt["excluded_count"] != len(excluded) or receipt.get("selection_uses_our_phase_outcomes") is not False:
+        raise ValueError("external filter does not partition the original master")
+
+
 def validate_spec(spec, manifest, tools=True):
     if spec.get("status") not in {"FROZEN", "QUALIFICATION"}:
         raise ValueError("only frozen or explicitly bounded qualification specifications may execute")
     rows = load_manifest(manifest)
     if len(rows) != spec["expected_inputs"] or sha(manifest) != spec["manifest_sha256"]:
         raise ValueError("manifest identity/count mismatch")
-    if spec["status"] == "FROZEN" and (len(rows) != 5355 or any(r["role"] != "baseline_development" for r in rows)):
-        raise ValueError("formal cohort must retain all 5355 inputs")
+    if spec["status"] == "FROZEN":
+        validate_formal_cohort(spec, manifest, rows)
     if spec["status"] == "QUALIFICATION" and (len(rows) > 8 or spec["cutoff_s"] > 10):
         raise ValueError("qualification exceeds 8 inputs / 10 CPU seconds")
     if spec["status"] == "QUALIFICATION" and spec.get("max_physical_cpu_hours", float("inf")) > 0.25:

@@ -2,6 +2,8 @@
 
 日期：2026-11-05；实现更新2026-11-07。状态：IMPLEMENTED_FUNCTIONALLY_QUALIFIED_NOT_FULL_LAUNCHED。
 
+**最新范围修订：**用户2026-11-07随后选择排除官方所有赛道均未解出的636题，保留4719题，计划14157次求解；覆盖不足／不确定项保留。完整5355主名单原样保留。本修订覆盖下文旧的“5355全部执行、不按历史未解筛选”要求。见`EXTERNAL_DIFFICULTY_FILTER_20261107.md`与新的`manifest.official-solvable.v1.csv`，不得再把4719题结果称为5355全集实测。
+
 七个脚本已实现，实际节点小样例、续跑去重、汇总／导出和本地绘图已通过。具体证据和未验证范围见`reports/anniversary2022_baseline/READINESS_20261107.md`。下文保留原设计；正式全量spec仍为DRAFT，不能将小样例当作T600／5355题证据。
 
 ## 目标与本次确定的范围

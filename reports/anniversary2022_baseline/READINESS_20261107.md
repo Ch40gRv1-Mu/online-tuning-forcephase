@@ -2,6 +2,10 @@
 
 日期：2026-11-07（America/New_York）。状态：**IMPLEMENTED_FUNCTIONALLY_QUALIFIED；全量T600未启动**。
 
+**后续用户选择：**现在按官方三赛道全部未解规则排除636题，保留4719题、14157项计划运行；完整5355主名单保留。筛选仅使用公开比赛成绩；缺失／不确定情况保留。见[筛选结果](../../outputs/anniversary2022_baseline/external_filter_summary.json)与[筛选协议](../../refine-logs/anniversary2022_baseline/EXTERNAL_DIFFICULTY_FILTER_20261107.md)。下面的5355全量描述是此前目标，不再是当前实际入选人口。
+
+此后源码只增加外部cohort准入检查，八项本地实现检查及4719名单的实际receipt准入通过；没有重新运行求解器。原Linux小样例证据继续绑定下述原runtime，不能冒称新版本在4719题上已运行。
+
 七个脚本及共享模块位于`src/anniversary2022_baseline/`。5355条公开输入已生成完整新角色名单，对应16065个计划任务；没有筛除旧比赛未解题或大文件。全部2022候选现在用于baseline/development，新独立测试仍待另外选定。
 
 ## 已执行证据

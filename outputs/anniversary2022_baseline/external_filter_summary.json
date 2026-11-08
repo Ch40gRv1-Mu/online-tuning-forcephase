@@ -1,0 +1,51 @@
+{
+  "actual_filtered_cohort_admission_passed": true,
+  "arbitrary_subset_without_receipt_rejected": true,
+  "comparison_only_not_active": {
+    "sequential_best_score_at_most_600_count": 3805,
+    "sequential_ever_solved_count": 4345
+  },
+  "excluded_count": 636,
+  "filter_receipt": "configs/anniversary2022_baseline/manifest.official-solvable.v1.receipt.json",
+  "filter_receipt_sha256": "33f8fd431281d42a6e1a29cba1bd28684fa3603301385ca198deb86bfd74acd4",
+  "filtered_manifest": "configs/anniversary2022_baseline/manifest.official-solvable.v1.csv",
+  "manifest_sha256": "722bb437a25e18ab1f41fa86945daf01400e25b8863b0274a9a49a5fdbb59c87",
+  "master_inputs": 5355,
+  "master_manifest_sha256": "6ad75ff9b0225620b16721d7393e0270180a9c5c12599bad838dd298ed1fb928",
+  "new_solver_runs": 0,
+  "official_archive_sha256": "d0d3b198b1f8e5c45c4c038ff2c14ac32b239f15fe48cbbd3873ee34f917a2b8",
+  "planned_three_action_runs": 14157,
+  "policy": "official_all_tracks_unsolved_v1",
+  "retained_count": 4719,
+  "retained_uncertain_count": 4,
+  "retained_with_official_solve": 4715,
+  "schema": "anni2022.external_cohort_filter.v1",
+  "solver_T600_upper_cpu_hours": 2359.5,
+  "source_url": "https://satcompetition.github.io/2022/downloads/sc2022-detailed-results.zip",
+  "tracks": {
+    "anni-clo.csv": {
+      "accepted_nonpenalty_scores_at_or_above_cutoff": 2,
+      "exact_master_hash_matches": 5340,
+      "official_all_penalty_rows": 667,
+      "official_solved_rows": 4688,
+      "rows": 5355,
+      "solver_columns": 2
+    },
+    "anni-par.csv": {
+      "accepted_nonpenalty_scores_at_or_above_cutoff": 1,
+      "exact_master_hash_matches": 5340,
+      "official_all_penalty_rows": 745,
+      "official_solved_rows": 4610,
+      "rows": 5355,
+      "solver_columns": 6
+    },
+    "anni-seq.csv": {
+      "accepted_nonpenalty_scores_at_or_above_cutoff": 0,
+      "exact_master_hash_matches": 5355,
+      "official_all_penalty_rows": 1010,
+      "official_solved_rows": 4345,
+      "rows": 5355,
+      "solver_columns": 28
+    }
+  }
+}

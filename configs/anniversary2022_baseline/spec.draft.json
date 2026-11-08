@@ -1,92 +1,119 @@
 {
-  "schema": "forcephase.anniversary2022_baseline.spec.v1",
-  "study": "anniversary2022_cadical_baseline_20261105",
-  "status": "DRAFT_NOT_LAUNCHABLE",
-  "goal": "Complete the full 5355-instance D/Fplus/Fminus static baseline before feature research",
-  "owner": "current_chat_no_delegation",
-  "data": {
-    "official_uri_url": "https://benchmark-database.de/getinstances?track=anni_2022",
-    "local_reference_manifest": "work/phase_prediction_20261104/project/results/phase_prediction_v1/test_candidates.csv",
-    "expected_manifest_rows": 5355,
-    "role": "baseline_development",
-    "role_change_authorization_date": "2026-11-05",
-    "all_5355_released_for_baseline_and_development": true,
-    "exclude_historically_unsolved": false,
-    "exclude_large_inputs": false,
-    "new_independent_test": "NOT_YET_SELECTED",
-    "manifest_sha256": null
-  },
-  "solver": {
-    "name": "CaDiCaL",
-    "version": "3.0.1",
-    "commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
-    "binary_sha256": null,
-    "native_static_cli": true,
-    "new_feature_observer": false,
-    "actions": {
-      "D": ["--phase=1", "--forcephase=0"],
-      "Fplus": ["--phase=1", "--forcephase=1"],
-      "Fminus": ["--phase=0", "--forcephase=1"]
-    },
-    "seeds": [0],
-    "expected_logical_runs": 16065
-  },
-  "recommended_timing": {
-    "cutoff_s": 600,
-    "clock": "solver_process_cpu",
-    "record_cpu_and_wall": true,
-    "wall_watchdog_s": 1800,
-    "soft_stop_signal": "SIGTERM",
-    "termination_grace_wall_s": 5,
-    "late_solved_after_cpu_cutoff_is_success": false,
-    "native_minus_t_is_wall_not_cpu": true
-  },
-  "recommended_verification": {
-    "mode": "timed_binary_LRAT_independent_check",
-    "proof_generation_in_solver_time": true,
-    "checker_cpu_accounted_separately": true,
-    "rerun_solver_for_every_unsat": false,
-    "solver_answer_requires_verification_for_solved": true,
-    "checker_resource_profile": "FREEZE_BEFORE_LAUNCH"
-  },
-  "scheduler": {
-    "single_owner_persistent_queue": true,
-    "max_shared_cpu_tokens": 8,
-    "solver_decompression_and_checker_share_tokens": true,
-    "input_prefetch_window_parents": 16,
-    "io_download_workers": 2,
-    "first_progress_block_parents": 8,
-    "first_progress_block_is_formal_full_cohort_data": true,
-    "progress_block_is_continuation_gate": false,
-    "old_pilot_size_and_variable_exclusions_apply": false,
-    "resource_profiles": "FREEZE_FROM_NODE_RESOURCES_BEFORE_LAUNCH",
-    "unknown_job_liveness_allows_duplicate_submission": false
-  },
-  "results": {
-    "full_stdout_compressed": true,
-    "last_output_lines": 1000,
-    "missing_conflicts": null,
-    "raw_measurements_immutable": true,
-    "time_vbs_actions": ["D", "Fplus", "Fminus"],
-    "conflict_vbs_separate_from_time_vbs": true,
-    "time_par2_unsolved": 1200,
-    "partial_snapshot_requires_label": true,
-    "full_valid_completion_requires_runs": 16065
-  },
   "budget": {
-    "solver_nominal_upper_cpu_hours": 2677.5,
+    "budget_status": "TO_DEFINE_IN_EXECUTION_SPEC",
     "checker_preparation_and_recovery_included_in_upper": false,
     "new_total_budget_cpu_hours": null,
-    "budget_status": "TO_DEFINE_IN_EXECUTION_SPEC",
-    "old_study_100_cpu_hours_is_new_launch_authority": false
+    "old_study_100_cpu_hours_is_new_launch_authority": false,
+    "solver_nominal_upper_cpu_hours": 2359.5
+  },
+  "data": {
+    "all_5355_released_for_baseline_and_development": true,
+    "cohort_filter_receipt_path": "configs/anniversary2022_baseline/manifest.official-solvable.v1.receipt.json",
+    "cohort_filter_receipt_sha256": "33f8fd431281d42a6e1a29cba1bd28684fa3603301385ca198deb86bfd74acd4",
+    "exclude_historically_unsolved": true,
+    "exclude_large_inputs": false,
+    "excluded_inputs": 636,
+    "excluded_manifest": "configs/anniversary2022_baseline/manifest.official-solvable.v1.excluded.csv",
+    "expected_manifest_rows": 4719,
+    "external_filter_policy": "official_all_tracks_unsolved_v1",
+    "filter_authorized_date": "2026-11-07",
+    "local_reference_manifest": "configs/anniversary2022_baseline/manifest.official-solvable.v1.csv",
+    "manifest_sha256": "722bb437a25e18ab1f41fa86945daf01400e25b8863b0274a9a49a5fdbb59c87",
+    "master_manifest": "configs/anniversary2022_baseline/manifest.v1.csv",
+    "master_manifest_rows": 5355,
+    "new_independent_test": "NOT_YET_SELECTED",
+    "official_uri_url": "https://benchmark-database.de/getinstances?track=anni_2022",
+    "retained_uncertain_inputs": 4,
+    "role": "baseline_development",
+    "role_change_authorization_date": "2026-11-05"
   },
   "execution": {
-    "scripts_implemented": true,
-    "source_commit": "101da1d90b28fb55d684276ef87e50b26e59b9ab",
-    "source_manifest_sha256": "170a9d2c128822ba7b560fa6aab2de6fa6a0dc3efc8fb1eaf0e506fb10a9aee4",
     "functional_qualification": "outputs/anniversary2022_baseline/qualification_v2/QUALIFICATION.json",
+    "launch_requires_non_draft_spec": true,
+    "post_qualification_delta": "External cohort admission guard only; eight unit contracts and real filtered-manifest receipt check passed; solver execution code unchanged",
+    "qualification_runtime_source_commit": "101da1d90b28fb55d684276ef87e50b26e59b9ab",
+    "qualification_runtime_source_fingerprint": "170a9d2c128822ba7b560fa6aab2de6fa6a0dc3efc8fb1eaf0e506fb10a9aee4",
     "readiness_report": "reports/anniversary2022_baseline/READINESS_20261107.md",
-    "started": false,
-    "launch_requires_non_draft_spec": true
-  }
+    "scripts_implemented": true,
+    "source_commit": "4d46375b9b6e2cbe971f21f94cf498bda0943376",
+    "source_manifest_sha256": "5143c101383fd9ee1594ee7f56245805d8b0cd0e1e3abaea687ccffbc67010c4",
+    "started": false
+  },
+  "goal": "Complete D/Fplus/Fminus T600 baseline on all 4719 instances retained by the user-approved official-results filter",
+  "owner": "current_chat_no_delegation",
+  "recommended_timing": {
+    "clock": "solver_process_cpu",
+    "cutoff_s": 600,
+    "late_solved_after_cpu_cutoff_is_success": false,
+    "native_minus_t_is_wall_not_cpu": true,
+    "record_cpu_and_wall": true,
+    "soft_stop_signal": "SIGTERM",
+    "termination_grace_wall_s": 5,
+    "wall_watchdog_s": 1800
+  },
+  "recommended_verification": {
+    "checker_cpu_accounted_separately": true,
+    "checker_resource_profile": "FREEZE_BEFORE_LAUNCH",
+    "mode": "timed_binary_LRAT_independent_check",
+    "proof_generation_in_solver_time": true,
+    "rerun_solver_for_every_unsat": false,
+    "solver_answer_requires_verification_for_solved": true
+  },
+  "results": {
+    "conflict_vbs_separate_from_time_vbs": true,
+    "full_stdout_compressed": true,
+    "full_valid_completion_requires_runs": 16065,
+    "last_output_lines": 1000,
+    "missing_conflicts": null,
+    "partial_snapshot_requires_label": true,
+    "raw_measurements_immutable": true,
+    "time_par2_unsolved": 1200,
+    "time_vbs_actions": [
+      "D",
+      "Fplus",
+      "Fminus"
+    ]
+  },
+  "scheduler": {
+    "first_progress_block_is_formal_full_cohort_data": true,
+    "first_progress_block_parents": 8,
+    "input_prefetch_window_parents": 16,
+    "io_download_workers": 2,
+    "max_shared_cpu_tokens": 8,
+    "old_pilot_size_and_variable_exclusions_apply": false,
+    "progress_block_is_continuation_gate": false,
+    "resource_profiles": "FREEZE_FROM_NODE_RESOURCES_BEFORE_LAUNCH",
+    "single_owner_persistent_queue": true,
+    "solver_decompression_and_checker_share_tokens": true,
+    "unknown_job_liveness_allows_duplicate_submission": false
+  },
+  "schema": "forcephase.anniversary2022_baseline.spec.v1",
+  "solver": {
+    "actions": {
+      "D": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "Fminus": [
+        "--phase=0",
+        "--forcephase=1"
+      ],
+      "Fplus": [
+        "--phase=1",
+        "--forcephase=1"
+      ]
+    },
+    "binary_sha256": null,
+    "commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+    "expected_logical_runs": 14157,
+    "name": "CaDiCaL",
+    "native_static_cli": true,
+    "new_feature_observer": false,
+    "seeds": [
+      0
+    ],
+    "version": "3.0.1"
+  },
+  "status": "DRAFT_NOT_LAUNCHABLE",
+  "study": "anniversary2022_cadical_baseline_20261105"
 }

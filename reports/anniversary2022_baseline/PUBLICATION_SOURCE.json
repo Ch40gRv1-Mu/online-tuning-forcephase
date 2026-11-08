@@ -1,13 +1,28 @@
 {
   "schema": "forcephase.anniversary_baseline.publication.v1",
-  "source_workspace_commit": "26e74e4dca1456b56a0b268f39f17a4b06eab30c",
-  "scope": "Implemented source and bounded qualification; full5355 queue not launched",
-  "history_note": "Source snapshot export onto the existing research repository, not a merge of unrelated local history",
+  "source_workspace_commit": "5f5b66e96fab2cf40056b7a7f30df2b7e293ccdc",
+  "scope": "User-approved conservative official-results filter retains4719 of5355; no formal solver runs launched",
+  "history_note": "Exact source snapshot export; old measurement evidence retains its original runtime identity",
   "files": [
     {
       "path": ".gitattributes",
       "sha256": "f685a7d63c2400b477571f7d4ba6980b717ffe474c05f3fd61efdef3f7812c0b",
       "bytes": 131
+    },
+    {
+      "path": "configs/anniversary2022_baseline/manifest.official-solvable.v1.csv",
+      "sha256": "722bb437a25e18ab1f41fa86945daf01400e25b8863b0274a9a49a5fdbb59c87",
+      "bytes": 575740
+    },
+    {
+      "path": "configs/anniversary2022_baseline/manifest.official-solvable.v1.excluded.csv",
+      "sha256": "cb7226820c45aafd58055b3dad4f8f9760379dedb278239d475595b52342cdd1",
+      "bytes": 59875
+    },
+    {
+      "path": "configs/anniversary2022_baseline/manifest.official-solvable.v1.receipt.json",
+      "sha256": "33f8fd431281d42a6e1a29cba1bd28684fa3603301385ca198deb86bfd74acd4",
+      "bytes": 216463
     },
     {
       "path": "configs/anniversary2022_baseline/manifest.v1.csv",
@@ -26,8 +41,13 @@
     },
     {
       "path": "configs/anniversary2022_baseline/spec.draft.json",
-      "sha256": "767ff0200a6a1a029ca9191dc483c3690df5b5f55467ce11dbecd78eccceaea9",
-      "bytes": 3648
+      "sha256": "d8fc4cba0972234cedf86901a28d872bc802628faf26dda1aca91b9ef59bd2b1",
+      "bytes": 4805
+    },
+    {
+      "path": "outputs/anniversary2022_baseline/external_filter_summary.json",
+      "sha256": "c3b2cb60c56eebb43ad02f2cce22675cfe9377e592b01f356562ef22d9a4f3dd",
+      "bytes": 2023
     },
     {
       "path": "outputs/anniversary2022_baseline/public_source_connectivity.json",
@@ -155,19 +175,24 @@
       "bytes": 1000
     },
     {
+      "path": "refine-logs/anniversary2022_baseline/EXTERNAL_DIFFICULTY_FILTER_20261107.md",
+      "sha256": "8318a25e207c67341aac889dbf8e54a5df646e4d90b2dbefee94a46685c3469c",
+      "bytes": 2326
+    },
+    {
       "path": "refine-logs/anniversary2022_baseline/IMPLEMENTATION_QUALIFICATION_20261107.md",
       "sha256": "4e56a518b985bb3a786d1d3b19a5b15d05e16769430ebaf45206383ce695ffcd",
       "bytes": 1884
     },
     {
       "path": "refine-logs/anniversary2022_baseline/SCRIPT_PLAN.md",
-      "sha256": "63901870f387384a32f1719136da1e7df812f9bd13b8318dee9daeeb79b15a99",
-      "bytes": 13896
+      "sha256": "c41d4dc0b7702323816a06da324bd2ed229558331411888403205ff93752c05f",
+      "bytes": 14333
     },
     {
       "path": "reports/anniversary2022_baseline/READINESS_20261107.md",
-      "sha256": "7a5aeaff75b8b17989afab87d8c89d3a6dfae6e6ad2e6f4b013bc6fffd38a1df",
-      "bytes": 5423
+      "sha256": "434fff2f1d549ed66ef82a1fbc0805bbcb8dcbce373aaac4d6e4d417a7d83823",
+      "bytes": 6159
     },
     {
       "path": "src/anniversary2022_baseline/__init__.py",
@@ -181,13 +206,18 @@
     },
     {
       "path": "src/anniversary2022_baseline/common.py",
-      "sha256": "3242f72f055d66268431c6c301af4f1baf51c408afa5b66a3850a17d72c574a0",
-      "bytes": 5852
+      "sha256": "a8c40a8258b90a22c5f2ab82c8249bb01bf7f125a80b5a8d055ad040423646c0",
+      "bytes": 6959
     },
     {
       "path": "src/anniversary2022_baseline/export_results.py",
       "sha256": "a0c0f3426fb57de339571763f5e5616d20f2aa78e1d11943ff2c8d63d0c11cb6",
       "bytes": 1624
+    },
+    {
+      "path": "src/anniversary2022_baseline/filter_manifest.py",
+      "sha256": "0a58161d2ed4bbb99aea6f58130e11cca3e9519cc5b1c28f4ae3ceaf421afce0",
+      "bytes": 6583
     },
     {
       "path": "src/anniversary2022_baseline/plot_results.py",
@@ -221,8 +251,8 @@
     },
     {
       "path": "src/anniversary2022_baseline/test_contracts.py",
-      "sha256": "811c5c56ac0b61985e0eae248549b2d7fea7dd91185476e64e868f0e69444fcc",
-      "bytes": 3099
+      "sha256": "5679a5d5c59072a520377484542df9e6e7397a457b31f1f98149f0ea6cb7acd2",
+      "bytes": 3754
     }
   ]
 }
