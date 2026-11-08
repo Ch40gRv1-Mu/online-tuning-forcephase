@@ -1,0 +1,7 @@
+127.0.0.1 - - [08/Nov/2026 12:12:12] "GET /sat.cnf HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 12:12:12] "GET /timeout.cnf HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 12:12:12] "GET /unsat_search.cnf HTTP/1.1" 200 -
+127.0.0.1 - - [08/Nov/2026 12:12:12] "GET /unsat_units.cnf HTTP/1.1" 200 -
+{"status": "COMPLETE_VALID_MATRIX", "complete_parents": 4, "recorded_runs": 12}
+{'path': '/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/qualification_receipts.tar.gz', 'sha256': '9e38d83c752745829524f259a08a237e0654c53e1bf7ec6e5202a55d60dd296a', 'files': 59, 'bytes': 136498}
+{"archive_sha256": "9e38d83c752745829524f259a08a237e0654c53e1bf7ec6e5202a55d60dd296a", "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603", "complete_parent_triads": 4, "concurrent_owner_rejected": true, "cpu_timeouts": 3, "finished_utc": "2026-11-08T04:12:15Z", "formal5355_queue_started": false, "http_staging_and_exact_cnf_sha_passed": true, "independent_export_member_shas_passed": true, "plots": "To be rendered locally from immutable snapshot using bundled matplotlib", "real_solver_runs": 12, "resume_new_physical_runs": 0, "scope": "Functional qualification only, not formal T600 evidence", "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb", "stats_complete": 12, "status": "PASS", "verified_sat": 3, "verified_unsat": 6}

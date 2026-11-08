@@ -1,0 +1,18 @@
+{
+  "files": {
+    "baseline.html": "177345972c679fd5519a9041b9310cda5da51c23e3573cad009e5b45b3fc7b72",
+    "cumulative_conflicts.pdf": "f6ada3cb36525ab8082d3f2ee5e0fdbd6bf6cf40e3abbf8d07c70c54ed85e932",
+    "cumulative_conflicts.png": "8769668a4f84c2874ba45a562a3f3e5dcaa4815cce2e2582a50221fbd81f6753",
+    "cumulative_cpu_s.pdf": "45768d030088845c4a19c6952f911fec1aab1101b9c255db6e8e89ac655e799b",
+    "cumulative_cpu_s.png": "541195a119b91f260697d7b3d9fc5d57ee44d7f7382ad8ec23ee31a439fb728f",
+    "scatter_conflicts.pdf": "de8098c48aaed4d30bdda42889f814df20ddb1099f25613cb360f1f7fc70ce6f",
+    "scatter_conflicts.png": "e152fb06a8f674560f705c77fc0622c5759e54b701f40377d424c008b64dfee7",
+    "scatter_cpu_s.pdf": "8f92d7f53cf8a359ff37933cdd64e4e42d858cff1ab6326605c64972ec056c68",
+    "scatter_cpu_s.png": "b72a3057c910f99b4c443ef82f741cc7022040c6bd21aaf82a60c042500f6db1"
+  },
+  "matplotlib": "3.11.2",
+  "plotter_sha256": "a00c277e7d82939e33eb4a285fb111a566f54d0d63d577fe4ac1c989f8de3b3b",
+  "scatter_scope": "both solved only; raw values and true 1x/2x/10x lines on symlog axes; other statuses retained in matrix.csv",
+  "scope": "QUALIFICATION",
+  "source_summary_sha256": "0ef5a46218c727095bff314c77fff118ab15ff1a89751be882ccfc485de07ee8"
+}

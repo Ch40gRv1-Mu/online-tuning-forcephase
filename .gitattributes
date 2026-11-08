@@ -1,0 +1,4 @@
+*.csv text eol=lf
+*.jsonl text eol=lf
+configs/anniversary2022_baseline/*.csv -text
+outputs/anniversary2022_baseline/**/*.csv -text

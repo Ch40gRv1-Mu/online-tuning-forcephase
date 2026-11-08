@@ -1,0 +1,102 @@
+{
+  "complete_parents": 4,
+  "full_cohort": 4,
+  "jobs": [
+    {
+      "action": "D",
+      "error": null,
+      "k": "sat",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/902e96e2250baf11bb05c1fa8dc1ee45b5bbf5d22a65b7a88612362284aa4dc6/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "Fminus",
+      "error": null,
+      "k": "sat",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/44734a895c7634cf7ed190d3b120ea02af336cea11bb7df8471757ec47361c06/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "Fplus",
+      "error": null,
+      "k": "sat",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/46a2ee1422f678643275584ead1f2af099b6fc421369a936f19aa791b25002d4/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "D",
+      "error": null,
+      "k": "timeout",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/099d60897fbf9ff611145d7bfedc9c05886958008acc97ff79e97058d7516809/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "Fminus",
+      "error": null,
+      "k": "timeout",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/b660046973708d9703365af87136c3644b8c812d3fadf330609a428699c11386/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "Fplus",
+      "error": null,
+      "k": "timeout",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/72fa921b9319a959d07e8ccc7dbcc2d7b234d0e46e81614a1d29a08aed052859/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "D",
+      "error": null,
+      "k": "unsat_search",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/975475bc699f516e851c739999ebf5442e482427ed32e3a7fc182b8831e5c485/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "Fminus",
+      "error": null,
+      "k": "unsat_search",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/7fb672b07158c7055c0343a9d1779d52df98571bbaf366198a3cca97576ba97e/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "Fplus",
+      "error": null,
+      "k": "unsat_search",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/2eab089432b246770752aedd1f74ef7439a52dff0c5cf127cb842a91f5d3ae84/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "D",
+      "error": null,
+      "k": "unsat_units",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/4eeda2cf3af6c7572713e696637393553ac7c31c71d8ba9b28a6f61dd916548d/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "Fminus",
+      "error": null,
+      "k": "unsat_units",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/d5c44fffd7754f27e5a16fc4c2b50fda047b285166cc667cc8d7cf34245529c3/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    },
+    {
+      "action": "Fplus",
+      "error": null,
+      "k": "unsat_units",
+      "result": "/home/vipuser/forcephase_anniversary2022_20261107/qualification_v2/matrix/runs/33b43670ecb842ba52ccd8975241e172d7d8fec8e7633543fd4a46cefc35972b/result.json",
+      "seed": 0,
+      "state": "COMPLETE"
+    }
+  ]
+}

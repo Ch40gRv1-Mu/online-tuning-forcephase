@@ -1,0 +1,115 @@
+{
+  "all_censored": 1,
+  "collector_sha256": "66ad6c302af3718f0bcce22b6a5139c6e4296c3d07e1593cce3d1c9f81d9e64f",
+  "complete_parents": 4,
+  "cutoff_s": 2,
+  "evidence": [
+    {
+      "path": "runs/902e96e2250baf11bb05c1fa8dc1ee45b5bbf5d22a65b7a88612362284aa4dc6/result.json",
+      "sha256": "6d69c4a552fbafd3deadb13582bce5c27a302269bbe768113cb92f6dbdd9144e"
+    },
+    {
+      "path": "runs/44734a895c7634cf7ed190d3b120ea02af336cea11bb7df8471757ec47361c06/result.json",
+      "sha256": "f7d994266704a7e3d089d208747489e2f253b7fae3c802f6fc64c062c07d2aa7"
+    },
+    {
+      "path": "runs/46a2ee1422f678643275584ead1f2af099b6fc421369a936f19aa791b25002d4/result.json",
+      "sha256": "02a7f47424bdee0ccc5a2b6ee1da6fc2ec81f1d6b215835069babe7a24e85320"
+    },
+    {
+      "path": "runs/099d60897fbf9ff611145d7bfedc9c05886958008acc97ff79e97058d7516809/result.json",
+      "sha256": "af8ee414e6ce6604d46e3c38d6683b3913db1f93ce13c58d8652bc4543cfb937"
+    },
+    {
+      "path": "runs/b660046973708d9703365af87136c3644b8c812d3fadf330609a428699c11386/result.json",
+      "sha256": "28ad14bd071d593342d5e49ca80fef6c1c6e19c15a3ebf4e586b4f1d5d4926f0"
+    },
+    {
+      "path": "runs/72fa921b9319a959d07e8ccc7dbcc2d7b234d0e46e81614a1d29a08aed052859/result.json",
+      "sha256": "899527cdb79bd5ff029c93cf1e94773ccbd64d1f3a02d2f9c09afb5d9a5a3716"
+    },
+    {
+      "path": "runs/975475bc699f516e851c739999ebf5442e482427ed32e3a7fc182b8831e5c485/result.json",
+      "sha256": "1afd043984c34f543f982be8321d5510bc2c7abe35128c81700cf409b3075e69"
+    },
+    {
+      "path": "runs/7fb672b07158c7055c0343a9d1779d52df98571bbaf366198a3cca97576ba97e/result.json",
+      "sha256": "01e5ffbb25387319dbe76bdfc6c9af4b13b6d8f3caa69efa631ad5e69b1f63bc"
+    },
+    {
+      "path": "runs/2eab089432b246770752aedd1f74ef7439a52dff0c5cf127cb842a91f5d3ae84/result.json",
+      "sha256": "d2c480b72a131e85e9fde8d2430e3253697f48273c03bbbd6775f478f2dfa5a2"
+    },
+    {
+      "path": "runs/4eeda2cf3af6c7572713e696637393553ac7c31c71d8ba9b28a6f61dd916548d/result.json",
+      "sha256": "ac321e88684475690e1c1d18aaa21070819340739a0a4cae55fe122242d24de1"
+    },
+    {
+      "path": "runs/d5c44fffd7754f27e5a16fc4c2b50fda047b285166cc667cc8d7cf34245529c3/result.json",
+      "sha256": "f04732fbec2338a53733873fe49966db75ade90fbc803b85ca42db92b41c6dce"
+    },
+    {
+      "path": "runs/33b43670ecb842ba52ccd8975241e172d7d8fec8e7633543fd4a46cefc35972b/result.json",
+      "sha256": "d97f2547b2ba469a8e2da78974ec4c0516d32488621fb8d77bba2572961ef119"
+    }
+  ],
+  "expected_runs": 12,
+  "full_cohort": 4,
+  "mean_par2": {
+    "D": 1.004473,
+    "Fminus": 1.0043615,
+    "Fplus": 1.00444375
+  },
+  "measurement_identity": {
+    "checker_cpu_s": 20,
+    "checker_sha256": "eb89bf384e1384af0d4e6ba81904c193f57e7848f357f1a6541e7f0bb6286603",
+    "checker_wall_s": 30,
+    "clock": "solver_process_cpu",
+    "cutoff_s": 2,
+    "host_id": "45f7791914c94ef38a08b5f79c9e0911",
+    "memory_bytes": 536870912,
+    "proof_limit_bytes": 134217728,
+    "solver_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+    "solver_sha256": "b57d545231cab5a90357242cc838847356354324d891ef8ddaadcbf224e66bdb",
+    "source": {
+      "common.py": "3242f72f055d66268431c6c301af4f1baf51c408afa5b66a3850a17d72c574a0",
+      "run_baselines.py": "61c24b72cafcb2fbbbf632384668e4903181edb32df2f3e06ef7ed63d08a0750",
+      "run_one.py": "db5fa4acba8ae6b95ac1d5d1319908d0956caef6b087b9ab6a8ee76e1cb0c6b8",
+      "stage_inputs.py": "7ec93cbe3901495633cb0fde963ea1e5dbffbe4f29b5fccc784ead334a1eac3f"
+    },
+    "verification": "timed_binary_lrat",
+    "wall_watchdog_s": 10
+  },
+  "plot_population": "complete parent triads only, with full planned denominator displayed",
+  "recorded_runs": 12,
+  "scope": "QUALIFICATION",
+  "snapshot_source_progress": {
+    "admission_note": null,
+    "completed_valid": 12,
+    "eta_remaining_wall_s": 0.0,
+    "eta_scope": "observed end-to-end rate; includes download and checking so far",
+    "expected_runs": 12,
+    "inputs": {
+      "DONE": 4
+    },
+    "jobs": {
+      "COMPLETE": 12
+    },
+    "measured_cpu_s": 6.304774,
+    "remaining_runs": 0,
+    "scope": "QUALIFICATION",
+    "session_wall_s": 0.012446863984223455,
+    "status": "COMPLETE_VALID_MATRIX",
+    "total_execution_wall_s": 2.4213121630018577,
+    "updated_utc": "2026-11-08T04:12:15Z"
+  },
+  "solved": {
+    "D": 3,
+    "Fminus": 3,
+    "Fplus": 3
+  },
+  "solved_union": 3,
+  "status": "COMPLETE_VALID_MATRIX",
+  "time_vbs_mean_par2": 1.00433825,
+  "valid_runs": 12
+}

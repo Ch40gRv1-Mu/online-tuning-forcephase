@@ -1,0 +1,11 @@
+{
+  "status": "PREFIX_FETCHED_ONLY",
+  "url": "https://benchmark-database.de/file/7948e49f890a013bd25e63938e096ac0",
+  "http_status": 200,
+  "content_type": "application/x-xz",
+  "content_length": "16395056",
+  "prefix_hex": "fd377a585a000004e6d6b44602002101",
+  "wall_s": 1.3950602280092426,
+  "full_cnf_staged": false,
+  "solver_run": false
+}

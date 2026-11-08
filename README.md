@@ -1,5 +1,7 @@
 # Online Tuning of Forcephase
 
+**2026-11-07 更新：** [2022 Anniversary 全量基线脚本](ANNIVERSARY_BASELINE.md)已实现，并在8CPU节点通过小样例实际验证；正式5355题运行尚未启动，全量资源／恢复配置仍待完成。
+
 **2026-11-05 更新：** 本周已完成的现代 CaDiCaL 实验、TA100 特征探索、全部候选汇总、费用和下一阶段 goal 草案见 [本周研究快照](research/2026-11-05/README.md)。尚未建立稳定优于强固定对照的选择策略；以下“已确认的起点”保留2026-10-18初始规划的历史语境。
 
 Research question: **When should a CDCL SAT solver use its native phase policy, and when should it force negative decision literals? Which observations available during solving predict that choice?**
