@@ -1,0 +1,19 @@
+{
+  "old_model": "outputs/anniversary2022_baseline/mechanism_R13b_20261111/development_cost_classifier.joblib",
+  "old_resource_policy": "outputs/anniversary2022_baseline/linear42_cpu_recovery_20261111/policy.json",
+  "old_fixtures": "outputs/anniversary2022_baseline/linear42_cpu_recovery_20261111/route_fixtures.json",
+  "input_sha256": {
+    "outputs/anniversary2022_baseline/mechanism_R13b_20261111/development_cost_classifier.joblib": "0f8435a0fa578c0f954b7d61d999f6183e066b2c29a9cee25fc7078d9f215e3a",
+    "outputs/anniversary2022_baseline/linear42_cpu_recovery_20261111/policy.json": "dec72c8c2141f27669352903e84a976a3078e010bc0d30ec10142b23f61ee2bb",
+    "outputs/anniversary2022_baseline/linear42_cpu_recovery_20261111/route_fixtures.json": "5d8228cb24a7bf073d0e13310297a1fb69a9e5acb89756d664997565bc625e61",
+    "outputs/anniversary2022_baseline/mechanism_R54_paid_classifier_20261111/summary.json": "5960930ce6cf5713d05e63d4cba6117afce2029729ad33a779f0b2562f7bafc7",
+    "outputs/anniversary2022_baseline/cnf_graph_cnn_20261110/splits.csv": "7cd77d6c3e2ca57977f153ec10c0f950d04b2dd019c8ca63b2ca77f4d1c5bdee",
+    "outputs/anniversary2022_baseline/vbs_preferences_20261110/all_preferences.csv": "aed7734560a4b231ef52d5f669b502c68ff096700ee2e24f90baf0bb96ac2c03",
+    "src/anniversary2022_baseline/linear42_only_vector.py": "b0130088938f5282d8775bd3c45d4577593eaf6cc8f46555ef9e7f08329b56be",
+    "src/anniversary2022_baseline/classifier_mean_candidate.py": "ae7c2e828c5567bc6f9ca166a9c7cced22577acaa4b3c4cdf61ecdcaed68431a",
+    "src/anniversary2022_baseline/recover_compact_cpu.py": "ad45af82dc0375f6fd1869eff9192aa4baff3e9ba6be771fb667dddabf849336"
+  },
+  "new_fits": 0,
+  "new_solver_calls": 0,
+  "qualify_only_after_R53_terminal": true
+}

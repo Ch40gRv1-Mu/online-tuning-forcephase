@@ -1,0 +1,13 @@
+{
+  "classifier_score_margin": 0.0,
+  "inner_predictions_match": 932,
+  "model_bytes": 22615314,
+  "model_sha256": "57b907dbfc3b71894269b8d58067be54fa785e04eb884bd5e7583e0e3c31fa4a",
+  "new_fits": 0,
+  "no_performance_scoring_of_full_development_model": true,
+  "real_CNF_route_status": "NOT_EXECUTED_WAIT_FOR_R53_TERMINAL",
+  "source_sha256": "6908d96596578ef41812bad8bdb09b75dffea7303fac34f9dcfa6fe653630576",
+  "spec_sha256": "d734298859d05b18fb03c91ffc0fc3625ba8281dcc91ce143eb2eb2fa6735a3a",
+  "status": "complete",
+  "trained_parameters_changed": false
+}

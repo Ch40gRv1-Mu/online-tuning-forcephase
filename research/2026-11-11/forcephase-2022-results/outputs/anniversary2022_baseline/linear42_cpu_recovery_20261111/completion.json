@@ -1,0 +1,11 @@
+{
+  "cohort": 68,
+  "first_physical_measurements_repeated": 0,
+  "new_solver_calls": 0,
+  "policy_sha256": "dec72c8c2141f27669352903e84a976a3078e010bc0d30ec10142b23f61ee2bb",
+  "restored": 52,
+  "retry_acquisition_CPU_sum_s": 389.09245667,
+  "source_sha256": "ad45af82dc0375f6fd1869eff9192aa4baff3e9ba6be771fb667dddabf849336",
+  "status": "complete",
+  "still_failed_paidD": 16
+}

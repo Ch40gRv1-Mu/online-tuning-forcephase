@@ -1,0 +1,96 @@
+{
+  "CPU_s": 0.36405199999999993,
+  "base_score_sha256": "eb758ec2f4fe4614f14075bdc0b32c5c90747c95c3d6d6029cae89921d172e4b",
+  "cost_boundary": "shared feature/query costs conservatively reused; unknown1876 acquisition remains optimistic zero",
+  "feature_sha256": "f2ec8c98b2ade39060847093160e835a33c4778596aa5f3cedbff23048ba91d7",
+  "new_classifier_fits": 0,
+  "new_solver_calls": 0,
+  "new_threshold_fits": 0,
+  "parents": 4719,
+  "scores": {
+    "coarse_three_view_majority": {
+      "actions": {
+        "D": 4614,
+        "Fminus": 64,
+        "Fplus": 41
+      },
+      "block_interval_95_pct": [
+        -0.21583948806093367,
+        0.9210287041483186
+      ],
+      "exact_eight_block_95_pct": [
+        -0.21134918102260386,
+        0.9563816038508887
+      ],
+      "gain_pct": 0.26870044460904013,
+      "lost_solves": 6,
+      "newly_solved": 11,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 391.4878897917523,
+      "solved": 3390
+    },
+    "coarse_two_view_agreement": {
+      "actions": {
+        "D": 4657,
+        "Fminus": 38,
+        "Fplus": 24
+      },
+      "block_interval_95_pct": [
+        -0.07051366290651816,
+        0.7478171240564028
+      ],
+      "exact_eight_block_95_pct": [
+        -0.07390700433307228,
+        0.7687228426684127
+      ],
+      "gain_pct": 0.34511631342219845,
+      "lost_solves": 1,
+      "newly_solved": 8,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 391.18792491250537,
+      "solved": 3392
+    },
+    "fine_three_view_majority": {
+      "actions": {
+        "D": 4479,
+        "Fminus": 73,
+        "Fplus": 167
+      },
+      "block_interval_95_pct": [
+        -2.6683695251316504,
+        0.8669351402432499
+      ],
+      "gain_pct": -0.4621411254808427,
+      "lost_solves": 23,
+      "newly_solved": 13,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 394.3567546849413,
+      "solved": 3375
+    },
+    "fine_two_view_agreement": {
+      "actions": {
+        "D": 4536,
+        "Fminus": 59,
+        "Fplus": 124
+      },
+      "block_interval_95_pct": [
+        -0.5832288863985433,
+        1.133651475067928
+      ],
+      "gain_pct": 0.3394121262086256,
+      "lost_solves": 7,
+      "newly_solved": 12,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 391.2103162803626,
+      "solved": 3390
+    }
+  },
+  "short_search_calls": 0,
+  "source_sha256": "e77b00e9b619022c61c27fa2fd42aeb16d2078cdc8c540b46ca38c3fa1b3af9a",
+  "status": "complete",
+  "wall_s": 0.4317990830168128
+}

@@ -1,0 +1,41 @@
+{
+  "accepted_swaps": 241452103,
+  "actual_null_distinct": 2319,
+  "actual_null_native_calls": 2325,
+  "actual_profile_native_calls": 4650,
+  "attempted": 2325,
+  "attempted_swaps": 251111374,
+  "both_variable_coverage_at_least10pct": 1711,
+  "complete_actual_orders": 591,
+  "complete_null_orders": 229,
+  "failed": 0,
+  "failed_native_work_unknown": 0,
+  "features_sha256": "53c3855c643df080cdfb08ace492065191afaae2aa149558c9ea699fcf337bc1",
+  "informative": 1708,
+  "library_versions": {
+    "numpy": "2.5.4",
+    "sklearn": "1.9.1"
+  },
+  "native_binary_sha256": "d48d9f0d345ef1b4b32ff42a97e45acd249b5a75cb9a0630d342bd64ae8e1e2d",
+  "native_source_sha256": "00cfec9e6af81d13c4213c5300337c02376b6bff5bf8132bcfa2f359f3595434",
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "reference_sha256": "588add70ca1b41ee7a1bfe1299292ec0daf298cd55fff8fbe6a2b0c4a477a514",
+  "semantic_checks": {
+    "K33_width": 3,
+    "SAT_calls": 0,
+    "complement_covariance": true,
+    "cycle_width": 2,
+    "fixture_null_swaps": {
+      "accepted_swaps": 2,
+      "attempted_swaps": 12
+    },
+    "graph_profile_calls": 4,
+    "native_null_calls": 1,
+    "path_width": 1,
+    "simple_literal_type_degree_preserved": true
+  },
+  "source_sha256": "7e53159e67741a286b9aa6789f7681211be1544e52d803c02574e8cea41cfc20",
+  "successful": 2325,
+  "wall_s": 240.40361866704188
+}

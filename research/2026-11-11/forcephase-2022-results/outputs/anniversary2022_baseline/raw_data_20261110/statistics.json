@@ -1,0 +1,40 @@
+{
+  "cohort": 4719,
+  "runs": 14157,
+  "cutoff_cpu_s": 600,
+  "solved": {
+    "D": 3385,
+    "Fminus": 3055,
+    "Fplus": 3076,
+    "VBS": 3547
+  },
+  "mean_par2_s": {
+    "D": 392.5426536473829,
+    "Fminus": 471.97605173278237,
+    "Fplus": 468.2365155488451,
+    "VBS": 349.94073167895743
+  },
+  "oracle_gain_over_D": 0.10852813464366695,
+  "all_timeout": 1172,
+  "pair_counts": {
+    "D_vs_Fplus": {
+      "both_solved": 2984,
+      "only_D": 401,
+      "only_Fplus": 92,
+      "neither_solved": 1242
+    },
+    "D_vs_Fminus": {
+      "both_solved": 2943,
+      "only_D": 442,
+      "only_Fminus": 112,
+      "neither_solved": 1222
+    },
+    "Fplus_vs_Fminus": {
+      "both_solved": 2865,
+      "only_Fplus": 211,
+      "only_Fminus": 190,
+      "neither_solved": 1453
+    }
+  },
+  "missing_conflicts_timeout_runs": 8
+}

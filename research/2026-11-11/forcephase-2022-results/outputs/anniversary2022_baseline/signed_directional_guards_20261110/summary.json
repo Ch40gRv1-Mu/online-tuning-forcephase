@@ -1,0 +1,414 @@
+{
+  "parents": 4719,
+  "feature_covered": 1988,
+  "results": [
+    {
+      "hypothesis": "H01_reach_collision",
+      "nonzero_directional_signals": 1857,
+      "fixed_direction": {
+        "free": {
+          "mean_par2": 404.47367638779406,
+          "solved": 3331,
+          "par2_improvement_pct": -3.039420717609104,
+          "paired_group_bootstrap_95_pct": [
+            -4.2298156965024845,
+            -1.83504311691011
+          ],
+          "actions": {
+            "D": 2862,
+            "Fplus": 1331,
+            "Fminus": 526
+          },
+          "better_than_D_parents": 680,
+          "worse_than_D_parents": 771
+        },
+        "with_extractor_cpu": {
+          "mean_par2": 404.48145959398175,
+          "solved": 3331,
+          "par2_improvement_pct": -3.0414034846066347,
+          "paired_group_bootstrap_95_pct": [
+            -4.2318343473249636,
+            -1.837021255296376
+          ],
+          "actions": {
+            "D": 2862,
+            "Fplus": 1331,
+            "Fminus": 526
+          },
+          "better_than_D_parents": 457,
+          "worse_than_D_parents": 1082
+        },
+        "probed_parents": 1988
+      },
+      "fit_strength_or_D": {
+        "free": {
+          "mean_par2": 392.54265364738285,
+          "solved": 3385,
+          "par2_improvement_pct": 0.0,
+          "paired_group_bootstrap_95_pct": [
+            0.0,
+            0.0
+          ],
+          "actions": {
+            "D": 4719,
+            "Fplus": 0,
+            "Fminus": 0
+          },
+          "better_than_D_parents": 0,
+          "worse_than_D_parents": 0
+        },
+        "with_extractor_cpu": {
+          "mean_par2": 392.54265364738285,
+          "solved": 3385,
+          "par2_improvement_pct": 0.0,
+          "paired_group_bootstrap_95_pct": [
+            0.0,
+            0.0
+          ],
+          "actions": {
+            "D": 4719,
+            "Fplus": 0,
+            "Fminus": 0
+          },
+          "better_than_D_parents": 0,
+          "worse_than_D_parents": 0
+        },
+        "probed_parents": 0
+      },
+      "thresholds": [
+        {
+          "fold": 0,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 1,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 2,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 3,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 4,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        }
+      ]
+    },
+    {
+      "hypothesis": "H06_depth_collision",
+      "nonzero_directional_signals": 1828,
+      "fixed_direction": {
+        "free": {
+          "mean_par2": 404.5374976291587,
+          "solved": 3331,
+          "par2_improvement_pct": -3.055679139661253,
+          "paired_group_bootstrap_95_pct": [
+            -4.233740610557436,
+            -1.8514806217495323
+          ],
+          "actions": {
+            "D": 2891,
+            "Fplus": 1275,
+            "Fminus": 553
+          },
+          "better_than_D_parents": 666,
+          "worse_than_D_parents": 762
+        },
+        "with_extractor_cpu": {
+          "mean_par2": 404.54529457427424,
+          "solved": 3331,
+          "par2_improvement_pct": -3.0576654066421893,
+          "paired_group_bootstrap_95_pct": [
+            -4.2357926131102,
+            -1.8536247902277097
+          ],
+          "actions": {
+            "D": 2891,
+            "Fplus": 1275,
+            "Fminus": 553
+          },
+          "better_than_D_parents": 458,
+          "worse_than_D_parents": 1083
+        },
+        "probed_parents": 1988
+      },
+      "fit_strength_or_D": {
+        "free": {
+          "mean_par2": 392.54265364738285,
+          "solved": 3385,
+          "par2_improvement_pct": 0.0,
+          "paired_group_bootstrap_95_pct": [
+            0.0,
+            0.0
+          ],
+          "actions": {
+            "D": 4719,
+            "Fplus": 0,
+            "Fminus": 0
+          },
+          "better_than_D_parents": 0,
+          "worse_than_D_parents": 0
+        },
+        "with_extractor_cpu": {
+          "mean_par2": 392.54265364738285,
+          "solved": 3385,
+          "par2_improvement_pct": 0.0,
+          "paired_group_bootstrap_95_pct": [
+            0.0,
+            0.0
+          ],
+          "actions": {
+            "D": 4719,
+            "Fplus": 0,
+            "Fminus": 0
+          },
+          "better_than_D_parents": 0,
+          "worse_than_D_parents": 0
+        },
+        "probed_parents": 0
+      },
+      "thresholds": [
+        {
+          "fold": 0,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 1,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 2,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 3,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 4,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        }
+      ]
+    },
+    {
+      "hypothesis": "H09_gate_degree_proxy",
+      "nonzero_directional_signals": 601,
+      "fixed_direction": {
+        "free": {
+          "mean_par2": 395.56489652405173,
+          "solved": 3373,
+          "par2_improvement_pct": -0.7699145172090359,
+          "paired_group_bootstrap_95_pct": [
+            -1.3544532037103894,
+            -0.18874924070602384
+          ],
+          "actions": {
+            "D": 4118,
+            "Fplus": 459,
+            "Fminus": 142
+          },
+          "better_than_D_parents": 240,
+          "worse_than_D_parents": 277
+        },
+        "with_extractor_cpu": {
+          "mean_par2": 395.5729151436745,
+          "solved": 3373,
+          "par2_improvement_pct": -0.7719572556346043,
+          "paired_group_bootstrap_95_pct": [
+            -1.3566520019342658,
+            -0.19072459446013731
+          ],
+          "actions": {
+            "D": 4118,
+            "Fplus": 459,
+            "Fminus": 142
+          },
+          "better_than_D_parents": 176,
+          "worse_than_D_parents": 1337
+        },
+        "probed_parents": 1988
+      },
+      "fit_strength_or_D": {
+        "free": {
+          "mean_par2": 392.54265364738285,
+          "solved": 3385,
+          "par2_improvement_pct": 0.0,
+          "paired_group_bootstrap_95_pct": [
+            0.0,
+            0.0
+          ],
+          "actions": {
+            "D": 4719,
+            "Fplus": 0,
+            "Fminus": 0
+          },
+          "better_than_D_parents": 0,
+          "worse_than_D_parents": 0
+        },
+        "with_extractor_cpu": {
+          "mean_par2": 392.54265364738285,
+          "solved": 3385,
+          "par2_improvement_pct": 0.0,
+          "paired_group_bootstrap_95_pct": [
+            0.0,
+            0.0
+          ],
+          "actions": {
+            "D": 4719,
+            "Fplus": 0,
+            "Fminus": 0
+          },
+          "better_than_D_parents": 0,
+          "worse_than_D_parents": 0
+        },
+        "probed_parents": 0
+      },
+      "thresholds": [
+        {
+          "fold": 0,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 1,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 2,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 3,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 4,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        }
+      ]
+    },
+    {
+      "hypothesis": "H14_choice_bottleneck_proxy",
+      "nonzero_directional_signals": 197,
+      "fixed_direction": {
+        "free": {
+          "mean_par2": 397.2643025594405,
+          "solved": 3363,
+          "par2_improvement_pct": -1.2028371613086024,
+          "paired_group_bootstrap_95_pct": [
+            -1.7932663657095322,
+            -0.6692916143741733
+          ],
+          "actions": {
+            "D": 4522,
+            "Fplus": 0,
+            "Fminus": 197
+          },
+          "better_than_D_parents": 43,
+          "worse_than_D_parents": 76
+        },
+        "with_extractor_cpu": {
+          "mean_par2": 397.27226648845095,
+          "solved": 3363,
+          "par2_improvement_pct": -1.2048659673342368,
+          "paired_group_bootstrap_95_pct": [
+            -1.7953292453491723,
+            -0.67160677164245
+          ],
+          "actions": {
+            "D": 4522,
+            "Fplus": 0,
+            "Fminus": 197
+          },
+          "better_than_D_parents": 18,
+          "worse_than_D_parents": 1489
+        },
+        "probed_parents": 1988
+      },
+      "fit_strength_or_D": {
+        "free": {
+          "mean_par2": 392.54265364738285,
+          "solved": 3385,
+          "par2_improvement_pct": 0.0,
+          "paired_group_bootstrap_95_pct": [
+            0.0,
+            0.0
+          ],
+          "actions": {
+            "D": 4719,
+            "Fplus": 0,
+            "Fminus": 0
+          },
+          "better_than_D_parents": 0,
+          "worse_than_D_parents": 0
+        },
+        "with_extractor_cpu": {
+          "mean_par2": 392.54265364738285,
+          "solved": 3385,
+          "par2_improvement_pct": 0.0,
+          "paired_group_bootstrap_95_pct": [
+            0.0,
+            0.0
+          ],
+          "actions": {
+            "D": 4719,
+            "Fplus": 0,
+            "Fminus": 0
+          },
+          "better_than_D_parents": 0,
+          "worse_than_D_parents": 0
+        },
+        "probed_parents": 0
+      },
+      "thresholds": [
+        {
+          "fold": 0,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 1,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 2,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 3,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        },
+        {
+          "fold": 4,
+          "strength_threshold": null,
+          "train_net_gain_s": 0
+        }
+      ]
+    }
+  ],
+  "analysis_cpu_s": 1.03142,
+  "elapsed_wall_s": 1.06635925010778,
+  "new_solver_calls": 0,
+  "new_extraction_calls": 0
+}

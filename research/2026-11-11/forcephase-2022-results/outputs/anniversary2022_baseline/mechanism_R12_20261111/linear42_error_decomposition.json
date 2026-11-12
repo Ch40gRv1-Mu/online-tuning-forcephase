@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "scope": "Exact R12 linear42_min3 error decomposition, no new policy or labels",
+  "parents": 4719,
+  "results": {
+    "iso_diagnostic": {
+      "switches": 855,
+      "chosen_Fplus": 401,
+      "chosen_Fminus": 454,
+      "net_PAR2_s": 38857.557325,
+      "strata": {
+        "rescued": {
+          "parents": 63,
+          "net_PAR2_s": 56158.869892,
+          "median_D_when_solved": null
+        },
+        "lost_solve": {
+          "parents": 29,
+          "net_PAR2_s": -26398.452021,
+          "median_D_when_solved": 313.266007
+        },
+        "both_solved": {
+          "parents": 431,
+          "net_PAR2_s": 9149.095078999999,
+          "median_D_when_solved": 33.436703
+        },
+        "both_censored": {
+          "parents": 332,
+          "net_PAR2_s": 0.0,
+          "median_D_when_solved": null
+        }
+      },
+      "stay_D_query_overhead_PAR2_s": -51.955625000002556
+    },
+    "coarse": {
+      "switches": 120,
+      "chosen_Fplus": 43,
+      "chosen_Fminus": 77,
+      "net_PAR2_s": 6869.700239000002,
+      "strata": {
+        "rescued": {
+          "parents": 12,
+          "net_PAR2_s": 10172.917986999999,
+          "median_D_when_solved": null
+        },
+        "lost_solve": {
+          "parents": 6,
+          "net_PAR2_s": -5968.389107,
+          "median_D_when_solved": 219.34257350000001
+        },
+        "both_solved": {
+          "parents": 79,
+          "net_PAR2_s": 2723.666172,
+          "median_D_when_solved": 46.923797
+        },
+        "both_censored": {
+          "parents": 23,
+          "net_PAR2_s": 0.0,
+          "median_D_when_solved": null
+        }
+      },
+      "stay_D_query_overhead_PAR2_s": -58.494812999999
+    },
+    "fine": {
+      "switches": 380,
+      "chosen_Fplus": 210,
+      "chosen_Fminus": 170,
+      "net_PAR2_s": -4831.324193999999,
+      "strata": {
+        "rescued": {
+          "parents": 25,
+          "net_PAR2_s": 23307.726727,
+          "median_D_when_solved": null
+        },
+        "lost_solve": {
+          "parents": 30,
+          "net_PAR2_s": -31331.495654000006,
+          "median_D_when_solved": 26.1368635
+        },
+        "both_solved": {
+          "parents": 206,
+          "net_PAR2_s": 3248.4649959999992,
+          "median_D_when_solved": 13.639993
+        },
+        "both_censored": {
+          "parents": 119,
+          "net_PAR2_s": 0.0,
+          "median_D_when_solved": null
+        }
+      },
+      "stay_D_query_overhead_PAR2_s": -56.02026299999807
+    }
+  },
+  "CPU_s": 0.238393,
+  "wall_s": 0.3240947090089321
+}

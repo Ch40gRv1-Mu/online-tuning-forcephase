@@ -1,0 +1,42 @@
+[
+  {
+    "input_format": "plain",
+    "prediction": {
+      "action": "D",
+      "status": "ok",
+      "probabilities": {
+        "D": 0.590944230556488,
+        "Fplus": 0.21163222193717957,
+        "Fminus": 0.19742350280284882
+      },
+      "solver_flags": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "CPU_s_after_import": 0.028058000000000027
+    },
+    "cold_wall_s": 1.35,
+    "cold_user_CPU_s": 0.76,
+    "cold_system_CPU_s": 0.16
+  },
+  {
+    "input_format": "gzip",
+    "prediction": {
+      "action": "D",
+      "status": "ok",
+      "probabilities": {
+        "D": 0.6086831092834473,
+        "Fplus": 0.2557661831378937,
+        "Fminus": 0.13555076718330383
+      },
+      "solver_flags": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "CPU_s_after_import": 0.056684999999999985
+    },
+    "cold_wall_s": 0.82,
+    "cold_user_CPU_s": 0.74,
+    "cold_system_CPU_s": 0.07
+  }
+]

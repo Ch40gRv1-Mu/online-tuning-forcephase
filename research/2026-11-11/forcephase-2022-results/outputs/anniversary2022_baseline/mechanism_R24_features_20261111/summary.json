@@ -1,0 +1,28 @@
+{
+  "alphas": [
+    0.25,
+    0.95,
+    0.995
+  ],
+  "eligible": 2325,
+  "features_sha256": "c07b5237b3f7e4d8b4d846c80cb335e663b7ed23a68faf464bfdb4ae8cd09812",
+  "informative_parents": 2319,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "physical_CPU_s": 135.22731900000002,
+  "reference_sha256": "19d52b66fa18aae432f8c844e16ea07f100b36091d002e4229d1f2219d8476b9",
+  "rewire_source_sha256": "542c6d023141fc235e4812b913bd57e337249a6097eb780d16a88c45a1b2f68b",
+  "scope": "Input-defined linear features, CG iterations/residuals are ledger only, no SAT search",
+  "semantic_checks": {
+    "CG_dense_agreement": true,
+    "SAT_solver_calls": 0,
+    "normalized_spectrum_bound": true,
+    "renaming_invariance": true,
+    "runtime_label_augmentation": false,
+    "signed_direction_retained": true
+  },
+  "short_search_calls": 0,
+  "source_sha256": "3179dac79f3fb13afaa673413de02a24ac0defad4c037ea74cce2d99664d128d",
+  "status": "complete",
+  "wall_s": 68.88678362499923
+}

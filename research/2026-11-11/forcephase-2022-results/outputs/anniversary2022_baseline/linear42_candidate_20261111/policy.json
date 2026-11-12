@@ -1,0 +1,34 @@
+{
+  "GBD_sha256": "15a3d19fd23ba72dd7c77b1b86113873f160760fa1c9710e9e5ed6a23ba29d84",
+  "dataset_parents": 4719,
+  "decision": "For eachF use minimum predicted D-F gain across3 models; switch to bestF only above margin, elseD",
+  "feature_count": 42,
+  "feature_failure": "D, with failed acquisition CPU still charged",
+  "features": "linear42",
+  "historical_evidence_sha256": "787be08b144d4ed79fee551e03c9508a0253109bdeebd721b0a189d0826ff7de",
+  "inner_validation_parents": 932,
+  "margin_PAR2_s": 0.0,
+  "max_depth": 12,
+  "min_samples_leaf": 4,
+  "model_file": "model.joblib",
+  "model_sha256": "159bf7df5d641b9a7e7778b803f99246ee2a50f2ab82957bbb93aa56fbe39a39",
+  "model_size": {
+    "feature_index_choices": 245094,
+    "internal_splits": 245094,
+    "leaves": 245862,
+    "nodes": 490956,
+    "predictive_float_scalars": 736818,
+    "trees": 768
+  },
+  "native_binary_sha256": "c37aa1f35a157228707653209c07fcb11d4642b0d2acf3562eba2adec8c6b5d8",
+  "schema": "forcephase.linear42.min3.v1",
+  "scope": "Executable candidate, not an independently confirmed final policy",
+  "seeds": [
+    20261111,
+    20261112,
+    20261113
+  ],
+  "splits_sha256": "7cd77d6c3e2ca57977f153ec10c0f950d04b2dd019c8ca63b2ca77f4d1c5bdee",
+  "training_parents": 3787,
+  "trees_per_model": 256
+}

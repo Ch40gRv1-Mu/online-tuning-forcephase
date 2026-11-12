@@ -1,0 +1,13 @@
+{
+  "counts_only_resource_strata": true,
+  "new_solver_calls": 0,
+  "new_fits": 0,
+  "existing4719": 4719,
+  "original_R50": 2325,
+  "extra_cached_small": 518,
+  "large_remaining": 1876,
+  "extra_cached_small_oracle_population_pp": 1.1306679312992833,
+  "large_remaining_oracle_population_pp": 4.897244433085261,
+  "source": "Existing published complete costs and manifest raw byte metadata, not new feature/policy reward",
+  "planning_CPU_not_separately_instrumented": true
+}

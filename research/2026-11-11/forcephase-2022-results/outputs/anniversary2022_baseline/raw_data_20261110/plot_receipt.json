@@ -1,0 +1,85 @@
+{
+  "source_repository": "Roushelfy/online-tuning-forcephase",
+  "source_branch": "anni2022-cluster-run",
+  "source_commit": "0d82f6ed932e3f5ad0bde8d96d847dadc9ee8aa0",
+  "source_files": {
+    "matrix.csv": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8",
+    "runs.csv": "4ac906647ab823c03866bd79a209b89bee2e713ca1b59f5f4398971602969342",
+    "summary.json": "ee18d6435c8faaceed49841548870b2ceb8edc6f88f596b2222f09f7d4b23544",
+    "curve_data.json": "29dfc663457b6480e976a0c8baa234914bf308a652888f0edb9fcc787455bf82"
+  },
+  "generator_sha256": "16b9a6d97bcbc3eb0a76d22526715f5c04a3b8f1fce688739f6ff30a7c911e50",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.4",
+  "generated_date": "2026-11-10",
+  "checks": [
+    "exact frozen retained cohort",
+    "one run per action and parent; seed 0",
+    "resolved status and verification metadata",
+    "matrix agrees with runs",
+    "computed curves equal published raw curves",
+    "PAR2 agrees with published summary"
+  ],
+  "source_raw_logs_or_proofs_reverified": false,
+  "new_solver_calls": 0,
+  "statistics": {
+    "cohort": 4719,
+    "runs": 14157,
+    "cutoff_cpu_s": 600,
+    "solved": {
+      "D": 3385,
+      "Fminus": 3055,
+      "Fplus": 3076,
+      "VBS": 3547
+    },
+    "mean_par2_s": {
+      "D": 392.5426536473829,
+      "Fminus": 471.97605173278237,
+      "Fplus": 468.2365155488451,
+      "VBS": 349.94073167895743
+    },
+    "oracle_gain_over_D": 0.10852813464366695,
+    "all_timeout": 1172,
+    "pair_counts": {
+      "D_vs_Fplus": {
+        "both_solved": 2984,
+        "only_D": 401,
+        "only_Fplus": 92,
+        "neither_solved": 1242
+      },
+      "D_vs_Fminus": {
+        "both_solved": 2943,
+        "only_D": 442,
+        "only_Fminus": 112,
+        "neither_solved": 1222
+      },
+      "Fplus_vs_Fminus": {
+        "both_solved": 2865,
+        "only_Fplus": 211,
+        "only_Fminus": 190,
+        "neither_solved": 1453
+      }
+    },
+    "missing_conflicts_timeout_runs": 8
+  },
+  "files": {
+    "cumulative_conflicts.pdf": "ddc08f2d832ef0bffb2f3e3a6ecb8f4697e08b09e12a36623974b4259b15a5ac",
+    "cumulative_conflicts.png": "6fbc8e0ac40b609136394a3685ac922e74ed3c9a444ae3aeca8fbf2324139bc9",
+    "cumulative_conflicts.svg": "3e5545439921c825a1465f7366fa58d0e695a87769eba15ae1fd73a2321db7b6",
+    "cumulative_cpu_s.pdf": "a7553fa6f7ed1bae6e79169c0dad247450c00a78be5697b6d62c2f37f4510f4b",
+    "cumulative_cpu_s.png": "7218f8f806991d8766815b28fa191ac24cbe343794014158fa95083e0232b470",
+    "cumulative_cpu_s.svg": "869089472ed5ef29c984e37f25e906fedcaeab517d4f01cacb9ee8c137e4e0bb",
+    "curve_data.json": "1ce304f5c765314b75b04a064e03487d9fe7e2f9b84078c5b8712482d3a15210",
+    "curve_points.csv": "93bcb5754fcb879cfd4fd65df7b2681dd0f795cd97380dafad1e367ef0fa6e8d",
+    "matrix.csv": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8",
+    "raw_data.html": "57c9cac67ab03e3a603179311d0ba85920701395491e2c1696a1e7821b253548",
+    "runs.csv": "4ac906647ab823c03866bd79a209b89bee2e713ca1b59f5f4398971602969342",
+    "scatter_conflicts.pdf": "4d5a4426456cb460a076ff31d5a1eb3bf9f3a87e331072f8e49fe295e5ca9e86",
+    "scatter_conflicts.png": "d7edcec6de6058d3af12ae95a3b8de709815626a6c3c3f6d04d8b3fabe5f4d7b",
+    "scatter_conflicts.svg": "79ff5a1cf264d4aa5fe0e01b6c2f67f7eb478ca478dd151f281eaca121cf5df5",
+    "scatter_cpu_s.pdf": "1549c8c52e88bd4b858c704b4576e7e615fdee48deb57134bc44c1a50f6957f0",
+    "scatter_cpu_s.png": "9b43f1b4c47805c03430aa24e320151a929f2003332b6527561242b967d83c05",
+    "scatter_cpu_s.svg": "a9008c141b501dc7cd84d2ebad0b685a4b64eca6c363180ec2db71828e901f1d",
+    "statistics.json": "6e19c0d41c589856ef29442e4fa9237a8a1110ef8d8b3047db241fae60306974"
+  }
+}

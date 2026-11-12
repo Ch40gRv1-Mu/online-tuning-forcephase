@@ -1,0 +1,23 @@
+{
+  "status": "RUNNING_THROUGH1024_AFTER_READABLE_ROUND",
+  "all_inputs": 4719,
+  "large_first": 1876,
+  "cached_small": 2843,
+  "already_measured_compact": 512,
+  "unmeasured": 4207,
+  "next_prefix": 1024,
+  "new_solver_calls": 0,
+  "selection": "Count-based large prefix then remaining sorted small; no winners or known SAT/UNSAT used",
+  "scope": "Actual compact feature costs and interface, no new policy training or confirmation",
+  "PID": 60389,
+  "process_handle": 95109,
+  "output": "outputs/anniversary2022_baseline/linear42_compact_cost_v3_20261111",
+  "source_commit": "05f66c0",
+  "reused_compact32": 32,
+  "completed_snapshot": 563,
+  "remaining_scope_snapshot": 4156,
+  "active_worker": true,
+  "inherited_compatible_measurements": 512,
+  "last_complete_prefix": 512,
+  "current_session": "New session physicalCPU open until completed1024; accepted512 reused, not executed or charged again"
+}

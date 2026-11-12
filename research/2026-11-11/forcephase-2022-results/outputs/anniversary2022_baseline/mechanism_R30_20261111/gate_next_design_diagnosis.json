@@ -1,0 +1,13 @@
+{
+  "status": "complete_planning_diagnosis_not_policy_score",
+  "all_parents": 4719,
+  "known_gate_parents": 785,
+  "known_acyclic_gate_parents": 708,
+  "known_acyclic_gate_oracle_population_pp": 1.5784971363372025,
+  "unknown_old_gate_coverage": 2389,
+  "new_solver_calls": 0,
+  "new_fits": 0,
+  "CPU_s": 0.15887600000000002,
+  "wall_s": 0.2168972920626402,
+  "limitation": "Cached noncoverage is unknown, not no gates. Counts/phase outcomes used solely to size next mechanism, never model inputs."
+}

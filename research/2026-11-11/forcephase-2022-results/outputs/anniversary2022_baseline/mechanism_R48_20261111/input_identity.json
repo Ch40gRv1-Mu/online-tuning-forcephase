@@ -1,0 +1,109 @@
+{
+  "inputs": "Original42 float32; indices21/26 excluded from every predicate",
+  "matrix_sha256": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8",
+  "native_failures_paidD_if_nonconstant": 25,
+  "parents": 4719,
+  "splits_sha256": "7cd77d6c3e2ca57977f153ec10c0f950d04b2dd019c8ca63b2ca77f4d1c5bdee",
+  "teacher_caches": [
+    {
+      "cache_sha256": "7db049cdd81286c74a5f866751116be6a8d325d85cd2cd400ec0304960fc4a54",
+      "fold": 0,
+      "mode": "iso_diagnostic",
+      "only_train_targets_used": true,
+      "receipt_sha256": "08adfac853c744c4f7f74fb7210527c175306944a40a4950bb64e51c632934f7"
+    },
+    {
+      "cache_sha256": "aedcd3630e1f390a3a81b84c7a32e1e4d79f017ce68c3f13f910965bd823886a",
+      "fold": 1,
+      "mode": "iso_diagnostic",
+      "only_train_targets_used": true,
+      "receipt_sha256": "c8eba8000a7ccf88c03b76e5c9a72406e48a3ee5c3c822109f98202c5571a58a"
+    },
+    {
+      "cache_sha256": "9952674f7e0cf7d173341dbd613636ded385e5de907845d24766310d1de79306",
+      "fold": 2,
+      "mode": "iso_diagnostic",
+      "only_train_targets_used": true,
+      "receipt_sha256": "1779cf5d5d574640d3f7574a857c9c4a6298321bb3096acbad0aa195da09d5eb"
+    },
+    {
+      "cache_sha256": "a6eb427d6d1f924e883788f92e294d09ea5f27a30e86aba2803d07875891274f",
+      "fold": 3,
+      "mode": "iso_diagnostic",
+      "only_train_targets_used": true,
+      "receipt_sha256": "90af257cd6791dcaf4dc6940c0ea13d1c17c21f156ae6b52ca91b2e6b884ca61"
+    },
+    {
+      "cache_sha256": "6e331ed99132efeecbf3dc85bcc63f550602af9a1532889acfb9ea29dc5e2bf3",
+      "fold": 4,
+      "mode": "iso_diagnostic",
+      "only_train_targets_used": true,
+      "receipt_sha256": "0033add80c8eef8c05ef9b127cc3fb38c732be98056f823cb2f9be76fb0b49a0"
+    },
+    {
+      "cache_sha256": "987a994c7b20a8f2f1d906b95f15651e6970aabc3896f6ff1840656641439d62",
+      "fold": 0,
+      "mode": "coarse",
+      "only_train_targets_used": true,
+      "receipt_sha256": "b71823071e0a3963b6da27481ff9c6cb8ae3b727de1dac8ace91b5e3bbe39d4c"
+    },
+    {
+      "cache_sha256": "68f849b672284d59f79c8c763242082a97e34bb9439214c8c0d28b4319b0097e",
+      "fold": 1,
+      "mode": "coarse",
+      "only_train_targets_used": true,
+      "receipt_sha256": "30193cd2d1cad778ce6425162ccc4cd72092dab28efeea02b88eb5c15481487a"
+    },
+    {
+      "cache_sha256": "94c160872801ba2d27ba6d36bbbaaeae94923e1747d1acf8a86ed2114917aaee",
+      "fold": 2,
+      "mode": "coarse",
+      "only_train_targets_used": true,
+      "receipt_sha256": "ef052850d3120554769cdd98e97492ca485e9e23df87f38774ed04be1975d8d6"
+    },
+    {
+      "cache_sha256": "a2ca1bcd907d67d6571a9f2cb0f2c19008614ac9773e933dd1cd84e24d851c61",
+      "fold": 3,
+      "mode": "coarse",
+      "only_train_targets_used": true,
+      "receipt_sha256": "d6b7e1ab3469501f339ebbb235d1392487f25af1449a9ab1cc4770d6e80dbdfd"
+    },
+    {
+      "cache_sha256": "37e64f1f43ec8b6742668f6768ca51883eed5418215a24f35dafa1cd73795f71",
+      "fold": 0,
+      "mode": "fine",
+      "only_train_targets_used": true,
+      "receipt_sha256": "d5f74802b74a8cdcd59246cc7c47b06888d5d090b729b454c5892d452ef7f0d7"
+    },
+    {
+      "cache_sha256": "eb25f6b0e168897cd5454fb01943610c77377e96606f7334b0a02894eac878d5",
+      "fold": 1,
+      "mode": "fine",
+      "only_train_targets_used": true,
+      "receipt_sha256": "10ad2dff30a55a1c36c11ad76a7f719597de3ee1e3aef45d725062ac1c4ceda8"
+    },
+    {
+      "cache_sha256": "db406b9db596f1e539ee7a11d219cf9d80a2877b789b48090f18a34d5e96f03c",
+      "fold": 2,
+      "mode": "fine",
+      "only_train_targets_used": true,
+      "receipt_sha256": "6b36aa538792d87127ca0d46ede889a345d99d87947b75cf9a1be4e05cba5fd9"
+    },
+    {
+      "cache_sha256": "b44fc31a7c455bd0fad68b4f8dc0291a8f7f324309c55c9f4447f178fa81a1cd",
+      "fold": 3,
+      "mode": "fine",
+      "only_train_targets_used": true,
+      "receipt_sha256": "06e7ea092070738334d13853e7565ed4c464f6a2bcf793c77823a7ea011e8e4e"
+    },
+    {
+      "cache_sha256": "6cd51a6912d4e8920e2af571385bb7aa36c8dfbdaed47c5ddb998cb4fb586eef",
+      "fold": 4,
+      "mode": "fine",
+      "only_train_targets_used": true,
+      "receipt_sha256": "2b92fe27b8b65c3b02feaea4838a82598798e8d0513b76e19b3bf63cfa16ed18"
+    }
+  ],
+  "teacher_targets": "Training-only min3 predicted advantage; not new measured runtime",
+  "true_targets": "Original three-action complete PAR2, not surrogate labels"
+}

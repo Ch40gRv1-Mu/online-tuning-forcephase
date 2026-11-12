@@ -1,0 +1,50 @@
+{
+  "actual_native_library_calls": {
+    "MST_calls": 13950,
+    "parity_CC_calls": 13950,
+    "unknown_failed_graph_work": 0,
+    "unsigned_CC_calls": 2325
+  },
+  "attempted": 2325,
+  "failed": 0,
+  "features_sha256": "d5f2a9cf31382cff9d56c47918cc956f4186b867c7ac4ed8f7ed1772e8f4b735",
+  "informative": 1813,
+  "library_versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  },
+  "new_solver_calls": 0,
+  "new_standalone_extractor_processes": 0,
+  "parents": 4719,
+  "reference_sha256": "588add70ca1b41ee7a1bfe1299292ec0daf298cd55fff8fbe6a2b0c4a477a514",
+  "semantic_checks": {
+    "CNF_solver_calls": 0,
+    "MST_calls": 9,
+    "checks_are_not_runtime_symmetry_evidence": true,
+    "fixtures": [
+      {
+        "balanced_residual": 0.0,
+        "complement_feature_covariance": true,
+        "negative_square_residual": 0.25,
+        "seed": 20261146
+      },
+      {
+        "balanced_residual": 0.0,
+        "complement_feature_covariance": true,
+        "negative_square_residual": 0.25,
+        "seed": 20261147
+      },
+      {
+        "balanced_residual": 0.0,
+        "complement_feature_covariance": true,
+        "negative_square_residual": 0.25,
+        "seed": 20261148
+      }
+    ],
+    "parity_CC_calls": 9
+  },
+  "source_sha256": "949dc2b670ad7e5c75817e936a68d9aabf770385733e0e158daae91c22f1810b",
+  "successful": 2325,
+  "wall_s": 150.61467658402398
+}

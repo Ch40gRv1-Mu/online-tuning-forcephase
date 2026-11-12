@@ -1,0 +1,19 @@
+{
+  "all_informative": 2259,
+  "features_sha256": "98d8be9a51a6bcf49e3a1e85ebe20b017df52ff1511a07e66b1f748e316ecf1c",
+  "new_attempts": 518,
+  "new_distinct": 518,
+  "new_downloads": 0,
+  "new_failed": 0,
+  "new_informative": 441,
+  "new_solver_calls": 0,
+  "new_successful": 518,
+  "old_features_sha256": "091af81e857dde5023bfe23c7d32ee76a1de20c99afc7e5d53ab0cdd26dbc07b",
+  "old_physical_cost_charged_again": false,
+  "parents": 4719,
+  "reused_parents": 2325,
+  "source_sha256": "de5a57a334b002c62d1b452b95f05c9ddbfeba61629c814bd87b78df3764e7c2",
+  "table_source_sha256": "32f90c2d29e6413031ad5f819cd9bd9798e062d6e538098b6545038bfb5c41e4",
+  "total_profiled": 2843,
+  "wall_s": 12.87439891602844
+}

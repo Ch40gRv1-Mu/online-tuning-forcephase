@@ -1,0 +1,15 @@
+# Independent check of the SCC demand guard
+
+**Closed before solving.** The user restricted subsequent research to existing 2022 Anniversary runs. The newer-cohort input screen had already finished when the instruction arrived. There were zero solver calls and no newer-cohort values enter policy development or scoring. The local build did not execute a solver workload. This file preserves the superseded preparation record.
+
+## Input screen (before solver measurements)
+
+Freeze the union of the official GBD Main Track lists from 2023–2026. Require all four lists to contain 400 entries. Exclude every Anniversary 2022 master identifier and prior exposed identifiers from the original 300-parent and professor-provided development records, including overlap by GBD isohash2. Deduplicate by GBD isohash2 with hash-seeded deterministic order. Do not access competition or phase timing outcomes for these inputs. The original resource scope is at most 1,500,000 GBD plain bytes and at most 100,000 variables, with at least one binary clause. This is the scope that gave the held-out five-fold signal. The newer size expansion was scored and did not show benefit.
+
+Stage and verify all resource-eligible inputs with GBD clause identity and exact plain SHA-256. Extract the frozen nonbinary demand feature with the existing signed-boundary implementation. Threshold is strictly greater than 0.10. This input-only screen establishes how much switched support the independent population can supply. For eligible extraction failures the deployable rule returns D, with failures retained. Ineligible inputs also route to D. No SAT/UNSAT outcomes or performance labels are used to define the scope or order. The screening artifacts will inform fixed study size and budget before any outcome is measured.
+
+The original 4,719 development population and its measured baseline stay unchanged. The known five-fold one-feature improvement was 0.37% on the full population. A fixed guard on the original coverage switched 254/1,988 with a 1.04% PAR2 reduction on that exposed subset. The development oracle is 10.85% across 4,719 and 11.21% across the original covered 1,988. The last transfer test was neutral across 855 newly covered development inputs. Results on this official resource-defined Main Track population will be reported separately.
+
+## Source adjustment before any timing
+
+The Main Track union yielded zero resource-eligible inputs after subtracting the earlier exposure identifiers and their GBD equivalents. Its attempted screen stopped before any download or extractor/solver call. The exact exclusion ledger will be retained. For the independent population use the 1,096-instance GBD SAT Competition 2026 submissions snapshot, with the same exclusions, deduplication and original resource scope. This decision used membership and resource counts only. The confirmation applies to clean competition submissions within this scope, without using submission identity or results as a routing feature.

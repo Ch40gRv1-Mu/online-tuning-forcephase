@@ -1,0 +1,99 @@
+{
+  "parents_checked_per_loss": 4719,
+  "losses": 2,
+  "cost_vectors_checked": 8,
+  "all_probabilities_finite_and_normalized": true,
+  "all_actions_match_probability_argmax": true,
+  "all_paid_PAR2_matches_archived_action_plus_measured_feature_and_inference": true,
+  "model_sha256": "04ab5d23b5b5d556b16e40a8fde53c31e5c54318bfbdebabe179f1b2cedad5a7",
+  "architecture_parameters": 3571,
+  "source_commit_expected": "2313cee",
+  "source_commit_cost_ce": "f219e94",
+  "new_solver_calls": 0,
+  "scores_with_accuracy": {
+    "coarse_gcn": {
+      "actions": {
+        "D": 4132,
+        "Fminus": 294,
+        "Fplus": 293
+      },
+      "block_interval_95_pct": [
+        -1.5658234696864128,
+        0.2690289252352933
+      ],
+      "gain_pct": -0.3638846887062516,
+      "inference_CPU_s": 2.6336969999995503,
+      "lost_solves": 14,
+      "newly_solved": 9,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 393.97105626064695,
+      "solved": 3380,
+      "clear_winner_accuracy": 0.4401422362702489,
+      "clear_winner_parents": 2531
+    },
+    "coarse_pooled_mlp": {
+      "actions": {
+        "D": 4556,
+        "Fminus": 15,
+        "Fplus": 148
+      },
+      "block_interval_95_pct": [
+        -0.18271797780630653,
+        -0.0017189368784819796
+      ],
+      "gain_pct": -0.083287266037099,
+      "inference_CPU_s": 0.12711800000013795,
+      "lost_solves": 2,
+      "newly_solved": 1,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.8695916916353,
+      "solved": 3384,
+      "clear_winner_accuracy": 0.447649150533386,
+      "clear_winner_parents": 2531
+    },
+    "fine_gcn": {
+      "actions": {
+        "D": 4399,
+        "Fminus": 259,
+        "Fplus": 61
+      },
+      "block_interval_95_pct": [
+        -0.3584275712389898,
+        0.26093819156226683
+      ],
+      "gain_pct": -0.06320773489265243,
+      "inference_CPU_s": 2.5032879999996,
+      "lost_solves": 5,
+      "newly_solved": 3,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.7907709672409,
+      "solved": 3383,
+      "clear_winner_accuracy": 0.44725404978269456,
+      "clear_winner_parents": 2531
+    },
+    "fine_pooled_mlp": {
+      "actions": {
+        "D": 4231,
+        "Fminus": 247,
+        "Fplus": 241
+      },
+      "block_interval_95_pct": [
+        -1.9381313314303628,
+        0.33868581882840965
+      ],
+      "gain_pct": -0.6753592689562449,
+      "inference_CPU_s": 0.12335799999959818,
+      "lost_solves": 20,
+      "newly_solved": 9,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 395.1937268433973,
+      "solved": 3374,
+      "clear_winner_accuracy": 0.44251284077439745,
+      "clear_winner_parents": 2531
+    }
+  }
+}

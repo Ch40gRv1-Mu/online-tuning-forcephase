@@ -1,0 +1,9 @@
+{
+  "function": "src.anniversary2022_baseline.score_balanced_veto.choose_with_guard",
+  "no_instance_identity_input": true,
+  "primary_guard": "R38signed111",
+  "resource_qualification": "CNF nmax<=100000 and literal<=200000",
+  "rule": "eligible and base_action != D and guardian_action != base_action -> D; else base_action",
+  "schema": "R39.static_guard_operator.v1",
+  "scope": "Executable decision combiner, OOF replay. No standalone full trained guardian or live deployment claim."
+}

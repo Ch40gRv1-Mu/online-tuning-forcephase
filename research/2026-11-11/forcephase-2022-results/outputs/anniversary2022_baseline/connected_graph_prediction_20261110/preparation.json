@@ -1,0 +1,27 @@
+{
+  "all_timeout": 1172,
+  "coarse_fold_sizes": [
+    1504,
+    1069,
+    1072,
+    1074
+  ],
+  "coarse_groups_after_equivalence_merge": 8,
+  "collector_CPU_s": 207.48835300000002,
+  "encoded": 2843,
+  "fallback_D": 1876,
+  "feature_CPU_s": 155.16046626499985,
+  "free_oracle_gain_pct_within_scope": 5.95556903128144,
+  "identity_CPU_s": 21.445788,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "sampling": "connected",
+  "source_sha256": {
+    "outputs/anniversary2022_baseline/raw_data_20261110/matrix.csv": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8",
+    "outputs/anniversary2022_baseline/scc_root_up_20261110/predictions.csv": "998a35030ebe87c9eaae58b8cc5cbf48310b974d666b866da303a73f2c7e319b",
+    "outputs/anniversary2022_baseline/scc_width_fixed_20261110/predictions.csv": "952bd967c9c983b923fe55f203c8d2050a3ded4852e53d75de83253e714c749f",
+    "work/frozen_policy_replay_20261110/gbd_base.sqlite3": "15a3d19fd23ba72dd7c77b1b86113873f160760fa1c9710e9e5ed6a23ba29d84"
+  },
+  "splits_sha256": "aa103eaf903aaea64bd2d89827db97b53fdff3286a85eed8c91392ab2e346a22",
+  "wall_s": 124.5893891248852
+}

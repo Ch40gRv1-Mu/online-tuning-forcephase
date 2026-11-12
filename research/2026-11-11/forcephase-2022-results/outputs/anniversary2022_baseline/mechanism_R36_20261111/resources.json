@@ -1,0 +1,8 @@
+{
+  "new_solver_calls": 0,
+  "physical_child_CPU_s": 5.654103,
+  "physical_parent_CPU_s": 1.169912,
+  "source_sha256": "70fc95e003d0924623b31d2c308867837335b3b02db4379314b0c58887004c26",
+  "status": "complete",
+  "wall_s": 3.331365874968469
+}

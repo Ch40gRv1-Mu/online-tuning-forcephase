@@ -1,0 +1,12 @@
+{
+  "attempted": 2325,
+  "failed": 0,
+  "features_sha256": "578644d6eff50e526d23ccf1e02648e0976263b0f50c3046027e568af177e1d4",
+  "informative": 1943,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "reference_sha256": "588add70ca1b41ee7a1bfe1299292ec0daf298cd55fff8fbe6a2b0c4a477a514",
+  "source_sha256": "b67531de9a91d127da38552d191eaf329464d95501f0e005223ff276ebd132f0",
+  "successful": 2325,
+  "wall_s": 13.20780170802027
+}

@@ -1,0 +1,18 @@
+{
+  "acquisition_CPU_quantiles_s": [
+    0.28886483299999643,
+    2.3156834790000014,
+    5.854407206799998,
+    8.039165833000004
+  ],
+  "acquisition_CPU_sum_s": 212.95196367500006,
+  "all_profile_scope": 4719,
+  "native_error_D": 13,
+  "native_ok": 243,
+  "new_solver_calls": 0,
+  "remaining_unmeasured_inputs": 4463,
+  "sample_selection": "Frozen original sorted prefix, no phase outcomes used",
+  "scope": "Measured costs only; not whole4719 completion, independent performance, or same-machine end-to-end",
+  "status": "complete_prefix",
+  "through": 256
+}

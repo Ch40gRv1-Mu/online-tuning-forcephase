@@ -1,0 +1,29 @@
+{
+  "build": {
+    "CPU_s": 1.450115,
+    "command": [
+      "clang++",
+      "-std=c++17",
+      "-O3",
+      "-I<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418",
+      "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/native_gbd_features.cpp",
+      "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/extract/CNFBaseFeatures.cc",
+      "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/CaptureDistribution.cc",
+      "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/UnionFind.cc",
+      "-larchive",
+      "-o",
+      "<LOCAL_WORKSPACE>/work/native_gbd_features_20261111/native_gbd_features"
+    ],
+    "exit": 1,
+    "stderr": "In file included from <LOCAL_WORKSPACE>/src/anniversary2022_baseline/native_gbd_features.cpp:12:\n<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/StreamBuffer.h:23:10: fatal error: 'archive.h' file not found\n#include <archive.h>\n         ^~~~~~~~~~~\n1 error generated.\nIn file included from <LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/extract/CNFBaseFeatures.cc:10:\n<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/StreamBuffer.h:23:10: fatal error: 'archive.h' file not found\n#include <archive.h>\n         ^~~~~~~~~~~\n1 error generated.\n",
+    "vendor_lock_sha256": "4707da22fd0739936c0b015d18a5f9f0696d45f9d259f8ec0b8bc948d8e31949",
+    "wall_s": 3.531103084096685
+  },
+  "completed": 0,
+  "import_CPU_s": null,
+  "import_failure": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<LOCAL_WORKSPACE>/src/anniversary2022_baseline/measure_native_gbd_route.py\", line 18, in <module>\n    from sklearn.tree._tree import DTYPE\nImportError: cannot import name 'DTYPE' from 'sklearn.tree._tree' (<LOCAL_WORKSPACE>/work/anniversary2022_plot_env/lib/python3.12/site-packages/sklearn/tree/_tree.cpython-312-darwin.so)\n",
+  "import_tool_wall_s": 0.965785042,
+  "new_solver_calls": 0,
+  "short_search_calls": 0,
+  "status": "failed_before_input"
+}

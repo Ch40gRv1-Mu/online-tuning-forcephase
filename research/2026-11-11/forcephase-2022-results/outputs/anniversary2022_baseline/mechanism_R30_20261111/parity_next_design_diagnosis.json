@@ -1,0 +1,13 @@
+{
+  "status": "complete_planning_diagnosis_not_policy_score",
+  "all_parents": 4719,
+  "old_motif_positive_parents": 685,
+  "motif_positive_within_R29_count_eligibility": 543,
+  "known_overlap_oracle_population_pp": 1.9681039600005124,
+  "within_overlap_max_motif_count": 10229.999999999995,
+  "new_solver_calls": 0,
+  "new_fits": 0,
+  "CPU_s": 0.15971399999999997,
+  "wall_s": 0.21295416704379022,
+  "limitations": "Prior R08 missing feature coverage is unknown, not zero motifs. This only diagnoses already-known motif coverage for next design; no outcomes or case counts reclassified."
+}

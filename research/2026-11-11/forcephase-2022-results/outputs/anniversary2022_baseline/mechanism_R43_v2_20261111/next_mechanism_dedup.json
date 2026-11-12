@@ -1,0 +1,14 @@
+{
+  "question": "Explicit variable-degree versus signed-polarity joint profiles, conditioned on degree rather than variable rank or hashed graph colors",
+  "status": "SOURCE_COMPARISON_COMPLETE_RELATED_HYPOTHESIS_NOT_NEW_RAW_INFORMATION",
+  "source_evidence": {
+    "order_phase_features.py": "Clause-width-weighted bias, pure sign and ambiguity pooled by original variable-ID rank, plus global8 marginals; no explicit degree-band joint table",
+    "priority_cavity_features.py": "Continuous response fields pooled by original rank, randomized within degree strata; not raw degree-conditioned sign composition",
+    "signed_overlap_features.py": "Clause-pair sign overlap; null preserves per-variable signed occurrence degrees, so this tests beyond the joint marginals",
+    "literal_color_features.py": "Initial colors encode quantized literal degree and variable degree with sign, then hashed neighborhood histograms; related information can be implicit, no explicit interpretable degree-band moment table",
+    "cached_tail_features.py": "Univariate degree tails and unsigned polarity ranges fromGBD, not per-variable degree-by-signed-bias profiles"
+  },
+  "interpretation": "Potentially different representation and mechanism control, not a new graph information family. Must compare to shared global marginals and degree-decoupled bias profiles, not merely original42.",
+  "eligibility": "Reuse frozen count-only2325 cache nmax<=100000 and rawliteral occurrences<=200000; all4719 denominator remains, no newcohort/solving",
+  "next_action": "Freeze explicit fixed degree bands and shared-marginal/decoupled controls plus scoring source before any extraction or fit; do not tune earlier direction/veto/subset schemes."
+}

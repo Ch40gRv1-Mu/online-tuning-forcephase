@@ -1,0 +1,23 @@
+{
+  "CPU_s": 0.197724,
+  "diagnosis": {
+    "all_censored": 1172,
+    "clear_parent_labels": 2279,
+    "cost_valid": 4719,
+    "eligible": 1890,
+    "eligible_all_censored": 417,
+    "free_eligible_oracle_population_pct": 3.3783773651972204,
+    "free_full_oracle_gain_pct": 10.852813464366701,
+    "free_mixed_oracle_population_pct": 0.4220016601404965,
+    "mixed_roles": 179,
+    "new_solver_calls": 0,
+    "parents": 4719,
+    "short_search_calls": 0
+  },
+  "features_sha256": "5fb4ccee28e17f03f38a91ea962630548d12ecd541034e9de6103fdf7495ba23",
+  "fits": [],
+  "reason": "Preregistered mixed-role coverage or full-population oracle headroom screen failed",
+  "source_sha256": "0622bd38745523c7ba41ad19eba80250060aecc1842122a9767770138039b3ae",
+  "status": "complete_low_information_no_fits",
+  "wall_s": 0.2531394159886986
+}

@@ -1,0 +1,22 @@
+{
+  "eligible": 2325,
+  "features_sha256": "7f95c5c26aa9819d620d1cba30d8b0ee0050cb5ff5d45ed710d3587cf8ad8bf4",
+  "informative_parents": 1861,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "physical_CPU_s": 123.44713899999999,
+  "reference_sha256": "19d52b66fa18aae432f8c844e16ea07f100b36091d002e4229d1f2219d8476b9",
+  "scope": "Fractional directed dependency mass, not literal assignments or logical closure",
+  "semantic_checks": {
+    "SAT_calls": 0,
+    "critical_direction": true,
+    "global_complement_swaps_reference_directions": true,
+    "logical_propagation_calls": 0,
+    "renaming_invariance": true,
+    "rooted_chain_mass": true
+  },
+  "short_search_calls": 0,
+  "source_sha256": "ffd3c02044237e89698b7df05c2575375ec797b3636f9c96d41a41055bfebe35",
+  "status": "complete",
+  "wall_s": 71.0231465830002
+}

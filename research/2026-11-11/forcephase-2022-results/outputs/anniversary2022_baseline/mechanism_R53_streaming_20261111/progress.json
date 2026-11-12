@@ -1,0 +1,12 @@
+{
+  "active_workers": 0,
+  "completed": 1876,
+  "expected": 1876,
+  "failed_new_profiles": 11,
+  "open_CPU_excludes_inflight_and_worker_import_not_closed": true,
+  "open_CPU_partial_s": 1679.1302989999997,
+  "stage": "collecting",
+  "upstream_failed_paidD": 25,
+  "valid_new_profiles": 1840,
+  "wall_s": 2706.114363290835
+}

@@ -1,0 +1,13 @@
+{
+  "status": "complete_outcome_decomposition_not_new_policy",
+  "full_R12_gain_pct": 2.0976772346791357,
+  "unmeasured_large_parents": 1876,
+  "unmeasured_large_selected_F": 212,
+  "known_small_gain_whole_population_pp": 0.8018817177845481,
+  "unmeasured_large_gain_whole_population_pp": 1.2957955168945874,
+  "new_solver_calls": 0,
+  "new_fits": 0,
+  "CPU_s": 0.253301,
+  "wall_s": 0.3254846672061831,
+  "limitation": "Existing repeated-development OOF outcome decomposition; no large native fidelity/cost observed; no subset dropped. One prior descriptive-read failure used string bytes from SQLite; failure CPU unmetered, no fit/solver/extraction."
+}

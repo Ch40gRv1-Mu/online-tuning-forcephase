@@ -1,0 +1,18 @@
+{
+  "eligibility": "R16 formula-count predicate; nmax<=100000 and literal occurrences<=100000",
+  "eligible": 1890,
+  "features_sha256": "f315b8aa4eb2cd4880a8f7212872e3e2347aa5ea6302022d8f92181595af69a6",
+  "new_solver_calls": 0,
+  "ordered_logical_CPU_s": 208.90010079500007,
+  "parents": 4719,
+  "physical_CPU_s": 110.057788,
+  "pooled_logical_CPU_s": 208.334350562,
+  "pooled_reference_all_match": true,
+  "random_logical_CPU_s": 208.8427084320001,
+  "reference_features_sha256": "f2ec8c98b2ade39060847093160e835a33c4778596aa5f3cedbff23048ba91d7",
+  "short_search_calls": 0,
+  "source_sha256": "ffb09aefbd164c05d662e2b44547d2115e661dd44ebd6907f0b668e5c44fe7f1",
+  "status": "complete",
+  "unknown_native_acquisition_parents": 1876,
+  "wall_s": 48.528587208129466
+}

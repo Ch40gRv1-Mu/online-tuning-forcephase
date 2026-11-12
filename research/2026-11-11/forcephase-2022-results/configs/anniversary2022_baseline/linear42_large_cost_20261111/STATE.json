@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_FIRST32_REMAINING1844",
+  "population": 4719,
+  "all_missing_cost_inputs": 1876,
+  "first_checkpoint_prefix": 32,
+  "order": "original sorted instance_key, no outcomes used",
+  "new_solver_calls": 0,
+  "data_scope": "Existing retained2022 only, no new labels",
+  "next_required_step": "Implement bounded durable downloader and raw-input identity/native measurement consumer, freeze protocol+source, then execute first32 full input units; inherit healthy work and checkpoint each result.",
+  "known_raw_bytes_total": 121595102458,
+  "performance_scope": "Feature fidelity/cost only; Mac/cluster replay not same-machine end-to-end confirmation.",
+  "source_commit": "5e042ba",
+  "PID": 23542,
+  "process_handle": 71892,
+  "output": "outputs/anniversary2022_baseline/linear42_large_cost_20261111",
+  "last_verified_progress": 2,
+  "observed_live_UTC": "2026-11-11T19:16:54Z",
+  "completed": 32,
+  "remaining": 1844,
+  "active_worker": false,
+  "native_ok": 27,
+  "native_fallback": 5
+}

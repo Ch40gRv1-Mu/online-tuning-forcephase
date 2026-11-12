@@ -1,0 +1,27 @@
+{
+  "GBD_sha256": "15a3d19fd23ba72dd7c77b1b86113873f160760fa1c9710e9e5ed6a23ba29d84",
+  "binary_sha256": "c37aa1f35a157228707653209c07fcb11d4642b0d2acf3562eba2adec8c6b5d8",
+  "cached_resource_block": 2843,
+  "completed": 2843,
+  "decision_CPU_sum_s": 56.72808997100001,
+  "feature_CPU_quantiles_s": {
+    "max": 0.17517733399999996,
+    "p50": 0.020257083999998926,
+    "p90": 0.08932102540000103,
+    "p99": 0.1409635717199991
+  },
+  "feature_CPU_sum_s": 99.72288883000003,
+  "incompatible": 0,
+  "model_sha256": "0f8435a0fa578c0f954b7d61d999f6183e066b2c29a9cee25fc7078d9f215e3a",
+  "new_solver_calls": 0,
+  "physical_native_CPU_s": 92.369388,
+  "physical_parent_CPU_s": 71.87037099999999,
+  "population": 4719,
+  "score_scope": "Input fidelity and feature/query cost only; full-model training rows are not performance confirmation",
+  "short_search_calls": 0,
+  "source_sha256": "ab5582b28d158ca0587f710efe906ac13b464055a16e1fbcfa5c736c6859438e",
+  "status": "complete",
+  "unmeasured_larger_parents": 1876,
+  "vector_source_sha256": "223682949ab88537af677b1431fc3acb992f4667a36ba5e2863efa6d614570ee",
+  "wall_s": 112.96420183288865
+}

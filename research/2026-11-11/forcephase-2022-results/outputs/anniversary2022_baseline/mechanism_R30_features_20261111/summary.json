@@ -1,0 +1,29 @@
+{
+  "SAT_or_CDCL_calls": 0,
+  "densities": [
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    null
+  ],
+  "eligible": 2281,
+  "features_sha256": "7440072e4e5fb69acc879b9712fe6f085f9d72715aa7855f9c0568fe7d0bc752",
+  "informative": 2280,
+  "parents": 4719,
+  "physical_CPU_s": 125.525133,
+  "reference_sha256": "30e713ec8080a890594171241d0108468d053e35ffc375526a464df08fc299a3",
+  "scope": "One fixed nested random pair ordering; no exact sampling invariance or solver cost claim",
+  "semantic_checks": {
+    "SAT_or_assignment_calls": 0,
+    "nested_graph_monotonicity": true,
+    "null_exact_literal_and_pair_type_margins": true,
+    "sampling_variable_rename_invariance_claimed": false,
+    "small_graph_conflict_onset": true
+  },
+  "source_sha256": "2857a5cd28df6dd177307295dc3a46aebf7487c28d84ef0a010fccf2c681766c",
+  "status": "complete",
+  "wall_s": 68.1307319579646
+}

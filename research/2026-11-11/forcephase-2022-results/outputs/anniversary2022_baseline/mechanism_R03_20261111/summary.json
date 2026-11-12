@@ -1,0 +1,659 @@
+{
+  "CPU_s": 31.553871,
+  "acquisition_cost": "measured multi-step components",
+  "feature_archive_sha256": "94ee6435b28c2ec4273da374b3db23ddc9402fce1891da36f9640e11cd66cca1",
+  "fits": [
+    {
+      "CPU_s": 1.2241479999999998,
+      "fold": 0,
+      "name": "coarse_raw56",
+      "train": 1838,
+      "validation": 364
+    },
+    {
+      "CPU_s": 1.635843,
+      "fold": 1,
+      "name": "coarse_raw56",
+      "train": 1466,
+      "validation": 395
+    },
+    {
+      "CPU_s": 0.779846,
+      "fold": 2,
+      "name": "coarse_raw56",
+      "train": 2045,
+      "validation": 397
+    },
+    {
+      "CPU_s": 1.3942199999999998,
+      "fold": 3,
+      "name": "coarse_raw56",
+      "train": 1635,
+      "validation": 389
+    },
+    {
+      "CPU_s": 1.1356520000000003,
+      "fold": 0,
+      "name": "coarse_quotient56",
+      "train": 1838,
+      "validation": 364
+    },
+    {
+      "CPU_s": 1.6549620000000003,
+      "fold": 1,
+      "name": "coarse_quotient56",
+      "train": 1466,
+      "validation": 395
+    },
+    {
+      "CPU_s": 0.7756019999999992,
+      "fold": 2,
+      "name": "coarse_quotient56",
+      "train": 2045,
+      "validation": 397
+    },
+    {
+      "CPU_s": 1.3937159999999995,
+      "fold": 3,
+      "name": "coarse_quotient56",
+      "train": 1635,
+      "validation": 389
+    },
+    {
+      "CPU_s": 1.204568,
+      "fold": 0,
+      "name": "coarse_paired92",
+      "train": 1838,
+      "validation": 364
+    },
+    {
+      "CPU_s": 1.7047190000000008,
+      "fold": 1,
+      "name": "coarse_paired92",
+      "train": 1466,
+      "validation": 395
+    },
+    {
+      "CPU_s": 0.861358000000001,
+      "fold": 2,
+      "name": "coarse_paired92",
+      "train": 2045,
+      "validation": 397
+    },
+    {
+      "CPU_s": 1.4641050000000018,
+      "fold": 3,
+      "name": "coarse_paired92",
+      "train": 1635,
+      "validation": 389
+    },
+    {
+      "CPU_s": 0.8717050000000022,
+      "fold": 0,
+      "name": "fine_raw56",
+      "train": 2002,
+      "validation": 378
+    },
+    {
+      "CPU_s": 0.7528180000000013,
+      "fold": 1,
+      "name": "fine_raw56",
+      "train": 2007,
+      "validation": 453
+    },
+    {
+      "CPU_s": 0.8744879999999995,
+      "fold": 2,
+      "name": "fine_raw56",
+      "train": 1944,
+      "validation": 430
+    },
+    {
+      "CPU_s": 1.3458190000000023,
+      "fold": 3,
+      "name": "fine_raw56",
+      "train": 1711,
+      "validation": 351
+    },
+    {
+      "CPU_s": 1.2814289999999993,
+      "fold": 4,
+      "name": "fine_raw56",
+      "train": 1648,
+      "validation": 448
+    },
+    {
+      "CPU_s": 0.8732949999999988,
+      "fold": 0,
+      "name": "fine_quotient56",
+      "train": 2002,
+      "validation": 378
+    },
+    {
+      "CPU_s": 0.7646919999999966,
+      "fold": 1,
+      "name": "fine_quotient56",
+      "train": 2007,
+      "validation": 453
+    },
+    {
+      "CPU_s": 0.9123589999999986,
+      "fold": 2,
+      "name": "fine_quotient56",
+      "train": 1944,
+      "validation": 430
+    },
+    {
+      "CPU_s": 1.3471839999999986,
+      "fold": 3,
+      "name": "fine_quotient56",
+      "train": 1711,
+      "validation": 351
+    },
+    {
+      "CPU_s": 1.28388,
+      "fold": 4,
+      "name": "fine_quotient56",
+      "train": 1648,
+      "validation": 448
+    },
+    {
+      "CPU_s": 0.948682999999999,
+      "fold": 0,
+      "name": "fine_paired92",
+      "train": 2002,
+      "validation": 378
+    },
+    {
+      "CPU_s": 0.8377340000000011,
+      "fold": 1,
+      "name": "fine_paired92",
+      "train": 2007,
+      "validation": 453
+    },
+    {
+      "CPU_s": 0.9528959999999991,
+      "fold": 2,
+      "name": "fine_paired92",
+      "train": 1944,
+      "validation": 430
+    },
+    {
+      "CPU_s": 1.412596999999998,
+      "fold": 3,
+      "name": "fine_paired92",
+      "train": 1711,
+      "validation": 351
+    },
+    {
+      "CPU_s": 1.3537820000000025,
+      "fold": 4,
+      "name": "fine_paired92",
+      "train": 1648,
+      "validation": 448
+    }
+  ],
+  "inputs_sha256": {
+    "GBD": "15a3d19fd23ba72dd7c77b1b86113873f160760fa1c9710e9e5ed6a23ba29d84",
+    "splits": "7cd77d6c3e2ca57977f153ec10c0f950d04b2dd019c8ca63b2ca77f4d1c5bdee"
+  },
+  "new_feature_calls": 0,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "scores": {
+    "coarse_paired92": {
+      "actions": {
+        "D": 4611,
+        "Fminus": 60,
+        "Fplus": 48
+      },
+      "block_interval_95_pct": [
+        -0.00818297990722452,
+        0.13428774590336298
+      ],
+      "cuts": [
+        {
+          "disabled": false,
+          "fold": 0,
+          "free_margin_PAR2_s": 3.0269144544217497,
+          "margin_PAR2_s": 3.0269144544217497
+        },
+        {
+          "disabled": false,
+          "fold": 1,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": true,
+          "fold": 2,
+          "free_margin_PAR2_s": null,
+          "margin_PAR2_s": null
+        },
+        {
+          "disabled": false,
+          "fold": 3,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        }
+      ],
+      "exact_eight_block_95_pct": [
+        -0.007949242192570063,
+        0.13801939251780426
+      ],
+      "free_features": {
+        "block_interval_95_pct": [
+          -3.831500490485005e-05,
+          0.14667302510612798
+        ],
+        "gain_pct": 0.06175927925680248,
+        "lost_solves": 1,
+        "newly_solved": 3,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 392.3002221337148,
+        "solved": 3387
+      },
+      "gain_pct": 0.047315070505214725,
+      "lost_solves": 1,
+      "newly_solved": 3,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.35692181404664,
+      "solved": 3387,
+      "zero_margin": {
+        "block_interval_95_pct": [
+          -0.0040315175406853,
+          0.48751999907805477
+        ],
+        "gain_pct": 0.17653889704231876,
+        "lost_solves": 3,
+        "newly_solved": 7,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 391.84966317621314,
+        "solved": 3389
+      }
+    },
+    "coarse_quotient56": {
+      "actions": {
+        "D": 4603,
+        "Fminus": 55,
+        "Fplus": 61
+      },
+      "block_interval_95_pct": [
+        -0.03333480254409434,
+        0.4629030139696722
+      ],
+      "cuts": [
+        {
+          "disabled": false,
+          "fold": 0,
+          "free_margin_PAR2_s": 3.737098992189089,
+          "margin_PAR2_s": 3.737098992189089
+        },
+        {
+          "disabled": false,
+          "fold": 1,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": true,
+          "fold": 2,
+          "free_margin_PAR2_s": null,
+          "margin_PAR2_s": null
+        },
+        {
+          "disabled": false,
+          "fold": 3,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        }
+      ],
+      "exact_eight_block_95_pct": [
+        -0.03404774950197564,
+        0.47923561941450515
+      ],
+      "free_features": {
+        "block_interval_95_pct": [
+          -0.0183754046318936,
+          0.47515797538474347
+        ],
+        "gain_pct": 0.16353423998617914,
+        "lost_solves": 0,
+        "newly_solved": 3,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 391.90071200211906,
+        "solved": 3388
+      },
+      "gain_pct": 0.14912673339711624,
+      "lost_solves": 0,
+      "newly_solved": 3,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 391.95726761080823,
+      "solved": 3388,
+      "zero_margin": {
+        "block_interval_95_pct": [
+          -0.08153980108841723,
+          0.5814285524843404
+        ],
+        "gain_pct": 0.22017225106713148,
+        "lost_solves": 2,
+        "newly_solved": 7,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 391.67838365044884,
+        "solved": 3390
+      }
+    },
+    "coarse_raw56": {
+      "actions": {
+        "D": 4602,
+        "Fminus": 78,
+        "Fplus": 39
+      },
+      "block_interval_95_pct": [
+        -0.19520228920833738,
+        0.30277454370847595
+      ],
+      "cuts": [
+        {
+          "disabled": false,
+          "fold": 0,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 1,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": true,
+          "fold": 2,
+          "free_margin_PAR2_s": null,
+          "margin_PAR2_s": null
+        },
+        {
+          "disabled": false,
+          "fold": 3,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        }
+      ],
+      "exact_eight_block_95_pct": [
+        -0.1991154333982582,
+        0.30758495081022236
+      ],
+      "free_features": {
+        "block_interval_95_pct": [
+          -0.17490137734810884,
+          0.31124959360920984
+        ],
+        "gain_pct": 0.03381846301406387,
+        "lost_solves": 2,
+        "newly_solved": 3,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 392.40990175524473,
+        "solved": 3386
+      },
+      "gain_pct": 0.019470549258148343,
+      "lost_solves": 2,
+      "newly_solved": 3,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.46622343664524,
+      "solved": 3386,
+      "zero_margin": {
+        "block_interval_95_pct": [
+          -0.18226724984659115,
+          0.8654550459276956
+        ],
+        "gain_pct": 0.24692307066433963,
+        "lost_solves": 4,
+        "newly_solved": 9,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 391.5733752733295,
+        "solved": 3390
+      }
+    },
+    "fine_paired92": {
+      "actions": {
+        "D": 4085,
+        "Fminus": 486,
+        "Fplus": 148
+      },
+      "block_interval_95_pct": [
+        -2.8833449100878017,
+        0.8580272036125477
+      ],
+      "cuts": [
+        {
+          "disabled": false,
+          "fold": 0,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 1,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 2,
+          "free_margin_PAR2_s": 3.6800375111885932,
+          "margin_PAR2_s": 3.6800375111885932
+        },
+        {
+          "disabled": false,
+          "fold": 3,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 4,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        }
+      ],
+      "free_features": {
+        "block_interval_95_pct": [
+          -2.866657270154455,
+          0.8763095989596829
+        ],
+        "gain_pct": -0.6508093852981125,
+        "lost_solves": 31,
+        "newly_solved": 19,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 395.09735807861836,
+        "solved": 3373
+      },
+      "gain_pct": -0.6683044423614773,
+      "lost_solves": 31,
+      "newly_solved": 19,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 395.166033639872,
+      "solved": 3373,
+      "zero_margin": {
+        "block_interval_95_pct": [
+          -2.8693110158553927,
+          0.8528965103814093
+        ],
+        "gain_pct": -0.659860632524662,
+        "lost_solves": 31,
+        "newly_solved": 19,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 395.1328880846697,
+        "solved": 3373
+      }
+    },
+    "fine_quotient56": {
+      "actions": {
+        "D": 4121,
+        "Fminus": 465,
+        "Fplus": 133
+      },
+      "block_interval_95_pct": [
+        -2.92706513187035,
+        0.8037891978742567
+      ],
+      "cuts": [
+        {
+          "disabled": false,
+          "fold": 0,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 1,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 2,
+          "free_margin_PAR2_s": 4.376461287908898,
+          "margin_PAR2_s": 4.376461287908898
+        },
+        {
+          "disabled": false,
+          "fold": 3,
+          "free_margin_PAR2_s": 0.961544113588897,
+          "margin_PAR2_s": 0.961544113588897
+        },
+        {
+          "disabled": false,
+          "fold": 4,
+          "free_margin_PAR2_s": 5.74565401429474,
+          "margin_PAR2_s": 5.74565401429474
+        }
+      ],
+      "free_features": {
+        "block_interval_95_pct": [
+          -2.9095211794116533,
+          0.8177771272191908
+        ],
+        "gain_pct": -0.6904077838214389,
+        "lost_solves": 32,
+        "newly_solved": 19,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 395.25279868298367,
+        "solved": 3372
+      },
+      "gain_pct": -0.7079091726765824,
+      "lost_solves": 32,
+      "newly_solved": 19,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 395.3214990992208,
+      "solved": 3372,
+      "zero_margin": {
+        "block_interval_95_pct": [
+          -3.0230516199903734,
+          0.7015869150970148
+        ],
+        "gain_pct": -0.8309734382246053,
+        "lost_solves": 34,
+        "newly_solved": 19,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 395.80457883289466,
+        "solved": 3370
+      }
+    },
+    "fine_raw56": {
+      "actions": {
+        "D": 3988,
+        "Fminus": 585,
+        "Fplus": 146
+      },
+      "block_interval_95_pct": [
+        -2.7878133846220328,
+        0.8908452810488227
+      ],
+      "cuts": [
+        {
+          "disabled": false,
+          "fold": 0,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 1,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 2,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 3,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        },
+        {
+          "disabled": false,
+          "fold": 4,
+          "free_margin_PAR2_s": 0.0,
+          "margin_PAR2_s": 0.0
+        }
+      ],
+      "free_features": {
+        "block_interval_95_pct": [
+          -2.772357213584876,
+          0.9105993313526395
+        ],
+        "gain_pct": -0.5828836629713298,
+        "lost_solves": 31,
+        "newly_solved": 20,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 394.8307206456877,
+        "solved": 3374
+      },
+      "gain_pct": -0.6003869685739717,
+      "lost_solves": 31,
+      "newly_solved": 20,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 394.89942858597624,
+      "solved": 3374,
+      "zero_margin": {
+        "block_interval_95_pct": [
+          -2.7878133846220328,
+          0.8908452810488227
+        ],
+        "gain_pct": -0.6003869685739717,
+        "lost_solves": 31,
+        "newly_solved": 20,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 394.89942858597624,
+        "solved": 3374
+      }
+    }
+  },
+  "source_sha256": "4917b9860e2a4ae06dcdbc7e25f9ff73d83b41de9743a8735c83205331053f1b",
+  "status": "complete",
+  "valid": 2843,
+  "wall_s": 28.78437566710636
+}

@@ -1,0 +1,18 @@
+# R28: preserve speed resolution when separating completion differences
+
+Owner current chat, no delegation. R27's complete84 fits separated completion but mapped whole classes to globally averaged train costs. It became more conservative without preserving R12's benefit (mixed1.0849% versus2.1010%, fine−.4442%). This next single target-representation contrast asks whether that lost within-pattern speed resolution matters. It is a standard multi-task regression transformation, no new structural feature or new SAT algorithm. Do not smooth/reweight R27 classes or sweep parameters.
+
+Only retained4719 2022, complete existing D/Fplus/Fminus seed0 T600 labels, original42 static CNF features, original iso5/coarse4/fine5 and original inner structural groups. No family, metadata identity, knownSAT/UNSAT answer or after-action statistics as input. Budget completion is a training target, never an input. Alltimeouts remain with exactlyzero gain/factor targets.
+
+For actionF, let s_A be successful budget completion and u_A=s_A*t_A/600. Fit four outputs: two completion contrasts2(s_F−s_D), two solved-time contrastsu_D−u_F. Their summed pairs times600 strictly equal PAR2(D)−PAR2(F), including timeouts1200. This preserves exact per-parent speeds and removes the eight-pattern global class-mean bottleneck; extra outputs change split loss, not labels/headroom. Keep fixed natural PAR2 scales, no factor-weight tuning.
+
+ExtraTrees256,maxdepth12,minleaf4,maxfeatures.8, three existing seeds+fold; predict each seed's combined gain, take actionwise minimum across seeds, then original inner-only margin calibration. Do not take separate component minima. Same tree/depth capacity bounds as R12/R27; actual nodes recorded, four outputs rather than two is disclosed. Control exactly reuse R27 relative-regression fold outputs and scores, which matched original R12 actions on all4719. 42new outer fits; no control re-fit, no full-development export. Cached old inference costs are not silently attached to new model: this is a free-query/acquisition optimistic prediction screen.
+
+Primary all4719 PAR2 versus D (392.542653647,3385solved), matched relative control, rescued/lost completions, original nominal block intervals. Existing coarse/fine>=2% and interval direction remains the scientific screen; mixed positive is a conditional development signal, not new independent confirmation. R27freeoracle10.8528% remains; no sample exclusions or new information-coverage gate needed because exact same full42 inputs and complete cost targets. Do not choose seed/regime/cutoff using held outcomes.
+
+Formal embedded checks: full4719 source/split alignment and hashes, old complete84 receipt, per-fold ID membership matched saved control, iso train/held and fine train/inner separation, exact target reconstruction including alltimeout. No independent audit/dryrun. Fit4threads/batchprediction1, no measurement worker overlap; expected1–3min after source ready,15min watchdog,300CPU-second planning reserve(not hard user limit), checkpoint per complete regime. Failed/new identities preserved; no relaunch on observation timeout.
+
+If failed, preserve result and stop varying statistical losses on these42 summaries: R13B,R27,R28 then give distinct checks of cost-weighted classification, joint completion and exact factorized regression. Next scientific proposal must introduce or interpret a specifically missing formula mechanism rather than another optimizer/weight/threshold sweep. No deployment/benchmarking before screen.
+
+Command after source/protocol commit:
+`work/anniversary2022_plot_env/bin/python -m src.anniversary2022_baseline.score_completion_time_factors --out outputs/anniversary2022_baseline/mechanism_R28_20261111`

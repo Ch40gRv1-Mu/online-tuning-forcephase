@@ -1,0 +1,10 @@
+{
+  "CPU_s_open_not_closed": 0.681841,
+  "attempted": 62,
+  "identity_errors": 0,
+  "median_feature_CPU_s": 0.27399458700000007,
+  "passed": true,
+  "valid": 61,
+  "wall_s": 97.5220019579865,
+  "worker_peak_RSS_bytes": 389562368
+}

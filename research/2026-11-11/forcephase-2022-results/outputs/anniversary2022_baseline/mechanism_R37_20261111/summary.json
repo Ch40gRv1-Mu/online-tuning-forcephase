@@ -1,0 +1,23 @@
+{
+  "CPU_s": 0.19957900000000006,
+  "diagnosis": {
+    "all_censored": 1172,
+    "balanced_connector_parents": 11,
+    "clear_parent_labels": 2279,
+    "cost_valid": 4719,
+    "eligible": 2325,
+    "eligible_all_censored": 540,
+    "free_eligible_oracle_population_pct": 4.824901099982157,
+    "free_full_oracle_gain_pct": 10.852813464366701,
+    "free_informative_oracle_population_pct": 0.005428007626963118,
+    "new_solver_calls": 0,
+    "parents": 4719,
+    "short_search_calls": 0
+  },
+  "features_sha256": "b908aabb42a5d0ac0abe4ee23e45e847a8479eadaceb6f7dc46cc96f002d75e0",
+  "fits": [],
+  "reason": "Preregistered balanced-connector coverage or full-population oracle headroom screen failed",
+  "source_sha256": "a258dee7f496b0242a171884e5e78a0ba6a858b27db8092e7c8b6e4b846aefb9",
+  "status": "complete_low_information_no_fits",
+  "wall_s": 0.2678179170470685
+}

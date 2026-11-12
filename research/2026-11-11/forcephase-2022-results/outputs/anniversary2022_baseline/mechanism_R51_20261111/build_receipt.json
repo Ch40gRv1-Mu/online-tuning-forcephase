@@ -1,0 +1,22 @@
+{
+  "already_in_owner_total": true,
+  "binary_sha256": "3635114eef21580410a21737ba4f4c1f87d86249c8a74a1add6e7a1b97a6d447",
+  "child_CPU_s": 1.358869,
+  "command": [
+    "/usr/bin/clang++",
+    "-std=c++17",
+    "-O3",
+    "-DNDEBUG",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/gate_cost_transfer.cpp",
+    "-o",
+    "<LOCAL_WORKSPACE>/outputs/anniversary2022_baseline/mechanism_R51_20261111/native_gate_cost"
+  ],
+  "exit": 0,
+  "header_hashes": {
+    "src/ta100/cnf_data.hpp": "da85ba488b63e96071c7e1155dcaaed03601aa33423018050c451f10940b3b31",
+    "src/ta100/graph_extra_features.hpp": "0c82851b156e6a4d88f548a7d2e8126f3f487530a5b39aa0d531fb93d11c93cd",
+    "src/ta100/graph_features.hpp": "5110f471c25ddefdc5fe228f20da2bce400404004d97af85182761bdc5a0bfa6"
+  },
+  "source_sha256": "7ceba756d1b6a7ff8b5cd6ee41434fc13501ed3ccaa1d41dabb236b372573626",
+  "wall_s": 4.6231176250148565
+}

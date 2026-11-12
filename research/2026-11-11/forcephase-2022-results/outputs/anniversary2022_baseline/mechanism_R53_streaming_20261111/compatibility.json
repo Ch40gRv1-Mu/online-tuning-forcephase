@@ -1,0 +1,22 @@
+{
+  "SAT_calls": 0,
+  "empty_plus_sign_comments": true,
+  "exact_all_three_vectors": true,
+  "native_fixture_calls": 1,
+  "resources": {
+    "MI_nats": 1.2424533248940002,
+    "clauses": 6,
+    "feature_fee_CPU_s": 0.00762579299999988,
+    "identity_hash_CPU_s": 2.6660000000955364e-06,
+    "informative": false,
+    "literals": 19,
+    "native_CPU_s": 0.004108,
+    "native_binary_sha256": "e6fbcb3fba65e6046d547c9527704a5716a7640acddc1038be88c118704ba4fa",
+    "native_exit": 0,
+    "native_max_RSS_platform_units": 1081344,
+    "profile_parent_CPU_s": 0.003520458999999976,
+    "profile_wall_s": 0.19996016682125628,
+    "raw_bytes": 96,
+    "raw_sha256": "2c14c03685f15c84db581067963003517271990a16715ab560eb91b357874ee7"
+  }
+}

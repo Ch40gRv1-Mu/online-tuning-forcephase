@@ -1,0 +1,36 @@
+{
+  "source_sha256": {
+    "outputs/anniversary2022_baseline/raw_data_20261110/matrix.csv": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8",
+    "outputs/anniversary2022_baseline/raw_data_20261110/curve_data.json": "1ce304f5c765314b75b04a064e03487d9fe7e2f9b84078c5b8712482d3a15210",
+    "outputs/anniversary2022_baseline/live_feature_route_20261110/predictions.csv": "07bfb85023fad08138317ebbfa57caf6bf56236a49b04a87eeb659a651ba3aad"
+  },
+  "generator_sha256": "8e8e0b5bf134500d91fa37fc9ec7ba9e60289fa3f361caa6295f022cb4453411",
+  "cohort": 4719,
+  "cutoff_cpu_s": 600,
+  "solved": {
+    "D": 3385,
+    "Fplus": 3076,
+    "Fminus": 3055,
+    "VBS": 3547,
+    "Two-threshold": 3401
+  },
+  "policy_feature_CPU_s": 140.68322615299988,
+  "mean_PAR2_s": {
+    "D": 392.5426536473829,
+    "Two-threshold": 389.2627256222507
+  },
+  "PAR2_gain_over_D_pct": 0.8355596505643812,
+  "new_solver_calls": 0,
+  "evaluation": "2022 development replay with measured selector CPU and archived solver CPU",
+  "difference_min": -183,
+  "difference_max": 17,
+  "files_sha256": {
+    "curve_points.csv": "e5bd9003aebe8c9a303090dc594e0ab5876d93e3cb1d5258b726b282a8bea9dd",
+    "policy_minus_D.pdf": "b0da45067d9e1194a400c0bf0240de7c3358822e304158e36d384919b3340090",
+    "policy_minus_D.png": "1ddc0d0ab18525c1d320a54426d71b9c60830c12f599bcc6bc2f4ee5f00a1972",
+    "policy_minus_D.svg": "6620ab1cd3a244050bd1ef6890ef43fedabf94c6d8416b91aacb91f427b9da5a",
+    "runtime_with_policy.pdf": "44e26755aef09162d7d25a799bb72ed156c51b53ab340f934214f0b482f569ca",
+    "runtime_with_policy.png": "8c3a0e89c06ca2cf88544db248691d06d85824a044eccb6eeffc4ca8463214ab",
+    "runtime_with_policy.svg": "24e7887de5bd6bc8be71fd6f7bb6492c6ad5745e3cbf1790ca473a45220422d7"
+  }
+}

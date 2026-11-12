@@ -1,0 +1,205 @@
+{
+  "against_original_regression_min3": {
+    "mean3": {
+      "block_interval_95_pct": [
+        0.020400731887756967,
+        0.7233635091459307
+      ],
+      "exact_eight_block_95_pct": [
+        0.03789264376866508,
+        0.6750176117367233
+      ],
+      "gain_pct": 0.3621202618030273,
+      "lost_solves": 3,
+      "newly_solved": 8,
+      "reference_mean_PAR2": 384.7110704117468,
+      "reference_solved": 3418,
+      "selected_mean_PAR2": 383.31795367638654,
+      "solved": 3423
+    },
+    "min3": {
+      "block_interval_95_pct": [
+        -0.289123687737357,
+        0.4395035366396301
+      ],
+      "exact_eight_block_95_pct": [
+        -0.34038981088982073,
+        0.4185488641060535
+      ],
+      "gain_pct": 0.07163653166170686,
+      "lost_solves": 5,
+      "newly_solved": 6,
+      "reference_mean_PAR2": 384.7110704117468,
+      "reference_solved": 3418,
+      "selected_mean_PAR2": 384.4354767439852,
+      "solved": 3419
+    }
+  },
+  "deployment_status": "CNF extraction and old classifier OOF query fees composed across hosts; actual new classifier serving/solver run not performed",
+  "input_sha256": {
+    "outputs/anniversary2022_baseline/cnf_graph_cnn_20261110/splits.csv": "7cd77d6c3e2ca57977f153ec10c0f950d04b2dd019c8ca63b2ca77f4d1c5bdee",
+    "outputs/anniversary2022_baseline/linear42_cpu_recovery_20261111/predictions.csv": "a6691913503c6024d56ed4f458c466d1736350115fc90555126eaaf1c0350c41",
+    "outputs/anniversary2022_baseline/mechanism_R11_20261111/predictions.csv": "5da1af1d0661b06d9993e4f5d56ffd8b1898c34033b650568abbb16d3d037630",
+    "outputs/anniversary2022_baseline/mechanism_R12_20261111/predictions.csv": "4f76a0d1b7ae20ac37f39bdfa9c9cc2c03574c2f8fa91a5ef9fc16194df997d9",
+    "outputs/anniversary2022_baseline/mechanism_R12_20261111/summary.json": "787be08b144d4ed79fee551e03c9508a0253109bdeebd721b0a189d0826ff7de",
+    "outputs/anniversary2022_baseline/mechanism_R13b_20261111/fold_arrays/iso_diagnostic_linear42_0.npz": "bccd21ca96a7e13bd772cda1aaecd1997a33395a28f8385a1201d2ae931052f9",
+    "outputs/anniversary2022_baseline/mechanism_R13b_20261111/fold_arrays/iso_diagnostic_linear42_1.npz": "057d0d17320509cd698aa13d7879a4d42261549cc04a23f027f3ee015c18a41d",
+    "outputs/anniversary2022_baseline/mechanism_R13b_20261111/fold_arrays/iso_diagnostic_linear42_2.npz": "262c1ca9507817633b6c6064729adc4dd77f04acc0e3e81451a055037f99abd2",
+    "outputs/anniversary2022_baseline/mechanism_R13b_20261111/fold_arrays/iso_diagnostic_linear42_3.npz": "44526b75cd56cc3fae5cb61e5fbcdc762b5e34372b0a0e739838704815bce5c9",
+    "outputs/anniversary2022_baseline/mechanism_R13b_20261111/fold_arrays/iso_diagnostic_linear42_4.npz": "f47a90a4b09e3f688c72fe54c1417ab88b936016b2dc3a8d523c3a5962e03fed",
+    "outputs/anniversary2022_baseline/mechanism_R13b_20261111/predictions.csv": "800d05af5565a64f8427988de8f13933fea8e774d74a92d371691ae7ba394400",
+    "outputs/anniversary2022_baseline/mechanism_R13b_20261111/summary.json": "26bf22b90a8a871b21518eae1827af9d2d1899669f69d1d612ee683171676dc2",
+    "outputs/anniversary2022_baseline/raw_data_20261110/matrix.csv": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8"
+  },
+  "new_feature_extractions": 0,
+  "new_fits": 0,
+  "new_solver_calls": 0,
+  "old_predictions_and_inner_cuts_reproduced": [
+    {
+      "fold": 0,
+      "held_parents": 911,
+      "original_actions_match": true,
+      "original_inner_margin": 0.014474087605025382,
+      "variant": "mean3"
+    },
+    {
+      "fold": 1,
+      "held_parents": 962,
+      "original_actions_match": true,
+      "original_inner_margin": 0.0,
+      "variant": "mean3"
+    },
+    {
+      "fold": 2,
+      "held_parents": 927,
+      "original_actions_match": true,
+      "original_inner_margin": 0.04255496954379082,
+      "variant": "mean3"
+    },
+    {
+      "fold": 3,
+      "held_parents": 1009,
+      "original_actions_match": true,
+      "original_inner_margin": 0.0,
+      "variant": "mean3"
+    },
+    {
+      "fold": 4,
+      "held_parents": 910,
+      "original_actions_match": true,
+      "original_inner_margin": 0.0,
+      "variant": "mean3"
+    },
+    {
+      "fold": 0,
+      "held_parents": 911,
+      "original_actions_match": true,
+      "original_inner_margin": 0.005346195692645169,
+      "variant": "min3"
+    },
+    {
+      "fold": 1,
+      "held_parents": 962,
+      "original_actions_match": true,
+      "original_inner_margin": 0.05051644410620282,
+      "variant": "min3"
+    },
+    {
+      "fold": 2,
+      "held_parents": 927,
+      "original_actions_match": true,
+      "original_inner_margin": 0.0,
+      "variant": "min3"
+    },
+    {
+      "fold": 3,
+      "held_parents": 1009,
+      "original_actions_match": true,
+      "original_inner_margin": 0.029265896260649214,
+      "variant": "min3"
+    },
+    {
+      "fold": 4,
+      "held_parents": 910,
+      "original_actions_match": true,
+      "original_inner_margin": 0.0,
+      "variant": "min3"
+    }
+  ],
+  "paid_D_acquisition_failures": 25,
+  "parents": 4719,
+  "primary": "mean3",
+  "prospective_scope": "User same-distribution override 3ca3a95f; original mixed5 folds, repeated4719 development; unseen-structure transfer not a veto.",
+  "scores": {
+    "mean3": {
+      "actions": {
+        "D": 3598,
+        "Fminus": 553,
+        "Fplus": 568
+      },
+      "block_interval_95_pct": [
+        1.398879764541188,
+        3.2886044174753892
+      ],
+      "exact_eight_block_95_pct": [
+        1.669526971876568,
+        3.2570322577913218
+      ],
+      "gain_pct": 2.3499866537517358,
+      "lost_solves": 28,
+      "native_logical_CPU_s": 2027.4915588860006,
+      "newly_solved": 66,
+      "old_free_acquisition_gain_pct": 2.4020609830762734,
+      "query_logical_CPU_s": 83.27995600000173,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "scope": "Repeated2022 same-mixture development, not independent confirmation or same-host solver deployment",
+      "selected_mean_PAR2": 383.31795367638654,
+      "solved": 3423
+    },
+    "min3": {
+      "actions": {
+        "D": 3724,
+        "Fminus": 503,
+        "Fplus": 492
+      },
+      "block_interval_95_pct": [
+        1.1747457881650945,
+        2.9663337902035907
+      ],
+      "exact_eight_block_95_pct": [
+        1.3920496360132057,
+        2.965113088614706
+      ],
+      "gain_pct": 2.0652983384272807,
+      "lost_solves": 26,
+      "native_logical_CPU_s": 2027.4915588860006,
+      "newly_solved": 60,
+      "old_free_acquisition_gain_pct": 2.1678748251484237,
+      "query_logical_CPU_s": 83.27995600000173,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "scope": "Repeated2022 same-mixture development, not independent confirmation or same-host solver deployment",
+      "selected_mean_PAR2": 384.4354767439852,
+      "solved": 3419
+    },
+    "original_regression_min3": {
+      "block_interval_95_pct": [
+        1.0680488539329303,
+        2.9230070181009657
+      ],
+      "gain_pct": 1.995091020776352,
+      "lost_solves": 29,
+      "newly_solved": 62,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 384.7110704117468,
+      "solved": 3418
+    }
+  },
+  "selection_history": "Mean3 chosen using its already exposed R13B 2.402061% result, not blind selection. This run measures composition with complete native fees, not a new predictor or independent confirmation. No selection/tuning after replay.",
+  "short_search_calls": 0,
+  "source_sha256": "1126a577463118725bf7e65ee9c24b00219092eb313c45b916b757864cc12da8",
+  "status": "complete",
+  "trained_parameters_changed": false
+}

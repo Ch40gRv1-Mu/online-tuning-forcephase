@@ -1,0 +1,94 @@
+{
+  "CPU_s": 0.175055,
+  "features_sha256": "7f95c5c26aa9819d620d1cba30d8b0ee0050cb5ff5d45ed710d3587cf8ad8bf4",
+  "new_models": 0,
+  "new_solver_calls": 0,
+  "original_scores_sha256": "3928a0358739cc65abe4713914046255cb8fd06bbbc82e5421378629db13ae6f",
+  "parents": 4719,
+  "results": {
+    "coarse": {
+      "both_censored": {
+        "gross_negative_PAR2_s": 0.0,
+        "gross_positive_PAR2_s": 0.0,
+        "median_D_time_when_solved": null,
+        "net_PAR2_s": 0.0,
+        "parents": 34
+      },
+      "both_solved": {
+        "gross_negative_PAR2_s": -2173.3596690000004,
+        "gross_positive_PAR2_s": 3081.802034,
+        "median_D_time_when_solved": 0.22229699999999997,
+        "net_PAR2_s": 908.4423649999999,
+        "parents": 191
+      },
+      "eligible2325": {
+        "net_PAR2_s": 4025.2551610000005,
+        "parents": 2325,
+        "switches": 209
+      },
+      "lost_solve": {
+        "gross_negative_PAR2_s": -14854.142425,
+        "gross_positive_PAR2_s": 0.0,
+        "median_D_time_when_solved": 251.509758,
+        "net_PAR2_s": -14854.142425,
+        "parents": 16
+      },
+      "remaining2394": {
+        "net_PAR2_s": -8511.479024,
+        "parents": 2394,
+        "switches": 43
+      },
+      "rescued": {
+        "gross_negative_PAR2_s": 0.0,
+        "gross_positive_PAR2_s": 9459.476197,
+        "median_D_time_when_solved": null,
+        "net_PAR2_s": 9459.476197,
+        "parents": 11
+      }
+    },
+    "fine": {
+      "both_censored": {
+        "gross_negative_PAR2_s": 0.0,
+        "gross_positive_PAR2_s": 0.0,
+        "median_D_time_when_solved": null,
+        "net_PAR2_s": 0.0,
+        "parents": 64
+      },
+      "both_solved": {
+        "gross_negative_PAR2_s": -1527.391133,
+        "gross_positive_PAR2_s": 4816.9845589999995,
+        "median_D_time_when_solved": 15.158139,
+        "net_PAR2_s": 3289.5934260000004,
+        "parents": 105
+      },
+      "eligible2325": {
+        "net_PAR2_s": -6290.344379,
+        "parents": 2325,
+        "switches": 174
+      },
+      "lost_solve": {
+        "gross_negative_PAR2_s": -16749.204394,
+        "gross_positive_PAR2_s": 0.0,
+        "median_D_time_when_solved": 285.52586099999996,
+        "net_PAR2_s": -16749.204394,
+        "parents": 18
+      },
+      "remaining2394": {
+        "net_PAR2_s": 5820.630442,
+        "parents": 2394,
+        "switches": 27
+      },
+      "rescued": {
+        "gross_negative_PAR2_s": 0.0,
+        "gross_positive_PAR2_s": 12989.897031,
+        "median_D_time_when_solved": null,
+        "net_PAR2_s": 12989.897031,
+        "parents": 14
+      }
+    }
+  },
+  "scope": "Post-score development error analysis; identities associate cases only, no policy fitted",
+  "source_sha256": "e1de421b9141a68b7c111776b7ca1aa78e617d1976ccfbd88de521b3c9dd1ddf",
+  "status": "complete",
+  "wall_s": 0.23189829220063984
+}

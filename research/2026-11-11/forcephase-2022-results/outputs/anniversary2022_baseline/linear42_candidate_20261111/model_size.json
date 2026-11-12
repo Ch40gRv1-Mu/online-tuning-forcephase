@@ -1,0 +1,40 @@
+{
+  "definition": "Each internal split uses a feature index and numeric threshold; each leaf stores2 predicted gains. Float scalar count=split thresholds+2*leaf_count, excludes metadata and redundant stored internal values. Not directly a neural weight count.",
+  "models": [
+    {
+      "feature_index_choices": 81088,
+      "internal_splits": 81088,
+      "leaves": 81344,
+      "nodes": 162432,
+      "predictive_float_scalars": 243776,
+      "training_seed": 20261111,
+      "trees": 256
+    },
+    {
+      "feature_index_choices": 81719,
+      "internal_splits": 81719,
+      "leaves": 81975,
+      "nodes": 163694,
+      "predictive_float_scalars": 245669,
+      "training_seed": 20261112,
+      "trees": 256
+    },
+    {
+      "feature_index_choices": 82287,
+      "internal_splits": 82287,
+      "leaves": 82543,
+      "nodes": 164830,
+      "predictive_float_scalars": 247373,
+      "training_seed": 20261113,
+      "trees": 256
+    }
+  ],
+  "total": {
+    "feature_index_choices": 245094,
+    "internal_splits": 245094,
+    "leaves": 245862,
+    "nodes": 490956,
+    "predictive_float_scalars": 736818,
+    "trees": 768
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "CDCL_solve_calls": 0,
+  "known_answers_used_as_features": false,
+  "read_dimacs_and_real_simplify_API": true,
+  "toy_physical_receipt": {
+    "UP": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "change": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "child_CPU_s": 0.001875,
+    "decisions": 0,
+    "maxrss": 1687552,
+    "native_exit": 0,
+    "post": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "status": "ok",
+    "stdin_closed_early": false,
+    "wall_s": 0.005024832906201482,
+    "wrapper_CPU_s": 0.001045624999999939
+  },
+  "unit_chain_exhausted_without_decisions": true
+}

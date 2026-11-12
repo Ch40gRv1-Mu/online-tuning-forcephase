@@ -1,0 +1,27 @@
+{
+  "observed_UTC": "2026-11-12T03:10:47Z",
+  "status": "RUNNING",
+  "planned_parents": 32,
+  "planned_units": 192,
+  "progress": {
+    "completed_parents": 29,
+    "completed_units": 172,
+    "current_parent": 30,
+    "phase": "solving",
+    "total_units": 192,
+    "valid_units": 151,
+    "wall_s": 15672.878315283
+  },
+  "actual_owned_timing_children": 2,
+  "status_counts": {
+    "CPU_TIMEOUT:NOT_ANSWERED": 52,
+    "ERROR:NOT_ANSWERED": 6,
+    "FILE_LIMIT:NOT_ANSWERED": 15,
+    "SAT:VERIFIED_MODEL": 43,
+    "UNSAT:VERIFIED_LRAT": 56
+  },
+  "terminal_completion": null,
+  "terminal_failure": null,
+  "scientific_preference_feedback_read": false,
+  "interpretation": "Incomplete original seed-stability diagnostic, not a policy score. Resource errors are invalid, not timeouts/winners. One network-preparation parent has6 missing units. Running expense is open."
+}

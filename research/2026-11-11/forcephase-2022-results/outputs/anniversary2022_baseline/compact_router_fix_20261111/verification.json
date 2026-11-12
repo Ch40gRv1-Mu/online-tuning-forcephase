@@ -1,0 +1,88 @@
+{
+  "claim": "Actual native-feature to generic route parity only; not three new research parents, not new prediction reward, not solver deployment",
+  "model_sha256": "ce4b764d6205870747f8d21256fe1807eee3994816006691a42af74535c2c2e8",
+  "model_weights_retrained": false,
+  "native_binary_sha256": "c962619e45cafdfaa438ae9ef22860f96ea95629b225223ca9cdda213b66f890",
+  "new_native_calls": 3,
+  "new_solver_calls": 0,
+  "physical_child_CPU_s": 0.16554999999999997,
+  "physical_parent_CPU_s": 0.341688,
+  "results": [
+    {
+      "association_key": "e18db1d5c3d18de101608b13605303c2",
+      "input_float32_sha256": "8e15d0bddf7d1f0c82acbac35c0dbcc8517b5e119d07d8ad2d7957c9be7d852e",
+      "native_float32_input_match": true,
+      "receipt": {
+        "SAT_calls": 0,
+        "action": "D",
+        "decision_CPU_s": 0.023214999999999986,
+        "min_predicted_PAR2_savings": [
+          -71.39060978797848,
+          -162.70564348868214
+        ],
+        "native_CPU_s": 0.050782999999999995,
+        "parent_CPU_s": 0.029690999999999912,
+        "routing_CPU_s": 0.08047599999999999,
+        "short_search_calls": 0,
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=0"
+        ],
+        "status": "ok",
+        "wall_s": 0.08232208294793963
+      }
+    },
+    {
+      "association_key": "ef4207e8736517fd3abc555d3f98bae8",
+      "input_float32_sha256": "5e0625cf980299d993c43c78c74708a519f1f6f62dcb527acd7d6fe7bc7e7c2d",
+      "native_float32_input_match": true,
+      "receipt": {
+        "SAT_calls": 0,
+        "action": "Fplus",
+        "decision_CPU_s": 0.020280999999999993,
+        "min_predicted_PAR2_savings": [
+          203.49503654372847,
+          200.3386466810064
+        ],
+        "native_CPU_s": 0.05715999999999999,
+        "parent_CPU_s": 0.024059000000000053,
+        "routing_CPU_s": 0.08122000000000018,
+        "short_search_calls": 0,
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=1"
+        ],
+        "status": "ok",
+        "wall_s": 0.08154641697183251
+      }
+    },
+    {
+      "association_key": "ef7c4d1f09b699b8ab468c939e8fdb78",
+      "input_float32_sha256": "fd9e1bce90730c9be8fb0bd0bdbfb355e20cccff7be42601bac49c417bc3e4ef",
+      "native_float32_input_match": true,
+      "receipt": {
+        "SAT_calls": 0,
+        "action": "Fminus",
+        "decision_CPU_s": 0.020167000000000046,
+        "min_predicted_PAR2_savings": [
+          36.55369703897976,
+          47.254409981757426
+        ],
+        "native_CPU_s": 0.05760699999999999,
+        "parent_CPU_s": 0.023986000000000063,
+        "routing_CPU_s": 0.08159300000000014,
+        "short_search_calls": 0,
+        "solver_flags": [
+          "--phase=0",
+          "--forcephase=1"
+        ],
+        "status": "ok",
+        "wall_s": 0.08895400003530085
+      }
+    }
+  ],
+  "route_source_sha256": "28744008741cdf2838363680920b209738f15d1a37f2331fa43bdf0599b41258",
+  "status": "complete_three_actual_route_branches",
+  "verification_source_sha256": "f8766fb33a61922c2bfaeee1f92f5c3292642de78da229f19f6a072f986c4745",
+  "wall_s": 0.7103868341073394
+}

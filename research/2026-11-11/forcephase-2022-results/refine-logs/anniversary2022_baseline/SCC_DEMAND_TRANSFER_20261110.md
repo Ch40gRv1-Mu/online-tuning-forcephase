@@ -1,0 +1,5 @@
+# Transfer test of the one-feature SCC demand guard
+
+Five prior training folds chose F− if normalized nonbinary demand on nontrivial binary implication SCCs exceeded a threshold from 0.094 to 0.109. Freeze a single threshold of 0.10 based on that original panel, with F− only above it and D otherwise. No family, known answers, outcome-based eligibility, or search statistics. Score the old 1,988 as an already-exposed descriptive panel.
+
+Extract the same SCC feature on the 855 newly covered formulas from the static-pressure expansion, using only already cached public inputs. Independently check the GBD hash and clause counts. Use the 3.05 MB bounded byte cap and a header maximum of 250,000 variables. Missing/invalid extraction falls back to D. Apply the same unaltered threshold directly to the 855 cases, and report the whole 4,719 cohort with D for any formula outside the expanded coverage. Include measured extractor CPU in the common 600-second total cap and report paired group intervals. This transfer comparison uses the existing development matrix, not a new independent test. Preserve all costs and outcomes, including any regression.

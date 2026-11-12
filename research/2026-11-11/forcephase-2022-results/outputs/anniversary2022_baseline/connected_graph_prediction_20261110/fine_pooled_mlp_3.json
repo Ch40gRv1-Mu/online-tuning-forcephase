@@ -1,0 +1,87 @@
+{
+  "best_epoch": 6,
+  "epochs_run": 12,
+  "history": [
+    {
+      "best_epoch": 1,
+      "epoch": 1,
+      "train_loss": 0.1852614181203263,
+      "validation_PAR2": 298.227905364698
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 2,
+      "train_loss": 0.18023334089644846,
+      "validation_PAR2": 298.227905364698
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 3,
+      "train_loss": 0.17670249341438724,
+      "validation_PAR2": 298.2279060797977
+    },
+    {
+      "best_epoch": 4,
+      "epoch": 4,
+      "train_loss": 0.1749995327424084,
+      "validation_PAR2": 298.22500353278923
+    },
+    {
+      "best_epoch": 5,
+      "epoch": 5,
+      "train_loss": 0.17239213665233594,
+      "validation_PAR2": 293.7258733345413
+    },
+    {
+      "best_epoch": 6,
+      "epoch": 6,
+      "train_loss": 0.1722843607139086,
+      "validation_PAR2": 290.92475514829056
+    },
+    {
+      "best_epoch": 6,
+      "epoch": 7,
+      "train_loss": 0.17044276512602222,
+      "validation_PAR2": 294.6775327421909
+    },
+    {
+      "best_epoch": 6,
+      "epoch": 8,
+      "train_loss": 0.17032619384247985,
+      "validation_PAR2": 295.49865754845865
+    },
+    {
+      "best_epoch": 6,
+      "epoch": 9,
+      "train_loss": 0.1688035629933404,
+      "validation_PAR2": 291.68089922402567
+    },
+    {
+      "best_epoch": 6,
+      "epoch": 10,
+      "train_loss": 0.168357885126068,
+      "validation_PAR2": 292.9013080273276
+    },
+    {
+      "best_epoch": 6,
+      "epoch": 11,
+      "train_loss": 0.16593658564493677,
+      "validation_PAR2": 297.8031725099971
+    },
+    {
+      "best_epoch": 6,
+      "epoch": 12,
+      "train_loss": 0.16880161121104645,
+      "validation_PAR2": 292.9779759162165
+    }
+  ],
+  "kind": "pooled_mlp",
+  "objective": "cost_ce",
+  "parameters": 3596,
+  "status": "complete",
+  "train": 1711,
+  "training_CPU_s": 1.0352389999999332,
+  "validation": 351,
+  "validation_PAR2": 290.92475514829056,
+  "wall_s": 1.090365040814504
+}

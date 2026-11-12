@@ -1,0 +1,103 @@
+{
+  "mean_par2": 391.1113890932401,
+  "solved": 3391,
+  "par2_improvement_pct": 0.36461376638792425,
+  "paired_group_bootstrap_95_pct": [
+    -0.12782723923840505,
+    0.8690354490641328
+  ],
+  "actions": {
+    "D": 4501,
+    "Fplus": 71,
+    "Fminus": 147
+  },
+  "better_than_D_parents": 96,
+  "worse_than_D_parents": 52,
+  "by_fold": [
+    {
+      "mean_par2": 409.19407638100324,
+      "solved": 658,
+      "par2_improvement_pct": 1.029439969439178,
+      "paired_group_bootstrap_95_pct": [
+        0.2249762237879274,
+        2.072646826203894
+      ],
+      "actions": {
+        "D": 904,
+        "Fplus": 12,
+        "Fminus": 21
+      },
+      "better_than_D_parents": 18,
+      "worse_than_D_parents": 5
+    },
+    {
+      "mean_par2": 351.58784246008867,
+      "solved": 678,
+      "par2_improvement_pct": 0.13442567509273917,
+      "paired_group_bootstrap_95_pct": [
+        -1.0097258379484038,
+        1.2600729632168468
+      ],
+      "actions": {
+        "D": 861,
+        "Fplus": 9,
+        "Fminus": 32
+      },
+      "better_than_D_parents": 13,
+      "worse_than_D_parents": 11
+    },
+    {
+      "mean_par2": 410.19660982656427,
+      "solved": 643,
+      "par2_improvement_pct": -0.45812740183799794,
+      "paired_group_bootstrap_95_pct": [
+        -1.585099694782377,
+        0.4670435300602859
+      ],
+      "actions": {
+        "D": 858,
+        "Fplus": 8,
+        "Fminus": 45
+      },
+      "better_than_D_parents": 26,
+      "worse_than_D_parents": 10
+    },
+    {
+      "mean_par2": 410.22120962373225,
+      "solved": 698,
+      "par2_improvement_pct": 0.45747602057079884,
+      "paired_group_bootstrap_95_pct": [
+        -1.0231457312809198,
+        1.9200965882836354
+      ],
+      "actions": {
+        "D": 925,
+        "Fplus": 32,
+        "Fminus": 29
+      },
+      "better_than_D_parents": 23,
+      "worse_than_D_parents": 19
+    },
+    {
+      "mean_par2": 373.28620287080366,
+      "solved": 714,
+      "par2_improvement_pct": 0.5917907811914455,
+      "paired_group_bootstrap_95_pct": [
+        -0.464427375796082,
+        1.6593213633225279
+      ],
+      "actions": {
+        "D": 953,
+        "Fplus": 10,
+        "Fminus": 20
+      },
+      "better_than_D_parents": 16,
+      "worse_than_D_parents": 7
+    }
+  ],
+  "parents": 4719,
+  "analysis_CPU_s": 0.5813039999999999,
+  "elapsed_wall_s": 0.6463930830359459,
+  "new_solver_calls": 0,
+  "feature_cost_included": false
+}

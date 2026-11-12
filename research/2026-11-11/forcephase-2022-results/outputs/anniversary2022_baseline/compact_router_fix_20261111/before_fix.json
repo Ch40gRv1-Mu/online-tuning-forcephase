@@ -1,0 +1,15 @@
+{
+  "status": "confirmed_converter_mismatch_before_fix",
+  "generic_route_converter_error": "KeyError('vcg_cdegree_mean')",
+  "exact42_converter_shape": [
+    42
+  ],
+  "raw_native_receipt": "outputs/anniversary2022_baseline/linear42_compact_cost_v3_20261111/stages/4ed475c253503412379dd873ec989806.native.json",
+  "raw_native_receipt_sha256": "4cb0d71cd37bc086ba497d90fac7e8358c8c9bdd41892a5b98dee5b4ba13eefb",
+  "generic_route_source_sha256": "e219e2809ad9ff5145ea84ef679ee27569c5f0f76bb2a5e53b4f5bb5d21dbaa2",
+  "active_cost_worker_uses_correct_exact42_converter": true,
+  "new_native_calls": 0,
+  "new_solver_calls": 0,
+  "CPU_s": 0.0003000000000000086,
+  "unchanged_predict_vector_body_sha256": "06df2c2301f4c7b1a400fef91076d2d8d1b8ff4474bbefb7edcdc47017099ca5"
+}

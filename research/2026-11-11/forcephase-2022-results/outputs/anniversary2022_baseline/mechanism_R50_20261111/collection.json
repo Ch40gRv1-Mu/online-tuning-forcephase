@@ -1,0 +1,26 @@
+{
+  "actual_null_distinct": 2072,
+  "attempted": 2325,
+  "failed": 0,
+  "features_sha256": "091af81e857dde5023bfe23c7d32ee76a1de20c99afc7e5d53ab0cdd26dbc07b",
+  "informative": 1818,
+  "library_versions": {
+    "numpy": "2.5.4",
+    "sklearn": "1.9.1"
+  },
+  "new_external_native_extractor_processes": 0,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "python_profile_workers": 4,
+  "reference_sha256": "588add70ca1b41ee7a1bfe1299292ec0daf298cd55fff8fbe6a2b0c4a477a514",
+  "semantic_checks": {
+    "SAT_calls": 0,
+    "complement_reverses_polarity_columns": true,
+    "empty_is_neutral_bin": true,
+    "marginal_invariants": true,
+    "quarter_boundaries_exact": true
+  },
+  "source_sha256": "32f90c2d29e6413031ad5f819cd9bd9798e062d6e538098b6545038bfb5c41e4",
+  "successful": 2325,
+  "wall_s": 9.463790625100955
+}

@@ -1,0 +1,99 @@
+{
+  "best_epoch": 8,
+  "epochs_run": 14,
+  "history": [
+    {
+      "best_epoch": 1,
+      "epoch": 1,
+      "train_loss": 0.1784422088495415,
+      "validation_PAR2": 360.14481543307147
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 2,
+      "train_loss": 0.17590888244626315,
+      "validation_PAR2": 360.14481543307147
+    },
+    {
+      "best_epoch": 3,
+      "epoch": 3,
+      "train_loss": 0.1727696494968689,
+      "validation_PAR2": 352.53868293867856
+    },
+    {
+      "best_epoch": 3,
+      "epoch": 4,
+      "train_loss": 0.17021384031876274,
+      "validation_PAR2": 358.04609575026376
+    },
+    {
+      "best_epoch": 3,
+      "epoch": 5,
+      "train_loss": 0.16868488784555508,
+      "validation_PAR2": 357.81093686839563
+    },
+    {
+      "best_epoch": 3,
+      "epoch": 6,
+      "train_loss": 0.16897014385980108,
+      "validation_PAR2": 357.874706753011
+    },
+    {
+      "best_epoch": 3,
+      "epoch": 7,
+      "train_loss": 0.16748375135433416,
+      "validation_PAR2": 353.04489611999725
+    },
+    {
+      "best_epoch": 8,
+      "epoch": 8,
+      "train_loss": 0.16547543148246957,
+      "validation_PAR2": 351.03968167975
+    },
+    {
+      "best_epoch": 8,
+      "epoch": 9,
+      "train_loss": 0.16602093860223566,
+      "validation_PAR2": 352.33818269703295
+    },
+    {
+      "best_epoch": 8,
+      "epoch": 10,
+      "train_loss": 0.1668425991807295,
+      "validation_PAR2": 357.9571400826813
+    },
+    {
+      "best_epoch": 8,
+      "epoch": 11,
+      "train_loss": 0.16282300545793513,
+      "validation_PAR2": 352.16180134813186
+    },
+    {
+      "best_epoch": 8,
+      "epoch": 12,
+      "train_loss": 0.1635760520076197,
+      "validation_PAR2": 352.48250468673353
+    },
+    {
+      "best_epoch": 8,
+      "epoch": 13,
+      "train_loss": 0.1638651577229409,
+      "validation_PAR2": 353.42389618867855
+    },
+    {
+      "best_epoch": 8,
+      "epoch": 14,
+      "train_loss": 0.16159567678367476,
+      "validation_PAR2": 362.28050287812636
+    }
+  ],
+  "kind": "gcn",
+  "objective": "cost_ce",
+  "parameters": 3571,
+  "status": "complete",
+  "train": 1838,
+  "training_CPU_s": 58.064141,
+  "validation": 364,
+  "validation_PAR2": 351.03968167975,
+  "wall_s": 32.894316541031
+}

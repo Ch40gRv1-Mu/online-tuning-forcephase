@@ -1,0 +1,8 @@
+{
+  "attempted": 1876,
+  "includes_compiler_native_and_scoring_do_not_charge_children_twice": true,
+  "new_solver_calls": 0,
+  "physical_owner_tree_CPU_s": 1805.620739,
+  "status": "complete",
+  "wall_s": 2743.2146850000136
+}

@@ -1,0 +1,411 @@
+{
+  "diagnostics": {
+    "coarse_R12_min3": {
+      "F_exact_ties": 23,
+      "F_losing_changes": 39,
+      "F_positive_changes": 58,
+      "F_proposals": 120,
+      "both_F_not_better_on_losing_proposals": 29,
+      "clear_losing_F_proposals": 31,
+      "extra_direction_regret_PAR2_s": 3716.435202,
+      "fee_and_budget_PAR2_difference_s": 1229.0873574140014,
+      "force_entry_regret_after_correct_direction_PAR2_s": 5258.461601,
+      "gross_lost_PAR2_s": 7434.661726,
+      "gross_lost_where_both_F_not_better_PAR2_s": 7284.93385,
+      "gross_lost_where_other_F_better_PAR2_s": 149.727876,
+      "gross_saved_PAR2_s": 14364.465784,
+      "missed_D_proposal_opportunity_PAR2_s": 185133.768908,
+      "oracle_regret_PAR2_s": 194108.66571099998,
+      "other_F_better_on_losing_proposals": 10,
+      "paid_policy_gain_over_D_pct": 0.30774614945957574,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2110.686276886,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.5083605383537219,
+          "increment_over_policy_population_pp": 0.2006143888941461,
+          "solved": 3394
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.7921725560824832,
+          "increment_over_policy_population_pp": 0.4844264066229075,
+          "solved": 3398
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.7090264010037522,
+          "increment_over_policy_population_pp": 0.40128025154417657,
+          "solved": 3397
+        }
+      }
+    },
+    "coarse_R42_no_prior": {
+      "F_exact_ties": 32,
+      "F_losing_changes": 56,
+      "F_positive_changes": 72,
+      "F_proposals": 160,
+      "both_F_not_better_on_losing_proposals": 40,
+      "clear_losing_F_proposals": 47,
+      "extra_direction_regret_PAR2_s": 8972.594583999999,
+      "fee_and_budget_PAR2_difference_s": 1168.9244725370017,
+      "force_entry_regret_after_correct_direction_PAR2_s": 7913.581234,
+      "gross_lost_PAR2_s": 13369.694649000001,
+      "gross_lost_where_both_F_not_better_PAR2_s": 12024.050707,
+      "gross_lost_where_other_F_better_PAR2_s": 1345.643942,
+      "gross_saved_PAR2_s": 13546.310672,
+      "missed_D_proposal_opportunity_PAR2_s": 183975.677928,
+      "oracle_regret_PAR2_s": 200861.85374599998,
+      "other_F_better_on_losing_proposals": 16,
+      "paid_policy_gain_over_D_pct": -0.05356854593212775,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2027.4915588860006,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.43079041135752993,
+          "increment_over_policy_population_pp": 0.48435895728965767,
+          "solved": 3395
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.8579304348200327,
+          "increment_over_policy_population_pp": 0.9114989807521604,
+          "solved": 3401
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.6680987798723442,
+          "increment_over_policy_population_pp": 0.721667325804472,
+          "solved": 3398
+        }
+      }
+    },
+    "coarse_R42_odd_prior": {
+      "F_exact_ties": 26,
+      "F_losing_changes": 54,
+      "F_positive_changes": 70,
+      "F_proposals": 150,
+      "both_F_not_better_on_losing_proposals": 38,
+      "clear_losing_F_proposals": 36,
+      "extra_direction_regret_PAR2_s": 5625.508068,
+      "fee_and_budget_PAR2_difference_s": 1169.2884222040018,
+      "force_entry_regret_after_correct_direction_PAR2_s": 5739.372122999999,
+      "gross_lost_PAR2_s": 6377.437242,
+      "gross_lost_where_both_F_not_better_PAR2_s": 6094.391128,
+      "gross_lost_where_other_F_better_PAR2_s": 283.046114,
+      "gross_saved_PAR2_s": 9890.209756,
+      "missed_D_proposal_opportunity_PAR2_s": 186160.817064,
+      "oracle_regret_PAR2_s": 197525.697255,
+      "other_F_better_on_losing_proposals": 16,
+      "paid_policy_gain_over_D_pct": 0.12651009398446922,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2027.4915588860006,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.4301935042912618,
+          "increment_over_policy_population_pp": 0.3036834103067926,
+          "solved": 3393
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.7399695280138299,
+          "increment_over_policy_population_pp": 0.6134594340293605,
+          "solved": 3398
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.470731275007438,
+          "increment_over_policy_population_pp": 0.3442211810229687,
+          "solved": 3393
+        }
+      }
+    },
+    "fine_R12_min3": {
+      "F_exact_ties": 119,
+      "F_losing_changes": 118,
+      "F_positive_changes": 141,
+      "F_proposals": 378,
+      "both_F_not_better_on_losing_proposals": 84,
+      "clear_losing_F_proposals": 91,
+      "extra_direction_regret_PAR2_s": 11553.630130000001,
+      "fee_and_budget_PAR2_difference_s": 1246.348103665,
+      "force_entry_regret_after_correct_direction_PAR2_s": 30302.029449999998,
+      "gross_lost_PAR2_s": 35052.261578000005,
+      "gross_lost_where_both_F_not_better_PAR2_s": 32254.433817999998,
+      "gross_lost_where_other_F_better_PAR2_s": 2797.8277600000006,
+      "gross_saved_PAR2_s": 29578.714852,
+      "missed_D_proposal_opportunity_PAR2_s": 164656.356915,
+      "oracle_regret_PAR2_s": 206512.01649500002,
+      "other_F_better_on_losing_proposals": 34,
+      "paid_policy_gain_over_D_pct": -0.3627652218519104,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2110.9691648860007,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.2609284574226575,
+          "increment_over_policy_population_pp": 0.6236936792745679,
+          "solved": 3388
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.8967069249305915,
+          "increment_over_policy_population_pp": 2.259472146782502,
+          "solved": 3414
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.529442447892972,
+          "increment_over_policy_population_pp": 1.8922076697448824,
+          "solved": 3409
+        }
+      }
+    },
+    "fine_R42_no_prior": {
+      "F_exact_ties": 142,
+      "F_losing_changes": 119,
+      "F_positive_changes": 181,
+      "F_proposals": 442,
+      "both_F_not_better_on_losing_proposals": 79,
+      "clear_losing_F_proposals": 90,
+      "extra_direction_regret_PAR2_s": 15571.595020999997,
+      "fee_and_budget_PAR2_difference_s": 1191.2480954100015,
+      "force_entry_regret_after_correct_direction_PAR2_s": 13444.976745,
+      "gross_lost_PAR2_s": 22483.729826000003,
+      "gross_lost_where_both_F_not_better_PAR2_s": 17590.249173999997,
+      "gross_lost_where_other_F_better_PAR2_s": 4893.480652,
+      "gross_saved_PAR2_s": 34863.515744,
+      "missed_D_proposal_opportunity_PAR2_s": 159642.112085,
+      "oracle_regret_PAR2_s": 188658.683851,
+      "other_F_better_on_losing_proposals": 40,
+      "paid_policy_gain_over_D_pct": 0.6039993940816498,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2027.4915588860006,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.444560046920922,
+          "increment_over_policy_population_pp": 0.8405606528392723,
+          "solved": 3406
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 2.170301936711168,
+          "increment_over_policy_population_pp": 1.5663025426295185,
+          "solved": 3418
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.817637497776971,
+          "increment_over_policy_population_pp": 1.2136381036953212,
+          "solved": 3414
+        }
+      }
+    },
+    "fine_R42_odd_prior": {
+      "F_exact_ties": 97,
+      "F_losing_changes": 91,
+      "F_positive_changes": 137,
+      "F_proposals": 325,
+      "both_F_not_better_on_losing_proposals": 68,
+      "clear_losing_F_proposals": 58,
+      "extra_direction_regret_PAR2_s": 9829.199409,
+      "fee_and_budget_PAR2_difference_s": 1181.3084724510018,
+      "force_entry_regret_after_correct_direction_PAR2_s": 21978.74852,
+      "gross_lost_PAR2_s": 26542.330712000003,
+      "gross_lost_where_both_F_not_better_PAR2_s": 24787.309512,
+      "gross_lost_where_other_F_better_PAR2_s": 1755.0212,
+      "gross_saved_PAR2_s": 23316.316980999996,
+      "missed_D_proposal_opportunity_PAR2_s": 172456.53557100001,
+      "oracle_regret_PAR2_s": 204264.4835,
+      "other_F_better_on_losing_proposals": 23,
+      "paid_policy_gain_over_D_pct": -0.23792384515450707,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2027.4915588860006,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 0.2926889526132707,
+          "increment_over_policy_population_pp": 0.5306127977677778,
+          "solved": 3388
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.4791722738333999,
+          "increment_over_policy_population_pp": 1.717096118987907,
+          "solved": 3408
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.1949171173837816,
+          "increment_over_policy_population_pp": 1.4328409625382887,
+          "solved": 3404
+        }
+      }
+    },
+    "iso_diagnostic_R12_min3": {
+      "F_exact_ties": 332,
+      "F_losing_changes": 182,
+      "F_positive_changes": 340,
+      "F_proposals": 854,
+      "both_F_not_better_on_losing_proposals": 132,
+      "clear_losing_F_proposals": 124,
+      "extra_direction_regret_PAR2_s": 28655.736917000002,
+      "fee_and_budget_PAR2_difference_s": 1256.747470033005,
+      "force_entry_regret_after_correct_direction_PAR2_s": 23162.025121,
+      "gross_lost_PAR2_s": 33897.196151,
+      "gross_lost_where_both_F_not_better_PAR2_s": 27638.002229,
+      "gross_lost_where_other_F_better_PAR2_s": 6259.193922,
+      "gross_saved_PAR2_s": 72111.18491,
+      "missed_D_proposal_opportunity_PAR2_s": 111006.718972,
+      "oracle_regret_PAR2_s": 162824.48101000002,
+      "other_F_better_on_losing_proposals": 50,
+      "paid_policy_gain_over_D_pct": 1.9950910207763377,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2110.891410886,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 3.541924548425623,
+          "increment_over_policy_population_pp": 1.5468335276492853,
+          "solved": 3447
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 4.79197595561345,
+          "increment_over_policy_population_pp": 2.796884934837112,
+          "solved": 3465
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 3.824616994035893,
+          "increment_over_policy_population_pp": 1.8295259732595552,
+          "solved": 3447
+        }
+      }
+    },
+    "iso_diagnostic_R42_no_prior": {
+      "F_exact_ties": 122,
+      "F_losing_changes": 65,
+      "F_positive_changes": 131,
+      "F_proposals": 318,
+      "both_F_not_better_on_losing_proposals": 52,
+      "clear_losing_F_proposals": 53,
+      "extra_direction_regret_PAR2_s": 12386.028637,
+      "fee_and_budget_PAR2_difference_s": 1183.1928309150017,
+      "force_entry_regret_after_correct_direction_PAR2_s": 11291.823518,
+      "gross_lost_PAR2_s": 17509.540233,
+      "gross_lost_where_both_F_not_better_PAR2_s": 14598.398485000002,
+      "gross_lost_where_other_F_better_PAR2_s": 2911.141748,
+      "gross_saved_PAR2_s": 28323.992578999998,
+      "missed_D_proposal_opportunity_PAR2_s": 166546.16526799998,
+      "oracle_regret_PAR2_s": 190224.017423,
+      "other_F_better_on_losing_proposals": 13,
+      "paid_policy_gain_over_D_pct": 0.5199316482274579,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2027.4915588860006,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.1885507113971856,
+          "increment_over_policy_population_pp": 0.6686190631697276,
+          "solved": 3404
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.7979472230778526,
+          "increment_over_policy_population_pp": 1.2780155748503947,
+          "solved": 3413
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 1.4649619722665899,
+          "increment_over_policy_population_pp": 0.945030324039132,
+          "solved": 3408
+        }
+      }
+    },
+    "iso_diagnostic_R42_odd_prior": {
+      "F_exact_ties": 275,
+      "F_losing_changes": 168,
+      "F_positive_changes": 299,
+      "F_proposals": 742,
+      "both_F_not_better_on_losing_proposals": 115,
+      "clear_losing_F_proposals": 104,
+      "extra_direction_regret_PAR2_s": 17420.449248999998,
+      "fee_and_budget_PAR2_difference_s": 1187.0714064140013,
+      "force_entry_regret_after_correct_direction_PAR2_s": 21612.814523,
+      "gross_lost_PAR2_s": 29523.645849,
+      "gross_lost_where_both_F_not_better_PAR2_s": 24013.949002,
+      "gross_lost_where_other_F_better_PAR2_s": 5509.696847,
+      "gross_saved_PAR2_s": 62106.572535,
+      "missed_D_proposal_opportunity_PAR2_s": 129422.279311,
+      "oracle_regret_PAR2_s": 168455.543083,
+      "other_F_better_on_losing_proposals": 53,
+      "paid_policy_gain_over_D_pct": 1.694866466577822,
+      "partition_identity_max_error": 1.1368683772161603e-13,
+      "physical_feature_query_fee_logical_sum_CPU_s": 2027.4915588860006,
+      "restricted_oracles": {
+        "direction_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 2.635218903101962,
+          "increment_over_policy_population_pp": 0.9403524365241402,
+          "solved": 3429
+        },
+        "joint_same_proposals": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 3.8016595115762346,
+          "increment_over_policy_population_pp": 2.1067930449984127,
+          "solved": 3447
+        },
+        "veto_only": {
+          "existing_D_proposals_kept_D": true,
+          "fee_refunded": false,
+          "gain_over_D_pct": 3.288325307672958,
+          "increment_over_policy_population_pp": 1.5934588410951362,
+          "solved": 3439
+        }
+      }
+    }
+  },
+  "matrix_sha256": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8",
+  "new_policy_fits": 0,
+  "new_policy_reward": null,
+  "parents": 4719,
+  "scope": "Exact finite exposed2022-population diagnostic, not causal attribution, deployment or new policy. Raw regret order first correct direction then allowD; restricted paid oracles preserve fees, D proposals and paidD failures.",
+  "source_actions_sha256": {
+    "R12_recovery": "a6691913503c6024d56ed4f458c466d1736350115fc90555126eaaf1c0350c41",
+    "R42": "af6df759378c175612e98741a616a2f757866221cb75097cf1e2e79bae299f09"
+  },
+  "source_sha256": "b0b7c233b9dadbbabc3086b6f7db4176cfc1c5a600a11a1ac7d0d58a2bcbc35c",
+  "status": "complete"
+}

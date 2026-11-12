@@ -1,0 +1,22 @@
+{
+  "eligibility": "Input nmax<=100000 and literal occurrences<=200000; cache availability not a feature",
+  "eligible": 2325,
+  "features_sha256": "19d52b66fa18aae432f8c844e16ea07f100b36091d002e4229d1f2219d8476b9",
+  "fee_scope": "Actual collection cost ledger; first predictive score assumes feature/query free",
+  "high_core_parents": 2325,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "physical_CPU_s": 160.987877,
+  "semantic_checks": {
+    "binary_clique_core3": true,
+    "binary_cycle_core2": true,
+    "binary_path_core1": true,
+    "solver_calls": 0,
+    "ties_not_split_by_identity": true,
+    "units_not_graph_edges": true
+  },
+  "short_search_calls": 0,
+  "source_sha256": "29dbd86a9f26ade5d38688ac2799d9af7fc62cedcd3cfb9905d8cf7afec520b4",
+  "status": "complete",
+  "wall_s": 133.5765673329588
+}

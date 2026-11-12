@@ -1,0 +1,10 @@
+{
+  "status": "complete_compatible_receipt_inheritance",
+  "cases": 256,
+  "source": "outputs/anniversary2022_baseline/linear42_compact_cost_v2_20261111",
+  "source_prefix_sha256": "12ae2ee8bed60cac1d50e3b143b590e804ca36129f2cae4edf0c78556cfa55da",
+  "native_binary_sha256": "c962619e45cafdfaa438ae9ef22860f96ea95629b225223ca9cdda213b66f890",
+  "model_sha256": "ce4b764d6205870747f8d21256fe1807eee3994816006691a42af74535c2c2e8",
+  "new_native_executions": 0,
+  "change": "bounded network preparation only, one native timing lane unchanged"
+}

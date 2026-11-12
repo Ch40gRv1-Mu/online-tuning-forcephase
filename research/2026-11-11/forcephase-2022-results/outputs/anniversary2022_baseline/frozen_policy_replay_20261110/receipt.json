@@ -1,0 +1,15 @@
+{
+  "source_evaluation_commit": "0d82f6ed932e3f5ad0bde8d96d847dadc9ee8aa0",
+  "execution_source_commit": "a09b85a",
+  "new_solver_calls": 0,
+  "new_fit": false,
+  "files": {
+    "feature_crosschecks.csv": "8a3360a4139c0abf59fec6b018a72cd232d238fb77ab16502f37ce6257042881",
+    "features.csv": "c9ff0a46c4793f08da16c7ccf0384188c2d34fe60076a9e2ece753a1ae4ddc93",
+    "missing_feature_bounds.json": "ba795887dd32859b29d3e65629e0fd4d4337832258b73a5a4ba253401dac6730",
+    "predictions.csv": "a0519e986bb2d27aca2ca543705eebf9089eb40f3883aaf0e18d05b240b5f635",
+    "report.html": "a8338b30a5bbb8cf58f6bdef8fc3acaeb661b2e32d827868076c0c9a56646d3e",
+    "scores.csv": "4926ff4eddea798e8f4653db421b5dcb8f572e9558ddb487e479b41be12d8ca4",
+    "summary.json": "479cd86e6232c0bf240cea5cdbb0c4fafb2e4290b5471a6eae5de4fe5b734f79"
+  }
+}

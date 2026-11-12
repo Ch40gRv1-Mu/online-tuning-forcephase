@@ -1,0 +1,9 @@
+{
+  "completed_jobs": 14,
+  "completed_rule_fits": 56,
+  "new_solver_calls": 0,
+  "physical_child_CPU_s": 157.48320900000002,
+  "physical_parent_CPU_s": 2.31435,
+  "status": "complete",
+  "wall_s": 47.73144254204817
+}

@@ -1,0 +1,16 @@
+{
+  "binary_sha256": "e6fbcb3fba65e6046d547c9527704a5716a7640acddc1038be88c118704ba4fa",
+  "child_CPU_s": 0.581934,
+  "command": [
+    "/usr/bin/clang++",
+    "-O3",
+    "-std=c++17",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/stream_clause_table.cpp",
+    "-o",
+    "<LOCAL_WORKSPACE>/outputs/anniversary2022_baseline/mechanism_R53_streaming_20261111/stream_clause_table"
+  ],
+  "exit": 0,
+  "included_in_owner_CPU": true,
+  "native_source_sha256": "8551d0a5e2e73e9a2ee6ac6a010168a59d37472f2ca6fc7cac4b9754509e2da5",
+  "wall_s": 0.7620641661342233
+}

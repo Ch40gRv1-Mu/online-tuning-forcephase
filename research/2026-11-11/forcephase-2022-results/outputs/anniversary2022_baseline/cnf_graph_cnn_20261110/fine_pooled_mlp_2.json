@@ -1,0 +1,56 @@
+{
+  "best_epoch": 1,
+  "epochs_run": 7,
+  "history": [
+    {
+      "best_epoch": 1,
+      "epoch": 1,
+      "train_expected_excess": 0.008916920958055187,
+      "validation_PAR2": 283.5250580781
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 2,
+      "train_expected_excess": 2.9031130149116385e-05,
+      "validation_PAR2": 283.5250580781
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 3,
+      "train_expected_excess": 1.2252603905409679e-05,
+      "validation_PAR2": 283.5250580781
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 4,
+      "train_expected_excess": 6.505159080083351e-06,
+      "validation_PAR2": 283.5250580781
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 5,
+      "train_expected_excess": 3.7961467725707725e-06,
+      "validation_PAR2": 283.5250580781
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 6,
+      "train_expected_excess": 2.443937047320854e-06,
+      "validation_PAR2": 283.5250580781
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 7,
+      "train_expected_excess": 1.6471794404514536e-06,
+      "validation_PAR2": 283.5250580781
+    }
+  ],
+  "kind": "pooled_mlp",
+  "parameters": 3596,
+  "status": "complete",
+  "train": 1944,
+  "training_CPU_s": 0.6575510000000122,
+  "validation": 430,
+  "validation_PAR2": 283.5250580781,
+  "wall_s": 0.6737920411396772
+}

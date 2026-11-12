@@ -1,0 +1,18 @@
+{
+  "status": "input_encoding_diagnosis_only",
+  "parents": 4719,
+  "original_cache_dtype": "float64",
+  "nonHorn_positive_but_H_float32_equals_one": 0,
+  "nonInverseHorn_positive_but_I_float32_equals_one": 0,
+  "largest_erased_nonHorn_count": 0,
+  "largest_erased_nonInverseHorn_count": 0,
+  "derived_mean_width_range": [
+    2.001203752730157,
+    69.9687126165544
+  ],
+  "new_model_fits": 0,
+  "new_solver_calls": 0,
+  "CPU_s": 0.425455,
+  "wall_s": 0.48074304196052253,
+  "interpretation": "Representation qualification, not a model score or evidence that quantization causes the observed prediction failures."
+}

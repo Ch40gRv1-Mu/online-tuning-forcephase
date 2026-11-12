@@ -1,0 +1,9 @@
+# Explain the SCC demand guard on 2022 matched cases
+
+Use only the imported filtered Anniversary 2022 T600 matrix, paid SCC replay and previously validated public CNF cache. The case panel is exploratory and deliberately uses historical outcomes. No new solver calls. Prior Astra CNFs and GBD-equivalent groups are excluded. Choose six matched triplets in the original feature coverage. Three anchors were solved by Fminus when D timed out. Three anchors show large gain while both actions solve. Match each anchor to an above-threshold Fminus loss and a below-threshold D control using raw structural statistics and SCC demand. Keep terminal counters for explanatory use only, without treating censored counts as conflicts-to-solve or using those counters in any selector.
+
+Astra receives the anonymized CNFs, the measured guard result and action diagnostics, and the exact SCC feature definition. Record returned hypotheses, counterexamples and a limit of 180 wall seconds. Hypotheses must be testable with existing 2022 CNFs or runtime labels. Selected cases cannot validate a proposed rule.
+
+There were only five original-coverage losses exceeding two seconds. Before opening any case CNF to Astra, allow a matched loss either above two seconds or at least 0.02 seconds and 10% of D cost. Keep the six triplets and the earlier exclusion and matching rules.
+
+Astra received three additional counterexamples, the largest absolute PAR2 regressions with a cached CNF that it had not seen. Its first observation was that both forced phases improve every selected gain anchor. Freeze a direct phase-direction check in response. Apply the identical original-coverage SCC trigger (>0.10) and measured feature CPU to both Fplus and Fminus independently, use D on all other rows, and compare costs, rescues and lost solves on all 4,719. This is an exploratory comparison on known development outcomes, with no fitting and no new solver run.

@@ -1,0 +1,195 @@
+{
+  "measured_acquisition_parents": 2843,
+  "native_receipts_sha256": "6f1552a5beeee7e0cfc9011198c628e6ff521008a7c3681f8a95fa1997c0cb0c",
+  "scope": "Original4719 OOF actions, measured fees only; unknown fees optimistic0. LocalMac features plus cluster solver CPU, not same-machine end-to-end.",
+  "scores": {
+    "coarse": {
+      "actions": {
+        "D": 4599,
+        "Fminus": 77,
+        "Fplus": 43
+      },
+      "additional_measured_feature_CPU_s": 99.72288883000004,
+      "block_interval_95_pct": [
+        -0.3695992119709185,
+        1.4143106514917234
+      ],
+      "exact_eight_block_95_pct": [
+        -0.3735070860659469,
+        1.4395391546811542
+      ],
+      "gain_pct": 0.3671703028795889,
+      "lost_solves": 6,
+      "measured_fee_parents": 2843,
+      "newly_solved": 12,
+      "original_gain_pct": 0.3708522818326723,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 391.1013535970542,
+      "solved": 3391,
+      "unknown_fee_parents": 1876,
+      "unknown_fee_sensitivity": [
+        {
+          "gain_pct": 0.3671703028795889,
+          "hypothetical_CPU_s_per_unmeasured": 0.0,
+          "solved": 3391
+        },
+        {
+          "gain_pct": 0.3599580719045651,
+          "hypothetical_CPU_s_per_unmeasured": 0.1,
+          "solved": 3391
+        },
+        {
+          "gain_pct": 0.33110914800446933,
+          "hypothetical_CPU_s_per_unmeasured": 0.5,
+          "solved": 3391
+        },
+        {
+          "gain_pct": 0.29504799312934976,
+          "hypothetical_CPU_s_per_unmeasured": 1.0,
+          "solved": 3391
+        },
+        {
+          "gain_pct": 0.22292568337911056,
+          "hypothetical_CPU_s_per_unmeasured": 2.0,
+          "solved": 3391
+        },
+        {
+          "gain_pct": -0.025772314026643345,
+          "hypothetical_CPU_s_per_unmeasured": 5.0,
+          "solved": 3390
+        },
+        {
+          "gain_pct": -0.30649589831066204,
+          "hypothetical_CPU_s_per_unmeasured": 8.0,
+          "solved": 3388
+        }
+      ]
+    },
+    "fine": {
+      "actions": {
+        "D": 4339,
+        "Fminus": 170,
+        "Fplus": 210
+      },
+      "additional_measured_feature_CPU_s": 99.72288883000004,
+      "block_interval_95_pct": [
+        -2.631322724935197,
+        1.4030453520092752
+      ],
+      "gain_pct": -0.26446673153526956,
+      "lost_solves": 30,
+      "measured_fee_parents": 2843,
+      "newly_solved": 25,
+      "original_gain_pct": -0.2608130688798597,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 393.580798373366,
+      "solved": 3380,
+      "unknown_fee_parents": 1876,
+      "unknown_fee_sensitivity": [
+        {
+          "gain_pct": -0.26446673153526956,
+          "hypothetical_CPU_s_per_unmeasured": 0.0,
+          "solved": 3380
+        },
+        {
+          "gain_pct": -0.2717491414045117,
+          "hypothetical_CPU_s_per_unmeasured": 0.1,
+          "solved": 3380
+        },
+        {
+          "gain_pct": -0.30087878088147935,
+          "hypothetical_CPU_s_per_unmeasured": 0.5,
+          "solved": 3380
+        },
+        {
+          "gain_pct": -0.3372908302276892,
+          "hypothetical_CPU_s_per_unmeasured": 1.0,
+          "solved": 3380
+        },
+        {
+          "gain_pct": -0.4101149289201088,
+          "hypothetical_CPU_s_per_unmeasured": 2.0,
+          "solved": 3380
+        },
+        {
+          "gain_pct": -0.660918286998255,
+          "hypothetical_CPU_s_per_unmeasured": 5.0,
+          "solved": 3379
+        },
+        {
+          "gain_pct": -0.9437472361653996,
+          "hypothetical_CPU_s_per_unmeasured": 8.0,
+          "solved": 3377
+        }
+      ]
+    },
+    "iso_diagnostic": {
+      "actions": {
+        "D": 3864,
+        "Fminus": 454,
+        "Fplus": 401
+      },
+      "additional_measured_feature_CPU_s": 99.72288883000004,
+      "block_interval_95_pct": [
+        1.4655703834424592,
+        2.941383582626659
+      ],
+      "exact_eight_block_95_pct": [
+        1.4559142473821922,
+        2.9379360718940686
+      ],
+      "gain_pct": 2.093988913268053,
+      "lost_solves": 29,
+      "measured_fee_parents": 2843,
+      "newly_solved": 63,
+      "original_gain_pct": 2.0976772346791357,
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 384.3228540001585,
+      "solved": 3419,
+      "unknown_fee_parents": 1876,
+      "unknown_fee_sensitivity": [
+        {
+          "gain_pct": 2.093988913268053,
+          "hypothetical_CPU_s_per_unmeasured": 0.0,
+          "solved": 3419
+        },
+        {
+          "gain_pct": 2.086652519634028,
+          "hypothetical_CPU_s_per_unmeasured": 0.1,
+          "solved": 3419
+        },
+        {
+          "gain_pct": 2.0573069450979276,
+          "hypothetical_CPU_s_per_unmeasured": 0.5,
+          "solved": 3419
+        },
+        {
+          "gain_pct": 2.0206249769278024,
+          "hypothetical_CPU_s_per_unmeasured": 1.0,
+          "solved": 3419
+        },
+        {
+          "gain_pct": 1.9472610405875515,
+          "hypothetical_CPU_s_per_unmeasured": 2.0,
+          "solved": 3419
+        },
+        {
+          "gain_pct": 1.6948381723190842,
+          "hypothetical_CPU_s_per_unmeasured": 5.0,
+          "solved": 3418
+        },
+        {
+          "gain_pct": 1.410389712583732,
+          "hypothetical_CPU_s_per_unmeasured": 8.0,
+          "solved": 3416
+        }
+      ]
+    }
+  },
+  "sensitivity_scope": "Hypothetical successful extraction costs, not observations or modeled resource failures",
+  "status": "complete",
+  "unmeasured_acquisition_parents": 1876
+}

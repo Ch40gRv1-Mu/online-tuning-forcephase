@@ -1,0 +1,8 @@
+{
+  "exclusions": [],
+  "inputs": 5355,
+  "manifest_sha256": "6ad75ff9b0225620b16721d7393e0270180a9c5c12599bad838dd298ed1fb928",
+  "prior_roles_preserved_in_source": true,
+  "role": "baseline_development",
+  "source_sha256": "2cff5a8edf82942f284f6299a9c8bd0ae7c387128dce64be17ab6dccf2780376"
+}

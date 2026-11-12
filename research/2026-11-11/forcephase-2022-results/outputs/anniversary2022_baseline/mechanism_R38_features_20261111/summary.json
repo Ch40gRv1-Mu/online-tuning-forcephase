@@ -1,0 +1,20 @@
+{
+  "base_cache_sha256": "19d52b66fa18aae432f8c844e16ea07f100b36091d002e4229d1f2219d8476b9",
+  "distinct_typed_null_parents": 2325,
+  "eligible": 2325,
+  "features_sha256": "588add70ca1b41ee7a1bfe1299292ec0daf298cd55fff8fbe6a2b0c4a477a514",
+  "fee_scope": "Actual physical collection; predictive screen optimistic zero feature/query fees",
+  "new_native_calls": 0,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "semantic_checks": {
+    "disconnected_graph": true,
+    "hierarchy_not_independent_partitions": true,
+    "no_optimality_or_relabel_invariance_claim": true,
+    "parallel_edge_weights": true,
+    "path_actual_cut_count": true,
+    "solver_calls": 0
+  },
+  "source_sha256": "e6145ab75da26cd9e05accb45bd0524c4402d0cabc33f70d155252ff91445247",
+  "status": "complete"
+}

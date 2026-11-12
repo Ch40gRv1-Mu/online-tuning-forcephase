@@ -1,0 +1,58 @@
+{
+  "SAT_UNSAT_auxiliary": false,
+  "attempted": 2325,
+  "binary_sha256": "3635114eef21580410a21737ba4f4c1f87d86249c8a74a1add6e7a1b97a6d447",
+  "evaluable_gate_parents": 665,
+  "failed": 1,
+  "features_sha256": "1d854838531a979c2529dfe8b13c2346516c9c69ec7125cb294c1f6badddbe8c",
+  "header_hashes": {
+    "src/ta100/cnf_data.hpp": "da85ba488b63e96071c7e1155dcaaed03601aa33423018050c451f10940b3b31",
+    "src/ta100/graph_extra_features.hpp": "0c82851b156e6a4d88f548a7d2e8126f3f487530a5b39aa0d531fb93d11c93cd",
+    "src/ta100/graph_features.hpp": "5110f471c25ddefdc5fe228f20da2bce400404004d97af85182761bdc5a0bfa6"
+  },
+  "informative": 475,
+  "native_profile_calls": 2325,
+  "native_source_sha256": "7ceba756d1b6a7ff8b5cd6ee41434fc13501ed3ccaa1d41dabb236b372573626",
+  "new_solver_calls": 0,
+  "null_construction": "Template only here; scorer reassigns independently inside train/inner/held. Physical arithmetic in scorer ledger, query0 optimistic, not deployable null.",
+  "parents": 4719,
+  "reference_sha256": "588add70ca1b41ee7a1bfe1299292ec0daf298cd55fff8fbe6a2b0c4a477a514",
+  "semantic_checks": {
+    "SAT_calls": 0,
+    "complement_covariance": true,
+    "native_calls": 3,
+    "resources": [
+      {
+        "CPU_s": 0.005031999999999953,
+        "cumulative_children_max_RSS_platform_units": 172556288,
+        "error": null,
+        "exit": 0,
+        "stderr": "",
+        "wall_s": 0.18854545801877975
+      },
+      {
+        "CPU_s": 0.0014630000000000198,
+        "cumulative_children_max_RSS_platform_units": 172556288,
+        "error": null,
+        "exit": 0,
+        "stderr": "",
+        "wall_s": 0.004689917201176286
+      },
+      {
+        "CPU_s": 0.0012779999999998348,
+        "cumulative_children_max_RSS_platform_units": 172556288,
+        "error": null,
+        "exit": 0,
+        "stderr": "",
+        "wall_s": 0.0031358751002699137
+      }
+    ],
+    "single_AND_contrast": 0.2,
+    "two_layer_contrast": 0.3142857142857143,
+    "whole_vs_local_differ": true
+  },
+  "source_sha256": "c33af848a3ba12d77fe894526b759505c05f4c7703b90f6d694512a82b264ad9",
+  "successful": 2324,
+  "wall_s": 16.977725208038464,
+  "whole_local_different": 475
+}

@@ -1,0 +1,21 @@
+{
+  "eligibility": "observed variable maximum <=100000 and literal occurrence count <=100000, input-only",
+  "eligible": 1890,
+  "features_sha256": "f2ec8c98b2ade39060847093160e835a33c4778596aa5f3cedbff23048ba91d7",
+  "new_solver_calls": 0,
+  "paired_feature_CPU_s": 78.30622144700007,
+  "parents": 4719,
+  "physical_CPU_s": 109.42103,
+  "reused_native_basic_CPU_s": 99.72288883000004,
+  "semantic_checks": {
+    "feature_complement_equivariance": true,
+    "runtime_label_augmentation": false,
+    "solver_calls": 0,
+    "unit_sign": true
+  },
+  "short_search_calls": 0,
+  "source_sha256": "02328802e844a11d1e6a68137349d13f8650fa3cc97fe7ffbf76985e94382de2",
+  "status": "complete",
+  "uniform_feature_CPU_s": 49.79794208699993,
+  "wall_s": 48.66423558304086
+}

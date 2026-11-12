@@ -1,0 +1,79 @@
+{
+  "primary_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04",
+  "function_code_matches_pinned_source": {
+    "decide.cpp": true,
+    "queue.cpp": true,
+    "score.cpp": true
+  },
+  "library_sha256": "b1fdf0b96845a16831b912e5239bc7ab8f6eb865ca2817bcb6c9a698f82c00d3",
+  "library_note": "Existing locally instrumented library; tested phase/initialization function bodies match pinned upstream. No benchmark call or performance claim.",
+  "source_receipts": {
+    "decide.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/decide.cpp",
+      "sha256": "a29aedcec6a2e3c1f6f6bfe244ed267aa037aeba046f8a077236b7640d954f39",
+      "bytes": 10146
+    },
+    "rephase.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/rephase.cpp",
+      "sha256": "bccaec4097cd231ef6801e4837b86224b804fe11e96c6098b88a1cfd1d89ae74",
+      "bytes": 10061
+    },
+    "propagate.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/propagate.cpp",
+      "sha256": "4ffa34dd999cbb129b0597adf24a4bc25d6248b2d8210aca340e9da478a404e6",
+      "bytes": 18336
+    },
+    "backtrack.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/backtrack.cpp",
+      "sha256": "4ead69ecab13adb05bbb8f9791484b4e619222ecb104c5243f6ffa4bc7d638c2",
+      "bytes": 5292
+    },
+    "queue.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/queue.cpp",
+      "sha256": "78adfc6f816bbdf95ffd4295135009f8f9435817ad552d9d9fccfe0009b6f9b1",
+      "bytes": 2622
+    },
+    "score.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/score.cpp",
+      "sha256": "c28fb29a2088489fd910096b2f76bf639c6068820a122b2367367c4813695360",
+      "bytes": 1319
+    },
+    "internal.hpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/internal.hpp",
+      "sha256": "b26433d68befc5aa4787bb2d9fec477436358e85c66f7229e734ce2a3fba1fe0",
+      "bytes": 68364
+    },
+    "internal.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/internal.cpp",
+      "sha256": "7170438095b54e1ee1875db0d8d3c61e5787f02bca5f142e9b25bdff206a3a7e",
+      "bytes": 36399
+    },
+    "external.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/external.cpp",
+      "sha256": "a435467938012951d12d7b3e0511875d53b515a5ab8b7454937cf2d23122cb3f",
+      "bytes": 30893
+    },
+    "analyze.cpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/analyze.cpp",
+      "sha256": "598b9e8a8a3c3371f96be7ce2360bba72067a2c97ee662d5f2b9cfe392a7422f",
+      "bytes": 45725
+    },
+    "options.hpp": {
+      "url": "https://raw.githubusercontent.com/arminbiere/cadical/c60730422e758ef1cebe7aeddf2dda31c996bf04/src/options.hpp",
+      "sha256": "790edefb1046799635188c1b9877ecdbc01e221694200fcf20a3c31d74304353",
+      "bytes": 25827
+    }
+  },
+  "function_semantics": {
+    "queue_first": 8,
+    "score_first": 1,
+    "D_initial": 3,
+    "D_saved_negative": -3,
+    "D_target_positive": 3,
+    "Fplus": 3,
+    "Fminus": -3,
+    "explicit_override": 3,
+    "solve_calls": 0,
+    "propagate_calls": 0
+  }
+}

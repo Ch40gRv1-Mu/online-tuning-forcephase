@@ -1,0 +1,111 @@
+{
+  "actual_native_calls": 4,
+  "actual_retry_branches_observed": 1,
+  "claim": "Actual native-to-resident-selector branch consistency; cached vectors validate but never route. Not new parent labels, performance reward or same-machine solver deployment.",
+  "error": null,
+  "new_model_fits": 0,
+  "new_solver_calls": 0,
+  "physical_child_CPU_s": 22.621526,
+  "physical_parent_CPU_s": 1.0166689999999998,
+  "results": [
+    {
+      "association_key": "23a92c04ee9248308a18d6a44e5d15f0",
+      "fixture_branch": "ordinary_first_attempt",
+      "receipt": {
+        "action": "Fplus",
+        "attempts": [
+          {
+            "native_CPU_s": 0.002452,
+            "native_binary_sha256": "c962619e45cafdfaa438ae9ef22860f96ea95629b225223ca9cdda213b66f890",
+            "native_exit": 0,
+            "native_maxrss": 2768896,
+            "native_wall_s": 0.019211499951779842,
+            "native_wrapper_parent_CPU_s": 0.003952374999999897
+          }
+        ],
+        "min_predicted_PAR2_savings": [
+          33.2221568383776,
+          11.72698430143035
+        ],
+        "new_solver_calls": 0,
+        "routing_CPU_s": 0.03271100000000004,
+        "scope": "Resident-model candidate inference only; no SAT solver or performance confirmation",
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=1"
+        ],
+        "status": "ok",
+        "wall_s": 0.053235042141750455
+      }
+    },
+    {
+      "association_key": "b3cf73d0383f781adf09a2192fa03a15",
+      "fixture_branch": "previously_restored_input",
+      "receipt": {
+        "action": "Fplus",
+        "attempts": [
+          {
+            "native_CPU_s": 3.983789,
+            "native_binary_sha256": "c962619e45cafdfaa438ae9ef22860f96ea95629b225223ca9cdda213b66f890",
+            "native_exit": 0,
+            "native_maxrss": 409681920,
+            "native_wall_s": 4.018809916917235,
+            "native_wrapper_parent_CPU_s": 0.003744458000000117
+          }
+        ],
+        "min_predicted_PAR2_savings": [
+          32.67877698141841,
+          -69.14813681822896
+        ],
+        "new_solver_calls": 0,
+        "routing_CPU_s": 4.00897,
+        "scope": "Resident-model candidate inference only; no SAT solver or performance confirmation",
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=1"
+        ],
+        "status": "ok",
+        "wall_s": 4.040526875061914
+      }
+    },
+    {
+      "association_key": "aff1b7e42aafff200fb43c5654004d72",
+      "fixture_branch": "previously_exhausted_input",
+      "receipt": {
+        "action": "D",
+        "attempts": [
+          {
+            "native_CPU_s": 6.661836,
+            "native_binary_sha256": "c962619e45cafdfaa438ae9ef22860f96ea95629b225223ca9cdda213b66f890",
+            "native_error": "",
+            "native_exit": -24,
+            "native_maxrss": 494092288,
+            "native_wall_s": 6.695310082985088,
+            "native_wrapper_parent_CPU_s": 0.0034997500000000237
+          },
+          {
+            "native_CPU_s": 11.973449,
+            "native_binary_sha256": "53a371f89322025e10743893c747a0784fe7fe1dd632fb1da489a45b536b4ba8",
+            "native_error": "",
+            "native_exit": -14,
+            "native_maxrss": 505298944,
+            "native_wall_s": 12.019072583178058,
+            "native_wrapper_parent_CPU_s": 0.0032870410000001016
+          }
+        ],
+        "new_solver_calls": 0,
+        "routing_CPU_s": 18.642699999999998,
+        "scope": "Resident-model candidate inference only; no SAT solver or performance confirmation",
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=0"
+        ],
+        "status": "feature_error",
+        "wall_s": 18.71741983294487
+      }
+    }
+  ],
+  "source_sha256": "3813d805ac249cb9b54e6f3f385fb352492373050d028d064ed28441f3767165",
+  "status": "complete_actual_serving_consistency",
+  "wall_s": 24.37051554210484
+}

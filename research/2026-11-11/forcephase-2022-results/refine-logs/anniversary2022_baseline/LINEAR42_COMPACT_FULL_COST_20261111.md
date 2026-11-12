@@ -1,0 +1,31 @@
+# Full4719 costs for the exact42 one-pass runtime
+
+Owner current chat, no delegation/new solver/new labels or model fitting. The prior formal32 matched-input experiment passed its frozen criterion:32/32 input vectors and cached model actions match, versus27/32 old native successes; acquisition70.642776->26.259470CPU seconds(-62.827806%),median0.265625,max4.709181. Old five cap failures all succeeded. Compilation/materialization plus32 actual calls cost2.598510parent+27.420686childCPU,34.285641wall. This is a real input/cost result, not improved accuracy or all4719 validation.
+
+## Frozen complete scope, no narrow substitution
+
+New full manifest4719 retains the whole filtered2022 population: the same count-defined1876 large inputs in fixed sorted order first, then all2843 cached small inputs in fixed sorted order. No outcome/SAT answer/family/ID value is a predictor or selects exclusions. Identity associates exact public bytes. First32 compact receipts from the accepted experiment are seeded with provenance and exact native/vectorizer/weights/raw identity, not reexecuted or charged again. First new recovery checkpoint is through256 on this one queue. Unknown4687 costs remain unknown until measured; old2843 larger-extractor fees are not mislabeled measurements of the new extractor. Eventually measure all4719 in the new profile.
+
+Runtime: `native_linear42_compact_20261111/native_linear42`, SHA c962619e45cafdfaa438ae9ef22860f96ea95629b225223ca9cdda213b66f890, unchanged8CPU/12alarm/14outerwall/5M variable cap/empty-clauseD. `linear42_compact_prefix32_20261111/model.joblib`, SHA ce4b764d6205870747f8d21256fe1807eee3994816006691a42af74535c2c2e8. Only native binding changed; original weights/margin0/three-seed per-action minimum remain. Raw stats and new exact42 mapper omit unneeded fields, no fabricated field zeros. Inline cap check replaces prescan; sorted legacy stats/entropy and balance boundary preserved. Every successful input float32 vector/action must match archived42/cached same-weight model. Stop on mismatch, keep failure/costs, never retune thresholds to fix incompatibility.
+
+Original old-profile binary/source/32 receipts remain immutable, unfinished old1844 scope explicitly superseded for this runtime investigation rather than claimed complete. No old compatible native cost exists for changed binary except the accepted compact32. Full-source engine is a separate copy of frozen original durable machinery so old artifact identities remain valid. Seeded physical measurements are accounted in their actual source experiment, logical fee sums may reuse them.
+
+Same shared *task-only*1GiB bounded cache, original public gzip cache never pruned. At most one compressed ready download beyond current; disk3GiB reserved with1GiB/file transfer bound,180wall/20socket. Original8GB RAM/8cores, single native timing process and one network prefetch, no overlapping timing jobs. New large inputs canonicalGBD/count checked with frozen verifier and rawSHA; cached small inputs current stream rawSHA matches previously GBD-verified receipt, avoiding another redundant canonical-check campaign. Both methods preserve explicit identity evidence. Partial transfers are not parsed. URL/download errors remain missing measurements, no generated timeout labels; actual native errors pay CPU then chooseD.
+
+Atomic download/identity/native/final-row receipts, one owner lock, increasing fixed prefixes only. Incomplete observation or expired tool handle never triggers duplicate healthy workers. Increasing prefix reuses completed exact native32 and all subsequently accepted records. Per-invocation physical parent+childCPU/wall recorded; previous runs not charged again. No credentials/artifacts from unrelated studies uploaded or cleared. Parent download/identity cost separate from policy acquisition/query; source profile SHA includes native/model/manifest/GBD/vectorizer binding.
+
+After full cost availability replay the fixed R12 OOF procedure, not in-sample full-model decisions: keep original OOF choices/query fees on native success, known error->D/skip original query/pay failure CPU, full T600(h+t) cutoff. Independently report candidate interface actions but never call them test rewards. Until full completion, any replay retains explicit unknown fees and counts; no independent test or same-machine end-to-end claim from mixing Mac feature and cluster solve CPU. Existing cross-structure failure remains, scientific goal not complete.
+
+Forecast from old32 plus newcompact32 is approximately1–3hours for complete downloads/identity/new features, not a hard/user budget; first through256 is bounded checkpoint with1hour invocation watchdog and per-unit native/transfer limits. Do not wait for all4719 to report real progress/failures. Native CPU/prefix throughput will update ETA. Full first scored answer was already delivered from original32 within current goal continuation; this pipeline is not made a prerequisite for discovering any new positive signal.
+
+Source/protocol plus full manifest and32 receipt provenance commit before execution:
+
+`work/anniversary2022_plot_env/bin/python -m src.anniversary2022_baseline.measure_compact_linear42 --through 256`
+
+After complete compatible prefix, inherit the same output/lock and increase through to512,1024,1876,4719 as elapsed/resource observations allow; checkpoints are execution boundaries, not development sampling/p-hacking. Preserve all failure histories. Source correction requires a separate identity; do not overwrite a live binary or raw records.
+
+## Startup correction before any new measurement
+
+First0d51089 invocation failed at the manifest ordinal assertion: one legacy `range(1,1877)` remained. Exit1 was observed;0 new transfers/native calls, startupCPU unmetered(not0). Preserve failed source/receipt under `linear42_compact_cost_20261111/startup_failures/first_manifest_count`. Only correct bound to4720, separate output `linear42_compact_cost_v2_20261111`, seed the same32 compatible records, no native repeat. Original failed identity and data remain. Recovery command after corrective commit:
+
+`work/anniversary2022_plot_env/bin/python -m src.anniversary2022_baseline.measure_compact_linear42 --through 256 --out outputs/anniversary2022_baseline/linear42_compact_cost_v2_20261111`

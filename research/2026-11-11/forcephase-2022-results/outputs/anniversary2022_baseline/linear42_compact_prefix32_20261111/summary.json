@@ -1,0 +1,26 @@
+{
+  "compact_acquisition_CPU_s": 26.259469744,
+  "compact_fee_quantiles_s": [
+    0.26562529200000007,
+    2.213335858300001,
+    4.590544635270001,
+    4.709181041
+  ],
+  "cost_reduction_pct": 62.827805888354796,
+  "model_fits": 0,
+  "model_sha256": "ce4b764d6205870747f8d21256fe1807eee3994816006691a42af74535c2c2e8",
+  "native_D_fallbacks": 0,
+  "native_sha256": "c962619e45cafdfaa438ae9ef22860f96ea95629b225223ca9cdda213b66f890",
+  "native_source_sha256": "77f3161c92695042bf018c4f3c591960a42a73f08ec3f06b370155e2a4d6f8f4",
+  "new_solver_calls": 0,
+  "original_acquisition_CPU_s": 70.64277579400002,
+  "original_successes": 27,
+  "parents": 32,
+  "predeclared_cost_interface_continuation_passed": true,
+  "sample": "Same frozen count-selected first32, unchanged inputs; no outcome selection",
+  "scope": "Fixed32 native input and real cost comparison; not whole4719/1876 compatibility, predictive confirmation or same-machine deployment",
+  "source_sha256": "7a9dd785158fe8919365b2118579c9492c08bd2fadf35d4cda30825de6834e69",
+  "status": "complete",
+  "successes": 32,
+  "vectorizer_sha256": "b0130088938f5282d8775bd3c45d4577593eaf6cc8f46555ef9e7f08329b56be"
+}

@@ -1,0 +1,37 @@
+{
+  "actual_METIS_library_calls": 16275,
+  "clarification": "Legacy summary field new_native_calls=0 means no standalone native extractor; METIS native library calls below are real and included in feature CPU. Original receipts preserved.",
+  "input_subset_diagnosis": {
+    "coarse": {
+      "eligible2325": {
+        "lost": 14,
+        "net_PAR2_seconds_saved": -8049.503166,
+        "parents": 2325,
+        "rescued": 8
+      },
+      "outside2394": {
+        "lost": 5,
+        "net_PAR2_seconds_saved": -4632.097143999999,
+        "parents": 2394,
+        "rescued": 1
+      }
+    },
+    "fine": {
+      "eligible2325": {
+        "lost": 30,
+        "net_PAR2_seconds_saved": -24308.234247,
+        "parents": 2325,
+        "rescued": 9
+      },
+      "outside2394": {
+        "lost": 1,
+        "net_PAR2_seconds_saved": 7365.8409919999995,
+        "parents": 2394,
+        "rescued": 7
+      }
+    }
+  },
+  "new_standalone_native_extractor_processes": 0,
+  "null_METIS_library_calls": 16275,
+  "score_source_unchanged": true
+}

@@ -1,0 +1,21 @@
+{
+  "eligible": 2325,
+  "features_sha256": "2bd7e27693f000087aae6ff05856946168dbc43f15b2b6732d3b6552e2b33655",
+  "informative_parents": 2240,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "physical_CPU_s": 135.03320499999998,
+  "reference_sha256": "19d52b66fa18aae432f8c844e16ea07f100b36091d002e4229d1f2219d8476b9",
+  "scope": "Full normalized formula patterns, color hashes are approximate, no SAT solving or label augmentation",
+  "semantic_checks": {
+    "label_augmentation": false,
+    "renaming_and_clause_order_invariance": true,
+    "signed_direction_retained": true,
+    "solver_calls": 0,
+    "unsigned_complement_invariance": true
+  },
+  "short_search_calls": 0,
+  "source_sha256": "542c6d023141fc235e4812b913bd57e337249a6097eb780d16a88c45a1b2f68b",
+  "status": "complete",
+  "wall_s": 66.03178870910779
+}

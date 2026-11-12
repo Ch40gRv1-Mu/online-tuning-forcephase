@@ -1,0 +1,18 @@
+{
+  "status": "SOURCE_DEDUP_COMPLETE_NOT_FROZEN_NOT_RUN",
+  "question": "Long-cycle signed consistency on full variable-clause incidence graph, not local degree marginals",
+  "prior_evidence": {
+    "TA_I062_I063": "src/ta100/algebra_features.hpp context selects first512 non-taut clauses,width<=16, pairwise J sums signs*2^-width,12passes spin energy descent; no current4719 label reuse",
+    "R29_Horn_renaming": "At-most-one-positive constraints on signed variable pairs; directed implication SCC, not incidence all-edge equality gauge",
+    "R22_colors": "Four radius/color rounds, not full long-cycle parity",
+    "R24_response": "Finite regularized Gram response, not edge-cycle parity residual under a forest"
+  },
+  "proposed_mechanism": "Test whether uniform forced phase relates to global gauge coherence, while D can retain nonuniform per-variable phases. Hypothesis only; tree parity auxiliary values are not a SAT solution or solver prefix.",
+  "implementation_options": [
+    "For three fixed random edge-weight orders, obtain undirected minimum spanning forest from sparse unique variable/clause edges. Preserve the chosen original edge sign with a unique edge-weight-to-slot map.",
+    "Derive parity potentials of the signed forest with connected components on its two-copy parity lift, then measure non-tree edge disagreement and component-weighted variable gauge coherence/clause sign roles. No CNF local search or iterative spin optimization.",
+    "Normalize duplicate/taut clauses only with existing bound parser/normalize. Matched typed incidence rewiring preserves per-literal(width,positive-count,sign) degrees; multigraph null needs min-weight handling for parallel edges without pretending a timed CNF.",
+    "Use fixed2325 count qualification/all4719 score and original42 baseline; gates>=50 informative/.5pp. Freeze feature list, three fixed orders, base-only/actual/null matched capacity and costs before extraction."
+  ],
+  "next_action": "Implement and commit one bounded source/protocol, not an Ising weight/threshold/seed sweep. If duplicate or information saturation, stop without invented reward."
+}

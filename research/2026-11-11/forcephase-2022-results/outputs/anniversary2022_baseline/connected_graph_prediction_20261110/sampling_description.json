@@ -1,0 +1,16 @@
+{
+  "uniform_means": {
+    "variables_kept": 770.1737601125571,
+    "clauses_kept": 499.9651776292649,
+    "edges_kept": 1675.2001406964473
+  },
+  "connected_means": {
+    "variables_kept": 336.4583186774534,
+    "clauses_kept": 490.96095673584244,
+    "edges_kept": 1820.3837495603236,
+    "sampled_seed_count": 112.76292648610622,
+    "skipped_clause_count": 592.0260288427717
+  },
+  "parents_with_skipped_clauses": 192,
+  "largest_connected_edge_count": 4096
+}

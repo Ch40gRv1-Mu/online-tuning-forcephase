@@ -1,0 +1,22 @@
+{
+  "collector_source_sha256": "19bae92e13f6740b10b61dac920130c17183bd8f5f53ed751736617340717315",
+  "feature_source_sha256": "671cfcd43262fe620898ffc1606dd9276418f9b4f65b8e9eeb0286cb1b67460f",
+  "features_sha256": "795a5a5de7474ae138d95de43ed6c3fa51a5373649ae0d7cc91d2650414c275b",
+  "new_profile_CPU_s": 118.28373207200005,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "parser_source_sha256": "1c9d8277906821f0bfc3dbb4babf032f1b7cad8942bc4afe03113075d7de3380",
+  "physical_CPU_s": 119.306286,
+  "qualified": 2843,
+  "reused_component_CPU_s": 286.1678938679999,
+  "semantics_checks": {
+    "benchmark_assignments": 0,
+    "complete_parity_and_sign_truth_table": true,
+    "external_binary_boundary": true,
+    "solver_calls": 0
+  },
+  "short_search_calls": 0,
+  "status": "complete",
+  "verified_byte_receipts_sha256": "9acb794afd13ad372a36619adc6a767539a245081f88b3fdf66f9570eff03a35",
+  "wall_s": 51.59043704206124
+}

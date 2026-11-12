@@ -1,0 +1,23 @@
+{
+  "feature_set": "boundary-transfer",
+  "feature_names": [
+    "oriented_scc_demand",
+    "scc_demand_share",
+    "gate_boundary_sign",
+    "gate_boundary_strength",
+    "block_disagreement",
+    "block_signed_demand",
+    "block_coherence",
+    "largest_block_share",
+    "plus_repair_concentration",
+    "minus_repair_concentration",
+    "opposed_clause_contrast",
+    "aligned_unit_contrast",
+    "opposed_unit_contrast",
+    "conflict_contrast",
+    "unit_pressure"
+  ],
+  "parser_sha256": "e6e80e6d6b870e185621e1ce6691ee22dad64ecf3b12a4296c39f597e0f1fcce",
+  "checker_sha256": "67edcbcc38d6d4e3e049c35f904aacb5700e7ce7c3105e87a6bf8bc9db9e5899",
+  "dataset_sha256": "f1c269cc68fd633e555c9c924bc190fbe2b37b7b8b1ca481f8626045cdaf20de"
+}

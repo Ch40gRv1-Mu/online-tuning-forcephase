@@ -1,0 +1,841 @@
+{
+  "feature_views": {
+    "rule6_costed": {
+      "columns": 6,
+      "coverage": 2843
+    }
+  },
+  "final_model_sha256": "1f2677df2d4631687746dc060226a302ceab5bae6749ccf71d57031fe9679a5c",
+  "final_pooled_margin_PAR2_s": null,
+  "fits": [
+    {
+      "CPU_s": 1.027283,
+      "disabled": false,
+      "fold": 0,
+      "held_out": 641,
+      "measured_inference_CPU_s": 0.9655229999999985,
+      "switch_margin_PAR2_s": 3.216712574898385,
+      "train": 1838,
+      "validation": 364,
+      "variant": "coarse_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 1.517388,
+      "disabled": false,
+      "fold": 1,
+      "held_out": 982,
+      "measured_inference_CPU_s": 1.4817209999999954,
+      "switch_margin_PAR2_s": 3.3850757611154183,
+      "train": 1466,
+      "validation": 395,
+      "variant": "coarse_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 0.647923,
+      "disabled": false,
+      "fold": 2,
+      "held_out": 401,
+      "measured_inference_CPU_s": 0.6057630000000014,
+      "switch_margin_PAR2_s": 1.2367082266012812,
+      "train": 2045,
+      "validation": 397,
+      "variant": "coarse_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 1.275163,
+      "disabled": true,
+      "fold": 3,
+      "held_out": 819,
+      "measured_inference_CPU_s": 1.238261999999989,
+      "switch_margin_PAR2_s": null,
+      "train": 1635,
+      "validation": 389,
+      "variant": "coarse_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 1.0115290000000003,
+      "disabled": false,
+      "fold": 0,
+      "held_out": 641,
+      "measured_inference_CPU_s": 0.9679260000000003,
+      "switch_margin_PAR2_s": 0.0,
+      "train": 1838,
+      "validation": 364,
+      "variant": "coarse_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 1.5757790000000007,
+      "disabled": true,
+      "fold": 1,
+      "held_out": 982,
+      "measured_inference_CPU_s": 1.5373359999999998,
+      "switch_margin_PAR2_s": null,
+      "train": 1466,
+      "validation": 395,
+      "variant": "coarse_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 0.6564719999999999,
+      "disabled": true,
+      "fold": 2,
+      "held_out": 401,
+      "measured_inference_CPU_s": 0.609620000000012,
+      "switch_margin_PAR2_s": null,
+      "train": 2045,
+      "validation": 397,
+      "variant": "coarse_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 1.2797790000000013,
+      "disabled": true,
+      "fold": 3,
+      "held_out": 819,
+      "measured_inference_CPU_s": 1.2393839999999905,
+      "switch_margin_PAR2_s": null,
+      "train": 1635,
+      "validation": 389,
+      "variant": "coarse_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 0.06576300000000046,
+      "disabled": false,
+      "fold": 0,
+      "held_out": 641,
+      "measured_inference_CPU_s": 0.06294600000000727,
+      "switch_margin_PAR2_s": 0.0,
+      "train": 1838,
+      "validation": 364,
+      "variant": "coarse_rule6_costed_ridge_relative"
+    },
+    {
+      "CPU_s": 0.09724900000000147,
+      "disabled": false,
+      "fold": 1,
+      "held_out": 982,
+      "measured_inference_CPU_s": 0.09525299999998538,
+      "switch_margin_PAR2_s": 1.6465764531941622,
+      "train": 1466,
+      "validation": 395,
+      "variant": "coarse_rule6_costed_ridge_relative"
+    },
+    {
+      "CPU_s": 0.03974599999999917,
+      "disabled": false,
+      "fold": 2,
+      "held_out": 401,
+      "measured_inference_CPU_s": 0.038201999999987635,
+      "switch_margin_PAR2_s": 0.0,
+      "train": 2045,
+      "validation": 397,
+      "variant": "coarse_rule6_costed_ridge_relative"
+    },
+    {
+      "CPU_s": 0.08075299999999963,
+      "disabled": true,
+      "fold": 3,
+      "held_out": 819,
+      "measured_inference_CPU_s": 0.07897400000002364,
+      "switch_margin_PAR2_s": null,
+      "train": 1635,
+      "validation": 389,
+      "variant": "coarse_rule6_costed_ridge_relative"
+    },
+    {
+      "CPU_s": 0.7461560000000009,
+      "disabled": true,
+      "fold": 0,
+      "held_out": 463,
+      "measured_inference_CPU_s": 0.7042589999999986,
+      "switch_margin_PAR2_s": null,
+      "train": 2002,
+      "validation": 378,
+      "variant": "fine_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 0.6277009999999983,
+      "disabled": false,
+      "fold": 1,
+      "held_out": 383,
+      "measured_inference_CPU_s": 0.585934000000023,
+      "switch_margin_PAR2_s": 4.8326368746682125,
+      "train": 2007,
+      "validation": 453,
+      "variant": "fine_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 0.7469029999999997,
+      "disabled": true,
+      "fold": 2,
+      "held_out": 469,
+      "measured_inference_CPU_s": 0.7060389999999934,
+      "switch_margin_PAR2_s": null,
+      "train": 1944,
+      "validation": 430,
+      "variant": "fine_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 1.212434,
+      "disabled": true,
+      "fold": 3,
+      "held_out": 781,
+      "measured_inference_CPU_s": 1.1740670000000133,
+      "switch_margin_PAR2_s": null,
+      "train": 1711,
+      "validation": 351,
+      "variant": "fine_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 1.1677990000000005,
+      "disabled": false,
+      "fold": 4,
+      "held_out": 747,
+      "measured_inference_CPU_s": 1.1306560000000054,
+      "switch_margin_PAR2_s": 2.7821572228369553,
+      "train": 1648,
+      "validation": 448,
+      "variant": "fine_rule6_costed_trees_relative"
+    },
+    {
+      "CPU_s": 0.7533390000000004,
+      "disabled": true,
+      "fold": 0,
+      "held_out": 463,
+      "measured_inference_CPU_s": 0.7071930000000091,
+      "switch_margin_PAR2_s": null,
+      "train": 2002,
+      "validation": 378,
+      "variant": "fine_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 0.6440050000000017,
+      "disabled": false,
+      "fold": 1,
+      "held_out": 383,
+      "measured_inference_CPU_s": 0.5965220000000002,
+      "switch_margin_PAR2_s": 0.0,
+      "train": 2007,
+      "validation": 453,
+      "variant": "fine_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 0.7546649999999993,
+      "disabled": true,
+      "fold": 2,
+      "held_out": 469,
+      "measured_inference_CPU_s": 0.7099660000000299,
+      "switch_margin_PAR2_s": null,
+      "train": 1944,
+      "validation": 430,
+      "variant": "fine_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 1.2205040000000018,
+      "disabled": true,
+      "fold": 3,
+      "held_out": 781,
+      "measured_inference_CPU_s": 1.1788459999999823,
+      "switch_margin_PAR2_s": null,
+      "train": 1711,
+      "validation": 351,
+      "variant": "fine_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 1.1708220000000011,
+      "disabled": true,
+      "fold": 4,
+      "held_out": 747,
+      "measured_inference_CPU_s": 1.1297200000000487,
+      "switch_margin_PAR2_s": null,
+      "train": 1648,
+      "validation": 448,
+      "variant": "fine_rule6_costed_trees_absolute"
+    },
+    {
+      "CPU_s": 0.04614300000000071,
+      "disabled": false,
+      "fold": 0,
+      "held_out": 463,
+      "measured_inference_CPU_s": 0.044178999999957114,
+      "switch_margin_PAR2_s": 0.0,
+      "train": 2002,
+      "validation": 378,
+      "variant": "fine_rule6_costed_ridge_relative"
+    },
+    {
+      "CPU_s": 0.03841300000000203,
+      "disabled": true,
+      "fold": 1,
+      "held_out": 383,
+      "measured_inference_CPU_s": 0.03684299999996199,
+      "switch_margin_PAR2_s": null,
+      "train": 2007,
+      "validation": 453,
+      "variant": "fine_rule6_costed_ridge_relative"
+    },
+    {
+      "CPU_s": 0.04620599999999797,
+      "disabled": false,
+      "fold": 2,
+      "held_out": 469,
+      "measured_inference_CPU_s": 0.04462100000000646,
+      "switch_margin_PAR2_s": 0.0,
+      "train": 1944,
+      "validation": 430,
+      "variant": "fine_rule6_costed_ridge_relative"
+    },
+    {
+      "CPU_s": 0.07608000000000104,
+      "disabled": false,
+      "fold": 3,
+      "held_out": 781,
+      "measured_inference_CPU_s": 0.07436199999996518,
+      "switch_margin_PAR2_s": 0.0,
+      "train": 1711,
+      "validation": 351,
+      "variant": "fine_rule6_costed_ridge_relative"
+    },
+    {
+      "CPU_s": 0.07334199999999669,
+      "disabled": false,
+      "fold": 4,
+      "held_out": 747,
+      "measured_inference_CPU_s": 0.0717019999999593,
+      "switch_margin_PAR2_s": 0.0,
+      "train": 1648,
+      "validation": 448,
+      "variant": "fine_rule6_costed_ridge_relative"
+    }
+  ],
+  "input_sha256": {
+    "GBD": "15a3d19fd23ba72dd7c77b1b86113873f160760fa1c9710e9e5ed6a23ba29d84",
+    "encoding_receipt": "7e84591ca0c2ec631b18c3f1bd1815341a5cbfa55c349a33b66ccbe8b010971b",
+    "live_features": "17bd7437f4b9bc106938686ef27dd6e2a5b865735a355d251f8fc599822aa8dd",
+    "matrix": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8",
+    "splits": "7cd77d6c3e2ca57977f153ec10c0f950d04b2dd019c8ca63b2ca77f4d1c5bdee",
+    "static_features": "a663363bd539313d24b3f0f9c214f02d97d55d2e895cd3a4c8091352261ed593"
+  },
+  "new_feature_calls": 0,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "physical_analysis_CPU_s": 19.256988,
+  "results": {
+    "coarse_rule6_costed_ridge_relative": {
+      "actions": {
+        "D": 4312,
+        "Fminus": 400,
+        "Fplus": 7
+      },
+      "block_interval_95_pct": [
+        -2.3916575327169727,
+        0.19503044887999324
+      ],
+      "exact_eight_block_95_pct": [
+        -2.4147073270758184,
+        0.21096629183313567
+      ],
+      "feature_cost_status": "sum of existing measured extraction receipts; combined route not remeasured",
+      "gain_pct": -0.8218021244449313,
+      "lost_solves": 23,
+      "newly_solved": 8,
+      "outer_fold_choices": [
+        {
+          "CPU_s": 0.06576300000000046,
+          "disabled": false,
+          "fold": 0,
+          "held_out": 641,
+          "measured_inference_CPU_s": 0.06294600000000727,
+          "switch_margin_PAR2_s": 0.0,
+          "train": 1838,
+          "validation": 364,
+          "variant": "coarse_rule6_costed_ridge_relative"
+        },
+        {
+          "CPU_s": 0.09724900000000147,
+          "disabled": false,
+          "fold": 1,
+          "held_out": 982,
+          "measured_inference_CPU_s": 0.09525299999998538,
+          "switch_margin_PAR2_s": 1.6465764531941622,
+          "train": 1466,
+          "validation": 395,
+          "variant": "coarse_rule6_costed_ridge_relative"
+        },
+        {
+          "CPU_s": 0.03974599999999917,
+          "disabled": false,
+          "fold": 2,
+          "held_out": 401,
+          "measured_inference_CPU_s": 0.038201999999987635,
+          "switch_margin_PAR2_s": 0.0,
+          "train": 2045,
+          "validation": 397,
+          "variant": "coarse_rule6_costed_ridge_relative"
+        },
+        {
+          "CPU_s": 0.08075299999999963,
+          "disabled": true,
+          "fold": 3,
+          "held_out": 819,
+          "measured_inference_CPU_s": 0.07897400000002364,
+          "switch_margin_PAR2_s": null,
+          "train": 1635,
+          "validation": 389,
+          "variant": "coarse_rule6_costed_ridge_relative"
+        }
+      ],
+      "raw_zero_margin": {
+        "block_interval_95_pct": [
+          -2.457130814053078,
+          0.008869725492484168
+        ],
+        "gain_pct": -0.9478885118232434,
+        "lost_solves": 28,
+        "newly_solved": 13,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 396.2635203653126,
+        "solved": 3370
+      },
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 395.7685775144096,
+      "solved": 3370
+    },
+    "coarse_rule6_costed_trees_absolute": {
+      "actions": {
+        "D": 4623,
+        "Fminus": 8,
+        "Fplus": 88
+      },
+      "block_interval_95_pct": [
+        -0.20247748932600274,
+        0.0
+      ],
+      "exact_eight_block_95_pct": [
+        -0.20379293287419656,
+        0.0
+      ],
+      "feature_cost_status": "sum of existing measured extraction receipts; combined route not remeasured",
+      "gain_pct": -0.08483088126361792,
+      "lost_solves": 1,
+      "newly_solved": 0,
+      "outer_fold_choices": [
+        {
+          "CPU_s": 1.0115290000000003,
+          "disabled": false,
+          "fold": 0,
+          "held_out": 641,
+          "measured_inference_CPU_s": 0.9679260000000003,
+          "switch_margin_PAR2_s": 0.0,
+          "train": 1838,
+          "validation": 364,
+          "variant": "coarse_rule6_costed_trees_absolute"
+        },
+        {
+          "CPU_s": 1.5757790000000007,
+          "disabled": true,
+          "fold": 1,
+          "held_out": 982,
+          "measured_inference_CPU_s": 1.5373359999999998,
+          "switch_margin_PAR2_s": null,
+          "train": 1466,
+          "validation": 395,
+          "variant": "coarse_rule6_costed_trees_absolute"
+        },
+        {
+          "CPU_s": 0.6564719999999999,
+          "disabled": true,
+          "fold": 2,
+          "held_out": 401,
+          "measured_inference_CPU_s": 0.609620000000012,
+          "switch_margin_PAR2_s": null,
+          "train": 2045,
+          "validation": 397,
+          "variant": "coarse_rule6_costed_trees_absolute"
+        },
+        {
+          "CPU_s": 1.2797790000000013,
+          "disabled": true,
+          "fold": 3,
+          "held_out": 819,
+          "measured_inference_CPU_s": 1.2393839999999905,
+          "switch_margin_PAR2_s": null,
+          "train": 1635,
+          "validation": 389,
+          "variant": "coarse_rule6_costed_trees_absolute"
+        }
+      ],
+      "raw_zero_margin": {
+        "block_interval_95_pct": [
+          -0.19697640205293224,
+          0.1529923969797746
+        ],
+        "gain_pct": -0.0404999214432244,
+        "lost_solves": 1,
+        "newly_solved": 1,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 392.7016331137412,
+        "solved": 3385
+      },
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.87565103980756,
+      "solved": 3384
+    },
+    "coarse_rule6_costed_trees_relative": {
+      "actions": {
+        "D": 4697,
+        "Fminus": 17,
+        "Fplus": 5
+      },
+      "block_interval_95_pct": [
+        -0.009410813428058606,
+        0.1621810063553357
+      ],
+      "exact_eight_block_95_pct": [
+        -0.009271732825502085,
+        0.16502755960121376
+      ],
+      "feature_cost_status": "sum of existing measured extraction receipts; combined route not remeasured",
+      "gain_pct": 0.04251542941648953,
+      "lost_solves": 0,
+      "newly_solved": 1,
+      "outer_fold_choices": [
+        {
+          "CPU_s": 1.027283,
+          "disabled": false,
+          "fold": 0,
+          "held_out": 641,
+          "measured_inference_CPU_s": 0.9655229999999985,
+          "switch_margin_PAR2_s": 3.216712574898385,
+          "train": 1838,
+          "validation": 364,
+          "variant": "coarse_rule6_costed_trees_relative"
+        },
+        {
+          "CPU_s": 1.517388,
+          "disabled": false,
+          "fold": 1,
+          "held_out": 982,
+          "measured_inference_CPU_s": 1.4817209999999954,
+          "switch_margin_PAR2_s": 3.3850757611154183,
+          "train": 1466,
+          "validation": 395,
+          "variant": "coarse_rule6_costed_trees_relative"
+        },
+        {
+          "CPU_s": 0.647923,
+          "disabled": false,
+          "fold": 2,
+          "held_out": 401,
+          "measured_inference_CPU_s": 0.6057630000000014,
+          "switch_margin_PAR2_s": 1.2367082266012812,
+          "train": 2045,
+          "validation": 397,
+          "variant": "coarse_rule6_costed_trees_relative"
+        },
+        {
+          "CPU_s": 1.275163,
+          "disabled": true,
+          "fold": 3,
+          "held_out": 819,
+          "measured_inference_CPU_s": 1.238261999999989,
+          "switch_margin_PAR2_s": null,
+          "train": 1635,
+          "validation": 389,
+          "variant": "coarse_rule6_costed_trees_relative"
+        }
+      ],
+      "raw_zero_margin": {
+        "block_interval_95_pct": [
+          -0.32018286639596566,
+          0.15302270472292104
+        ],
+        "gain_pct": -0.09319314497188858,
+        "lost_solves": 3,
+        "newly_solved": 2,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 392.908476491673,
+        "solved": 3384
+      },
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.37576245254184,
+      "solved": 3386
+    },
+    "fine_rule6_costed_ridge_relative": {
+      "actions": {
+        "D": 4569,
+        "Fminus": 33,
+        "Fplus": 117
+      },
+      "block_interval_95_pct": [
+        -0.22666261192776901,
+        0.303731086060327
+      ],
+      "feature_cost_status": "sum of existing measured extraction receipts; combined route not remeasured",
+      "gain_pct": 0.04286636260997234,
+      "lost_solves": 2,
+      "newly_solved": 3,
+      "outer_fold_choices": [
+        {
+          "CPU_s": 0.04614300000000071,
+          "disabled": false,
+          "fold": 0,
+          "held_out": 463,
+          "measured_inference_CPU_s": 0.044178999999957114,
+          "switch_margin_PAR2_s": 0.0,
+          "train": 2002,
+          "validation": 378,
+          "variant": "fine_rule6_costed_ridge_relative"
+        },
+        {
+          "CPU_s": 0.03841300000000203,
+          "disabled": true,
+          "fold": 1,
+          "held_out": 383,
+          "measured_inference_CPU_s": 0.03684299999996199,
+          "switch_margin_PAR2_s": null,
+          "train": 2007,
+          "validation": 453,
+          "variant": "fine_rule6_costed_ridge_relative"
+        },
+        {
+          "CPU_s": 0.04620599999999797,
+          "disabled": false,
+          "fold": 2,
+          "held_out": 469,
+          "measured_inference_CPU_s": 0.04462100000000646,
+          "switch_margin_PAR2_s": 0.0,
+          "train": 1944,
+          "validation": 430,
+          "variant": "fine_rule6_costed_ridge_relative"
+        },
+        {
+          "CPU_s": 0.07608000000000104,
+          "disabled": false,
+          "fold": 3,
+          "held_out": 781,
+          "measured_inference_CPU_s": 0.07436199999996518,
+          "switch_margin_PAR2_s": 0.0,
+          "train": 1711,
+          "validation": 351,
+          "variant": "fine_rule6_costed_ridge_relative"
+        },
+        {
+          "CPU_s": 0.07334199999999669,
+          "disabled": false,
+          "fold": 4,
+          "held_out": 747,
+          "measured_inference_CPU_s": 0.0717019999999593,
+          "switch_margin_PAR2_s": 0.0,
+          "train": 1648,
+          "validation": 448,
+          "variant": "fine_rule6_costed_ridge_relative"
+        }
+      ],
+      "raw_zero_margin": {
+        "block_interval_95_pct": [
+          -0.31199739705506313,
+          0.26748267027219763
+        ],
+        "gain_pct": -0.01565884268162562,
+        "lost_solves": 3,
+        "newly_solved": 3,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 392.6041212839758,
+        "solved": 3385
+      },
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.37438489007167,
+      "solved": 3386
+    },
+    "fine_rule6_costed_trees_absolute": {
+      "actions": {
+        "D": 4697,
+        "Fminus": 22,
+        "Fplus": 0
+      },
+      "block_interval_95_pct": [
+        -0.0027142616929677955,
+        0.2053497875196737
+      ],
+      "feature_cost_status": "sum of existing measured extraction receipts; combined route not remeasured",
+      "gain_pct": 0.05914705121051373,
+      "lost_solves": 0,
+      "newly_solved": 1,
+      "outer_fold_choices": [
+        {
+          "CPU_s": 0.7533390000000004,
+          "disabled": true,
+          "fold": 0,
+          "held_out": 463,
+          "measured_inference_CPU_s": 0.7071930000000091,
+          "switch_margin_PAR2_s": null,
+          "train": 2002,
+          "validation": 378,
+          "variant": "fine_rule6_costed_trees_absolute"
+        },
+        {
+          "CPU_s": 0.6440050000000017,
+          "disabled": false,
+          "fold": 1,
+          "held_out": 383,
+          "measured_inference_CPU_s": 0.5965220000000002,
+          "switch_margin_PAR2_s": 0.0,
+          "train": 2007,
+          "validation": 453,
+          "variant": "fine_rule6_costed_trees_absolute"
+        },
+        {
+          "CPU_s": 0.7546649999999993,
+          "disabled": true,
+          "fold": 2,
+          "held_out": 469,
+          "measured_inference_CPU_s": 0.7099660000000299,
+          "switch_margin_PAR2_s": null,
+          "train": 1944,
+          "validation": 430,
+          "variant": "fine_rule6_costed_trees_absolute"
+        },
+        {
+          "CPU_s": 1.2205040000000018,
+          "disabled": true,
+          "fold": 3,
+          "held_out": 781,
+          "measured_inference_CPU_s": 1.1788459999999823,
+          "switch_margin_PAR2_s": null,
+          "train": 1711,
+          "validation": 351,
+          "variant": "fine_rule6_costed_trees_absolute"
+        },
+        {
+          "CPU_s": 1.1708220000000011,
+          "disabled": true,
+          "fold": 4,
+          "held_out": 747,
+          "measured_inference_CPU_s": 1.1297200000000487,
+          "switch_margin_PAR2_s": null,
+          "train": 1648,
+          "validation": 448,
+          "variant": "fine_rule6_costed_trees_absolute"
+        }
+      ],
+      "raw_zero_margin": {
+        "block_interval_95_pct": [
+          -0.021023441860169852,
+          0.37343590464539816
+        ],
+        "gain_pct": 0.14249068269344894,
+        "lost_solves": 0,
+        "newly_solved": 3,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 391.9833169403378,
+        "solved": 3388
+      },
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.310476243007,
+      "solved": 3386
+    },
+    "fine_rule6_costed_trees_relative": {
+      "actions": {
+        "D": 4682,
+        "Fminus": 37,
+        "Fplus": 0
+      },
+      "block_interval_95_pct": [
+        -0.012364482714037077,
+        0.33984113284025064
+      ],
+      "feature_cost_status": "sum of existing measured extraction receipts; combined route not remeasured",
+      "gain_pct": 0.12115585064561117,
+      "lost_solves": 0,
+      "newly_solved": 2,
+      "outer_fold_choices": [
+        {
+          "CPU_s": 0.7461560000000009,
+          "disabled": true,
+          "fold": 0,
+          "held_out": 463,
+          "measured_inference_CPU_s": 0.7042589999999986,
+          "switch_margin_PAR2_s": null,
+          "train": 2002,
+          "validation": 378,
+          "variant": "fine_rule6_costed_trees_relative"
+        },
+        {
+          "CPU_s": 0.6277009999999983,
+          "disabled": false,
+          "fold": 1,
+          "held_out": 383,
+          "measured_inference_CPU_s": 0.585934000000023,
+          "switch_margin_PAR2_s": 4.8326368746682125,
+          "train": 2007,
+          "validation": 453,
+          "variant": "fine_rule6_costed_trees_relative"
+        },
+        {
+          "CPU_s": 0.7469029999999997,
+          "disabled": true,
+          "fold": 2,
+          "held_out": 469,
+          "measured_inference_CPU_s": 0.7060389999999934,
+          "switch_margin_PAR2_s": null,
+          "train": 1944,
+          "validation": 430,
+          "variant": "fine_rule6_costed_trees_relative"
+        },
+        {
+          "CPU_s": 1.212434,
+          "disabled": true,
+          "fold": 3,
+          "held_out": 781,
+          "measured_inference_CPU_s": 1.1740670000000133,
+          "switch_margin_PAR2_s": null,
+          "train": 1711,
+          "validation": 351,
+          "variant": "fine_rule6_costed_trees_relative"
+        },
+        {
+          "CPU_s": 1.1677990000000005,
+          "disabled": false,
+          "fold": 4,
+          "held_out": 747,
+          "measured_inference_CPU_s": 1.1306560000000054,
+          "switch_margin_PAR2_s": 2.7821572228369553,
+          "train": 1648,
+          "validation": 448,
+          "variant": "fine_rule6_costed_trees_relative"
+        }
+      ],
+      "raw_zero_margin": {
+        "block_interval_95_pct": [
+          -1.443722907303794,
+          0.15979604090309613
+        ],
+        "gain_pct": -0.4576318689529464,
+        "lost_solves": 11,
+        "newly_solved": 3,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 394.33905392970695,
+        "solved": 3377
+      },
+      "reference_mean_PAR2": 392.54265364738285,
+      "reference_solved": 3385,
+      "selected_mean_PAR2": 392.06706525620956,
+      "solved": 3387
+    }
+  },
+  "score_scope": "Repeatedly used2022 development; grouped held-out scoring; no independent test",
+  "sklearn_version": "1.9.1",
+  "source_sha256": "91bd3c2594fbe7eb416f83ca40fd1d493ef838d92edcdc4fdad8a20cafb9a004",
+  "status": "complete",
+  "wall_s": 19.085441708099097
+}

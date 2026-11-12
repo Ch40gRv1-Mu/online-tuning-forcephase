@@ -1,0 +1,87 @@
+{
+  "mean_par2": 393.0836653986014,
+  "solved": 3384,
+  "par2_improvement_pct": -0.1378224114479198,
+  "paired_group_bootstrap_95_pct": [
+    -0.21534235550400876,
+    -0.09638401338539185
+  ],
+  "better_than_D_parents": 2,
+  "worse_than_D_parents": 397,
+  "schedules_by_training_fold": [
+    {
+      "fold": 0,
+      "phase": "D",
+      "D_prefix_cpu_s": 0,
+      "F_probe_cpu_s": 0
+    },
+    {
+      "fold": 1,
+      "phase": "D",
+      "D_prefix_cpu_s": 0,
+      "F_probe_cpu_s": 0
+    },
+    {
+      "fold": 2,
+      "phase": "Fminus",
+      "D_prefix_cpu_s": 60,
+      "F_probe_cpu_s": 5
+    },
+    {
+      "fold": 3,
+      "phase": "D",
+      "D_prefix_cpu_s": 0,
+      "F_probe_cpu_s": 0
+    },
+    {
+      "fold": 4,
+      "phase": "Fminus",
+      "D_prefix_cpu_s": 60,
+      "F_probe_cpu_s": 5
+    }
+  ],
+  "fixed_D_solved": 3385,
+  "assumed_cpu_overhead_s": 0.05,
+  "held_out_sensitivity": [
+    {
+      "overhead_s": 0,
+      "mean_par2": 393.0794484034753,
+      "solved": 3384,
+      "improvement_pct": -0.13674813452873025
+    },
+    {
+      "overhead_s": 0.01,
+      "mean_par2": 393.08029180250054,
+      "solved": 3384,
+      "improvement_pct": -0.13696298991259237
+    },
+    {
+      "overhead_s": 0.05,
+      "mean_par2": 393.0836653986014,
+      "solved": 3384,
+      "improvement_pct": -0.13782241144792984
+    },
+    {
+      "overhead_s": 0.1,
+      "mean_par2": 393.08788239372745,
+      "solved": 3384,
+      "improvement_pct": -0.13889668836710722
+    },
+    {
+      "overhead_s": 0.5,
+      "mean_par2": 393.12161835473614,
+      "solved": 3384,
+      "improvement_pct": -0.14749090372057072
+    }
+  ],
+  "best_fixed_schedule_in_sample": {
+    "phase": "D",
+    "D_prefix_cpu_s": 0,
+    "F_probe_cpu_s": 0,
+    "mean_par2": 392.54265364738285
+  },
+  "parents": 4719,
+  "new_solver_calls": 0,
+  "elapsed_wall_s": 0.2885206670034677,
+  "analysis_CPU_s": 0.223092
+}

@@ -1,0 +1,6 @@
+{
+  "error": "CalledProcessError(1, ['<LOCAL_WORKSPACE>/work/anniversary2022_plot_env/bin/python', '-m', 'src.anniversary2022_baseline.preprocess_structure_features'])",
+  "native_job_not_cancelled_or_restarted": true,
+  "own_CPU_s": 0.12668499999999994,
+  "wall_including_queue_s": 393.5859304589685
+}

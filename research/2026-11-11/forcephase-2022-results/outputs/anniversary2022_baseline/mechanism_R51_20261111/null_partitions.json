@@ -1,0 +1,383 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "fold": 0,
+      "mode": "iso_diagnostic",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0005730000000001567,
+          "changed_vectors": 106,
+          "no_sources_outside_partition": true,
+          "seed": 20261351,
+          "selected_parents": 131
+        },
+        "inner": {
+          "CPU_s": 0.0004350000000004073,
+          "changed_vectors": 62,
+          "no_sources_outside_partition": true,
+          "seed": 20261251,
+          "selected_parents": 82
+        },
+        "train": {
+          "CPU_s": 0.0021320000000000228,
+          "changed_vectors": 405,
+          "no_sources_outside_partition": true,
+          "seed": 20261151,
+          "selected_parents": 452
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "mode": "iso_diagnostic",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0005820000000000825,
+          "changed_vectors": 112,
+          "no_sources_outside_partition": true,
+          "seed": 20261352,
+          "selected_parents": 140
+        },
+        "inner": {
+          "CPU_s": 0.00042199999999992244,
+          "changed_vectors": 70,
+          "no_sources_outside_partition": true,
+          "seed": 20261252,
+          "selected_parents": 84
+        },
+        "train": {
+          "CPU_s": 0.0018120000000001468,
+          "changed_vectors": 388,
+          "no_sources_outside_partition": true,
+          "seed": 20261152,
+          "selected_parents": 441
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "mode": "iso_diagnostic",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0005569999999996966,
+          "changed_vectors": 114,
+          "no_sources_outside_partition": true,
+          "seed": 20261353,
+          "selected_parents": 140
+        },
+        "inner": {
+          "CPU_s": 0.00041599999999997195,
+          "changed_vectors": 78,
+          "no_sources_outside_partition": true,
+          "seed": 20261253,
+          "selected_parents": 97
+        },
+        "train": {
+          "CPU_s": 0.0018120000000001468,
+          "changed_vectors": 380,
+          "no_sources_outside_partition": true,
+          "seed": 20261153,
+          "selected_parents": 428
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "mode": "iso_diagnostic",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0005409999999996806,
+          "changed_vectors": 86,
+          "no_sources_outside_partition": true,
+          "seed": 20261354,
+          "selected_parents": 116
+        },
+        "inner": {
+          "CPU_s": 0.0003799999999998249,
+          "changed_vectors": 68,
+          "no_sources_outside_partition": true,
+          "seed": 20261254,
+          "selected_parents": 85
+        },
+        "train": {
+          "CPU_s": 0.0018240000000000478,
+          "changed_vectors": 418,
+          "no_sources_outside_partition": true,
+          "seed": 20261154,
+          "selected_parents": 464
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "mode": "iso_diagnostic",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0005440000000001,
+          "changed_vectors": 108,
+          "no_sources_outside_partition": true,
+          "seed": 20261355,
+          "selected_parents": 138
+        },
+        "inner": {
+          "CPU_s": 0.00039400000000000546,
+          "changed_vectors": 71,
+          "no_sources_outside_partition": true,
+          "seed": 20261255,
+          "selected_parents": 88
+        },
+        "train": {
+          "CPU_s": 0.0018340000000001133,
+          "changed_vectors": 401,
+          "no_sources_outside_partition": true,
+          "seed": 20261155,
+          "selected_parents": 439
+        }
+      }
+    },
+    {
+      "fold": 0,
+      "mode": "coarse",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0008349999999999191,
+          "changed_vectors": 235,
+          "no_sources_outside_partition": true,
+          "seed": 20262351,
+          "selected_parents": 261
+        },
+        "inner": {
+          "CPU_s": 0.000316000000000205,
+          "changed_vectors": 55,
+          "no_sources_outside_partition": true,
+          "seed": 20262251,
+          "selected_parents": 71
+        },
+        "train": {
+          "CPU_s": 0.001490999999999687,
+          "changed_vectors": 298,
+          "no_sources_outside_partition": true,
+          "seed": 20262151,
+          "selected_parents": 333
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "mode": "coarse",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0006049999999997446,
+          "changed_vectors": 155,
+          "no_sources_outside_partition": true,
+          "seed": 20262352,
+          "selected_parents": 182
+        },
+        "inner": {
+          "CPU_s": 0.00040500000000021075,
+          "changed_vectors": 50,
+          "no_sources_outside_partition": true,
+          "seed": 20262252,
+          "selected_parents": 64
+        },
+        "train": {
+          "CPU_s": 0.0016639999999998878,
+          "changed_vectors": 381,
+          "no_sources_outside_partition": true,
+          "seed": 20262152,
+          "selected_parents": 419
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "mode": "coarse",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.000500000000000167,
+          "changed_vectors": 78,
+          "no_sources_outside_partition": true,
+          "seed": 20262353,
+          "selected_parents": 88
+        },
+        "inner": {
+          "CPU_s": 0.00038300000000024426,
+          "changed_vectors": 89,
+          "no_sources_outside_partition": true,
+          "seed": 20262253,
+          "selected_parents": 106
+        },
+        "train": {
+          "CPU_s": 0.001811000000000007,
+          "changed_vectors": 430,
+          "no_sources_outside_partition": true,
+          "seed": 20262153,
+          "selected_parents": 471
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "mode": "coarse",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0005610000000002557,
+          "changed_vectors": 112,
+          "no_sources_outside_partition": true,
+          "seed": 20262354,
+          "selected_parents": 134
+        },
+        "inner": {
+          "CPU_s": 0.0003769999999998497,
+          "changed_vectors": 68,
+          "no_sources_outside_partition": true,
+          "seed": 20262254,
+          "selected_parents": 86
+        },
+        "train": {
+          "CPU_s": 0.0017719999999998848,
+          "changed_vectors": 406,
+          "no_sources_outside_partition": true,
+          "seed": 20262154,
+          "selected_parents": 445
+        }
+      }
+    },
+    {
+      "fold": 0,
+      "mode": "fine",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.00042700000000017724,
+          "changed_vectors": 134,
+          "no_sources_outside_partition": true,
+          "seed": 20263351,
+          "selected_parents": 158
+        },
+        "inner": {
+          "CPU_s": 0.0003589999999999982,
+          "changed_vectors": 67,
+          "no_sources_outside_partition": true,
+          "seed": 20263251,
+          "selected_parents": 82
+        },
+        "train": {
+          "CPU_s": 0.0019339999999998803,
+          "changed_vectors": 382,
+          "no_sources_outside_partition": true,
+          "seed": 20263151,
+          "selected_parents": 425
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "mode": "fine",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0004620000000001845,
+          "changed_vectors": 49,
+          "no_sources_outside_partition": true,
+          "seed": 20263352,
+          "selected_parents": 73
+        },
+        "inner": {
+          "CPU_s": 0.0003609999999998337,
+          "changed_vectors": 95,
+          "no_sources_outside_partition": true,
+          "seed": 20263252,
+          "selected_parents": 108
+        },
+        "train": {
+          "CPU_s": 0.0018899999999999473,
+          "changed_vectors": 439,
+          "no_sources_outside_partition": true,
+          "seed": 20263152,
+          "selected_parents": 484
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "mode": "fine",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.00046900000000027475,
+          "changed_vectors": 50,
+          "no_sources_outside_partition": true,
+          "seed": 20263353,
+          "selected_parents": 78
+        },
+        "inner": {
+          "CPU_s": 0.0004279999999998729,
+          "changed_vectors": 92,
+          "no_sources_outside_partition": true,
+          "seed": 20263253,
+          "selected_parents": 107
+        },
+        "train": {
+          "CPU_s": 0.0018319999999998338,
+          "changed_vectors": 447,
+          "no_sources_outside_partition": true,
+          "seed": 20263153,
+          "selected_parents": 480
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "mode": "fine",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0005910000000000082,
+          "changed_vectors": 162,
+          "no_sources_outside_partition": true,
+          "seed": 20263354,
+          "selected_parents": 184
+        },
+        "inner": {
+          "CPU_s": 0.00037900000000012923,
+          "changed_vectors": 48,
+          "no_sources_outside_partition": true,
+          "seed": 20263254,
+          "selected_parents": 59
+        },
+        "train": {
+          "CPU_s": 0.0016780000000000683,
+          "changed_vectors": 376,
+          "no_sources_outside_partition": true,
+          "seed": 20263154,
+          "selected_parents": 422
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "mode": "fine",
+      "partitions": {
+        "held": {
+          "CPU_s": 0.0005969999999999587,
+          "changed_vectors": 158,
+          "no_sources_outside_partition": true,
+          "seed": 20263355,
+          "selected_parents": 172
+        },
+        "inner": {
+          "CPU_s": 0.00042199999999992244,
+          "changed_vectors": 60,
+          "no_sources_outside_partition": true,
+          "seed": 20263255,
+          "selected_parents": 80
+        },
+        "train": {
+          "CPU_s": 0.0016579999999999373,
+          "changed_vectors": 371,
+          "no_sources_outside_partition": true,
+          "seed": 20263155,
+          "selected_parents": 413
+        }
+      }
+    }
+  ]
+}

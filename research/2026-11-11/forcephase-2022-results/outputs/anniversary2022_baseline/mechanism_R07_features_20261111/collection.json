@@ -1,0 +1,24 @@
+{
+  "features_sha256": "f28fd6445009ebf6bc45dcebe89f195dfbcc47a0a4495dc76d8a988e15e21af5",
+  "new_profile_CPU_s": 202.077345191,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "parser_source_sha256": "1c9d8277906821f0bfc3dbb4babf032f1b7cad8942bc4afe03113075d7de3380",
+  "physical_CPU_s": 203.144259,
+  "pinned_sources": {
+    "clause.cpp": "9aef9ff80da1800c7f7ce16183303e1ad5418bcd235805b5288286475cd9649b",
+    "external_propagate.cpp": "43021c89c418f0f633ccc64fe62246d17cfdb2185871bcafb4c3db408a06d581",
+    "internal.hpp": "b26433d68befc5aa4787bb2d9fec477436358e85c66f7229e734ce2a3fba1fe0"
+  },
+  "qualified": 2843,
+  "reused_component_CPU_s": 286.1678938679999,
+  "semantics_checks": {
+    "ordered_first_two_signs": true,
+    "solver_calls": 0,
+    "stable_literal_dedup_and_tautology": true
+  },
+  "short_search_calls": 0,
+  "source_sha256": "853f6f721e3be72eb226b1a44a8dda7c17585f95693c5c00b1403728423944cc",
+  "verified_byte_receipts_sha256": "9acb794afd13ad372a36619adc6a767539a245081f88b3fdf66f9570eff03a35",
+  "wall_s": 62.574026749935
+}

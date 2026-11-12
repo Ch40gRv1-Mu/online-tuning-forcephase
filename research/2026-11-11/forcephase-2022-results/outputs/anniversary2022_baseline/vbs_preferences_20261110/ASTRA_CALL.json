@@ -1,0 +1,16 @@
+{
+  "model": "gpt-6-astra",
+  "task": "astra_vbs_patterns",
+  "user_explicit_delegation": true,
+  "timeout_s": 180,
+  "timeout_mechanism": "parent-managed deadline with interruption if still running; no timeout occurred",
+  "started_utc": "2026-11-10T22:15:34Z",
+  "completed_utc": "2026-11-10T22:17:17Z",
+  "elapsed_s": 103,
+  "completed_before_deadline": true,
+  "status": "COMPLETE_EXPLORATORY_NO_VALIDATED_RULE",
+  "new_solver_calls": 0,
+  "new_feature_extraction": false,
+  "report": "ASTRA_REVIEW.md",
+  "model_token_cost_measured": false
+}

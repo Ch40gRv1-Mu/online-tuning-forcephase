@@ -1,0 +1,95 @@
+{
+  "CPU_s": 0.36344999999999994,
+  "claim_scope": "Repeated2022 development replay. Mac feature fees plus publisher cluster solving, not same-machine end-to-end deployment or independent confirmation.",
+  "full_population": 4719,
+  "native_failure_exit_counts": {
+    "-24": 40,
+    "65": 5
+  },
+  "new_model_fits": 0,
+  "new_solver_calls": 0,
+  "prefix_sha256": "caf6c341776fc69a6770d3bed9d244492cefbc0623374a07ac2d0923a54dd50b",
+  "remaining_unmeasured": 3695,
+  "replay_summary_sha256": "99f6abdc736a6c6cb1dbe2548d9ade1bd5cf48c627bcbf5624925e93a81228bd",
+  "results": {
+    "coarse": {
+      "after_measured_fees_gain_pct": 0.3419609212881098,
+      "after_native_failures_before_new_fees_gain_pct": 0.3708733115321292,
+      "cliff_acquisition_cost_PAR2_s": 0.0,
+      "fallback_changed_nonD_choices": 0,
+      "fallback_lost_solves_vs_original_choices": 0,
+      "fallback_rescued_vs_original_choices": 0,
+      "free_original_gain_pct": 0.3740969122601214,
+      "incremental_cost_PAR2_seconds": {
+        "measured_acquisition": 535.5756561290002,
+        "native_failure_D_fallback": -0.389555999999871,
+        "original_query": 60.10381899999933
+      },
+      "incremental_cost_percentage_points_of_D": {
+        "measured_acquisition": 0.028912390244029442,
+        "native_failure_D_fallback": -2.1029699473843465e-05,
+        "original_query": 0.0032446304274627714
+      },
+      "new_acquisition_cliff_association_keys": [],
+      "new_acquisition_cliff_lost_solves": 0,
+      "ordinary_solved_acquisition_cost_PAR2_s": 535.5756561290004,
+      "scope": "Exact arithmetic on the same original OOF choices; unknown fees omitted only in this explicitly incomplete replay. No refitting or threshold changes.",
+      "unknown_fee_parents_in_enabled_models": 3695,
+      "with_original_query_gain_pct": 0.37085228183266744
+    },
+    "fine": {
+      "after_measured_fees_gain_pct": -0.3209861703707537,
+      "after_native_failures_before_new_fees_gain_pct": -0.29155217206056655,
+      "cliff_acquisition_cost_PAR2_s": 0.0,
+      "fallback_changed_nonD_choices": 2,
+      "fallback_lost_solves_vs_original_choices": 1,
+      "fallback_rescued_vs_original_choices": 0,
+      "free_original_gain_pct": -0.25756714618905163,
+      "incremental_cost_PAR2_seconds": {
+        "measured_acquisition": 545.2379697570003,
+        "native_failure_D_fallback": 569.413847,
+        "original_query": 60.12775699999827
+      },
+      "incremental_cost_percentage_points_of_D": {
+        "measured_acquisition": 0.029433998310184072,
+        "native_failure_D_fallback": 0.030739103180695584,
+        "original_query": 0.0032459226908240924
+      },
+      "new_acquisition_cliff_association_keys": [],
+      "new_acquisition_cliff_lost_solves": 0,
+      "ordinary_solved_acquisition_cost_PAR2_s": 545.2379697570003,
+      "scope": "Exact arithmetic on the same original OOF choices; unknown fees omitted only in this explicitly incomplete replay. No refitting or threshold changes.",
+      "unknown_fee_parents_in_enabled_models": 3695,
+      "with_original_query_gain_pct": -0.2608130688798653
+    },
+    "iso_diagnostic": {
+      "after_measured_fees_gain_pct": 1.9603135882587082,
+      "after_native_failures_before_new_fees_gain_pct": 1.9897407768183037,
+      "cliff_acquisition_cost_PAR2_s": 0.0,
+      "fallback_changed_nonD_choices": 7,
+      "fallback_lost_solves_vs_original_choices": 2,
+      "fallback_rescued_vs_original_choices": 0,
+      "free_original_gain_pct": 2.100956388425962,
+      "incremental_cost_PAR2_seconds": {
+        "measured_acquisition": 545.111825339,
+        "native_failure_D_fallback": 1999.4244250000004,
+        "original_query": 60.74333200000365
+      },
+      "incremental_cost_percentage_points_of_D": {
+        "measured_acquisition": 0.029427188559594038,
+        "native_failure_D_fallback": 0.1079364578608113,
+        "original_query": 0.0032791537468307473
+      },
+      "new_acquisition_cliff_association_keys": [],
+      "new_acquisition_cliff_lost_solves": 0,
+      "ordinary_solved_acquisition_cost_PAR2_s": 545.1118253390005,
+      "scope": "Exact arithmetic on the same original OOF choices; unknown fees omitted only in this explicitly incomplete replay. No refitting or threshold changes.",
+      "unknown_fee_parents_in_enabled_models": 3695,
+      "with_original_query_gain_pct": 2.09767723467912
+    }
+  },
+  "source_sha256": "42d395c86e8d05200af380deb278a4e3a80a9c071f593c824c2b938f1ef009bf",
+  "status": "complete_cost_effect_diagnosis",
+  "through": 1024,
+  "wall_s": 0.5751961250789464
+}

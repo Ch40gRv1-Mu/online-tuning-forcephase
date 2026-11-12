@@ -1,0 +1,55 @@
+round,status,completed_fits,physical_CPU_s,output,conclusion_or_reward
+R01,COMPLETE_RECORDED,27,,,
+R02,COMPLETE_RECORDED,27,,,
+R03,COMPLETE_RECORDED,27,,,
+R04,COMPLETE_RECORDED,27,,,
+R05,COMPLETE_RECORDED,54,,,
+R06,COMPLETE_RECORDED,27,,,
+R07,COMPLETE_RECORDED,27,,,
+R08,COMPLETE_RECORDED,27,,,
+R09,COMPLETE_RECORDED,27,,,
+R10,COMPLETE_RECORDED,36,,,
+R11,COMPLETE_RECORDED,56,,,
+R12,COMPLETE_RECORDED,126,,,
+R13b,COMPLETE_RECORDED,84,,,
+R15,COMPLETE_RECORDED,0,,,
+R16,COMPLETE_RECORDED,27,,,
+R17,COMPLETE_RECORDED,0,,,
+R18,COMPLETE_RECORDED,36,,,
+R19,COMPLETE_RECORDED,27,,,
+R20,complete_low_information_no_fits,0,,,
+R21,COMPLETE_RECORDED,27,,,
+R22,COMPLETE_RECORDED,27,,,
+R23,COMPLETE_RECORDED,36,,,
+R24,COMPLETE_RECORDED,36,,,
+R25,COMPLETE_RECORDED,36,,,
+R26_astra_rule,COMPLETE_RECORDED,0,,,
+R27_joint_completion,complete,84,,outputs/anniversary2022_baseline/mechanism_R27_20261111,
+R28_completion_time_factors,complete,42,,outputs/anniversary2022_baseline/mechanism_R28_20261111,
+R29_Horn_renaming,complete,36,,outputs/anniversary2022_baseline/mechanism_R29_20261111,
+R30_Horn_onset,complete,36,,outputs/anniversary2022_baseline/mechanism_R30_20261111,
+R31_interpretable_two_percent,complete_no_two_percent_reproduction,28,,outputs/anniversary2022_baseline/interpretable_two_percent_20261111,
+R32_interpretable_soft_rules,complete_no_two_percent_reproduction,,,outputs/anniversary2022_baseline/interpretable_soft_rules_20261111,
+R33_static_elimination,COMPLETE_NO_PRIMARY_INCREMENT_NO_TWO_PERCENT,126,,,
+R34_semantic_axes,COMPLETE_MIXED_GAIN_BELOW_TARGET_COARSE_WORSE,,,,
+R35_solver_seed_stability,RUNNING_FROZEN_SAME_HOST_PANEL,,,outputs/anniversary2022_baseline/solver_seed_stability_R35_20261111,
+R36_lookahead_rules,COMPLETE_TARGET_FAILED_STOP_HORIZON_GRID,,6.824015,outputs/anniversary2022_baseline/mechanism_R36_20261111,Conditional two-step combinations exist but candidate misses2% and harms structural transfer; stop this fixed learner.
+R37_block_cut,COMPLETE_LOW_INFORMATION_NO_FITS,0,,outputs/anniversary2022_baseline/mechanism_R37_20261111,
+R38_balanced_cut,COMPLETE_TARGET_FAILED_NO_HIERARCHY_TUNING,27,,outputs/anniversary2022_baseline/mechanism_R38_20261111,Both primary transfer points belowD despite distinct graph/null inputs; no hierarchy parameter scan.
+R39_balanced_veto,COMPLETE_NO_STABLE_GAIN_VETO_HEADROOM_BELOW_TARGET,,0.853102,outputs/anniversary2022_baseline/mechanism_R39_20261111,"Coarse negative/fine modest positive, dominated by constant-veto in fine; scope oracle cannot reach2%."
+R40_work_auxiliary,COMPLETE_NO_INCREMENT_OVER_MATCHED_NULL_STOP_AUXILIARY_SCHEME,28,52.180266,outputs/anniversary2022_baseline/mechanism_R40_v2_20261111,Actual work auxiliary has lower point improvement than matched shuffled supervision in every regime; no stable increment. Stop fixed weight/null scheme; retain original mixed positive evidence.
+R41_entropy_ablation,COMPLETE_MIXED_SIGNAL_RETAINED_NO_STABLE_TRANSFER_STOP_SUBSET_SEARCH,28,45.606207,outputs/anniversary2022_baseline/mechanism_R41_20261111,"Full-capacity40 retains conditional mixed about2% without legacy balance entropy; coarse/fine transfer still unstable, no supported gain over original42. Stop dropped-pair/subset search."
+R42_sign_prior,COMPLETE_NO_STABLE_TRANSFER_STOP_SIGN_PRIOR,42,95.84552599999999,outputs/anniversary2022_baseline/mechanism_R42_20261111,Odd direction prior helps mixed over matched no-prior but harms fine and does not surpass original42. Stop reflection/decomposition tuning; diagnose actual policy direction versus D-gate loss before more features.
+R43_error_partition,COMPLETE_DESCRIPTIVE_EXISTING_PROPOSAL_HEADROOM_INSUFFICIENT,,0.863792,outputs/anniversary2022_baseline/mechanism_R43_v2_20261111,
+R44_degree_polarity,COMPLETE_NO_JOINT_INCREMENT_MIXED_MARGINAL_POSITIVE_TRANSFER_FAILS,42,138.617143,outputs/anniversary2022_baseline/mechanism_R44_20261111,Joint degree-bias profile no supported increment over decoupled control; marginal8 gives mixed2.1559% but fine-2.5015%. Stop field/band/null tuning; original about2% conditional evidence retained.
+R45_add_only,COMPLETE_ADD_ONLY_NEW_F_HARMS_TRANSFER_STOP_OPERATOR,0,0.805333,outputs/anniversary2022_baseline/mechanism_R45_20261111,Primary extension not better than original; marginal mixed2.0697% but fine-2.6984%. AddedF itself loses more than gains in structural holds; stop this add-only scope and degree-bias view tuning.
+R46_signed_cycles,COMPLETE_NO_INCREMENT_REAL_SIGNED_CYCLES_HARM_TRANSFER,42,452.854126,outputs/anniversary2022_baseline/mechanism_R46_20261111,Real signed-cycle profile differs from typed null but does not predict improved action choice; coarse real worse than D/null. Stop forest/order/descriptor/aggregation tuning.
+R47_horn_cover,COMPLETE_DIRECTIONAL_COVER_PROXY_NO_STABLE_ADVANTAGE,42,622.845766,outputs/anniversary2022_baseline/mechanism_R47_20261111,"Real Horn-deletion proxy close toD in coarse but fine negative, neither candidate promotes. Stop matching/order/descriptor/saturation tuning."
+R48_global_tree,COMPLETE_FINITE_GRID_OPTIMA_NO_READABLE_TWO_PERCENT,,159.797559,outputs/anniversary2022_baseline/mechanism_R48_20261111,"All fixed-grid trees searched exactly; training objective improved, held cost did not. Stop grid/depth/search tuning."
+R49_incidence_elimination,COMPLETE_FILL_COUPLING_NO_STABLE_ADVANTAGE,42,665.196555,outputs/anniversary2022_baseline/mechanism_R49_20261111,"Full graph differs from exact-degree null, but primary fine loses; stop caps/order/bin tuning."
+R50_clause_table,COMPLETE_WIDTH_POLARITY_ASSOCIATION_NO_STABLE_ADVANTAGE,42,137.962377,outputs/anniversary2022_baseline/mechanism_R50_20261111,"Joint table better point than matched controls but intervals cross zero, no stable advantage versus D; stop bins/MI/null seed tuning."
+R51_gate_cost,COMPLETE_NO_STABLE_ADVANTAGE,42,129.27128,outputs/anniversary2022_baseline/mechanism_R51_20261111,"Neither primary nor control stably beats D; preserve negative result, no parameter tuning."
+R52_table_coverage,COMPLETE_NO_STABLE_ADVANTAGE,42,156.148207,outputs/anniversary2022_baseline/mechanism_R52_20261111,"Neither primary nor control stably beats D; preserve negative result, no parameter tuning."
+R53_streaming,COMPLETE_INHERITED_FULL_COVERAGE_POSITIVE_MIXED,84,1805.620739,outputs/anniversary2022_baseline/mechanism_R53_streaming_20261111,"Final mixed2.059811pct/3420; preserve positive development result, query0 optimistic; old transfer promotionfalse preserved, no independent/serving confirmation."
+R54_paid_classifier,COMPLETE_POSITIVE_SAME_DISTRIBUTION_COST_REPLAY,,1.625841,outputs/anniversary2022_baseline/mechanism_R54_paid_classifier_20261111,"Old cost classifier retains2.35pct/38net solves after actual acquisition/query composition. Original exposed model choice; not new feature or independent confirmation. Proceed real serving export, no tuning."
+R55_classifier_serving,EXPORTED_AWAIT_R53_TERMINAL_FOR_REAL_CNF_ROUTE,,2.6847380000000003,outputs/anniversary2022_baseline/mechanism_R55_classifier_serving_20261111,

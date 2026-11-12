@@ -1,0 +1,20 @@
+{
+  "eligible": 1890,
+  "features_sha256": "5fb4ccee28e17f03f38a91ea962630548d12ecd541034e9de6103fdf7495ba23",
+  "fee_scope": "Extraction metered for ledger; first predictive score deliberately assumes acquisition/query free",
+  "mixed_role_parents": 179,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "physical_CPU_s": 26.808799999999998,
+  "reference_sha256": "f2ec8c98b2ade39060847093160e835a33c4778596aa5f3cedbff23048ba91d7",
+  "semantic_checks": {
+    "cycle_2core": true,
+    "path_removal_rounds": true,
+    "solver_calls": 0,
+    "unsigned_complement_invariance": true
+  },
+  "short_search_calls": 0,
+  "source_sha256": "6253cd9da255265896f9b4a4e29225ce7c9a98aa9fbaa61a27ed351f49d2ec9e",
+  "status": "complete",
+  "wall_s": 13.226219167001545
+}

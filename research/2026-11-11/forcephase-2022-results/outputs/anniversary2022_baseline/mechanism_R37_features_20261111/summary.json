@@ -1,0 +1,20 @@
+{
+  "balanced_connector_parents": 11,
+  "base_cache_sha256": "19d52b66fa18aae432f8c844e16ea07f100b36091d002e4229d1f2219d8476b9",
+  "eligible": 2325,
+  "features_sha256": "b908aabb42a5d0ac0abe4ee23e45e847a8479eadaceb6f7dc46cc96f002d75e0",
+  "fee_scope": "Actual physical collection; predictive screen optimistic zero feature/query fees",
+  "new_native_calls": 0,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "semantic_checks": {
+    "bridge_chain": true,
+    "path": true,
+    "single_cycle": true,
+    "solver_calls": 0,
+    "two_cycles_hinge": true,
+    "variable_and_clause_reordering": true
+  },
+  "source_sha256": "3f9f2189b881394e8ab586cfea5bba2c27dbc0fc8ea13ddfdf2443a7f8b875d3",
+  "status": "complete"
+}

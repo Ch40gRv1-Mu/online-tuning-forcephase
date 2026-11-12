@@ -1,0 +1,6 @@
+{
+  "error": "UFuncTypeError(<ufunc 'divide'>, 'same_kind', dtype('float64'), dtype('int64'), 2)",
+  "physical_CPU_s": 0.0017579999999999818,
+  "status": "failed",
+  "wall_s": 0.004041624953970313
+}

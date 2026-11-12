@@ -1,0 +1,167 @@
+{
+  "cases": [
+    {
+      "SAT_calls": 0,
+      "action": "D",
+      "decision_CPU_s": 0.020305999999999713,
+      "instance_key_association_only": "00063d88244921d6ec46aeab6866a8e2",
+      "min_predicted_PAR2_savings": [
+        -46.54580881397553,
+        -45.85803450794748
+      ],
+      "native_CPU_s": 0.07992099999999999,
+      "parent_CPU_s": 0.03044699999999878,
+      "routing_CPU_s": 0.11037699999999973,
+      "short_search_calls": 0,
+      "solver_flags": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "status": "ok",
+      "wall_s": 0.1160090418998152
+    },
+    {
+      "SAT_calls": 0,
+      "action": "D",
+      "decision_CPU_s": 0.031007999999999925,
+      "instance_key_association_only": "0033baadbd48d3f880e9b5a733bd4950",
+      "min_predicted_PAR2_savings": [
+        -2.1502602964811017,
+        -1.057020266797541
+      ],
+      "native_CPU_s": 0.006925000000000001,
+      "parent_CPU_s": 0.038280000000000314,
+      "routing_CPU_s": 0.04520500000000105,
+      "short_search_calls": 0,
+      "solver_flags": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "status": "ok",
+      "wall_s": 0.08756679180078208
+    },
+    {
+      "SAT_calls": 0,
+      "action": "D",
+      "decision_CPU_s": 0.0210600000000003,
+      "instance_key_association_only": "003a77d2aa15a5f93aa2cfe79b986c9e",
+      "min_predicted_PAR2_savings": [
+        -72.98116282656162,
+        -40.17138593942755
+      ],
+      "native_CPU_s": 0.05007400000000002,
+      "parent_CPU_s": 0.025764000000000564,
+      "routing_CPU_s": 0.07583900000000021,
+      "short_search_calls": 0,
+      "solver_flags": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "status": "ok",
+      "wall_s": 0.07764179212972522
+    },
+    {
+      "SAT_calls": 0,
+      "action": "Fminus",
+      "decision_CPU_s": 0.01964599999999983,
+      "instance_key_association_only": "0041051c73dcdd885d412a38e8b09fba",
+      "min_predicted_PAR2_savings": [
+        48.73143981831543,
+        52.92793157107413
+      ],
+      "native_CPU_s": 0.009391999999999984,
+      "parent_CPU_s": 0.024072000000000315,
+      "routing_CPU_s": 0.033464999999999634,
+      "short_search_calls": 0,
+      "solver_flags": [
+        "--phase=0",
+        "--forcephase=1"
+      ],
+      "status": "ok",
+      "wall_s": 0.033937709173187613
+    },
+    {
+      "SAT_calls": 0,
+      "action": "Fminus",
+      "decision_CPU_s": 0.01968700000000112,
+      "instance_key_association_only": "0041f01bcd7d0d1f9541cea6da79ad57",
+      "min_predicted_PAR2_savings": [
+        5.121383308268385,
+        31.431615219343584
+      ],
+      "native_CPU_s": 0.05216699999999999,
+      "parent_CPU_s": 0.021307000000000187,
+      "routing_CPU_s": 0.07347400000000093,
+      "short_search_calls": 0,
+      "solver_flags": [
+        "--phase=0",
+        "--forcephase=1"
+      ],
+      "status": "ok",
+      "wall_s": 0.11810324992984533
+    },
+    {
+      "SAT_calls": 0,
+      "action": "D",
+      "decision_CPU_s": 0.020080000000000098,
+      "instance_key_association_only": "0059d4b1cf79efbc6e6ed50caee0448e",
+      "min_predicted_PAR2_savings": [
+        -259.36932645209396,
+        -225.58792879747534
+      ],
+      "native_CPU_s": 0.0064519999999999855,
+      "parent_CPU_s": 0.024305999999999273,
+      "routing_CPU_s": 0.03075799999999873,
+      "short_search_calls": 0,
+      "solver_flags": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "status": "ok",
+      "wall_s": 0.03178374981507659
+    },
+    {
+      "SAT_calls": 0,
+      "action": "D",
+      "decision_CPU_s": 0.0298790000000011,
+      "instance_key_association_only": "005ccb378ced61c02105ed7ee0a62038",
+      "min_predicted_PAR2_savings": [
+        -34.254712278302584,
+        -34.00773151366831
+      ],
+      "native_CPU_s": 0.05625800000000003,
+      "parent_CPU_s": 0.03416400000000053,
+      "routing_CPU_s": 0.09042299999999948,
+      "short_search_calls": 0,
+      "solver_flags": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "status": "ok",
+      "wall_s": 0.1414125410374254
+    },
+    {
+      "SAT_calls": 0,
+      "action": "D",
+      "decision_CPU_s": 0.020006999999999664,
+      "instance_key_association_only": "00a62eb89afbf27e1addf8f5c437da9b",
+      "min_predicted_PAR2_savings": [
+        -30.510203098880176,
+        -74.81441474517035
+      ],
+      "native_CPU_s": 0.07072799999999996,
+      "parent_CPU_s": 0.02448200000000078,
+      "routing_CPU_s": 0.09521000000000157,
+      "short_search_calls": 0,
+      "solver_flags": [
+        "--phase=1",
+        "--forcephase=0"
+      ],
+      "status": "ok",
+      "wall_s": 0.09585754200816154
+    }
+  ],
+  "scope": "Real CNF input/inference fidelity and fees; not policy performance confirmation",
+  "selection": "First8 sorted previously verified public-input keys, no outcome selection",
+  "status": "complete"
+}

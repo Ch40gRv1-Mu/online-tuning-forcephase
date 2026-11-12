@@ -1,0 +1,17 @@
+{
+  "alarm_per_attempt_s": 12,
+  "claim": "Candidate resource policy; no independent or solver-deployment confirmation",
+  "first_and_retry_costs_both_charged": true,
+  "first_binary": "<LOCAL_WORKSPACE>/work/native_linear42_compact_20261111/native_linear42",
+  "first_binary_sha256": "c962619e45cafdfaa438ae9ef22860f96ea95629b225223ca9cdda213b66f890",
+  "first_requested_CPU_s": 8,
+  "model": "<LOCAL_WORKSPACE>/outputs/anniversary2022_baseline/linear42_compact_prefix32_20261111/model.joblib",
+  "model_sha256": "ce4b764d6205870747f8d21256fe1807eee3994816006691a42af74535c2c2e8",
+  "model_weights_retrained": false,
+  "retry_binary": "<LOCAL_WORKSPACE>/work/native_linear42_cpu16_20261111/native_linear42_cpu16",
+  "retry_binary_sha256": "53a371f89322025e10743893c747a0784fe7fe1dd632fb1da489a45b536b4ba8",
+  "retry_only_on_exit": -24,
+  "retry_requested_CPU_s": 16,
+  "schema": "forcephase.linear42.min3.cpu_retry.v1",
+  "wrapper_per_attempt_s": 14
+}

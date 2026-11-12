@@ -1,0 +1,53 @@
+{
+  "commit": "9f3a418c47bc4ecef9f940a39db2752a456632b7",
+  "files": [
+    {
+      "path": "src/extract/CNFBaseFeatures.h",
+      "sha256": "ca1d99e99e7f5a3f6e174842aa065c8ed5015651829073415b33c660ced32f91",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/extract/CNFBaseFeatures.h"
+    },
+    {
+      "path": "src/extract/IExtractor.h",
+      "sha256": "c70b78c7f839128d631c7de2e36cd2c266be1a70e2d294ad2b21ca2ec569e159",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/extract/IExtractor.h"
+    },
+    {
+      "path": "src/util/StreamBuffer.h",
+      "sha256": "6ab560f2abad09d66993a1e25203870b80b36ecb9265f06e30285d5855a18587",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/util/StreamBuffer.h"
+    },
+    {
+      "path": "src/util/CaptureDistribution.h",
+      "sha256": "a6afb2cbb4cdec065cf1897cf6d19a86ff81e41ecbd747d0c00cf4e0b5ebb76a",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/util/CaptureDistribution.h"
+    },
+    {
+      "path": "src/util/CaptureDistribution.cc",
+      "sha256": "4f689cedc019acc72dccd6d96619fb0de47a84796ef3def7fc81a7ada9b40a41",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/util/CaptureDistribution.cc"
+    },
+    {
+      "path": "src/util/UnionFind.h",
+      "sha256": "36d8e44e4258d4897384e6f36299036bf8549de81d9d44e1c0ea09543565f9c2",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/util/UnionFind.h"
+    },
+    {
+      "path": "src/util/UnionFind.cc",
+      "sha256": "5c6b80433d191a78e42966ff2ae33450ce0a3199e38d26be101949bb441e8e22",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/util/UnionFind.cc"
+    },
+    {
+      "path": "src/util/SolverTypes.h",
+      "sha256": "0b0bdeb27a0b0c0137c58e3a44dc84364a214088a1b28fccb3a3a43a1d26fca8",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/util/SolverTypes.h"
+    },
+    {
+      "path": "src/extract/CNFBaseFeatures.cc",
+      "sha256": "33bc4545fc3ebd949555f124776d9d6dd0b600195fd6b103b85b51d6cbb7ff9f",
+      "url": "https://raw.githubusercontent.com/Udopia/gbdc/9f3a418c47bc4ecef9f940a39db2752a456632b7/src/extract/CNFBaseFeatures.cc"
+    }
+  ],
+  "preparation_note": "IExtractor is header-only; an attempted IExtractor.cc URL returned404. Failed preparation CPU was not fully metered and is not recorded as zero.",
+  "repository": "https://github.com/Udopia/gbdc",
+  "unmodified_upstream": true
+}

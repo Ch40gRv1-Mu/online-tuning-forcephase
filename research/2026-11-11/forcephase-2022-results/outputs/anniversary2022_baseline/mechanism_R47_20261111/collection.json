@@ -1,0 +1,47 @@
+{
+  "actual_null_distinct": 2319,
+  "attempted": 2325,
+  "failed": 0,
+  "features_sha256": "0459de90da3427ad6165c8cc708bec67aae3e8b110f19919ca49fae05c318920",
+  "informative": 1997,
+  "library_versions": {
+    "numpy": "2.5.4",
+    "sklearn": "1.9.1"
+  },
+  "matching_passes": 27900,
+  "new_solver_calls": 0,
+  "new_standalone_extractor_processes": 0,
+  "parents": 4719,
+  "reference_sha256": "588add70ca1b41ee7a1bfe1299292ec0daf298cd55fff8fbe6a2b0c4a477a514",
+  "semantic_checks": {
+    "CNF_solver_calls": 0,
+    "deletion_is_not_original_formula_conditioning": true,
+    "fixtures": [
+      {
+        "complement_direction_mapping": true,
+        "seed": 202611470,
+        "triangle_cover_upper_fraction": 0.6666666666666666,
+        "triangle_matching_lower_fraction": 0.3333333333333333
+      },
+      {
+        "complement_direction_mapping": true,
+        "seed": 202611471,
+        "triangle_cover_upper_fraction": 0.6666666666666666,
+        "triangle_matching_lower_fraction": 0.3333333333333333
+      },
+      {
+        "complement_direction_mapping": true,
+        "seed": 202611472,
+        "triangle_cover_upper_fraction": 0.6666666666666666,
+        "triangle_matching_lower_fraction": 0.3333333333333333
+      }
+    ],
+    "matching_passes": 14,
+    "single_edge_matching": 1
+  },
+  "source_sha256": "c117cf13711b6e8c9b3fbf682761e181f48159e3b9d5274a89a939ae6a2b6f57",
+  "successful": 2325,
+  "unknown_failed_matching_work": 0,
+  "unsaturated_profiles": 1997,
+  "wall_s": 224.480453458149
+}

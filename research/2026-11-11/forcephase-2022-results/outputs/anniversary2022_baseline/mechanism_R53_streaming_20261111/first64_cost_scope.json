@@ -1,0 +1,8 @@
+{
+  "first64_complete": true,
+  "receipt_CPU_s": 57.562779000000006,
+  "owner_direct_CPU_partial_s": 0.681841,
+  "not_closed_owner_cost": true,
+  "no_double_charge": true,
+  "note": "Original first64 CPU_s_open_not_closed excludes alive pool workers; this receipt sum supplies finished-unit cost only, true whole-tree cost closes at owner terminal."
+}

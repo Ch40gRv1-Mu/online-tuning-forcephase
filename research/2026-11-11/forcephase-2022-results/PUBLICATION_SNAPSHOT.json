@@ -1,0 +1,70 @@
+{
+  "created_local_time": "2026-11-11T22:16:43.612288-05:00",
+  "timezone": "America/New_York",
+  "research_goal": "PAUSED_BY_USER",
+  "population": "4719 retained Anniversary2022 formulas; original5355 preserved,636 official-all-track-unsolved excluded",
+  "baseline_runs": 14157,
+  "baseline_cutoff_CPU_s": 600,
+  "source_root_commit": "05c56a422e50d97b76768f6b0dcb5644536d38db",
+  "closed_recorded_rounds_at_publication": 52,
+  "completed_base_outer_fits_at_publication": 1693,
+  "completed_rule_fits": 196,
+  "completed_support_fits": 28,
+  "closed_measured_CPU_s_at_publication": 16411.524576859003,
+  "open_costs": [
+    "R35 inherited owner tree"
+  ],
+  "R53_progress": {
+    "active_workers": 0,
+    "completed": 1876,
+    "expected": 1876,
+    "failed_new_profiles": 11,
+    "open_CPU_excludes_inflight_and_worker_import_not_closed": true,
+    "open_CPU_partial_s": 1679.1302989999997,
+    "stage": "collecting",
+    "upstream_failed_paidD": 25,
+    "valid_new_profiles": 1840,
+    "wall_s": 2706.114363290835
+  },
+  "R53_completion": {
+    "attempted": 1876,
+    "new_solver_calls": 0,
+    "physical_CPU_s": 1805.6200099999999,
+    "scored_stages": [
+      512,
+      1876
+    ],
+    "status": "complete",
+    "wall_s": 2743.2139686250594
+  },
+  "R35_snapshot": {
+    "observed_UTC": "2026-11-12T03:10:47Z",
+    "status": "RUNNING",
+    "planned_parents": 32,
+    "planned_units": 192,
+    "progress": {
+      "completed_parents": 29,
+      "completed_units": 172,
+      "current_parent": 30,
+      "phase": "solving",
+      "total_units": 192,
+      "valid_units": 151,
+      "wall_s": 15672.878315283
+    },
+    "actual_owned_timing_children": 2,
+    "status_counts": {
+      "CPU_TIMEOUT:NOT_ANSWERED": 52,
+      "ERROR:NOT_ANSWERED": 6,
+      "FILE_LIMIT:NOT_ANSWERED": 15,
+      "SAT:VERIFIED_MODEL": 43,
+      "UNSAT:VERIFIED_LRAT": 56
+    },
+    "terminal_completion": null,
+    "terminal_failure": null,
+    "scientific_preference_feedback_read": false,
+    "interpretation": "Incomplete original seed-stability diagnostic, not a policy score. Resource errors are invalid, not timeouts/winners. One network-preparation parent has6 missing units. Running expense is open."
+  },
+  "R55_actual_CNF_route_qualification": "NOT_EXECUTED",
+  "R56": "Source review only before pause; not implemented, frozen, trained, or scored",
+  "publication_did_not_resume_research": true
+}

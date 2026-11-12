@@ -1,0 +1,40 @@
+{
+  "fits": [
+    {
+      "CPU_s": 2.1773569999999998,
+      "training_seed": 20261111
+    },
+    {
+      "CPU_s": 1.850823,
+      "training_seed": 20261112
+    },
+    {
+      "CPU_s": 1.8119329999999998,
+      "training_seed": 20261113
+    }
+  ],
+  "full_development_model_fits": 3,
+  "inner_validation_parents": 932,
+  "integration_cases": 8,
+  "margin_PAR2_s": 0.0,
+  "model_bytes": 17081250,
+  "model_sha256": "159bf7df5d641b9a7e7778b803f99246ee2a50f2ab82957bbb93aa56fbe39a39",
+  "model_size": {
+    "feature_index_choices": 245094,
+    "internal_splits": 245094,
+    "leaves": 245862,
+    "nodes": 490956,
+    "predictive_float_scalars": 736818,
+    "trees": 768
+  },
+  "new_solver_calls": 0,
+  "outer_fits": 0,
+  "physical_native_CPU_s": 0.33191699999999996,
+  "physical_parent_CPU_s": 7.742633,
+  "scope": "Candidate materialization and partial-fee replay, no new confirmation or test labels",
+  "short_search_calls": 0,
+  "source_sha256": "672c46373b7bc31d7a201b390c209878fdfc9d4590917000901aa96a1682471f",
+  "status": "complete",
+  "training_parents": 3787,
+  "wall_s": 4.333649209002033
+}

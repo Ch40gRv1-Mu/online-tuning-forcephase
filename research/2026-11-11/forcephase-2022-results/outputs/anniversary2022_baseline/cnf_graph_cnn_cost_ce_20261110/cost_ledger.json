@@ -1,0 +1,23 @@
+{
+  "encoded_and_verified_parents": 2843,
+  "population": 4719,
+  "cross_validation_fits": 36,
+  "full_development_fits": 2,
+  "new_solver_calls": 0,
+  "new_solver_CPU_s": 0,
+  "preparation_parent_CPU_s": 117.502288,
+  "preparation_verifier_CPU_s": 22.268834,
+  "expected_loss_training_analysis_CPU_s": 310.857328,
+  "cost_ce_training_analysis_CPU_s": 487.462173,
+  "measured_phase_CPU_s": 938.0906229999999,
+  "measured_phase_core_hours": 0.2605807286111111,
+  "encoding_CPU_s_subset_of_preparation": 72.40655610499998,
+  "preparation_wall_s": 71.3037017500028,
+  "training_expected_wall_s": 196.53941345820203,
+  "training_cost_ce_wall_s": 307.77384754200466,
+  "warm_inference_is_included_in_training_analysis_CPU": true,
+  "dependency_install_and_initial_import_CPU": "unmetered; excluded from phase totals",
+  "duplicate_solver_cost": 0,
+  "separate_cold_entry_CPU_s": 1.73,
+  "measured_phase_plus_cold_entry_CPU_s": 939.820623
+}

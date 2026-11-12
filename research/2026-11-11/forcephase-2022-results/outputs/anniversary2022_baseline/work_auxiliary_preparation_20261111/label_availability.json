@@ -1,0 +1,26 @@
+{
+  "actions": {
+    "D": {
+      "available": 4715,
+      "max": 59978056.0,
+      "missing": 4,
+      "zero": 224
+    },
+    "Fminus": {
+      "available": 4716,
+      "max": 57814064.0,
+      "missing": 3,
+      "zero": 224
+    },
+    "Fplus": {
+      "available": 4718,
+      "max": 59109018.0,
+      "missing": 1,
+      "zero": 225
+    }
+  },
+  "auxiliary_targets_only_if_a_new_protocol_is_frozen": true,
+  "inputs_remain_static_CNF_only": true,
+  "parents": 4719,
+  "source": "Published complete seed0 T600 matrix, existing development only; label availability, no new policy outcome"
+}

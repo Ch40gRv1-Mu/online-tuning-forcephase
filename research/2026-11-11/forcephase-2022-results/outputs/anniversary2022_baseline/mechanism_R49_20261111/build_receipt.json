@@ -1,0 +1,18 @@
+{
+  "already_in_owner_total_do_not_charge_again": true,
+  "binary_sha256": "d48d9f0d345ef1b4b32ff42a97e45acd249b5a75cb9a0630d342bd64ae8e1e2d",
+  "child_CPU_s": 0.7819149999999999,
+  "command": [
+    "/usr/bin/clang++",
+    "-std=c++17",
+    "-O3",
+    "-DNDEBUG",
+    "-dynamiclib",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/incidence_elimination.cpp",
+    "-o",
+    "<LOCAL_WORKSPACE>/outputs/anniversary2022_baseline/mechanism_R49_20261111/native/incidence_elimination.dylib"
+  ],
+  "exit": 0,
+  "source_sha256": "00cfec9e6af81d13c4213c5300337c02376b6bff5bf8132bcfa2f359f3595434",
+  "wall_s": 3.9668762078508735
+}

@@ -1,0 +1,88 @@
+{
+  "outer_fits": 81,
+  "final_calibration_fit_models": 2,
+  "new_solver_calls": 0,
+  "new_feature_calls_during_scoring": 0,
+  "normal_entry_checks": [
+    {
+      "name": "relative_cost_rule6_predict_plain",
+      "result": {
+        "action": "D",
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=0"
+        ],
+        "predicted_PAR2_saving_s": null,
+        "switch_margin_PAR2_s": null,
+        "CPU_s_after_import": 0.004278999999999922
+      },
+      "cold_wall_s": 0.97,
+      "cold_CPU_s": 0.66,
+      "engineering_only": false
+    },
+    {
+      "name": "relative_cost_rule6_predict_gzip",
+      "result": {
+        "action": "D",
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=0"
+        ],
+        "predicted_PAR2_saving_s": null,
+        "switch_margin_PAR2_s": null,
+        "CPU_s_after_import": 0.003944999999999976
+      },
+      "cold_wall_s": 0.65,
+      "cold_CPU_s": 0.6299999999999999,
+      "engineering_only": false
+    },
+    {
+      "name": "relative_cost_pooled_predict_plain",
+      "result": {
+        "action": "D",
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=0"
+        ],
+        "predicted_PAR2_saving_s": {
+          "Fplus": -108.0365638442253,
+          "Fminus": -125.06060567731805
+        },
+        "switch_margin_PAR2_s": 0.0,
+        "CPU_s_after_import": 0.725675
+      },
+      "cold_wall_s": 1.9,
+      "cold_CPU_s": 1.48,
+      "engineering_only": false
+    },
+    {
+      "name": "relative_cost_rule6_active_branch_check",
+      "result": {
+        "action": "D",
+        "solver_flags": [
+          "--phase=1",
+          "--forcephase=0"
+        ],
+        "predicted_PAR2_saving_s": {
+          "Fplus": -153.9633981099895,
+          "Fminus": -190.81135653710686
+        },
+        "switch_margin_PAR2_s": 0.0,
+        "CPU_s_after_import": 0.113629
+      },
+      "cold_wall_s": 0.72,
+      "cold_CPU_s": 0.7,
+      "engineering_only": true
+    }
+  ],
+  "training_analysis_CPU_s": 73.149924,
+  "training_analysis_wall_s": [
+    51.85697245900519,
+    19.085441708099097
+  ],
+  "normal_entry_check_CPU_s": 3.4699999999999998,
+  "existing_feature_measurements_reused_not_new_physical_CPU": true,
+  "free_GBD_cost": "optimistic zero acquisition; no deployment claim",
+  "rule6_cost": "existing measured multi-pass receipts summed; combined route not remeasured for all inputs",
+  "dependency_install_and_initial_import_CPU": "unmetered; excluded from phase timing"
+}

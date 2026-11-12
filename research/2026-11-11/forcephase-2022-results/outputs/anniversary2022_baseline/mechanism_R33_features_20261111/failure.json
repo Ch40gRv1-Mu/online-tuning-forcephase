@@ -1,0 +1,7 @@
+{
+  "completed_records": 0,
+  "error": "AssertionError()",
+  "physical_child_CPU_s": 0.001576,
+  "physical_parent_CPU_s": 0.4562949999999999,
+  "wall_s": 0.6793725830502808
+}

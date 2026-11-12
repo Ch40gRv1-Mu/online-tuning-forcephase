@@ -1,0 +1,17 @@
+{
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-I<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418",
+    "-I<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_libarchive_headers_3_7_7",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/native_linear42.cpp",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/CaptureDistribution.cc",
+    "-larchive",
+    "-o",
+    "<LOCAL_WORKSPACE>/work/native_linear42_compact_20261111/native_linear42"
+  ],
+  "exit": 0,
+  "stderr": "",
+  "wall_s": 4.782189165940508
+}

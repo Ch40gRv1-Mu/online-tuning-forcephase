@@ -1,0 +1,8 @@
+{
+  "compilation_included": true,
+  "model_retraining": false,
+  "new_solver_calls": 0,
+  "physical_child_CPU_s": 27.420686,
+  "physical_parent_CPU_s": 2.59851,
+  "wall_s": 34.28564083389938
+}

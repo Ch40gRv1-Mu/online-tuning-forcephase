@@ -1,0 +1,18 @@
+{
+  "CPU_s": 0.028911,
+  "files": [
+    {
+      "path": "archive.h",
+      "sha256": "11c373fab05e8f017220aff1d89cec3cf32146b44d6cb56aeb12e968bc3b950b",
+      "url": "https://raw.githubusercontent.com/libarchive/libarchive/v3.7.7/libarchive/archive.h"
+    },
+    {
+      "path": "archive_entry.h",
+      "sha256": "510ae3e21a800403bb1c8d413d5ddabaee0b38facb8491b60bb6da55f84f4695",
+      "url": "https://raw.githubusercontent.com/libarchive/libarchive/v3.7.7/libarchive/archive_entry.h"
+    }
+  ],
+  "headers_only": true,
+  "runtime_library": "macOS SDK libarchive",
+  "wall_s": 0.15456254198215902
+}

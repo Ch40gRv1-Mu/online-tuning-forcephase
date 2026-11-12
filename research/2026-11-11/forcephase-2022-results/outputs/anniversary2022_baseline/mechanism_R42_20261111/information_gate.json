@@ -1,0 +1,8 @@
+{
+  "fixed_vectors": 107,
+  "involution_exact": true,
+  "new_physical_labels": 0,
+  "nonfixed_vectors": 4612,
+  "passed": true,
+  "sign_constrained_population_oracle_pct": 10.80989681046806
+}

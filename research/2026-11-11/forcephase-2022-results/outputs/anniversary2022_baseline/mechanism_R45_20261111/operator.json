@@ -1,0 +1,10 @@
+{
+  "base": "R12linear42min3",
+  "extension_null": "R44decoupled99",
+  "extension_primary": "R44joint99",
+  "extension_secondary": "R44marginal99",
+  "new_F_only_old_D_and_count_eligible": true,
+  "operator": "keep_original_F_else_add_if_count_qualified",
+  "preserve_old_F": true,
+  "scope": "Executable action combiner in source, not complete exported trained models or serving deployment"
+}

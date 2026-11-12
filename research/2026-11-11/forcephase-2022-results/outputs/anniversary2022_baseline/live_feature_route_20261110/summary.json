@@ -1,0 +1,133 @@
+{
+  "acquired": 2843,
+  "action_mismatches": [],
+  "analysis_and_collection_CPU_s": 86.135603,
+  "budgets": {
+    "120": {
+      "coarse_cluster_vs_D": {
+        "block_interval_95_pct": [
+          -0.00024515749955483237,
+          0.5155198270140914
+        ],
+        "gain_pct": 0.18290153644944396,
+        "lost_solves": 5,
+        "newly_solved": 11,
+        "reference_mean_PAR2": 112.96363421339268,
+        "reference_solved": 2715,
+        "selected_mean_PAR2": 112.75702199078722,
+        "solved": 2721
+      },
+      "fine_shape_vs_D": {
+        "block_interval_95_pct": [
+          -0.10227018093833087,
+          0.4926262103069692
+        ],
+        "gain_pct": 0.18290153644944396,
+        "lost_solves": 5,
+        "newly_solved": 11,
+        "reference_mean_PAR2": 112.96363421339268,
+        "reference_solved": 2715,
+        "selected_mean_PAR2": 112.75702199078722,
+        "solved": 2721
+      }
+    },
+    "300": {
+      "coarse_cluster_vs_D": {
+        "block_interval_95_pct": [
+          0.0025439267496777836,
+          1.2964498184331659
+        ],
+        "gain_pct": 0.5310554391507499,
+        "lost_solves": 3,
+        "newly_solved": 17,
+        "reference_mean_PAR2": 234.14359065162114,
+        "reference_solved": 3086,
+        "selected_mean_PAR2": 232.9001583780428,
+        "solved": 3100
+      },
+      "fine_shape_vs_D": {
+        "block_interval_95_pct": [
+          0.167111909673733,
+          0.932232174096556
+        ],
+        "gain_pct": 0.5310554391507499,
+        "lost_solves": 3,
+        "newly_solved": 17,
+        "reference_mean_PAR2": 234.14359065162114,
+        "reference_solved": 3086,
+        "selected_mean_PAR2": 232.9001583780428,
+        "solved": 3100
+      }
+    },
+    "60": {
+      "coarse_cluster_vs_D": {
+        "block_interval_95_pct": [
+          -0.22860216260135754,
+          0.27051535451381964
+        ],
+        "gain_pct": 0.035810299918688934,
+        "lost_solves": 4,
+        "newly_solved": 7,
+        "reference_mean_PAR2": 64.36222295401568,
+        "reference_solved": 2378,
+        "selected_mean_PAR2": 64.33917464894151,
+        "solved": 2381
+      },
+      "fine_shape_vs_D": {
+        "block_interval_95_pct": [
+          -0.17241496071618465,
+          0.24245040382405472
+        ],
+        "gain_pct": 0.035810299918688934,
+        "lost_solves": 4,
+        "newly_solved": 7,
+        "reference_mean_PAR2": 64.36222295401568,
+        "reference_solved": 2378,
+        "selected_mean_PAR2": 64.33917464894151,
+        "solved": 2381
+      }
+    },
+    "600": {
+      "coarse_cluster_vs_D": {
+        "block_interval_95_pct": [
+          0.001172190181723121,
+          2.054239145391031
+        ],
+        "gain_pct": 0.8355596505643836,
+        "lost_solves": 3,
+        "newly_solved": 19,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 389.2627256222507,
+        "solved": 3401
+      },
+      "fine_shape_vs_D": {
+        "block_interval_95_pct": [
+          0.33018842339690085,
+          1.4667541709918046
+        ],
+        "gain_pct": 0.8355596505643836,
+        "lost_solves": 3,
+        "newly_solved": 19,
+        "reference_mean_PAR2": 392.54265364738285,
+        "reference_solved": 3385,
+        "selected_mean_PAR2": 389.2627256222507,
+        "solved": 3401
+      }
+    }
+  },
+  "child_CPU_s": 120.245765,
+  "elapsed_wall_s": 60.73629541695118,
+  "extractor_sha256": "66701e8ef6105afc844c545edbe9c12dc973c1c4e334b12ffc2c91aa1f53f7b6",
+  "feature_CPU_s": 140.68322615299988,
+  "identity_CPU_s": 21.148639,
+  "inputs_sha256": {
+    "frozen": "952bd967c9c983b923fe55f203c8d2050a3ded4852e53d75de83253e714c749f",
+    "groups": "88c7c2b235aaff2c5292fa5561bc658e2e1e79cb30e053c6ee794e221d9016ec",
+    "sizes": "15a3d19fd23ba72dd7c77b1b86113873f160760fa1c9710e9e5ed6a23ba29d84"
+  },
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "successful": 2843,
+  "verifier_sha256": "67edcbcc38d6d4e3e049c35f904aacb5700e7ce7c3105e87a6bf8bc9db9e5899"
+}

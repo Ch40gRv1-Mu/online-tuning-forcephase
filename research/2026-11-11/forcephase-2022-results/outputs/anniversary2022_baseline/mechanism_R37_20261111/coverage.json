@@ -1,0 +1,7 @@
+{
+  "at_least_two_qualifying_blocks": 109,
+  "balanced": 11,
+  "eligible": 2325,
+  "largest_block_ge99pct_parents": 2069,
+  "largest_block_variable_fraction_median": 1.0
+}

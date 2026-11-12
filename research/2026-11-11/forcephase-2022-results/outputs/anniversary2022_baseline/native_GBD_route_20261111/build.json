@@ -1,0 +1,20 @@
+{
+  "CPU_s": 1.450115,
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-I<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/native_gbd_features.cpp",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/extract/CNFBaseFeatures.cc",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/CaptureDistribution.cc",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/UnionFind.cc",
+    "-larchive",
+    "-o",
+    "<LOCAL_WORKSPACE>/work/native_gbd_features_20261111/native_gbd_features"
+  ],
+  "exit": 1,
+  "stderr": "In file included from <LOCAL_WORKSPACE>/src/anniversary2022_baseline/native_gbd_features.cpp:12:\n<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/StreamBuffer.h:23:10: fatal error: 'archive.h' file not found\n#include <archive.h>\n         ^~~~~~~~~~~\n1 error generated.\nIn file included from <LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/extract/CNFBaseFeatures.cc:10:\n<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/StreamBuffer.h:23:10: fatal error: 'archive.h' file not found\n#include <archive.h>\n         ^~~~~~~~~~~\n1 error generated.\n",
+  "vendor_lock_sha256": "4707da22fd0739936c0b015d18a5f9f0696d45f9d259f8ec0b8bc948d8e31949",
+  "wall_s": 3.531103084096685
+}

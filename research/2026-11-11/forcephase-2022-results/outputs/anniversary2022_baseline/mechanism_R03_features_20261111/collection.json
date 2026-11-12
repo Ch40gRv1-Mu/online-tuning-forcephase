@@ -1,0 +1,19 @@
+{
+  "features_sha256": "94ee6435b28c2ec4273da374b3db23ddc9402fce1891da36f9640e11cd66cca1",
+  "new_profile_CPU_s": 200.03725097200004,
+  "new_solver_calls": 0,
+  "parents": 4719,
+  "physical_CPU_s": 201.160311,
+  "pinned_decompose_sha256": "01cb347b4155ec19983b02f7948eb46fa2ca9969e6212a00c35c0c60e69bb434",
+  "qualified": 2843,
+  "reused_component_CPU_s": 286.1678938679999,
+  "semantics_checks": {
+    "negated_equivalence_minimum_representative": true,
+    "solver_calls": 0,
+    "tautology_and_duplicate_rewrite": true
+  },
+  "short_search_calls": 0,
+  "source_sha256": "1c9d8277906821f0bfc3dbb4babf032f1b7cad8942bc4afe03113075d7de3380",
+  "verified_byte_receipts_sha256": "9acb794afd13ad372a36619adc6a767539a245081f88b3fdf66f9570eff03a35",
+  "wall_s": 65.02997979195789
+}

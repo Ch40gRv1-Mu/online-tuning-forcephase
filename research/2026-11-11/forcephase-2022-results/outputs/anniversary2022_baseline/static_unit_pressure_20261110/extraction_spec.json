@@ -1,0 +1,16 @@
+{
+  "feature_set": "pressure",
+  "feature_names": [
+    "aligned_unit_contrast",
+    "opposed_unit_contrast",
+    "conflict_contrast",
+    "unit_pressure",
+    "pure_positive_share",
+    "pure_negative_share",
+    "raw_binary_share",
+    "raw_mean_width"
+  ],
+  "parser_sha256": "7d89a25cfd1d4e56cf5628d3200a04ae2d97850686c68a81fcc8e8f255994d8b",
+  "checker_sha256": "7d89a25cfd1d4e56cf5628d3200a04ae2d97850686c68a81fcc8e8f255994d8b",
+  "dataset_sha256": "e40e61bc6d9b7223cf7e3658fc561848ab43d9e5993a7207bc3092051a2beaae"
+}

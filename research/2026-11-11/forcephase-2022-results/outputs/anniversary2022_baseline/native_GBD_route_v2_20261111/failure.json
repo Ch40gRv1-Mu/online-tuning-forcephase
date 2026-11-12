@@ -1,0 +1,8 @@
+{
+  "error": "DTypePromotionError(\"The DType <class 'numpy.dtypes.StrDType'> could not be promoted by <class 'numpy.dtypes._PyFloatDType'>. This means that no common DType exists for the given inputs. For example they cannot be stored in a single array unless the dtype is `object`. The full list of DTypes is: (<class 'numpy.dtypes.StrDType'>, <class 'numpy.dtypes._PyFloatDType'>)\")",
+  "new_solver_calls": 0,
+  "physical_native_CPU_s": 0.114521,
+  "physical_parent_CPU_s": 1.1119789999999998,
+  "status": "failed",
+  "wall_s": 1.7331694590393454
+}

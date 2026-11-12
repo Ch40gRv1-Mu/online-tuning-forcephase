@@ -1,0 +1,40 @@
+{
+  "source_evaluation_commit": "0d82f6ed932e3f5ad0bde8d96d847dadc9ee8aa0",
+  "exporter_sha256": "d7449ec1408ed02246a961ffc3e418101a7f790d7e42521cb14bcd1728511592",
+  "protocol": "refine-logs/anniversary2022_baseline/VBS_PREFERENCE_20261110.md",
+  "new_solver_calls": 0,
+  "Astra": {
+    "model": "gpt-6-astra",
+    "task": "astra_vbs_patterns",
+    "user_explicit_delegation": true,
+    "timeout_s": 180,
+    "timeout_mechanism": "parent-managed deadline with interruption if still running; no timeout occurred",
+    "started_utc": "2026-11-10T22:15:34Z",
+    "completed_utc": "2026-11-10T22:17:17Z",
+    "elapsed_s": 103,
+    "completed_before_deadline": true,
+    "status": "COMPLETE_EXPLORATORY_NO_VALIDATED_RULE",
+    "new_solver_calls": 0,
+    "new_feature_extraction": false,
+    "report": "ASTRA_REVIEW.md",
+    "model_token_cost_measured": false
+  },
+  "files": {
+    "ASTRA_CALL.json": "66bf0c14e386c3ad1b741e184a2a726fd20b52684a5c240365c357f7c4c4bc5b",
+    "ASTRA_REVIEW.md": "63d26464c471c52ddc2c223e89cc3f15b8103508526a08a96b6d4a157c704151",
+    "F_actions_losses_vs_D.csv": "f398b31a79439871286b932e7f00c2e098d83a654048530727414f41ef54398d",
+    "F_actions_opportunities_vs_D.csv": "e95a748e8f1cff3531b8a42862a9819f839f0596eb1391aa77bbe14b9a0c70e5",
+    "README.md": "f5a4a7473820be5c879156b474da3a9322dc47fe189f09d4d722b88606969167",
+    "all_preferences.csv": "aed7734560a4b231ef52d5f669b502c68ff096700ee2e24f90baf0bb96ac2c03",
+    "astra_structure_view.csv": "6f1b0a7bd0325208b5bc038afa50d7afc96b14c7b75c54cfac5916306ceebc13",
+    "cached_structure_associations.csv": "1012eb80823eb6be04813e36587e342b87b5b8030716fadeba14987cd10de0ef",
+    "groups/D.csv": "30b2bdae5b44ec6ccaffb97c66b33b76fd249ee7eea05c2ecbd1dad27f2faba8",
+    "groups/Fminus.csv": "161a73356bc96549f74955488711dffb9b81b7daf7c16abd45f5644334b909c5",
+    "groups/Fplus.csv": "fb41f5c555dfcc3ca7fa86f749bfd413ed3e3627810a984fae1610ed74afecdf",
+    "groups/all_timeout.csv": "bb0ed8d64c4a8349e9568f98923340a44dfa52b732a9b715d86c96a17bf4f265",
+    "groups/near_tie.csv": "32f604c4a340b2f897e8f21eebedfe745fba2ff4060a0b2f659ff312811deae7",
+    "index.html": "7d4df339f2214a96a5c5086e8117470918d19ec781976ee210b4227f939ea262",
+    "summary.json": "9a7b99ee40f05e1298ff8245ede7e8176b66fa36d8f6cdf46edc366cfcb09bb8",
+    "switch_cost_summary.json": "72f9670c6371b4d1068ced28a357b21cccc8dd7c7c6fa6fdb2889a7fa6d87339"
+  }
+}

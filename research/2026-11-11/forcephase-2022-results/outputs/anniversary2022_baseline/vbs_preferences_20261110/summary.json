@@ -1,0 +1,172 @@
+{
+  "scope": "EXPLORATORY_4719_DEVELOPMENT_NOT_CONFIRMATION",
+  "label_definition": "unique action within max(1% of fastest,0.1 seconds); otherwise near_tie; all_timeout unlabelled",
+  "cohort": 4719,
+  "groups": {
+    "Fminus": 692,
+    "Fplus": 698,
+    "near_tie": 1016,
+    "D": 1141,
+    "all_timeout": 1172
+  },
+  "opportunity_action_rows": 571,
+  "opportunity_parents": 483,
+  "opportunities_by_action": {
+    "Fplus": {
+      "only_action_solved": 92,
+      "both_solved_at_least_2x": 195
+    },
+    "Fminus": {
+      "only_action_solved": 112,
+      "both_solved_at_least_2x": 172
+    }
+  },
+  "features_available": 138,
+  "features_missing": 4581,
+  "feature_columns": [
+    "variables",
+    "clauses",
+    "literals",
+    "clause_variable_ratio",
+    "mean_clause_length",
+    "unit_fraction",
+    "binary_fraction",
+    "ternary_fraction",
+    "negative_literal_fraction",
+    "pure_variable_fraction",
+    "mean_variable_polarity_imbalance",
+    "horn_clause_fraction",
+    "dual_horn_clause_fraction",
+    "positive_only_clause_fraction",
+    "negative_only_clause_fraction",
+    "variable_degree_cv",
+    "components",
+    "largest_component_fraction"
+  ],
+  "feature_group_profiles": {
+    "D": {
+      "n": 46,
+      "medians": {
+        "variables": 3594.5,
+        "clauses": 40199.5,
+        "literals": 126675.5,
+        "clause_variable_ratio": 5.797136807777953,
+        "mean_clause_length": 2.9588527901299115,
+        "unit_fraction": 2.785639471397054e-06,
+        "binary_fraction": 0.2005921231164437,
+        "ternary_fraction": 0.39531392279178446,
+        "negative_literal_fraction": 0.5009290471850575,
+        "pure_variable_fraction": 0.0,
+        "mean_variable_polarity_imbalance": 0.18785570158143527,
+        "horn_clause_fraction": 0.6248573526828574,
+        "dual_horn_clause_fraction": 0.5002658130427856,
+        "positive_only_clause_fraction": 0.05642499102124371,
+        "negative_only_clause_fraction": 0.12839922550265206,
+        "variable_degree_cv": 0.8064761090180199,
+        "components": 1.0,
+        "largest_component_fraction": 1.0
+      }
+    },
+    "Fplus": {
+      "n": 22,
+      "medians": {
+        "variables": 2310.0,
+        "clauses": 18412.0,
+        "literals": 61714.0,
+        "clause_variable_ratio": 6.125676889235152,
+        "mean_clause_length": 2.991331992727379,
+        "unit_fraction": 7.031854299978904e-07,
+        "binary_fraction": 0.10355694384966119,
+        "ternary_fraction": 0.21150639984898228,
+        "negative_literal_fraction": 0.5005923133049952,
+        "pure_variable_fraction": 0.0,
+        "mean_variable_polarity_imbalance": 0.1768261437759504,
+        "horn_clause_fraction": 0.5820360904210657,
+        "dual_horn_clause_fraction": 0.49887812605126325,
+        "positive_only_clause_fraction": 0.04547999079921793,
+        "negative_only_clause_fraction": 0.08516805431000991,
+        "variable_degree_cv": 0.889826416292574,
+        "components": 1.0,
+        "largest_component_fraction": 1.0
+      }
+    },
+    "Fminus": {
+      "n": 24,
+      "medians": {
+        "variables": 6380.5,
+        "clauses": 82526.5,
+        "literals": 212904.5,
+        "clause_variable_ratio": 7.131080172792769,
+        "mean_clause_length": 2.7661688906290807,
+        "unit_fraction": 0.0,
+        "binary_fraction": 0.3971363804589193,
+        "ternary_fraction": 0.3049278442847653,
+        "negative_literal_fraction": 0.5356448926644761,
+        "pure_variable_fraction": 0.0,
+        "mean_variable_polarity_imbalance": 0.22870247024307103,
+        "horn_clause_fraction": 0.6487049615347161,
+        "dual_horn_clause_fraction": 0.507218731120699,
+        "positive_only_clause_fraction": 0.02165773115669899,
+        "negative_only_clause_fraction": 0.1407870385004526,
+        "variable_degree_cv": 0.8010760710189154,
+        "components": 1.0,
+        "largest_component_fraction": 1.0
+      }
+    },
+    "near_tie": {
+      "n": 12,
+      "medians": {
+        "variables": 938.5,
+        "clauses": 13371.0,
+        "literals": 46065.0,
+        "clause_variable_ratio": 10.83394601158658,
+        "mean_clause_length": 3.1154829934845942,
+        "unit_fraction": 2.229554980825827e-05,
+        "binary_fraction": 0.191435785155937,
+        "ternary_fraction": 0.08673687007474845,
+        "negative_literal_fraction": 0.5088313569456495,
+        "pure_variable_fraction": 0.0,
+        "mean_variable_polarity_imbalance": 0.6857850823675229,
+        "horn_clause_fraction": 0.6361806420330527,
+        "dual_horn_clause_fraction": 0.3490804864436718,
+        "positive_only_clause_fraction": 0.04150357878438321,
+        "negative_only_clause_fraction": 0.1755778205707894,
+        "variable_degree_cv": 0.510820159068549,
+        "components": 1.0,
+        "largest_component_fraction": 1.0
+      }
+    },
+    "all_timeout": {
+      "n": 34,
+      "medians": {
+        "variables": 3176.0,
+        "clauses": 44839.0,
+        "literals": 132375.5,
+        "clause_variable_ratio": 5.6679176059077285,
+        "mean_clause_length": 2.748695846326661,
+        "unit_fraction": 7.08961414066078e-07,
+        "binary_fraction": 0.2730822649102081,
+        "ternary_fraction": 0.33329020399154463,
+        "negative_literal_fraction": 0.5447934760331276,
+        "pure_variable_fraction": 0.0,
+        "mean_variable_polarity_imbalance": 0.18244887683302277,
+        "horn_clause_fraction": 0.6773414649998052,
+        "dual_horn_clause_fraction": 0.49151141964968525,
+        "positive_only_clause_fraction": 0.010200681604066078,
+        "negative_only_clause_fraction": 0.24876987154772237,
+        "variable_degree_cv": 0.5861630805354865,
+        "components": 1.0,
+        "largest_component_fraction": 1.0
+      }
+    }
+  },
+  "cached_feature_identity": "Exact GBD-key association to old SHA-bound CNF statistics; new cluster input SHA receipts not present locally. Not a new full-cohort feature extraction.",
+  "missingness_and_sampling": "Old exploratory300 cache is selected and previously examined; not representative or untouched validation. Descriptive evidence only.",
+  "input_SHA256": {
+    "matrix": "12f26c912acbf5443d7511975fc6313f3c60a3945fa2ed6924ad34fab2c197f8",
+    "old_cache": "a6e4beb2b78b82e0ff0d5240a3986c961fdb6ca01a8dc164c937715558cbe862"
+  },
+  "new_solver_calls": 0,
+  "elapsed_wall_s": 0.15972862509079278,
+  "process_cpu_s": 0.154802
+}

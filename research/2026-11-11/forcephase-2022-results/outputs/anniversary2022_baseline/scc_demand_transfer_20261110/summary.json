@@ -1,0 +1,125 @@
+{
+  "threshold": 0.1,
+  "action_above": "Fminus",
+  "parents": 4719,
+  "scores": {
+    "original": {
+      "free": {
+        "mean_par2": 327.23964854678064,
+        "solved": 1510,
+        "par2_improvement_pct": 1.0451117071623854,
+        "paired_group_bootstrap_95_pct": [
+          0.5240513602701368,
+          1.6624934056218519
+        ],
+        "actions": {
+          "D": 1734,
+          "Fplus": 0,
+          "Fminus": 254
+        },
+        "better_than_D_parents": 152,
+        "worse_than_D_parents": 98
+      },
+      "with_extractor_cpu": {
+        "mean_par2": 327.2593316156942,
+        "solved": 1510,
+        "par2_improvement_pct": 1.0391596903629443,
+        "paired_group_bootstrap_95_pct": [
+          0.517760424268617,
+          1.6563583703994824
+        ],
+        "actions": {
+          "D": 1734,
+          "Fplus": 0,
+          "Fminus": 254
+        },
+        "better_than_D_parents": 65,
+        "worse_than_D_parents": 1445
+      },
+      "probed_parents": 1988
+    },
+    "newly_covered": {
+      "free": {
+        "mean_par2": 479.6835985473684,
+        "solved": 542,
+        "par2_improvement_pct": 0.008195169871032387,
+        "paired_group_bootstrap_95_pct": [
+          -0.016584960232027376,
+          0.03630756571339843
+        ],
+        "actions": {
+          "D": 816,
+          "Fplus": 0,
+          "Fminus": 39
+        },
+        "better_than_D_parents": 22,
+        "worse_than_D_parents": 10
+      },
+      "with_extractor_cpu": {
+        "mean_par2": 479.72487027953224,
+        "solved": 542,
+        "par2_improvement_pct": -0.0004080740172632769,
+        "paired_group_bootstrap_95_pct": [
+          -0.02562438971472748,
+          0.02764978108883536
+        ],
+        "actions": {
+          "D": 816,
+          "Fplus": 0,
+          "Fminus": 39
+        },
+        "better_than_D_parents": 11,
+        "worse_than_D_parents": 531
+      },
+      "probed_parents": 855
+    },
+    "all_parents": {
+      "free": {
+        "mean_par2": 391.079542673024,
+        "solved": 3391,
+        "par2_improvement_pct": 0.3727266223846523,
+        "paired_group_bootstrap_95_pct": [
+          0.18242779809235202,
+          0.6143057102780519
+        ],
+        "actions": {
+          "D": 4426,
+          "Fplus": 0,
+          "Fminus": 293
+        },
+        "better_than_D_parents": 174,
+        "worse_than_D_parents": 108
+      },
+      "with_extractor_cpu": {
+        "mean_par2": 391.09531238525113,
+        "solved": 3391,
+        "par2_improvement_pct": 0.36870929787720336,
+        "paired_group_bootstrap_95_pct": [
+          0.17840063078588764,
+          0.6103808075549527
+        ],
+        "actions": {
+          "D": 4426,
+          "Fplus": 0,
+          "Fminus": 293
+        },
+        "better_than_D_parents": 76,
+        "worse_than_D_parents": 1976
+      },
+      "probed_parents": 2843
+    }
+  },
+  "collection": {
+    "eligible": 855,
+    "counts": {
+      "ok": 855
+    },
+    "elapsed_wall_s": 36.6106407919433,
+    "feature_set": "boundary-transfer",
+    "collector_cpu_s": 65.663645,
+    "child_cpu_s": 67.82974399999999
+  },
+  "new_solver_calls": 0,
+  "analysis_cpu_s": 0.46562800000000004,
+  "analysis_wall_s": 0.5815216249320656
+}

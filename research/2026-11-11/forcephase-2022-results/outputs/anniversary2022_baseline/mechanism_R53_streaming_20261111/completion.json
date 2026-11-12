@@ -1,0 +1,11 @@
+{
+  "attempted": 1876,
+  "new_solver_calls": 0,
+  "physical_CPU_s": 1805.6200099999999,
+  "scored_stages": [
+    512,
+    1876
+  ],
+  "status": "complete",
+  "wall_s": 2743.2139686250594
+}

@@ -1,0 +1,25 @@
+{
+  "GBD_feature_source": "work/default_D_source_20261111/GBD_CNFBaseFeatures.cc",
+  "source_sha256": "33bc4545fc3ebd949555f124776d9d6dd0b600195fd6b103b85b51d6cbb7ff9f",
+  "definition_evidence": {
+    "positive_negative": "npos==0/nneg==0 interchange under literal sign reversal",
+    "horn_invhorn": "npos<=1/nneg<=1 interchange, per-variable clause membership vectors interchange",
+    "balance": "min(npos,nneg)/max(npos,nneg) unchanged; same for per-variable occurrence counts",
+    "degrees": "unsigned incidence and widths unchanged"
+  },
+  "coordinate_swaps": [
+    [
+      13,
+      14
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      "32:37",
+      "37:42"
+    ]
+  ],
+  "scope": "Source-definition proof of coordinate transform only, not measured runtime symmetry or new solver outcomes."
+}

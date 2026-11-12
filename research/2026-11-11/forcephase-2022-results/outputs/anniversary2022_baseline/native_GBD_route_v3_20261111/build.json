@@ -1,0 +1,21 @@
+{
+  "CPU_s": 2.4881599999999997,
+  "binary_sha256": "c37aa1f35a157228707653209c07fcb11d4642b0d2acf3562eba2adec8c6b5d8",
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-I<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418",
+    "-I<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_libarchive_headers_3_7_7",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/native_gbd_features.cpp",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/extract/CNFBaseFeatures.cc",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/CaptureDistribution.cc",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/UnionFind.cc",
+    "-larchive",
+    "-o",
+    "<LOCAL_WORKSPACE>/work/native_gbd_features_v2_20261111/native_gbd_features"
+  ],
+  "exit": 0,
+  "stderr": "",
+  "wall_s": 5.209350583143532
+}

@@ -1,0 +1,21 @@
+{
+  "status": "complete_planning_diagnosis_not_policy_score",
+  "all_parents": 4719,
+  "unmeasured_large_parents": 1876,
+  "unmeasured_large_raw_bytes_total": 121595102458,
+  "unmeasured_large_raw_bytes_quantiles": [
+    3006808.0,
+    16368369.0,
+    182373021.0,
+    579790929.0,
+    2211025216.0
+  ],
+  "large_inputs_already_cached": 0,
+  "large_inputs_with_GBD_observed_variable_ID_over_native_cap": 14,
+  "large_unmeasured_oracle_population_pp": 4.897244433085261,
+  "CPU_s": 0.21807699999999997,
+  "wall_s": 0.2954432920087129,
+  "new_fits": 0,
+  "new_solver_calls": 0,
+  "limitations": "Byte totals are uncompressed metadata, not download volume or measured acquisition cost; native cap checks remain actual input operations, not a model input."
+}

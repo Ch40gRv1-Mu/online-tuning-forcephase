@@ -1,0 +1,211 @@
+{
+  "analysis_cpu_s": 4.602784,
+  "analysis_wall_s": 4.697559791849926,
+  "eligible_addon": 2589,
+  "frozen_scc_switches": 254,
+  "inputs_sha256": {
+    "block_assignments": "88c7c2b235aaff2c5292fa5561bc658e2e1e79cb30e053c6ee794e221d9016ec",
+    "root_replay": "998a35030ebe87c9eaae58b8cc5cbf48310b974d666b866da303a73f2c7e319b",
+    "signed_receipts": "a663363bd539313d24b3f0f9c214f02d97d55d2e895cd3a4c8091352261ed593"
+  },
+  "new_feature_calls": 0,
+  "new_solver_calls": 0,
+  "oracle_headroom_on_eligible_s": 101829.337403,
+  "parents": 4719,
+  "policies": {
+    "signed_histogram": {
+      "additional_feature_cpu_s": 19.536498,
+      "additional_switches": 251,
+      "against_D": {
+        "actions": {
+          "D": 4214,
+          "Fminus": 254,
+          "Fplus": 251
+        },
+        "better_than_D_parents": 109,
+        "mean_par2": 389.71108727611784,
+        "paired_group_bootstrap_95_pct": [
+          0.26993761817456086,
+          1.3149200947246173
+        ],
+        "par2_improvement_pct": 0.7213397945306259,
+        "solved": 3399,
+        "worse_than_D_parents": 1954
+      },
+      "against_SCC": {
+        "actions": {
+          "D": 4214,
+          "Fminus": 254,
+          "Fplus": 251
+        },
+        "better_than_D_parents": 45,
+        "mean_par2": 389.71108727611784,
+        "paired_group_bootstrap_95_pct": [
+          0.09482250151860155,
+          0.6786766608159864
+        ],
+        "par2_improvement_pct": 0.35384511988004985,
+        "solved": 3399,
+        "worse_than_D_parents": 1768
+      },
+      "gain_after_removing_largest_gain_block_s": 4576.648120999998,
+      "held_blocks_with_rule": 379,
+      "incremental_D_timeouts_rescued": 11,
+      "incremental_SCC_solves_lost": 3,
+      "incremental_gain_outside_dominant_38_s": 6530.484520999999,
+      "incremental_gain_s": 6530.4845209999985,
+      "negative_gain_blocks": 328,
+      "positive_gain_blocks": 14,
+      "selected_rules_by_held_block": {
+        "keep_SCC": 1,
+        "raw_mean_width/Fplus": 379
+      }
+    },
+    "signed_histogram_block_guard": {
+      "additional_feature_cpu_s": 17.832813,
+      "additional_switches": 106,
+      "against_D": {
+        "actions": {
+          "D": 4359,
+          "Fminus": 254,
+          "Fplus": 106
+        },
+        "better_than_D_parents": 84,
+        "mean_par2": 390.6419236291587,
+        "paired_group_bootstrap_95_pct": [
+          0.1237050881477172,
+          1.0230731621228846
+        ],
+        "par2_improvement_pct": 0.4842098051162631,
+        "solved": 3394,
+        "worse_than_D_parents": 1958
+      },
+      "against_SCC": {
+        "actions": {
+          "D": 4359,
+          "Fminus": 254,
+          "Fplus": 106
+        },
+        "better_than_D_parents": 19,
+        "mean_par2": 390.6419236291587,
+        "paired_group_bootstrap_95_pct": [
+          -0.009758504070595099,
+          0.2958458722941323
+        ],
+        "par2_improvement_pct": 0.11583735866528821,
+        "solved": 3394,
+        "worse_than_D_parents": 1729
+      },
+      "gain_after_removing_largest_gain_block_s": 1110.0412089999998,
+      "held_blocks_with_rule": 371,
+      "incremental_D_timeouts_rescued": 3,
+      "incremental_SCC_solves_lost": 0,
+      "incremental_gain_outside_dominant_38_s": 2137.8677709999993,
+      "incremental_gain_s": 2137.8677709999997,
+      "negative_gain_blocks": 326,
+      "positive_gain_blocks": 10,
+      "selected_rules_by_held_block": {
+        "keep_SCC": 9,
+        "raw_mean_width/Fplus": 371
+      }
+    },
+    "static_pressure": {
+      "additional_feature_cpu_s": 19.515808999999997,
+      "additional_switches": 252,
+      "against_D": {
+        "actions": {
+          "D": 4213,
+          "Fminus": 296,
+          "Fplus": 210
+        },
+        "better_than_D_parents": 119,
+        "mean_par2": 393.1189203407501,
+        "paired_group_bootstrap_95_pct": [
+          -0.8053043744613844,
+          0.5102707762346118
+        ],
+        "par2_improvement_pct": -0.14680358631418777,
+        "solved": 3382,
+        "worse_than_D_parents": 1934
+      },
+      "against_SCC": {
+        "actions": {
+          "D": 4213,
+          "Fminus": 296,
+          "Fplus": 210
+        },
+        "better_than_D_parents": 55,
+        "mean_par2": 393.1189203407501,
+        "paired_group_bootstrap_95_pct": [
+          -1.0814148942086257,
+          -0.07276273324311963
+        ],
+        "par2_improvement_pct": -0.5175118223548283,
+        "solved": 3382,
+        "worse_than_D_parents": 1746
+      },
+      "gain_after_removing_largest_gain_block_s": -10566.3366,
+      "held_blocks_with_rule": 378,
+      "incremental_D_timeouts_rescued": 3,
+      "incremental_SCC_solves_lost": 12,
+      "incremental_gain_outside_dominant_38_s": -9551.079711,
+      "incremental_gain_s": -9551.079711,
+      "negative_gain_blocks": 329,
+      "positive_gain_blocks": 11,
+      "selected_rules_by_held_block": {
+        "keep_SCC": 2,
+        "unit_pressure/Fminus": 5,
+        "unit_pressure/Fplus": 373
+      }
+    },
+    "static_pressure_block_guard": {
+      "additional_feature_cpu_s": 0.20270499999999997,
+      "additional_switches": 19,
+      "against_D": {
+        "actions": {
+          "D": 4446,
+          "Fminus": 264,
+          "Fplus": 9
+        },
+        "better_than_D_parents": 70,
+        "mean_par2": 392.6577591157025,
+        "paired_group_bootstrap_95_pct": [
+          -0.656744317453023,
+          0.6069191756400621
+        ],
+        "par2_improvement_pct": -0.029323047380975083,
+        "solved": 3383,
+        "worse_than_D_parents": 1443
+      },
+      "against_SCC": {
+        "actions": {
+          "D": 4446,
+          "Fminus": 264,
+          "Fplus": 9
+        },
+        "better_than_D_parents": 5,
+        "mean_par2": 392.6577591157025,
+        "paired_group_bootstrap_95_pct": [
+          -0.9171133633303209,
+          0.0
+        ],
+        "par2_improvement_pct": -0.39959641179518873,
+        "solved": 3383,
+        "worse_than_D_parents": 12
+      },
+      "gain_after_removing_largest_gain_block_s": -7374.859890000001,
+      "held_blocks_with_rule": 3,
+      "incremental_D_timeouts_rescued": 0,
+      "incremental_SCC_solves_lost": 8,
+      "incremental_gain_outside_dominant_38_s": -7374.859890000001,
+      "incremental_gain_s": -7374.859890000001,
+      "negative_gain_blocks": 3,
+      "positive_gain_blocks": 0,
+      "selected_rules_by_held_block": {
+        "keep_SCC": 377,
+        "unit_pressure/Fminus": 1,
+        "unit_pressure/Fplus": 2
+      }
+    }
+  }
+}

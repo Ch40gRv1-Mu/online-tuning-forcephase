@@ -1,0 +1,7 @@
+{
+  "parents": 4719,
+  "graphs_checked": 2843,
+  "admitted_clauses_keep_all_literals": true,
+  "split_columns_identical_to_uniform_except_measured_fee": true,
+  "old_uniform_encoding_compatibility_checked_on_real_CNFs": 2
+}

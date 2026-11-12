@@ -1,0 +1,56 @@
+{
+  "best_epoch": 1,
+  "epochs_run": 7,
+  "history": [
+    {
+      "best_epoch": 1,
+      "epoch": 1,
+      "train_expected_excess": 0.008271623629827484,
+      "validation_PAR2": 298.20325030092306
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 2,
+      "train_expected_excess": 1.0848740039777311e-12,
+      "validation_PAR2": 298.20325030092306
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 3,
+      "train_expected_excess": 1.0885553612695209e-12,
+      "validation_PAR2": 298.20325030092306
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 4,
+      "train_expected_excess": 1.0945346542261264e-12,
+      "validation_PAR2": 298.20325030092306
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 5,
+      "train_expected_excess": 1.0998287783290135e-12,
+      "validation_PAR2": 298.20325030092306
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 6,
+      "train_expected_excess": 1.1067617978904702e-12,
+      "validation_PAR2": 298.20325030092306
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 7,
+      "train_expected_excess": 1.1119208251670915e-12,
+      "validation_PAR2": 298.20325030092306
+    }
+  ],
+  "kind": "gcn",
+  "parameters": 3571,
+  "status": "complete",
+  "train": 1711,
+  "training_CPU_s": 30.627939999999995,
+  "validation": 351,
+  "validation_PAR2": 298.20325030092306,
+  "wall_s": 18.593267499934882
+}

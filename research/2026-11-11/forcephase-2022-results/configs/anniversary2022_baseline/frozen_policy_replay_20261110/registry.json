@@ -1,0 +1,133 @@
+{
+  "status": "FROZEN_NO_REFIT",
+  "source_experiment": "phase_prediction_v1 RICL round1-4; historical failures retained",
+  "candidates": [
+    {
+      "id": "legacy_round1_length_stump",
+      "policy": {
+        "feature": "s_mean_length",
+        "left": {
+          "action": "D"
+        },
+        "missing": "left",
+        "right": {
+          "action": "Fminus"
+        },
+        "threshold": 3.67724
+      },
+      "source_path": "work/phase_prediction_20261104/project/results/phase_prediction_v1/context/episodes.jsonl",
+      "source_sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "source_policy_sha256": "279f9fd01566448b21adecb398bee08d0950b9862fdeafe5d3da71abe2ac19a6"
+    },
+    {
+      "id": "legacy_round1_binary_stump",
+      "policy": {
+        "feature": "s_binary_fraction",
+        "left": {
+          "action": "Fplus"
+        },
+        "missing": "left",
+        "right": {
+          "action": "D"
+        },
+        "threshold": 0.362327
+      },
+      "source_path": "work/phase_prediction_20261104/project/results/phase_prediction_v1/context/episodes.jsonl",
+      "source_sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "source_policy_sha256": "83b317d799086c97f957564c2f878490c095e077eca4aae6cf3ef6b129ab67d1"
+    },
+    {
+      "id": "formal_round2_0",
+      "policy": {
+        "feature": "s_long_fraction",
+        "left": {
+          "action": "Fplus"
+        },
+        "missing": "left",
+        "right": {
+          "action": "D"
+        },
+        "threshold": 0.00977806038068
+      },
+      "source_path": "work/phase_prediction_20261104/project/results/phase_prediction_v1/context/episodes.jsonl",
+      "source_sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "source_policy_sha256": "d6e0a74244cbff3c38edf1d45cae92663800ac10593b5ab725b69d5f503e9e03"
+    },
+    {
+      "id": "formal_round2_1",
+      "policy": {
+        "action": "Fplus"
+      },
+      "source_path": "work/phase_prediction_20261104/project/results/phase_prediction_v1/context/episodes.jsonl",
+      "source_sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "source_policy_sha256": "a826967c7c4ac29631395ba3b41a0b598e9ff5ec1bd6fca3eed32c93e5ba9a14"
+    },
+    {
+      "id": "formal_round3_0",
+      "policy": {
+        "feature": "g_cycle_excess_per_incidence",
+        "left": {
+          "action": "Fplus"
+        },
+        "missing": "left",
+        "right": {
+          "action": "D"
+        },
+        "threshold": 0.495248812203
+      },
+      "source_path": "work/phase_prediction_20261104/project/results/phase_prediction_v1/context/episodes.jsonl",
+      "source_sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "source_policy_sha256": "53d7329d557270e8c663863a8683c5d2d4d4f630090a19d444b197ea68d369b5"
+    },
+    {
+      "id": "formal_round3_1",
+      "policy": {
+        "action": "Fplus"
+      },
+      "source_path": "work/phase_prediction_20261104/project/results/phase_prediction_v1/context/episodes.jsonl",
+      "source_sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "source_policy_sha256": "a826967c7c4ac29631395ba3b41a0b598e9ff5ec1bd6fca3eed32c93e5ba9a14"
+    },
+    {
+      "id": "formal_round4_0",
+      "policy": {
+        "feature": "s_long_fraction",
+        "left": {
+          "action": "Fplus"
+        },
+        "missing": "left",
+        "right": {
+          "action": "D"
+        },
+        "threshold": 0.024555309337
+      },
+      "source_path": "work/phase_prediction_20261104/project/results/phase_prediction_v1/context/episodes.jsonl",
+      "source_sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "source_policy_sha256": "4928455f8340e742f3300e29d584ed868e11b4d387ee5361466f2caf5d8d11e8"
+    },
+    {
+      "id": "formal_round4_1",
+      "policy": {
+        "feature": "s_long_fraction",
+        "left": {
+          "action": "Fplus"
+        },
+        "missing": "left",
+        "right": {
+          "action": "D"
+        },
+        "threshold": 0.024555309337
+      },
+      "source_path": "work/phase_prediction_20261104/project/results/phase_prediction_v1/context/episodes.jsonl",
+      "source_sha256": "f0db48aa764570e8d3b4bfe388007896c73d5c00f003ad75f66e0068343a6edf",
+      "source_policy_sha256": "4928455f8340e742f3300e29d584ed868e11b4d387ee5361466f2caf5d8d11e8"
+    }
+  ],
+  "exclude": [
+    "TA true/false: no verified action mapping",
+    "online/conditioned policies: no compatible pre-action telemetry or continuation cost columns",
+    "family routing: forbidden"
+  ],
+  "duplicates": "Keep original candidate IDs; identical trees share physical computation only.",
+  "main_metric": "Free-feature PAR2 on same exact covered parent set vs D; full4719 only when features complete. Missing coverage explicitly bounded, never imputed as a full original-policy score."
+}

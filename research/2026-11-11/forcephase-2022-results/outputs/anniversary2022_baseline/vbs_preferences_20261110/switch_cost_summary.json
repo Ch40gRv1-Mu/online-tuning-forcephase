@@ -1,0 +1,16 @@
+{
+  "Fplus": {
+    "positive_gain_parents": 1449,
+    "negative_gain_parents": 2027,
+    "PAR2_gain_when_helpful_s": 115291.904609,
+    "PAR2_loss_when_harmful_s": 472491.238922,
+    "net_PAR2_gain_if_always_switch_s": -357199.334313
+  },
+  "Fminus": {
+    "positive_gain_parents": 1524,
+    "negative_gain_parents": 1973,
+    "PAR2_gain_when_helpful_s": 134049.608846,
+    "PAR2_loss_when_harmful_s": 508895.814411,
+    "net_PAR2_gain_if_always_switch_s": -374846.205565
+  }
+}

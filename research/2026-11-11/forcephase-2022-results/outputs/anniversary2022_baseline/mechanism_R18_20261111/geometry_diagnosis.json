@@ -1,0 +1,152 @@
+{
+  "CPU_s": 0.22371699999999994,
+  "results": {
+    "coarse": {
+      "coarse_geometry_1": {
+        "lost_solves": 0,
+        "net_PAR2_s": -3.735712955999901,
+        "new_solves": 0,
+        "parents": 61,
+        "switches": 0
+      },
+      "coarse_geometry_2": {
+        "lost_solves": 0,
+        "net_PAR2_s": -34.88998592400057,
+        "new_solves": 0,
+        "parents": 502,
+        "switches": 0
+      },
+      "coarse_geometry_3": {
+        "lost_solves": 0,
+        "net_PAR2_s": 881.5398538680001,
+        "new_solves": 1,
+        "parents": 441,
+        "switches": 1
+      },
+      "coarse_geometry_4": {
+        "lost_solves": 0,
+        "net_PAR2_s": 4010.9416278790004,
+        "new_solves": 4,
+        "parents": 843,
+        "switches": 26
+      },
+      "coarse_geometry_5": {
+        "lost_solves": 0,
+        "net_PAR2_s": -33.72183258099946,
+        "new_solves": 0,
+        "parents": 572,
+        "switches": 0
+      },
+      "coarse_geometry_6": {
+        "lost_solves": 0,
+        "net_PAR2_s": -11.077504884000234,
+        "new_solves": 0,
+        "parents": 165,
+        "switches": 1
+      },
+      "coarse_geometry_7": {
+        "lost_solves": 0,
+        "net_PAR2_s": 1681.3761692300009,
+        "new_solves": 2,
+        "parents": 1504,
+        "switches": 29
+      },
+      "coarse_geometry_8": {
+        "lost_solves": 0,
+        "net_PAR2_s": -21.157756702999393,
+        "new_solves": 0,
+        "parents": 631,
+        "switches": 0
+      },
+      "eligible1890": {
+        "lost_solves": 0,
+        "net_PAR2_s": 4814.964901761001,
+        "new_solves": 5,
+        "parents": 1890,
+        "switches": 27
+      },
+      "noneligible2829": {
+        "lost_solves": 0,
+        "net_PAR2_s": 1654.3099561680017,
+        "new_solves": 2,
+        "parents": 2829,
+        "switches": 30
+      }
+    },
+    "fine": {
+      "coarse_geometry_1": {
+        "lost_solves": 0,
+        "net_PAR2_s": -3.6494639560002042,
+        "new_solves": 0,
+        "parents": 61,
+        "switches": 0
+      },
+      "coarse_geometry_2": {
+        "lost_solves": 0,
+        "net_PAR2_s": 6.031196323000007,
+        "new_solves": 0,
+        "parents": 502,
+        "switches": 9
+      },
+      "coarse_geometry_3": {
+        "lost_solves": 5,
+        "net_PAR2_s": -4138.576330221,
+        "new_solves": 2,
+        "parents": 441,
+        "switches": 44
+      },
+      "coarse_geometry_4": {
+        "lost_solves": 1,
+        "net_PAR2_s": -514.2164827469994,
+        "new_solves": 0,
+        "parents": 843,
+        "switches": 41
+      },
+      "coarse_geometry_5": {
+        "lost_solves": 0,
+        "net_PAR2_s": 7442.153066338,
+        "new_solves": 6,
+        "parents": 572,
+        "switches": 53
+      },
+      "coarse_geometry_6": {
+        "lost_solves": 0,
+        "net_PAR2_s": 827.5478452839998,
+        "new_solves": 1,
+        "parents": 165,
+        "switches": 13
+      },
+      "coarse_geometry_7": {
+        "lost_solves": 0,
+        "net_PAR2_s": 263.2547438609974,
+        "new_solves": 0,
+        "parents": 1504,
+        "switches": 13
+      },
+      "coarse_geometry_8": {
+        "lost_solves": 0,
+        "net_PAR2_s": 994.2496942969983,
+        "new_solves": 1,
+        "parents": 631,
+        "switches": 6
+      },
+      "eligible1890": {
+        "lost_solves": 1,
+        "net_PAR2_s": 483.62717313600007,
+        "new_solves": 2,
+        "parents": 1890,
+        "switches": 108
+      },
+      "noneligible2829": {
+        "lost_solves": 5,
+        "net_PAR2_s": 4393.167096042996,
+        "new_solves": 8,
+        "parents": 2829,
+        "switches": 71
+      }
+    }
+  },
+  "source": "Frozen R18 majority, descriptive only; no group/family route learned",
+  "status": "complete",
+  "wall_s": 0.278421042021364
+}

@@ -1,0 +1,23 @@
+{
+  "binary_sha256": "53a371f89322025e10743893c747a0784fe7fe1dd632fb1da489a45b536b4ba8",
+  "command": [
+    "clang++",
+    "-std=c++17",
+    "-O3",
+    "-I<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418",
+    "-I<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_libarchive_headers_3_7_7",
+    "<LOCAL_WORKSPACE>/work/native_linear42_cpu16_20261111/native_linear42_cpu16.cpp",
+    "<LOCAL_WORKSPACE>/src/anniversary2022_baseline/vendor_gbdc_base_9f3a418/src/util/CaptureDistribution.cc",
+    "-larchive",
+    "-o",
+    "<LOCAL_WORKSPACE>/work/native_linear42_cpu16_20261111/native_linear42_cpu16"
+  ],
+  "exit": 0,
+  "modified_source_sha256": "8333eb01882d2fb9b8fd6e4e8eed57dc1fd8490822ffd8d83baf957e0a29e229",
+  "original_source_sha256": "77f3161c92695042bf018c4f3c591960a42a73f08ec3f06b370155e2a4d6f8f4",
+  "source_diff": "Only requested RLIMIT_CPU8->16",
+  "stderr": "",
+  "unchanged_alarm_s": 12,
+  "unchanged_wrapper_s": 14,
+  "wall_s": 1.6292273341678083
+}

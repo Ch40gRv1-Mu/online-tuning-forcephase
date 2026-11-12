@@ -1,0 +1,93 @@
+{
+  "best_epoch": 7,
+  "epochs_run": 13,
+  "history": [
+    {
+      "best_epoch": 1,
+      "epoch": 1,
+      "train_loss": 0.17979238185078084,
+      "validation_PAR2": 295.9658917359404
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 2,
+      "train_loss": 0.1755391791211589,
+      "validation_PAR2": 295.9658917359404
+    },
+    {
+      "best_epoch": 1,
+      "epoch": 3,
+      "train_loss": 0.1743069919166229,
+      "validation_PAR2": 295.9658917359404
+    },
+    {
+      "best_epoch": 4,
+      "epoch": 4,
+      "train_loss": 0.17292398659675012,
+      "validation_PAR2": 295.9653181884791
+    },
+    {
+      "best_epoch": 4,
+      "epoch": 5,
+      "train_loss": 0.17336059733486128,
+      "validation_PAR2": 296.3469898898234
+    },
+    {
+      "best_epoch": 4,
+      "epoch": 6,
+      "train_loss": 0.1727918888671353,
+      "validation_PAR2": 296.6200344416998
+    },
+    {
+      "best_epoch": 7,
+      "epoch": 7,
+      "train_loss": 0.17181419713481788,
+      "validation_PAR2": 292.3309978981016
+    },
+    {
+      "best_epoch": 7,
+      "epoch": 8,
+      "train_loss": 0.17302657255583206,
+      "validation_PAR2": 297.5876270309184
+    },
+    {
+      "best_epoch": 7,
+      "epoch": 9,
+      "train_loss": 0.17047497877732865,
+      "validation_PAR2": 294.9857935837152
+    },
+    {
+      "best_epoch": 7,
+      "epoch": 10,
+      "train_loss": 0.1710912731720046,
+      "validation_PAR2": 294.6934531603333
+    },
+    {
+      "best_epoch": 7,
+      "epoch": 11,
+      "train_loss": 0.1705314172893792,
+      "validation_PAR2": 297.5013207090817
+    },
+    {
+      "best_epoch": 7,
+      "epoch": 12,
+      "train_loss": 0.17055137989126026,
+      "validation_PAR2": 294.8294806879272
+    },
+    {
+      "best_epoch": 7,
+      "epoch": 13,
+      "train_loss": 0.168346363012605,
+      "validation_PAR2": 294.2852742618786
+    }
+  ],
+  "kind": "pooled_mlp",
+  "objective": "cost_ce",
+  "parameters": 3596,
+  "status": "complete",
+  "train": 2007,
+  "training_CPU_s": 1.292617000000007,
+  "validation": 453,
+  "validation_PAR2": 292.3309978981016,
+  "wall_s": 1.3204003749415278
+}

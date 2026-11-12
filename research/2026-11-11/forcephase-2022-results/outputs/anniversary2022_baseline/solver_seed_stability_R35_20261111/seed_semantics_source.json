@@ -1,0 +1,127 @@
+{
+  "facts": {
+    "D_choice": "Without forcephase, target phase when enabled then saved phase then initial; best conflict-free trail is retained for target/best.",
+    "phase_saving": "Ordinary search assignments, including propagated values, update phases.saved; lucky phase search is explicitly excluded.",
+    "scope": "Two actual solver seeds are a bounded perturbation check, not independent input samples or proof of robustness to arbitrary input reordering.",
+    "seed_can_change_search": "D random rephase, walk and sweep use opts.seed; sweep also changes per invocation. Forcephase disables rephasing, but not every seed-dependent simplification.",
+    "seed_does_not_default_shuffle": "shuffle=0, randec=0, shufflerandom=0. Queue/score random seed calls require their disabled option gates."
+  },
+  "files": {
+    "backtrack.cpp": {
+      "extracts": [
+        {
+          "first_line": 32,
+          "last_line": 78,
+          "text": "/*------------------------------------------------------------------------*/\n\n// Update the current target maximum assignment and also the very best\n// assignment.  Whether a trail produces a conflict is determined during\n// propagation.  Thus that all functions in the 'search' loop after\n// propagation can assume that 'no_conflict_until' is valid.  If a conflict\n// is found then the trail before the last decision is used (see the end of\n// 'propagate').  During backtracking we can then save this largest\n// propagation conflict free assignment.  It is saved as both 'target'\n// assignment for picking decisions in 'stable' mode and if it is the\n// largest ever such assignment also as 'best' assignment. This 'best'\n// assignment can then be used in future stable decisions after the next\n// 'rephase_best' overwrites saved phases with it.\n\nvoid Internal::update_target_and_best () {\n\n  if (opts.rephase == 2 && !stable)\n    return;\n\n  bool reset = (rephased && stats.conflicts > last.rephase.conflicts);\n\n  if (reset) {\n    target_assigned = 0;\n    if (rephased == 'B')\n      best_assigned = 0; // update it again\n  }\n\n  if (no_conflict_until > target_assigned) {\n    copy_phases (phases.target);\n    target_assigned = no_conflict_until;\n    LOG (\"new target trail level %zu\", target_assigned);\n  }\n\n  if (no_conflict_until > best_assigned) {\n    copy_phases (phases.best);\n    best_assigned = no_conflict_until;\n    LOG (\"new best trail level %zu\", best_assigned);\n  }\n\n  if (reset) {\n    report (rephased);\n    rephased = 0;\n  }\n}\n\n/*------------------------------------------------------------------------*/\n"
+        }
+      ],
+      "sha256": "4ead69ecab13adb05bbb8f9791484b4e619222ecb104c5243f6ffa4bc7d638c2"
+    },
+    "decide.cpp": {
+      "extracts": [
+        {
+          "first_line": 65,
+          "last_line": 100,
+          "text": "\nint Internal::next_random_decision () {\n  assert (max_var);\n  if (!opts.randec)\n    return 0;\n  if (stable && !opts.randecstable)\n    return 0;\n  if (!stable && !opts.randecfocused)\n    return 0;\n  if (stats.conflicts < lim.random_decision)\n    return 0;\n  if (satisfied ())\n    return 0;\n\n  if (!randomized_deciding) {\n    if (level > (int) assumptions.size () + !!constraint.size ()) {\n      LOG (\"random decision delayed because too deep\");\n      return 0;\n    }\n    start_random_sequence ();\n  }\n  LOG (\"searching for random decision\");\n  Random random (internal->opts.seed);\n  random += stats.decisions;\n  ++stats.randec.random_decisions;\n  for (;;) {\n    int idx = 1 + (random.next () % max_var);\n    LOG (\"trying lit %s\", LOGLIT (idx));\n    /*\n      // Kissat filters out active literals but we cannot do that because\n      // eliminated variables are not actively removed.\n    if (!flags (idx).active())\n      continue;\n    */\n    if (val (idx))\n      continue;"
+        },
+        {
+          "first_line": 120,
+          "last_line": 165,
+          "text": "\n// Implements phase saving as well using a target phase during\n// stabilization unless decision phase is forced to the initial value\n// of a phase is forced through the 'phase' option.\n\nint Internal::decide_phase (int idx, bool target) {\n  const int initial_phase = opts.phase ? 1 : -1;\n  int phase = 0;\n  if (force_saved_phase) {\n    phase = phases.saved[idx];\n    LOG (\"trying force_saved_phase, i.e., %d\", phase);\n  }\n  assert (force_saved_phase || !phase);\n  if (!phase) {\n    phase = phases.forced[idx]; // swapped with opts.forcephase case!\n    LOG (\"trying forced phase, i.e., %d\", phase);\n  }\n  if (!phase && opts.forcephase) {\n    phase = initial_phase;\n    LOG (\"trying initial phase, i.e., %d\", phase);\n  }\n  if (!phase && target) {\n    phase = phases.target[idx];\n  }\n  if (!phase) {\n    // ported from kissat where it does not seem very useful\n    if (opts.stubbornIOfocused && opts.rephase == 2)\n      switch ((stats.rephased.total >> 1) & 7) {\n      case 1:\n        phase = initial_phase;\n        break;\n      case 5: // kissat has 3 but 5 looks better\n        phase = -initial_phase;\n        break;\n      default:\n        phase = phases.saved[idx];\n        break;\n      }\n    else\n      phase = phases.saved[idx];\n  }\n\n  // The following should not be necessary and in some version we had even\n  // a hard 'COVER' assertion here to check for this.   Unfortunately it\n  // triggered for some users and we could not get to the root cause of\n  // 'phase' still not being set here.  The logic for phase and target"
+        },
+        {
+          "first_line": 331,
+          "last_line": 340,
+          "text": "      START (decide);\n    } else {\n      stats.decisions++;\n      if (!decision) {\n        int idx = next_decision_variable ();\n        const bool target = (opts.target > 1 || (stable && opts.target));\n        decision = decide_phase (idx, target);\n      }\n      search_assume_decision (decision);\n    }"
+        }
+      ],
+      "sha256": "a29aedcec6a2e3c1f6f6bfe244ed267aa037aeba046f8a077236b7640d954f39"
+    },
+    "options.hpp": {
+      "extracts": [
+        {
+          "first_line": 171,
+          "last_line": 176,
+          "text": "OPTION( randec,            0,  0,  1,0,0,1, \"random decisions\") \\\nOPTION( randecfocused,     1,  0,  1,0,0,1, \"random decisions in focused mode\") \\\nOPTION( randecinit,       1e3, 2,2e9,0,0,1, \"inital random decision interval\") \\\nOPTION( randecint,       500,  0,2e9,0,0,1, \"random conflict length\") \\\nOPTION( randeclength,     10,  1,1e9,0,0,1, \"length random decisions phases\") \\\nOPTION( randecstable,      0,  0,  1,0,0,1, \"random decisions in stable mode\") \\"
+        },
+        {
+          "first_line": 204,
+          "last_line": 211,
+          "text": "OPTION( seed,              0,  0,2e9,0,0,1, \"random seed\") \\\nOPTION( shrink,            3,  0,  3,0,0,1, \"shrink conflict clause (1=binary-only,2=minimize-on-pulling,3=full)\") \\\nOPTION( shrinkreap,        1,  0,  1,0,0,1, \"use a reap for shrinking\") \\\nOPTION( shuffle,           0,  0,  1,0,0,1, \"shuffle variables\") \\\nOPTION( shufflequeue,      1,  0,  1,0,0,1, \"shuffle variable queue\") \\\nOPTION( shufflerandom,     0,  0,  1,0,0,1, \"not reverse but random\") \\\nOPTION( shufflescores,     1,  0,  1,0,0,1, \"shuffle variable scores\") \\\nOPTION( stabilize,         1,  0,  1,0,0,1, \"enable stabilizing phases\") \\"
+        },
+        {
+          "first_line": 274,
+          "last_line": 281,
+          "text": "OPTION( walk,              1,  0,  1,0,0,1, \"enable random walks\") \\\nOPTION( walkeffort,       80,  1,1e5,1,0,1, \"relative efficiency per mille\") \\\nOPTION( walkfullocc,      0,   0,  1,1,0,1, \"use Kissat's full occurrences instead of the single watched\") \\\nOPTION( walkmaxeff,      1e7,  0,2e9,1,0,1, \"maximum efficiency (in 1e3 ticks)\") \\\nOPTION( walkmineff,        0,  0,1e7,1,0,1, \"minimum efficiency\") \\\nOPTION( walknonstable,     1,  0,  1,0,0,1, \"walk in non-stabilizing phase\") \\\nOPTION( walkredundant,     0,  0,  1,0,0,1, \"walk redundant clauses too\") \\\nOPTION( warmup,            1,  0,  1,0,0,1, \"warmup before walk using propagation\") \\"
+        }
+      ],
+      "sha256": "790edefb1046799635188c1b9877ecdbc01e221694200fcf20a3c31d74304353"
+    },
+    "propagate.cpp": {
+      "extracts": [
+        {
+          "first_line": 139,
+          "last_line": 147,
+          "text": "    learn_unit_clause (lit); // increases 'stats.fixed'\n  assert (lit_level || !from_external);\n  const signed char tmp = sign (lit);\n  set_val (idx, tmp);\n  assert (val (lit) > 0);  // Just a bit paranoid but useful.\n  assert (val (-lit) < 0); // Ditto.\n  if (!searching_lucky_phases)\n    phases.saved[idx] = tmp; // phase saving during search\n  trail.push_back (lit);"
+        }
+      ],
+      "sha256": "4ffa34dd999cbb129b0597adf24a4bc25d6248b2d8210aca340e9da478a404e6"
+    },
+    "queue.cpp": {
+      "extracts": [
+        {
+          "first_line": 57,
+          "last_line": 80,
+          "text": "\n// Shuffle the VMTF queue.\n\nvoid Internal::shuffle_queue () {\n  if (!opts.shuffle)\n    return;\n  if (!opts.shufflequeue)\n    return;\n  stats.shuffled++;\n  LOG (\"shuffling queue\");\n  vector<int> shuffle;\n  if (opts.shufflerandom) {\n    for (int idx = max_var; idx; idx--)\n      shuffle.push_back (idx);\n    Random random (opts.seed); // global seed\n    random += stats.shuffled;  // different every time\n    for (int i = 0; i <= max_var - 2; i++) {\n      const int j = random.pick_int (i, max_var - 1);\n      swap (shuffle[i], shuffle[j]);\n    }\n  } else {\n    for (int idx = queue.last; idx; idx = links[idx].prev)\n      shuffle.push_back (idx);\n  }"
+        }
+      ],
+      "sha256": "78adfc6f816bbdf95ffd4295135009f8f9435817ad552d9d9fccfe0009b6f9b1"
+    },
+    "rephase.cpp": {
+      "extracts": [
+        {
+          "first_line": 21,
+          "last_line": 32,
+          "text": "bool Internal::rephasing () {\n  if (!opts.rephase)\n    return false;\n  if (opts.forcephase)\n    return false;\n  if (opts.rephase == 2) {\n    if (stable)\n      return stats.stabconflicts > lim.rephase;\n    else\n      return false;\n  }\n  return stats.conflicts > lim.rephase;"
+        },
+        {
+          "first_line": 74,
+          "last_line": 81,
+          "text": "char Internal::rephase_random () {\n  stats.rephased.random++;\n  PHASE (\"rephase\", stats.rephased.total, \"resetting all phases randomly\");\n  Random random (opts.seed);       // global seed\n  random += stats.rephased.random; // different every time\n  for (auto idx : vars)\n    phases.saved[idx] = random.generate_bool () ? -1 : 1;\n  return '#';"
+        },
+        {
+          "first_line": 100,
+          "last_line": 108,
+          "text": "char Internal::rephase_walk () {\n  stats.rephased.walk++;\n  PHASE (\"rephase\", stats.rephased.total,\n         \"starting local search to improve current phase\");\n  if (opts.walkfullocc)\n    walk_full_occs ();\n  else\n    walk ();\n  return 'W';"
+        }
+      ],
+      "sha256": "bccaec4097cd231ef6801e4837b86224b804fe11e96c6098b88a1cfd1d89ae74"
+    },
+    "score.cpp": {
+      "extracts": [
+        {
+          "first_line": 17,
+          "last_line": 35,
+          "text": "\nvoid Internal::shuffle_scores () {\n  if (!opts.shuffle)\n    return;\n  if (!opts.shufflescores)\n    return;\n  assert (!level);\n  stats.shuffled++;\n  LOG (\"shuffling scores\");\n  vector<int> shuffle;\n  if (opts.shufflerandom) {\n    scores.erase ();\n    for (int idx = max_var; idx; idx--)\n      shuffle.push_back (idx);\n    Random random (opts.seed); // global seed\n    random += stats.shuffled;  // different every time\n    for (int i = 0; i <= max_var - 2; i++) {\n      const int j = random.pick_int (i, max_var - 1);\n      swap (shuffle[i], shuffle[j]);"
+        }
+      ],
+      "sha256": "c28fb29a2088489fd910096b2f76bf639c6068820a122b2367367c4813695360"
+    },
+    "sweep.cpp": {
+      "extracts": [
+        {
+          "first_line": 5,
+          "last_line": 9,
+          "text": "Sweeper::Sweeper (Internal *i)\n    : internal (i), random (internal->opts.seed) {\n  random += internal->stats.sweep; // different seed every time\n  internal->init_sweeper (*this);\n}"
+        }
+      ],
+      "sha256": "b9a1234f0d2a8de74ec5539f7c5f6aaf2fd787031b7e109eaed43ce4d0be611b"
+    }
+  },
+  "new_solver_calls": 0,
+  "next_action": "Do not modify live R35 identity or add shuffled/extra-seed runs. Analyze all32 matrices, distinguish work counts and CPU and retain ties/censoring; no partial preference feedback.",
+  "observed_UTC": "2026-11-11T22:53:12Z",
+  "runtime_source_unchanged": true,
+  "schema": "R35.source-interpretation.v1",
+  "solver_commit": "c60730422e758ef1cebe7aeddf2dda31c996bf04"
+}

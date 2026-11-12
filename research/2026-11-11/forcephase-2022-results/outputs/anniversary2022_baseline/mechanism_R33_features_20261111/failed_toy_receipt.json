@@ -1,0 +1,17 @@
+{
+  "native_exit": 70,
+  "child_CPU_s": 0.001527,
+  "maxrss": 1114112,
+  "wall_s": 0.004833540879189968,
+  "wrapper_CPU_s": 0.0011050409999999733,
+  "status": "preprocess_error_paid_D",
+  "native_error": "",
+  "parent_CPU_limit": [
+    9223372036854775807,
+    9223372036854775807
+  ],
+  "parent_DATA_limit": [
+    9223372036854775807,
+    9223372036854775807
+  ]
+}
